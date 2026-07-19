@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Der Strenge Lehrer · German A2→B2</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+</head>
+<body>
+
+<div id="particles"></div>
+
+<div id="app">
+  <header>
+    <div class="logo">Der <span>Strenge</span> Lehrer</div>
+    <div class="header-right">
+      <div class="time-badge" id="time-badge" title="Gesamte Lernzeit">
+        <span>⏱</span>
+        <span id="total-time-display">0 min</span>
+      </div>
+      <div class="streak-badge" id="streak-badge">
+        <span class="fire">🔥</span>
+        <span id="streak-count">0</span> Tage
+      </div>
+      <div class="day-badge" id="day-badge">Tag 1 / 28</div>
+    </div>
+  </header>
+
+  <!-- LOADING -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="spinner"></div>
+    <p style="color:var(--text2);font-size:13px;">Einen Moment…</p>
+  </div>
+
+  <!-- WELCOME SCREEN -->
+  <div class="screen" id="welcome-screen">
+    <div style="text-align:center;padding:20px 0 10px;">
+
+      <!-- Teacher SVG - large version for welcome -->
+      <div style="display:flex;justify-content:center;margin-bottom:20px;">
+        <svg width="120" height="160" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 12px 30px rgba(91,141,238,0.3));animation:breathe 4s ease-in-out infinite;">
+          <ellipse cx="60" cy="155" rx="32" ry="5" fill="rgba(0,0,0,0.25)"/>
+          <rect x="28" y="100" width="64" height="52" fill="#14143a" rx="8"/>
+          <rect x="48" y="98" width="24" height="16" fill="#e8e8f4" rx="3"/>
+          <polygon points="60,100 54,115 60,148 66,115" fill="#c0392b"/>
+          <rect x="6" y="104" width="26" height="11" fill="#14143a" rx="5" transform="rotate(10 19 109)"/>
+          <rect x="88" y="100" width="28" height="11" fill="#14143a" rx="5" transform="rotate(-22 102 105)"/>
+          <ellipse cx="114" cy="97" rx="6" ry="4" fill="#f5d0a0" transform="rotate(-22 114 97)"/>
+          <line x1="115" y1="94" x2="130" y2="78" stroke="#e8e8f4" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="126" cy="75" r="3" fill="#e8c547"/>
+          <rect x="6" y="114" width="20" height="30" fill="#c0392b" rx="2"/>
+          <line x1="16" y1="114" x2="16" y2="144" stroke="#962d22" stroke-width="1"/>
+          <rect x="48" y="86" width="24" height="20" fill="#f5d0a0" rx="4"/>
+          <circle cx="60" cy="62" r="34" fill="#f5d0a0"/>
+          <path d="M26 54 Q28 22 60 20 Q92 22 94 54 Q90 36 60 34 Q30 36 26 54Z" fill="#2d1b00"/>
+          <rect x="35" y="57" width="18" height="13" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+          <rect x="67" y="57" width="18" height="13" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+          <line x1="53" y1="63" x2="67" y2="63" stroke="#8B6914" stroke-width="2"/>
+          <line x1="35" y1="63" x2="28" y2="66" stroke="#8B6914" stroke-width="1.5"/>
+          <line x1="85" y1="63" x2="92" y2="66" stroke="#8B6914" stroke-width="1.5"/>
+          <circle cx="44" cy="63.5" r="4" fill="#0a0a1a"/>
+          <circle cx="76" cy="63.5" r="4" fill="#0a0a1a"/>
+          <circle cx="45.5" cy="62" r="1.5" fill="white"/>
+          <circle cx="77.5" cy="62" r="1.5" fill="white"/>
+          <path d="M35 53 Q44 48 53 53" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M67 53 Q76 48 85 53" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M46 78 Q60 75 74 78" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <h1 style="font-size:clamp(28px,5vw,40px);font-weight:900;line-height:1.2;margin-bottom:10px;background:linear-gradient(135deg,#e8c547,#5b8dee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+        Der Strenge Lehrer
+      </h1>
+      <p style="font-size:15px;color:var(--text2);line-height:1.7;max-width:440px;margin:0 auto 10px;">
+        Ein Aufgaben-Gate für ernsthaftes Deutsch-Lernen.<br/>
+        Kein Überspringen. Kein Ausreden. Nur Fortschritt.
+      </p>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:28px;">A2 → B2 · 28 Tage · 5 Aufgaben pro Tag</p>
+      <button class="start-btn" id="start-btn">Jetzt beginnen →</button>
+    </div>
+  </div>
+
+  <!-- MAIN TASK VIEW -->
+  <div class="screen" id="task-screen">
+
+    <!-- Catch-up banner (shown when doing missed days) -->
+    <div class="catchup-banner hidden" id="catchup-banner">
+      ⚠️ <span><strong>Nachholaufgabe</strong> — Du hast einen Tag verpasst. Erledige zuerst die verpassten Aufgaben.</span>
+    </div>
+
+    <!-- Teacher section -->
+    <div class="teacher-section">
+      <div class="teacher-avatar-wrap" id="avatar-wrap">
+        <svg id="teacher-svg" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="60" cy="155" rx="32" ry="5" fill="rgba(0,0,0,0.25)"/>
+          <rect x="28" y="100" width="64" height="52" fill="#14143a" rx="8"/>
+          <rect x="48" y="98" width="24" height="16" fill="#e8e8f4" rx="3"/>
+          <polygon points="60,100 54,115 60,148 66,115" fill="#c0392b"/>
+          <!-- Left arm (book) -->
+          <rect x="6" y="104" width="26" height="11" fill="#14143a" rx="5" transform="rotate(10 19 109)"/>
+          <!-- Right arm (pointing) - animated -->
+          <g id="pointing-arm">
+            <rect x="88" y="100" width="28" height="11" fill="#14143a" rx="5" transform="rotate(-22 102 105)"/>
+            <ellipse cx="114" cy="97" rx="6" ry="4" fill="#f5d0a0" transform="rotate(-22 114 97)"/>
+            <line id="chalk-line" x1="115" y1="94" x2="130" y2="78" stroke="#e8e8f4" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="126" cy="75" r="3" fill="#e8c547"/>
+          </g>
+          <!-- Book -->
+          <rect x="6" y="114" width="20" height="30" fill="#c0392b" rx="2"/>
+          <line x1="16" y1="114" x2="16" y2="144" stroke="#962d22" stroke-width="1"/>
+          <!-- Neck -->
+          <rect x="48" y="86" width="24" height="20" fill="#f5d0a0" rx="4"/>
+          <!-- Head -->
+          <circle cx="60" cy="62" r="34" fill="#f5d0a0"/>
+          <!-- Hair -->
+          <path d="M26 54 Q28 22 60 20 Q92 22 94 54 Q90 36 60 34 Q30 36 26 54Z" fill="#2d1b00"/>
+          <!-- Glasses -->
+          <rect x="35" y="57" width="18" height="13" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+          <rect x="67" y="57" width="18" height="13" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+          <line x1="53" y1="63" x2="67" y2="63" stroke="#8B6914" stroke-width="2"/>
+          <line x1="35" y1="63" x2="28" y2="66" stroke="#8B6914" stroke-width="1.5"/>
+          <line x1="85" y1="63" x2="92" y2="66" stroke="#8B6914" stroke-width="1.5"/>
+          <!-- Eyes -->
+          <circle cx="44" cy="63.5" r="4" fill="#0a0a1a"/>
+          <circle cx="76" cy="63.5" r="4" fill="#0a0a1a"/>
+          <circle cx="45.5" cy="62" r="1.5" fill="white"/>
+          <circle cx="77.5" cy="62" r="1.5" fill="white"/>
+          <!-- Eyebrows (stern) -->
+          <path id="brow-left"  d="M35 53 Q44 48 53 53" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path id="brow-right" d="M67 53 Q76 48 85 53" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Mouth -->
+          <path id="teacher-mouth" d="M46 78 Q60 75 74 78" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="speech-bubble" id="speech-bubble">
+        <span id="speech-text"></span><span class="cursor" id="speech-cursor"></span>
+      </div>
+    </div>
+
+    <!-- Task card -->
+    <div class="task-card" id="task-card" data-type="anki">
+      <div class="week-label" id="task-week-label">Woche 1</div>
+      <div class="task-header">
+        <div class="task-type-badge" id="task-badge">
+          <span class="icon" id="task-icon">🃏</span>
+          <span id="task-type-label">Anki</span>
+        </div>
+        <div class="task-duration" id="task-duration">⏱ 20 min</div>
+      </div>
+      <h2 class="task-title" id="task-title">Lade Aufgabe…</h2>
+      <p class="task-instruction" id="task-instruction"></p>
+
+      <div id="resource-links"></div>
+
+      <button class="done-btn" id="done-btn" disabled>
+        ✓ Erledigt — Nächste Aufgabe
+      </button>
+      <p class="done-btn-hint" id="done-hint">Öffne zuerst die Ressource oben.</p>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-section">
+      <div class="task-dots" id="task-dots"></div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+      <div class="progress-label" id="progress-label">Aufgabe 1 von 5</div>
+    </div>
+  </div>
+
+  <!-- COMPLETION SCREEN -->
+  <div class="screen" id="completion-screen">
+    <div class="teacher-section" style="justify-content:center;">
+      <div class="teacher-avatar-wrap" style="width:80px;height:100px;" id="completion-avatar">
+        <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;filter:drop-shadow(0 8px 20px rgba(39,201,122,0.4))">
+          <ellipse cx="60" cy="155" rx="32" ry="5" fill="rgba(0,0,0,0.25)"/>
+          <rect x="28" y="100" width="64" height="52" fill="#14143a" rx="8"/>
+          <rect x="48" y="98" width="24" height="16" fill="#e8e8f4" rx="3"/>
+          <polygon points="60,100 54,115 60,148 66,115" fill="#c0392b"/>
+          <rect x="6" y="104" width="26" height="11" fill="#14143a" rx="5" transform="rotate(10 19 109)"/>
+          <rect x="88" y="100" width="28" height="11" fill="#14143a" rx="5" transform="rotate(20 102 105)"/>
+          <ellipse cx="114" cy="108" rx="6" ry="4" fill="#f5d0a0" transform="rotate(20 114 108)"/>
+          <rect x="6" y="114" width="20" height="30" fill="#c0392b" rx="2"/>
+          <line x1="16" y1="114" x2="16" y2="144" stroke="#962d22" stroke-width="1"/>
+          <rect x="48" y="86" width="24" height="20" fill="#f5d0a0" rx="4"/>
+          <circle cx="60" cy="62" r="34" fill="#f5d0a0"/>
+          <path d="M26 54 Q28 22 60 20 Q92 22 94 54 Q90 36 60 34 Q30 36 26 54Z" fill="#2d1b00"/>
+          <rect x="35" y="57" width="18" height="13" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+          <rect x="67" y="57" width="18" height="13" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+          <line x1="53" y1="63" x2="67" y2="63" stroke="#8B6914" stroke-width="2"/>
+          <circle cx="44" cy="63.5" r="4" fill="#0a0a1a"/>
+          <circle cx="76" cy="63.5" r="4" fill="#0a0a1a"/>
+          <circle cx="45.5" cy="62" r="1.5" fill="white"/>
+          <circle cx="77.5" cy="62" r="1.5" fill="white"/>
+          <!-- Happy eyebrows -->
+          <path d="M35 56 Q44 51 53 56" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M67 56 Q76 51 85 56" stroke="#2d1b00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Smile -->
+          <path d="M46 76 Q60 86 74 76" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="speech-bubble" id="completion-speech">
+        <span id="completion-speech-text">Gut gemacht. Ich bin… leicht beeindruckt.</span>
+      </div>
+    </div>
+
+    <div class="completion-screen" style="width:100%;">
+      <div class="completion-emoji">🎓</div>
+      <h2 id="completion-title">Tag abgeschlossen!</h2>
+      <p id="completion-message">Alle Aufgaben für heute erledigt. Morgen geht's weiter.</p>
+      <div class="stats-row">
+        <div class="stat-box">
+          <span class="stat-num" id="stat-streak">0</span>
+          <span class="stat-label">🔥 Streak</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="stat-total">0</span>
+          <span class="stat-label">Aufgaben gesamt</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="stat-day">1</span>
+          <span class="stat-label">von 28 Tagen</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="stat-time-today">0m</span>
+          <span class="stat-label">⏱ Heute</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="stat-time-total">0m</span>
+          <span class="stat-label">⏱ Gesamt</span>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--text3);margin-top:8px;">Die App öffnet sich morgen automatisch mit Tag <span id="next-day-num">2</span>.</p>
+    </div>
+  </div>
+
+  <!-- LOCKED SCREEN -->
+  <div class="screen" id="locked-screen">
+    <div class="locked-screen" style="width:100%;">
+      <div class="locked-icon">🔒</div>
+      <h2>Fertig für heute.</h2>
+      <p>Du hast alles erledigt. Geh schlafen. Wiederhole morgen.</p>
+      <div class="next-day-time" id="next-day-time">Nächste Aufgabe in: --:--:--</div>
+      <div class="stats-row" style="margin-top:20px;">
+        <div class="stat-box">
+          <span class="stat-num" id="locked-streak">0</span>
+          <span class="stat-label">🔥 Streak</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="locked-total">0</span>
+          <span class="stat-label">Aufgaben gesamt</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="locked-time-today">0m</span>
+          <span class="stat-label">⏱ Heute</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" id="locked-time-total">0m</span>
+          <span class="stat-label">⏱ Gesamt</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINISHED ALL 28 DAYS -->
+  <div class="screen" id="finished-screen">
+    <div style="text-align:center;padding:40px 20px;">
+      <div style="font-size:64px;margin-bottom:16px;">🏆</div>
+      <h2 style="font-size:28px;font-weight:900;color:var(--gold);margin-bottom:8px;">28 Tage. Geschafft.</h2>
+      <p style="color:var(--text2);font-size:15px;line-height:1.7;max-width:440px;margin:0 auto 24px;">
+        Ich gebe zu — ich hätte nicht damit gerechnet. Du hast alle 28 Tage durchgehalten.<br/>
+        Dein Deutsch ist jetzt besser. Viel besser. Mach weiter.
+      </p>
+      <button class="start-btn" onclick="location.reload()">Monat 2 starten →</button>
+    </div>
+  </div>
+</div>
+
+<!-- STERN OVERLAY (injected by JS) -->
+<div class="stern-overlay hidden" id="stern-overlay" onclick="window.dismissStern()">
+  <div class="stern-message-box" id="stern-box">
+    <span class="stern-emoji">😤</span>
+    <p id="stern-message-text">Sitz. Du bist noch nicht fertig.</p>
+    <small>Klick irgendwo, um weiterzumachen.</small>
+  </div>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

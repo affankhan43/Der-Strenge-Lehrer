@@ -1,0 +1,200 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Core palette – neon RPG */
+  --bg:       #050510;
+  --bg2:      #0a0a1e;
+  --bg3:      #0f0f2a;
+  --card:     rgba(14,14,40,0.96);
+  --card2:    rgba(20,20,55,0.9);
+  --border:   rgba(138,100,255,0.18);
+  --border2:  rgba(138,100,255,0.32);
+
+  --gold:     #ffd700;
+  --gold2:    #ffaa00;
+  --gold-d:   rgba(255,215,0,0.12);
+  --blue:     #4d9fff;
+  --blue2:    #2979ff;
+  --blue-d:   rgba(77,159,255,0.12);
+  --purple:   #b06aff;
+  --purple2:  #7c3aed;
+  --purple-d: rgba(176,106,255,0.12);
+  --red:      #ff4d6a;
+  --red-d:    rgba(255,77,106,0.12);
+  --green:    #00e676;
+  --green2:   #00c853;
+  --green-d:  rgba(0,230,118,0.12);
+  --cyan:     #00e5ff;
+  --orange:   #ff9800;
+
+  --text:     #eeeeff;
+  --text2:    #8888bb;
+  --text3:    #44446a;
+
+  --r:        16px;
+  --r2:       24px;
+  --shadow:   0 24px 64px rgba(0,0,0,0.7);
+  --glow-gold: 0 0 20px rgba(255,215,0,0.4);
+  --glow-blue: 0 0 20px rgba(77,159,255,0.4);
+  --glow-purple: 0 0 20px rgba(176,106,255,0.4);
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animated space background */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background:
+    radial-gradient(ellipse 120% 60% at 15%  5%,  rgba(77,159,255,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 80%  50% at 85% 90%,  rgba(176,106,255,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 60%  40% at 50% 50%,  rgba(0,229,255,0.04) 0%, transparent 60%);
+  pointer-events: none; z-index: 0;
+  animation: bgDrift 20s ease-in-out infinite alternate;
+}
+
+/* Starfield */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,.5), transparent),
+    radial-gradient(1px 1px at 30% 70%, rgba(255,255,255,.4), transparent),
+    radial-gradient(1px 1px at 55% 30%, rgba(255,255,255,.6), transparent),
+    radial-gradient(1px 1px at 75% 55%, rgba(255,255,255,.3), transparent),
+    radial-gradient(1px 1px at 90% 20%, rgba(255,255,255,.5), transparent),
+    radial-gradient(2px 2px at 20% 90%, rgba(77,159,255,.6), transparent),
+    radial-gradient(2px 2px at 60% 80%, rgba(176,106,255,.5), transparent),
+    radial-gradient(1px 1px at 45% 60%, rgba(255,215,0,.4), transparent),
+    radial-gradient(1px 1px at 80% 40%, rgba(0,230,118,.4), transparent);
+  pointer-events: none; z-index: 0;
+  animation: starTwinkle 4s ease-in-out infinite alternate;
+}
+
+button { cursor: pointer; font-family: inherit; border: none; outline: none; }
+a { color: inherit; text-decoration: none; }
+input, textarea, select { font-family: inherit; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(138,100,255,0.3); border-radius: 4px; }
+
+.sr-only { position: absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+
+/* ── Keyframes ── */
+@keyframes bgDrift     { from{opacity:.8} to{opacity:1} }
+@keyframes starTwinkle { 0%,100%{opacity:.6} 50%{opacity:1} }
+@keyframes fadeUp      { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+@keyframes popIn       { from{opacity:0;transform:scale(0.8)} to{opacity:1;transform:scale(1)} }
+@keyframes shimmer     { to{transform:translateX(100%)} }
+@keyframes breathe     { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-6px) scale(1.02)} }
+@keyframes fireFlick   { 0%,100%{transform:rotate(-10deg) scale(1)} 50%{transform:rotate(10deg) scale(1.15)} }
+@keyframes blink       { 50%{opacity:0} }
+@keyframes pulse       { 0%,100%{box-shadow:0 0 0 0 rgba(255,215,0,.4)} 50%{box-shadow:0 0 0 10px rgba(255,215,0,0)} }
+@keyframes pulsePurple { 0%,100%{box-shadow:0 0 0 0 rgba(176,106,255,.4)} 50%{box-shadow:0 0 0 10px rgba(176,106,255,0)} }
+@keyframes spin        { to{transform:rotate(360deg)} }
+@keyframes confettiFall{ to{transform:translateY(110vh) rotate(900deg);opacity:0} }
+@keyframes xpFloat     { 0%{opacity:0;transform:translate(-50%,-50%) scale(.5)} 40%{opacity:1;transform:translate(-50%,-90px) scale(1.3)} 100%{opacity:0;transform:translate(-50%,-130px) scale(1)} }
+@keyframes levelUp     { 0%{opacity:0;transform:translate(-50%,-50%) scale(.3)} 50%{opacity:1;transform:translate(-50%,-50%) scale(1.1)} 80%{transform:translate(-50%,-50%) scale(.95)} 100%{opacity:0;transform:translate(-50%,-60%) scale(1)} }
+@keyframes neonPulse   { 0%,100%{text-shadow:0 0 8px currentColor} 50%{text-shadow:0 0 20px currentColor, 0 0 40px currentColor} }
+@keyframes scanline    { 0%{top:-100%} 100%{top:200%} }
+@keyframes glitch      { 0%,90%,100%{transform:none} 92%{transform:translate(2px,-1px) skew(1deg)} 94%{transform:translate(-2px,1px) skew(-1deg)} 96%{transform:translate(1px,2px)} }
+@keyframes questAppear { 0%{opacity:0;transform:translateX(-20px) scale(.95)} 100%{opacity:1;transform:translateX(0) scale(1)} }
+@keyframes borderGlow  { 0%,100%{border-color:rgba(138,100,255,0.3)} 50%{border-color:rgba(176,106,255,0.7)} }
+@keyframes xpBarFill   { from{width:0} to{width:var(--xp-pct,60%)} }
+@keyframes floatUp     { 0%{opacity:1;transform:translateY(0)} 100%{opacity:0;transform:translateY(-60px)} }
+@keyframes bounceIn    { 0%{transform:scale(0)} 60%{transform:scale(1.15)} 80%{transform:scale(.9)} 100%{transform:scale(1)} }
+@keyframes shake       { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-8px)} 40%{transform:translateX(8px)} 60%{transform:translateX(-5px)} 80%{transform:translateX(5px)} }
+@keyframes slideRight  { from{transform:translateX(-100%);opacity:0} to{transform:translateX(0);opacity:1} }
+@keyframes radarPing   { 0%{box-shadow:0 0 0 0 rgba(0,230,118,.5)} 100%{box-shadow:0 0 0 20px rgba(0,230,118,0)} }
+
+.anim-fadeUp  { animation: fadeUp .45s cubic-bezier(.34,1.56,.64,1) both; }
+.anim-popIn   { animation: popIn  .35s cubic-bezier(.34,1.56,.64,1) both; }
+.anim-breathe { animation: breathe 4s ease-in-out infinite; }
+.anim-glitch  { animation: glitch 5s steps(1) infinite; }
+.anim-neon    { animation: neonPulse 2s ease-in-out infinite; }
+
+.spinner {
+  width:36px; height:36px;
+  border:3px solid rgba(138,100,255,.2);
+  border-top-color: var(--purple);
+  border-radius:50%;
+  animation: spin .8s linear infinite;
+}
+
+/* ── Game UI elements ── */
+
+/* XP bar component */
+.xp-bar-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,.06);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--purple), var(--blue), var(--cyan));
+  border-radius: 4px;
+  transition: width .8s cubic-bezier(.34,1.56,.64,1);
+  position: relative;
+}
+.xp-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -40%; width: 30%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+  animation: shimmer 2s linear infinite;
+}
+
+/* Level badge */
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, var(--purple2), var(--blue2));
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 900;
+  color: #fff;
+  box-shadow: var(--glow-purple);
+  letter-spacing: .04em;
+}
+
+/* Quest card glow states */
+.quest-card {
+  border-radius: var(--r2);
+  background: var(--card);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.quest-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(138,100,255,.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+.quest-card:hover { transform: translateY(-2px); }
+.quest-card.active { border-color: rgba(255,215,0,.5); box-shadow: 0 0 30px rgba(255,215,0,.1); }
+
+/* Floating damage numbers */
+.float-text {
+  position: fixed;
+  pointer-events: none;
+  font-weight: 900;
+  animation: floatUp .8s ease-out forwards;
+  z-index: 9999;
+  text-shadow: 0 2px 8px rgba(0,0,0,.8);
+}
