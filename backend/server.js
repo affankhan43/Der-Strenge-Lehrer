@@ -8,7 +8,7 @@ const authRouter  = require('./routes/auth');
 const adminRouter = require('./routes/admin');
 
 const app  = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5046;
 
 connectDB();
 
