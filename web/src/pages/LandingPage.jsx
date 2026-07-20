@@ -1,1036 +1,656 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuthStore } from '../store/authStore';
 
-/* ─── tiny util ─────────────────────────────────────────────── */
-function useCounter(target, duration = 1800, trigger) {
-  const [val, setVal] = useState(0);
-  useEffect(() => {
-    if (!trigger) return;
-    let start = null;
-    const step = (ts) => {
-      if (!start) start = ts;
-      const pct = Math.min((ts - start) / duration, 1);
-      setVal(Math.floor(pct * pct * target));
-      if (pct < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }, [trigger]);
-  return val;
-}
-
-const QUOTES = [
-  { de: 'Kein Ausreden.', en: 'No excuses.' },
-  { de: 'Kein Mitleid.', en: 'No sympathy.' },
-  { de: 'Nur Ergebnisse.', en: 'Only results.' },
-  { de: 'Du kannst schlafen, wenn du B2 hast.', en: 'You can sleep when you reach B2.' },
-  { de: 'Ich warte.', en: "I'm waiting." },
-  { de: 'Schlechter Schüler oder schlechte Ausrede?', en: 'Bad student or bad excuse?' },
-];
-
+/* ── data ─────────────────────────────────────────────────────────────── */
 const FEATURES = [
-  {
-    icon: '🎯',
-    title: 'Eine Aufgabe. Kein Chaos.',
-    body: 'No curriculum dump. One task per day, hand-picked. You finish it before you leave.',
-  },
-  {
-    icon: '🔒',
-    title: 'Kein Überspringen.',
-    body: "The Done button is locked until you open the resource. I check. Always.",
-  },
-  {
-    icon: '🔥',
-    title: 'Streak oder Konsequenz.',
-    body: 'Miss a day? You catch up before moving forward. Missed two? I am not impressed.',
-  },
-  {
-    icon: '⚡',
-    title: 'XP, Level, Abzeichen.',
-    body: 'Progress is visible. You earn XP for every task. Levels are a mirror, not a trophy.',
-  },
-  {
-    icon: '🎤',
-    title: 'Ich spreche. Du hörst zu.',
-    body: 'Audio instructions in German, delivered in my voice. You will learn to listen.',
-  },
-  {
-    icon: '📱',
-    title: 'Web & iOS.',
-    body: 'Same experience on desktop and phone. No more excuses about "not having my laptop."',
-  },
+  { icon: '🎯', title: 'Eine Aufgabe. Kein Chaos.', body: 'No curriculum dump. One task per day, hand-picked. You finish it before you leave.' },
+  { icon: '🔒', title: 'Kein Überspringen.', body: 'The Done button is locked until you open the resource. I check. Always.' },
+  { icon: '🔥', title: 'Streak oder Konsequenz.', body: "Miss a day? You catch up before moving forward. Missed two? I am not impressed." },
+  { icon: '⚡', title: 'XP, Level, Abzeichen.', body: 'Progress is visible. You earn XP for every task. Levels are a mirror, not a trophy.' },
+  { icon: '🎤', title: 'Ich spreche. Du hörst zu.', body: 'Audio instructions in German, delivered in my voice. You will learn to listen.' },
+  { icon: '📱', title: 'Web & iOS.', body: 'Same experience on desktop and phone. No more excuses about "not having my laptop."' },
 ];
 
-const DAYS = [
-  { w: 1, label: 'Präsens & Modalverben',   tasks: ['Anki Deck A2', 'Easy German Ep.1', 'DW Nicos Weg', 'Grammatik: haben/sein', 'Shadowing'] },
-  { w: 2, label: 'Perfekt & Dativ',          tasks: ['Perfekt Übung', 'Easy German Ep.7', 'Langsam Nachrichten', 'Dativ Sätze', 'Podcast Shadowing'] },
-  { w: 3, label: 'Komparativ & Konjunktiv',  tasks: ['Anki Review', 'Jojo Staffel 2', 'DW Artikel', 'Konjunktiv II', 'Roleplay Speaking'] },
-  { w: 4, label: 'Formal & Interview',       tasks: ['Business Vocab', 'Interview Übung', 'Bewerbungsbrief', 'Präsentation', 'Prüfungssim.'] },
+const STREAK_DOTS = Array.from({ length: 28 }, (_, i) => {
+  const green = i < 6, cur = i === 6, filled = green || cur;
+  return {
+    color: green ? '#22e08a' : cur ? '#ffd60a' : 'rgba(148,163,255,0.16)',
+    glow: cur ? '0 0 13px #ffd60a' : green ? '0 0 8px rgba(34,224,138,0.55)' : 'none',
+    anim: filled ? `dotPulse 2s ease-in-out ${(i * 0.13).toFixed(2)}s infinite` : 'none',
+  };
+});
+
+const WEEK_DATA = [
+  { label: 'Woche 1', focus: 'PRÄSENS & MODALVERBEN', tasks: [
+    { icon: '🃏', name: 'Anki Deck A2', xp: '+10 XP' },
+    { icon: '📺', name: 'Easy German Ep.1', xp: '+15 XP' },
+    { icon: '📖', name: 'DW Nicos Weg', xp: '+20 XP' },
+    { icon: '✏️', name: 'Grammatik: haben/sein', xp: '+25 XP' },
+    { icon: '🎤', name: 'Sprechen: Vorstellung', xp: '+20 XP' },
+  ]},
+  { label: 'Woche 2', focus: 'PERFEKT & VERGANGENHEIT', tasks: [
+    { icon: '🃏', name: 'Anki Deck B1', xp: '+10 XP' },
+    { icon: '📺', name: 'Video: Perfekt-Bildung', xp: '+15 XP' },
+    { icon: '📖', name: 'Lesen: Kurzgeschichte', xp: '+20 XP' },
+    { icon: '✏️', name: 'Grammatik: Perfekt', xp: '+25 XP' },
+    { icon: '🎤', name: 'Sprechen: Mein Tag', xp: '+20 XP' },
+  ]},
+  { label: 'Woche 3', focus: 'DATIV & AKKUSATIV', tasks: [
+    { icon: '🃏', name: 'Anki Wechselpräpositionen', xp: '+10 XP' },
+    { icon: '📺', name: 'Video: Dativ vs. Akkusativ', xp: '+15 XP' },
+    { icon: '📖', name: 'DW Jojo sucht das Glück', xp: '+20 XP' },
+    { icon: '✏️', name: 'Grammatik: Kasus-Drill', xp: '+25 XP' },
+    { icon: '🎤', name: 'Sprechen: Wegbeschreibung', xp: '+20 XP' },
+  ]},
+  { label: 'Woche 4', focus: 'KONJUNKTIV & B2-FINALE', tasks: [
+    { icon: '🃏', name: 'Anki Deck B2', xp: '+10 XP' },
+    { icon: '📺', name: 'Video: Konjunktiv II', xp: '+15 XP' },
+    { icon: '📖', name: 'Lesen: Zeitungsartikel', xp: '+20 XP' },
+    { icon: '✏️', name: 'Grammatik: Passiv', xp: '+25 XP' },
+    { icon: '🎤', name: 'Sprechen: Debatte B2', xp: '+20 XP' },
+  ]},
 ];
 
-const TICKER_WORDS = [
-  'Grammatik','Sprechen','Hören','Lesen','Schreiben','Perfekt','Dativ','Modalverben',
-  'Konjunktiv','Nominativ','Akkusativ','Vokabeln','Aussprache','Shadowing','B2','A2→B2',
+const STATS = [
+  { display: '140', label: 'Aufgaben', sub: 'across 28 days', target: 140, suffix: '' },
+  { display: '87.400', label: 'Lernminuten', sub: 'logged so far', target: 87400, suffix: '' },
+  { display: '2.847+', label: 'Schüler', sub: 'currently learning', target: 2847, suffix: '+' },
+  { display: '28', label: 'Max Streak', sub: 'days in a row', target: 28, suffix: '' },
 ];
 
+const COMPARISON = [
+  { label: 'Tempo', others: 'Du entscheidest. Irgendwann.', ours: 'Ich entscheide. Heute.' },
+  { label: 'Fehler', others: 'Wir sagen lieber nichts.', ours: 'Ich korrigiere jeden einzelnen.' },
+  { label: 'Motivation', others: 'Konfetti und niedliche Badges.', ours: 'Fortschritt oder Konsequenz.' },
+  { label: 'Tag verpasst', others: 'Kein Problem, mach weiter!', ours: 'Erst nachholen. Dann weiter.' },
+  { label: 'Ergebnis', others: 'Vielleicht A2. Vielleicht.', ours: 'B2. In 28 Tagen.' },
+];
+
+const TIMELINE = [
+  { day: 'Tag 01', title: 'Der Schock', level: 'A2', desc: 'Kein Aufwärmen. Wir starten sofort mit Präsens und Modalverben.', color: '#a855f7' },
+  { day: 'Tag 07', title: 'Erste Streak', level: 'A2+', desc: 'Sieben Tage in Folge. Die Modalverben sitzen. Kein Zurück mehr.', color: '#6366f1' },
+  { day: 'Tag 14', title: 'Halbzeit', level: 'B1', desc: 'Perfekt und Dativ. Du denkst zum ersten Mal auf Deutsch.', color: '#22d3ee' },
+  { day: 'Tag 21', title: 'Der Druck', level: 'B1+', desc: 'Konjunktiv. Die Woche, in der die meisten aufgeben. Du nicht.', color: '#4d9fff' },
+  { day: 'Tag 28', title: 'B2.', level: 'B2', desc: 'Du sprichst. Ich nicke. Einmal. Das ist mein höchstes Lob.', color: '#ffd60a' },
+];
+
+const EXCUSES = [
+  { q: '„Ich habe keine Zeit."', a: 'Fünf Aufgaben. Fünfzehn Minuten. Du hast Zeit für dein Handy — du hast Zeit für Deutsch.' },
+  { q: '„Ich bin kein Sprachtalent."', a: 'Talent ist eine Ausrede. Wiederholung ist eine Methode. Wir machen Methode.' },
+  { q: '„Was, wenn ich einen Tag verpasse?"', a: 'Dann holst du ihn nach. Vor der nächsten Aufgabe. Es gibt kein Überspringen.' },
+  { q: '„Ist das nicht zu hart?"', a: 'Nett hat dich auf A2 gebracht. Streng bringt dich auf B2. Entscheide dich.' },
+  { q: '„Kostet das etwas?"', a: 'Der Anfang ist kostenlos. Deine Ausreden kosten dich nur Zeit.' },
+];
+
+const TESTIMONIALS = [
+  { name: 'L. Rossi', initials: 'LR', tag: 'A2 → B2 in 26 Tagen', quote: 'Ich habe ihn gehasst. An Tag 28 habe ich ihm gedankt.', color: '#a855f7' },
+  { name: 'M. Okafor', initials: 'MO', tag: '34 Tage Streak', quote: 'Kein anderes System hat mich zum Reden gebracht. Dieses schon.', color: '#22d3ee' },
+  { name: 'S. Kim', initials: 'SK', tag: 'Bestanden: telc B2', quote: 'Unbequem von Tag eins. Genau deshalb hat es funktioniert.', color: '#ffd60a' },
+];
+
+const XP_CHIPS = [
+  { color: '#c084fc', bg: 'rgba(168,85,247,0.08)', border: 'rgba(168,85,247,0.3)', name: 'Anki', xp: '+10 XP', delay: '0s' },
+  { color: '#34d399', bg: 'rgba(34,224,138,0.08)', border: 'rgba(34,224,138,0.3)', name: 'Video', xp: '+15 XP', delay: '.5s' },
+  { color: '#ffd60a', bg: 'rgba(255,214,10,0.07)', border: 'rgba(255,214,10,0.3)', name: 'Lesen', xp: '+20 XP', delay: '.8s' },
+  { color: '#22d3ee', bg: 'rgba(34,211,238,0.08)', border: 'rgba(34,211,238,0.3)', name: 'Grammatik', xp: '+25 XP', delay: '1.1s' },
+];
+
+const GATE_TASKS = [
+  { icon: '📺', name: 'Easy German Ep.42', xp: '+15 XP', done: true, color: '#22d3ee', locked: false },
+  { icon: '📖', name: 'Artikel: Dativ-Kasus', xp: '+20 XP', done: true, color: '#ffd60a', locked: false },
+  { icon: '🔒', name: 'Grammatik-Übung', xp: '+25 XP', done: false, color: '#6b7396', locked: true },
+  { icon: '🔒', name: 'Sprechen: Meinungen', xp: '+20 XP', done: false, color: '#6b7396', locked: true },
+];
+
+/* ── component ─────────────────────────────────────────────────────────── */
 export default function LandingPage() {
-  const navigate  = useNavigate();
-  const canvasRef = useRef(null);
-  const statsRef  = useRef(null);
-  const [statsVis, setStatsVis] = useState(false);
-  const [quoteIdx, setQuoteIdx] = useState(0);
-  const [xpDemo,  setXpDemo]   = useState(0);
-  const [activeW, setActiveW]  = useState(0);
+  const { user } = useAuthStore();
+  const navigate = useNavigate();
+  const [week, setWeek] = useState(0);
+  const [openFaq, setOpenFaq] = useState(0);
 
-  const tasks   = useCounter(140, 1600, statsVis);
-  const minutes = useCounter(87400, 2200, statsVis);
-  const users   = useCounter(2847, 1800, statsVis);
-  const streak  = useCounter(28, 1000, statsVis);
-
-  /* canvas starfield */
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    let raf;
-    const resize = () => {
-      canvas.width  = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-    };
-    resize();
-    window.addEventListener('resize', resize);
+    const id = 'sora-font-link';
+    if (!document.getElementById(id)) {
+      const link = document.createElement('link');
+      link.id = id;
+      link.rel = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap';
+      document.head.appendChild(link);
+    }
+  }, []);
 
-    const stars = Array.from({ length: 220 }, () => ({
-      x: Math.random(), y: Math.random(),
-      r: Math.random() * 1.4 + 0.2,
-      s: Math.random() * 0.4 + 0.1,
-      o: Math.random(),
-      dir: Math.random() > 0.5 ? 1 : -1,
-    }));
-    const grid = Array.from({ length: 30 }, (_, i) => i);
-
-    const draw = () => {
-      const w = canvas.width, h = canvas.height;
-      ctx.clearRect(0, 0, w, h);
-
-      /* subtle grid */
-      ctx.strokeStyle = 'rgba(138,100,255,0.04)';
-      ctx.lineWidth   = 1;
-      const sz = 80;
-      for (let x = 0; x < w + sz; x += sz) {
-        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
-      }
-      for (let y = 0; y < h + sz; y += sz) {
-        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
-      }
-
-      /* stars */
-      stars.forEach(s => {
-        s.o += 0.005 * s.dir;
-        if (s.o > 1 || s.o < 0) s.dir *= -1;
-        ctx.beginPath();
-        ctx.arc(s.x * w, s.y * h, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(200,200,255,${s.o * 0.8})`;
-        ctx.fill();
+  useEffect(() => {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'none';
+          io.unobserve(e.target);
+        }
       });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
 
-      raf = requestAnimationFrame(draw);
-    };
-    draw();
-    return () => { cancelAnimationFrame(raf); window.removeEventListener('resize', resize); };
+    const co = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        co.unobserve(el);
+        const target = parseInt(el.dataset.countTarget, 10);
+        const suffix = el.dataset.countSuffix || '';
+        const dur = 1400, start = performance.now();
+        const fmt = (n) => n.toLocaleString('de-DE');
+        const tick = (now) => {
+          const p = Math.min((now - start) / dur, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = fmt(Math.round(target * eased)) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-count-target]').forEach((el) => co.observe(el));
+
+    return () => { io.disconnect(); co.disconnect(); };
   }, []);
 
-  /* quote rotation */
-  useEffect(() => {
-    const id = setInterval(() => setQuoteIdx(i => (i + 1) % QUOTES.length), 3200);
-    return () => clearInterval(id);
-  }, []);
-
-  /* xp demo */
-  useEffect(() => {
-    const id = setInterval(() => setXpDemo(x => x >= 100 ? 0 : x + 1), 60);
-    return () => clearInterval(id);
-  }, []);
-
-  /* stats intersection */
-  useEffect(() => {
-    const el = statsRef.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setStatsVis(true); }, { threshold: 0.3 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
+  const handleCTA = () => navigate(user ? '/app' : '/login');
+  const ctaLabel = user ? 'Zum Dashboard →' : 'Loslegen — Kostenlos';
 
   return (
-    <div style={styles.root}>
-      <style>{css}</style>
-
-      {/* ── NAV ─────────────────────────────────────────────── */}
-      <nav style={styles.nav}>
-        <div style={styles.navLogo}>
-          <span style={styles.navDot}/>
-          <span>Der <strong style={{ color: '#ffd700' }}>Strenge</strong> Lehrer</span>
-        </div>
-        <div style={styles.navRight}>
-          <a href="#method" style={styles.navLink}>Methode</a>
-          <a href="#journey" style={styles.navLink}>28 Tage</a>
-          <button className="nav-btn-ghost" onClick={() => navigate('/login')}>Anmelden</button>
-          <button className="nav-btn-gold" onClick={() => navigate('/login')}>Jetzt beginnen</button>
-        </div>
-      </nav>
-
-      {/* ── HERO ────────────────────────────────────────────── */}
-      <section style={styles.hero}>
-        <canvas ref={canvasRef} style={styles.canvas}/>
-        <div style={styles.heroInner}>
-          {/* teacher SVG */}
-          <div style={styles.teacherWrap} className="hero-teacher">
-            <TeacherSVG/>
-          </div>
-
-          <div style={styles.heroText}>
-            <div style={styles.eyebrow}>
-              <span style={styles.eyebrowDot}/>
-              A2 → B2 · 28 Tage · 140 Aufgaben
-            </div>
-            <h1 style={styles.h1}>
-              <span className="headline-line">KEIN</span>
-              <span className="headline-line gold">AUSREDEN.</span>
-              <span className="headline-line">NUR DEUTSCH.</span>
-            </h1>
-            <p style={styles.heroSub}>
-              I am not your tutor. I am not your friend.<br/>
-              I am the teacher who will get you to B2 in 28 days —<br/>
-              <em>whether you feel like it today or not.</em>
-            </p>
-            <div style={styles.heroCtas}>
-              <button className="cta-gold" onClick={() => navigate('/login')}>
-                Loslegen — Kostenlos
-              </button>
-              <a href="#journey" style={styles.ctaGhost}>Wie es funktioniert ↓</a>
-            </div>
-            <div style={styles.heroMeta}>
-              <span className="meta-pill">🔥 Streak-System</span>
-              <span className="meta-pill">⚡ XP & Level</span>
-              <span className="meta-pill">📱 iOS App</span>
-              <span className="meta-pill">🎤 Audio</span>
-            </div>
-          </div>
-        </div>
-
-        {/* quote ticker */}
-        <div style={styles.quoteStrip}>
-          <div className="quote-inner">
-            {QUOTES.map((q, i) => (
-              <span key={i} style={styles.quoteTick}>
-                <span style={{ color: '#ffd700' }}>„{q.de}"</span>
-                <span style={{ color: '#44446a', margin: '0 28px' }}>—</span>
-                <span style={{ color: '#7a7a9e', fontStyle: 'italic' }}>{q.en}</span>
-              </span>
-            ))}
-            {QUOTES.map((q, i) => (
-              <span key={`r${i}`} style={styles.quoteTick}>
-                <span style={{ color: '#ffd700' }}>„{q.de}"</span>
-                <span style={{ color: '#44446a', margin: '0 28px' }}>—</span>
-                <span style={{ color: '#7a7a9e', fontStyle: 'italic' }}>{q.en}</span>
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── WORD TICKER ─────────────────────────────────────── */}
-      <div style={styles.ticker}>
-        <div className="ticker-inner">
-          {[...TICKER_WORDS, ...TICKER_WORDS].map((w, i) => (
-            <span key={i} style={styles.tickerWord}>
-              {w} <span style={{ color: '#b06aff', margin: '0 16px' }}>·</span>
-            </span>
-          ))}
+    <>
+      <style>{CSS}</style>
+      <div className="lp-root">
+        <BG />
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <Nav user={user} onCTA={handleCTA} />
+          <Hero ctaLabel={ctaLabel} onCTA={handleCTA} />
+          <Marquee />
+          <Methode />
+          <Vergleich />
+          <Gamification />
+          <Journey week={week} setWeek={setWeek} />
+          <StatsSection />
+          <Faq openFaq={openFaq} setOpenFaq={setOpenFaq} />
+          <Testimonials />
+          <FinalCTA ctaLabel={ctaLabel} onCTA={handleCTA} />
+          <Footer />
         </div>
       </div>
+    </>
+  );
+}
 
-      {/* ── METHOD ──────────────────────────────────────────── */}
-      <section id="method" style={styles.section}>
-        <div style={styles.container}>
-          <div style={styles.sectionHead}>
-            <div style={styles.sectionEye}>METHODE</div>
-            <h2 style={styles.h2}>
-              Warum so streng?<br/>
-              <span style={{ color: '#b06aff' }}>Weil nett nicht funktioniert.</span>
-            </h2>
-            <p style={styles.sectionSub}>
-              Every language app makes learning comfortable. That is precisely why they fail.
-              Comfort is the enemy of fluency. This is the uncomfortable truth.
-            </p>
-          </div>
+/* ── sub-components ─────────────────────────────────────────────────────── */
 
-          <div style={styles.featureGrid}>
-            {FEATURES.map((f, i) => (
-              <div key={i} className="feature-card" style={{ animationDelay: `${i * 0.08}s` }}>
-                <div style={styles.featureIcon}>{f.icon}</div>
-                <h3 style={styles.featureTitle}>{f.title}</h3>
-                <p style={styles.featureBody}>{f.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── GAME MECHANICS ──────────────────────────────────── */}
-      <section style={{ ...styles.section, background: 'rgba(14,14,40,0.6)' }}>
-        <div style={styles.container}>
-          <div style={styles.sectionHead}>
-            <div style={styles.sectionEye}>GAMIFICATION</div>
-            <h2 style={styles.h2}>Lernen wie ein Spiel.<br/><span style={{ color: '#ffd700' }}>Fühlen wie Arbeit.</span></h2>
-          </div>
-
-          <div style={styles.mechanicsGrid}>
-            {/* XP demo */}
-            <div style={styles.mechCard}>
-              <div style={styles.mechLabel}>XP & LEVEL</div>
-              <div style={styles.xpLevel}>
-                <div style={styles.levelBadge}>Lv.{Math.floor(xpDemo / 20) + 1}</div>
-                <div style={{ flex: 1 }}>
-                  <div style={styles.xpBarTrack}>
-                    <div className="xp-fill-demo" style={{ width: `${xpDemo % 20 * 5}%` }}/>
-                  </div>
-                  <div style={styles.xpCaption}>{xpDemo * 5} / 2000 XP</div>
-                </div>
-              </div>
-              <div style={styles.xpTaskRow}>
-                {[
-                  { t: 'Anki', xp: '+10 XP', c: '#b06aff' },
-                  { t: 'Video', xp: '+15 XP', c: '#00e676' },
-                  { t: 'Lesen', xp: '+20 XP', c: '#ffd700' },
-                  { t: 'Grammatik', xp: '+25 XP', c: '#4d9fff' },
-                  { t: 'Sprechen', xp: '+20 XP', c: '#ff4d6a' },
-                ].map(x => (
-                  <div key={x.t} style={{ ...styles.xpChip, borderColor: x.c + '44', color: x.c }}>
-                    <span style={{ fontSize: 11, fontWeight: 700 }}>{x.t}</span>
-                    <span style={{ fontSize: 13, fontWeight: 900 }}>{x.xp}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Streak */}
-            <div style={styles.mechCard}>
-              <div style={styles.mechLabel}>STREAK SYSTEM</div>
-              <div style={styles.streakDisplay}>
-                <div style={styles.streakNum}>🔥 {7}</div>
-                <div style={styles.streakSub}>Tage in Folge</div>
-              </div>
-              <div style={styles.streakDots}>
-                {Array.from({ length: 28 }, (_, i) => (
-                  <div key={i} className={`streak-dot ${i < 7 ? 'done' : i === 7 ? 'today' : ''}`}/>
-                ))}
-              </div>
-              <p style={styles.mechNote}>Miss a day? You catch up first. No shortcuts.</p>
-            </div>
-
-            {/* Task gating */}
-            <div style={styles.mechCard}>
-              <div style={styles.mechLabel}>TASK GATING</div>
-              <div style={styles.gateDemo}>
-                <div style={styles.gateStep}>
-                  <div style={styles.gateNum}>1</div>
-                  <div>
-                    <div style={styles.gateTitle}>Aufgabe lesen</div>
-                    <div style={styles.gateSub}>Ich erkläre. Du hörst zu.</div>
-                  </div>
-                </div>
-                <div style={styles.gateLine}/>
-                <div style={styles.gateStep}>
-                  <div style={styles.gateNum}>2</div>
-                  <div>
-                    <div style={styles.gateTitle}>Ressource öffnen</div>
-                    <div style={styles.gateSub}>Link klicken. Pflicht, nicht optional.</div>
-                  </div>
-                </div>
-                <div style={styles.gateLine}/>
-                <div style={styles.gateStep}>
-                  <div style={{ ...styles.gateNum, background: 'linear-gradient(135deg,#ffd700,#ff9800)', color: '#000' }}>3</div>
-                  <div>
-                    <div style={styles.gateTitle}>„Erledigt" freischalten</div>
-                    <div style={styles.gateSub}>Button entsperrt. Nächste Aufgabe.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 28-DAY JOURNEY ──────────────────────────────────── */}
-      <section id="journey" style={styles.section}>
-        <div style={styles.container}>
-          <div style={styles.sectionHead}>
-            <div style={styles.sectionEye}>28 TAGE</div>
-            <h2 style={styles.h2}>Vier Wochen.<br/><span style={{ color: '#4d9fff' }}>Vier Schlachten.</span></h2>
-            <p style={styles.sectionSub}>
-              Each week targets a grammar system. Five tasks per day.
-              By day 28, you are not the same student you were on day one.
-            </p>
-          </div>
-
-          <div style={styles.weekTabs}>
-            {DAYS.map((w, i) => (
-              <button
-                key={i}
-                className={`week-tab ${activeW === i ? 'active' : ''}`}
-                onClick={() => setActiveW(i)}
-              >
-                Woche {w.w}
-              </button>
-            ))}
-          </div>
-
-          <div style={styles.weekContent}>
-            <div style={styles.weekLabel}>{DAYS[activeW].label}</div>
-            <div style={styles.weekTaskGrid}>
-              {DAYS[activeW].tasks.map((t, i) => (
-                <div key={i} className="week-task">
-                  <span style={{ color: ['#b06aff','#00e676','#ffd700','#4d9fff','#ff4d6a'][i], fontSize: 18 }}>
-                    {['🃏','📺','📖','✏️','🎤'][i]}
-                  </span>
-                  <span style={{ flex: 1, fontSize: 14, color: '#eeeeff' }}>{t}</span>
-                  <span style={{ fontSize: 11, color: '#44446a' }}>
-                    +{[10,15,20,25,20][i]} XP
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div style={styles.weekProgress}>
-              {Array.from({ length: 7 }, (_, d) => (
-                <div key={d} style={styles.dayCell} className={d < 3 ? 'day-done' : d === 3 ? 'day-today' : ''}>
-                  <div style={styles.dayNum2}>Tag {(activeW * 7) + d + 1}</div>
-                  <div style={styles.dayBar} className={d < 3 ? 'bar-done' : d === 3 ? 'bar-active' : ''}/>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── TEACHER QUOTE ───────────────────────────────────── */}
-      <section style={{ ...styles.section, padding: '60px 0', overflow: 'hidden' }}>
-        <div style={styles.quoteBlock}>
-          <div style={styles.quoteAvatar}><TeacherSVGSmall/></div>
-          <div style={styles.quoteBig}>
-            <div className="quote-cycle" key={quoteIdx}>
-              „{QUOTES[quoteIdx].de}"
-            </div>
-            <div style={styles.quoteTrans}>{QUOTES[quoteIdx].en}</div>
-            <div style={styles.quoteSource}>— Der Strenge Lehrer</div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── STATS ───────────────────────────────────────────── */}
-      <section style={{ ...styles.section, background: 'rgba(14,14,40,0.6)' }} ref={statsRef}>
-        <div style={styles.container}>
-          <div style={styles.sectionHead}>
-            <div style={styles.sectionEye}>ZAHLEN</div>
-            <h2 style={styles.h2}>Die Zahlen lügen nicht.</h2>
-          </div>
-          <div style={styles.statsGrid}>
-            {[
-              { n: tasks,   suf: '',  label: 'Aufgaben',       note: 'across 28 days' },
-              { n: minutes, suf: '',  label: 'Lernminuten',    note: 'logged so far' },
-              { n: users,   suf: '+', label: 'Schüler',        note: 'currently learning' },
-              { n: streak,  suf: '',  label: 'Max Streak',     note: 'days in a row' },
-            ].map(({ n, suf, label, note }) => (
-              <div key={label} style={styles.statCell}>
-                <div style={styles.statNum}>{n.toLocaleString('de-DE')}{suf}</div>
-                <div style={styles.statLabel}>{label}</div>
-                <div style={styles.statNote}>{note}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── FINAL CTA ───────────────────────────────────────── */}
-      <section style={styles.ctaSection}>
-        <canvas style={{ ...styles.canvas, opacity: 0.4 }}/>
-        <div style={styles.ctaInner}>
-          <div style={styles.ctaEye}>BEREIT?</div>
-          <h2 style={styles.ctaBig}>
-            Tag 1 wartet.<br/>
-            <span style={{ color: '#ffd700' }}>Du auch?</span>
-          </h2>
-          <p style={styles.ctaSub}>
-            Free to start. No credit card. Just German.<br/>
-            The teacher is already disappointed — prove him wrong.
-          </p>
-          <button className="cta-gold cta-large" onClick={() => navigate('/login')}>
-            Jetzt beginnen — Kostenlos
-          </button>
-          <div style={styles.ctaMeta}>
-            28 Tage · 140 Aufgaben · A2 → B2
-          </div>
-        </div>
-      </section>
-
-      {/* ── FOOTER ──────────────────────────────────────────── */}
-      <footer style={styles.footer}>
-        <div style={styles.footerInner}>
-          <div style={styles.footerLogo}>
-            Der <strong style={{ color: '#ffd700' }}>Strenge</strong> Lehrer
-          </div>
-          <div style={styles.footerLinks}>
-            <button onClick={() => navigate('/login')} style={styles.footerLink}>Anmelden</button>
-            <a href="https://github.com" style={styles.footerLink}>Open Source</a>
-            <span style={styles.footerLink}>MIT Lizenz</span>
-          </div>
-          <div style={styles.footerNote}>
-            „Schlechte Schüler gibt es nicht — nur schlechte Ausreden."
-          </div>
-        </div>
-      </footer>
+function BG() {
+  return (
+    <div style={{ position: 'fixed', inset: 0, zIndex: 0, overflow: 'hidden', background: 'radial-gradient(120% 90% at 50% -10%, #10131f 0%, #060811 45%, #04050a 100%)' }}>
+      <div style={{ position: 'absolute', width: '55vw', height: '55vw', left: '-10vw', top: '-8vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(124,58,237,0.28), transparent 62%)', filter: 'blur(30px)', animation: 'floatA 20s ease-in-out infinite' }} />
+      <div style={{ position: 'absolute', width: '48vw', height: '48vw', right: '-8vw', top: '12vh', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,10,0.14), transparent 62%)', filter: 'blur(30px)', animation: 'floatB 26s ease-in-out infinite' }} />
+      <div style={{ position: 'absolute', width: '44vw', height: '44vw', left: '22vw', bottom: '-12vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(34,211,238,0.16), transparent 62%)', filter: 'blur(34px)', animation: 'floatC 30s ease-in-out infinite' }} />
+      <div style={{ position: 'absolute', inset: '-20%', backgroundImage: 'linear-gradient(rgba(148,163,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,255,0.06) 1px, transparent 1px)', backgroundSize: '120px 120px', animation: 'gridPan 16s linear infinite', WebkitMaskImage: 'radial-gradient(120% 80% at 50% 20%, #000 0%, transparent 78%)', maskImage: 'radial-gradient(120% 80% at 50% 20%, #000 0%, transparent 78%)' }} />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(1.4px 1.4px at 20% 30%, #fff, transparent), radial-gradient(1.2px 1.2px at 70% 60%, #cdd6ff, transparent), radial-gradient(1px 1px at 40% 80%, #fff, transparent), radial-gradient(1.5px 1.5px at 85% 20%, #fff, transparent)', backgroundSize: '100% 100%', opacity: 0.7, animation: 'twinkle 5s ease-in-out infinite' }} />
+      <div style={{ position: 'absolute', width: '100%', height: 3, top: 0, background: 'linear-gradient(90deg, transparent, rgba(34,211,238,0.35), transparent)', filter: 'blur(1px)', animation: 'scan 9s linear infinite' }} />
     </div>
   );
 }
 
-/* ─── Teacher SVG ────────────────────────────────────────────── */
+function Nav({ user, onCTA }) {
+  return (
+    <nav style={{ position: 'sticky', top: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '18px 40px', background: 'rgba(6,8,15,0.55)', backdropFilter: 'blur(18px)', WebkitBackdropFilter: 'blur(18px)', borderBottom: '1px solid rgba(148,163,255,0.09)' }}>
+      <a href="#top" style={{ display: 'flex', alignItems: 'center', gap: 12, color: '#fff', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 19, letterSpacing: '-0.01em', textDecoration: 'none' }}>
+        <span style={{ display: 'inline-flex', animation: 'badgeGlow 3s ease-in-out infinite', borderRadius: 12 }}>
+          <LogoSVG size={36} gid="lgNav" />
+        </span>
+        Der <span style={{ color: '#ffd60a', marginLeft: 4 }}>Strenge</span> Lehrer
+      </a>
+      <div className="lp-nav-links">
+        {[['#methode','Methode'],['#gamification','Gamification'],['#journey','28 Tage'],['#cta','Anfangen']].map(([href, label]) => (
+          <a key={href} className="lp-link" href={href} style={{ color: '#9aa2bf', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 15, textDecoration: 'none' }}>{label}</a>
+        ))}
+      </div>
+      <button onClick={onCTA} className="lp-btn-nav">{user ? 'Dashboard' : 'Anmelden'}</button>
+    </nav>
+  );
+}
+
+function Hero({ ctaLabel, onCTA }) {
+  return (
+    <section id="top" className="lp-hero-grid" style={{ position: 'relative', minHeight: '92vh', display: 'grid', gridTemplateColumns: '0.9fr 1.1fr', alignItems: 'center', gap: 20, maxWidth: 1240, margin: '0 auto', padding: '60px 40px 40px' }}>
+      <div className="lp-hero-teacher" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+        <div style={{ position: 'absolute', width: 320, height: 320, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,10,0.22), transparent 65%)', filter: 'blur(20px)', animation: 'glowPulse 4s ease-in-out infinite' }} />
+        <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', border: '1px dashed rgba(255,214,10,0.28)', animation: 'ringSpin 26s linear infinite' }} />
+        <div style={{ position: 'relative', width: 260, height: 300, borderRadius: 28, background: 'linear-gradient(160deg, rgba(20,24,40,0.9), rgba(10,12,22,0.9))', border: '1px solid rgba(148,163,255,0.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 30px 80px -30px rgba(124,58,237,0.5)', animation: 'floatY 6s ease-in-out infinite', overflow: 'hidden' }}>
+          <TeacherSVG />
+          <div style={{ position: 'absolute', bottom: 14, left: '50%', transform: 'translateX(-50%)', fontFamily: "'Space Grotesk',sans-serif", fontSize: 11, letterSpacing: '0.22em', color: '#7c86a8', whiteSpace: 'nowrap' }}>DER STRENGE LEHRER</div>
+        </div>
+      </div>
+      <div>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '9px 16px', border: '1px solid rgba(148,163,255,0.18)', borderRadius: 999, background: 'rgba(10,13,24,0.5)', fontFamily: "'Space Grotesk',sans-serif", fontSize: 13, letterSpacing: '0.14em', color: '#cfd5ea', marginBottom: 26 }}>
+          <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#22e08a', boxShadow: '0 0 10px #22e08a', animation: 'glowPulse 2s ease-in-out infinite' }} />
+          A2 → B2 · 28 TAGE · 140 AUFGABEN
+        </div>
+        <h1 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(56px, 8vw, 118px)', lineHeight: 0.88, letterSpacing: '-0.035em', margin: 0, textTransform: 'uppercase' }}>
+          <span style={{ display: 'block', background: 'linear-gradient(100deg, #c9cede, #ffffff 45%, #c9cede)', backgroundSize: '220% auto', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', animation: 'heroIn .85s cubic-bezier(.2,.8,.2,1) .1s both, sheen 6s linear infinite' }}>Kein</span>
+          <span style={{ display: 'block', background: 'linear-gradient(100deg, #ffe66b, #ffb300, #ffd60a)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', animation: 'heroIn .85s cubic-bezier(.2,.8,.2,1) .28s both, sheen 5s linear infinite, yellowThrob 3.5s ease-in-out infinite' }}>Ausreden.</span>
+          <span style={{ display: 'block', background: 'linear-gradient(100deg, #c9cede, #ffffff 45%, #c9cede)', backgroundSize: '220% auto', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', animation: 'heroIn .85s cubic-bezier(.2,.8,.2,1) .46s both, sheen 6s linear infinite .8s' }}>Nur Deutsch.</span>
+        </h1>
+        <p style={{ maxWidth: 480, margin: '30px 0 0', fontSize: 19, lineHeight: 1.55, color: '#aeb6d0' }}>
+          I am not your tutor. I am not your friend.<br />
+          I am the teacher who will get you to B2 in 28 days —{' '}
+          <span style={{ fontStyle: 'italic', color: '#cfd5ea' }}>whether you feel like it today or not.</span>
+        </p>
+        <div className="lp-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 22, marginTop: 36, flexWrap: 'wrap' }}>
+          <button className="lp-btn-gold lp-hover-lift" onClick={onCTA} style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 18, color: '#06070c', padding: '17px 34px', borderRadius: 16, background: 'linear-gradient(135deg, #ffe66b, #ffb300)', boxShadow: '0 16px 44px -10px rgba(255,179,0,0.65)', border: 'none', cursor: 'pointer' }}>
+            {ctaLabel}
+          </button>
+          <a className="lp-link-ghost" href="#methode" style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 17, color: '#eef0f7', textDecoration: 'none' }}>Wie es funktioniert ↓</a>
+        </div>
+        <div className="lp-hero-chips" style={{ display: 'flex', gap: 12, marginTop: 34, flexWrap: 'wrap' }}>
+          {['🔥 Streak-System', '⚡ XP & Level', '📱 iOS App', '🎤 Audio'].map((chip) => (
+            <span key={chip} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '9px 16px', borderRadius: 999, border: '1px solid rgba(148,163,255,0.16)', background: 'rgba(10,13,24,0.5)', fontSize: 14, color: '#cfd5ea' }}>{chip}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Marquee() {
+  const txt = 'Schreiben • Perfekt • Dativ • Modalverben • Konjunktiv • Nominativ • Akkusativ • Vokabeln • Aussprache • Shadowing • B2 • A2→B2 • Grammatik • ';
+  return (
+    <div style={{ position: 'relative', padding: '20px 0', borderTop: '1px solid rgba(148,163,255,0.09)', borderBottom: '1px solid rgba(148,163,255,0.09)', background: 'rgba(8,10,20,0.4)', overflow: 'hidden', WebkitMaskImage: 'linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)', maskImage: 'linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)' }}>
+      <div style={{ display: 'flex', width: 'max-content', gap: 46, animation: 'marquee 26s linear infinite', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 20, letterSpacing: '0.08em', color: '#6b7396', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
+        <span>{txt}</span><span>{txt}</span>
+      </div>
+    </div>
+  );
+}
+
+function Methode() {
+  return (
+    <section id="methode" style={{ maxWidth: 1240, margin: '0 auto', padding: '120px 40px 60px' }}>
+      <div style={{ textAlign: 'center', marginBottom: 70 }}>
+        <div data-reveal="" style={revealStyle()}>METHODE</div>
+        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,68px)', lineHeight: 1.02, letterSpacing: '-0.03em', margin: 0 })}>
+          Warum so streng?<br /><span style={{ color: '#a78bfa' }}>Weil nett nicht funktioniert.</span>
+        </h2>
+        <p data-reveal="" style={revealStyle('delay:.16s', { maxWidth: 640, margin: '26px auto 0', fontSize: 19, lineHeight: 1.6, color: '#aeb6d0' })}>
+          Every language app makes learning comfortable. That is precisely why they fail. Comfort is the enemy of fluency. This is the uncomfortable truth.
+        </p>
+      </div>
+      <div className="lp-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 22 }}>
+        {FEATURES.map((f) => (
+          <div key={f.title} className="lp-card-feat lp-hover-feat" data-reveal="" style={revealStyle('', { position: 'relative', padding: '34px 30px', borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)', overflow: 'hidden' })}>
+            <div style={{ position: 'absolute', top: -40, right: -40, width: 120, height: 120, borderRadius: '50%', background: 'radial-gradient(circle,rgba(167,139,250,0.18),transparent 70%)', filter: 'blur(6px)' }} />
+            <div style={{ fontSize: 40, marginBottom: 20, filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.5))', display: 'inline-block', animation: 'floatIcon 5s ease-in-out infinite' }}>{f.icon}</div>
+            <h3 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 23, margin: '0 0 12px', color: '#f4f6ff' }}>{f.title}</h3>
+            <p style={{ margin: 0, fontSize: 16, lineHeight: 1.6, color: '#9aa2bf' }}>{f.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Vergleich() {
+  return (
+    <section style={{ maxWidth: 1120, margin: '0 auto', padding: '90px 40px 60px' }}>
+      <div style={{ textAlign: 'center', marginBottom: 56 }}>
+        <div data-reveal="" style={revealStyle()}>VERGLEICH</div>
+        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,66px)', letterSpacing: '-0.03em', margin: 0 })}>
+          Nett vs. <span style={{ color: '#ffd60a' }}>Streng.</span>
+        </h2>
+      </div>
+      <div data-reveal="" className="lp-comp-grid" style={{ ...revealStyle(), display: 'grid', gridTemplateColumns: '1fr 1.1fr 1.1fr', borderRadius: 22, overflow: 'hidden', border: '1px solid rgba(148,163,255,0.12)' }}>
+        <div style={{ padding: '22px 26px', background: 'rgba(10,13,24,0.6)' }} />
+        <div style={{ padding: '22px 26px', background: 'rgba(10,13,24,0.6)', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 17, color: '#7c86a8', textAlign: 'center' }}>Andere Apps</div>
+        <div style={{ padding: '22px 26px', background: 'linear-gradient(180deg,rgba(255,214,10,0.14),rgba(255,214,10,0.04))', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 17, color: '#ffd60a', textAlign: 'center', borderLeft: '1px solid rgba(255,214,10,0.25)', borderRight: '1px solid rgba(255,214,10,0.25)' }}>Der Strenge Lehrer</div>
+        {COMPARISON.map((c) => (
+          <div key={c.label} style={{ display: 'contents' }}>
+            <div style={{ padding: '22px 26px', borderTop: '1px solid rgba(148,163,255,0.08)', fontWeight: 600, color: '#cfd5ea' }}>{c.label}</div>
+            <div style={{ padding: '22px 26px', borderTop: '1px solid rgba(148,163,255,0.08)', color: '#7c86a8', textAlign: 'center' }}>{c.others}</div>
+            <div style={{ padding: '22px 26px', borderTop: '1px solid rgba(255,214,10,0.14)', color: '#f4f6ff', textAlign: 'center', background: 'rgba(255,214,10,0.05)', borderLeft: '1px solid rgba(255,214,10,0.18)', borderRight: '1px solid rgba(255,214,10,0.18)', fontWeight: 600 }}>{c.ours}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Gamification() {
+  return (
+    <section id="gamification" style={{ maxWidth: 1240, margin: '0 auto', padding: '90px 40px 60px' }}>
+      <div style={{ textAlign: 'center', marginBottom: 64 }}>
+        <div data-reveal="" style={revealStyle()}>GAMIFICATION</div>
+        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,68px)', lineHeight: 1.02, letterSpacing: '-0.03em', margin: 0 })}>
+          Lernen wie ein Spiel.<br /><span style={{ color: '#ffd60a' }}>Fühlen wie Arbeit.</span>
+        </h2>
+      </div>
+      <div className="lp-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 22 }}>
+        {/* XP */}
+        <div className="lp-hover-xp" data-reveal="" style={revealStyle('', { padding: 30, borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)' })}>
+          <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 13, letterSpacing: '0.22em', color: '#7c86a8', marginBottom: 22 }}>XP & LEVEL</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 12 }}>
+            <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 15, color: '#fff', padding: '7px 15px', borderRadius: 999, background: 'linear-gradient(135deg,#a855f7,#6366f1)', animation: 'lvGlow 2.6s ease-in-out infinite' }}>Lv.4</span>
+            <div style={{ flex: 1, height: 10, borderRadius: 999, background: 'rgba(148,163,255,0.14)', overflow: 'hidden' }}>
+              <div style={{ position: 'relative', width: '62%', height: '100%', borderRadius: 999, background: 'linear-gradient(90deg,#a855f7,#22d3ee)', boxShadow: '0 0 12px rgba(34,211,238,0.5)', animation: 'fillBar 1.8s cubic-bezier(.2,.8,.2,1) both', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', top: 0, bottom: 0, width: '35%', background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.7),transparent)', animation: 'barShimmer 2.6s ease-in-out infinite' }} />
+              </div>
+            </div>
+          </div>
+          <div style={{ fontSize: 14, color: '#7c86a8', marginBottom: 22 }}>395 / 2000 XP</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            {XP_CHIPS.map((c) => (
+              <div key={c.name} style={{ padding: 14, borderRadius: 14, textAlign: 'center', border: `1px solid ${c.border}`, background: c.bg, animation: `chipFloat 4s ease-in-out ${c.delay} infinite` }}>
+                <div style={{ color: c.color, fontWeight: 600, fontSize: 14 }}>{c.name}</div>
+                <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, color: '#fff' }}>{c.xp}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Streak */}
+        <div className="lp-hover-streak" data-reveal="" style={revealStyle('delay:.1s', { padding: 30, borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)', textAlign: 'center' })}>
+          <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 13, letterSpacing: '0.22em', color: '#7c86a8', marginBottom: 22, textAlign: 'left' }}>STREAK SYSTEM</div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+            <span style={{ fontSize: 52, display: 'inline-block', animation: 'flamePulse 1.8s ease-in-out infinite' }}>🔥</span>
+            <span data-count-target="7" data-count-suffix="" style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 72, color: '#fff', lineHeight: 1, textShadow: '0 0 30px rgba(255,120,0,0.5)' }}>7</span>
+          </div>
+          <div style={{ color: '#9aa2bf', fontSize: 16, margin: '6px 0 22px' }}>Tage in Folge</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7, justifyContent: 'center', marginBottom: 22 }}>
+            {STREAK_DOTS.map((d, i) => (
+              <span key={i} style={{ width: 15, height: 15, borderRadius: '50%', background: d.color, boxShadow: d.glow !== 'none' ? d.glow : undefined, animation: d.anim !== 'none' ? d.anim : undefined }} />
+            ))}
+          </div>
+          <div style={{ fontStyle: 'italic', color: '#7c86a8', fontSize: 15 }}>Miss a day? You catch up first. No shortcuts.</div>
+        </div>
+        {/* Task Gating */}
+        <div className="lp-hover-gate" data-reveal="" style={revealStyle('delay:.2s', { padding: 30, borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)' })}>
+          <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 13, letterSpacing: '0.22em', color: '#7c86a8', marginBottom: 26 }}>TASK GATING</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {GATE_TASKS.map((t, i) => (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '14px 16px', borderRadius: 14, background: t.locked ? 'rgba(10,13,24,0.4)' : 'rgba(20,24,40,0.6)', border: `1px solid ${t.done ? 'rgba(34,224,138,0.3)' : t.locked ? 'rgba(148,163,255,0.1)' : 'rgba(255,214,10,0.3)'}`, opacity: t.locked ? 0.55 : 1 }}>
+                <span style={{ fontSize: 22 }}>{t.icon}</span>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontWeight: 600, fontSize: 14, color: t.locked ? '#7c86a8' : '#f4f6ff' }}>{t.name}</div>
+                  <div style={{ fontSize: 13, color: t.color }}>{t.xp}</div>
+                </div>
+                {t.done && <span style={{ fontSize: 18 }}>✅</span>}
+                {t.locked && <span style={{ fontSize: 16 }}>🔒</span>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Journey({ week, setWeek }) {
+  return (
+    <section id="journey" style={{ maxWidth: 1240, margin: '0 auto', padding: '90px 40px 60px' }}>
+      <div style={{ textAlign: 'center', marginBottom: 60 }}>
+        <div data-reveal="" style={revealStyle()}>28-TAGE-REISE</div>
+        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,68px)', lineHeight: 1.02, letterSpacing: '-0.03em', margin: 0 })}>
+          Jede Woche<br /><span style={{ color: '#4d9fff' }}>ein neues Level.</span>
+        </h2>
+      </div>
+      <div data-reveal="" style={{ ...revealStyle(), display: 'flex', gap: 12, marginBottom: 32, flexWrap: 'wrap' }}>
+        {WEEK_DATA.map((w, i) => (
+          <button key={i} onClick={() => setWeek(i)} style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 16, padding: '12px 24px', borderRadius: 14, border: `1px solid ${week === i ? 'rgba(77,159,255,0.6)' : 'rgba(148,163,255,0.16)'}`, background: week === i ? 'rgba(77,159,255,0.14)' : 'rgba(10,13,24,0.5)', color: week === i ? '#4d9fff' : '#aeb6d0', cursor: 'pointer', transition: 'all .2s' }}>{w.label}</button>
+        ))}
+      </div>
+      <div data-reveal="" style={{ ...revealStyle('delay:.1s'), borderRadius: 24, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(77,159,255,0.22)', padding: 40, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' }} className="lp-journey-inner">
+        <div>
+          <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 13, letterSpacing: '0.26em', color: '#4d9fff', marginBottom: 16 }}>{WEEK_DATA[week].focus}</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {WEEK_DATA[week].tasks.map((t, i) => (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '16px 18px', borderRadius: 14, background: 'rgba(10,13,24,0.6)', border: '1px solid rgba(148,163,255,0.1)' }}>
+                <span style={{ fontSize: 22, flexShrink: 0 }}>{t.icon}</span>
+                <span style={{ flex: 1, fontWeight: 600, color: '#f4f6ff' }}>{t.name}</span>
+                <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 14, color: '#4d9fff', padding: '4px 10px', borderRadius: 8, background: 'rgba(77,159,255,0.12)', border: '1px solid rgba(77,159,255,0.2)' }}>{t.xp}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+          {TIMELINE.map((s, i) => (
+            <div key={i} style={{ display: 'flex', gap: 20, alignItems: 'flex-start' }}>
+              <div style={{ position: 'relative', flexShrink: 0 }}>
+                <div style={{ width: 44, height: 44, borderRadius: '50%', background: `${s.color}22`, border: `2px solid ${s.color}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 12, color: s.color, animation: `nodeBob 4s ease-in-out ${(i * 0.3).toFixed(2)}s infinite` }}>{s.level}</div>
+                {i < TIMELINE.length - 1 && <div style={{ position: 'absolute', left: '50%', top: '100%', width: 2, height: 20, background: `linear-gradient(${s.color},${TIMELINE[i + 1].color}55)`, transform: 'translateX(-50%)' }} />}
+              </div>
+              <div>
+                <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 16, color: s.color }}>{s.day} — {s.title}</div>
+                <div style={{ fontSize: 14, color: '#9aa2bf', lineHeight: 1.5, marginTop: 4 }}>{s.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function StatsSection() {
+  return (
+    <section style={{ maxWidth: 1240, margin: '0 auto', padding: '90px 40px 60px' }}>
+      <div className="lp-grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 22 }}>
+        {STATS.map((s) => (
+          <div key={s.label} className="lp-stat-card" data-reveal="" style={revealStyle('', { textAlign: 'center', padding: '40px 20px', borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)' })}>
+            <div data-count-target={s.target} data-count-suffix={s.suffix} style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 54, lineHeight: 1, color: '#fff', letterSpacing: '-0.03em' }}>{s.display}</div>
+            <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 18, color: '#ffd60a', margin: '10px 0 6px' }}>{s.label}</div>
+            <div style={{ fontSize: 14, color: '#7c86a8' }}>{s.sub}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Faq({ openFaq, setOpenFaq }) {
+  return (
+    <section style={{ maxWidth: 800, margin: '0 auto', padding: '90px 40px 60px' }}>
+      <div style={{ textAlign: 'center', marginBottom: 56 }}>
+        <div data-reveal="" style={revealStyle()}>AUSREDEN-KLINIK</div>
+        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,66px)', letterSpacing: '-0.03em', margin: 0 })}>
+          Ich kenne<br /><span style={{ color: '#a78bfa' }}>deine Ausreden.</span>
+        </h2>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+        {EXCUSES.map((e, i) => (
+          <div key={i} data-reveal="" onClick={() => setOpenFaq(openFaq === i ? -1 : i)} className="lp-faq-row" style={{ ...revealStyle(), borderRadius: 18, background: 'rgba(10,13,24,0.6)', border: `1px solid ${openFaq === i ? 'rgba(255,214,10,0.45)' : 'rgba(148,163,255,0.12)'}`, cursor: 'pointer', overflow: 'hidden', transition: 'border-color .2s, opacity .8s, transform .8s' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '22px 26px' }}>
+              <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 18, color: '#f4f6ff', fontStyle: 'italic' }}>{e.q}</span>
+              <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 22, color: '#ffd60a', flexShrink: 0, marginLeft: 16 }}>{openFaq === i ? '−' : '+'}</span>
+            </div>
+            <div style={{ maxHeight: openFaq === i ? 220 : 0, overflow: 'hidden', transition: 'max-height .35s cubic-bezier(.2,.8,.2,1)' }}>
+              <p style={{ padding: '0 26px 24px', margin: 0, fontSize: 16, lineHeight: 1.65, color: '#aeb6d0', opacity: openFaq === i ? 1 : 0, transition: 'opacity .3s' }}>{e.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Testimonials() {
+  return (
+    <section style={{ maxWidth: 1240, margin: '0 auto', padding: '90px 40px 60px' }}>
+      <div style={{ textAlign: 'center', marginBottom: 56 }}>
+        <div data-reveal="" style={revealStyle()}>STIMMEN</div>
+        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,66px)', letterSpacing: '-0.03em', margin: 0 })}>
+          Sie hassten ihn.<br /><span style={{ color: '#ffd60a' }}>Am Ende dankten.</span>
+        </h2>
+      </div>
+      <div className="lp-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 22 }}>
+        {TESTIMONIALS.map((t) => (
+          <div key={t.name} className="lp-hover-test" data-reveal="" style={revealStyle('', { position: 'relative', padding: '34px 30px', borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)', overflow: 'hidden' })}>
+            <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 64, lineHeight: 0.6, color: t.color, opacity: 0.5 }}>"</div>
+            <p style={{ fontSize: 19, lineHeight: 1.55, color: '#eef0f7', margin: '8px 0 26px', fontWeight: 500 }}>{t.quote}</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+              <div style={{ width: 44, height: 44, borderRadius: '50%', display: 'grid', placeItems: 'center', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 15, color: '#06070c', background: t.color, flexShrink: 0 }}>{t.initials}</div>
+              <div>
+                <div style={{ fontWeight: 700, color: '#f4f6ff' }}>{t.name}</div>
+                <div style={{ fontSize: 14, color: t.color }}>{t.tag}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function FinalCTA({ ctaLabel, onCTA }) {
+  return (
+    <section id="cta" style={{ maxWidth: 900, margin: '0 auto', padding: '100px 40px 90px', textAlign: 'center' }}>
+      <div data-reveal="" style={revealStyle()}>BEREIT?</div>
+      <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(50px,8vw,96px)', lineHeight: 0.98, letterSpacing: '-0.035em', margin: 0 })}>
+        Tag 1 wartet.<br /><span style={{ color: '#ffd60a', textShadow: '0 0 60px rgba(255,214,10,0.35)' }}>Du auch?</span>
+      </h2>
+      <p data-reveal="" style={revealStyle('delay:.16s', { fontSize: 19, lineHeight: 1.6, color: '#aeb6d0', margin: '28px 0 40px' })}>
+        Free to start. No credit card. Just German.<br />The teacher is already disappointed — prove him wrong.
+      </p>
+      <button className="lp-btn-gold lp-hover-lift" data-reveal="" onClick={onCTA} style={{ ...revealStyle('delay:.24s'), display: 'inline-block', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 20, color: '#06070c', padding: '20px 44px', borderRadius: 18, background: 'linear-gradient(135deg,#ffe66b,#ffb300)', boxShadow: '0 20px 56px -12px rgba(255,179,0,0.7)', border: 'none', cursor: 'pointer' }}>
+        {ctaLabel}
+      </button>
+      <div style={{ color: '#7c86a8', fontSize: 15, marginTop: 22 }}>28 Tage · 140 Aufgaben · A2 → B2</div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer style={{ borderTop: '1px solid rgba(148,163,255,0.1)', background: 'rgba(6,8,15,0.5)', padding: 40, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20, flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 11, fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 18, color: '#fff' }}>
+        <LogoSVG size={28} gid="lgFoot" />
+        Der <span style={{ color: '#ffd60a', marginLeft: 4 }}>Strenge</span> Lehrer
+      </div>
+      <div style={{ display: 'flex', gap: 26 }}>
+        {[['#cta','Anmelden'],['#top','Open Source'],['#top','MIT Lizenz']].map(([href, label]) => (
+          <a key={label} className="lp-link" href={href} style={{ color: '#9aa2bf', textDecoration: 'none' }}>{label}</a>
+        ))}
+      </div>
+      <div style={{ fontStyle: 'italic', color: '#6b7396', fontSize: 15 }}>„Schlechte Schüler gibt es nicht — nur schlechte Ausreden."</div>
+    </footer>
+  );
+}
+
+/* ── SVG helpers ────────────────────────────────────────────────────────── */
+function LogoSVG({ size, gid }) {
+  return (
+    <svg viewBox="0 0 48 48" width={size} height={size} style={{ display: 'block' }}>
+      <defs><linearGradient id={gid} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffe66b" /><stop offset="1" stopColor="#ffb300" /></linearGradient></defs>
+      <rect x="2" y="2" width="44" height="44" rx="13" fill={`url(#${gid})`} />
+      <rect x="8.5" y="20" width="13" height="10" rx="4.5" fill="none" stroke="#0b0e18" strokeWidth="2.8" />
+      <rect x="26.5" y="20" width="13" height="10" rx="4.5" fill="none" stroke="#0b0e18" strokeWidth="2.8" />
+      <line x1="21.5" y1="24" x2="26.5" y2="24" stroke="#0b0e18" strokeWidth="2.8" />
+      <line x1="9" y1="15" x2="20" y2="18.5" stroke="#0b0e18" strokeWidth="2.8" strokeLinecap="round" />
+      <line x1="39" y1="15" x2="28" y2="18.5" stroke="#0b0e18" strokeWidth="2.8" strokeLinecap="round" />
+      <path d="M17 37 Q24 33 31 37" fill="none" stroke="#0b0e18" strokeWidth="2.8" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 function TeacherSVG() {
   return (
-    <svg viewBox="0 0 160 200" width="160" height="200" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#ffd700" stopOpacity="0.3"/>
-          <stop offset="100%" stopColor="#ffd700" stopOpacity="0"/>
-        </radialGradient>
-      </defs>
-      {/* glow */}
-      <circle cx="80" cy="80" r="70" fill="url(#glow1)"/>
-      {/* body / suit */}
-      <rect x="30" y="130" width="100" height="70" rx="8" fill="#1a1a3e"/>
-      <rect x="60" y="130" width="40" height="70" fill="#141430"/>
-      {/* tie */}
-      <polygon points="80,135 75,155 80,165 85,155" fill="#ffd700"/>
-      {/* head */}
-      <ellipse cx="80" cy="90" rx="38" ry="42" fill="#f0c070"/>
-      {/* hair */}
-      <ellipse cx="80" cy="52" rx="38" ry="16" fill="#222"/>
-      {/* glasses frame */}
-      <rect x="48" y="82" width="22" height="14" rx="4" fill="none" stroke="#222" strokeWidth="2.5"/>
-      <rect x="90" y="82" width="22" height="14" rx="4" fill="none" stroke="#222" strokeWidth="2.5"/>
-      <line x1="70" y1="89" x2="90" y2="89" stroke="#222" strokeWidth="2"/>
-      {/* eyes */}
-      <ellipse cx="59" cy="89" rx="6" ry="5" fill="#fff"/>
-      <ellipse cx="101" cy="89" rx="6" ry="5" fill="#fff"/>
-      <circle cx="60" cy="90" r="3" fill="#111"/>
-      <circle cx="102" cy="90" r="3" fill="#111"/>
-      {/* eyebrows — stern */}
-      <line x1="49" y1="78" x2="70" y2="80" stroke="#222" strokeWidth="2.5" strokeLinecap="round"/>
-      <line x1="90" y1="80" x2="111" y2="78" stroke="#222" strokeWidth="2.5" strokeLinecap="round"/>
-      {/* mouth — thin stern line */}
-      <path d="M66 108 Q80 105 94 108" fill="none" stroke="#9a7050" strokeWidth="2" strokeLinecap="round"/>
-      {/* ear */}
-      <ellipse cx="42" cy="92" rx="5" ry="7" fill="#e8b860"/>
-      <ellipse cx="118" cy="92" rx="5" ry="7" fill="#e8b860"/>
-      {/* pointing arm */}
-      <line x1="130" y1="145" x2="158" y2="115" stroke="#1a1a3e" strokeWidth="10" strokeLinecap="round"/>
-      <circle cx="158" cy="113" r="6" fill="#f0c070"/>
+    <svg viewBox="0 0 120 130" width="190" height="206" style={{ filter: 'drop-shadow(0 10px 30px rgba(255,179,0,0.3))', marginTop: -8 }}>
+      <defs><linearGradient id="face1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffe66b" /><stop offset="1" stopColor="#ffb300" /></linearGradient></defs>
+      <g style={{ transformBox: 'fill-box', transformOrigin: '60px 60px', animation: 'headTilt 5.5s ease-in-out infinite' }}>
+        <rect x="42" y="96" width="36" height="30" rx="8" fill="#161a2e" />
+        <path d="M45 100 L60 108 L75 100" fill="none" stroke="#ffd60a" strokeWidth="3" />
+        <circle cx="60" cy="58" r="40" fill="url(#face1)" />
+        <path d="M22 46 Q60 8 98 46 L98 34 Q60 4 22 34 Z" fill="#0b0e18" />
+        <circle cx="46" cy="60" r="12" fill="#0b0e18" fillOpacity="0.14" stroke="#0b0e18" strokeWidth="3.2" />
+        <circle cx="74" cy="60" r="12" fill="#0b0e18" fillOpacity="0.14" stroke="#0b0e18" strokeWidth="3.2" />
+        <line x1="58" y1="60" x2="62" y2="60" stroke="#0b0e18" strokeWidth="3.2" />
+        <ellipse cx="46" cy="56" rx="5" ry="2.4" fill="#ffffff" style={{ transformBox: 'fill-box', transformOrigin: 'center', animation: 'glint 4.5s ease-in-out infinite' }} />
+        <ellipse cx="74" cy="56" rx="5" ry="2.4" fill="#ffffff" style={{ transformBox: 'fill-box', transformOrigin: 'center', animation: 'glint 4.5s ease-in-out infinite' }} />
+        <g style={{ transformBox: 'fill-box', transformOrigin: 'center', animation: 'blink 4.2s ease-in-out infinite' }}>
+          <circle cx="46" cy="60" r="3.4" fill="#0b0e18" />
+          <circle cx="74" cy="60" r="3.4" fill="#0b0e18" />
+        </g>
+        <g style={{ transformBox: 'fill-box', transformOrigin: 'center', animation: 'browAngry 3.2s ease-in-out infinite' }}>
+          <line x1="34" y1="44" x2="55" y2="50" stroke="#0b0e18" strokeWidth="3.4" strokeLinecap="round" />
+          <line x1="86" y1="44" x2="65" y2="50" stroke="#0b0e18" strokeWidth="3.4" strokeLinecap="round" />
+        </g>
+        <path d="M48 84 Q60 76 72 84" fill="none" stroke="#0b0e18" strokeWidth="3.2" strokeLinecap="round" />
+      </g>
     </svg>
   );
 }
 
-function TeacherSVGSmall() {
-  return (
-    <svg viewBox="0 0 80 100" width="80" height="100" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="40" cy="45" rx="19" ry="21" fill="#f0c070"/>
-      <ellipse cx="40" cy="26" rx="19" ry="8" fill="#222"/>
-      <rect x="24" y="41" width="11" height="7" rx="2" fill="none" stroke="#222" strokeWidth="1.5"/>
-      <rect x="45" y="41" width="11" height="7" rx="2" fill="none" stroke="#222" strokeWidth="1.5"/>
-      <line x1="35" y1="44" x2="45" y2="44" stroke="#222" strokeWidth="1.2"/>
-      <circle cx="29.5" cy="45" r="2.5" fill="#111"/>
-      <circle cx="50.5" cy="45" r="2.5" fill="#111"/>
-      <path d="M33 55 Q40 53 47 55" fill="none" stroke="#9a7050" strokeWidth="1.5" strokeLinecap="round"/>
-      <rect x="15" y="65" width="50" height="35" rx="4" fill="#1a1a3e"/>
-      <rect x="30" y="65" width="20" height="35" fill="#141430"/>
-      <polygon points="40,68 37.5,78 40,83 42.5,78" fill="#ffd700"/>
-    </svg>
-  );
+/* ── helpers ────────────────────────────────────────────────────────────── */
+function revealStyle(extra = '', overrides = {}) {
+  const base = { opacity: 0, transform: 'translateY(24px)', transition: `all .8s cubic-bezier(.2,.7,.2,1)${extra ? ` ${extra}` : ''}`, fontFamily: "'Space Grotesk',sans-serif", fontSize: 14, letterSpacing: '0.32em', color: '#a78bfa', marginBottom: 18 };
+  return { ...base, ...overrides };
 }
 
-/* ─── Styles ─────────────────────────────────────────────────── */
-const styles = {
-  root: {
-    background: '#050510',
-    color: '#eeeeff',
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
-    overflowX: 'hidden',
-    minHeight: '100vh',
-  },
+/* ── CSS string ─────────────────────────────────────────────────────────── */
+const CSS = `
+  @keyframes gridPan { from{background-position:0 0,0 0} to{background-position:0 120px,120px 0} }
+  @keyframes floatA { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(6vw,4vh) scale(1.15)} }
+  @keyframes floatB { 0%,100%{transform:translate(0,0) scale(1.1)} 50%{transform:translate(-5vw,-6vh) scale(0.95)} }
+  @keyframes floatC { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(-4vw,5vh) scale(1.2)} }
+  @keyframes twinkle { 0%,100%{opacity:0.35} 50%{opacity:0.9} }
+  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  @keyframes glowPulse { 0%,100%{opacity:0.55;transform:scale(1)} 50%{opacity:1;transform:scale(1.06)} }
+  @keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+  @keyframes scan { from{transform:translateY(-100%)} to{transform:translateY(100vh)} }
+  @keyframes sheen { 0%{background-position:0% 50%} 100%{background-position:200% 50%} }
+  @keyframes flamePulse { 0%,100%{transform:scale(1) rotate(-2deg)} 50%{transform:scale(1.12) rotate(2deg)} }
+  @keyframes fillBar { from{width:0} }
+  @keyframes floatIcon { 0%,100%{transform:translateY(0) rotate(-3deg)} 50%{transform:translateY(-7px) rotate(3deg)} }
+  @keyframes badgeGlow { 0%,100%{box-shadow:0 0 0 0 rgba(255,214,10,0)} 50%{box-shadow:0 0 26px 4px rgba(255,214,10,0.35)} }
+  @keyframes ringSpin { to{transform:rotate(360deg)} }
+  @keyframes blink { 0%,93%,100%{transform:scaleY(1)} 96%{transform:scaleY(0.12)} }
+  @keyframes browAngry { 0%,100%{transform:translateY(0) rotate(0deg)} 45%{transform:translateY(-2px) rotate(-1deg)} 55%{transform:translateY(-2px) rotate(1deg)} }
+  @keyframes glint { 0%,100%{opacity:0;transform:translateX(-4px)} 50%{opacity:0.55;transform:translateX(4px)} }
+  @keyframes headTilt { 0%,100%{transform:rotate(-1.4deg)} 50%{transform:rotate(1.4deg)} }
+  @keyframes heroIn { from{opacity:0;transform:translateY(46px) skewY(5deg);filter:blur(8px)} to{opacity:1;transform:none;filter:blur(0)} }
+  @keyframes yellowThrob { 0%,100%{text-shadow:0 0 50px rgba(255,179,0,0.28)} 50%{text-shadow:0 0 80px rgba(255,179,0,0.55)} }
+  @keyframes dotPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.32)} }
+  @keyframes barShimmer { from{transform:translateX(-140%)} to{transform:translateX(360%)} }
+  @keyframes lvGlow { 0%,100%{box-shadow:0 0 0 0 rgba(168,85,247,0)} 50%{box-shadow:0 0 22px 2px rgba(168,85,247,0.65)} }
+  @keyframes chipFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+  @keyframes nodeBob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
 
-  /* NAV */
-  nav: {
-    position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000,
-    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-    padding: '14px 32px',
-    background: 'rgba(5,5,16,0.88)',
-    backdropFilter: 'blur(18px)',
-    borderBottom: '1px solid rgba(138,100,255,0.12)',
-  },
-  navLogo: {
-    display: 'flex', alignItems: 'center', gap: 10,
-    fontSize: 17, fontWeight: 800, letterSpacing: '-.01em',
-  },
-  navDot: {
-    width: 8, height: 8, borderRadius: '50%',
-    background: '#ffd700', boxShadow: '0 0 10px #ffd700',
-    display: 'inline-block',
-  },
-  navRight: { display: 'flex', alignItems: 'center', gap: 20 },
-  navLink: {
-    color: '#7a7a9e', fontSize: 13, fontWeight: 600,
-    textDecoration: 'none', transition: 'color .2s',
-  },
+  .lp-root * { box-sizing: border-box; }
+  .lp-root { font-family: 'Sora', sans-serif; background: #04050a; color: #eef0f7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .lp-root a { text-decoration: none; }
+  .lp-link:hover { color: #fff !important; }
+  .lp-link-ghost:hover { color: #ffd60a !important; }
+  .lp-btn-nav { font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; color:#06070c; padding:10px 22px; border-radius:12px; background:linear-gradient(135deg,#ffe66b,#ffb300); border:none; cursor:pointer; box-shadow:0 8px 24px -6px rgba(255,179,0,0.55); transition:transform .2s,box-shadow .2s; }
+  .lp-btn-nav:hover { transform:translateY(-2px); box-shadow:0 14px 34px -6px rgba(255,179,0,0.8); }
+  .lp-btn-gold { transition: transform .2s, box-shadow .2s; }
+  .lp-hover-lift:hover { transform:translateY(-2px) !important; box-shadow:0 26px 66px -10px rgba(255,179,0,0.9) !important; }
+  .lp-hover-feat:hover { border-color:rgba(167,139,250,0.5) !important; transform:translateY(-6px) !important; box-shadow:0 26px 60px -30px rgba(124,58,237,0.65) !important; transition:border-color .2s,transform .2s,box-shadow .2s !important; }
+  .lp-hover-xp:hover { transform:translateY(-6px) !important; border-color:rgba(168,85,247,0.5) !important; box-shadow:0 30px 66px -30px rgba(124,58,237,0.7) !important; transition:all .2s !important; }
+  .lp-hover-streak:hover { transform:translateY(-6px) !important; border-color:rgba(255,120,0,0.5) !important; box-shadow:0 30px 66px -30px rgba(255,120,0,0.55) !important; transition:all .2s !important; }
+  .lp-hover-gate:hover { transform:translateY(-6px) !important; border-color:rgba(255,214,10,0.45) !important; box-shadow:0 30px 66px -30px rgba(255,214,10,0.4) !important; transition:all .2s !important; }
+  .lp-hover-test:hover { transform:translateY(-6px) !important; border-color:rgba(255,214,10,0.4) !important; box-shadow:0 26px 60px -30px rgba(0,0,0,0.8) !important; transition:all .2s !important; }
+  .lp-stat-card:hover { border-color:rgba(255,214,10,0.35) !important; box-shadow:0 20px 54px -24px rgba(255,214,10,0.25) !important; transition:all .2s !important; }
+  .lp-faq-row:hover { border-color:rgba(255,214,10,0.3) !important; }
+  .lp-nav-links { display:flex; gap:30px; }
 
-  /* HERO */
-  hero: { position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column' },
-  canvas: { position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' },
-  heroInner: {
-    position: 'relative', zIndex: 1,
-    display: 'flex', alignItems: 'center', justifyContent: 'center',
-    gap: 60, padding: '140px 32px 60px',
-    maxWidth: 1100, margin: '0 auto', width: '100%',
-    flexWrap: 'wrap',
-  },
-  teacherWrap: { flexShrink: 0 },
-  heroText: { maxWidth: 580 },
-  eyebrow: {
-    display: 'inline-flex', alignItems: 'center', gap: 8,
-    fontSize: 11, fontWeight: 800, letterSpacing: '.12em',
-    textTransform: 'uppercase', color: '#7a7a9e',
-    marginBottom: 20,
-    border: '1px solid rgba(138,100,255,.2)',
-    borderRadius: 20, padding: '5px 14px',
-    background: 'rgba(138,100,255,.06)',
-  },
-  eyebrowDot: {
-    width: 6, height: 6, borderRadius: '50%',
-    background: '#00e676', boxShadow: '0 0 8px #00e676',
-    display: 'inline-block',
-  },
-  h1: {
-    display: 'flex', flexDirection: 'column',
-    margin: '0 0 20px',
-    lineHeight: 1,
-  },
-  heroSub: {
-    fontSize: 16, lineHeight: 1.75, color: '#8888bb',
-    marginBottom: 32, maxWidth: 480,
-  },
-  heroCtas: { display: 'flex', alignItems: 'center', gap: 16, marginBottom: 28, flexWrap: 'wrap' },
-  ctaGhost: {
-    fontSize: 14, fontWeight: 700, color: '#7a7a9e',
-    textDecoration: 'none', transition: 'color .2s',
-  },
-  heroMeta: { display: 'flex', gap: 8, flexWrap: 'wrap' },
-
-  /* QUOTE STRIP */
-  quoteStrip: {
-    position: 'relative', zIndex: 1,
-    borderTop: '1px solid rgba(138,100,255,.1)',
-    borderBottom: '1px solid rgba(138,100,255,.1)',
-    background: 'rgba(14,14,40,.6)',
-    overflow: 'hidden', padding: '14px 0',
-  },
-  quoteTick: {
-    display: 'inline-flex', alignItems: 'center',
-    fontSize: 13, fontWeight: 600,
-    marginRight: 0, whiteSpace: 'nowrap',
-    padding: '0 32px',
-  },
-
-  /* TICKER */
-  ticker: {
-    borderBottom: '1px solid rgba(138,100,255,.08)',
-    background: 'rgba(176,106,255,.04)',
-    overflow: 'hidden', padding: '10px 0',
-  },
-  tickerWord: {
-    fontSize: 12, fontWeight: 800, letterSpacing: '.1em',
-    textTransform: 'uppercase', color: '#44446a',
-    whiteSpace: 'nowrap',
-  },
-
-  /* SECTION */
-  section: { padding: '100px 0', position: 'relative' },
-  container: { maxWidth: 1100, margin: '0 auto', padding: '0 32px' },
-  sectionHead: { textAlign: 'center', marginBottom: 64 },
-  sectionEye: {
-    fontSize: 11, fontWeight: 900, letterSpacing: '.16em',
-    textTransform: 'uppercase', color: '#b06aff',
-    marginBottom: 16,
-  },
-  h2: {
-    fontSize: 'clamp(28px, 5vw, 48px)',
-    fontWeight: 900, lineHeight: 1.15,
-    margin: '0 0 16px',
-    textWrap: 'balance',
-  },
-  sectionSub: {
-    fontSize: 16, color: '#7a7a9e', lineHeight: 1.75,
-    maxWidth: 520, margin: '0 auto',
-  },
-
-  /* FEATURES */
-  featureGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-    gap: 20,
-  },
-  featureIcon: { fontSize: 32, marginBottom: 14 },
-  featureTitle: {
-    fontSize: 17, fontWeight: 900, marginBottom: 10,
-    color: '#eeeeff', letterSpacing: '-.01em',
-  },
-  featureBody: { fontSize: 14, color: '#7a7a9e', lineHeight: 1.75 },
-
-  /* MECHANICS */
-  mechanicsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-    gap: 20,
-  },
-  mechCard: {
-    background: 'rgba(14,14,40,.9)',
-    border: '1px solid rgba(138,100,255,.18)',
-    borderRadius: 20, padding: 24,
-  },
-  mechLabel: {
-    fontSize: 11, fontWeight: 900, letterSpacing: '.14em',
-    color: '#44446a', marginBottom: 20, textTransform: 'uppercase',
-  },
-  xpLevel: { display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 },
-  levelBadge: {
-    background: 'linear-gradient(135deg,#7c3aed,#2979ff)',
-    borderRadius: 20, padding: '4px 14px',
-    fontSize: 13, fontWeight: 900, color: '#fff',
-    whiteSpace: 'nowrap',
-  },
-  xpBarTrack: {
-    height: 8, background: 'rgba(255,255,255,.06)',
-    borderRadius: 4, overflow: 'hidden', marginBottom: 6,
-  },
-  xpCaption: { fontSize: 11, color: '#44446a', fontVariantNumeric: 'tabular-nums' },
-  xpTaskRow: { display: 'flex', gap: 8, flexWrap: 'wrap' },
-  xpChip: {
-    display: 'flex', flexDirection: 'column', alignItems: 'center',
-    padding: '8px 12px', borderRadius: 10, border: '1px solid',
-    background: 'rgba(255,255,255,.03)', gap: 2,
-  },
-  streakDisplay: { textAlign: 'center', margin: '16px 0 20px' },
-  streakNum: { fontSize: 48, fontWeight: 900, lineHeight: 1 },
-  streakSub: { fontSize: 13, color: '#7a7a9e', marginTop: 4 },
-  streakDots: { display: 'flex', flexWrap: 'wrap', gap: 5, marginBottom: 16 },
-  mechNote: { fontSize: 13, color: '#44446a', fontStyle: 'italic', lineHeight: 1.6 },
-  gateDemo: { display: 'flex', flexDirection: 'column', gap: 0 },
-  gateStep: { display: 'flex', alignItems: 'flex-start', gap: 14, padding: '14px 0' },
-  gateNum: {
-    width: 28, height: 28, borderRadius: '50%',
-    background: 'rgba(138,100,255,.15)',
-    border: '1px solid rgba(138,100,255,.3)',
-    display: 'flex', alignItems: 'center', justifyContent: 'center',
-    fontSize: 12, fontWeight: 900, color: '#b06aff',
-    flexShrink: 0,
-  },
-  gateTitle: { fontSize: 14, fontWeight: 800, marginBottom: 2 },
-  gateSub: { fontSize: 12, color: '#7a7a9e' },
-  gateLine: { width: 1, height: 12, background: 'rgba(138,100,255,.2)', marginLeft: 13 },
-
-  /* JOURNEY */
-  weekTabs: { display: 'flex', gap: 8, marginBottom: 28, flexWrap: 'wrap' },
-  weekContent: {
-    background: 'rgba(14,14,40,.9)',
-    border: '1px solid rgba(138,100,255,.18)',
-    borderRadius: 20, padding: 28,
-  },
-  weekLabel: {
-    fontSize: 12, fontWeight: 900, letterSpacing: '.1em',
-    textTransform: 'uppercase', color: '#4d9fff', marginBottom: 20,
-  },
-  weekTaskGrid: { display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 24 },
-  weekProgress: { display: 'flex', gap: 8, flexWrap: 'wrap' },
-  dayCell: { display: 'flex', flexDirection: 'column', gap: 5, flex: 1, minWidth: 60 },
-  dayNum2: { fontSize: 10, color: '#44446a', textAlign: 'center' },
-  dayBar: { height: 4, borderRadius: 2, background: 'rgba(255,255,255,.08)' },
-
-  /* QUOTE BLOCK */
-  quoteBlock: {
-    maxWidth: 900, margin: '0 auto', padding: '0 32px',
-    display: 'flex', alignItems: 'center', gap: 40,
-  },
-  quoteAvatar: { flexShrink: 0 },
-  quoteBig: { flex: 1 },
-  quoteTrans: { fontSize: 16, color: '#7a7a9e', fontStyle: 'italic', marginTop: 12, lineHeight: 1.6 },
-  quoteSource: { fontSize: 12, color: '#44446a', marginTop: 12, letterSpacing: '.08em' },
-
-  /* STATS */
-  statsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-    gap: 20,
-  },
-  statCell: {
-    background: 'rgba(14,14,40,.9)',
-    border: '1px solid rgba(138,100,255,.18)',
-    borderRadius: 20, padding: '28px 20px',
-    textAlign: 'center',
-  },
-  statNum: {
-    fontSize: 44, fontWeight: 900, lineHeight: 1,
-    background: 'linear-gradient(135deg,#ffd700,#ff9800)',
-    WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-    fontVariantNumeric: 'tabular-nums', marginBottom: 8,
-  },
-  statLabel: { fontSize: 14, fontWeight: 800, color: '#eeeeff', marginBottom: 4 },
-  statNote:  { fontSize: 12, color: '#44446a' },
-
-  /* CTA SECTION */
-  ctaSection: {
-    position: 'relative', padding: '120px 32px',
-    textAlign: 'center', overflow: 'hidden',
-    background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(176,106,255,.1) 0%, transparent 70%)',
-  },
-  ctaInner: { position: 'relative', zIndex: 1, maxWidth: 600, margin: '0 auto' },
-  ctaEye: {
-    fontSize: 11, fontWeight: 900, letterSpacing: '.16em',
-    color: '#b06aff', marginBottom: 20, textTransform: 'uppercase',
-  },
-  ctaBig: { fontSize: 'clamp(32px,6vw,64px)', fontWeight: 900, lineHeight: 1.1, marginBottom: 20 },
-  ctaSub: { fontSize: 16, color: '#7a7a9e', lineHeight: 1.75, marginBottom: 40 },
-  ctaMeta: { fontSize: 12, color: '#44446a', marginTop: 20, letterSpacing: '.06em' },
-
-  /* FOOTER */
-  footer: {
-    borderTop: '1px solid rgba(138,100,255,.1)',
-    padding: '40px 32px',
-    background: '#030308',
-  },
-  footerInner: {
-    maxWidth: 1100, margin: '0 auto',
-    display: 'flex', alignItems: 'center',
-    justifyContent: 'space-between', flexWrap: 'wrap', gap: 20,
-  },
-  footerLogo: { fontSize: 16, fontWeight: 800 },
-  footerLinks: { display: 'flex', gap: 24, alignItems: 'center' },
-  footerLink: {
-    fontSize: 13, color: '#44446a', background: 'none', border: 'none',
-    cursor: 'pointer', textDecoration: 'none', transition: 'color .2s',
-  },
-  footerNote: { fontSize: 12, color: '#2a2a4a', fontStyle: 'italic', textAlign: 'right' },
-};
-
-/* ─── CSS-in-JS block ─────────────────────────────────────────── */
-const css = `
-  /* Headline display treatment — condensed compression */
-  .headline-line {
-    display: block;
-    font-family: Impact, 'Arial Black', 'Haettenschweiler', sans-serif;
-    font-size: clamp(52px, 9vw, 96px);
-    font-weight: 900;
-    letter-spacing: .01em;
-    color: #eeeeff;
-    transform: scaleX(0.84);
-    transform-origin: left;
-    line-height: 0.95;
+  @media (max-width:900px) {
+    .lp-hero-grid { grid-template-columns:1fr !important; text-align:center; }
+    .lp-hero-teacher { display:none !important; }
+    .lp-grid-3 { grid-template-columns:1fr 1fr !important; }
+    .lp-grid-4 { grid-template-columns:1fr 1fr !important; }
+    .lp-journey-inner { grid-template-columns:1fr !important; }
+    .lp-comp-grid { grid-template-columns:1fr !important; }
+    .lp-hero-btns { justify-content:center !important; }
+    .lp-hero-chips { justify-content:center !important; }
   }
-  .headline-line.gold {
-    color: #ffd700;
-    text-shadow: 0 0 40px rgba(255,215,0,.4);
-  }
-
-  /* Buttons */
-  .nav-btn-ghost {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,.15);
-    border-radius: 8px;
-    color: #7a7a9e;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: all .2s;
-    font-family: inherit;
-  }
-  .nav-btn-ghost:hover { border-color: rgba(255,255,255,.35); color: #eeeeff; }
-
-  .nav-btn-gold {
-    background: linear-gradient(135deg, #ffd700, #ff9800);
-    border: none;
-    border-radius: 8px;
-    color: #080808;
-    font-size: 13px;
-    font-weight: 900;
-    padding: 9px 18px;
-    cursor: pointer;
-    transition: all .25s;
-    font-family: inherit;
-  }
-  .nav-btn-gold:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(255,215,0,.35); }
-
-  .cta-gold {
-    background: linear-gradient(135deg, #ffd700, #ffaa00, #ff9800);
-    border: none;
-    border-radius: 14px;
-    color: #080808;
-    font-size: 16px;
-    font-weight: 900;
-    padding: 16px 32px;
-    cursor: pointer;
-    transition: all .25s;
-    font-family: inherit;
-    letter-spacing: .01em;
-    position: relative;
-    overflow: hidden;
-  }
-  .cta-gold::before {
-    content: '';
-    position: absolute;
-    top: -50%; left: -60%; width: 30%; height: 200%;
-    background: rgba(255,255,255,.25);
-    transform: skewX(-20deg);
-    transition: left .45s;
-  }
-  .cta-gold:hover::before { left: 130%; }
-  .cta-gold:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(255,215,0,.4); }
-  .cta-large { font-size: 18px; padding: 20px 48px; border-radius: 16px; }
-
-  /* Feature cards */
-  .feature-card {
-    background: rgba(14,14,40,.9);
-    border: 1px solid rgba(138,100,255,.18);
-    border-radius: 20px;
-    padding: 28px 24px;
-    transition: transform .25s, border-color .25s, box-shadow .25s;
-  }
-  .feature-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(176,106,255,.4);
-    box-shadow: 0 20px 50px rgba(176,106,255,.1);
-  }
-
-  /* XP fill */
-  .xp-fill-demo {
-    height: 100%;
-    background: linear-gradient(90deg, #7c3aed, #b06aff, #00e5ff);
-    border-radius: 4px;
-    transition: width .3s ease;
-    position: relative;
-  }
-  .xp-fill-demo::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 16px; height: 100%;
-    background: rgba(255,255,255,.6);
-    filter: blur(4px);
-  }
-
-  /* Streak dots */
-  .streak-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: rgba(255,255,255,.08);
-    border: 1px solid rgba(138,100,255,.2);
-  }
-  .streak-dot.done { background: #00e676; border-color: #00e676; box-shadow: 0 0 6px rgba(0,230,118,.5); }
-  .streak-dot.today { background: #ffd700; border-color: #ffd700; box-shadow: 0 0 8px rgba(255,215,0,.6); animation: pulse-dot 1.5s ease-in-out infinite; }
-  @keyframes pulse-dot { 0%,100%{box-shadow:0 0 6px rgba(255,215,0,.4)} 50%{box-shadow:0 0 16px rgba(255,215,0,.8)} }
-
-  /* Week tasks */
-  .week-task {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 12px 16px;
-    border-radius: 12px;
-    background: rgba(255,255,255,.03);
-    border: 1px solid rgba(138,100,255,.1);
-    transition: background .2s;
-  }
-  .week-task:hover { background: rgba(255,255,255,.06); }
-
-  /* Week tabs */
-  .week-tab {
-    background: rgba(255,255,255,.04);
-    border: 1px solid rgba(138,100,255,.18);
-    border-radius: 10px;
-    padding: 10px 20px;
-    color: #7a7a9e;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .2s;
-    font-family: inherit;
-  }
-  .week-tab:hover { border-color: rgba(138,100,255,.4); color: #eeeeff; }
-  .week-tab.active { background: rgba(77,159,255,.12); border-color: rgba(77,159,255,.45); color: #4d9fff; }
-
-  /* Day bars */
-  .bar-done   { background: #00e676 !important; }
-  .bar-active { background: linear-gradient(90deg,#ffd700,#ff9800) !important; }
-  .day-done .day-bar { box-shadow: 0 0 8px rgba(0,230,118,.4); }
-  .day-today .day-bar { animation: pulse-dot 2s ease-in-out infinite; }
-
-  /* Quote animation */
-  .quote-cycle {
-    font-size: clamp(28px, 5vw, 52px);
-    font-weight: 900;
-    color: #ffd700;
-    line-height: 1.2;
-    animation: fadeSlide .4s ease both;
-    font-family: Impact, 'Arial Black', sans-serif;
-    transform: scaleX(0.86);
-    transform-origin: left;
-  }
-  @keyframes fadeSlide { from{opacity:0;transform:scaleX(.86) translateY(10px)} to{opacity:1;transform:scaleX(.86) translateY(0)} }
-
-  /* Scrolling tickers */
-  .quote-inner {
-    display: inline-flex;
-    white-space: nowrap;
-    animation: scrollLeft 30s linear infinite;
-  }
-  .ticker-inner {
-    display: inline-flex;
-    white-space: nowrap;
-    animation: scrollLeft 18s linear infinite;
-  }
-  @keyframes scrollLeft { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-
-  /* Hero teacher float */
-  .hero-teacher { animation: floatTeacher 5s ease-in-out infinite; }
-  @keyframes floatTeacher { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
-
-  /* Meta pills */
-  .meta-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 12px;
-    background: rgba(255,255,255,.04);
-    border: 1px solid rgba(138,100,255,.18);
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #7a7a9e;
-  }
-
-  /* Hover links */
-  .footerLink:hover, a[style]:hover { color: #eeeeff !important; }
-  a:hover { color: #eeeeff; }
-
-  @media (max-width: 700px) {
-    .headline-line { font-size: 52px !important; }
-    .quote-cycle { font-size: 28px !important; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .hero-teacher, .quote-cycle, .quote-inner, .ticker-inner, .streak-dot.today { animation: none !important; }
+  @media (max-width:600px) {
+    .lp-grid-3 { grid-template-columns:1fr !important; }
+    .lp-grid-4 { grid-template-columns:1fr !important; }
+    .lp-nav-links { display:none !important; }
+    .lp-comp-grid { font-size:13px !important; }
   }
 `;
