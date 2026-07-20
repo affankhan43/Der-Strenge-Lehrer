@@ -1,9 +1,19 @@
 import { useState } from 'react';
 
+function speak(text, rate = 1) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const utt = new SpeechSynthesisUtterance(text);
+  utt.lang = 'de-DE';
+  utt.rate = rate;
+  window.speechSynthesis.speak(utt);
+}
+
 export default function VocabTask({ content, onReady }) {
   const words = content?.words || [];
   const [revealed, setRevealed] = useState({});
   const [confirmed, setConfirmed] = useState(false);
+  const [speaking, setSpeaking] = useState(null); // index + rate key
 
   const revealedCount = Object.keys(revealed).length;
   const canConfirm = revealedCount >= Math.ceil(words.length / 2);
@@ -12,6 +22,7 @@ export default function VocabTask({ content, onReady }) {
   const reveal = (i) => {
     if (revealed[i]) return;
     setRevealed(prev => ({ ...prev, [i]: true }));
+    speak(words[i].de, 1);
   };
 
   const revealAll = () => {
@@ -140,22 +151,38 @@ export default function VocabTask({ content, onReady }) {
               {/* Translation + example — revealed only */}
               {isRevealed ? (
                 <>
-                  <span style={{
-                    fontSize: 13,
-                    color: '#c4b5fd',
-                    fontWeight: 600,
-                  }}>
+                  <span style={{ fontSize: 13, color: '#c4b5fd', fontWeight: 600 }}>
                     {w.en}
                   </span>
+                  {/* Audio buttons */}
+                  <div
+                    style={{ display: 'flex', gap: 5, marginTop: 4 }}
+                    onClick={e => e.stopPropagation()}
+                  >
+                    <button
+                      onClick={() => speak(w.de, 1)}
+                      title="Normal sprechen"
+                      style={{
+                        background: 'rgba(96,165,250,.15)', border: '1px solid rgba(96,165,250,.3)',
+                        color: '#93c5fd', borderRadius: 6, padding: '2px 8px', fontSize: 11,
+                        fontWeight: 700, cursor: 'pointer', lineHeight: 1.6,
+                      }}
+                    >🔊</button>
+                    <button
+                      onClick={() => speak(w.de, 0.55)}
+                      title="Langsam sprechen"
+                      style={{
+                        background: 'rgba(96,165,250,.08)', border: '1px solid rgba(96,165,250,.2)',
+                        color: '#7aa8d8', borderRadius: 6, padding: '2px 8px', fontSize: 11,
+                        fontWeight: 700, cursor: 'pointer', lineHeight: 1.6,
+                      }}
+                    >🐢 langsam</button>
+                  </div>
                   {w.example && (
                     <span style={{
-                      fontSize: 11,
-                      color: '#5a5a8a',
-                      lineHeight: 1.45,
-                      fontStyle: 'italic',
-                      borderTop: '1px solid rgba(255,255,255,.06)',
-                      paddingTop: 5,
-                      marginTop: 2,
+                      fontSize: 11, color: '#5a5a8a', lineHeight: 1.45,
+                      fontStyle: 'italic', borderTop: '1px solid rgba(255,255,255,.06)',
+                      paddingTop: 5, marginTop: 2,
                     }}>
                       {w.example}
                     </span>

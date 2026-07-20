@@ -1,13 +1,12 @@
 {
-  "day": 49,
-  "title": "Easy German: Schule & Bildung",
-  "youtube_playlist": "PLk1fjOl39-5201BUdhtOM_x23poNvLouT",
-  "channel": "Easy German",
-  "notes": "Schau das Video und mache die Aufgaben.",
+  "youtube_video_id": "1Vrk13YeVns",
+  "channel": "Learn German",
+  "series": "A1 German Course",
+  "title": "Lektion 49: Wie ist das Wetter?",
+  "notes": "Lernziel: Wie ist das Wetter?. Schaue das Video und mache Notizen.",
   "tasks_after": [
-    "3 neue Wörter notiert",
-    "Eine Szene nachgesprochen",
-    "Zusammenfassung gesagt"
-  ],
-  "_note": "Add specific youtube_video_id for 'Easy German: Schule & Bildung'"
+    "3 neue Wörter mit Übersetzung aufschreiben",
+    "Einen Satz aus dem Video laut nachsprechen",
+    "Wie viel Prozent hast du verstanden? (Schätzung)"
+  ]
 }

@@ -1,4 +1,27 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useCallback } from 'react';
+
+function useArticleAudio(text) {
+  const [playing, setPlaying] = useState(false);
+
+  const play = useCallback((rate = 0.9) => {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = 'de-DE';
+    utt.rate = rate;
+    utt.onend = () => setPlaying(false);
+    utt.onerror = () => setPlaying(false);
+    setPlaying(true);
+    window.speechSynthesis.speak(utt);
+  }, [text]);
+
+  const stop = useCallback(() => {
+    window.speechSynthesis?.cancel();
+    setPlaying(false);
+  }, []);
+
+  return { playing, play, stop };
+}
 
 // Strip punctuation for glossary lookup
 function stripPunct(w) {
@@ -94,6 +117,7 @@ export default function ReadingTask({ content, onReady }) {
   const text      = content?.text || '';
   const glossary  = content?.glossary || {};
   const hasGlossary = Object.keys(glossary).length > 0;
+  const { playing, play, stop } = useArticleAudio(text);
 
   const handleAnswer = (qi, ai) => {
     if (submitted) return;
@@ -118,7 +142,27 @@ export default function ReadingTask({ content, onReady }) {
           </div>
         )}
         <div style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 12, padding: '18px 16px' }}>
-          <h3 style={{ color: 'var(--text1)', fontSize: 16, fontWeight: 700, margin: '0 0 14px' }}>{content?.title}</h3>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 14 }}>
+            <h3 style={{ color: 'var(--text1)', fontSize: 16, fontWeight: 700, margin: 0 }}>{content?.title}</h3>
+            {text && (
+              <div style={{ display: 'flex', gap: 6, flexShrink: 0, marginLeft: 10 }}>
+                {playing ? (
+                  <button onClick={stop} title="Stop" style={{ background: 'rgba(248,113,113,.15)', border: '1px solid rgba(248,113,113,.3)', color: '#fca5a5', borderRadius: 8, padding: '4px 10px', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>
+                    ⏹ Stop
+                  </button>
+                ) : (
+                  <>
+                    <button onClick={() => play(0.9)} title="Vorlesen" style={{ background: 'rgba(96,165,250,.15)', border: '1px solid rgba(96,165,250,.3)', color: '#93c5fd', borderRadius: 8, padding: '4px 10px', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>
+                      🔊 Vorlesen
+                    </button>
+                    <button onClick={() => play(0.6)} title="Langsam vorlesen" style={{ background: 'rgba(96,165,250,.08)', border: '1px solid rgba(96,165,250,.2)', color: '#7aa8d8', borderRadius: 8, padding: '4px 10px', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>
+                      🐢
+                    </button>
+                  </>
+                )}
+              </div>
+            )}
+          </div>
           <AnnotatedText text={text} glossary={glossary} />
         </div>
         {questions.length > 0 ? (

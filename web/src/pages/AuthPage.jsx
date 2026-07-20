@@ -249,7 +249,7 @@ export default function AuthPage() {
           )}
         </motion.div>
 
-        <p className={s.footer}>A2 → B2 · 28 Tage · 140 Aufgaben · Kein Ausreden.</p>
+        <p className={s.footer}>A1 → B2 · 112 Tage · 560 Aufgaben · Kein Ausreden.</p>
       </div>
     </div>
   );
