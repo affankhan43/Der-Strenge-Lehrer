@@ -1,0 +1,32 @@
+{
+  "day": 96,
+  "topic": "Digitalisierung & Gesellschaft",
+  "words": [
+    {
+      "de": "lernen",
+      "en": "to learn",
+      "example": "Ich lerne jeden Tag Deutsch."
+    },
+    {
+      "de": "üben",
+      "en": "to practice",
+      "example": "Üben macht den Meister."
+    },
+    {
+      "de": "verstehen",
+      "en": "to understand",
+      "example": "Jetzt verstehe ich."
+    },
+    {
+      "de": "sprechen",
+      "en": "to speak",
+      "example": "Ich spreche Deutsch."
+    },
+    {
+      "de": "schreiben",
+      "en": "to write",
+      "example": "Schreib das auf."
+    }
+  ],
+  "_note": "Add 20 words about 'Digitalisierung & Gesellschaft'. Format: {de, en, example}"
+}

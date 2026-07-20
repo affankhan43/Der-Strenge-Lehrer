@@ -18,17 +18,17 @@ const DayProgressSchema = new mongoose.Schema({
 
 const ProgressSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true, unique: true },
-  // Legacy deviceId kept for migration
   deviceId: { type: String, default: null },
   startDate: { type: String, default: () => new Date().toISOString().split('T')[0] },
   currentDay: { type: Number, default: 1 },
+  currentLevel: { type: String, default: 'A1.1' },
   streakCount: { type: Number, default: 0 },
   longestStreak: { type: Number, default: 0 },
   lastCompletedDate: { type: String, default: null },
   totalTasksCompleted: { type: Number, default: 0 },
   totalMinutesSpent: { type: Number, default: 0 },
-  // XP earned through task completion (synced to User.xp)
   xpEarned: { type: Number, default: 0 },
+  levelsCompleted: [{ type: String }],
   days: [DayProgressSchema]
 }, { timestamps: true });
 

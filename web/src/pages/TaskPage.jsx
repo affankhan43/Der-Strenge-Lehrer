@@ -12,7 +12,7 @@ import ReadingTask from '../components/tasks/ReadingTask';
 import GrammarTask from '../components/tasks/GrammarTask';
 import s from './TaskPage.module.css';
 
-const TOTAL_DAYS = 28;
+const TOTAL_DAYS = 112; // 4 levels × 28 days
 
 // Map backend's old task types → new native types
 const TYPE_REMAP = {
@@ -97,14 +97,21 @@ const WEEK_FOCUS = {
 };
 
 const LEVEL_RANGES = [
-  { level: 'A1', days: [1, 28], color: '#22c55e' },
-  { level: 'A2', days: [29, 56], color: '#3b82f6' },
-  { level: 'B1', days: [57, 84], color: '#a855f7' },
-  { level: 'B2', days: [85, 112], color: '#f59e0b' },
+  { level: 'A1.1', days: [1,   28],  color: '#22c55e',  label: 'Anfänger'      },
+  { level: 'A1.2', days: [29,  56],  color: '#10b981',  label: 'Grundkenntnisse' },
+  { level: 'A2.1', days: [57,  84],  color: '#3b82f6',  label: 'Grundstufe'    },
+  { level: 'A2.2', days: [85,  112], color: '#6366f1',  label: 'Elementar'     },
+  { level: 'B1.1', days: [113, 140], color: '#a855f7',  label: 'Fortgeschritten' },
+  { level: 'B1.2', days: [141, 168], color: '#ec4899',  label: 'Mittelstufe'   },
 ];
 
 function getCurrentLevel(day) {
   return LEVEL_RANGES.find(l => day >= l.days[0] && day <= l.days[1]) || LEVEL_RANGES[0];
+}
+
+function getDayInLevel(day) {
+  const lvl = getCurrentLevel(day);
+  return { ...lvl, dayInLevel: day - lvl.days[0] + 1, daysInLevel: lvl.days[1] - lvl.days[0] + 1 };
 }
 
 function fmt(m) {
@@ -229,7 +236,8 @@ export default function TaskPage() {
     const gain = res.xpGained || TYPE_XP[task.type] || 10;
     setXpPop(`+${gain} XP`);
     setTimeout(() => setXpPop(null), 1400);
-    if (res.newBadge) { setAchieve(`🏅 ${res.newBadge} freigeschaltet!`); setTimeout(() => setAchieve(null), 3500); }
+    if (res.levelUp) { setAchieve(`🎓 Level ${res.levelUp} erreicht!`); setTimeout(() => setAchieve(null), 5000); }
+    else if (res.newBadge) { setAchieve(`🏅 ${res.newBadge} freigeschaltet!`); setTimeout(() => setAchieve(null), 3500); }
 
     const next = taskIndex + 1;
     if (next >= dayTasks.length) {
@@ -285,8 +293,9 @@ export default function TaskPage() {
 
   const { level, pct } = xpInfo(user?.xp || 0);
   const resolvedTask = task;
-  const currentLevelInfo = getCurrentLevel(currentDay);
+  const currentLevelInfo = getDayInLevel(currentDay);
   const completedDays = (progress?.days || []).filter(d => d.completed).map(d => d.day);
+  const levelPct = Math.round((currentLevelInfo.dayInLevel / currentLevelInfo.daysInLevel) * 100);
 
   // ── VIEWS ──────────────────────────────────────────────
 
@@ -332,7 +341,11 @@ export default function TaskPage() {
       <div className={s.lockedView}>
         <motion.div className={s.lockedIcon} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 200 }}>🔒</motion.div>
         <div className={s.lockedTitle}>Fertig für heute.</div>
-        <div className={s.lockedSub}>Geh schlafen. Morgen öffnet Tag {Math.min(currentDay + 1, 28)}.<br />Dein Fortschritt ist gesichert.</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '4px 12px', borderRadius: 20, background: `${currentLevelInfo.color}18`, border: `1px solid ${currentLevelInfo.color}44` }}>
+          <span style={{ color: currentLevelInfo.color, fontSize: 12, fontWeight: 800 }}>{currentLevelInfo.level}</span>
+          <span style={{ color: 'var(--text3)', fontSize: 12 }}>Tag {currentLevelInfo.dayInLevel}/28</span>
+        </div>
+        <div className={s.lockedSub}>Morgen öffnet Tag {currentLevelInfo.dayInLevel < 28 ? currentLevelInfo.dayInLevel + 1 : 1} von {currentLevelInfo.level}.<br />Dein Fortschritt ist gesichert.</div>
         <Countdown />
         <div className={s.statsGrid} style={{ width: '100%', maxWidth: 360 }}>
           <StatCell num={stats?.streakCount || 0} label="🔥 Streak" />
@@ -384,15 +397,23 @@ export default function TaskPage() {
     <div className={s.page}>
       {sharedHeader}
 
-      {/* GPS Breadcrumb */}
-      <div className={s.gps}>
-        <span className={s.gpsLevel} style={{ color: currentLevelInfo.color }}>{currentLevelInfo.level}</span>
-        <span className={s.gpsSep}>›</span>
-        <span className={s.gpsItem}>Woche {resolvedTask.week || 1}</span>
-        <span className={s.gpsSep}>›</span>
-        <span className={s.gpsItem}>Tag {currentDay}</span>
-        <span className={s.gpsSep}>›</span>
-        <span className={s.gpsItem} style={{ color: typeColor }}>Quest {taskIndex + 1}/{dayTasks.length}</span>
+      {/* GPS Breadcrumb + Level Progress */}
+      <div className={s.gpsBlock}>
+        <div className={s.gps}>
+          <span className={s.gpsLevel} style={{ color: currentLevelInfo.color }}>{currentLevelInfo.level}</span>
+          <span className={s.gpsSep}>›</span>
+          <span className={s.gpsItem}>Tag {currentLevelInfo.dayInLevel}/28</span>
+          <span className={s.gpsSep}>›</span>
+          <span className={s.gpsItem}>Woche {resolvedTask.week || 1}</span>
+          <span className={s.gpsSep}>›</span>
+          <span className={s.gpsItem} style={{ color: typeColor }}>Quest {taskIndex + 1}/{dayTasks.length}</span>
+          <div style={{ flex: 1 }} />
+          <span style={{ fontSize: 10, color: 'var(--text3)', fontWeight: 600 }}>{levelPct}%</span>
+        </div>
+        {/* Level progress bar */}
+        <div className={s.levelBar}>
+          <div className={s.levelFill} style={{ width: `${levelPct}%`, background: currentLevelInfo.color }} />
+        </div>
       </div>
 
       {/* XP Bar */}
@@ -584,25 +605,56 @@ function DayPickerModal({ show, onClose, completedDays, currentDay, onSelect, to
     <motion.div className={s.modalOverlay} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}>
       <motion.div className={s.modal} initial={{ y: 60, opacity: 0 }} animate={{ y: 0, opacity: 1 }} onClick={e => e.stopPropagation()}>
         <div className={s.modalHeader}>
-          <h3 className={s.modalTitle}>📅 Tag auswählen</h3>
+          <h3 className={s.modalTitle}>📅 Curriculum</h3>
           <button className={s.modalClose} onClick={onClose}>✕</button>
         </div>
-        <p className={s.modalSub}>Wähle einen Tag um ihn zu wiederholen oder fortzusetzen.</p>
-        <div className={s.dayGrid}>
-          {Array.from({ length: totalDays }, (_, i) => i + 1).map(d => {
-            const done = completedSet.has(d);
-            const isCurrent = d === currentDay;
-            const locked = d > currentDay && !done;
-            return (
-              <button key={d} className={`${s.dayCell}${done ? ' ' + s.dayCellDone : isCurrent ? ' ' + s.dayCellCurrent : locked ? ' ' + s.dayCellLocked : ''}`}
-                onClick={() => !locked && onSelect(d)} disabled={locked}>
-                <span className={s.dayCellNum}>{d}</span>
-                {done && <span className={s.dayCellCheck}>✓</span>}
-                {isCurrent && !done && <span className={s.dayCellNow}>●</span>}
-              </button>
-            );
-          })}
-        </div>
+        <p className={s.modalSub}>Grüne Tage = abgeschlossen · Lila = aktuell · Grau = gesperrt</p>
+
+        {LEVEL_RANGES.filter(lr => lr.days[0] <= totalDays).map(lr => {
+          const lvlDays = Array.from({ length: lr.days[1] - lr.days[0] + 1 }, (_, i) => lr.days[0] + i).filter(d => d <= totalDays);
+          const done = lvlDays.filter(d => completedSet.has(d)).length;
+          const pct = Math.round((done / lvlDays.length) * 100);
+          const unlocked = lr.days[0] <= currentDay;
+          return (
+            <div key={lr.level} style={{ marginBottom: 16 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <span style={{ fontWeight: 900, fontSize: 13, color: unlocked ? lr.color : 'var(--text3)' }}>{lr.level}</span>
+                  <span style={{ fontSize: 11, color: 'var(--text3)' }}>{lr.label}</span>
+                </div>
+                <span style={{ fontSize: 11, color: unlocked ? lr.color : 'var(--text3)', fontWeight: 600 }}>{done}/{lvlDays.length} Tage · {pct}%</span>
+              </div>
+              <div style={{ height: 2, background: 'rgba(255,255,255,.06)', borderRadius: 1, marginBottom: 8, overflow: 'hidden' }}>
+                <div style={{ height: '100%', width: `${pct}%`, background: lr.color, borderRadius: 1, transition: 'width .6s' }} />
+              </div>
+              {unlocked && (
+                <div className={s.dayGrid}>
+                  {lvlDays.map(d => {
+                    const isDone = completedSet.has(d);
+                    const isCur = d === currentDay;
+                    const isLocked = d > currentDay;
+                    const dayInLevel = d - lr.days[0] + 1;
+                    return (
+                      <button key={d}
+                        className={`${s.dayCell}${isDone ? ' ' + s.dayCellDone : isCur ? ' ' + s.dayCellCurrent : isLocked ? ' ' + s.dayCellLocked : ''}`}
+                        style={isDone ? { borderColor: `${lr.color}55`, background: `${lr.color}15` } : isCur ? { borderColor: `${lr.color}88`, background: `${lr.color}25` } : {}}
+                        onClick={() => !isLocked && onSelect(d)} disabled={isLocked}>
+                        <span className={s.dayCellNum}>{dayInLevel}</span>
+                        {isDone && <span className={s.dayCellCheck}>✓</span>}
+                        {isCur && !isDone && <span className={s.dayCellNow}>●</span>}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+              {!unlocked && (
+                <div style={{ padding: '8px 0', color: 'var(--text3)', fontSize: 12, textAlign: 'center' }}>
+                  🔒 Schließe {lr.level === 'A1.2' ? 'A1.1' : lr.level === 'A2.1' ? 'A1.2' : lr.level === 'A2.2' ? 'A2.1' : 'vorheriges Level'} ab
+                </div>
+              )}
+            </div>
+          );
+        })}
       </motion.div>
     </motion.div>
   );

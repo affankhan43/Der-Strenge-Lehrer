@@ -1,0 +1,25 @@
+{
+  "day": 103,
+  "title": "NS-Zeit und Erinnerung",
+  "level": "A2",
+  "text": "Dieser Text handelt von: NS-Zeit und Erinnerung.\n\n[Lesetext hier einfügen — 150-200 Wörter auf Deutsch]",
+  "glossary": {
+    "Beispiel": {
+      "en": "example",
+      "grammar": "das Beispiel (n)"
+    }
+  },
+  "questions": [
+    {
+      "q": "Worum geht es im Text?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0
+    }
+  ],
+  "_note": "Add original German text about 'NS-Zeit und Erinnerung' + glossary + 5 questions"
+}

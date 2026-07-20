@@ -1,0 +1,25 @@
+{
+  "day": 105,
+  "topic": "Argumentative Sprache",
+  "explanation": "**Argumentative Sprache** — Erklärung hier einfügen.\n\nBeispiele:\n- Beispiel 1\n- Beispiel 2",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Beispiel ___ .",
+      "answer": "Antwort",
+      "hint": "Tipp"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Frage?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0
+    }
+  ],
+  "_note": "Add 8 exercises about 'Argumentative Sprache'"
+}

@@ -1,0 +1,25 @@
+{
+  "day": 106,
+  "title": "Was bin ich?",
+  "level": "A2",
+  "text": "Dieser Text handelt von: Was bin ich?.\n\n[Lesetext hier einfügen — 150-200 Wörter auf Deutsch]",
+  "glossary": {
+    "Beispiel": {
+      "en": "example",
+      "grammar": "das Beispiel (n)"
+    }
+  },
+  "questions": [
+    {
+      "q": "Worum geht es im Text?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0
+    }
+  ],
+  "_note": "Add original German text about 'Was bin ich?' + glossary + 5 questions"
+}

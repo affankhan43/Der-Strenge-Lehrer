@@ -1,0 +1,25 @@
+{
+  "day": 33,
+  "title": "Mein liebstes Hobby",
+  "level": "A2",
+  "text": "Dieser Text handelt von: Mein liebstes Hobby.\n\n[Lesetext hier einfügen — 150-200 Wörter auf Deutsch]",
+  "glossary": {
+    "Beispiel": {
+      "en": "example",
+      "grammar": "das Beispiel (n)"
+    }
+  },
+  "questions": [
+    {
+      "q": "Worum geht es im Text?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0
+    }
+  ],
+  "_note": "Add original German text about 'Mein liebstes Hobby' + glossary + 5 questions"
+}

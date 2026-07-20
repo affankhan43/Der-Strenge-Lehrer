@@ -40,7 +40,7 @@ export const useProgressStore = create((set, get) => ({
       set({ progress: res.data.progress });
       // Refresh stats silently
       api.get('/api/stats').then(r => set({ stats: r.data })).catch(() => {});
-      return { ok: true, xpGained: res.data.xpGained };
+      return { ok: true, xpGained: res.data.xpGained, levelUp: res.data.levelUp, currentLevel: res.data.currentLevel };
     } catch (err) {
       return { ok: false, error: err.response?.data?.error || 'Failed' };
     }
