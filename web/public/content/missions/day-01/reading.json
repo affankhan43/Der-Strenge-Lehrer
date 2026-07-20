@@ -2,32 +2,36 @@
   "day": 1,
   "title": "Hallo! Ich bin Anna.",
   "level": "A1",
-  "text": "Hallo! Ich heiße Anna. Ich bin 25 Jahre alt. Ich wohne in München. München ist in Bayern, in Deutschland. Ich bin Studentin. Ich studiere Medizin an der Universität. Das ist schwer, aber ich mag es.\n\nIch lerne Englisch und Spanisch. Jetzt lerne ich auch Deutsch — na ja, Deutsch ist meine Muttersprache! Aber ich helfe Freunden, die Deutsch lernen.\n\nMeine Familie ist groß. Ich habe einen Bruder und zwei Schwestern. Mein Bruder heißt Thomas. Er ist 28 Jahre alt und Ingenieur. Meine Schwestern heißen Laura und Sophie. Laura studiert noch. Sophie arbeitet als Lehrerin.\n\nIn meiner Freizeit lese ich Bücher und koche gern. Mein Lieblingsessen ist Pizza — ja, ich weiß, das ist nicht typisch deutsch! Ich trinke jeden Morgen Kaffee. Ohne Kaffee kann ich nicht arbeiten.",
+  "text": "Hallo! Ich heiße Anna. Ich bin 25 Jahre alt. Ich wohne in München. München ist in Bayern, in Deutschland. Ich bin Studentin. Ich studiere Medizin an der Universität. Das ist schwer, aber ich mag es.\n\nIch lerne Englisch und Spanisch. Jetzt lerne ich auch Deutsch — na ja, Deutsch ist meine Muttersprache! Aber ich helfe Freunden, die Deutsch lernen.\n\nMeine Familie ist groß. Ich habe einen Bruder und zwei Schwestern. Mein Bruder heißt Thomas. Er ist 28 Jahre alt und Ingenieur. Meine Schwestern heißen Laura und Sophie.\n\nIn meiner Freizeit lese ich Bücher und koche gern. Ich trinke jeden Morgen Kaffee. Ohne Kaffee kann ich nicht arbeiten.",
+  "glossary": {
+    "heiße": { "en": "am called", "grammar": "heißen → ich heiße (A1)" },
+    "wohne": { "en": "live (somewhere)", "grammar": "wohnen → ich wohne (A1)" },
+    "Studentin": { "en": "female student", "grammar": "der Student (m) / die Studentin (f)" },
+    "studiere": { "en": "study (at university)", "grammar": "studieren → ich studiere (A1)" },
+    "Universität": { "en": "university", "grammar": "die Universität (fem.)" },
+    "schwer": { "en": "hard / difficult", "grammar": "Adjektiv (A1)" },
+    "lerne": { "en": "am learning", "grammar": "lernen → ich lerne (A1)" },
+    "Muttersprache": { "en": "mother tongue / native language", "grammar": "die Muttersprache (fem.)" },
+    "helfe": { "en": "help", "grammar": "helfen → ich helfe (irregular, A2)" },
+    "Freunden": { "en": "friends (dative plural)", "grammar": "der Freund → Freunden (Dativ Plural)" },
+    "Bruder": { "en": "brother", "grammar": "der Bruder (m)" },
+    "Schwestern": { "en": "sisters (plural)", "grammar": "die Schwester → die Schwestern" },
+    "Ingenieur": { "en": "engineer", "grammar": "der Ingenieur (m)" },
+    "Freizeit": { "en": "free time / leisure", "grammar": "die Freizeit (fem.)" },
+    "lese": { "en": "read", "grammar": "lesen → ich lese (irregular: du liest, er liest)" },
+    "Bücher": { "en": "books (plural)", "grammar": "das Buch → die Bücher" },
+    "koche": { "en": "cook", "grammar": "kochen → ich koche (A1)" },
+    "gern": { "en": "gladly / enjoy doing", "grammar": "Adverb — 'Ich koche gern' = I like to cook" },
+    "trinke": { "en": "drink", "grammar": "trinken → ich trinke (A1)" },
+    "Morgen": { "en": "morning", "grammar": "der Morgen — 'jeden Morgen' = every morning" },
+    "kann": { "en": "can / am able to", "grammar": "können → ich kann (Modalverb, A1)" },
+    "arbeiten": { "en": "to work", "grammar": "arbeiten → ich arbeite (A1)" }
+  },
   "questions": [
-    {
-      "q": "Wie heißt die Person in diesem Text?",
-      "options": ["Maria", "Anna", "Sophie", "Laura"],
-      "correct": 1
-    },
-    {
-      "q": "Wo wohnt Anna?",
-      "options": ["Berlin", "Hamburg", "München", "Frankfurt"],
-      "correct": 2
-    },
-    {
-      "q": "Was studiert Anna?",
-      "options": ["Ingenieurwesen", "Pädagogik", "Medizin", "Wirtschaft"],
-      "correct": 2
-    },
-    {
-      "q": "Wie viele Geschwister hat Anna?",
-      "options": ["Zwei", "Drei", "Vier", "Keine"],
-      "correct": 1
-    },
-    {
-      "q": "Was ist Annas Lieblingsessen?",
-      "options": ["Bratwurst", "Sauerkraut", "Schnitzel", "Pizza"],
-      "correct": 3
-    }
+    { "q": "Wie heißt die Person in diesem Text?", "options": ["Maria", "Anna", "Sophie", "Laura"], "correct": 1 },
+    { "q": "Wo wohnt Anna?", "options": ["Berlin", "Hamburg", "München", "Frankfurt"], "correct": 2 },
+    { "q": "Was studiert Anna?", "options": ["Ingenieurwesen", "Pädagogik", "Medizin", "Wirtschaft"], "correct": 2 },
+    { "q": "Was ist Annas Bruder von Beruf?", "options": ["Lehrer", "Arzt", "Ingenieur", "Rentner"], "correct": 2 },
+    { "q": "Was macht Anna gern in der Freizeit?", "options": ["Sport treiben", "Kino gehen", "Bücher lesen und kochen", "Reisen"], "correct": 2 }
   ]
 }

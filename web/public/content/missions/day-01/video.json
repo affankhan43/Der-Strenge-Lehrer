@@ -1,11 +1,12 @@
 {
   "day": 1,
-  "title": "Easy German: Deutsch lernen für Anfänger",
-  "youtube_playlist": "PLk1fjOl39-5201BUdhtOM_x23poNvLouT",
-  "notes": "Schau das erste Video der Playlist. Beide Untertitel (Deutsch + Englisch) sind verfügbar. Schau das Video komplett. Schreib 3 neue Wörter in dein Heft.",
+  "title": "Easy German 1 — Erste Schritte",
+  "youtube_video_id": "Gjzj6mMU_S0",
+  "channel": "Easy German",
+  "notes": "Schau das Video bis zum Ende. Beide Untertitel verfügbar (Deutsch + Englisch). Schreib 3 neue Wörter auf.",
   "tasks_after": [
-    "Schreib 3 neue Wörter mit Übersetzung auf.",
-    "Wie viele Sätze hast du verstanden? Schätz eine Prozentahl.",
-    "Wiederhole einen Satz laut nach."
+    "3 neue Wörter mit Übersetzung aufschreiben",
+    "Einen Satz aus dem Video laut nachsprechen",
+    "Wie viel Prozent hast du verstanden? (Schätzung)"
   ]
 }

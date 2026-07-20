@@ -1,11 +1,13 @@
 {
   "day": 2,
+  "title": "Jojo sucht das Glück — Folge 2",
   "youtube_playlist": "PLs7zUO7VPyJ5q8vaO9vohSzNntbYvItJR",
-  "title": "Jojo Folge 2",
-  "notes": "Shadowing: Wähle eine Szene (1 Minute). Höre 2x zu, dann sprich gleichzeitig mit. 5x wiederholen.",
+  "channel": "Deutsche Welle",
+  "series": "Jojo sucht das Glück",
+  "notes": "Shadowing: Sprich gleichzeitig mit den Charakteren. 5 Sätze laut wiederholen.",
   "tasks_after": [
-    "5 Sätze nachsprechen",
-    "Eine Szene aufnehmen",
-    "Neue Ausdrücke notieren"
+    "5 Sätze shadowed",
+    "Neue Ausdrücke notiert",
+    "Kurze Zusammenfassung gesagt"
   ]
 }

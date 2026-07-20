@@ -54,5 +54,39 @@
       ],
       "correct": 1
     }
-  ]
+  ],
+  "glossary": {
+    "wohnt": {
+      "en": "lives (somewhere)",
+      "grammar": "wohnen → er wohnt"
+    },
+    "Rentner": {
+      "en": "retiree / pensioner",
+      "grammar": "der Rentner (m)"
+    },
+    "fleißig": {
+      "en": "hardworking / diligent",
+      "grammar": "Adjektiv"
+    },
+    "Softwareentwickler": {
+      "en": "software developer",
+      "grammar": "der Softwareentwickler (m)"
+    },
+    "ledig": {
+      "en": "single / unmarried",
+      "grammar": "Adjektiv"
+    },
+    "besuchen": {
+      "en": "visit",
+      "grammar": "besuchen → wir besuchen"
+    },
+    "zusammen": {
+      "en": "together",
+      "grammar": "Adverb"
+    },
+    "Lieblingstradition": {
+      "en": "favourite tradition",
+      "grammar": "die Lieblingstradition (fem.)"
+    }
+  }
 }

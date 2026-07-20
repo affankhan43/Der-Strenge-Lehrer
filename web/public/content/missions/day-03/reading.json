@@ -54,5 +54,39 @@
       ],
       "correct": 2
     }
-  ]
+  ],
+  "glossary": {
+    "stehe": {
+      "en": "get up / stand",
+      "grammar": "aufstehen → ich stehe auf (trennbar!)"
+    },
+    "frühstücke": {
+      "en": "have breakfast",
+      "grammar": "frühstücken → ich frühstücke"
+    },
+    "Mensa": {
+      "en": "university cafeteria",
+      "grammar": "die Mensa (fem.)"
+    },
+    "günstig": {
+      "en": "cheap / affordable",
+      "grammar": "Adjektiv"
+    },
+    "Bibliothek": {
+      "en": "library",
+      "grammar": "die Bibliothek (fem.)"
+    },
+    "manchmal": {
+      "en": "sometimes",
+      "grammar": "Adverb (Frequenz)"
+    },
+    "vorbei": {
+      "en": "over / by (stop by)",
+      "grammar": "vorbeikommt — trennbares Verb"
+    },
+    "einfach": {
+      "en": "simple / just",
+      "grammar": "Adjektiv / Adverb (A1)"
+    }
+  }
 }
