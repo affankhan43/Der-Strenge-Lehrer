@@ -1,22 +1,17 @@
 import { useState, useRef, useCallback } from 'react';
+import { speakText, stopSpeech } from '../../utils/germanAudio';
 
 function useArticleAudio(text) {
   const [playing, setPlaying] = useState(false);
 
-  const play = useCallback((rate = 0.9) => {
-    if (!window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
-    const utt = new SpeechSynthesisUtterance(text);
-    utt.lang = 'de-DE';
-    utt.rate = rate;
-    utt.onend = () => setPlaying(false);
-    utt.onerror = () => setPlaying(false);
+  const play = useCallback(async (rate = 0.9) => {
     setPlaying(true);
-    window.speechSynthesis.speak(utt);
+    await speakText(text, rate);
+    setPlaying(false);
   }, [text]);
 
   const stop = useCallback(() => {
-    window.speechSynthesis?.cancel();
+    stopSpeech();
     setPlaying(false);
   }, []);
 

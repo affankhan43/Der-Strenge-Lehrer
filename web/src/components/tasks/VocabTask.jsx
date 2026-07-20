@@ -1,19 +1,10 @@
 import { useState } from 'react';
-
-function speak(text, rate = 1) {
-  if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  const utt = new SpeechSynthesisUtterance(text);
-  utt.lang = 'de-DE';
-  utt.rate = rate;
-  window.speechSynthesis.speak(utt);
-}
+import { speakWord } from '../../utils/germanAudio';
 
 export default function VocabTask({ content, onReady }) {
   const words = content?.words || [];
   const [revealed, setRevealed] = useState({});
   const [confirmed, setConfirmed] = useState(false);
-  const [speaking, setSpeaking] = useState(null); // index + rate key
 
   const revealedCount = Object.keys(revealed).length;
   const canConfirm = revealedCount >= Math.ceil(words.length / 2);
@@ -22,7 +13,7 @@ export default function VocabTask({ content, onReady }) {
   const reveal = (i) => {
     if (revealed[i]) return;
     setRevealed(prev => ({ ...prev, [i]: true }));
-    speak(words[i].de, 1);
+    speakWord(words[i].de, 1);
   };
 
   const revealAll = () => {
@@ -160,7 +151,7 @@ export default function VocabTask({ content, onReady }) {
                     onClick={e => e.stopPropagation()}
                   >
                     <button
-                      onClick={() => speak(w.de, 1)}
+                      onClick={() => speakWord(w.de, 1)}
                       title="Normal sprechen"
                       style={{
                         background: 'rgba(96,165,250,.15)', border: '1px solid rgba(96,165,250,.3)',
@@ -169,7 +160,7 @@ export default function VocabTask({ content, onReady }) {
                       }}
                     >🔊</button>
                     <button
-                      onClick={() => speak(w.de, 0.55)}
+                      onClick={() => speakWord(w.de, 0.55)}
                       title="Langsam sprechen"
                       style={{
                         background: 'rgba(96,165,250,.08)', border: '1px solid rgba(96,165,250,.2)',
