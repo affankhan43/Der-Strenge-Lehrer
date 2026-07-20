@@ -199,21 +199,44 @@ function BG() {
 }
 
 function Nav({ user, onCTA }) {
+  const [open, setOpen] = useState(false);
+  const links = [['#methode','Methode'],['#gamification','Gamification'],['#journey','28 Tage'],['#cta','Anfangen']];
   return (
-    <nav style={{ position: 'sticky', top: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '18px 40px', background: 'rgba(6,8,15,0.55)', backdropFilter: 'blur(18px)', WebkitBackdropFilter: 'blur(18px)', borderBottom: '1px solid rgba(148,163,255,0.09)' }}>
-      <a href="#top" style={{ display: 'flex', alignItems: 'center', gap: 12, color: '#fff', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 19, letterSpacing: '-0.01em', textDecoration: 'none' }}>
-        <span style={{ display: 'inline-flex', animation: 'badgeGlow 3s ease-in-out infinite', borderRadius: 12 }}>
-          <LogoSVG size={36} gid="lgNav" />
-        </span>
-        Der <span style={{ color: '#ffd60a', marginLeft: 4 }}>Strenge</span> Lehrer
-      </a>
-      <div className="lp-nav-links">
-        {[['#methode','Methode'],['#gamification','Gamification'],['#journey','28 Tage'],['#cta','Anfangen']].map(([href, label]) => (
-          <a key={href} className="lp-link" href={href} style={{ color: '#9aa2bf', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 15, textDecoration: 'none' }}>{label}</a>
+    <>
+      <nav style={{ position: 'sticky', top: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 32px', background: 'rgba(6,8,15,0.72)', backdropFilter: 'blur(18px)', WebkitBackdropFilter: 'blur(18px)', borderBottom: '1px solid rgba(148,163,255,0.09)' }}>
+        <a href="#top" style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#fff', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 17, letterSpacing: '-0.01em', textDecoration: 'none', flexShrink: 0 }}>
+          <span style={{ display: 'inline-flex', animation: 'badgeGlow 3s ease-in-out infinite', borderRadius: 10 }}>
+            <LogoSVG size={32} gid="lgNav" />
+          </span>
+          Der <span style={{ color: '#ffd60a', marginLeft: 4 }}>Strenge</span> Lehrer
+        </a>
+        {/* Desktop links */}
+        <div className="lp-nav-links">
+          {links.map(([href, label]) => (
+            <a key={href} className="lp-link" href={href} style={{ color: '#9aa2bf', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 15, textDecoration: 'none' }}>{label}</a>
+          ))}
+        </div>
+        {/* Desktop CTA */}
+        <button onClick={onCTA} className="lp-btn-nav lp-nav-cta-desktop">{user ? 'Dashboard' : 'Anmelden'}</button>
+        {/* Hamburger — mobile only */}
+        <button onClick={() => setOpen(o => !o)} className="lp-hamburger" aria-label="Menu">
+          <span className={open ? 'lp-ham-line lp-ham-top open' : 'lp-ham-line lp-ham-top'} />
+          <span className={open ? 'lp-ham-line lp-ham-mid open' : 'lp-ham-line lp-ham-mid'} />
+          <span className={open ? 'lp-ham-line lp-ham-bot open' : 'lp-ham-line lp-ham-bot'} />
+        </button>
+      </nav>
+      {/* Mobile drawer */}
+      <div className={open ? 'lp-drawer open' : 'lp-drawer'}>
+        {links.map(([href, label]) => (
+          <a key={href} href={href} onClick={() => setOpen(false)} style={{ display: 'block', padding: '16px 24px', color: '#eef0f7', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 600, fontSize: 17, textDecoration: 'none', borderBottom: '1px solid rgba(148,163,255,0.08)' }}>{label}</a>
         ))}
+        <div style={{ padding: '20px 24px' }}>
+          <button onClick={() => { setOpen(false); onCTA(); }} style={{ width: '100%', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 16, color: '#06070c', padding: '14px', borderRadius: 14, background: 'linear-gradient(135deg,#ffe66b,#ffb300)', border: 'none', cursor: 'pointer' }}>
+            {user ? 'Zum Dashboard →' : 'Kostenlos starten'}
+          </button>
+        </div>
       </div>
-      <button onClick={onCTA} className="lp-btn-nav">{user ? 'Dashboard' : 'Anmelden'}</button>
-    </nav>
+    </>
   );
 }
 
@@ -677,7 +700,15 @@ const CSS = `
   .lp-hover-test:hover { transform:translateY(-6px) !important; border-color:rgba(255,214,10,0.4) !important; box-shadow:0 26px 60px -30px rgba(0,0,0,0.8) !important; transition:all .2s !important; }
   .lp-stat-card:hover { border-color:rgba(255,214,10,0.35) !important; box-shadow:0 20px 54px -24px rgba(255,214,10,0.25) !important; transition:all .2s !important; }
   .lp-faq-row:hover { border-color:rgba(255,214,10,0.3) !important; }
-  .lp-nav-links { display:flex; gap:30px; }
+  .lp-nav-links { display:flex; gap:28px; }
+  .lp-nav-cta-desktop { display:block; }
+  .lp-hamburger { display:none; flex-direction:column; justify-content:center; align-items:center; gap:5px; width:40px; height:40px; background:rgba(148,163,255,0.08); border:1px solid rgba(148,163,255,0.15); border-radius:10px; cursor:pointer; padding:0; }
+  .lp-ham-line { display:block; width:18px; height:2px; background:#eef0f7; border-radius:2px; transition:transform .25s, opacity .25s; }
+  .lp-ham-top.open { transform:translateY(7px) rotate(45deg); }
+  .lp-ham-mid.open { opacity:0; }
+  .lp-ham-bot.open { transform:translateY(-7px) rotate(-45deg); }
+  .lp-drawer { position:fixed; top:61px; left:0; right:0; z-index:49; background:rgba(6,8,15,0.97); backdrop-filter:blur(20px); border-bottom:1px solid rgba(148,163,255,0.1); transform:translateY(-110%); transition:transform .3s cubic-bezier(.2,.8,.2,1); }
+  .lp-drawer.open { transform:translateY(0); }
   .lp-hero-teacher-mobile { display:none; }
 
   /* ── tablet ── */
@@ -693,15 +724,21 @@ const CSS = `
     section { padding-top:64px !important; padding-bottom:40px !important; }
   }
 
+  /* ── tablet: hide links, show hamburger ── */
+  @media (max-width:768px) {
+    .lp-nav-links { display:none !important; }
+    .lp-nav-cta-desktop { display:none !important; }
+    .lp-hamburger { display:flex !important; }
+  }
+
   /* ── mobile ── */
   @media (max-width:600px) {
     nav { padding:12px 16px !important; }
-    .lp-nav-links { display:none !important; }
-    .lp-btn-nav { padding:8px 14px !important; font-size:13px !important; }
     .lp-hero-grid { padding:20px 16px 20px !important; }
     .lp-grid-3 { grid-template-columns:1fr !important; }
     .lp-grid-4 { grid-template-columns:1fr 1fr !important; }
     section { padding-left:16px !important; padding-right:16px !important; padding-top:56px !important; padding-bottom:32px !important; }
+    .lp-drawer { top:57px; }
 
     /* comparison: hide desktop table, show mobile cards */
     .lp-comp-desktop { display:none !important; }
