@@ -220,12 +220,39 @@ function Nav({ user, onCTA }) {
 function Hero({ ctaLabel, onCTA }) {
   return (
     <section id="top" className="lp-hero-grid" style={{ position: 'relative', minHeight: '92vh', display: 'grid', gridTemplateColumns: '0.9fr 1.1fr', alignItems: 'center', gap: 20, maxWidth: 1240, margin: '0 auto', padding: '60px 40px 40px' }}>
+      {/* Teacher card — always rendered, hidden via CSS on mobile and replaced by mini version */}
       <div className="lp-hero-teacher" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
         <div style={{ position: 'absolute', width: 320, height: 320, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,10,0.22), transparent 65%)', filter: 'blur(20px)', animation: 'glowPulse 4s ease-in-out infinite' }} />
         <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', border: '1px dashed rgba(255,214,10,0.28)', animation: 'ringSpin 26s linear infinite' }} />
         <div style={{ position: 'relative', width: 260, height: 300, borderRadius: 28, background: 'linear-gradient(160deg, rgba(20,24,40,0.9), rgba(10,12,22,0.9))', border: '1px solid rgba(148,163,255,0.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 30px 80px -30px rgba(124,58,237,0.5)', animation: 'floatY 6s ease-in-out infinite', overflow: 'hidden' }}>
           <TeacherSVG />
           <div style={{ position: 'absolute', bottom: 14, left: '50%', transform: 'translateX(-50%)', fontFamily: "'Space Grotesk',sans-serif", fontSize: 11, letterSpacing: '0.22em', color: '#7c86a8', whiteSpace: 'nowrap' }}>DER STRENGE LEHRER</div>
+        </div>
+      </div>
+      {/* Mini teacher — only shown on mobile above the text */}
+      <div className="lp-hero-teacher-mobile" style={{ display: 'none', justifyContent: 'center', marginBottom: 24 }}>
+        <div style={{ position: 'relative', width: 140, height: 160, borderRadius: 22, background: 'linear-gradient(160deg,rgba(20,24,40,0.9),rgba(10,12,22,0.9))', border: '1px solid rgba(148,163,255,0.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 50px -20px rgba(124,58,237,0.5)', animation: 'floatY 6s ease-in-out infinite', overflow: 'hidden' }}>
+          <svg viewBox="0 0 120 130" width="100" height="108" style={{ filter: 'drop-shadow(0 6px 16px rgba(255,179,0,0.3))' }}>
+            <defs><linearGradient id="face1m" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffe66b"/><stop offset="1" stopColor="#ffb300"/></linearGradient></defs>
+            <g style={{ transformBox:'fill-box', transformOrigin:'60px 60px', animation:'headTilt 5.5s ease-in-out infinite' }}>
+              <rect x="42" y="96" width="36" height="30" rx="8" fill="#161a2e"/>
+              <path d="M45 100 L60 108 L75 100" fill="none" stroke="#ffd60a" strokeWidth="3"/>
+              <circle cx="60" cy="58" r="40" fill="url(#face1m)"/>
+              <path d="M22 46 Q60 8 98 46 L98 34 Q60 4 22 34 Z" fill="#0b0e18"/>
+              <circle cx="46" cy="60" r="12" fill="#0b0e18" fillOpacity="0.14" stroke="#0b0e18" strokeWidth="3.2"/>
+              <circle cx="74" cy="60" r="12" fill="#0b0e18" fillOpacity="0.14" stroke="#0b0e18" strokeWidth="3.2"/>
+              <line x1="58" y1="60" x2="62" y2="60" stroke="#0b0e18" strokeWidth="3.2"/>
+              <g style={{ transformBox:'fill-box', transformOrigin:'center', animation:'blink 4.2s ease-in-out infinite' }}>
+                <circle cx="46" cy="60" r="3.4" fill="#0b0e18"/>
+                <circle cx="74" cy="60" r="3.4" fill="#0b0e18"/>
+              </g>
+              <g style={{ transformBox:'fill-box', transformOrigin:'center', animation:'browAngry 3.2s ease-in-out infinite' }}>
+                <line x1="34" y1="44" x2="55" y2="50" stroke="#0b0e18" strokeWidth="3.4" strokeLinecap="round"/>
+                <line x1="86" y1="44" x2="65" y2="50" stroke="#0b0e18" strokeWidth="3.4" strokeLinecap="round"/>
+              </g>
+              <path d="M48 84 Q60 76 72 84" fill="none" stroke="#0b0e18" strokeWidth="3.2" strokeLinecap="round"/>
+            </g>
+          </svg>
         </div>
       </div>
       <div>
@@ -274,7 +301,7 @@ function Methode() {
   return (
     <section id="methode" style={{ maxWidth: 1240, margin: '0 auto', padding: '120px 40px 60px' }}>
       <div style={{ textAlign: 'center', marginBottom: 70 }}>
-        <div data-reveal="" style={revealStyle()}>METHODE</div>
+        <div data-reveal="" style={{...revealStyle(), ...labelStyle}}></div>
         <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,68px)', lineHeight: 1.02, letterSpacing: '-0.03em', margin: 0 })}>
           Warum so streng?<br /><span style={{ color: '#a78bfa' }}>Weil nett nicht funktioniert.</span>
         </h2>
@@ -300,12 +327,13 @@ function Vergleich() {
   return (
     <section style={{ maxWidth: 1120, margin: '0 auto', padding: '90px 40px 60px' }}>
       <div style={{ textAlign: 'center', marginBottom: 56 }}>
-        <div data-reveal="" style={revealStyle()}>VERGLEICH</div>
+        <div data-reveal="" style={{...revealStyle(), ...labelStyle}}></div>
         <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,66px)', letterSpacing: '-0.03em', margin: 0 })}>
           Nett vs. <span style={{ color: '#ffd60a' }}>Streng.</span>
         </h2>
       </div>
-      <div data-reveal="" className="lp-comp-grid" style={{ ...revealStyle(), display: 'grid', gridTemplateColumns: '1fr 1.1fr 1.1fr', borderRadius: 22, overflow: 'hidden', border: '1px solid rgba(148,163,255,0.12)' }}>
+      {/* Desktop table */}
+      <div data-reveal="" className="lp-comp-grid lp-comp-desktop" style={{ ...revealStyle(), display: 'grid', gridTemplateColumns: '1fr 1.1fr 1.1fr', borderRadius: 22, overflow: 'hidden', border: '1px solid rgba(148,163,255,0.12)' }}>
         <div style={{ padding: '22px 26px', background: 'rgba(10,13,24,0.6)' }} />
         <div style={{ padding: '22px 26px', background: 'rgba(10,13,24,0.6)', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 17, color: '#7c86a8', textAlign: 'center' }}>Andere Apps</div>
         <div style={{ padding: '22px 26px', background: 'linear-gradient(180deg,rgba(255,214,10,0.14),rgba(255,214,10,0.04))', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 17, color: '#ffd60a', textAlign: 'center', borderLeft: '1px solid rgba(255,214,10,0.25)', borderRight: '1px solid rgba(255,214,10,0.25)' }}>Der Strenge Lehrer</div>
@@ -317,6 +345,18 @@ function Vergleich() {
           </div>
         ))}
       </div>
+      {/* Mobile cards */}
+      <div className="lp-comp-mobile" style={{ display: 'none', flexDirection: 'column', gap: 10 }}>
+        {COMPARISON.map((c) => (
+          <div key={c.label} style={{ borderRadius: 14, overflow: 'hidden', border: '1px solid rgba(148,163,255,0.12)' }}>
+            <div style={{ padding: '10px 14px', background: 'rgba(10,13,24,0.8)', fontWeight: 700, fontSize: 13, color: '#a78bfa', letterSpacing: '0.1em' }}>{c.label}</div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <div style={{ padding: '12px 14px', background: 'rgba(10,13,24,0.5)', fontSize: 13, color: '#7c86a8', borderRight: '1px solid rgba(148,163,255,0.08)' }}><span style={{ fontSize: 11, color: '#6b7396', display: 'block', marginBottom: 4 }}>Andere Apps</span>{c.others}</div>
+              <div style={{ padding: '12px 14px', background: 'rgba(255,214,10,0.06)', fontSize: 13, color: '#f4f6ff', fontWeight: 600 }}><span style={{ fontSize: 11, color: '#ffd60a', display: 'block', marginBottom: 4 }}>Wir</span>{c.ours}</div>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
@@ -325,7 +365,7 @@ function Gamification() {
   return (
     <section id="gamification" style={{ maxWidth: 1240, margin: '0 auto', padding: '90px 40px 60px' }}>
       <div style={{ textAlign: 'center', marginBottom: 64 }}>
-        <div data-reveal="" style={revealStyle()}>GAMIFICATION</div>
+        <div data-reveal="" style={{...revealStyle(), ...labelStyle}}></div>
         <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,68px)', lineHeight: 1.02, letterSpacing: '-0.03em', margin: 0 })}>
           Lernen wie ein Spiel.<br /><span style={{ color: '#ffd60a' }}>Fühlen wie Arbeit.</span>
         </h2>
@@ -455,7 +495,7 @@ function Faq({ openFaq, setOpenFaq }) {
   return (
     <section style={{ maxWidth: 800, margin: '0 auto', padding: '90px 40px 60px' }}>
       <div style={{ textAlign: 'center', marginBottom: 56 }}>
-        <div data-reveal="" style={revealStyle()}>AUSREDEN-KLINIK</div>
+        <div data-reveal="" style={{...revealStyle(), ...labelStyle}}></div>
         <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,66px)', letterSpacing: '-0.03em', margin: 0 })}>
           Ich kenne<br /><span style={{ color: '#a78bfa' }}>deine Ausreden.</span>
         </h2>
@@ -481,7 +521,7 @@ function Testimonials() {
   return (
     <section style={{ maxWidth: 1240, margin: '0 auto', padding: '90px 40px 60px' }}>
       <div style={{ textAlign: 'center', marginBottom: 56 }}>
-        <div data-reveal="" style={revealStyle()}>STIMMEN</div>
+        <div data-reveal="" style={{...revealStyle(), ...labelStyle}}></div>
         <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,66px)', letterSpacing: '-0.03em', margin: 0 })}>
           Sie hassten ihn.<br /><span style={{ color: '#ffd60a' }}>Am Ende dankten.</span>
         </h2>
@@ -508,7 +548,7 @@ function Testimonials() {
 function FinalCTA({ ctaLabel, onCTA }) {
   return (
     <section id="cta" style={{ maxWidth: 900, margin: '0 auto', padding: '100px 40px 90px', textAlign: 'center' }}>
-      <div data-reveal="" style={revealStyle()}>BEREIT?</div>
+      <div data-reveal="" style={{...revealStyle(), ...labelStyle}}></div>
       <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(50px,8vw,96px)', lineHeight: 0.98, letterSpacing: '-0.035em', margin: 0 })}>
         Tag 1 wartet.<br /><span style={{ color: '#ffd60a', textShadow: '0 0 60px rgba(255,214,10,0.35)' }}>Du auch?</span>
       </h2>
@@ -585,9 +625,11 @@ function TeacherSVG() {
 }
 
 /* ── helpers ────────────────────────────────────────────────────────────── */
-function revealStyle(extra = '', overrides = {}) {
-  const base = { opacity: 0, transform: 'translateY(24px)', transition: `all .8s cubic-bezier(.2,.7,.2,1)${extra ? ` ${extra}` : ''}`, fontFamily: "'Space Grotesk',sans-serif", fontSize: 14, letterSpacing: '0.32em', color: '#a78bfa', marginBottom: 18 };
-  return { ...base, ...overrides };
+/* label style — only for the small "METHODE" / "BEREIT?" labels */
+const labelStyle = { fontFamily: "'Space Grotesk',sans-serif", fontSize: 14, letterSpacing: '0.32em', color: '#a78bfa', marginBottom: 18 };
+/* reveal-only — animation state, no typography */
+function revealStyle(delay = '', overrides = {}) {
+  return { opacity: 0, transform: 'translateY(24px)', transition: `all .8s cubic-bezier(.2,.7,.2,1)${delay ? ` ${delay}` : ''}`, ...overrides };
 }
 
 /* ── CSS string ─────────────────────────────────────────────────────────── */
@@ -636,28 +678,36 @@ const CSS = `
   .lp-stat-card:hover { border-color:rgba(255,214,10,0.35) !important; box-shadow:0 20px 54px -24px rgba(255,214,10,0.25) !important; transition:all .2s !important; }
   .lp-faq-row:hover { border-color:rgba(255,214,10,0.3) !important; }
   .lp-nav-links { display:flex; gap:30px; }
+  .lp-hero-teacher-mobile { display:none; }
 
+  /* ── tablet ── */
   @media (max-width:900px) {
-    .lp-hero-grid { grid-template-columns:1fr !important; text-align:center; padding:40px 20px 30px !important; min-height:auto !important; }
+    .lp-hero-grid { grid-template-columns:1fr !important; text-align:center; padding:32px 24px 24px !important; min-height:auto !important; }
     .lp-hero-teacher { display:none !important; }
+    .lp-hero-teacher-mobile { display:flex !important; }
     .lp-grid-3 { grid-template-columns:1fr 1fr !important; }
     .lp-grid-4 { grid-template-columns:1fr 1fr !important; }
     .lp-journey-inner { grid-template-columns:1fr !important; gap:24px !important; padding:24px !important; }
-    .lp-comp-grid { overflow-x:auto !important; }
     .lp-hero-btns { justify-content:center !important; }
     .lp-hero-chips { justify-content:center !important; }
+    section { padding-top:64px !important; padding-bottom:40px !important; }
   }
+
+  /* ── mobile ── */
   @media (max-width:600px) {
-    nav { padding:14px 16px !important; }
+    nav { padding:12px 16px !important; }
     .lp-nav-links { display:none !important; }
     .lp-btn-nav { padding:8px 14px !important; font-size:13px !important; }
-    .lp-hero-grid { padding:30px 16px 24px !important; }
+    .lp-hero-grid { padding:20px 16px 20px !important; }
     .lp-grid-3 { grid-template-columns:1fr !important; }
     .lp-grid-4 { grid-template-columns:1fr 1fr !important; }
-    section { padding-left:16px !important; padding-right:16px !important; }
-    .lp-comp-grid { grid-template-columns:1fr !important; font-size:14px !important; }
-    .lp-comp-grid > div { padding:14px 12px !important; }
-    footer { flex-direction:column !important; text-align:center; padding:24px 16px !important; }
-    footer > div:last-child { display:none; }
+    section { padding-left:16px !important; padding-right:16px !important; padding-top:56px !important; padding-bottom:32px !important; }
+
+    /* comparison: hide desktop table, show mobile cards */
+    .lp-comp-desktop { display:none !important; }
+    .lp-comp-mobile { display:flex !important; }
+
+    footer { flex-direction:column !important; align-items:flex-start !important; gap:16px !important; padding:24px 16px !important; }
+    footer > div:last-child { display:none !important; }
   }
 `;
