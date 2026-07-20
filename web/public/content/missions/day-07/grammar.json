@@ -1,0 +1,70 @@
+{
+  "day": 7,
+  "topic": "Perfekt — Vergangenheit",
+  "explanation": "Das **Perfekt** wird für abgeschlossene Handlungen in der Vergangenheit verwendet.\n\nFormel: **haben/sein** + **Partizip II**\n\nMost verbs: **haben** + Partizip II\nVerbs of motion/state change: **sein** + Partizip II\n\nPartizip II Bildung:\n- Regelmäßig: ge- + Stamm + -t (kaufen → ge**kauf**t)\n- Unregelmäßig: ge- + Stamm + -en (fahren → ge**fahr**en)\n- Vorsilbe: be-, er-, ver- etc. → kein ge- (besuchen → besucht)",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Ich ___ gestern Deutsch ___. (lernen — Perfekt)",
+      "answer": "habe / gelernt",
+      "hint": "lernen → haben + gelernt"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er ___ nach Berlin ___. (fahren — Perfekt)",
+      "answer": "ist / gefahren",
+      "hint": "fahren = Bewegung → sein + gefahren"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'Wir ___ das Buch gelesen.'",
+      "options": [
+        "sind",
+        "haben",
+        "habt",
+        "seid"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Sie ___ früh ___. (aufstehen — Perfekt)",
+      "answer": "ist / aufgestanden",
+      "hint": "aufstehen = Bewegung → sein + aufgestanden"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich ___ Kaffee ___. (trinken — Perfekt, unregelmäßig)",
+      "answer": "habe / getrunken",
+      "hint": "trinken → haben + getrunken"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Was ist das Partizip II von 'essen'?",
+      "options": [
+        "geesst",
+        "gegessen",
+        "geessen",
+        "geesst"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das Kind ___ schnell ___. (wachsen — Perfekt)",
+      "answer": "ist / gewachsen",
+      "hint": "wachsen = Zustandsänderung → sein + gewachsen"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Was ist das Partizip II von 'kaufen'?",
+      "options": [
+        "gekauft",
+        "gekaufen",
+        "geekauft",
+        "kauf"
+      ],
+      "correct": 0
+    }
+  ]
+}

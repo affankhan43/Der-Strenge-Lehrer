@@ -1,0 +1,33 @@
+{
+  "day": 1,
+  "title": "Hallo! Ich bin Anna.",
+  "level": "A1",
+  "text": "Hallo! Ich heiße Anna. Ich bin 25 Jahre alt. Ich wohne in München. München ist in Bayern, in Deutschland. Ich bin Studentin. Ich studiere Medizin an der Universität. Das ist schwer, aber ich mag es.\n\nIch lerne Englisch und Spanisch. Jetzt lerne ich auch Deutsch — na ja, Deutsch ist meine Muttersprache! Aber ich helfe Freunden, die Deutsch lernen.\n\nMeine Familie ist groß. Ich habe einen Bruder und zwei Schwestern. Mein Bruder heißt Thomas. Er ist 28 Jahre alt und Ingenieur. Meine Schwestern heißen Laura und Sophie. Laura studiert noch. Sophie arbeitet als Lehrerin.\n\nIn meiner Freizeit lese ich Bücher und koche gern. Mein Lieblingsessen ist Pizza — ja, ich weiß, das ist nicht typisch deutsch! Ich trinke jeden Morgen Kaffee. Ohne Kaffee kann ich nicht arbeiten.",
+  "questions": [
+    {
+      "q": "Wie heißt die Person in diesem Text?",
+      "options": ["Maria", "Anna", "Sophie", "Laura"],
+      "correct": 1
+    },
+    {
+      "q": "Wo wohnt Anna?",
+      "options": ["Berlin", "Hamburg", "München", "Frankfurt"],
+      "correct": 2
+    },
+    {
+      "q": "Was studiert Anna?",
+      "options": ["Ingenieurwesen", "Pädagogik", "Medizin", "Wirtschaft"],
+      "correct": 2
+    },
+    {
+      "q": "Wie viele Geschwister hat Anna?",
+      "options": ["Zwei", "Drei", "Vier", "Keine"],
+      "correct": 1
+    },
+    {
+      "q": "Was ist Annas Lieblingsessen?",
+      "options": ["Bratwurst", "Sauerkraut", "Schnitzel", "Pizza"],
+      "correct": 3
+    }
+  ]
+}

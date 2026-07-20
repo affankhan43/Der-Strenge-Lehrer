@@ -1,0 +1,106 @@
+{
+  "day": 6,
+  "topic": "Stadt & Orte",
+  "words": [
+    {
+      "de": "die Stadt",
+      "en": "city",
+      "example": "München ist eine schöne Stadt."
+    },
+    {
+      "de": "das Haus",
+      "en": "house",
+      "example": "Ich wohne in einem kleinen Haus."
+    },
+    {
+      "de": "die Wohnung",
+      "en": "apartment",
+      "example": "Meine Wohnung ist im dritten Stock."
+    },
+    {
+      "de": "die Straße",
+      "en": "street",
+      "example": "Die Straße ist sehr laut."
+    },
+    {
+      "de": "der Bahnhof",
+      "en": "train station",
+      "example": "Der Bahnhof ist nicht weit."
+    },
+    {
+      "de": "der Supermarkt",
+      "en": "supermarket",
+      "example": "Ich gehe in den Supermarkt."
+    },
+    {
+      "de": "die Bank",
+      "en": "bank",
+      "example": "Ich muss zur Bank gehen."
+    },
+    {
+      "de": "das Krankenhaus",
+      "en": "hospital",
+      "example": "Das Krankenhaus ist links."
+    },
+    {
+      "de": "die Schule",
+      "en": "school",
+      "example": "Meine Kinder gehen zur Schule."
+    },
+    {
+      "de": "die Universität",
+      "en": "university",
+      "example": "Ich studiere an der Universität."
+    },
+    {
+      "de": "der Park",
+      "en": "park",
+      "example": "Im Park ist es schön."
+    },
+    {
+      "de": "links",
+      "en": "left",
+      "example": "Biegen Sie links ab."
+    },
+    {
+      "de": "rechts",
+      "en": "right",
+      "example": "Das Café ist rechts."
+    },
+    {
+      "de": "geradeaus",
+      "en": "straight ahead",
+      "example": "Gehen Sie geradeaus."
+    },
+    {
+      "de": "nah",
+      "en": "near",
+      "example": "Der Bahnhof ist nah."
+    },
+    {
+      "de": "weit",
+      "en": "far",
+      "example": "Das ist zu weit."
+    },
+    {
+      "de": "der Weg",
+      "en": "way / path",
+      "example": "Wie komme ich zum Bahnhof?"
+    },
+    {
+      "de": "fahren",
+      "en": "to drive / travel",
+      "example": "Ich fahre mit dem Bus."
+    },
+    {
+      "de": "gehen",
+      "en": "to go / walk",
+      "example": "Ich gehe zu Fuß."
+    },
+    {
+      "de": "ankommen",
+      "en": "to arrive",
+      "example": "Wann kommst du an?"
+    }
+  ]
+}

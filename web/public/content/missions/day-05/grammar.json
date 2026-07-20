@@ -1,0 +1,65 @@
+{
+  "day": 5,
+  "topic": "Possessivpronomen",
+  "explanation": "Possessivpronomen zeigen **Besitz** (Ownership).\n\n| Person | Pronomen |\n|--------|----------|\n| ich | **mein** |\n| du | **dein** |\n| er | **sein** |\n| sie (f) | **ihr** |\n| wir | **unser** |\n| ihr | **euer** |\n| sie/Sie | **ihr/Ihr** |\n\nDie Endungen folgen dem Muster der unbestimmten Artikel:\n- maskulin: mein**e**r → mein\n- feminin: mein**e** → meine\n- neutrum: mein → mein",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Das ist ___ Buch. (ich, neutrum)",
+      "answer": "mein",
+      "hint": "ich → mein + neutrum → kein -e"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wo ist ___ Mutter? (du, feminin)",
+      "answer": "deine",
+      "hint": "du → dein + feminin → deine"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er liebt ___ Hund. (er, maskulin, Akkusativ)",
+      "answer": "seinen",
+      "hint": "er → sein + maskulin Akkusativ → seinen"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'___ Vater ist Arzt.' (wir)",
+      "options": [
+        "Unser",
+        "Unsere",
+        "Unserer",
+        "Euer"
+      ],
+      "correct": 0
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das ist ___ Auto. (sie, feminin bezieht sich auf die Frau)",
+      "answer": "ihr",
+      "hint": "sie (Frau) → ihr + neutrum → ihr"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'Habt ihr ___ Hausaufgaben gemacht?' (ihr)",
+      "options": [
+        "euer",
+        "eure",
+        "eurem",
+        "ihren"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ Wohnung ist groß. (ich, feminin)",
+      "answer": "Meine",
+      "hint": "ich → mein + feminin → meine"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er trinkt ___ Kaffee. (er, maskulin Akkusativ)",
+      "answer": "seinen",
+      "hint": "er → sein + maskulin Akkusativ → seinen"
+    }
+  ]
+}

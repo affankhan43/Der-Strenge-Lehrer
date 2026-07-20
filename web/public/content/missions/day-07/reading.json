@@ -1,0 +1,58 @@
+{
+  "day": 7,
+  "title": "Das Wochenende",
+  "level": "A1",
+  "text": "Am Wochenende schlafe ich gern lange. Unter der Woche stehe ich um sechs Uhr auf, aber am Samstag schlafe ich bis neun Uhr.\n\nNach dem Frühstück gehe ich oft in den Park. Ich wohne in der Nähe des Englischen Gartens in München — das ist ein sehr schöner und großer Park. Manchmal jogge ich eine Stunde. Manchmal sitze ich einfach auf einer Bank und lese ein Buch.\n\nSamstagnachmittag kaufe ich ein. Der Markt in meiner Nähe hat frisches Obst und Gemüse. Ich kaufe immer zu viel, aber das ist kein Problem.\n\nSonntag ist Familientag. Meine Eltern kommen oft zum Mittagessen. Meine Mutter kocht immer zu viel — typisch! Wir essen, reden und lachen zusammen.\n\nSonntagabend bereite ich mich auf die neue Woche vor. Ich plane die Woche, lese ein bisschen und gehe früh schlafen. Das Wochenende ist leider kurz.",
+  "questions": [
+    {
+      "q": "Wie lange schläft die Person am Samstag?",
+      "options": [
+        "Bis 7 Uhr",
+        "Bis 8 Uhr",
+        "Bis 9 Uhr",
+        "Bis 10 Uhr"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie heißt der Park in München?",
+      "options": [
+        "Stadtpark",
+        "Englischer Garten",
+        "Olympiapark",
+        "Westpark"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was macht die Person manchmal im Park?",
+      "options": [
+        "Schwimmen",
+        "Joggen",
+        "Radfahren",
+        "Volleyball spielen"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Wer kommt sonntags zum Mittagessen?",
+      "options": [
+        "Freunde",
+        "Kollegen",
+        "Eltern",
+        "Geschwister"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was macht die Person Sonntagabend?",
+      "options": [
+        "Feiern",
+        "Ausgehen",
+        "Fernsehen",
+        "Die Woche planen"
+      ],
+      "correct": 3
+    }
+  ]
+}

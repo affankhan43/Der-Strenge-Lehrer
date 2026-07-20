@@ -6,19 +6,23 @@ import { useAuthStore } from '../store/authStore';
 import TeacherAvatar from '../components/TeacherAvatar';
 import SpeechBubble from '../components/SpeechBubble';
 import { useAudio } from '../hooks/useAudio';
+import VideoTask from '../components/tasks/VideoTask';
+import VocabTask from '../components/tasks/VocabTask';
+import ReadingTask from '../components/tasks/ReadingTask';
+import GrammarTask from '../components/tasks/GrammarTask';
 import s from './TaskPage.module.css';
 
 const TOTAL_DAYS = 28;
-const ICONS   = { anki:'🃏', video:'📺', reading:'📖', grammar:'✏️', speaking:'🎤' };
-const LABELS  = { anki:'Anki', video:'Video', reading:'Lesen', grammar:'Grammatik', speaking:'Sprechen' };
-const TYPE_XP = { anki:10, video:15, reading:20, grammar:25, speaking:20 };
+const ICONS   = { vocab:'🃏', video_embed:'📺', reading_native:'📖', grammar_native:'✏️', video:'📺', reading:'📖', grammar:'✏️', speaking:'🎤' };
+const LABELS  = { vocab:'Vokabeln', video_embed:'Video', reading_native:'Lesen', grammar_native:'Grammatik', video:'Video', reading:'Lesen', grammar:'Grammatik', speaking:'Sprechen' };
+const TYPE_XP = { vocab:10, video_embed:15, reading_native:20, grammar_native:25, video:15, reading:20, grammar:25, speaking:20 };
 
 const STERN_LINES = [
-  { emoji:'😤', msg:'Sitz. Der Link öffnet sich nicht von alleine.' },
-  { emoji:'🧐', msg:'Ich warte. Ressource zuerst.' },
-  { emoji:'📌', msg:'Öffne die Ressource — dann darfst du klicken.' },
+  { emoji:'😤', msg:'Die Aufgabe ist noch nicht fertig.' },
+  { emoji:'🧐', msg:'Ich warte. Aufgabe zuerst abschließen.' },
+  { emoji:'📌', msg:'Erst die Aufgabe — dann den Button.' },
   { emoji:'🇩🇪', msg:'Deutsch lernt sich nicht durch Knopfdrücken.' },
-  { emoji:'😒', msg:'Kein Task, kein Fortschritt. Die Regel.' },
+  { emoji:'😒', msg:'Kein Fortschritt ohne Aufgabe. Die Regel.' },
 ];
 const COMPLETE_MSGS = [
   'Gut gemacht. Ich bin… leicht beeindruckt.',
@@ -60,6 +64,8 @@ export default function TaskPage() {
   const [achieve, setAchieve] = useState(null);
   const [isCatchUp, setCatchUp] = useState(false);
   const [catchUpDay, setCatchUpDay] = useState(null);
+  const [nativeContent, setNativeContent] = useState(null);
+  const [nativeReady, setNativeReady] = useState(false);
   const sternTimer = useRef(null);
 
   useEffect(() => { fetchAll(); }, []);
@@ -108,10 +114,18 @@ export default function TaskPage() {
 
   useEffect(() => {
     if (!task) return;
-    const lines = TEACHER_LINES[task.type] || TEACHER_LINES.video;
+    const baseType = task.type.replace('_native','').replace('_embed','').replace('vocab','anki');
+    const lines = TEACHER_LINES[baseType] || TEACHER_LINES.video;
     const msg   = task.teacher_intro || lines[Math.floor(Math.random()*lines.length)];
-    setSpeech(msg); setMood('normal'); setLink({});
-    const t = setTimeout(() => say(task.type, msg), 400);
+    setSpeech(msg); setMood('normal'); setLink({}); setNativeReady(false); setNativeContent(null);
+    const t = setTimeout(() => say(baseType, msg), 400);
+    // Load native content if task has a content_ref
+    if (task.content_ref) {
+      fetch(task.content_ref)
+        .then(r => r.ok ? r.json() : null)
+        .then(data => setNativeContent(data))
+        .catch(() => setNativeContent(null));
+    }
     return () => clearTimeout(t);
   }, [task?.id]);
 
@@ -152,7 +166,10 @@ export default function TaskPage() {
     sternTimer.current = setTimeout(()=>{ setStern(null); setMood('normal'); }, 3000);
   };
 
+  const isNativeType = (t) => ['vocab','video_embed','reading_native','grammar_native'].includes(t?.type);
+
   const tryDone = () => {
+    if (isNativeType(task) && !nativeReady) { showStern(); return; }
     if (task?.requires_link_click && task.resource_url && !linkClicked[task.id]) { showStern(); return; }
     handleDone();
   };
@@ -168,7 +185,10 @@ export default function TaskPage() {
     }
   };
 
-  const doneable = task && (!task.requires_link_click || !task.resource_url || linkClicked[task.id]);
+  const doneable = task && (
+    isNativeType(task) ? nativeReady :
+    (!task.requires_link_click || !task.resource_url || linkClicked[task.id])
+  );
   const { level, pct } = xpInfo(user?.xp || 0);
 
   if (view==='loading') return (
@@ -300,7 +320,25 @@ export default function TaskPage() {
           <h2 className={s.taskTitle}>{task.title}</h2>
           <p className={s.taskInstr}>{task.instruction}</p>
 
-          {resources.map(({url, label}) => (
+          {/* Native task components */}
+          {task.type === 'vocab' && nativeContent && (
+            <VocabTask content={nativeContent} onReady={setNativeReady} />
+          )}
+          {task.type === 'video_embed' && nativeContent && (
+            <VideoTask content={nativeContent} onReady={setNativeReady} />
+          )}
+          {task.type === 'reading_native' && nativeContent && (
+            <ReadingTask content={nativeContent} onReady={setNativeReady} />
+          )}
+          {task.type === 'grammar_native' && nativeContent && (
+            <GrammarTask content={nativeContent} onReady={setNativeReady} />
+          )}
+          {isNativeType(task) && !nativeContent && (
+            <div style={{color:'var(--text3)',fontSize:13,padding:'10px 0'}}>Lade Inhalt…</div>
+          )}
+
+          {/* Legacy resource links for non-native tasks */}
+          {!isNativeType(task) && resources.map(({url, label}) => (
             <a key={url} href={url} target="_blank" rel="noopener"
               className={`${s.resourceBtn}${linkClicked[task.id]?' '+s.clicked:''}`}
               onClick={() => handleLinkClick(task.id, currentDay)}>
@@ -310,9 +348,14 @@ export default function TaskPage() {
           ))}
 
           <button className={`${s.doneBtn}${!doneable?' '+s.locked:''}`} onClick={tryDone}>
-            {doneable?'✓ Erledigt — Nächste Aufgabe':'🔒 Ressource zuerst öffnen'}
+            {doneable ? '✓ Erledigt — Nächste Aufgabe' : isNativeType(task) ? '🔒 Aufgabe zuerst abschließen' : '🔒 Ressource zuerst öffnen'}
           </button>
-          {!doneable && <p className={s.doneHint}>Klicke den Link oben, dann wird dieser Button freigeschaltet.</p>}
+          {!doneable && isNativeType(task) && (
+            <p className={s.doneHint}>Schließe die Aufgabe oben ab, dann wird dieser Button freigeschaltet.</p>
+          )}
+          {!doneable && !isNativeType(task) && (
+            <p className={s.doneHint}>Klicke den Link oben, dann wird dieser Button freigeschaltet.</p>
+          )}
         </motion.div>
       </AnimatePresence>
 

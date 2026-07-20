@@ -1,0 +1,19 @@
+{
+  "day": 11,
+  "title": "Lesetext (Inhalt wird noch ergänzt)",
+  "level": "A2",
+  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "questions": [
+    {
+      "q": "Beispielfrage?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0
+    }
+  ],
+  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+}

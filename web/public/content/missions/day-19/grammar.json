@@ -1,0 +1,25 @@
+{
+  "day": 19,
+  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
+  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Beispielsatz ___ .",
+      "answer": "Antwort",
+      "hint": "Tipp hier"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Beispielfrage?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0
+    }
+  ],
+  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+}

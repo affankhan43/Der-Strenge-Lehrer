@@ -1,0 +1,32 @@
+{
+  "day": 14,
+  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "words": [
+    {
+      "de": "Beispiel",
+      "en": "example",
+      "example": "Das ist ein Beispiel."
+    },
+    {
+      "de": "lernen",
+      "en": "to learn",
+      "example": "Ich lerne jeden Tag."
+    },
+    {
+      "de": "üben",
+      "en": "to practice",
+      "example": "Üben macht den Meister."
+    },
+    {
+      "de": "verstehen",
+      "en": "to understand",
+      "example": "Jetzt verstehe ich."
+    },
+    {
+      "de": "sprechen",
+      "en": "to speak",
+      "example": "Sprechen Sie Deutsch?"
+    }
+  ],
+  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+}

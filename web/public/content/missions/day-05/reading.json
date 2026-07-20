@@ -1,0 +1,58 @@
+{
+  "day": 5,
+  "title": "Einkaufen im Supermarkt",
+  "level": "A1",
+  "text": "Heute muss ich einkaufen. Ich schreibe eine Einkaufsliste: Brot, Milch, Eier, Käse, Tomaten, Nudeln und Kaffee. Ich gehe in den Supermarkt um die Ecke.\n\nDer Supermarkt ist groß. Es gibt viele Reihen mit Produkten. Zuerst gehe ich zur Gemüseabteilung. Ich nehme Tomaten, Paprika und Karotten. Dann gehe ich zur Käsetheke. Der Käsemann empfiehlt mir einen Gouda. 'Der ist frisch heute', sagt er.\n\nAn der Kasse stehe ich in der Schlange. Vor mir sind drei Leute. Nach fünf Minuten bin ich dran. Die Kassiererin scannt alles ein.\n\n'Das macht 24,30 Euro, bitte.'\nIch bezahle mit Karte. 'Haben Sie eine Kundenkarte?', fragt sie.\n'Nein, leider nicht', sage ich.\n'Dann tschüss und noch einen schönen Tag!'\n'Danke, Ihnen auch!'",
+  "questions": [
+    {
+      "q": "Was steht NICHT auf der Einkaufsliste?",
+      "options": [
+        "Brot",
+        "Fleisch",
+        "Eier",
+        "Milch"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was empfiehlt der Käsemann?",
+      "options": [
+        "Emmentaler",
+        "Brie",
+        "Gouda",
+        "Mozzarella"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie viel kostet alles?",
+      "options": [
+        "20,30€",
+        "22,50€",
+        "24,30€",
+        "26,00€"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie bezahlt die Person?",
+      "options": [
+        "Bar",
+        "Mit Karte",
+        "Mit Gutschein",
+        "Auf Rechnung"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Hat die Person eine Kundenkarte?",
+      "options": [
+        "Ja",
+        "Nein",
+        "Vielleicht",
+        "Das weiß man nicht"
+      ],
+      "correct": 1
+    }
+  ]
+}

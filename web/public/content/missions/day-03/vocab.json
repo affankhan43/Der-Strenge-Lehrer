@@ -1,0 +1,106 @@
+{
+  "day": 3,
+  "topic": "Zahlen, Zeit & Datum",
+  "words": [
+    {
+      "de": "eins",
+      "en": "one",
+      "example": "Ich habe eine Schwester."
+    },
+    {
+      "de": "zwei",
+      "en": "two",
+      "example": "Ich habe zwei Brüder."
+    },
+    {
+      "de": "drei",
+      "en": "three",
+      "example": "Das kostet drei Euro."
+    },
+    {
+      "de": "zehn",
+      "en": "ten",
+      "example": "Er ist zehn Jahre alt."
+    },
+    {
+      "de": "zwanzig",
+      "en": "twenty",
+      "example": "Ich bin zwanzig Jahre alt."
+    },
+    {
+      "de": "hundert",
+      "en": "hundred",
+      "example": "Das kostet hundert Euro."
+    },
+    {
+      "de": "die Uhr",
+      "en": "clock / time",
+      "example": "Wie spät ist es? — Es ist zwei Uhr."
+    },
+    {
+      "de": "die Stunde",
+      "en": "hour",
+      "example": "In einer Stunde bin ich fertig."
+    },
+    {
+      "de": "die Minute",
+      "en": "minute",
+      "example": "Warte fünf Minuten."
+    },
+    {
+      "de": "der Tag",
+      "en": "day",
+      "example": "Jeden Tag lerne ich Deutsch."
+    },
+    {
+      "de": "die Woche",
+      "en": "week",
+      "example": "Diese Woche lerne ich viel."
+    },
+    {
+      "de": "der Monat",
+      "en": "month",
+      "example": "Im nächsten Monat fahre ich nach Berlin."
+    },
+    {
+      "de": "das Jahr",
+      "en": "year",
+      "example": "Dieses Jahr ist besonders."
+    },
+    {
+      "de": "heute",
+      "en": "today",
+      "example": "Heute ist Montag."
+    },
+    {
+      "de": "morgen",
+      "en": "tomorrow",
+      "example": "Morgen habe ich frei."
+    },
+    {
+      "de": "gestern",
+      "en": "yesterday",
+      "example": "Gestern habe ich viel gelernt."
+    },
+    {
+      "de": "jetzt",
+      "en": "now",
+      "example": "Ich lerne jetzt Deutsch."
+    },
+    {
+      "de": "früh",
+      "en": "early / in the morning",
+      "example": "Ich stehe früh auf."
+    },
+    {
+      "de": "spät",
+      "en": "late",
+      "example": "Es ist schon spät."
+    },
+    {
+      "de": "immer",
+      "en": "always",
+      "example": "Ich trinke immer Kaffee."
+    }
+  ]
+}

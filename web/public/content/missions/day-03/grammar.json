@@ -1,0 +1,70 @@
+{
+  "day": 3,
+  "topic": "Trennbare Verben",
+  "explanation": "Viele deutsche Verben haben ein **Präfix** (Vorsilbe), das sich beim Konjugieren **trennt** und ans Satzende geht.\n\nBeispiele:\n- **aufstehen** → Ich **stehe** um 7 Uhr **auf**.\n- **anrufen** → Er **ruft** seine Mutter **an**.\n- **einkaufen** → Wir **kaufen** heute **ein**.\n\nDas Präfix geht immer ans **Satzende**.",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Ich ___ um 7 Uhr ___. (aufstehen)",
+      "answer": "stehe / auf",
+      "hint": "aufstehen → ich stehe... auf"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er ___ seine Mutter ___. (anrufen)",
+      "answer": "ruft / an",
+      "hint": "anrufen → er ruft... an"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Welcher Satz ist korrekt?",
+      "options": [
+        "Ich kaufeein im Supermarkt.",
+        "Ich kaufe im Supermarkt ein.",
+        "Ich einkaufe im Supermarkt.",
+        "Im Supermarkt einkaufe ich."
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wann ___ der Film ___? (anfangen)",
+      "answer": "fängt / an",
+      "hint": "anfangen → er fängt... an"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Was bedeutet 'abfahren'?",
+      "options": [
+        "ankommen",
+        "abfahren = to depart",
+        "aufhören",
+        "einsteigen"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Die Kinder ___ das Licht ___. (ausmachen)",
+      "answer": "machen / aus",
+      "hint": "ausmachen → sie machen... aus"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich ___ morgen früh ___. (aufwachen)",
+      "answer": "wache / auf",
+      "hint": "aufwachen → ich wache... auf"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'Zumachen' bedeutet...",
+      "options": [
+        "to open",
+        "to close",
+        "to give",
+        "to take"
+      ],
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": 1,
+  "topic": "Grundwortschatz — Begrüßungen & Zahlen",
+  "words": [
+    {"de": "hallo", "en": "hello", "example": "Hallo! Wie geht es dir?"},
+    {"de": "guten Morgen", "en": "good morning", "example": "Guten Morgen! Schläfst du noch?"},
+    {"de": "guten Abend", "en": "good evening", "example": "Guten Abend, Frau Müller."},
+    {"de": "auf Wiedersehen", "en": "goodbye", "example": "Auf Wiedersehen! Bis morgen."},
+    {"de": "tschüss", "en": "bye (informal)", "example": "Tschüss! Bis bald."},
+    {"de": "bitte", "en": "please / you're welcome", "example": "Bitte, nehmen Sie Platz."},
+    {"de": "danke", "en": "thank you", "example": "Danke schön!"},
+    {"de": "entschuldigung", "en": "excuse me / sorry", "example": "Entschuldigung, wo ist der Bahnhof?"},
+    {"de": "ja", "en": "yes", "example": "Ja, ich lerne Deutsch."},
+    {"de": "nein", "en": "no", "example": "Nein, das stimmt nicht."},
+    {"de": "ich", "en": "I", "example": "Ich heiße Max."},
+    {"de": "du", "en": "you (informal)", "example": "Wie heißt du?"},
+    {"de": "er / sie / es", "en": "he / she / it", "example": "Er ist Student."},
+    {"de": "wir", "en": "we", "example": "Wir lernen Deutsch."},
+    {"de": "heißen", "en": "to be called", "example": "Ich heiße Anna."},
+    {"de": "wohnen", "en": "to live (somewhere)", "example": "Ich wohne in Berlin."},
+    {"de": "sprechen", "en": "to speak", "example": "Ich spreche ein bisschen Deutsch."},
+    {"de": "lernen", "en": "to learn", "example": "Ich lerne jeden Tag."},
+    {"de": "verstehen", "en": "to understand", "example": "Ich verstehe das nicht."},
+    {"de": "der Name", "en": "the name", "example": "Mein Name ist Lisa."}
+  ]
+}

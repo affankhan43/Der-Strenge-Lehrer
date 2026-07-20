@@ -1,0 +1,106 @@
+{
+  "day": 2,
+  "topic": "Familie & Beziehungen",
+  "words": [
+    {
+      "de": "die Mutter",
+      "en": "mother",
+      "example": "Meine Mutter kocht sehr gut."
+    },
+    {
+      "de": "der Vater",
+      "en": "father",
+      "example": "Mein Vater arbeitet in Berlin."
+    },
+    {
+      "de": "die Schwester",
+      "en": "sister",
+      "example": "Meine Schwester heißt Lena."
+    },
+    {
+      "de": "der Bruder",
+      "en": "brother",
+      "example": "Ich habe einen Bruder."
+    },
+    {
+      "de": "die Großmutter",
+      "en": "grandmother",
+      "example": "Meine Großmutter ist 75 Jahre alt."
+    },
+    {
+      "de": "der Großvater",
+      "en": "grandfather",
+      "example": "Mein Großvater lebt in Hamburg."
+    },
+    {
+      "de": "die Familie",
+      "en": "family",
+      "example": "Meine Familie ist sehr wichtig."
+    },
+    {
+      "de": "das Kind",
+      "en": "child",
+      "example": "Das Kind spielt im Garten."
+    },
+    {
+      "de": "die Frau",
+      "en": "woman / wife",
+      "example": "Die Frau ist Ärztin."
+    },
+    {
+      "de": "der Mann",
+      "en": "man / husband",
+      "example": "Der Mann liest die Zeitung."
+    },
+    {
+      "de": "die Freundin",
+      "en": "female friend / girlfriend",
+      "example": "Meine Freundin wohnt in Wien."
+    },
+    {
+      "de": "der Freund",
+      "en": "male friend / boyfriend",
+      "example": "Mein Freund ist sehr lustig."
+    },
+    {
+      "de": "verheiratet",
+      "en": "married",
+      "example": "Meine Eltern sind verheiratet."
+    },
+    {
+      "de": "ledig",
+      "en": "single",
+      "example": "Ich bin noch ledig."
+    },
+    {
+      "de": "das Baby",
+      "en": "baby",
+      "example": "Das Baby schläft gerade."
+    },
+    {
+      "de": "jung",
+      "en": "young",
+      "example": "Sie ist sehr jung."
+    },
+    {
+      "de": "alt",
+      "en": "old",
+      "example": "Er ist 80 Jahre alt."
+    },
+    {
+      "de": "die Eltern",
+      "en": "parents",
+      "example": "Meine Eltern wohnen in München."
+    },
+    {
+      "de": "das Geschwister",
+      "en": "sibling",
+      "example": "Hast du Geschwister?"
+    },
+    {
+      "de": "lieben",
+      "en": "to love",
+      "example": "Ich liebe meine Familie."
+    }
+  ]
+}

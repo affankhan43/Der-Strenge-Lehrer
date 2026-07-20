@@ -1,0 +1,58 @@
+{
+  "day": 6,
+  "title": "Der Weg zur Arbeit",
+  "level": "A1",
+  "text": "Ich heiße Klaus und wohne in Frankfurt. Jeden Morgen fahre ich mit der U-Bahn zur Arbeit. Meine U-Bahn-Station ist fünf Minuten von meiner Wohnung entfernt.\n\nIch fahre von der Station 'Hauptbahnhof' bis zur Station 'Messegelände'. Das dauert etwa zwanzig Minuten. In der U-Bahn lese ich die Zeitung oder höre Musik.\n\nDas Büro, wo ich arbeite, ist direkt neben der U-Bahn-Station. Es ist ein großes Gebäude mit zwanzig Stockwerken. Ich arbeite im fünften Stock.\n\nManchmal, wenn das Wetter schön ist, fahre ich mit dem Fahrrad. Das dauert dreißig Minuten, aber ich fühle mich danach viel besser. 'Sport ist gesund', denke ich.\n\nMein Arbeitstag beginnt um neun Uhr und endet um achtzehn Uhr. Dann fahre ich wieder nach Hause und koche etwas für das Abendessen.",
+  "questions": [
+    {
+      "q": "Womit fährt Klaus normalerweise zur Arbeit?",
+      "options": [
+        "Auto",
+        "Bus",
+        "U-Bahn",
+        "Straßenbahn"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie lange dauert die U-Bahn-Fahrt?",
+      "options": [
+        "10 Minuten",
+        "15 Minuten",
+        "20 Minuten",
+        "30 Minuten"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "In welchem Stock arbeitet Klaus?",
+      "options": [
+        "3.",
+        "5.",
+        "7.",
+        "10."
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Wie lange dauert die Fahrradfahrt?",
+      "options": [
+        "20 Minuten",
+        "25 Minuten",
+        "30 Minuten",
+        "35 Minuten"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wann endet Klaus' Arbeitstag?",
+      "options": [
+        "16 Uhr",
+        "17 Uhr",
+        "18 Uhr",
+        "19 Uhr"
+      ],
+      "correct": 2
+    }
+  ]
+}

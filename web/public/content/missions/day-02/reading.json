@@ -1,0 +1,58 @@
+{
+  "day": 2,
+  "title": "Meine Familie",
+  "level": "A1",
+  "text": "Ich heiße Thomas. Ich bin 30 Jahre alt und wohne in Hamburg. Ich habe eine kleine Familie: meine Frau Katja und unsere Tochter Emma. Emma ist drei Jahre alt.\n\nMeine Eltern wohnen in Köln. Mein Vater ist Rentner. Er war früher Lehrer. Meine Mutter arbeitet noch als Ärztin. Sie ist sehr fleißig.\n\nIch habe einen Bruder. Er heißt Stefan und ist jünger als ich — er ist 27. Stefan ist ledig und wohnt in Berlin. Er ist Softwareentwickler.\n\nAm Wochenende besuchen wir oft meine Eltern. Wir essen zusammen, trinken Kaffee und reden viel. Das ist meine Lieblingstradition.",
+  "questions": [
+    {
+      "q": "Wie alt ist Thomas?",
+      "options": [
+        "25",
+        "27",
+        "30",
+        "35"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wo wohnen Thomas' Eltern?",
+      "options": [
+        "Hamburg",
+        "Berlin",
+        "München",
+        "Köln"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Was ist Thomas' Bruder von Beruf?",
+      "options": [
+        "Lehrer",
+        "Arzt",
+        "Softwareentwickler",
+        "Rentner"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie alt ist Emma?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was machen sie am Wochenende?",
+      "options": [
+        "Kino gehen",
+        "Eltern besuchen",
+        "Sport treiben",
+        "Reisen"
+      ],
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "day": 4,
+  "title": "Im Café",
+  "level": "A1",
+  "text": "Es ist Samstagnachmittag. Max und seine Freundin Lisa sitzen in einem Café in der Innenstadt. Das Café heißt 'Zum Goldenen Becher' und ist sehr gemütlich. Es gibt viele Pflanzen, alte Möbel und ruhige Musik.\n\n'Was nimmst du?', fragt Lisa.\n'Ich nehme einen Cappuccino und ein Stück Schokoladenkuchen', sagt Max. 'Der Kuchen sieht lecker aus!'\n'Ich nehme einen Tee und ein Sandwich', sagt Lisa.\n\nDie Kellnerin kommt. 'Was darf es sein?', fragt sie.\n'Einen Cappuccino, einen Tee, einen Schokoladenkuchen und ein Sandwich, bitte', sagt Max.\n'Gerne! Kommt sofort', sagt die Kellnerin.\n\nMax und Lisa reden über ihre Woche. Lisa hatte viel Stress auf der Arbeit. Max hatte Urlaub und war in Wien. 'Wien ist wunderschön', sagt Max. 'Du musst auch mal hinfahren!'\n\nNach einer Stunde kommt die Rechnung. Das macht 18,50 Euro. Max zahlt.",
+  "questions": [
+    {
+      "q": "Wie heißt das Café?",
+      "options": [
+        "Zum Goldenen Löwen",
+        "Zum Goldenen Becher",
+        "Das Stadtcafé",
+        "Café Wien"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was bestellt Max?",
+      "options": [
+        "Tee und Kuchen",
+        "Kaffee und Sandwich",
+        "Cappuccino und Kuchen",
+        "Bier und Kuchen"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wo war Max im Urlaub?",
+      "options": [
+        "Paris",
+        "Berlin",
+        "Wien",
+        "Zürich"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie viel kostet alles?",
+      "options": [
+        "12,50€",
+        "15,00€",
+        "18,50€",
+        "20,00€"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wer zahlt die Rechnung?",
+      "options": [
+        "Lisa",
+        "Max",
+        "Die Kellnerin",
+        "Beide zusammen"
+      ],
+      "correct": 1
+    }
+  ]
+}

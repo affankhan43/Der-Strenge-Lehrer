@@ -1,0 +1,70 @@
+{
+  "day": 6,
+  "topic": "Präpositionen mit Akkusativ",
+  "explanation": "Diese Präpositionen verlangen immer den **Akkusativ**:\n\n**durch** (through) · **für** (for) · **gegen** (against) · **ohne** (without) · **um** (around/at) · **bis** (until) · **entlang** (along)\n\nBeispiele:\n- Ich gehe **durch** den Park. (durch + Akkusativ)\n- Das ist **für** meinen Vater.\n- Ich komme **ohne** das Auto.",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Das ist ein Geschenk für ___ Mutter. (die Mutter, Akkusativ)",
+      "answer": "die",
+      "hint": "feminin, Akkusativ → die (keine Änderung)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wir gehen durch ___ Park. (der Park, Akkusativ)",
+      "answer": "den",
+      "hint": "maskulin, Akkusativ → den"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'Ich bin ___ das Auto.' (against)",
+      "options": [
+        "für",
+        "durch",
+        "gegen",
+        "ohne"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er kommt ohne ___ Freundin. (die Freundin, Akkusativ)",
+      "answer": "die",
+      "hint": "feminin, Akkusativ → die"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das Geschäft ist um ___ Ecke. (die Ecke, Akkusativ)",
+      "answer": "die",
+      "hint": "feminin, Akkusativ → die"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'Ich arbeite ___ 18 Uhr.' (until)",
+      "options": [
+        "gegen",
+        "für",
+        "bis",
+        "um"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das Paket ist für ___ Chef. (der Chef, Akkusativ)",
+      "answer": "den",
+      "hint": "maskulin, Akkusativ → den"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Welche Präposition braucht KEINEN Akkusativ?",
+      "options": [
+        "für",
+        "durch",
+        "ohne",
+        "nach"
+      ],
+      "correct": 3
+    }
+  ]
+}

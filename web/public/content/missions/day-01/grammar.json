@@ -1,0 +1,55 @@
+{
+  "day": 1,
+  "topic": "Präsens — Verb Konjugation",
+  "explanation": "Im Deutschen verändern sich Verben je nach Person. Das Verb **lernen** (to learn) wird so konjugiert:\n\n| Person | Form |\n|--------|------|\n| ich | lern**e** |\n| du | lern**st** |\n| er/sie/es | lern**t** |\n| wir | lern**en** |\n| ihr | lern**t** |\n| sie/Sie | lern**en** |\n\nDie meisten Verben folgen diesem Muster. Merke: **ich** endet auf **-e**, **du** auf **-st**, **er/sie/es** auf **-t**.",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Ich ___ Deutsch. (lernen)",
+      "answer": "lerne",
+      "hint": "ich + lernen → lerne"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Du ___ in Berlin. (wohnen)",
+      "answer": "wohnst",
+      "hint": "du + wohnen → wohnst"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er ___ Student. (sein)",
+      "answer": "ist",
+      "hint": "sein ist unregelmäßig: ich bin, du bist, er ist"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wir ___ Freunde. (haben)",
+      "answer": "haben",
+      "hint": "wir + haben → haben"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Welche Form ist richtig? Sie (eine Frau) ___ Ärztin.",
+      "options": ["bin", "bist", "ist", "sind"],
+      "correct": 2
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Wie heißt die korrekte Form? Ihr ___ sehr fleißig.",
+      "options": ["lernst", "lernt", "lernen", "lerne"],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich ___ Anna. (heißen)",
+      "answer": "heiße",
+      "hint": "ich + heißen → heiße"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Sie (plural) ___ Englisch. (sprechen)",
+      "answer": "sprechen",
+      "hint": "sie (plural) + sprechen → sprechen"
+    }
+  ]
+}

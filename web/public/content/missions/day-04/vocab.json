@@ -1,0 +1,106 @@
+{
+  "day": 4,
+  "topic": "Farben & Eigenschaften",
+  "words": [
+    {
+      "de": "rot",
+      "en": "red",
+      "example": "Das Auto ist rot."
+    },
+    {
+      "de": "blau",
+      "en": "blue",
+      "example": "Der Himmel ist blau."
+    },
+    {
+      "de": "grün",
+      "en": "green",
+      "example": "Das Gras ist grün."
+    },
+    {
+      "de": "gelb",
+      "en": "yellow",
+      "example": "Die Sonne ist gelb."
+    },
+    {
+      "de": "schwarz",
+      "en": "black",
+      "example": "Ich mag schwarzen Kaffee."
+    },
+    {
+      "de": "weiß",
+      "en": "white",
+      "example": "Der Schnee ist weiß."
+    },
+    {
+      "de": "groß",
+      "en": "big / tall",
+      "example": "Berlin ist eine große Stadt."
+    },
+    {
+      "de": "klein",
+      "en": "small / short",
+      "example": "Das ist ein kleines Café."
+    },
+    {
+      "de": "schön",
+      "en": "beautiful",
+      "example": "Das Wetter ist heute schön."
+    },
+    {
+      "de": "gut",
+      "en": "good",
+      "example": "Das Essen ist sehr gut."
+    },
+    {
+      "de": "schlecht",
+      "en": "bad",
+      "example": "Das Wetter ist schlecht heute."
+    },
+    {
+      "de": "neu",
+      "en": "new",
+      "example": "Ich habe ein neues Buch."
+    },
+    {
+      "de": "alt",
+      "en": "old (things)",
+      "example": "Das ist ein altes Haus."
+    },
+    {
+      "de": "teuer",
+      "en": "expensive",
+      "example": "Das Restaurant ist sehr teuer."
+    },
+    {
+      "de": "billig",
+      "en": "cheap",
+      "example": "Der Supermarkt ist billiger."
+    },
+    {
+      "de": "schnell",
+      "en": "fast",
+      "example": "Der Zug fährt schnell."
+    },
+    {
+      "de": "langsam",
+      "en": "slow",
+      "example": "Bitte sprechen Sie langsam!"
+    },
+    {
+      "de": "laut",
+      "en": "loud",
+      "example": "Die Musik ist zu laut."
+    },
+    {
+      "de": "leise",
+      "en": "quiet",
+      "example": "Bitte spreche leise."
+    },
+    {
+      "de": "interessant",
+      "en": "interesting",
+      "example": "Das Buch ist sehr interessant."
+    }
+  ]
+}

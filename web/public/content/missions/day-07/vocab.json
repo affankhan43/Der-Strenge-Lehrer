@@ -1,0 +1,106 @@
+{
+  "day": 7,
+  "topic": "Modalverben & Wünsche",
+  "words": [
+    {
+      "de": "können",
+      "en": "can / to be able to",
+      "example": "Ich kann Deutsch sprechen."
+    },
+    {
+      "de": "müssen",
+      "en": "must / to have to",
+      "example": "Ich muss heute arbeiten."
+    },
+    {
+      "de": "wollen",
+      "en": "to want to",
+      "example": "Ich will Deutsch lernen."
+    },
+    {
+      "de": "dürfen",
+      "en": "may / to be allowed",
+      "example": "Darf ich hier parken?"
+    },
+    {
+      "de": "sollen",
+      "en": "should / supposed to",
+      "example": "Ich soll um 9 Uhr da sein."
+    },
+    {
+      "de": "mögen",
+      "en": "to like",
+      "example": "Ich mag Kaffee sehr."
+    },
+    {
+      "de": "möchten",
+      "en": "would like",
+      "example": "Ich möchte ein Bier, bitte."
+    },
+    {
+      "de": "brauchen",
+      "en": "to need",
+      "example": "Ich brauche Hilfe."
+    },
+    {
+      "de": "helfen",
+      "en": "to help",
+      "example": "Kannst du mir helfen?"
+    },
+    {
+      "de": "versuchen",
+      "en": "to try",
+      "example": "Ich versuche es."
+    },
+    {
+      "de": "wissen",
+      "en": "to know (a fact)",
+      "example": "Ich weiß das nicht."
+    },
+    {
+      "de": "kennen",
+      "en": "to know (a person/place)",
+      "example": "Kennst du Berlin?"
+    },
+    {
+      "de": "verstehen",
+      "en": "to understand",
+      "example": "Ich verstehe das nicht."
+    },
+    {
+      "de": "beginnen",
+      "en": "to begin",
+      "example": "Wann beginnt der Kurs?"
+    },
+    {
+      "de": "aufhören",
+      "en": "to stop / quit",
+      "example": "Hör auf! Das ist genug."
+    },
+    {
+      "de": "arbeiten",
+      "en": "to work",
+      "example": "Ich arbeite von 9 bis 17 Uhr."
+    },
+    {
+      "de": "spielen",
+      "en": "to play",
+      "example": "Die Kinder spielen im Garten."
+    },
+    {
+      "de": "lesen",
+      "en": "to read",
+      "example": "Ich lese jeden Abend."
+    },
+    {
+      "de": "schreiben",
+      "en": "to write",
+      "example": "Schreib das auf!"
+    },
+    {
+      "de": "hören",
+      "en": "to hear / listen",
+      "example": "Hörst du Musik?"
+    }
+  ]
+}

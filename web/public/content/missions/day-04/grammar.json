@@ -1,0 +1,70 @@
+{
+  "day": 4,
+  "topic": "Kasus: Nominativ und Akkusativ",
+  "explanation": "Im Deutschen gibt es vier Fälle (Kasus). Die häufigsten sind:\n\n**Nominativ** — das Subjekt (Wer/Was tut etwas?)\n**Akkusativ** — das direkte Objekt (Wen/Was?)\n\nVeränderung der Artikel im Akkusativ:\n- maskulin: **der → den**, **ein → einen**\n- feminin: die → die (keine Änderung)\n- neutrum: das → das (keine Änderung)\n\nBeispiel:\n- **Der** Mann sieht **den** Hund. (m: Nom → Akk)",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "Ich sehe ___ Mann. (der Mann — Akkusativ)",
+      "answer": "den",
+      "hint": "maskulin, Akkusativ → den"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Sie kauft ___ Buch. (das Buch — Akkusativ)",
+      "answer": "das",
+      "hint": "neutrum, Akkusativ → das (keine Änderung)"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Welcher Satz ist korrekt?",
+      "options": [
+        "Ich habe ein Hund.",
+        "Ich habe einen Hund.",
+        "Ich habe der Hund.",
+        "Ich habe den Hund."
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er trinkt ___ Kaffee. (der Kaffee — Akkusativ)",
+      "answer": "den",
+      "hint": "maskulin, Akkusativ → den"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wir brauchen ___ Hilfe. (die Hilfe — Akkusativ)",
+      "answer": "die",
+      "hint": "feminin, Akkusativ → die (keine Änderung)"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'Ich kenne ___ Frau.' — Was fehlt?",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "das"
+      ],
+      "correct": 0
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das Kind nimmt ___ Apfel. (der Apfel — Akkusativ)",
+      "answer": "den",
+      "hint": "maskulin, Akkusativ → den"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Markiere das direkte Objekt: 'Thomas liest das Buch.'",
+      "options": [
+        "Thomas",
+        "liest",
+        "das",
+        "Buch"
+      ],
+      "correct": 3
+    }
+  ]
+}

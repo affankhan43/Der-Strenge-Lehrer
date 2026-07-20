@@ -1,0 +1,70 @@
+{
+  "day": 2,
+  "topic": "Bestimmter und unbestimmter Artikel",
+  "explanation": "Im Deutschen gibt es drei Geschlechter: **maskulin (der)**, **feminin (die)** und **neutrum (das)**.\n\nBestimmter Artikel: **der** (m) · **die** (f) · **das** (n) · **die** (Plural)\nUnbestimmter Artikel: **ein** (m) · **eine** (f) · **ein** (n)\n\nBeispiele:\n- **der** Mann / **ein** Mann\n- **die** Frau / **eine** Frau\n- **das** Kind / **ein** Kind",
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "sentence": "___ Mann arbeitet hier. (bestimmter Artikel, maskulin)",
+      "answer": "Der",
+      "hint": "maskulin → der"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich habe ___ Schwester. (unbestimmter Artikel, feminin)",
+      "answer": "eine",
+      "hint": "feminin, unbestimmt → eine"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ Kind spielt. (bestimmter Artikel, neutrum)",
+      "answer": "Das",
+      "hint": "neutrum → das"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Was ist der Artikel für 'Haus'?",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "ein"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Was ist der richtige Artikel? '___ Mutter kocht.'",
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Ein"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich sehe ___ Hund. (unbestimmt, maskulin)",
+      "answer": "einen",
+      "hint": "maskulin, unbestimmt, Akkusativ → einen"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das ist ___ Buch. (unbestimmt, neutrum)",
+      "answer": "ein",
+      "hint": "neutrum, unbestimmt → ein"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "'Die Bücher' ist...",
+      "options": [
+        "feminin",
+        "maskulin",
+        "neutrum",
+        "Plural"
+      ],
+      "correct": 3
+    }
+  ]
+}

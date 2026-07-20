@@ -1,0 +1,106 @@
+{
+  "day": 5,
+  "topic": "Essen & Trinken",
+  "words": [
+    {
+      "de": "das Wasser",
+      "en": "water",
+      "example": "Ich trinke viel Wasser."
+    },
+    {
+      "de": "der Kaffee",
+      "en": "coffee",
+      "example": "Morgens trinke ich immer Kaffee."
+    },
+    {
+      "de": "der Tee",
+      "en": "tea",
+      "example": "Ich möchte Tee, bitte."
+    },
+    {
+      "de": "das Bier",
+      "en": "beer",
+      "example": "In Deutschland ist Bier sehr beliebt."
+    },
+    {
+      "de": "das Brot",
+      "en": "bread",
+      "example": "Deutsches Brot ist sehr gut."
+    },
+    {
+      "de": "die Butter",
+      "en": "butter",
+      "example": "Ich nehme Butter auf das Brot."
+    },
+    {
+      "de": "der Käse",
+      "en": "cheese",
+      "example": "Ich esse gerne Käse."
+    },
+    {
+      "de": "das Fleisch",
+      "en": "meat",
+      "example": "Er isst kein Fleisch."
+    },
+    {
+      "de": "das Gemüse",
+      "en": "vegetables",
+      "example": "Ich esse viel Gemüse."
+    },
+    {
+      "de": "die Frucht",
+      "en": "fruit",
+      "example": "Obst und Gemüse sind gesund."
+    },
+    {
+      "de": "essen",
+      "en": "to eat",
+      "example": "Was isst du gerne?"
+    },
+    {
+      "de": "trinken",
+      "en": "to drink",
+      "example": "Ich trinke gerne Wasser."
+    },
+    {
+      "de": "kochen",
+      "en": "to cook",
+      "example": "Ich koche heute Abend."
+    },
+    {
+      "de": "hungrig",
+      "en": "hungry",
+      "example": "Ich bin hungrig!"
+    },
+    {
+      "de": "satt",
+      "en": "full (after eating)",
+      "example": "Danke, ich bin satt."
+    },
+    {
+      "de": "lecker",
+      "en": "delicious",
+      "example": "Die Pizza ist sehr lecker!"
+    },
+    {
+      "de": "das Restaurant",
+      "en": "restaurant",
+      "example": "Wir gehen ins Restaurant."
+    },
+    {
+      "de": "die Speisekarte",
+      "en": "menu",
+      "example": "Darf ich die Speisekarte sehen?"
+    },
+    {
+      "de": "bestellen",
+      "en": "to order",
+      "example": "Ich möchte bestellen."
+    },
+    {
+      "de": "die Rechnung",
+      "en": "bill / check",
+      "example": "Die Rechnung, bitte!"
+    }
+  ]
+}

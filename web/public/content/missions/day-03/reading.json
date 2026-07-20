@@ -1,0 +1,58 @@
+{
+  "day": 3,
+  "title": "Der Alltag — Ein normaler Tag",
+  "level": "A1",
+  "text": "Mein Name ist Julia. Ich bin Studentin und wohne in Leipzig. Ich stehe jeden Morgen um sieben Uhr auf. Als erstes trinke ich einen Kaffee. Ohne Kaffee kann ich nicht denken!\n\nUm acht Uhr frühstücke ich. Ich esse meistens Brot mit Käse oder ein Ei. Um neun Uhr beginnt mein erster Kurs an der Uni. Ich studiere Germanistik — also deutsche Sprache und Literatur.\n\nMittags esse ich in der Mensa. Das Essen ist günstig und meistens gut. Nachmittags lerne ich oder lese Bücher in der Bibliothek.\n\nAbends koche ich mir etwas. Manchmal kommt meine Freundin Lisa vorbei und wir kochen zusammen. Wir reden viel und lachen viel. Um elf Uhr gehe ich schlafen. Das ist mein Alltag — einfach aber schön.",
+  "questions": [
+    {
+      "q": "Wann steht Julia auf?",
+      "options": [
+        "6 Uhr",
+        "7 Uhr",
+        "8 Uhr",
+        "9 Uhr"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was studiert Julia?",
+      "options": [
+        "Medizin",
+        "Informatik",
+        "Germanistik",
+        "Mathematik"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wo isst Julia mittags?",
+      "options": [
+        "Zuhause",
+        "Restaurant",
+        "Café",
+        "Mensa"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Wann schläft Julia ein?",
+      "options": [
+        "9 Uhr",
+        "10 Uhr",
+        "11 Uhr",
+        "Mitternacht"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie heißt Julias Freundin?",
+      "options": [
+        "Anna",
+        "Maria",
+        "Lisa",
+        "Sarah"
+      ],
+      "correct": 2
+    }
+  ]
+}
