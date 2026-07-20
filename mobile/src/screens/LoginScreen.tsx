@@ -74,7 +74,7 @@ export default function LoginScreen({navigation}: any) {
           </View>
         </View>
 
-        <Text style={styles.footer}>A2 → B2 · 28 Tage · 140 Aufgaben</Text>
+        <Text style={styles.footer}>A1 → B2 · 112 Tage · 560 Aufgaben</Text>
       </ScrollView>
     </KeyboardAvoidingView>
   );

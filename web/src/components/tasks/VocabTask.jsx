@@ -6,6 +6,8 @@ export default function VocabTask({ content, onReady }) {
   const [confirmed, setConfirmed] = useState(false);
 
   const revealedCount = Object.keys(revealed).length;
+  const canConfirm = revealedCount >= Math.ceil(words.length / 2);
+  const allRevealed = revealedCount >= words.length;
 
   const reveal = (i) => {
     if (revealed[i]) return;
@@ -23,99 +25,210 @@ export default function VocabTask({ content, onReady }) {
     onReady?.(true);
   };
 
-  // Show confirm button once at least half the words are revealed (or all shown)
-  const canConfirm = revealedCount >= Math.ceil(words.length / 2) || revealedCount === words.length;
-  const allRevealed = revealedCount >= words.length;
-
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+
+      {/* Topic */}
       {content?.topic && (
-        <p style={{ color: 'var(--text3)', fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', margin: 0, textTransform: 'uppercase' }}>
+        <div style={{
+          padding: '8px 14px',
+          background: 'rgba(124,58,237,.08)',
+          border: '1px solid rgba(124,58,237,.18)',
+          borderRadius: 10,
+          color: '#a78bfa',
+          fontSize: 11,
+          fontWeight: 800,
+          letterSpacing: '.1em',
+          textTransform: 'uppercase',
+        }}>
           {content.topic}
-        </p>
+        </div>
       )}
 
-      {/* Progress + controls */}
+      {/* Status row */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span style={{ color: revealedCount > 0 ? '#a78bfa' : 'var(--text3)', fontSize: 12, fontWeight: 700 }}>
-            {revealedCount}/{words.length} aufgedeckt
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{
+            width: 120,
+            height: 5,
+            background: 'rgba(255,255,255,.07)',
+            borderRadius: 3,
+            overflow: 'hidden',
+          }}>
+            <div style={{
+              height: '100%',
+              width: `${(revealedCount / words.length) * 100}%`,
+              background: allRevealed ? '#22c55e' : '#a78bfa',
+              borderRadius: 3,
+              transition: 'width .3s ease',
+            }} />
+          </div>
+          <span style={{
+            color: revealedCount > 0 ? '#c4b5fd' : '#44446a',
+            fontSize: 12, fontWeight: 700,
+          }}>
+            {revealedCount}/{words.length}
+            {allRevealed && <span style={{ color: '#4ade80', marginLeft: 6 }}>✓ Alle</span>}
           </span>
-          {allRevealed && <span style={{ fontSize: 12, color: '#22c55e' }}>✓ Alle</span>}
         </div>
-        <button
-          onClick={revealAll}
-          style={{ background: 'rgba(124,58,237,0.12)', border: '1px solid rgba(124,58,237,0.3)', color: '#a78bfa', borderRadius: 6, padding: '4px 12px', cursor: 'pointer', fontSize: 12, fontWeight: 600 }}
-        >
-          Alle zeigen
-        </button>
-      </div>
-
-      {/* Word grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 7 }}>
-        {words.map((w, i) => (
-          <button
-            key={i}
-            onClick={() => reveal(i)}
-            style={{
-              textAlign: 'left',
-              borderRadius: 10,
-              padding: '10px 12px',
-              background: revealed[i] ? 'rgba(124,58,237,0.14)' : 'rgba(255,255,255,0.05)',
-              border: `1px solid ${revealed[i] ? 'rgba(124,58,237,0.4)' : 'rgba(255,255,255,0.09)'}`,
-              cursor: revealed[i] ? 'default' : 'pointer',
-              transition: 'all .18s',
-              minHeight: 68,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 3,
-            }}
-          >
-            <span style={{ fontWeight: 700, fontSize: 14, color: 'var(--text1)', display: 'block' }}>{w.de}</span>
-            {revealed[i] ? (
-              <>
-                <span style={{ fontSize: 13, color: '#a78bfa' }}>{w.en}</span>
-                {w.example && (
-                  <span style={{ fontSize: 10, color: 'var(--text3)', lineHeight: 1.4, marginTop: 2, fontStyle: 'italic' }}>
-                    {w.example}
-                  </span>
-                )}
-              </>
-            ) : (
-              <span style={{ fontSize: 11, color: 'var(--text3)' }}>Tippen →</span>
-            )}
+        {!allRevealed && (
+          <button onClick={revealAll} style={{
+            background: 'rgba(255,255,255,.05)',
+            border: '1px solid rgba(255,255,255,.1)',
+            color: '#7878aa',
+            borderRadius: 8, padding: '5px 13px',
+            cursor: 'pointer', fontSize: 12, fontWeight: 600,
+            transition: 'all .2s',
+          }}
+          onMouseEnter={e => { e.target.style.background = 'rgba(255,255,255,.09)'; e.target.style.color = '#c0c0e0'; }}
+          onMouseLeave={e => { e.target.style.background = 'rgba(255,255,255,.05)'; e.target.style.color = '#7878aa'; }}>
+            Alle zeigen
           </button>
-        ))}
+        )}
       </div>
 
-      {/* Confirm button — appears after half revealed */}
+      {/* Word grid — 2 columns for readability */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gap: 8,
+      }}>
+        {words.map((w, i) => {
+          const isRevealed = !!revealed[i];
+          return (
+            <button
+              key={i}
+              onClick={() => reveal(i)}
+              style={{
+                textAlign: 'left',
+                borderRadius: 14,
+                padding: '14px 15px',
+                background: isRevealed
+                  ? 'rgba(124,58,237,.1)'
+                  : 'rgba(255,255,255,.04)',
+                border: `1px solid ${isRevealed ? 'rgba(124,58,237,.3)' : 'rgba(255,255,255,.08)'}`,
+                cursor: isRevealed ? 'default' : 'pointer',
+                transition: 'all .2s',
+                minHeight: 80,
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 5,
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+            >
+              {/* Revealed accent line */}
+              {isRevealed && (
+                <div style={{
+                  position: 'absolute', top: 0, left: 0, right: 0, height: 2,
+                  background: 'linear-gradient(90deg, #7c3aed, #4d9fff)',
+                  opacity: .7,
+                }} />
+              )}
+
+              {/* German word — always visible */}
+              <span style={{
+                fontWeight: 800,
+                fontSize: 15,
+                color: '#eeeeff',
+                display: 'block',
+                lineHeight: 1.2,
+              }}>
+                {w.de}
+              </span>
+
+              {/* Translation + example — revealed only */}
+              {isRevealed ? (
+                <>
+                  <span style={{
+                    fontSize: 13,
+                    color: '#c4b5fd',
+                    fontWeight: 600,
+                  }}>
+                    {w.en}
+                  </span>
+                  {w.example && (
+                    <span style={{
+                      fontSize: 11,
+                      color: '#5a5a8a',
+                      lineHeight: 1.45,
+                      fontStyle: 'italic',
+                      borderTop: '1px solid rgba(255,255,255,.06)',
+                      paddingTop: 5,
+                      marginTop: 2,
+                    }}>
+                      {w.example}
+                    </span>
+                  )}
+                </>
+              ) : (
+                <span style={{
+                  fontSize: 11,
+                  color: '#44446a',
+                  fontWeight: 600,
+                }}>
+                  Tippen zum Aufdecken
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Confirm button */}
       {canConfirm && !confirmed && (
         <button
           onClick={confirmDone}
           style={{
-            marginTop: 4,
-            padding: '13px 18px',
-            background: 'linear-gradient(135deg, rgba(124,58,237,0.25), rgba(79,70,229,0.2))',
-            border: '1px solid rgba(124,58,237,0.5)',
-            borderRadius: 12, color: '#c4b5fd',
-            fontSize: 14, fontWeight: 700, cursor: 'pointer',
+            padding: '15px 20px',
+            background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+            border: 'none',
+            borderRadius: 14,
+            color: '#fff',
+            fontSize: 15,
+            fontWeight: 800,
+            cursor: 'pointer',
             transition: 'all .2s',
+            boxShadow: '0 4px 20px rgba(124,58,237,.3)',
+            letterSpacing: '.02em',
           }}
+          onMouseEnter={e => { e.target.style.transform = 'translateY(-2px)'; e.target.style.boxShadow = '0 8px 28px rgba(124,58,237,.4)'; }}
+          onMouseLeave={e => { e.target.style.transform = 'none'; e.target.style.boxShadow = '0 4px 20px rgba(124,58,237,.3)'; }}
         >
           ✓ Vokabeln gelernt — weiter
         </button>
       )}
 
       {confirmed && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 14px', background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', borderRadius: 10 }}>
-          <span style={{ fontSize: 18 }}>✅</span>
-          <span style={{ color: '#4ade80', fontSize: 13, fontWeight: 600 }}>Vokabeln abgeschlossen — {revealedCount} Wörter gelernt</span>
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: 10,
+          padding: '14px 16px',
+          background: 'rgba(34,197,94,.07)',
+          border: '1px solid rgba(34,197,94,.2)',
+          borderRadius: 12,
+        }}>
+          <span style={{ fontSize: 22 }}>✅</span>
+          <div>
+            <div style={{ color: '#4ade80', fontSize: 13, fontWeight: 700 }}>Vokabeln abgeschlossen</div>
+            <div style={{ color: '#5a5a8a', fontSize: 11, marginTop: 2 }}>{revealedCount} von {words.length} Wörtern aufgedeckt</div>
+          </div>
         </div>
       )}
 
       {!canConfirm && revealedCount === 0 && (
-        <p style={{ color: 'var(--text3)', fontSize: 12, margin: 0, textAlign: 'center' }}>
-          Tippe auf die Karten um die Übersetzung zu sehen, dann bestätige.
+        <p style={{
+          color: '#44446a', fontSize: 12, margin: 0,
+          textAlign: 'center', lineHeight: 1.6,
+          padding: '4px 0',
+        }}>
+          Tippe auf die Karten, um die Übersetzung zu sehen.
+          <br />Mindestens die Hälfte aufdecken, um fortzufahren.
+        </p>
+      )}
+
+      {!canConfirm && revealedCount > 0 && (
+        <p style={{ color: '#5a5a8a', fontSize: 12, margin: 0, textAlign: 'center' }}>
+          Noch {Math.ceil(words.length / 2) - revealedCount} weitere aufdecken…
         </p>
       )}
     </div>

@@ -2,13 +2,13 @@ import React, {useEffect} from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {useDispatch, useSelector} from 'react-redux';
-import {ActivityIndicator, View} from 'react-native';
+import {ActivityIndicator, View, Text} from 'react-native';
 import {restoreSession} from '../redux/authSlice';
 import {fetchAll} from '../redux/progressSlice';
 import {RootState, AppDispatch} from '../redux';
 import {colors} from '../theme/colors';
 
-// Screens
+import OnboardingScreen from '../screens/OnboardingScreen';
 import LoginScreen    from '../screens/LoginScreen';
 import SignupScreen   from '../screens/SignupScreen';
 import TaskScreen     from '../screens/TaskScreen';
@@ -16,6 +16,7 @@ import HistoryScreen  from '../screens/HistoryScreen';
 import ProfileScreen  from '../screens/ProfileScreen';
 
 export type RootStackParams = {
+  Onboarding: undefined;
   AuthStack: undefined;
   AppTabs: undefined;
 };
@@ -33,6 +34,17 @@ const Stack = createNativeStackNavigator<RootStackParams>();
 const Auth  = createNativeStackNavigator<AuthStackParams>();
 const Tab   = createBottomTabNavigator<TabParams>();
 
+const TAB_ICONS: Record<string, string> = { Task:'⚔️', History:'📋', Profile:'👤' };
+const TAB_LABELS: Record<string, string> = { Task:'Aufgaben', History:'Verlauf', Profile:'Profil' };
+
+function TabIcon({name, color, focused}: {name:string; color:string; focused:boolean}) {
+  return (
+    <View style={{alignItems:'center', justifyContent:'center', paddingTop:4}}>
+      <Text style={{fontSize:focused?22:18}}>{TAB_ICONS[name]}</Text>
+    </View>
+  );
+}
+
 function AuthStack() {
   return (
     <Auth.Navigator screenOptions={{headerShown:false, contentStyle:{backgroundColor:colors.bg}}}>
@@ -43,20 +55,22 @@ function AuthStack() {
 }
 
 function AppTabs() {
-  const tabIcon: Record<string,string> = { Task:'⚔️', History:'📋', Profile:'👤' };
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
         headerShown: false,
+        tabBarIcon: ({color, focused}) => <TabIcon name={route.name} color={color} focused={focused}/>,
         tabBarStyle: {
           backgroundColor: colors.bg2,
           borderTopColor: colors.border,
-          height: 60,
-          paddingBottom: 8,
+          height: 64,
+          paddingBottom: 10,
+          paddingTop: 4,
         },
         tabBarActiveTintColor:   colors.gold,
         tabBarInactiveTintColor: colors.text3,
-        tabBarLabel: route.name === 'Task' ? 'Aufgaben' : route.name === 'History' ? 'Verlauf' : 'Profil',
+        tabBarLabel: TAB_LABELS[route.name] || route.name,
+        tabBarLabelStyle: {fontSize:10, fontWeight:'700'},
       })}>
       <Tab.Screen name="Task"    component={TaskScreen}/>
       <Tab.Screen name="History" component={HistoryScreen}/>
@@ -79,17 +93,22 @@ export default function RootNavigator() {
   }, [user]);
 
   if (!ready) return (
-    <View style={{flex:1,alignItems:'center',justifyContent:'center',backgroundColor:colors.bg}}>
+    <View style={{flex:1, alignItems:'center', justifyContent:'center', backgroundColor:colors.bg}}>
+      <Text style={{fontSize:48, marginBottom:16}}>😤</Text>
       <ActivityIndicator size="large" color={colors.gold}/>
     </View>
   );
 
   return (
     <Stack.Navigator screenOptions={{headerShown:false, contentStyle:{backgroundColor:colors.bg}}}>
-      {user
-        ? <Stack.Screen name="AppTabs" component={AppTabs}/>
-        : <Stack.Screen name="AuthStack" component={AuthStack}/>
-      }
+      {user ? (
+        <Stack.Screen name="AppTabs" component={AppTabs}/>
+      ) : (
+        <>
+          <Stack.Screen name="Onboarding" component={OnboardingScreen}/>
+          <Stack.Screen name="AuthStack"  component={AuthStack}/>
+        </>
+      )}
     </Stack.Navigator>
   );
 }

@@ -25,6 +25,17 @@ export default function ProfileScreen() {
   const level = Math.floor((user?.xp||0)/100)+1;
   const pct   = ((user?.xp||0)%100);
 
+  const LEVEL_RANGES = [
+    {level:'A1.1',days:[1,28],  color:'#22c55e',label:'Anfänger'},
+    {level:'A1.2',days:[29,56], color:'#10b981',label:'Grundkenntnisse'},
+    {level:'A2.1',days:[57,84], color:'#3b82f6',label:'Grundstufe'},
+    {level:'A2.2',days:[85,112],color:'#6366f1',label:'Elementar'},
+    {level:'B1.1',days:[113,140],color:'#a855f7',label:'Fortgeschritten'},
+    {level:'B1.2',days:[141,168],color:'#ec4899',label:'Mittelstufe'},
+  ];
+  const currentDay = stats?.currentDay || 1;
+  const currentLvlInfo = LEVEL_RANGES.find(l => currentDay >= l.days[0] && currentDay <= l.days[1]) || LEVEL_RANGES[0];
+
   const save = async () => {
     setSaving(true);
     try {
@@ -75,9 +86,15 @@ export default function ProfileScreen() {
           )}
         </View>
 
+        {/* Level badge */}
+        <View style={[styles.lvlBadge, {borderColor: currentLvlInfo.color+'55', backgroundColor: currentLvlInfo.color+'15'}]}>
+          <Text style={[styles.lvlBadgeName, {color: currentLvlInfo.color}]}>{currentLvlInfo.level}</Text>
+          <Text style={styles.lvlBadgeLabel}>{currentLvlInfo.label} · Tag {currentDay}/112</Text>
+        </View>
+
         {/* XP bar */}
         <View style={styles.xpSection}>
-          <Text style={styles.xpLabel}>Level {level} — {user?.xp||0} XP</Text>
+          <Text style={styles.xpLabel}>{user?.xp||0} XP gesamt</Text>
           <View style={styles.xpTrack}>
             <View style={[styles.xpFill,{width:`${pct}%`}]}/>
           </View>
@@ -176,4 +193,8 @@ const styles = StyleSheet.create({
 
   logoutBtn:   {padding:16, borderRadius:16, borderWidth:1, borderColor:colors.border, backgroundColor:'rgba(255,255,255,.04)', alignItems:'center', marginTop:4},
   logoutText:  {fontSize:15, fontWeight:'700', color:colors.text2},
+
+  lvlBadge:    {borderRadius:16, borderWidth:2, padding:14, alignItems:'center', marginBottom:14},
+  lvlBadgeName:{fontSize:20, fontWeight:'900'},
+  lvlBadgeLabel:{fontSize:12, color:colors.text2, marginTop:2},
 });

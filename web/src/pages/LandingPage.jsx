@@ -281,7 +281,7 @@ function Hero({ ctaLabel, onCTA }) {
       <div>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '9px 16px', border: '1px solid rgba(148,163,255,0.18)', borderRadius: 999, background: 'rgba(10,13,24,0.5)', fontFamily: "'Space Grotesk',sans-serif", fontSize: 13, letterSpacing: '0.14em', color: '#cfd5ea', marginBottom: 26 }}>
           <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#22e08a', boxShadow: '0 0 10px #22e08a', animation: 'glowPulse 2s ease-in-out infinite' }} />
-          A2 → B2 · 28 TAGE · 140 AUFGABEN
+          A1 → B2 · 112 TAGE · 560 AUFGABEN
         </div>
         <h1 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(56px, 8vw, 118px)', lineHeight: 0.88, letterSpacing: '-0.035em', margin: 0, textTransform: 'uppercase' }}>
           <span style={{ display: 'block', background: 'linear-gradient(100deg, #c9cede, #ffffff 45%, #c9cede)', backgroundSize: '220% auto', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', animation: 'heroIn .85s cubic-bezier(.2,.8,.2,1) .1s both, sheen 6s linear infinite' }}>Kein</span>
@@ -581,7 +581,7 @@ function FinalCTA({ ctaLabel, onCTA }) {
       <button className="lp-btn-gold lp-hover-lift" data-reveal="" onClick={onCTA} style={{ ...revealStyle('delay:.24s'), display: 'inline-block', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 20, color: '#06070c', padding: '20px 44px', borderRadius: 18, background: 'linear-gradient(135deg,#ffe66b,#ffb300)', boxShadow: '0 20px 56px -12px rgba(255,179,0,0.7)', border: 'none', cursor: 'pointer' }}>
         {ctaLabel}
       </button>
-      <div style={{ color: '#7c86a8', fontSize: 15, marginTop: 22 }}>28 Tage · 140 Aufgaben · A2 → B2</div>
+      <div style={{ color: '#7c86a8', fontSize: 15, marginTop: 22 }}>112 Tage · 560 Aufgaben · A1 → B2</div>
     </section>
   );
 }
