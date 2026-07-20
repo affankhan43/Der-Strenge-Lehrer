@@ -638,19 +638,26 @@ const CSS = `
   .lp-nav-links { display:flex; gap:30px; }
 
   @media (max-width:900px) {
-    .lp-hero-grid { grid-template-columns:1fr !important; text-align:center; }
+    .lp-hero-grid { grid-template-columns:1fr !important; text-align:center; padding:40px 20px 30px !important; min-height:auto !important; }
     .lp-hero-teacher { display:none !important; }
     .lp-grid-3 { grid-template-columns:1fr 1fr !important; }
     .lp-grid-4 { grid-template-columns:1fr 1fr !important; }
-    .lp-journey-inner { grid-template-columns:1fr !important; }
-    .lp-comp-grid { grid-template-columns:1fr !important; }
+    .lp-journey-inner { grid-template-columns:1fr !important; gap:24px !important; padding:24px !important; }
+    .lp-comp-grid { overflow-x:auto !important; }
     .lp-hero-btns { justify-content:center !important; }
     .lp-hero-chips { justify-content:center !important; }
   }
   @media (max-width:600px) {
-    .lp-grid-3 { grid-template-columns:1fr !important; }
-    .lp-grid-4 { grid-template-columns:1fr !important; }
+    nav { padding:14px 16px !important; }
     .lp-nav-links { display:none !important; }
-    .lp-comp-grid { font-size:13px !important; }
+    .lp-btn-nav { padding:8px 14px !important; font-size:13px !important; }
+    .lp-hero-grid { padding:30px 16px 24px !important; }
+    .lp-grid-3 { grid-template-columns:1fr !important; }
+    .lp-grid-4 { grid-template-columns:1fr 1fr !important; }
+    section { padding-left:16px !important; padding-right:16px !important; }
+    .lp-comp-grid { grid-template-columns:1fr !important; font-size:14px !important; }
+    .lp-comp-grid > div { padding:14px 12px !important; }
+    footer { flex-direction:column !important; text-align:center; padding:24px 16px !important; }
+    footer > div:last-child { display:none; }
   }
 `;
