@@ -309,6 +309,62 @@ router.post('/progress/reset', requireAuth, async (req, res) => {
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
+// ── GET /api/admin/users ─────────────────────────────────
+router.get('/admin/users', requireAuth, async (req, res) => {
+  try {
+    const users = await User.find({}).select('-password').lean();
+    const progressDocs = await Progress.find({}).lean();
+    const progMap = {};
+    progressDocs.forEach(p => { progMap[String(p.userId)] = p; });
+
+    const result = users.map(u => {
+      const prog = progMap[String(u._id)] || {};
+      const lvl  = getLevelInfo(prog.currentDay || 1);
+      const days  = prog.days || [];
+      const today = getToday();
+      const activeToday = days.some(d => d.date === today && d.completed);
+      return {
+        _id:          u._id,
+        name:         u.name || u.username || 'Unbekannt',
+        email:        u.email || '',
+        currentLevel: prog.currentLevel || lvl.level,
+        currentDay:   prog.currentDay  || 1,
+        xpEarned:     prog.xpEarned    || 0,
+        streakCount:  prog.streakCount || 0,
+        totalTasksCompleted: prog.totalTasksCompleted || 0,
+        levelsCompleted:     prog.levelsCompleted || [],
+        activeToday,
+        createdAt: u.createdAt || null,
+      };
+    });
+
+    const totalUsers  = result.length;
+    const activeToday = result.filter(u => u.activeToday).length;
+    const avgXP       = totalUsers ? Math.round(result.reduce((s,u) => s + u.xpEarned,0) / totalUsers) : 0;
+    const avgStreak   = totalUsers ? Math.round(result.reduce((s,u) => s + u.streakCount,0) / totalUsers) : 0;
+    const topUser     = result.sort((a,b) => b.xpEarned - a.xpEarned)[0] || null;
+    const totalTasks  = result.reduce((s,u) => s + u.totalTasksCompleted, 0);
+
+    const levelDist = {};
+    LEVELS.forEach(l => { levelDist[l.name] = 0; });
+    result.forEach(u => { if (levelDist[u.currentLevel] !== undefined) levelDist[u.currentLevel]++; });
+
+    res.json({ users: result, summary: { totalUsers, activeToday, avgXP, avgStreak, topUser, totalTasks, levelDist } });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── POST /api/admin/reset-user ───────────────────────────
+router.post('/admin/reset-user', requireAuth, async (req, res) => {
+  try {
+    const { userId } = req.body;
+    if (!userId) return res.status(400).json({ error: 'userId required' });
+    await Progress.deleteOne({ userId });
+    const user = await User.findById(userId);
+    if (user) { user.xp = 0; user.level = 1; user.badges = []; await user.save(); }
+    res.json({ success: true });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
 // ── Legacy deviceId route ────────────────────────────────
 router.get('/progress/:deviceId', async (req, res) => {
   try {

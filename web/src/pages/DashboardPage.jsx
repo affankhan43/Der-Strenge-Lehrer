@@ -13,6 +13,10 @@ const LEVELS = [
   { name:'A2.2', startDay:85,  color:'#6366f1', emoji:'⚡', label:'Elementar'         },
   { name:'B1.1', startDay:113, color:'#a855f7', emoji:'🔥', label:'Fortgeschritten'   },
   { name:'B1.2', startDay:141, color:'#ec4899', emoji:'💎', label:'Mittelstufe'       },
+  { name:'B2.1', startDay:169, color:'#f59e0b', emoji:'🏅', label:'Obere Mittelstufe' },
+  { name:'B2.2', startDay:197, color:'#f97316', emoji:'🥇', label:'Selbstständig'     },
+  { name:'C1.1', startDay:225, color:'#ef4444', emoji:'🦅', label:'Fortgeschrittene'  },
+  { name:'C1.2', startDay:253, color:'#dc2626', emoji:'👑', label:'Kompetent'         },
 ];
 
 const TASK_ICONS = {
@@ -112,6 +116,315 @@ function LevelPickerModal({ onClose, onPick }) {
         </div>
       </motion.div>
     </motion.div>
+  );
+}
+
+// ── Animated Teaching Moment cards ──────────────────────
+
+function LightLesson() {
+  const [on, setOn] = useState(false);
+  useEffect(() => {
+    const id = setInterval(() => setOn(v => !v), 1800);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          {/* Glow */}
+          <motion.ellipse cx="40" cy="38" rx="26" ry="26"
+            animate={{ opacity: on ? .25 : 0, r: on ? 32 : 20 }}
+            transition={{ duration:.6 }}
+            fill="#fbbf24"
+          />
+          {/* Bulb glass */}
+          <motion.ellipse cx="40" cy="36" rx="16" ry="18"
+            animate={{ fill: on ? '#fef08a' : '#1e1e3a', stroke: on ? '#fbbf24' : '#333' }}
+            transition={{ duration:.5 }}
+            strokeWidth="1.5"
+          />
+          {/* Filament */}
+          <motion.path d="M34 40 Q37 36 40 40 Q43 36 46 40"
+            fill="none" strokeWidth="1.5" strokeLinecap="round"
+            animate={{ stroke: on ? '#d97706' : '#333' }}
+            transition={{ duration:.4 }}
+          />
+          {/* Base */}
+          <rect x="34" y="52" width="12" height="5" rx="2" fill="#555" />
+          <rect x="35" y="56" width="10" height="3" rx="1" fill="#444" />
+          {/* Rays */}
+          {on && [0,45,90,135,180,225,270,315].map((deg,i) => (
+            <motion.line key={deg}
+              x1={40 + Math.cos(deg*Math.PI/180)*20}
+              y1={36 + Math.sin(deg*Math.PI/180)*20}
+              x2={40 + Math.cos(deg*Math.PI/180)*28}
+              y2={36 + Math.sin(deg*Math.PI/180)*28}
+              stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round"
+              initial={{ opacity:0, scale:0 }}
+              animate={{ opacity:.7, scale:1 }}
+              transition={{ delay: i*.04 }}
+            />
+          ))}
+          {/* Switch */}
+          <rect x="30" y="70" width="20" height="10" rx="4" fill="#222" stroke="#444" strokeWidth="1"/>
+          <motion.rect x="34" y="72" width="12" height="6" rx="3"
+            animate={{ fill: on ? '#22c55e' : '#555' }}
+            transition={{ duration:.3 }}
+          />
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{on ? 'Das Licht ist an' : 'Das Licht ist aus'}</span>
+        <span className={s.lessonEn}>{on ? 'The light is on' : 'The light is off'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>das Licht anmachen — turn on the light</span>
+        <span className={s.lessonPhrase}>das Licht ausmachen — turn off the light</span>
+      </div>
+    </div>
+  );
+}
+
+function StairsLesson() {
+  const [pos, setPos] = useState(0); // 0→1 going up
+  const [dir, setDir] = useState(1);
+  const steps = [
+    { x:10, y:62 }, { x:22, y:54 }, { x:34, y:46 },
+    { x:46, y:38 }, { x:58, y:30 }, { x:70, y:22 },
+  ];
+  const figureX = steps[pos]?.x + 4 || 14;
+  const figureY = steps[pos]?.y - 18 || 44;
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setPos(p => {
+        if (p >= 5) { setDir(-1); return 4; }
+        if (p <= 0) { setDir(1);  return 1; }
+        return p + dir;
+      });
+    }, 600);
+    return () => clearInterval(id);
+  }, [dir]);
+
+  const goingUp = dir === 1;
+
+  return (
+    <div className={s.lessonCard}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 80" width="80" height="80">
+          {/* Stairs */}
+          {steps.map((st, i) => (
+            <rect key={i} x={st.x} y={st.y} width="14" height={80-st.y} rx="1"
+              fill="#2d2d50" stroke="#4444aa" strokeWidth=".5"
+            />
+          ))}
+          {/* Figure */}
+          <motion.g animate={{ x: figureX - 14, y: figureY - 44 }} transition={{ duration:.5, ease:'easeInOut' }}>
+            {/* Head */}
+            <circle cx="14" cy="44" r="5" fill="#c4b5fd" />
+            {/* Body */}
+            <line x1="14" y1="49" x2="14" y2="60" stroke="#c4b5fd" strokeWidth="2.5" strokeLinecap="round"/>
+            {/* Legs */}
+            <motion.line x1="14" y1="60"
+              animate={{ x2: goingUp ? 10 : 18, y2: goingUp ? 68 : 68 }}
+              transition={{ duration:.3, repeat:Infinity, repeatType:'reverse' }}
+              stroke="#a78bfa" strokeWidth="2" strokeLinecap="round"
+            />
+            <motion.line x1="14" y1="60"
+              animate={{ x2: goingUp ? 18 : 10, y2: goingUp ? 66 : 66 }}
+              transition={{ duration:.3, repeat:Infinity, repeatType:'reverse', delay:.15 }}
+              stroke="#a78bfa" strokeWidth="2" strokeLinecap="round"
+            />
+            {/* Arms */}
+            <motion.line x1="14" y1="52"
+              animate={{ x2: goingUp ? 8 : 20, y2: 56 }}
+              transition={{ duration:.3, repeat:Infinity, repeatType:'reverse' }}
+              stroke="#c4b5fd" strokeWidth="2" strokeLinecap="round"
+            />
+          </motion.g>
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{goingUp ? 'die Treppe hochgehen' : 'die Treppe runtergehen'}</span>
+        <span className={s.lessonEn}>{goingUp ? 'to go up the stairs' : 'to go down the stairs'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>die Treppe — the stairs (die)</span>
+        <span className={s.lessonPhrase}>hochgehen / runtergehen — up / down</span>
+      </div>
+    </div>
+  );
+}
+
+function DoorLesson() {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const id = setInterval(() => setOpen(v => !v), 2200);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          {/* Frame */}
+          <rect x="15" y="18" width="50" height="62" rx="3" fill="none" stroke="#444" strokeWidth="3"/>
+          {/* Door panel */}
+          <motion.rect x="17" y="20" width="46" height="58" rx="2"
+            animate={{ scaleX: open ? .15 : 1, originX: '17px' }}
+            style={{ transformOrigin:'17px 50px' }}
+            transition={{ duration:.7, ease:'easeInOut' }}
+            fill="#2d2d50" stroke="#5555aa" strokeWidth="1.5"
+          />
+          {/* Knob */}
+          <motion.circle cx="56" cy="50" r="3"
+            animate={{ cx: open ? 19 : 56, opacity: open ? 0 : 1 }}
+            transition={{ duration:.5 }}
+            fill="#fbbf24"
+          />
+          {/* Floor */}
+          <line x1="10" y1="80" x2="70" y2="80" stroke="#333" strokeWidth="2"/>
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{open ? 'Die Tür ist offen' : 'Die Tür ist zu'}</span>
+        <span className={s.lessonEn}>{open ? 'The door is open' : 'The door is closed'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>die Tür öffnen — to open the door</span>
+        <span className={s.lessonPhrase}>die Tür schließen — to close the door</span>
+      </div>
+    </div>
+  );
+}
+
+function WindowLesson() {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const id = setInterval(() => setOpen(v => !v), 2000);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 80" width="80" height="80">
+          {/* Frame */}
+          <rect x="15" y="15" width="50" height="50" rx="3" fill="none" stroke="#444" strokeWidth="3"/>
+          {/* Sky background */}
+          <rect x="17" y="17" width="46" height="46" rx="1" fill={open ? '#1e3a5f' : '#1a1a30'}/>
+          {/* Left pane */}
+          <motion.rect x="17" y="17" width="22" height="46" rx="1"
+            animate={{ x: open ? 8 : 17, scaleX: open ? .5 : 1 }}
+            style={{ transformOrigin:'17px 40px' }}
+            transition={{ duration:.6, ease:'easeInOut' }}
+            fill="#2a4a6a" stroke="#3d7ab5" strokeWidth="1"
+          />
+          {/* Right pane */}
+          <motion.rect x="41" y="17" width="22" height="46" rx="1"
+            animate={{ x: open ? 54 : 41, scaleX: open ? .5 : 1 }}
+            style={{ transformOrigin:'63px 40px' }}
+            transition={{ duration:.6, ease:'easeInOut' }}
+            fill="#2a4a6a" stroke="#3d7ab5" strokeWidth="1"
+          />
+          {/* Birds when open */}
+          {open && [
+            { cx:40, cy:28 }, { cx:52, cy:24 }, { cx:30, cy:32 }
+          ].map((b,i) => (
+            <motion.path key={i}
+              d={`M${b.cx-4} ${b.cy} Q${b.cx} ${b.cy-3} ${b.cx+4} ${b.cy}`}
+              fill="none" stroke="#93c5fd" strokeWidth="1.2" strokeLinecap="round"
+              initial={{ opacity:0, y:5 }}
+              animate={{ opacity:.8, y:0 }}
+              transition={{ delay: i*.15 }}
+            />
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{open ? 'Das Fenster ist offen' : 'Das Fenster ist zu'}</span>
+        <span className={s.lessonEn}>{open ? 'The window is open' : 'The window is closed'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>das Fenster — the window (das)</span>
+        <span className={s.lessonPhrase}>aufmachen / zumachen — open / close</span>
+      </div>
+    </div>
+  );
+}
+
+function SitLesson() {
+  const [sitting, setSitting] = useState(false);
+  useEffect(() => {
+    const id = setInterval(() => setSitting(v => !v), 2000);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          {/* Chair */}
+          <rect x="28" y="52" width="26" height="4" rx="2" fill="#5555aa"/>
+          <line x1="30" y1="56" x2="30" y2="72" stroke="#5555aa" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="52" y1="56" x2="52" y2="72" stroke="#5555aa" strokeWidth="3" strokeLinecap="round"/>
+          <rect x="27" y="38" width="4" height="18" rx="2" fill="#4444aa"/>
+          {/* Person */}
+          <motion.g animate={{ y: sitting ? 6 : 0 }} transition={{ duration:.5, ease:'easeInOut' }}>
+            {/* Head */}
+            <circle cx="40" cy="22" r="7" fill="#c4b5fd"/>
+            {/* Body */}
+            <motion.rect x="33" y="29" width="14" height={sitting ? 14 : 20} rx="3"
+              animate={{ height: sitting ? 14 : 20, y: 29 }}
+              transition={{ duration:.5 }}
+              fill="#a78bfa"
+            />
+            {/* Legs */}
+            <motion.line x1="37" y1="43"
+              animate={{ x2: sitting ? 28 : 35, y2: sitting ? 56 : 65 }}
+              transition={{ duration:.5 }}
+              stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"
+            />
+            <motion.line x1="43" y1="43"
+              animate={{ x2: sitting ? 52 : 45, y2: sitting ? 56 : 65 }}
+              transition={{ duration:.5 }}
+              stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"
+            />
+          </motion.g>
+          {/* Floor */}
+          <line x1="10" y1="72" x2="70" y2="72" stroke="#333" strokeWidth="2"/>
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{sitting ? 'sich hinsetzen' : 'aufstehen'}</span>
+        <span className={s.lessonEn}>{sitting ? 'to sit down' : 'to stand up'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>der Stuhl — the chair (der)</span>
+        <span className={s.lessonPhrase}>sitzen — to sit · stehen — to stand</span>
+      </div>
+    </div>
+  );
+}
+
+function AnimatedLessons() {
+  return (
+    <motion.section
+      className={s.lessonsSection}
+      initial={{ opacity:0, y:30 }} animate={{ opacity:1, y:0 }}
+      transition={{ delay:.35 }}
+    >
+      <div className={s.lessonsSectionHeader}>
+        <div>
+          <h2 className={s.lessonsSectionTitle}>🎬 Deutsch in Aktion</h2>
+          <p className={s.lessonsSectionSub}>Lerne alltägliche Handlungen — durch Bewegung und Animation</p>
+        </div>
+      </div>
+      <div className={s.lessonsGrid}>
+        <LightLesson />
+        <DoorLesson />
+        <StairsLesson />
+        <WindowLesson />
+        <SitLesson />
+      </div>
+    </motion.section>
   );
 }
 
@@ -405,6 +718,9 @@ export default function DashboardPage() {
 
         </div>
       </div>
+
+      {/* ── Animated Teaching Moments ── */}
+      <AnimatedLessons />
 
       {/* Level picker modal */}
       <AnimatePresence>
