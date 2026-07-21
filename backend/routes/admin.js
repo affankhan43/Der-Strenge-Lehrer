@@ -1,7 +1,8 @@
-const express = require('express');
-const router  = express.Router();
+const express  = require('express');
+const router   = express.Router();
 const User     = require('../models/User');
 const Progress = require('../models/Progress');
+const Feedback = require('../models/Feedback');
 const { requireAuth } = require('../middleware/auth');
 
 // ── Admin guard: only users whose email is in ADMIN_EMAILS ──
@@ -145,6 +146,46 @@ router.post('/users/:id/reset-progress', async (req, res) => {
         totalTasksCompleted:0, totalMinutesSpent:0, xpEarned:0, days:[] },
       { new: true }
     );
+    res.json({ ok: true });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── GET /api/admin/ping ── used by frontend to detect admin status
+router.get('/ping', (req, res) => {
+  res.json({ isAdmin: true, email: req._user.email });
+});
+
+// ── GET /api/admin/feedback ── list feedback
+router.get('/feedback', async (req, res) => {
+  try {
+    const status = req.query.status;
+    const filter = status ? { status } : {};
+    const items = await Feedback.find(filter).sort({ createdAt: -1 }).limit(200).lean();
+    const counts = {
+      new:      await Feedback.countDocuments({ status:'new' }),
+      read:     await Feedback.countDocuments({ status:'read' }),
+      resolved: await Feedback.countDocuments({ status:'resolved' }),
+    };
+    res.json({ feedback: items, counts });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── PATCH /api/admin/feedback/:id ── update status / admin note
+router.patch('/feedback/:id', async (req, res) => {
+  try {
+    const allowed = ['status','adminNote'];
+    const updates = {};
+    allowed.forEach(k => { if (req.body[k] !== undefined) updates[k] = req.body[k]; });
+    const item = await Feedback.findByIdAndUpdate(req.params.id, updates, { new: true });
+    if (!item) return res.status(404).json({ error: 'Not found' });
+    res.json({ feedback: item });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── DELETE /api/admin/feedback/:id ──
+router.delete('/feedback/:id', async (req, res) => {
+  try {
+    await Feedback.findByIdAndDelete(req.params.id);
     res.json({ ok: true });
   } catch (err) { res.status(500).json({ error: err.message }); }
 });

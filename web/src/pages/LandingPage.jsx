@@ -109,6 +109,7 @@ export default function LandingPage() {
   const navigate = useNavigate();
   const [week, setWeek] = useState(0);
   const [openFaq, setOpenFaq] = useState(0);
+  const [showFeedback, setShowFeedback] = useState(false);
 
   useEffect(() => {
     const id = 'sora-font-link';
@@ -176,7 +177,8 @@ export default function LandingPage() {
           <Faq openFaq={openFaq} setOpenFaq={setOpenFaq} />
           <Testimonials />
           <FinalCTA ctaLabel={ctaLabel} onCTA={handleCTA} />
-          <Footer />
+          <Footer onFeedback={() => setShowFeedback(true)} />
+          {showFeedback && <FeedbackModal onClose={() => setShowFeedback(false)} />}
         </div>
       </div>
     </>
@@ -595,20 +597,129 @@ function FinalCTA({ ctaLabel, onCTA }) {
   );
 }
 
-function Footer() {
+function Footer({ onFeedback }) {
   return (
     <footer style={{ borderTop: '1px solid rgba(148,163,255,0.1)', background: 'rgba(6,8,15,0.5)', padding: 40, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20, flexWrap: 'wrap' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 11, fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 18, color: '#fff' }}>
         <LogoSVG size={28} gid="lgFoot" />
         Der <span style={{ color: '#ffd60a', marginLeft: 4 }}>Strenge</span> Lehrer
       </div>
-      <div style={{ display: 'flex', gap: 26 }}>
+      <div style={{ display: 'flex', gap: 26, alignItems: 'center' }}>
         {[['#cta','Anmelden'],['#top','Open Source'],['#top','MIT Lizenz']].map(([href, label]) => (
           <a key={label} className="lp-link" href={href} style={{ color: '#9aa2bf', textDecoration: 'none' }}>{label}</a>
         ))}
+        <button onClick={onFeedback} style={{ background: 'rgba(124,58,237,0.15)', border: '1px solid rgba(124,58,237,0.35)', color: '#c4b5fd', borderRadius: 10, padding: '7px 16px', fontSize: 13, fontWeight: 700, cursor: 'pointer', transition: 'all .2s' }}
+          onMouseEnter={e => { e.currentTarget.style.background='rgba(124,58,237,0.28)'; }}
+          onMouseLeave={e => { e.currentTarget.style.background='rgba(124,58,237,0.15)'; }}>
+          💬 Feedback geben
+        </button>
       </div>
       <div style={{ fontStyle: 'italic', color: '#6b7396', fontSize: 15 }}>„Schlechte Schüler gibt es nicht — nur schlechte Ausreden."</div>
     </footer>
+  );
+}
+
+function FeedbackModal({ onClose }) {
+  const [form, setForm] = useState({ name: '', email: '', type: 'suggestion', message: '' });
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
+
+  const set = (k, v) => setForm(p => ({ ...p, [k]: v }));
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.message.trim() || form.message.trim().length < 10) {
+      setError('Bitte schreibe mindestens 10 Zeichen.'); return;
+    }
+    setSending(true); setError('');
+    try {
+      const res = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+    } catch {
+      setError('Fehler beim Senden. Bitte versuche es erneut.');
+    }
+    setSending(false);
+  };
+
+  const TYPES = [
+    { value: 'suggestion', label: '💡 Vorschlag' },
+    { value: 'feature',    label: '✨ Feature Request' },
+    { value: 'bug',        label: '🐛 Bug melden' },
+    { value: 'other',      label: '💬 Sonstiges' },
+  ];
+
+  const overlay = { position:'fixed', inset:0, background:'rgba(0,0,0,0.75)', backdropFilter:'blur(8px)', zIndex:9999, display:'flex', alignItems:'center', justifyContent:'center', padding:20 };
+  const card = { background:'linear-gradient(145deg,#0f1120,#151830)', border:'1px solid rgba(124,58,237,0.3)', borderRadius:24, padding:'36px 32px', width:'100%', maxWidth:520, position:'relative', boxShadow:'0 40px 100px rgba(0,0,0,0.7)' };
+  const inp = { width:'100%', background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)', borderRadius:10, padding:'11px 14px', color:'#eef0f7', fontSize:14, outline:'none', boxSizing:'border-box' };
+
+  return (
+    <div style={overlay} onClick={e => e.target===e.currentTarget && onClose()}>
+      <div style={card}>
+        <button onClick={onClose} style={{ position:'absolute', top:16, right:16, background:'rgba(255,255,255,0.07)', border:'none', color:'#9aa2bf', borderRadius:8, width:32, height:32, cursor:'pointer', fontSize:16, display:'flex', alignItems:'center', justifyContent:'center' }}>✕</button>
+
+        {sent ? (
+          <div style={{ textAlign:'center', padding:'20px 0' }}>
+            <div style={{ fontSize:52, marginBottom:16 }}>🎉</div>
+            <h2 style={{ color:'#fff', fontSize:22, fontWeight:900, margin:'0 0 10px' }}>Danke!</h2>
+            <p style={{ color:'#9aa2bf', fontSize:15, lineHeight:1.6, margin:'0 0 24px' }}>Dein Feedback wurde erhalten. Ich werde es persönlich lesen.</p>
+            <button onClick={onClose} style={{ background:'linear-gradient(135deg,#7c3aed,#4f46e5)', border:'none', color:'#fff', borderRadius:12, padding:'11px 28px', fontSize:14, fontWeight:700, cursor:'pointer' }}>Schließen</button>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit}>
+            <h2 style={{ color:'#fff', fontSize:20, fontWeight:900, margin:'0 0 6px', fontFamily:"'Space Grotesk',sans-serif" }}>💬 Feedback geben</h2>
+            <p style={{ color:'#6b7396', fontSize:13, margin:'0 0 24px' }}>Feature-Wünsche, Bugs, Verbesserungsideen — alles willkommen.</p>
+
+            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:12 }}>
+              <div>
+                <label style={{ display:'block', fontSize:11, fontWeight:700, color:'#6b7396', marginBottom:5, textTransform:'uppercase', letterSpacing:'.06em' }}>Name (optional)</label>
+                <input style={inp} placeholder="Dein Name" value={form.name} onChange={e => set('name',e.target.value)} />
+              </div>
+              <div>
+                <label style={{ display:'block', fontSize:11, fontWeight:700, color:'#6b7396', marginBottom:5, textTransform:'uppercase', letterSpacing:'.06em' }}>E-Mail (optional)</label>
+                <input style={inp} type="email" placeholder="für Rückfragen" value={form.email} onChange={e => set('email',e.target.value)} />
+              </div>
+            </div>
+
+            <div style={{ marginBottom:12 }}>
+              <label style={{ display:'block', fontSize:11, fontWeight:700, color:'#6b7396', marginBottom:5, textTransform:'uppercase', letterSpacing:'.06em' }}>Typ</label>
+              <div style={{ display:'flex', gap:8, flexWrap:'wrap' }}>
+                {TYPES.map(t => (
+                  <button type="button" key={t.value} onClick={() => set('type',t.value)}
+                    style={{ padding:'7px 13px', borderRadius:9, fontSize:12, fontWeight:700, cursor:'pointer', transition:'all .18s',
+                      background: form.type===t.value ? 'rgba(124,58,237,0.25)' : 'rgba(255,255,255,0.05)',
+                      border: form.type===t.value ? '1px solid rgba(124,58,237,0.5)' : '1px solid rgba(255,255,255,0.09)',
+                      color: form.type===t.value ? '#c4b5fd' : '#9aa2bf' }}>
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ marginBottom:error?8:20 }}>
+              <label style={{ display:'block', fontSize:11, fontWeight:700, color:'#6b7396', marginBottom:5, textTransform:'uppercase', letterSpacing:'.06em' }}>Nachricht *</label>
+              <textarea style={{ ...inp, minHeight:110, resize:'vertical', fontFamily:'inherit', lineHeight:1.6 }}
+                placeholder="Beschreibe deinen Vorschlag, Bug oder deine Idee…"
+                value={form.message} onChange={e => set('message',e.target.value)} />
+            </div>
+
+            {error && <p style={{ color:'#f87171', fontSize:12, margin:'0 0 14px' }}>{error}</p>}
+
+            <div style={{ display:'flex', justifyContent:'flex-end', gap:10 }}>
+              <button type="button" onClick={onClose} style={{ background:'transparent', border:'1px solid rgba(255,255,255,0.1)', color:'#9aa2bf', borderRadius:11, padding:'10px 20px', fontSize:13, fontWeight:600, cursor:'pointer' }}>Abbrechen</button>
+              <button type="submit" disabled={sending} style={{ background:'linear-gradient(135deg,#7c3aed,#4f46e5)', border:'none', color:'#fff', borderRadius:11, padding:'10px 24px', fontSize:13, fontWeight:700, cursor:'pointer', opacity:sending?0.7:1 }}>
+                {sending ? '⏳ Senden…' : '📨 Senden'}
+              </button>
+            </div>
+          </form>
+        )}
+      </div>
+    </div>
   );
 }
 

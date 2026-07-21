@@ -3,6 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import api from '../lib/api';
 import s from './AdminPage.module.css';
 
+const TYPE_META = {
+  bug:        { label: '🐛 Bug',            color: '#f87171' },
+  feature:    { label: '✨ Feature Request', color: '#a78bfa' },
+  suggestion: { label: '💡 Vorschlag',       color: '#fbbf24' },
+  other:      { label: '💬 Sonstiges',       color: '#60a5fa' },
+};
+const STATUS_META = {
+  new:      { label: 'Neu',       color: '#4ade80', bg: 'rgba(74,222,128,0.1)'  },
+  read:     { label: 'Gelesen',   color: '#fbbf24', bg: 'rgba(251,191,36,0.1)'  },
+  resolved: { label: 'Erledigt', color: '#94a3b8', bg: 'rgba(148,163,184,0.1)' },
+};
+
 const LEVELS = ['A1.1','A1.2','A2.1','A2.2','B1.1','B1.2','B2.1','B2.2','C1.1','C1.2'];
 const LEVEL_COLORS = {
   'A1.1':'#22c55e','A1.2':'#10b981','A2.1':'#3b82f6','A2.2':'#6366f1',
@@ -27,14 +39,18 @@ function StatCard({ icon, label, value, sub, color='#a78bfa', delay=0 }) {
 }
 
 export default function AdminPage() {
-  const [users, setUsers]     = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [tab, setTab]         = useState('overview');
-  const [search, setSearch]   = useState('');
-  const [sortBy, setSortBy]   = useState('xp');
+  const [users, setUsers]         = useState([]);
+  const [feedback, setFeedback]   = useState([]);
+  const [fbCounts, setFbCounts]   = useState({});
+  const [loading, setLoading]     = useState(true);
+  const [fbLoading, setFbLoading] = useState(false);
+  const [tab, setTab]             = useState('overview');
+  const [search, setSearch]       = useState('');
+  const [sortBy, setSortBy]       = useState('xp');
+  const [fbFilter, setFbFilter]   = useState('all');
   const [actionMsg, setActionMsg] = useState('');
 
-  useEffect(() => { loadUsers(); }, []);
+  useEffect(() => { loadUsers(); loadFeedback(); }, []);
 
   const loadUsers = async () => {
     setLoading(true);
@@ -45,6 +61,37 @@ export default function AdminPage() {
       setUsers([]);
     }
     setLoading(false);
+  };
+
+  const loadFeedback = async () => {
+    setFbLoading(true);
+    try {
+      const res = await api.get('/api/admin/feedback');
+      setFeedback(res.data.feedback || []);
+      setFbCounts(res.data.counts || {});
+    } catch {
+      setFeedback([]);
+    }
+    setFbLoading(false);
+  };
+
+  const handleFbStatus = async (id, status) => {
+    try {
+      await api.patch(`/api/admin/feedback/${id}`, { status });
+      setFeedback(prev => prev.map(f => f._id === id ? { ...f, status } : f));
+      setFbCounts(prev => {
+        const old = feedback.find(f => f._id === id)?.status;
+        return { ...prev, [old]: (prev[old]||1)-1, [status]: (prev[status]||0)+1 };
+      });
+    } catch {}
+  };
+
+  const handleFbDelete = async (id) => {
+    if (!window.confirm('Feedback löschen?')) return;
+    try {
+      await api.delete(`/api/admin/feedback/${id}`);
+      setFeedback(prev => prev.filter(f => f._id !== id));
+    } catch {}
   };
 
   const handleReset = async (userId, name) => {
@@ -73,10 +120,13 @@ export default function AdminPage() {
       return 0;
     });
 
+  const newFbCount = fbCounts.new || 0;
+
   const TABS = [
     { id:'overview', label:'📊 Übersicht' },
     { id:'users',    label:'👥 Nutzer'    },
     { id:'content',  label:'📚 Inhalt'    },
+    { id:'feedback', label: newFbCount > 0 ? `💬 Feedback (${newFbCount})` : '💬 Feedback' },
   ];
 
   return (
@@ -235,6 +285,63 @@ export default function AdminPage() {
                 );
               })}
             </div>
+          </motion.div>
+        )}
+        {tab === 'feedback' && (
+          <motion.div key="feedback" initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}>
+            <div className={s.fbHeader}>
+              <div className={s.fbCountChips}>
+                {['all','new','read','resolved'].map(f => (
+                  <button key={f} className={s.fbChip + (fbFilter===f?' '+s.fbChipActive:'')}
+                    onClick={() => setFbFilter(f)}>
+                    {f==='all' ? `Alle (${Object.values(fbCounts).reduce((a,b)=>a+b,0)})`
+                      : f==='new' ? `Neu (${fbCounts.new||0})`
+                      : f==='read' ? `Gelesen (${fbCounts.read||0})`
+                      : `Erledigt (${fbCounts.resolved||0})`}
+                  </button>
+                ))}
+              </div>
+              <button className={s.refreshBtn} onClick={loadFeedback}>↺</button>
+            </div>
+
+            {fbLoading ? (
+              <div className={s.loadingMsg}>⏳ Lädt…</div>
+            ) : feedback.filter(f => fbFilter==='all' || f.status===fbFilter).length === 0 ? (
+              <div className={s.emptyMsg}>Kein Feedback vorhanden.</div>
+            ) : (
+              <div className={s.fbList}>
+                {feedback
+                  .filter(f => fbFilter==='all' || f.status===fbFilter)
+                  .map((fb, i) => {
+                    const tm = TYPE_META[fb.type]   || TYPE_META.other;
+                    const sm = STATUS_META[fb.status] || STATUS_META.new;
+                    const date = new Date(fb.createdAt).toLocaleDateString('de-DE',{day:'2-digit',month:'short',year:'numeric'});
+                    return (
+                      <motion.div key={fb._id} className={s.fbCard}
+                        initial={{ opacity:0, y:12 }} animate={{ opacity:1, y:0 }}
+                        transition={{ delay:i*.04 }}>
+                        <div className={s.fbCardTop}>
+                          <span className={s.fbType} style={{ color:tm.color, borderColor:tm.color+'44', background:tm.color+'11' }}>{tm.label}</span>
+                          <span className={s.fbStatus} style={{ color:sm.color, background:sm.bg }}>{sm.label}</span>
+                          <span className={s.fbDate}>{date}</span>
+                          <div className={s.fbActions}>
+                            {fb.status !== 'read'     && <button className={s.fbBtn} onClick={() => handleFbStatus(fb._id,'read')}>👁 Gelesen</button>}
+                            {fb.status !== 'resolved' && <button className={s.fbBtn} style={{ color:'#4ade80' }} onClick={() => handleFbStatus(fb._id,'resolved')}>✓ Erledigt</button>}
+                            <button className={s.fbBtn} style={{ color:'#f87171' }} onClick={() => handleFbDelete(fb._id)}>✕</button>
+                          </div>
+                        </div>
+                        <p className={s.fbMsg}>{fb.message}</p>
+                        {(fb.name !== 'Anonym' || fb.email) && (
+                          <div className={s.fbFrom}>
+                            Von: <strong>{fb.name}</strong>
+                            {fb.email && <> · <a href={`mailto:${fb.email}`} className={s.fbEmail}>{fb.email}</a></>}
+                          </div>
+                        )}
+                      </motion.div>
+                    );
+                  })}
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>

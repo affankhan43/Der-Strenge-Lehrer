@@ -5,7 +5,7 @@ import { useAuthStore } from '../store/authStore';
 import { useProgressStore } from '../store/progressStore';
 import s from './AppLayout.module.css';
 
-const NAV = [
+const BASE_NAV = [
   { section: 'LERNEN', items: [
     { to: '/app',      icon: '🏠', label: 'Dashboard'  },
     { to: '/app/task', icon: '⚔️', label: 'Aufgaben'   },
@@ -13,7 +13,6 @@ const NAV = [
   ]},
   { section: 'KONTO', items: [
     { to: '/profile',  icon: '👤', label: 'Profil'     },
-    { to: '/admin',    icon: '⚙️', label: 'Admin'      },
   ]},
 ];
 
@@ -21,8 +20,14 @@ const SIDEBAR_W   = 248;
 const SIDEBAR_COL = 64;
 
 export default function AppLayout({ children }) {
-  const { user, logout }              = useAuthStore();
+  const { user, logout, isAdmin }     = useAuthStore();
   const { stats, progress, fetchAll } = useProgressStore();
+
+  const NAV = isAdmin
+    ? BASE_NAV.map(g => g.section === 'KONTO'
+        ? { ...g, items: [...g.items, { to: '/admin', icon: '⚙️', label: 'Admin' }] }
+        : g)
+    : BASE_NAV;
   const navigate   = useNavigate();
   const location   = useLocation();
   const [collapsed, setCollapsed] = useState(false);

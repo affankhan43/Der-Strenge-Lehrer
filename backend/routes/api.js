@@ -2,6 +2,7 @@ const express  = require('express');
 const router   = express.Router();
 const Progress = require('../models/Progress');
 const User     = require('../models/User');
+const Feedback = require('../models/Feedback');
 const { requireAuth } = require('../middleware/auth');
 const tasks    = require('../../data/tasks.json');
 
@@ -373,6 +374,22 @@ router.get('/progress/:deviceId', async (req, res) => {
       progress = await Progress.create({ userId: new require('mongoose').Types.ObjectId(), deviceId: req.params.deviceId });
     }
     res.json(progress);
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── POST /api/feedback ── public, no auth needed
+router.post('/feedback', async (req, res) => {
+  try {
+    const { name, email, type, message } = req.body;
+    if (!message || message.trim().length < 5)
+      return res.status(400).json({ error: 'Nachricht zu kurz.' });
+    const item = await Feedback.create({
+      name: name?.trim() || 'Anonym',
+      email: email?.trim()?.toLowerCase() || null,
+      type: ['bug','feature','suggestion','other'].includes(type) ? type : 'other',
+      message: message.trim().slice(0, 2000),
+    });
+    res.json({ ok: true, id: item._id });
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 

@@ -5,8 +5,18 @@ const stored = () => {
   try { return JSON.parse(localStorage.getItem('dsl_user')); } catch { return null; }
 };
 
+async function checkAdmin() {
+  try {
+    await api.get('/api/admin/ping');
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export const useAuthStore = create((set, get) => ({
   user: stored(),
+  isAdmin: false,
   loading: false,
   error: null,
 
@@ -17,7 +27,8 @@ export const useAuthStore = create((set, get) => ({
       localStorage.setItem('dsl_access_token',  res.data.accessToken);
       localStorage.setItem('dsl_refresh_token', res.data.refreshToken);
       localStorage.setItem('dsl_user', JSON.stringify(res.data.user));
-      set({ user: res.data.user, loading: false });
+      const isAdmin = await checkAdmin();
+      set({ user: res.data.user, isAdmin, loading: false });
       return { ok: true };
     } catch (err) {
       const msg = err.response?.data?.error || 'Signup failed';
@@ -33,7 +44,8 @@ export const useAuthStore = create((set, get) => ({
       localStorage.setItem('dsl_access_token',  res.data.accessToken);
       localStorage.setItem('dsl_refresh_token', res.data.refreshToken);
       localStorage.setItem('dsl_user', JSON.stringify(res.data.user));
-      set({ user: res.data.user, loading: false });
+      const isAdmin = await checkAdmin();
+      set({ user: res.data.user, isAdmin, loading: false });
       return { ok: true };
     } catch (err) {
       const msg = err.response?.data?.error || 'Login failed';
@@ -50,7 +62,13 @@ export const useAuthStore = create((set, get) => ({
     localStorage.removeItem('dsl_access_token');
     localStorage.removeItem('dsl_refresh_token');
     localStorage.removeItem('dsl_user');
-    set({ user: null });
+    set({ user: null, isAdmin: false });
+  },
+
+  restoreAdmin: async () => {
+    if (!get().user) return;
+    const isAdmin = await checkAdmin();
+    set({ isAdmin });
   },
 
   updateUser: (updates) => {

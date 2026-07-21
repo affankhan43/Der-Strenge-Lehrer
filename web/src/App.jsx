@@ -19,6 +19,14 @@ function Protected({ children }) {
   return <AppLayout>{children}</AppLayout>;
 }
 
+function AdminProtected({ children }) {
+  const { user, isAdmin } = useAuthStore();
+  const location = useLocation();
+  if (!user) return <Navigate to="/login" state={{ from: location }} replace />;
+  if (!isAdmin) return <Navigate to="/app" replace />;
+  return <AppLayout>{children}</AppLayout>;
+}
+
 function AuthGuard({ children }) {
   const { user } = useAuthStore();
   if (user) return <Navigate to="/app" replace />;
@@ -26,11 +34,12 @@ function AuthGuard({ children }) {
 }
 
 export default function App() {
-  const { restoreSession } = useAuthStore();
+  const { restoreSession, restoreAdmin } = useAuthStore();
   const { fetchAll } = useProgressStore();
 
   useEffect(() => {
     restoreSession?.();
+    restoreAdmin?.();
   }, []);
 
   return (
@@ -56,7 +65,7 @@ export default function App() {
           element={<Protected><ProfilePage /></Protected>}
         />
         <Route path="/admin"
-          element={<Protected><AdminPage /></Protected>}
+          element={<AdminProtected><AdminPage /></AdminProtected>}
         />
 
         <Route path="*" element={<Navigate to="/" replace />} />
