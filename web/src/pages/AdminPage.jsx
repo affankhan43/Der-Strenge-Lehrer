@@ -56,7 +56,7 @@ export default function AdminPage() {
     setLoading(true);
     try {
       const res = await api.get('/api/admin/users');
-      setUsers(res.data || []);
+      setUsers(Array.isArray(res.data) ? res.data : (res.data?.users || []));
     } catch {
       setUsers([]);
     }
