@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e18"/>
+      <stop offset="1" stop-color="#1a1a30"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe66b"/>
+      <stop offset="1" stop-color="#ffb300"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  <!-- Icon card -->
+  <rect x="18" y="18" width="144" height="144" rx="30" fill="url(#gold)"/>
+  <!-- Glasses left -->
+  <rect x="30" y="68" width="46" height="36" rx="16" fill="none" stroke="#0b0e18" stroke-width="9"/>
+  <!-- Glasses right -->
+  <rect x="104" y="68" width="46" height="36" rx="16" fill="none" stroke="#0b0e18" stroke-width="9"/>
+  <!-- Bridge -->
+  <line x1="76" y1="84" x2="104" y2="84" stroke="#0b0e18" stroke-width="9"/>
+  <!-- Brows -->
+  <line x1="32" y1="54" x2="72" y2="62" stroke="#0b0e18" stroke-width="9" stroke-linecap="round"/>
+  <line x1="148" y1="54" x2="108" y2="62" stroke="#0b0e18" stroke-width="9" stroke-linecap="round"/>
+  <!-- Frown -->
+  <path d="M64 126 Q90 116 116 126" fill="none" stroke="#0b0e18" stroke-width="9" stroke-linecap="round"/>
+</svg>
