@@ -269,6 +269,31 @@ router.post('/progress/goto-day', requireAuth, async (req, res) => {
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
+// ── POST /api/progress/set-level ────────────────────────
+router.post('/progress/set-level', requireAuth, async (req, res) => {
+  try {
+    const { levelName } = req.body;
+    const lvl = LEVELS.find(l => l.name === levelName);
+    if (!lvl) return res.status(400).json({ error: 'Invalid level' });
+
+    // Wipe existing progress and start fresh at the chosen level
+    await Progress.deleteOne({ userId: req.userId });
+    const user = await User.findById(req.userId);
+    if (user) { user.xp = 0; user.level = 1; user.badges = []; await user.save(); }
+
+    // Create new progress anchored at first day of chosen level
+    const startDay = lvl.startDay;
+    const dayTasks = tasks.filter(t => t.day === startDay).sort((a, b) => a.order - b.order);
+    const newProgress = await Progress.create({
+      userId: req.userId,
+      currentDay: startDay,
+      currentLevel: lvl.name,
+      days: [{ day: startDay, date: getToday(), tasks: dayTasks.map(t => ({ taskId: t.id, completed: false, linkClicked: false })) }],
+    });
+    res.json({ success: true, currentDay: startDay, currentLevel: lvl.name });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
 // ── POST /api/progress/reset ────────────────────────────
 router.post('/progress/reset', requireAuth, async (req, res) => {
   try {

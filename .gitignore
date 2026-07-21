@@ -6,7 +6,8 @@ dist/
 build/
 out/
 coverage/
-Pod/
+Pods/
+
 
 # Environment files
 .env

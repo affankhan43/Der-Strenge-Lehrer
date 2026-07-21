@@ -1,0 +1,487 @@
+/* ── Page shell ── */
+.page {
+  min-height: 100vh;
+  padding: 28px 32px 48px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.greeting {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text1);
+  margin: 0 0 4px;
+}
+.greetingSub {
+  color: var(--text2);
+  font-size: 14px;
+  margin: 0;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.streakChip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,100,50,.12);
+  border: 1px solid rgba(255,100,50,.25);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fb923c;
+}
+.levelPickBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text1);
+  transition: all .2s;
+}
+.levelPickBtn:hover {
+  background: rgba(255,255,255,.11);
+  border-color: rgba(255,255,255,.2);
+}
+.levelPickArrow { color: var(--text3); font-size: 11px; }
+
+/* ── Main grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+  align-items: start;
+}
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* ── Mission card ── */
+.missionCard {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 26px 28px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.missionCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(124,58,237,.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.missionBadge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  color: var(--purple);
+  background: rgba(124,58,237,.12);
+  border: 1px solid rgba(124,58,237,.25);
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-bottom: 14px;
+}
+.missionContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.missionInfo { flex: 1; min-width: 260px; }
+.missionTitle {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--text1);
+  margin: 0 0 4px;
+}
+.missionLevel {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.missionTime {
+  color: var(--text3);
+  font-size: 12px;
+  margin: 0 0 18px;
+}
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.progressRing { position: relative; width: 72px; height: 72px; flex-shrink: 0; }
+.progressRing svg { transform: rotate(-90deg); }
+.ringLabel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.ringPct { font-size: 14px; font-weight: 900; color: var(--text1); }
+.ringText { font-size: 9px; color: var(--text3); font-weight: 600; margin-top: 2px; }
+.progressText {}
+.progressFraction { font-size: 18px; font-weight: 800; color: var(--text1); }
+.progressSub { font-size: 11px; color: var(--text3); }
+
+.startBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 12px;
+  border: none;
+  background: var(--btn-color, #7c3aed);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 24px color-mix(in srgb, var(--btn-color, #7c3aed) 40%, transparent);
+  transition: box-shadow .2s;
+}
+.completedBanner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: rgba(34,197,94,.12);
+  border: 1px solid rgba(34,197,94,.3);
+  color: #4ade80;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Mission art panel */
+.missionArt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px;
+  padding: 20px 24px;
+  min-width: 150px;
+}
+.artEmoji { font-size: 40px; line-height: 1; }
+.artLevel {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--text1);
+  letter-spacing: .05em;
+}
+.artBar { width: 100%; }
+.artBarTrack {
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,.08);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.artBarFill { height: 100%; border-radius: 3px; }
+.artBarLabel { font-size: 11px; color: var(--text3); text-align: center; display: block; }
+
+/* ── Task list ── */
+.taskListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text1);
+  margin-bottom: 10px;
+  padding: 0 2px;
+}
+.taskCount { font-size: 13px; font-weight: 700; }
+.taskList { display: flex; flex-direction: column; gap: 8px; }
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all .2s;
+  text-align: left;
+  width: 100%;
+}
+.taskItem:hover { border-color: rgba(255,255,255,.15); background: rgba(255,255,255,.05); }
+.taskDone { opacity: .65; }
+.taskDone:hover { opacity: .8; }
+.taskNext { border-color: rgba(124,58,237,.3); background: rgba(124,58,237,.06); }
+.taskIcon {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.taskMeta { flex: 1; }
+.taskName { display: block; font-size: 14px; font-weight: 700; color: var(--text1); }
+.taskSub  { display: block; font-size: 11px; color: var(--text3); margin-top: 1px; }
+.taskBadge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #c4b5fd;
+  background: rgba(124,58,237,.15);
+  border: 1px solid rgba(124,58,237,.3);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.taskCheck {
+  font-size: 16px;
+  color: #4ade80;
+  font-weight: 900;
+}
+
+/* ── Side column cards ── */
+.sideCol { display: flex; flex-direction: column; gap: 16px; }
+.card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 18px;
+  padding: 20px 22px;
+}
+.cardTitle {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text1);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* Level path */
+.levelPath {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 4px;
+}
+.pathStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+.pathDot {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  background: rgba(255,255,255,.06);
+  border: 2px solid rgba(255,255,255,.1);
+  transition: all .3s;
+}
+.pathDotDone {
+  background: rgba(34,197,94,.15);
+  border-color: rgba(34,197,94,.4);
+  color: #4ade80;
+  font-size: 12px;
+}
+.pathDotCurrent {
+  background: color-mix(in srgb, var(--dot-color) 20%, transparent);
+  border-color: var(--dot-color);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--dot-color) 40%, transparent);
+  animation: dotPulse 2s ease-in-out infinite;
+}
+@keyframes dotPulse {
+  0%,100% { box-shadow: 0 0 10px color-mix(in srgb, var(--dot-color) 40%, transparent); }
+  50% { box-shadow: 0 0 22px color-mix(in srgb, var(--dot-color) 70%, transparent); }
+}
+.pathLabel { font-size: 9px; font-weight: 800; letter-spacing: .04em; }
+.currentPosLabel { font-size: 11px; color: var(--text3); margin-bottom: 8px; }
+.levelBarWrap { display: flex; align-items: center; gap: 8px; }
+.levelBarTrack {
+  flex: 1; height: 6px;
+  background: rgba(255,255,255,.07);
+  border-radius: 3px; overflow: hidden;
+}
+.levelBarFill { height: 100%; border-radius: 3px; }
+.levelBarLabel { font-size: 12px; font-weight: 700; color: var(--text2); min-width: 32px; text-align: right; }
+
+/* Stats grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.statTile {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.statIcon { font-size: 18px; line-height: 1; margin-bottom: 4px; }
+.statVal  { font-size: 17px; font-weight: 900; color: var(--text1); line-height: 1.1; }
+.statLabel { font-size: 10px; color: var(--text3); font-weight: 600; }
+
+/* Teacher card */
+.teacherCard {
+  background: rgba(255,215,0,.05);
+  border: 1px solid rgba(255,215,0,.15);
+  border-radius: 18px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.teacherAvatar { font-size: 30px; line-height: 1; flex-shrink: 0; }
+.teacherName { font-size: 12px; font-weight: 800; color: var(--gold); margin-bottom: 4px; }
+.teacherMsg { font-size: 13px; color: var(--text2); line-height: 1.5; font-style: italic; }
+
+/* ── Level picker modal ── */
+.modalOverlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.7);
+  backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+.modalBox {
+  background: #12122a;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 24px;
+  padding: 28px 30px;
+  width: 100%;
+  max-width: 640px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 22px;
+  gap: 12px;
+}
+.modalTitle { font-size: 22px; font-weight: 900; color: var(--text1); margin: 0 0 6px; }
+.modalSub   { font-size: 13px; color: var(--text2); margin: 0; }
+.modalClose {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: var(--text2);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+@media (max-width: 600px) { .levelGrid { grid-template-columns: repeat(2, 1fr); } }
+
+.levelCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 18px 14px;
+  background: rgba(255,255,255,.04);
+  border: 2px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all .2s;
+  text-align: center;
+}
+.levelCard:hover {
+  background: rgba(255,255,255,.08);
+  border-color: color-mix(in srgb, var(--lv-color) 50%, transparent);
+  transform: translateY(-2px);
+}
+.levelCardSelected {
+  background: color-mix(in srgb, var(--lv-color) 12%, transparent) !important;
+  border-color: var(--lv-color) !important;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--lv-color) 30%, transparent);
+}
+.levelEmoji  { font-size: 26px; line-height: 1; }
+.levelName   { font-size: 17px; font-weight: 900; color: var(--text1); }
+.levelLabel  { font-size: 10px; color: var(--text3); font-weight: 600; }
+.levelDay    { font-size: 10px; color: var(--text3); }
+.levelCheck  {
+  position: absolute; top: 8px; right: 8px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--lv-color);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.modalFooter {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.modalCancel {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  padding: 11px 20px;
+  cursor: pointer;
+  color: var(--text2);
+  font-size: 14px;
+  font-weight: 600;
+}
+.modalConfirm {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  border: none;
+  border-radius: 10px;
+  padding: 11px 22px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow: 0 4px 20px rgba(124,58,237,.35);
+  transition: all .2s;
+}
+.modalConfirm:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px rgba(124,58,237,.4);
+}
+.modalConfirm:disabled { cursor: not-allowed; }

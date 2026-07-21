@@ -3,8 +3,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Switch between dev/prod
 const BASE_URL = __DEV__
-  ? 'http://localhost:5000'       // iOS simulator
-  : 'https://your-api.example.com'; // production
+  ? 'https://base.strenge-lehrer.de'       // iOS simulator
+  : 'https://base.strenge-lehrer.de'; // production
 
 const api = axios.create({ baseURL: BASE_URL });
 

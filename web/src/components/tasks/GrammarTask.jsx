@@ -30,8 +30,23 @@ export default function GrammarTask({ content, onReady }) {
     const allChecked = {};
     allExercises.forEach((_, i) => { allChecked[i] = true; });
     setChecked(allChecked);
+    const s = allExercises.filter((ex, i) => {
+      if (ex.type === 'fill_blank')    return inputs[i]?.trim().toLowerCase() === ex.answer?.toLowerCase();
+      if (ex.type === 'multiple_choice') return mcAnswers[i] === ex.correct;
+      return false;
+    }).length;
+    const pct = allExercises.length > 0 ? s / allExercises.length : 1;
     setPhase('done');
-    onReady?.(true);
+    if (pct >= 0.5) onReady?.(true);
+    // else: stays on done screen with retry button — onReady NOT called
+  };
+
+  const handleRetry = () => {
+    setInputs({});
+    setMcAnswers({});
+    setChecked({});
+    setSubmitted(false);
+    setPhase('practice');
   };
 
   const allMcAnswered = multiChoice.length === 0 || allExercises.every((ex, i) => ex.type !== 'multiple_choice' || mcAnswers[i] !== undefined);
@@ -156,14 +171,35 @@ export default function GrammarTask({ content, onReady }) {
         </button>
       )}
 
-      {phase === 'done' && (
-        <div style={{ background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', borderRadius: 10, padding: '14px 16px', textAlign: 'center' }}>
-          <div style={{ color: '#4ade80', fontWeight: 700, fontSize: 15 }}>{score}/{allExercises.length} richtig ✓</div>
-          <div style={{ color: 'var(--text2)', fontSize: 13, marginTop: 4 }}>
-            {score === allExercises.length ? 'Perfekt!' : 'Schau dir die Fehler an und wiederhole die Regel.'}
+      {phase === 'done' && (() => {
+        const pct = allExercises.length > 0 ? score / allExercises.length : 1;
+        const passed = pct >= 0.5;
+        return passed ? (
+          <div style={{ background: 'rgba(34,197,94,.1)', border: '1px solid rgba(34,197,94,.3)', borderRadius: 12, padding: '18px 20px', textAlign: 'center' }}>
+            <div style={{ fontSize: 30, marginBottom: 6 }}>{score === allExercises.length ? '🏆' : '✅'}</div>
+            <div style={{ color: '#4ade80', fontWeight: 800, fontSize: 16 }}>{score}/{allExercises.length} richtig — Bestanden!</div>
+            <div style={{ color: 'var(--text2)', fontSize: 13, marginTop: 4 }}>
+              {score === allExercises.length ? 'Perfekt! Weiter so.' : 'Gut genug. Lies die Fehler noch einmal durch.'}
+            </div>
           </div>
-        </div>
-      )}
+        ) : (
+          <div style={{ background: 'rgba(239,68,68,.08)', border: '1px solid rgba(239,68,68,.35)', borderRadius: 12, padding: '18px 20px' }}>
+            <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:10 }}>
+              <span style={{ fontSize:28 }}>❌</span>
+              <div>
+                <div style={{ color:'#f87171', fontWeight:800, fontSize:16 }}>Nicht bestanden — {score}/{allExercises.length} richtig</div>
+                <div style={{ color:'var(--text2)', fontSize:13 }}>Mindestens 50% erforderlich. Versuche es nochmal.</div>
+              </div>
+            </div>
+            <button
+              onClick={handleRetry}
+              style={{ width:'100%', padding:'12px', background:'linear-gradient(135deg,#dc2626,#b91c1c)', border:'none', borderRadius:10, color:'#fff', fontSize:15, fontWeight:800, cursor:'pointer', marginTop:4 }}
+            >
+              🔄 Nochmal versuchen
+            </button>
+          </div>
+        );
+      })()}
     </div>
   );
 }

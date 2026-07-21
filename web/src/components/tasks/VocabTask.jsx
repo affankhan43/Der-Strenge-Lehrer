@@ -1,5 +1,48 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { speakWord } from '../../utils/germanAudio';
+
+// Article colors — iconic for German learning
+const ARTICLE_STYLE = {
+  der: { color: '#60a5fa', bg: 'rgba(96,165,250,.12)', border: 'rgba(96,165,250,.25)', label:'der' },
+  die: { color: '#f472b6', bg: 'rgba(244,114,182,.12)', border: 'rgba(244,114,182,.25)', label:'die' },
+  das: { color: '#4ade80', bg: 'rgba(74,222,128,.12)', border: 'rgba(74,222,128,.25)', label:'das' },
+};
+const ACCUSATIVE = { der:'den', die:'die', das:'das' };
+const DATIVE     = { der:'dem', die:'der', das:'dem' };
+
+function ArticlePill({ article }) {
+  if (!article) return null;
+  const st = ARTICLE_STYLE[article.toLowerCase()] || ARTICLE_STYLE.das;
+  return (
+    <span style={{
+      display:'inline-block',
+      fontSize:10, fontWeight:900, letterSpacing:'.05em',
+      color: st.color, background: st.bg,
+      border:`1px solid ${st.border}`,
+      borderRadius:6, padding:'1px 7px',
+      marginBottom:2, marginRight:4,
+    }}>
+      {st.label}
+    </span>
+  );
+}
+
+function CasesRow({ article }) {
+  if (!article) return null;
+  const art = article.toLowerCase();
+  const acc = ACCUSATIVE[art];
+  const dat = DATIVE[art];
+  const st  = ARTICLE_STYLE[art] || ARTICLE_STYLE.das;
+  return (
+    <div style={{ display:'flex', gap:6, marginTop:4, flexWrap:'wrap' }}>
+      <span style={{ fontSize:10, color:'var(--text3)' }}>Akkusativ:</span>
+      <span style={{ fontSize:10, fontWeight:800, color: st.color }}>{acc}</span>
+      <span style={{ fontSize:10, color:'var(--text3)', marginLeft:6 }}>Dativ:</span>
+      <span style={{ fontSize:10, fontWeight:800, color: st.color }}>{dat}</span>
+    </div>
+  );
+}
 
 export default function VocabTask({ content, onReady }) {
   const words = content?.words || [];
@@ -128,6 +171,9 @@ export default function VocabTask({ content, onReady }) {
                 }} />
               )}
 
+              {/* Article pill (if noun) */}
+              {w.article && <ArticlePill article={w.article} />}
+
               {/* German word — always visible */}
               <span style={{
                 fontWeight: 800,
@@ -145,6 +191,8 @@ export default function VocabTask({ content, onReady }) {
                   <span style={{ fontSize: 13, color: '#c4b5fd', fontWeight: 600 }}>
                     {w.en}
                   </span>
+                  {/* Accusative + Dative for nouns */}
+                  {w.article && <CasesRow article={w.article} />}
                   {/* Audio buttons */}
                   <div
                     style={{ display: 'flex', gap: 5, marginTop: 4 }}
