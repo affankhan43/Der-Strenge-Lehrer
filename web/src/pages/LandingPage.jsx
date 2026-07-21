@@ -320,25 +320,34 @@ function Marquee() {
   );
 }
 
+const FEATURE_COLORS = ['#a78bfa','#34d399','#fbbf24','#60a5fa','#f472b6','#fb923c'];
+
 function Methode() {
   return (
-    <section id="methode" style={{ maxWidth: 1240, margin: '0 auto', padding: '120px 40px 60px' }}>
-      <div style={{ textAlign: 'center', marginBottom: 70 }}>
-        <div data-reveal="" style={{...revealStyle(), ...labelStyle}}></div>
-        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,68px)', lineHeight: 1.02, letterSpacing: '-0.03em', margin: 0 })}>
+    <section id="methode" style={{ maxWidth: 1200, margin: '0 auto', padding: '100px 40px 56px' }}>
+      <div style={{ textAlign: 'center', marginBottom: 56 }}>
+        <div data-reveal="" style={{...revealStyle(), ...labelStyle}}>METHODE</div>
+        <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(30px,3.8vw,52px)', lineHeight: 1.08, letterSpacing: '-0.03em', margin: 0 })}>
           Warum so streng?<br /><span style={{ color: '#a78bfa' }}>Weil nett nicht funktioniert.</span>
         </h2>
-        <p data-reveal="" style={revealStyle('delay:.16s', { maxWidth: 640, margin: '26px auto 0', fontSize: 19, lineHeight: 1.6, color: '#aeb6d0' })}>
-          Every language app makes learning comfortable. That is precisely why they fail. Comfort is the enemy of fluency. This is the uncomfortable truth.
+        <p data-reveal="" style={revealStyle('delay:.16s', { maxWidth: 560, margin: '20px auto 0', fontSize: 16, lineHeight: 1.65, color: '#9aa2bf' })}>
+          Every language app makes learning comfortable. That is precisely why they fail. Comfort is the enemy of fluency.
         </p>
       </div>
-      <div className="lp-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 22 }}>
-        {FEATURES.map((f) => (
-          <div key={f.title} className="lp-card-feat lp-hover-feat" data-reveal="" style={revealStyle('', { position: 'relative', padding: '34px 30px', borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)', overflow: 'hidden' })}>
-            <div style={{ position: 'absolute', top: -40, right: -40, width: 120, height: 120, borderRadius: '50%', background: 'radial-gradient(circle,rgba(167,139,250,0.18),transparent 70%)', filter: 'blur(6px)' }} />
-            <div style={{ fontSize: 40, marginBottom: 20, filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.5))', display: 'inline-block', animation: 'floatIcon 5s ease-in-out infinite' }}>{f.icon}</div>
-            <h3 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 23, margin: '0 0 12px', color: '#f4f6ff' }}>{f.title}</h3>
-            <p style={{ margin: 0, fontSize: 16, lineHeight: 1.6, color: '#9aa2bf' }}>{f.body}</p>
+      <div className="lp-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16 }}>
+        {FEATURES.map((f, i) => (
+          <div key={f.title} className="lp-card-feat lp-hover-feat" data-reveal="" style={revealStyle('', {
+            position: 'relative', padding: '24px 22px', borderRadius: 18,
+            background: 'linear-gradient(160deg,rgba(16,18,36,0.85),rgba(8,10,20,0.75))',
+            border: '1px solid rgba(148,163,255,0.1)',
+            borderTop: `2px solid ${FEATURE_COLORS[i]}33`,
+            overflow: 'hidden',
+          })}>
+            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, ${FEATURE_COLORS[i]}, ${FEATURE_COLORS[i]}66)`, opacity: .6 }} />
+            <div style={{ position: 'absolute', top: -30, right: -30, width: 90, height: 90, borderRadius: '50%', background: `radial-gradient(circle,${FEATURE_COLORS[i]}22,transparent 70%)`, filter: 'blur(8px)' }} />
+            <div style={{ fontSize: 30, marginBottom: 14, filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.5))', display: 'inline-block', animation: 'floatIcon 5s ease-in-out infinite' }}>{f.icon}</div>
+            <h3 style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 17, margin: '0 0 9px', color: '#f4f6ff', lineHeight: 1.2 }}>{f.title}</h3>
+            <p style={{ margin: 0, fontSize: 14, lineHeight: 1.65, color: '#8a93b0' }}>{f.body}</p>
           </div>
         ))}
       </div>

@@ -128,7 +128,7 @@ function LightLesson() {
     return () => clearInterval(id);
   }, []);
   return (
-    <div className={s.lessonCard}>
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#fbbf24','--lesson-color2':'#f59e0b' }}>
       <div className={s.lessonAnim}>
         <svg viewBox="0 0 80 90" width="80" height="90">
           {/* Glow */}
@@ -209,7 +209,7 @@ function StairsLesson() {
   const goingUp = dir === 1;
 
   return (
-    <div className={s.lessonCard}>
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#a855f7','--lesson-color2':'#7c3aed' }}>
       <div className={s.lessonAnim}>
         <svg viewBox="0 0 80 80" width="80" height="80">
           {/* Stairs */}
@@ -263,7 +263,7 @@ function DoorLesson() {
     return () => clearInterval(id);
   }, []);
   return (
-    <div className={s.lessonCard}>
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#f43f5e','--lesson-color2':'#e11d48' }}>
       <div className={s.lessonAnim}>
         <svg viewBox="0 0 80 90" width="80" height="90">
           {/* Frame */}
@@ -304,7 +304,7 @@ function WindowLesson() {
     return () => clearInterval(id);
   }, []);
   return (
-    <div className={s.lessonCard}>
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#3b82f6','--lesson-color2':'#2563eb' }}>
       <div className={s.lessonAnim}>
         <svg viewBox="0 0 80 80" width="80" height="80">
           {/* Frame */}
@@ -358,7 +358,7 @@ function SitLesson() {
     return () => clearInterval(id);
   }, []);
   return (
-    <div className={s.lessonCard}>
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#22c55e','--lesson-color2':'#16a34a' }}>
       <div className={s.lessonAnim}>
         <svg viewBox="0 0 80 90" width="80" height="90">
           {/* Chair */}
@@ -404,6 +404,204 @@ function SitLesson() {
   );
 }
 
+function PressLesson() {
+  const [pressed, setPressed] = useState(false);
+  useEffect(() => {
+    const id = setInterval(() => setPressed(v => !v), 1600);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#f59e0b','--lesson-color2':'#d97706' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          <defs>
+            <filter id="btnGlow2"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <motion.rect x="18" y={pressed?50:46} width="44" height="22" rx="6" animate={{ y:pressed?50:46 }} transition={{duration:.15}} fill="#1a1a3a" stroke="#444" strokeWidth="1.5"/>
+          <motion.rect x="18" y={pressed?44:36} width="44" height="18" rx="6" animate={{ y:pressed?44:36 }} transition={{duration:.15}} fill={pressed?'#dc2626':'#ef4444'} filter={pressed?'none':'url(#btnGlow2)'}/>
+          <motion.text x="40" y={pressed?56:48} textAnchor="middle" animate={{y:pressed?56:48}} transition={{duration:.15}} fontSize="9" fill="#fff" fontWeight="bold">DRÜCK</motion.text>
+          <motion.g animate={{ y:pressed?8:0 }} transition={{duration:.15}}>
+            <ellipse cx="40" cy="26" rx="10" ry="7" fill="#c4b5fd"/>
+            <rect x="36" y="12" width="8" height="17" rx="4" fill="#c4b5fd"/>
+            <ellipse cx="40" cy="12" rx="4" ry="3" fill="#ddd6fe"/>
+          </motion.g>
+          {pressed && [1,2].map(r=>(
+            <motion.circle key={r} cx="40" cy="54" r={8*r} fill="none" stroke="#ef4444" strokeWidth="1"
+              initial={{opacity:.6,scale:.5}} animate={{opacity:0,scale:1.5}} transition={{duration:.5,delay:r*.1}}/>
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{pressed?'drücken':'der Knopf'}</span>
+        <span className={s.lessonEn}>{pressed?'to press':'the button'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>drücken — to press / to push</span>
+        <span className={s.lessonPhrase}>der Knopf — the button (der)</span>
+      </div>
+    </div>
+  );
+}
+
+function KnockLesson() {
+  const [phase, setPhase] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setPhase(p=>(p+1)%4), 500);
+    return () => clearInterval(id);
+  }, []);
+  const knocking = phase===1||phase===3;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#8b5cf6','--lesson-color2':'#6d28d9' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          <rect x="22" y="10" width="40" height="70" rx="3" fill="none" stroke="#444" strokeWidth="3"/>
+          <rect x="24" y="12" width="36" height="66" rx="2" fill="#2a2a50" stroke="#4444aa" strokeWidth="1"/>
+          <circle cx="54" cy="46" r="4" fill="#fbbf24" stroke="#d97706" strokeWidth="1"/>
+          <motion.g animate={{x:knocking?-4:0}} transition={{duration:.1}}>
+            <rect x="5" y="30" width="20" height="16" rx="6" fill="#c4b5fd"/>
+            {[0,1,2,3].map(i=>(<circle key={i} cx={8+i*4} cy="30" r="3.5" fill="#ddd6fe"/>))}
+            <ellipse cx="6" cy="38" rx="4" ry="3" fill="#c4b5fd" transform="rotate(-20,6,38)"/>
+          </motion.g>
+          {knocking && [12,18,24].map((r,i)=>(
+            <motion.circle key={r} cx="24" cy="38" r={r} fill="none" stroke="#a78bfa" strokeWidth="1"
+              initial={{opacity:.7,scale:.7}} animate={{opacity:0,scale:1.2}} transition={{duration:.35,delay:i*.06}}/>
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>klopfen</span>
+        <span className={s.lessonEn}>to knock</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>an die Tür klopfen — knock on door</span>
+        <span className={s.lessonPhrase}>Herein! — Come in!</span>
+      </div>
+    </div>
+  );
+}
+
+function PushLesson() {
+  const [pushing, setPushing] = useState(false);
+  useEffect(() => {
+    const id = setInterval(() => setPushing(v=>!v), 1800);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#06b6d4','--lesson-color2':'#0891b2' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          <motion.g animate={{x:pushing?18:0}} transition={{duration:.7,ease:'easeInOut'}}>
+            <rect x="36" y="50" width="24" height="22" rx="3" fill="#2a4a6a" stroke="#3d7ab5" strokeWidth="1.5"/>
+            <line x1="36" y1="61" x2="60" y2="61" stroke="#3d7ab5" strokeWidth="1"/>
+            <line x1="48" y1="50" x2="48" y2="72" stroke="#3d7ab5" strokeWidth="1"/>
+          </motion.g>
+          <motion.g animate={{x:pushing?6:0}} transition={{duration:.7,ease:'easeInOut'}}>
+            <circle cx="20" cy="20" r="7" fill="#c4b5fd"/>
+            <line x1="20" y1="27" x2="20" y2="50" stroke="#a78bfa" strokeWidth="5" strokeLinecap="round"/>
+            <motion.line x1="20" y1="36" animate={{x2:pushing?38:34,y2:36}} transition={{duration:.7}} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+            <motion.line x1="20" y1="43" animate={{x2:pushing?38:34,y2:43}} transition={{duration:.7}} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+            <line x1="20" y1="50" x2="14" y2="68" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+            <line x1="20" y1="50" x2="26" y2="68" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          </motion.g>
+          <line x1="5" y1="72" x2="75" y2="72" stroke="#333" strokeWidth="2"/>
+          {pushing && [0,1,2].map(i=>(
+            <motion.line key={i} x1={62+i*4} y1={56+i*4} x2={68+i*4} y2={56+i*4}
+              stroke="#06b6d4" strokeWidth="1.5" strokeLinecap="round"
+              initial={{opacity:0}} animate={{opacity:.7}} transition={{delay:i*.1}}/>
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{pushing?'schieben':'die Kiste'}</span>
+        <span className={s.lessonEn}>{pushing?'to push / slide':'the box'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>schieben — to push, to slide</span>
+        <span className={s.lessonPhrase}>ziehen — to pull (opposite)</span>
+      </div>
+    </div>
+  );
+}
+
+function WriteLesson() {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setProgress(p=>p>=100?0:p+3), 60);
+    return () => clearInterval(id);
+  }, []);
+  const p = progress/100;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#10b981','--lesson-color2':'#059669' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          <rect x="12" y="14" width="50" height="62" rx="4" fill="#1a1a3a" stroke="#2a2a55" strokeWidth="1.5"/>
+          {[28,36,44,52,60].map(y=>(<rect key={y} x="19" y={y} width="36" height="2" rx="1" fill="rgba(255,255,255,.07)"/>))}
+          <rect x="19" y="28" width={36*Math.min(p*4,1)} height="2" rx="1" fill="#4ade80"/>
+          <rect x="19" y="36" width={36*Math.max(0,Math.min((p-.25)*4,1))} height="2" rx="1" fill="#4ade80"/>
+          <rect x="19" y="44" width={36*Math.max(0,Math.min((p-.5)*4,1))} height="2" rx="1" fill="#4ade80"/>
+          <rect x="19" y="52" width={36*Math.max(0,Math.min((p-.75)*4,1))} height="2" rx="1" fill="#4ade80"/>
+          <motion.g animate={{
+            x: Math.min(p*4,1)*28,
+            y: p<.25?0:p<.5?8:p<.75?16:24,
+          }} transition={{duration:.06}}>
+            <rect x="10" y="12" width="5" height="22" rx="2.5" fill="#fbbf24" transform="rotate(35,10,12)"/>
+            <polygon points="10,34 15,34 12.5,39" fill="#e5e7eb"/>
+          </motion.g>
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>schreiben</span>
+        <span className={s.lessonEn}>to write</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>der Stift — the pen (der)</span>
+        <span className={s.lessonPhrase}>das Papier — the paper (das)</span>
+      </div>
+    </div>
+  );
+}
+
+function LiftLesson() {
+  const [up, setUp] = useState(false);
+  useEffect(() => {
+    const id = setInterval(() => setUp(v=>!v), 1800);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#f97316','--lesson-color2':'#ea580c' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 80 90" width="80" height="90">
+          <motion.g animate={{y:up?-18:0}} transition={{duration:.7,ease:'easeInOut'}}>
+            <rect x="28" y="38" width="24" height="18" rx="3" fill="#f97316" stroke="#ea580c" strokeWidth="1.5"/>
+            <text x="40" y="51" textAnchor="middle" fontSize="9" fill="#fff" fontWeight="bold">10kg</text>
+          </motion.g>
+          <circle cx="40" cy="22" r="7" fill="#c4b5fd"/>
+          <line x1="40" y1="29" x2="40" y2="56" stroke="#a78bfa" strokeWidth="5" strokeLinecap="round"/>
+          <motion.line x1="40" y1="38" animate={{x2:up?28:30,y2:up?32:44}} transition={{duration:.7}} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+          <motion.line x1="40" y1="38" animate={{x2:up?52:50,y2:up?32:44}} transition={{duration:.7}} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="40" y1="56" x2="33" y2="72" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="40" y1="56" x2="47" y2="72" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="10" y1="72" x2="70" y2="72" stroke="#333" strokeWidth="2"/>
+          {up && [0,1,2].map(i=>(
+            <motion.line key={i} x1={52+i*4} y1={28-i*3} x2={57+i*4} y2={22-i*3}
+              stroke="#fb923c" strokeWidth="1.5" strokeLinecap="round"
+              initial={{opacity:0}} animate={{opacity:.8}}
+              transition={{delay:i*.08,repeat:Infinity,repeatType:'reverse',duration:.4}}/>
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}>
+        <span className={s.lessonDe}>{up?'hochheben':'hinstellen'}</span>
+        <span className={s.lessonEn}>{up?'to lift up':'to put down'}</span>
+      </div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>hochheben — to lift up</span>
+        <span className={s.lessonPhrase}>hinstellen — to put down</span>
+      </div>
+    </div>
+  );
+}
+
 function AnimatedLessons() {
   return (
     <motion.section
@@ -423,6 +621,11 @@ function AnimatedLessons() {
         <StairsLesson />
         <WindowLesson />
         <SitLesson />
+        <PressLesson />
+        <KnockLesson />
+        <PushLesson />
+        <WriteLesson />
+        <LiftLesson />
       </div>
     </motion.section>
   );
