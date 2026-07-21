@@ -1,25 +1,70 @@
 {
   "day": 22,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Adjektivdeklination — Prädikativ vs. Attributiv",
+  "explanation": "Adjektive an zwei Positionen:\n\n**1. Prädikativ** (nach sein/werden) — KEINE Endung:\n- Das Haus ist **groß**.\n- Der Mann ist **alt**.\n\n**2. Attributiv** (vor dem Nomen) — MIT Endung:\n\nNach bestimmtem Artikel (der/die/das):\n| Kasus | mask. | fem. | neut. |\n|-------|-------|------|-------|\n| Nom. | der alte**n** Mann | die alte Frau | das alte Haus |\n| Akk. | den alte**n** Mann | die alte Frau | das alte Haus |\n\nNach unbestimmtem Artikel (ein/eine):\n- **ein alter** Mann (mask. Nom. → -er)\n- **eine alte** Frau (fem. Nom. → -e)\n- **ein altes** Haus (neut. Nom. → -es)",
   "exercises": [
     {
+      "type": "multiple_choice",
+      "q": "Das Haus ist ___ (groß — prädikativ)",
+      "options": [
+        "großen",
+        "große",
+        "groß",
+        "großem"
+      ],
+      "correct": 2
+    },
+    {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "Das ist ein alt___ Mann. (mask. Nom. unbestimmt)",
+      "answer": "er",
+      "hint": "mask. Nom. unbestimmt → -er"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich sehe den klein___ Hund. (mask. Akk.)",
+      "answer": "en",
+      "hint": "nach bestimmtem Artikel Akk. → -en"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Die ___ Katze schläft. (klein)",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "kleiner",
+        "kleine",
+        "kleines",
+        "kleinen"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er kauft das neu___ Buch. (neut. Akk.)",
+      "answer": "e",
+      "hint": "neut. nach best. Artikel → -e"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich habe eine alt___ Gitarre. (fem. Akk.)",
+      "answer": "e",
+      "hint": "fem. nach unbest. Artikel → -e"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Der ___ Kaffee schmeckt gut. (heiß)",
+      "options": [
+        "heiße",
+        "heißer",
+        "heißen",
+        "heißes"
       ],
       "correct": 0
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Sie ist eine interessant___ Frau. (fem. Nom.)",
+      "answer": "e",
+      "hint": "fem. Nom. nach unbest. Artikel → -e"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

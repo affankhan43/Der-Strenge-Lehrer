@@ -1,19 +1,26 @@
 {
   "day": 18,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Was machst du in deiner Freizeit?",
+  "level": "A1",
+  "text": "Jeder Mensch hat Hobbys und Interessen. Freizeit ist wichtig — sie hilft uns, uns zu entspannen und glücklich zu sein.\n\nMein Name ist Thomas. Ich arbeite als Buchhalter und habe viel Stress bei der Arbeit. Deshalb brauche ich in meiner Freizeit Ausgleich. Mein größtes Hobby ist Musik. Ich spiele seit zehn Jahren Gitarre — ich habe als Kind angefangen. Jeden Dienstagabend treffe ich mich mit Freunden, und wir spielen zusammen. Das macht mir sehr viel Spaß.\n\nAußerdem koche ich sehr gern. Ich kaufe frische Zutaten auf dem Markt und koche dann zwei bis drei Stunden. Das ist wie Meditation für mich — ich vergesse alle Probleme.\n\nMeine Frau Petra liest sehr gern. Sie hat immer ein Buch dabei — im Zug, im Café, im Park. Jeden Monat liest sie etwa vier Bücher. Sie mag Krimis und historische Romane am liebsten.\n\nUnsere Kinder spielen Fußball im Verein. Das Training ist zweimal pro Woche, und samstags spielen sie Spiele gegen andere Vereine.\n\nFreizeit ist für unsere Familie sehr wichtig. Ohne Hobbys wäre das Leben grau.",
+  "glossary": {
+    "Buchhalter": {"en": "accountant", "grammar": "der Buchhalter (m)"},
+    "Ausgleich": {"en": "balance / counterbalance", "grammar": "der Ausgleich (m) — kein Plural"},
+    "angefangen": {"en": "started (Partizip II of anfangen)", "grammar": "anfangen → angefangen (trennbar, strong verb)"},
+    "zusammen": {"en": "together", "grammar": "Adverb"},
+    "Spaß machen": {"en": "to be fun", "grammar": "Das macht mir Spaß = I enjoy it"},
+    "außerdem": {"en": "besides / furthermore", "grammar": "Konjunktionaladverb"},
+    "Zutaten": {"en": "ingredients", "grammar": "die Zutat → die Zutaten"},
+    "Meditation": {"en": "meditation", "grammar": "die Meditation (f)"},
+    "vergessen": {"en": "to forget", "grammar": "vergessen → er vergisst (irregular)"},
+    "Krimis": {"en": "crime novels / detective stories", "grammar": "der Krimi → die Krimis"},
+    "wäre": {"en": "would be", "grammar": "Konjunktiv II von sein (B1)"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Was ist Thomas' größtes Hobby?", "options": ["Sport", "Musik", "Reisen", "Kochen"], "correct": 1},
+    {"q": "Seit wann spielt Thomas Gitarre?", "options": ["5 Jahre", "8 Jahre", "10 Jahre", "15 Jahre"], "correct": 2},
+    {"q": "Was macht Thomas' Frau Petra gern?", "options": ["Singen", "Fotografieren", "Lesen", "Tanzen"], "correct": 2},
+    {"q": "Wie oft haben die Kinder Fußballtraining?", "options": ["Einmal pro Woche", "Zweimal pro Woche", "Dreimal pro Woche", "Jeden Tag"], "correct": 1},
+    {"q": "Was bedeutet 'Das macht mir Spaß'?", "options": ["Das ist schwierig", "Das macht mich traurig", "Das ist lustig", "Das ist Spaß für mich / I enjoy it"], "correct": 3}
+  ]
 }

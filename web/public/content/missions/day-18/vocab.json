@@ -1,32 +1,24 @@
 {
   "day": 18,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Hobbys & Freizeit",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "das Hobby", "en": "the hobby", "artikel": "das", "example": "Was ist dein Hobby? — Ich spiele gern Gitarre."},
+    {"de": "die Freizeit", "en": "the free time / leisure time", "artikel": "die", "example": "In meiner Freizeit lese ich viel."},
+    {"de": "lesen", "en": "to read", "example": "Ich lese jeden Abend ein Buch."},
+    {"de": "Musik hören", "en": "to listen to music", "example": "Ich höre gern Musik — besonders Jazz."},
+    {"de": "Sport treiben", "en": "to do sports", "example": "Ich treibe dreimal pro Woche Sport."},
+    {"de": "schwimmen", "en": "to swim", "example": "Im Sommer schwimme ich jeden Tag."},
+    {"de": "laufen / joggen", "en": "to run / jog", "example": "Ich laufe jeden Morgen 5 Kilometer."},
+    {"de": "reisen", "en": "to travel", "example": "In den Ferien reise ich gern nach Europa."},
+    {"de": "kochen", "en": "to cook", "example": "Ich koche gern — besonders italienisches Essen."},
+    {"de": "fotografieren", "en": "to take photographs", "example": "Ich fotografiere gern Natur und Städte."},
+    {"de": "malen", "en": "to paint", "example": "In meiner Freizeit male ich Aquarelle."},
+    {"de": "tanzen", "en": "to dance", "example": "Wir tanzen jeden Samstagabend."},
+    {"de": "spielen", "en": "to play", "example": "Ich spiele Gitarre und Klavier."},
+    {"de": "das Konzert", "en": "the concert", "artikel": "das", "example": "Morgen gehe ich ins Konzert."},
+    {"de": "das Kino", "en": "the cinema / movie theater", "artikel": "das", "example": "Am Wochenende gehen wir ins Kino."},
+    {"de": "der Verein", "en": "the club / association", "artikel": "der", "example": "Ich bin Mitglied im Fußballverein."},
+    {"de": "der Film", "en": "the film / movie", "artikel": "der", "example": "Ich sehe gern Horrorfilme."},
+    {"de": "gern", "en": "gladly / with pleasure (= to like doing)", "example": "Ich koche gern. = I like cooking."}
+  ]
 }

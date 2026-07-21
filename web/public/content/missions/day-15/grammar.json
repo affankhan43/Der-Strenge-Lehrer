@@ -1,25 +1,15 @@
 {
   "day": 15,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Modalverben — möchten, können, müssen",
+  "explanation": "Modalverben sind Hilfsverben. Sie stehen mit einem Infinitiv am Satzende.\n\n**Die wichtigsten Modalverben (A1):**\n\n| Modalverb | Bedeutung | ich | du | er/sie/es |\n|-----------|-----------|-----|----|-----------|\n| **möchten** | would like to | möchte | möchtest | möchte |\n| **können** | can / to be able to | kann | kannst | kann |\n| **müssen** | must / have to | muss | musst | muss |\n| **wollen** | want to | will | willst | will |\n| **dürfen** | may / allowed to | darf | darfst | darf |\n\n**Satzbau:**\nSubjekt + **Modalverb** (Position 2) + ... + **Infinitiv** (Ende)\n\n*Ich **möchte** einen Kaffee **bestellen**.*\n*Du **musst** jetzt **gehen**.*\n*Er **kann** gut **kochen**.*",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "fill_blank", "sentence": "Ich ___ bitte ein Wasser. (möchten)", "answer": "möchte", "hint": "ich möchte"},
+    {"type": "fill_blank", "sentence": "Du ___ jetzt nach Hause gehen. (müssen)", "answer": "musst", "hint": "du musst"},
+    {"type": "multiple_choice", "q": "Wähle die richtige Form: Er ___ sehr gut Deutsch sprechen.", "options": ["kann", "kannst", "möchte", "muss"], "correct": 0},
+    {"type": "fill_blank", "sentence": "Wir ___ morgen früh aufstehen. (müssen)", "answer": "müssen", "hint": "wir müssen"},
+    {"type": "fill_blank", "sentence": "Sie (Frau Müller) ___ bitte die Speisekarte sehen. (möchten)", "answer": "möchte", "hint": "er/sie/es möchte"},
+    {"type": "multiple_choice", "q": "Wie fragt man höflich? 'Ich ___ zahlen, bitte.'", "options": ["will", "muss", "möchte", "soll"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Ihr ___ leise sein — das Baby schläft. (müssen)", "answer": "müsst", "hint": "ihr müsst"},
+    {"type": "fill_blank", "sentence": "Ich ___ heute nicht kochen — wir gehen ins Restaurant. (wollen)", "answer": "will", "hint": "ich will"}
+  ]
 }

@@ -1,19 +1,23 @@
 {
   "day": 17,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Mein neuer Job",
+  "level": "A1",
+  "text": "Mein Name ist Fatima. Ich komme aus Marokko und lebe seit zwei Jahren in Deutschland. Ich habe Informatik studiert und suche jetzt einen Job als Softwareentwicklerin.\n\nLetzte Woche habe ich eine interessante Stelle gefunden. Die Firma heißt TechDeutsch und ist in München. Ich habe meine Bewerbung geschrieben: einen Lebenslauf und ein Motivationsschreiben. Das war nicht einfach auf Deutsch!\n\nHeute ist mein Vorstellungsgespräch. Ich bin sehr nervös. Der Chef, Herr Weber, fragt mich: 'Warum möchten Sie bei uns arbeiten?' Ich antworte: 'Ich finde Ihre Projekte sehr interessant und ich möchte meine Deutschkenntnisse verbessern.'\n\nHerr Weber lächelt: 'Ihr Deutsch ist sehr gut für zwei Jahre!' Das freut mich sehr.\n\nNach dem Gespräch warte ich eine Woche. Dann bekomme ich eine E-Mail: 'Wir freuen uns, Ihnen mitteilen zu dürfen, dass Sie die Stelle bekommen haben!' Ich bin so glücklich! Mein neuer Job beginnt am ersten Februar. Das Gehalt ist gut und ich habe 28 Tage Urlaub im Jahr.",
+  "glossary": {
+    "Softwareentwicklerin": {"en": "software developer (female)", "grammar": "die Softwareentwicklerin (f)"},
+    "Motivationsschreiben": {"en": "cover letter", "grammar": "das Motivationsschreiben (n)"},
+    "Deutschkenntnisse": {"en": "German language skills", "grammar": "Kompositum: Deutsch + Kenntnisse"},
+    "verbessern": {"en": "to improve", "grammar": "verbessern → ich verbessere (A2)"},
+    "lächelt": {"en": "smiles", "grammar": "lächeln → er lächelt"},
+    "freut mich": {"en": "makes me happy / pleases me", "grammar": "sich freuen → das freut mich"},
+    "mitteilen": {"en": "to inform / notify", "grammar": "mitteilen → trennbares Verb (A2)"},
+    "Stelle bekommen": {"en": "got the job", "grammar": "die Stelle bekommen = to get the position"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Woher kommt Fatima?", "options": ["Türkei", "Arabien", "Marokko", "Ägypten"], "correct": 2},
+    {"q": "Was hat Fatima studiert?", "options": ["Medizin", "Jura", "Informatik", "Pädagogik"], "correct": 2},
+    {"q": "Wie heißt die Firma, bei der Fatima arbeiten möchte?", "options": ["TechBerlin", "TechDeutsch", "TechMünchen", "SoftDeutsch"], "correct": 1},
+    {"q": "Was sagt Herr Weber über Fatimas Deutsch?", "options": ["Es ist schlecht", "Es ist okay", "Es ist sehr gut für zwei Jahre", "Es ist perfekt"], "correct": 2},
+    {"q": "Wie viele Urlaubstage bekommt Fatima?", "options": ["20 Tage", "24 Tage", "28 Tage", "30 Tage"], "correct": 2}
+  ]
 }

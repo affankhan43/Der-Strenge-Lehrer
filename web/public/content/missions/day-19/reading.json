@@ -1,19 +1,23 @@
 {
   "day": 19,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Entschuldigung, wie komme ich zum Bahnhof?",
+  "level": "A1",
+  "text": "Maria ist neu in der Stadt. Sie braucht den Hauptbahnhof, aber sie findet ihn nicht. Sie sieht einen älteren Mann auf der Straße.\n\n'Entschuldigung,' sagt sie. 'Wie komme ich zum Hauptbahnhof?'\n\nDer Mann lächelt freundlich. 'Natürlich! Das ist gar nicht schwer. Gehen Sie hier geradeaus — diese Straße heißt Hauptstraße. Gehen Sie etwa drei Minuten bis zur großen Kreuzung. An der Kreuzung sehen Sie eine Ampel. Biegen Sie dort links ab.'\n\n'Okay, links an der Ampel,' wiederholt Maria.\n\n'Genau! Dann gehen Sie die Karl-Marx-Straße entlang. Nach etwa fünf Minuten sehen Sie auf der rechten Seite ein großes rotes Gebäude — das ist das Rathaus. Der Bahnhof ist gegenüber dem Rathaus, auf der linken Seite. Sie können ihn nicht übersehen — er ist sehr groß!'\n\n'Wie lange dauert das zu Fuß?' fragt Maria.\n\n'Etwa zehn Minuten,' sagt der Mann. 'Oder Sie können auch den Bus nehmen — die Linie 7 fährt direkt zum Bahnhof. Die Haltestelle ist hier um die Ecke.'\n\n'Vielen Dank!' sagt Maria.\n'Bitte sehr! Gute Reise!'",
+  "glossary": {
+    "gar nicht": {"en": "not at all", "grammar": "Verneinungsausdruck (A2)"},
+    "Hauptstraße": {"en": "main street", "grammar": "die Hauptstraße — Kompositum"},
+    "wiederholt": {"en": "repeats", "grammar": "wiederholen → er wiederholt"},
+    "Gebäude": {"en": "building", "grammar": "das Gebäude (n)"},
+    "übersehen": {"en": "to miss / overlook", "grammar": "übersehen → er übersieht (untrennbar)"},
+    "Linie 7": {"en": "bus/tram route 7", "grammar": "die Linie (f) — Transportlinie"},
+    "um die Ecke": {"en": "around the corner", "grammar": "feste Wendung"},
+    "Bitte sehr": {"en": "You're very welcome", "grammar": "höfliche Antwort auf 'Danke'"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Wohin sucht Maria den Weg?", "options": ["Zur Post", "Zur Apotheke", "Zum Hauptbahnhof", "Zum Rathaus"], "correct": 2},
+    {"q": "In welche Richtung muss Maria an der Ampel abbiegen?", "options": ["Rechts", "Links", "Geradeaus", "Zurück"], "correct": 1},
+    {"q": "Was ist gegenüber dem Rathaus?", "options": ["Die Post", "Der Bahnhof", "Die Apotheke", "Ein Hotel"], "correct": 1},
+    {"q": "Wie lange dauert der Weg zu Fuß?", "options": ["5 Minuten", "8 Minuten", "10 Minuten", "15 Minuten"], "correct": 2},
+    {"q": "Welche Buslinie fährt zum Bahnhof?", "options": ["Linie 3", "Linie 5", "Linie 7", "Linie 9"], "correct": 2}
+  ]
 }

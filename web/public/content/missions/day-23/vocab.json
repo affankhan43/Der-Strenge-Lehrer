@@ -1,32 +1,112 @@
 {
   "day": 23,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Familie & Verwandtschaft",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "die Mutter",
+      "en": "the mother",
+      "artikel": "die",
+      "example": "Meine Mutter kocht sehr gut."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "der Vater",
+      "en": "the father",
+      "artikel": "der",
+      "example": "Mein Vater ist Ingenieur bei Bosch."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Eltern",
+      "en": "the parents (plural)",
+      "artikel": "die",
+      "example": "Meine Eltern wohnen in Hamburg."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Bruder",
+      "en": "the brother",
+      "artikel": "der",
+      "example": "Mein Bruder ist zwei Jahre älter als ich."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "die Schwester",
+      "en": "the sister",
+      "artikel": "die",
+      "example": "Ich habe eine Schwester — sie heißt Anna."
+    },
+    {
+      "de": "der Großvater",
+      "en": "the grandfather",
+      "artikel": "der",
+      "example": "Mein Großvater ist 80 Jahre alt und noch fit."
+    },
+    {
+      "de": "die Großmutter",
+      "en": "the grandmother",
+      "artikel": "die",
+      "example": "Meine Großmutter macht den besten Kuchen."
+    },
+    {
+      "de": "der Onkel",
+      "en": "the uncle",
+      "artikel": "der",
+      "example": "Mein Onkel lebt in Berlin."
+    },
+    {
+      "de": "die Tante",
+      "en": "the aunt",
+      "artikel": "die",
+      "example": "Meine Tante hat drei Kinder."
+    },
+    {
+      "de": "der Cousin",
+      "en": "the cousin (male)",
+      "artikel": "der",
+      "example": "Mein Cousin spielt in einem Fußballverein."
+    },
+    {
+      "de": "die Cousine",
+      "en": "the cousin (female)",
+      "artikel": "die",
+      "example": "Meine Cousine studiert Medizin."
+    },
+    {
+      "de": "die Nichte",
+      "en": "the niece",
+      "artikel": "die",
+      "example": "Meine Nichte ist erst zwei Jahre alt."
+    },
+    {
+      "de": "der Neffe",
+      "en": "the nephew",
+      "artikel": "der",
+      "example": "Mein Neffe geht in die erste Klasse."
+    },
+    {
+      "de": "verheiratet",
+      "en": "married",
+      "example": "Sind Sie verheiratet? — Ja, seit fünf Jahren."
+    },
+    {
+      "de": "ledig",
+      "en": "single / unmarried",
+      "example": "Er ist noch ledig — er sucht die große Liebe."
+    },
+    {
+      "de": "das Kind",
+      "en": "the child",
+      "artikel": "das",
+      "example": "Das Kind ist sehr neugierig und lebhaft."
+    },
+    {
+      "de": "die Familie",
+      "en": "the family",
+      "artikel": "die",
+      "example": "Meine Familie ist sehr groß — 15 Personen!"
+    },
+    {
+      "de": "die Hochzeit",
+      "en": "the wedding",
+      "artikel": "die",
+      "example": "Wir waren auf der Hochzeit meiner Cousine."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

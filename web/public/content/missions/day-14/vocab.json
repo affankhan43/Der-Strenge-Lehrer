@@ -1,32 +1,24 @@
 {
   "day": 14,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Einkaufen & Lebensmittel",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "der Supermarkt", "en": "the supermarket", "artikel": "der", "example": "Ich gehe jeden Freitag in den Supermarkt."},
+    {"de": "das Geschäft", "en": "the shop / store", "artikel": "das", "example": "Das Geschäft schließt um 20 Uhr."},
+    {"de": "der Markt", "en": "the market", "artikel": "der", "example": "Am Samstag gibt es frisches Obst auf dem Markt."},
+    {"de": "kaufen", "en": "to buy", "example": "Ich kaufe Brot und Milch."},
+    {"de": "der Preis", "en": "the price", "artikel": "der", "example": "Was kostet das? — Der Preis ist 3 Euro."},
+    {"de": "teuer", "en": "expensive", "example": "Das Restaurant ist sehr teuer — 50 Euro pro Person!"},
+    {"de": "günstig", "en": "cheap / affordable", "example": "Der Supermarkt ist günstig — ich kaufe dort immer ein."},
+    {"de": "das Obst", "en": "the fruit (collective)", "artikel": "das", "example": "Ich esse jeden Tag Obst — Äpfel und Bananen."},
+    {"de": "das Gemüse", "en": "the vegetables (collective)", "artikel": "das", "example": "Gemüse ist gesund — iss mehr Gemüse!"},
+    {"de": "das Brot", "en": "the bread", "artikel": "das", "example": "Deutsches Brot ist weltweit bekannt und lecker."},
+    {"de": "die Milch", "en": "the milk", "artikel": "die", "example": "Ich trinke morgens ein Glas Milch."},
+    {"de": "das Fleisch", "en": "the meat", "artikel": "das", "example": "Er isst kein Fleisch — er ist Vegetarier."},
+    {"de": "der Fisch", "en": "the fish", "artikel": "der", "example": "Frischer Fisch vom Markt ist köstlich."},
+    {"de": "die Kasse", "en": "the checkout / cashier", "artikel": "die", "example": "Bitte zahlen Sie an der Kasse."},
+    {"de": "bezahlen", "en": "to pay", "example": "Ich bezahle mit Karte oder bar."},
+    {"de": "der Einkaufskorb", "en": "the shopping basket", "artikel": "der", "example": "Mein Einkaufskorb ist schon voll!"},
+    {"de": "das Angebot", "en": "the offer / sale / deal", "artikel": "das", "example": "Diese Woche sind Erdbeeren im Angebot."},
+    {"de": "die Quittung", "en": "the receipt", "artikel": "die", "example": "Brauchen Sie eine Quittung? — Ja, bitte!"}
+  ]
 }

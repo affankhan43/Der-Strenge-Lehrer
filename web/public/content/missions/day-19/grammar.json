@@ -1,25 +1,15 @@
 {
   "day": 19,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Dativ — Lokale Präpositionen (in, an, auf, neben...)",
+  "explanation": "Ortsangaben (wo?) brauchen oft den **Dativ**:\n\n*Das Café ist **neben der** Apotheke.* (neben + Dativ)\n*Ich warte **vor dem** Bahnhof.* (vor + Dativ)\n\n**Dativ-Endungen:**\n| Genus | Nominativ | Dativ |\n|-------|-----------|-------|\n| maskulin | der/ein | **dem/einem** |\n| feminin | die/eine | **der/einer** |\n| neutrum | das/ein | **dem/einem** |\n| Plural | die | **den** + n |\n\n**Lokale Präpositionen + Dativ (Wo?):**\nin, an, auf, neben, hinter, vor, über, unter, zwischen, gegenüber\n\n**Beispiele:**\n- in **dem** (= im) Café → im Café\n- an **dem** (= am) Bahnhof → am Bahnhof\n- neben **der** Post\n- vor **dem** Hotel",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "fill_blank", "sentence": "Das Kino ist neben ___ Post. (die Post, feminin)", "answer": "der", "hint": "feminin Dativ: der"},
+    {"type": "fill_blank", "sentence": "Ich warte vor ___ Hotel. (das Hotel, neutrum)", "answer": "dem", "hint": "neutrum Dativ: dem"},
+    {"type": "multiple_choice", "q": "Die Schule ist gegenüber ___ Bahnhof. (der Bahnhof)", "options": ["den", "dem", "der", "die"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Das Restaurant ist in ___ Stadtmitte. (die Stadtmitte)", "answer": "der", "hint": "feminin Dativ: der"},
+    {"type": "fill_blank", "sentence": "Wir treffen uns am Bahnhof. (an + dem = ?)", "answer": "am", "hint": "an + dem = am (Kontraktion)"},
+    {"type": "multiple_choice", "q": "Der Parkplatz ist hinter ___ Supermarkt. (der Supermarkt)", "options": ["dem", "der", "des", "den"], "correct": 0},
+    {"type": "fill_blank", "sentence": "Das Café ist ___ der Apotheke. (neben)", "answer": "neben", "hint": "neben + Dativ = Wo?"},
+    {"type": "fill_blank", "sentence": "Ich bin ___ Hause. (zu Hause = at home)", "answer": "zu", "hint": "zu Hause ist eine feste Wendung"}
+  ]
 }

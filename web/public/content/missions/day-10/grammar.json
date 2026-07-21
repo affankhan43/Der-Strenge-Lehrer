@@ -1,25 +1,15 @@
 {
   "day": 10,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Uhrzeit — Wie spät ist es?",
+  "explanation": "Die Uhrzeit auf Deutsch hat zwei Systeme:\n\n**1. Offiziell (24-Stunden, z.B. Bahn, Radio):**\n— 13:00 → dreizehn Uhr\n— 14:30 → vierzehn Uhr dreißig\n\n**2. Umgangssprachlich (12-Stunden):**\n\n| Uhrzeit | Ausdruck |\n|---------|----------|\n| 8:00 | acht Uhr |\n| 8:15 | Viertel nach acht |\n| 8:30 | halb neun |\n| 8:45 | Viertel vor neun |\n| 9:00 | neun Uhr |\n\n⚠️ **Achtung:** 'halb neun' = 8:30 (nicht 9:30!)\n\n**Fragen:**\n- *Wie spät ist es?* — What time is it?\n- *Wann...?* — When...? → *Um drei Uhr.* (at three o'clock)\n- *Um wie viel Uhr...?* — At what time...?",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "multiple_choice", "q": "Was bedeutet 'halb zehn'?", "options": ["10:30", "9:30", "10:15", "9:15"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Es ist ___ nach sieben. (8:15)", "answer": "Viertel", "hint": ":15 = Viertel nach"},
+    {"type": "fill_blank", "sentence": "Es ist ___ vor acht. (7:45)", "answer": "Viertel", "hint": ":45 = Viertel vor"},
+    {"type": "multiple_choice", "q": "Wie sagt man '14:00' offiziell?", "options": ["zwei Uhr", "vierzehn Uhr", "halb drei", "zwei nach Mittag"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Der Zug fährt ___ elf Uhr ab.", "answer": "um", "hint": "Zeitangabe: um + Uhrzeit"},
+    {"type": "multiple_choice", "q": "Was ist 'Viertel vor sechs'?", "options": ["5:15", "6:15", "5:45", "6:45"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Ich stehe ___ sieben Uhr auf. (at)", "answer": "um", "hint": "at = um (bei Uhrzeiten)"},
+    {"type": "fill_blank", "sentence": "Es ist ___ drei. (half past two = 2:30)", "answer": "halb", "hint": "halb + nächste Stunde"}
+  ]
 }

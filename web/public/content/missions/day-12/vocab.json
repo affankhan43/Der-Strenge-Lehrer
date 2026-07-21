@@ -1,32 +1,24 @@
 {
   "day": 12,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Wetter & Klima",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "das Wetter", "en": "the weather", "artikel": "das", "example": "Wie ist das Wetter heute?"},
+    {"de": "die Sonne", "en": "the sun", "artikel": "die", "example": "Die Sonne scheint — es ist schön!"},
+    {"de": "der Regen", "en": "the rain", "artikel": "der", "example": "Nimm einen Regenschirm — es gibt Regen."},
+    {"de": "der Wind", "en": "the wind", "artikel": "der", "example": "Der Wind ist heute sehr stark."},
+    {"de": "der Schnee", "en": "the snow", "artikel": "der", "example": "Im Winter liegt Schnee auf den Bergen."},
+    {"de": "die Wolke", "en": "the cloud", "artikel": "die", "example": "Der Himmel ist voller Wolken."},
+    {"de": "das Gewitter", "en": "the thunderstorm", "artikel": "das", "example": "Das Gewitter kommt — geh ins Haus!"},
+    {"de": "der Nebel", "en": "the fog", "artikel": "der", "example": "Im Herbst gibt es oft Nebel am Morgen."},
+    {"de": "sonnig", "en": "sunny", "example": "Es ist sonnig und warm heute."},
+    {"de": "bewölkt", "en": "cloudy / overcast", "example": "Der Himmel ist bewölkt — vielleicht regnet es."},
+    {"de": "regnerisch", "en": "rainy", "example": "Ein regnerischer Tag — perfekt für ein Buch."},
+    {"de": "windig", "en": "windy", "example": "Es ist sehr windig — meine Haare!"},
+    {"de": "heiß", "en": "hot", "example": "Im Juli ist es in Spanien sehr heiß."},
+    {"de": "kalt", "en": "cold", "example": "Im Januar ist es in Berlin sehr kalt."},
+    {"de": "kühl", "en": "cool", "example": "Im Frühling ist es noch kühl."},
+    {"de": "die Temperatur", "en": "the temperature", "artikel": "die", "example": "Die Temperatur beträgt 20 Grad."},
+    {"de": "regnen", "en": "to rain", "example": "Es regnet — nimm einen Schirm!"},
+    {"de": "scheinen", "en": "to shine", "example": "Die Sonne scheint den ganzen Tag."}
+  ]
 }

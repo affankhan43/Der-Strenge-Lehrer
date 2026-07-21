@@ -1,25 +1,65 @@
 {
   "day": 23,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Possessivpronomen — mein, dein, sein, ihr...",
+  "explanation": "Possessivpronomen zeigen Besitz:\n\n| Person | Possessivpronomen |\n|--------|------------------|\n| ich | **mein** |\n| du | **dein** |\n| er | **sein** |\n| sie (Sg.) | **ihr** |\n| es | **sein** |\n| wir | **unser** |\n| ihr | **euer** |\n| sie/Sie | **ihr/Ihr** |\n\n**Deklination** (wie \"ein\"):\n- **mein** Vater (mask. Nom.)\n- **meine** Mutter (fem. Nom.)\n- **mein** Kind (neut. Nom.)\n- **meinen** Vater (mask. Akk.)\n- **meine** Eltern (Plural)",
   "exercises": [
     {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "Das ist ___ Bruder. (mein, mask. Nom.)",
+      "answer": "mein",
+      "hint": "mask. Nom. → mein (keine Endung)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich liebe ___ Mutter. (mein, fem. Akk.)",
+      "answer": "meine",
+      "hint": "fem. Akk. → meine"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Er liebt ___ Hund. (sein)",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "sein",
+        "seine",
+        "seinen",
+        "seines"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wie heißt ___ Schwester? (dein)",
+      "answer": "deine",
+      "hint": "fem. Nom. → deine"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wir besuchen ___ Eltern. (unser)",
+      "answer": "unsere",
+      "hint": "Plural → unsere"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Die Kinder lieben ___ Großmutter. (ihr)",
+      "options": [
+        "ihr",
+        "ihre",
+        "ihren",
+        "ihrem"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ Vater ist Arzt. (mein)",
+      "answer": "Mein",
+      "hint": "mask. Nom. → mein"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Kennst du ___ Freund? (sein, mask. Akk.)",
+      "answer": "seinen",
+      "hint": "mask. Akk. → seinen"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

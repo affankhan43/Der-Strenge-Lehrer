@@ -1,32 +1,96 @@
 {
   "day": 22,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Adjektive & Gegensätze",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "groß",
+      "en": "big / tall",
+      "example": "Das Haus ist sehr groß — drei Stockwerke."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "klein",
+      "en": "small / little",
+      "example": "Das Kind ist noch sehr klein."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "alt",
+      "en": "old",
+      "example": "Dieses Gebäude ist 200 Jahre alt."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "jung",
+      "en": "young",
+      "example": "Sie ist noch sehr jung — erst 22 Jahre."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "lang",
+      "en": "long",
+      "example": "Das Konzert dauerte lange — fast drei Stunden."
+    },
+    {
+      "de": "kurz",
+      "en": "short",
+      "example": "Das Meeting war kurz und effektiv."
+    },
+    {
+      "de": "schnell",
+      "en": "fast / quick",
+      "example": "Der ICE-Zug ist sehr schnell."
+    },
+    {
+      "de": "langsam",
+      "en": "slow",
+      "example": "Fahre langsam — hier spielen Kinder."
+    },
+    {
+      "de": "stark",
+      "en": "strong",
+      "example": "Er ist sehr stark — ein echter Sportler."
+    },
+    {
+      "de": "schwach",
+      "en": "weak",
+      "example": "Nach der Grippe war ich sehr schwach."
+    },
+    {
+      "de": "schön",
+      "en": "beautiful / nice",
+      "example": "Das ist ein wirklich schöner Tag!"
+    },
+    {
+      "de": "hässlich",
+      "en": "ugly",
+      "example": "Das alte Industriegebäude ist hässlich."
+    },
+    {
+      "de": "neu",
+      "en": "new",
+      "example": "Ich habe ein neues Smartphone."
+    },
+    {
+      "de": "schwer",
+      "en": "heavy / difficult",
+      "example": "Der Koffer ist sehr schwer — 20 Kilo."
+    },
+    {
+      "de": "leicht",
+      "en": "light / easy",
+      "example": "Diese Prüfung war leicht — ich war vorbereitet."
+    },
+    {
+      "de": "interessant",
+      "en": "interesting",
+      "example": "Das Buch ist wirklich interessant."
+    },
+    {
+      "de": "langweilig",
+      "en": "boring",
+      "example": "Der Film war leider sehr langweilig."
+    },
+    {
+      "de": "teuer",
+      "en": "expensive",
+      "example": "Das Restaurant ist viel zu teuer!"
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

@@ -1,19 +1,25 @@
 {
   "day": 16,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Das deutsche Schulsystem",
+  "level": "A1",
+  "text": "Das deutsche Schulsystem ist anders als in vielen anderen Ländern. Kinder beginnen mit 6 Jahren die Grundschule. Die Grundschule dauert vier Jahre.\n\nDanach kommen die Schüler in eine weiterführende Schule. Es gibt drei Haupttypen: die Hauptschule, die Realschule und das Gymnasium. Das Gymnasium ist die Schule für Schüler, die später an die Universität gehen möchten.\n\nNach 12 oder 13 Jahren in der Schule machen die Schüler das Abitur. Das Abitur ist wie eine große Abschlussprüfung. Mit einer guten Abiturnote kann man an fast jeder Universität in Deutschland studieren.\n\nDeutsche Universitäten sind meistens kostenlos — das ist sehr besonders! Studenten aus der ganzen Welt kommen nach Deutschland, weil das Studium fast nichts kostet.\n\nDie beliebtesten Fächer an deutschen Universitäten sind Medizin, Jura und Informatik. Das Studium dauert in der Regel drei bis sechs Jahre.\n\nDeutsche Schüler haben viele Ferien: etwa 75 Tage im Jahr. Aber Schule ist oft bis 13 oder 14 Uhr — dann machen die Schüler zu Hause Hausaufgaben.",
+  "glossary": {
+    "weiterführende Schule": {"en": "secondary school", "grammar": "Kompositum + Adjektiv"},
+    "Haupttypen": {"en": "main types", "grammar": "der Haupttyp → die Haupttypen"},
+    "Gymnasium": {"en": "academic secondary school (leading to university)", "grammar": "das Gymnasium (n)"},
+    "Abschlussprüfung": {"en": "final exam", "grammar": "die Abschlussprüfung (f) — Kompositum"},
+    "kostenlos": {"en": "free of charge", "grammar": "Adjektiv (A2)"},
+    "besonders": {"en": "especially / special", "grammar": "Adverb / Adjektiv"},
+    "beliebt": {"en": "popular", "grammar": "Adjektiv (A2)"},
+    "Jura": {"en": "law (as a subject)", "grammar": "kein Artikel — Fachbezeichnung"},
+    "Informatik": {"en": "computer science", "grammar": "die Informatik (f)"},
+    "in der Regel": {"en": "as a rule / usually", "grammar": "feste Wendung (A2)"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Mit wie vielen Jahren beginnen Kinder die Grundschule?", "options": ["5", "6", "7", "8"], "correct": 1},
+    {"q": "Wie lange dauert die Grundschule?", "options": ["3 Jahre", "4 Jahre", "5 Jahre", "6 Jahre"], "correct": 1},
+    {"q": "Was braucht man, um an die Uni zu gehen?", "options": ["Realschulabschluss", "Hauptschulabschluss", "Abitur", "Berufsausbildung"], "correct": 2},
+    {"q": "Was ist besonders an deutschen Universitäten?", "options": ["Sie sind sehr groß", "Sie sind meistens kostenlos", "Sie haben keine Prüfungen", "Sie unterrichten nur Englisch"], "correct": 1},
+    {"q": "Wie viele Ferientage haben deutsche Schüler pro Jahr?", "options": ["60 Tage", "75 Tage", "90 Tage", "50 Tage"], "correct": 1}
+  ]
 }

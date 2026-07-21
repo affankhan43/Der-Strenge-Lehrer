@@ -1,19 +1,92 @@
 {
   "day": 24,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Geld in Deutschland",
+  "level": "A1",
+  "text": "In Deutschland zahlen die Menschen gern mit Bargeld. Das ist anders als in vielen anderen Ländern — zum Beispiel in Schweden oder Großbritannien, wo fast alles mit Karte bezahlt wird.\n\nWarum mögen die Deutschen Bargeld? Es gibt mehrere Gründe. Erstens ist Bargeld anonym — niemand sieht, was man kauft. Zweitens ist Bargeld zuverlässig — man braucht kein Internet oder eine funktionierende Karte.\n\nAber das ändert sich langsam. Immer mehr Geschäfte und Restaurants nehmen Kreditkarten. Besonders junge Menschen zahlen oft mit dem Smartphone — das nennt man kontaktloses Bezahlen.\n\nDer Euro ist die Währung in Deutschland. Ein Euro hat 100 Cent. Deutschland hat den Euro seit 2002. Vorher hatten die Deutschen die Deutsche Mark.\n\nWas kostet das Leben in Deutschland? Es hängt von der Stadt ab. München und Frankfurt sind sehr teuer — eine Wohnung kann 2.000 Euro pro Monat kosten. In kleineren Städten wie Leipzig oder Erfurt ist das Leben günstiger.\n\nDer Mindestlohn in Deutschland beträgt seit 2024 etwa 12 Euro pro Stunde. Viele Menschen finden das zu wenig — das Leben ist teuer geworden.",
+  "glossary": {
+    "Bargeld": {
+      "en": "cash / physical money",
+      "grammar": "das Bargeld (n) — kein Plural"
+    },
+    "anonym": {
+      "en": "anonymous",
+      "grammar": "Adjektiv (B1)"
+    },
+    "zuverlässig": {
+      "en": "reliable",
+      "grammar": "Adjektiv (B1)"
+    },
+    "kontaktloses": {
+      "en": "contactless",
+      "grammar": "Adjektiv"
+    },
+    "Währung": {
+      "en": "currency",
+      "grammar": "die Währung (f)"
+    },
+    "Deutsche_Mark": {
+      "en": "German Mark (pre-euro currency)",
+      "grammar": "historisch: die Deutsche Mark"
+    },
+    "Mindestlohn": {
+      "en": "minimum wage",
+      "grammar": "der Mindestlohn (m)"
+    },
+    "beträgt": {
+      "en": "amounts to",
+      "grammar": "betragen → es beträgt"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Was bevorzugen viele Deutsche beim Bezahlen?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Kreditkarte",
+        "Bargeld",
+        "Smartphone",
+        "Überweisung"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "q": "Seit wann hat Deutschland den Euro?",
+      "options": [
+        "1995",
+        "1999",
+        "2002",
+        "2005"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Welche Stadt ist NICHT als teuer beschrieben?",
+      "options": [
+        "München",
+        "Frankfurt",
+        "Leipzig",
+        "Hamburg"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie viel Cent hat ein Euro?",
+      "options": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was ist kontaktloses Bezahlen?",
+      "options": [
+        "Mit Bargeld zahlen",
+        "Mit dem Smartphone zahlen",
+        "Mit Scheck zahlen",
+        "Kostenlos kaufen"
+      ],
+      "correct": 1
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

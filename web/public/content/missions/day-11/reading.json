@@ -1,19 +1,25 @@
 {
   "day": 11,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Das Jahr in Deutschland",
+  "level": "A1",
+  "text": "Deutschland hat vier Jahreszeiten: Frühling, Sommer, Herbst und Winter.\n\nIm Frühling — von März bis Mai — wird es wärmer. Die Bäume bekommen neue Blätter und die Blumen blühen. Viele Menschen gehen in den Park oder machen Fahrradtouren.\n\nDer Sommer — Juni, Juli, August — ist oft heiß und sonnig. Familien machen Urlaub, oft ans Meer oder in die Berge. In Deutschland sind die Schulferien im Sommer etwa sechs Wochen lang.\n\nIm Herbst — September, Oktober, November — werden die Tage kürzer und die Blätter an den Bäumen werden bunt: rot, orange und gelb. Der Oktober ist berühmt für das Oktoberfest in München.\n\nDer Winter — Dezember, Januar, Februar — ist kalt. Es schneit manchmal, besonders in Süddeutschland. Weihnachten ist am 25. Dezember und Silvester am 31. Dezember. Das ist ein großes Fest in Deutschland.\n\nDie Deutschen lieben alle vier Jahreszeiten — jede hat ihren eigenen Charakter.",
+  "glossary": {
+    "Jahreszeiten": {"en": "seasons", "grammar": "die Jahreszeit → die Jahreszeiten (plural)"},
+    "wärmer": {"en": "warmer", "grammar": "warm → wärmer (Komparativ mit Umlaut)"},
+    "bekommen": {"en": "get / receive", "grammar": "bekommen → er bekommt (regelmäßig)"},
+    "blühen": {"en": "bloom / blossom", "grammar": "blühen → die Blumen blühen"},
+    "Fahrradtouren": {"en": "bicycle tours", "grammar": "die Fahrradtour → Touren (plural)"},
+    "kürzer": {"en": "shorter", "grammar": "kurz → kürzer (Komparativ)"},
+    "bunt": {"en": "colourful", "grammar": "Adjektiv (A1)"},
+    "berühmt": {"en": "famous", "grammar": "Adjektiv (A2)"},
+    "Weihnachten": {"en": "Christmas", "grammar": "Plural (das Weihnachten ist selten)"},
+    "Silvester": {"en": "New Year's Eve", "grammar": "der Silvester (m) — 31. Dezember"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Welche Monate gehören zum Frühling?", "options": ["März bis Mai", "Juni bis August", "September bis November", "Dezember bis Februar"], "correct": 0},
+    {"q": "Wann ist das Oktoberfest?", "options": ["Im September", "Im Oktober", "Im November", "Im Dezember"], "correct": 1},
+    {"q": "Wie lange sind die Schulferien im Sommer?", "options": ["Vier Wochen", "Fünf Wochen", "Sechs Wochen", "Acht Wochen"], "correct": 2},
+    {"q": "Wann ist Weihnachten?", "options": ["24. Dezember", "25. Dezember", "31. Dezember", "1. Januar"], "correct": 1},
+    {"q": "Wo schneit es besonders im Winter?", "options": ["Norddeutschland", "Ostdeutschland", "Süddeutschland", "Westdeutschland"], "correct": 2}
+  ]
 }

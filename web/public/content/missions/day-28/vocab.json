@@ -1,32 +1,96 @@
 {
   "day": 28,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Wiederholung A1 — Wichtigste Wörter",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "alles",
+      "en": "everything",
+      "example": "Alles klar! — Ich verstehe alles."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "nichts",
+      "en": "nothing",
+      "example": "Ich habe nichts gegessen — ich habe keinen Hunger."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "jemand",
+      "en": "someone",
+      "example": "Hat jemand meinen Schlüssel gesehen?"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "niemand",
+      "en": "nobody / no one",
+      "example": "Niemand war zu Hause."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "schon",
+      "en": "already",
+      "example": "Ich bin schon fertig — sehr schnell!"
+    },
+    {
+      "de": "noch",
+      "en": "still / yet",
+      "example": "Ich bin noch nicht fertig — warte bitte."
+    },
+    {
+      "de": "immer",
+      "en": "always",
+      "example": "Ich trinke immer Kaffee am Morgen."
+    },
+    {
+      "de": "nie",
+      "en": "never",
+      "example": "Ich esse nie Fast Food."
+    },
+    {
+      "de": "manchmal",
+      "en": "sometimes",
+      "example": "Manchmal gehe ich ins Kino."
+    },
+    {
+      "de": "oft",
+      "en": "often",
+      "example": "Ich fahre oft mit dem Fahrrad."
+    },
+    {
+      "de": "selten",
+      "en": "rarely",
+      "example": "Ich esse selten Fleisch."
+    },
+    {
+      "de": "sehr",
+      "en": "very",
+      "example": "Ich bin sehr glücklich heute."
+    },
+    {
+      "de": "zu",
+      "en": "too (much)",
+      "example": "Das ist zu teuer für mich!"
+    },
+    {
+      "de": "auch",
+      "en": "also / too",
+      "example": "Ich lerne auch Spanisch."
+    },
+    {
+      "de": "nur",
+      "en": "only / just",
+      "example": "Ich habe nur fünf Euro."
+    },
+    {
+      "de": "vielleicht",
+      "en": "maybe / perhaps",
+      "example": "Vielleicht gehe ich morgen ins Kino."
+    },
+    {
+      "de": "natürlich",
+      "en": "of course / naturally",
+      "example": "Natürlich helfe ich dir!"
+    },
+    {
+      "de": "leider",
+      "en": "unfortunately",
+      "example": "Leider kann ich heute nicht kommen."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

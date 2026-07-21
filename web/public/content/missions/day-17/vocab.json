@@ -1,32 +1,24 @@
 {
   "day": 17,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Arbeit & Berufe",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "der Beruf", "en": "the profession / job", "artikel": "der", "example": "Was ist dein Beruf? — Ich bin Arzt."},
+    {"de": "der Arzt / die Ärztin", "en": "the doctor (m/f)", "artikel": "der/die", "example": "Der Arzt untersucht den Patienten."},
+    {"de": "der Ingenieur / die Ingenieurin", "en": "the engineer (m/f)", "artikel": "der/die", "example": "Sie ist Ingenieurin bei einem Automobilunternehmen."},
+    {"de": "der Koch / die Köchin", "en": "the cook / chef (m/f)", "artikel": "der/die", "example": "Der Koch arbeitet in einem Fünf-Sterne-Restaurant."},
+    {"de": "der Anwalt / die Anwältin", "en": "the lawyer (m/f)", "artikel": "der/die", "example": "Der Anwalt hilft seinem Mandanten."},
+    {"de": "der Polizist / die Polizistin", "en": "the police officer (m/f)", "artikel": "der/die", "example": "Die Polizistin hilft der Frau."},
+    {"de": "das Büro", "en": "the office", "artikel": "das", "example": "Ich arbeite im Büro von neun bis siebzehn Uhr."},
+    {"de": "das Gehalt", "en": "the salary", "artikel": "das", "example": "Das Gehalt ist gut — 4.000 Euro pro Monat."},
+    {"de": "der Chef / die Chefin", "en": "the boss (m/f)", "artikel": "der/die", "example": "Mein Chef ist streng aber fair."},
+    {"de": "der Kollege / die Kollegin", "en": "the colleague (m/f)", "artikel": "der/die", "example": "Meine Kollegin hilft mir bei schwierigen Aufgaben."},
+    {"de": "der Urlaub", "en": "the holiday / vacation (from work)", "artikel": "der", "example": "Ich habe 30 Tage Urlaub pro Jahr."},
+    {"de": "kündigen", "en": "to quit / resign", "example": "Er hat seinen Job gekündigt."},
+    {"de": "einstellen", "en": "to hire / employ", "example": "Das Unternehmen stellt neue Mitarbeiter ein."},
+    {"de": "die Stelle", "en": "the position / job opening", "artikel": "die", "example": "Ich suche eine neue Stelle als Marketingmanager."},
+    {"de": "die Bewerbung", "en": "the job application", "artikel": "die", "example": "Ich schreibe eine Bewerbung für die Stelle."},
+    {"de": "das Vorstellungsgespräch", "en": "the job interview", "artikel": "das", "example": "Morgen habe ich ein Vorstellungsgespräch bei Siemens."},
+    {"de": "der Lebenslauf", "en": "the CV / résumé", "artikel": "der", "example": "Ich schicke meinen Lebenslauf per E-Mail."},
+    {"de": "Vollzeit / Teilzeit", "en": "full-time / part-time", "example": "Ich arbeite Teilzeit — drei Tage pro Woche."}
+  ]
 }

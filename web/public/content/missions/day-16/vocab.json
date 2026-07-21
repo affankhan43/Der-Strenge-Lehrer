@@ -1,32 +1,24 @@
 {
   "day": 16,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Schule & Bildung",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "die Schule", "en": "the school", "artikel": "die", "example": "Ich gehe jeden Tag in die Schule."},
+    {"de": "der Lehrer / die Lehrerin", "en": "the teacher (m/f)", "artikel": "der/die", "example": "Unsere Deutschlehrerin ist sehr streng."},
+    {"de": "der Schüler / die Schülerin", "en": "the pupil (m/f)", "artikel": "der/die", "example": "Die Schüler lernen fleißig für die Prüfung."},
+    {"de": "die Klasse", "en": "the class / classroom", "artikel": "die", "example": "In meiner Klasse sind 25 Schüler."},
+    {"de": "das Fach", "en": "the subject (at school)", "artikel": "das", "example": "Mein Lieblingsfach ist Mathematik."},
+    {"de": "die Hausaufgaben", "en": "the homework (plural)", "artikel": "die", "example": "Ich mache meine Hausaufgaben nach der Schule."},
+    {"de": "die Prüfung", "en": "the exam / test", "artikel": "die", "example": "Nächste Woche schreibe ich eine Prüfung."},
+    {"de": "die Note", "en": "the grade / mark", "artikel": "die", "example": "Ich habe eine Eins in Deutsch bekommen — super!"},
+    {"de": "bestehen", "en": "to pass (an exam)", "example": "Ich hoffe, ich bestehe die Prüfung."},
+    {"de": "durchfallen", "en": "to fail (an exam)", "example": "Er ist durchgefallen — er muss die Prüfung wiederholen."},
+    {"de": "das Zeugnis", "en": "the school report / certificate", "artikel": "das", "example": "Am Ende des Schuljahres bekomme ich ein Zeugnis."},
+    {"de": "die Universität", "en": "the university", "artikel": "die", "example": "Nach dem Abitur studiert sie an der Universität."},
+    {"de": "studieren", "en": "to study (at university)", "example": "Er studiert Medizin in Berlin."},
+    {"de": "das Abitur", "en": "the German high school diploma", "artikel": "das", "example": "Mit dem Abitur kann man an die Uni gehen."},
+    {"de": "der Unterricht", "en": "the lesson / instruction", "artikel": "der", "example": "Der Unterricht beginnt um acht Uhr."},
+    {"de": "fragen", "en": "to ask", "example": "Der Schüler fragt den Lehrer eine Frage."},
+    {"de": "antworten", "en": "to answer", "example": "Kannst du die Frage antworten?"},
+    {"de": "erklären", "en": "to explain", "example": "Der Lehrer erklärt die Grammatik sehr gut."}
+  ]
 }

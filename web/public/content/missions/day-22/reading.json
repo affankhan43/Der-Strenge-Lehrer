@@ -1,19 +1,88 @@
 {
   "day": 22,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Gegensätze im Alltag",
+  "level": "A1",
+  "text": "Die Welt ist voller Gegensätze. Manche Dinge sind groß, andere sind klein. Manche Menschen sind alt, andere sind jung. Das Leben ist interessant, weil es so viele Unterschiede gibt.\n\nIch wohne in einer kleinen Wohnung in einer großen Stadt. Die Wohnung ist alt — aus dem Jahr 1920 — aber sehr schön und gemütlich. Die Zimmer sind klein, aber ich habe alles, was ich brauche.\n\nMein Nachbar ist ein interessanter Mann. Er ist sehr alt — 82 Jahre — aber noch sehr aktiv. Er geht jeden Tag spazieren und liest viel. Er sagt: \"Ich bin alt, aber mein Geist ist jung!\" Das finde ich wunderbar.\n\nMeine Arbeit ist manchmal schwer und manchmal leicht. An manchen Tagen bin ich schnell und effizient. An anderen Tagen ist alles langsam und schwierig.\n\nIch glaube: Gegensätze machen das Leben spannend. Ohne Probleme wäre das Leben langweilig. Herausforderungen machen uns stärker.",
+  "glossary": {
+    "Gegensätze": {
+      "en": "opposites",
+      "grammar": "der Gegensatz → die Gegensätze"
+    },
+    "gemütlich": {
+      "en": "cosy",
+      "grammar": "Adjektiv (A2)"
+    },
+    "aktiv": {
+      "en": "active",
+      "grammar": "Adjektiv (A2)"
+    },
+    "Geist": {
+      "en": "mind / spirit",
+      "grammar": "der Geist (m)"
+    },
+    "effizient": {
+      "en": "efficient",
+      "grammar": "Adjektiv (B1)"
+    },
+    "Herausforderungen": {
+      "en": "challenges",
+      "grammar": "die Herausforderung → -en"
+    },
+    "staerker": {
+      "en": "stronger",
+      "grammar": "stark → stärker (Komparativ)"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Wie alt ist die Wohnung des Erzählers?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Aus den 1950ern",
+        "Aus den 1980ern",
+        "Aus 1920",
+        "Sie ist neu"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "q": "Wie alt ist der Nachbar?",
+      "options": [
+        "72",
+        "78",
+        "80",
+        "82"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Was macht der Nachbar jeden Tag?",
+      "options": [
+        "Er schläft",
+        "Er kocht",
+        "Er geht spazieren",
+        "Er fährt Auto"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was macht manche Arbeitstage schwierig?",
+      "options": [
+        "Das Wetter",
+        "Alles ist langsam",
+        "Die Kollegen",
+        "Der Chef"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was macht laut Text das Leben spannend?",
+      "options": [
+        "Geld",
+        "Gegensätze",
+        "Urlaub",
+        "Essen"
+      ],
+      "correct": 1
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

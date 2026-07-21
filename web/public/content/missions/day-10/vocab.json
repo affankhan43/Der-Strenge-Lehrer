@@ -1,32 +1,24 @@
 {
   "day": 10,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Uhrzeit & Tagesablauf",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "die Uhrzeit", "en": "the time (of day)", "artikel": "die", "example": "Wie spät ist es? — Was ist die Uhrzeit?"},
+    {"de": "die Stunde", "en": "the hour", "artikel": "die", "example": "Eine Stunde hat sechzig Minuten."},
+    {"de": "die Minute", "en": "the minute", "artikel": "die", "example": "Warte bitte fünf Minuten!"},
+    {"de": "die Sekunde", "en": "the second", "artikel": "die", "example": "Das dauert nur eine Sekunde."},
+    {"de": "der Morgen", "en": "the morning", "artikel": "der", "example": "Am Morgen trinke ich Kaffee."},
+    {"de": "der Mittag", "en": "noon / midday", "artikel": "der", "example": "Wir essen um zwölf Uhr zu Mittag."},
+    {"de": "der Nachmittag", "en": "the afternoon", "artikel": "der", "example": "Am Nachmittag lerne ich Deutsch."},
+    {"de": "der Abend", "en": "the evening", "artikel": "der", "example": "Guten Abend! Wie war Ihr Tag?"},
+    {"de": "die Nacht", "en": "the night", "artikel": "die", "example": "Gute Nacht! Schlaf gut."},
+    {"de": "aufstehen", "en": "to get up", "example": "Ich stehe um sieben Uhr auf."},
+    {"de": "frühstücken", "en": "to have breakfast", "example": "Wir frühstücken um acht Uhr."},
+    {"de": "arbeiten", "en": "to work", "example": "Mein Vater arbeitet von neun bis fünf."},
+    {"de": "schlafen", "en": "to sleep", "example": "Ich schlafe acht Stunden pro Nacht."},
+    {"de": "früh", "en": "early", "example": "Ich stehe sehr früh auf."},
+    {"de": "spät", "en": "late", "example": "Es ist schon spät — geh schlafen!"},
+    {"de": "jetzt", "en": "now", "example": "Jetzt ist es zehn Uhr."},
+    {"de": "heute", "en": "today", "example": "Heute ist Montag."},
+    {"de": "morgen", "en": "tomorrow", "example": "Morgen gehe ich in die Schule."}
+  ]
 }

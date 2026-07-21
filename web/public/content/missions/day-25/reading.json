@@ -1,19 +1,96 @@
 {
   "day": 25,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Eine neue Wohnung",
+  "level": "A1",
+  "text": "Lena sucht seit zwei Monaten eine Wohnung in Berlin. Das ist nicht einfach — Berlin hat eine Wohnungskrise. Es gibt zu wenig Wohnungen und zu viele Interessenten.\n\nEndlich findet sie eine Anzeige: \"Schöne 2-Zimmer-Wohnung in Prenzlauer Berg, 65 Quadratmeter, 2. Etage, mit Balkon. Miete: 1.200 Euro warm.\" Das klingt gut, aber ist es teuer? Für Berlin ist das eigentlich normal.\n\nLena ruft die Vermieterin an und vereinbart eine Besichtigung für Samstag. Am Samstag schaut sie sich die Wohnung an. Sie ist hell und ruhig — das Schlafzimmer ist nach hinten zum Hof, das Wohnzimmer nach vorne zur Straße. Die Küche ist modern mit neuen Geräten. Das Badezimmer ist klein, aber funktional.\n\n\"Ich nehme die Wohnung!\" sagt Lena nach der Besichtigung.\n\nSie unterschreibt den Mietvertrag und zahlt die Kaution — drei Monatsmieten, also 3.600 Euro. Am ersten Mai zieht sie ein. Sie kauft neue Möbel bei Ikea und malt die Wände in warmen Farben. Nach zwei Wochen fühlt sie sich wirklich zu Hause.",
+  "glossary": {
+    "Wohnungskrise": {
+      "en": "housing crisis",
+      "grammar": "die Wohnungskrise (f)"
+    },
+    "Interessenten": {
+      "en": "interested parties / applicants",
+      "grammar": "der Interessent → die Interessenten"
+    },
+    "Anzeige": {
+      "en": "advertisement",
+      "grammar": "die Anzeige (f)"
+    },
+    "warm": {
+      "en": "inclusive (of heating costs)",
+      "grammar": "In Mieten: \"warm\" = mit Nebenkosten"
+    },
+    "Vermieterin": {
+      "en": "landlady (female)",
+      "grammar": "die Vermieterin (f)"
+    },
+    "Besichtigung": {
+      "en": "viewing",
+      "grammar": "die Besichtigung (f)"
+    },
+    "Hof": {
+      "en": "courtyard",
+      "grammar": "der Hof (m)"
+    },
+    "Mietvertrag": {
+      "en": "rental agreement",
+      "grammar": "der Mietvertrag (m)"
+    },
+    "Kaution": {
+      "en": "security deposit",
+      "grammar": "die Kaution (f)"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Wie lange sucht Lena schon eine Wohnung?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Einen Monat",
+        "Zwei Monate",
+        "Drei Monate",
+        "Ein halbes Jahr"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "q": "Wie groß ist die Wohnung?",
+      "options": [
+        "55 m²",
+        "65 m²",
+        "75 m²",
+        "85 m²"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was ist laut Lena positiv an der Wohnung?",
+      "options": [
+        "Sie ist billig",
+        "Sie ist hell und ruhig",
+        "Sie ist groß",
+        "Sie hat einen Garten"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Wie viel ist die Kaution?",
+      "options": [
+        "1.200 Euro",
+        "2.400 Euro",
+        "3.600 Euro",
+        "4.800 Euro"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was macht Lena, nachdem sie eingezogen ist?",
+      "options": [
+        "Sie zieht wieder aus",
+        "Sie kauft Möbel und malt Wände",
+        "Sie sucht einen Mitbewohner",
+        "Sie reist"
+      ],
+      "correct": 1
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

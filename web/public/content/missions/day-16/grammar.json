@@ -1,25 +1,15 @@
 {
   "day": 16,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Kasus-Übersicht: Nominativ & Akkusativ",
+  "explanation": "Bisher kennst du zwei Fälle (Kasus):\n\n**Nominativ** = Subjekt (wer/was macht etwas?)\n**Akkusativ** = direktes Objekt (wen/was?)\n\n| | maskulin | feminin | neutrum | Plural |\n|--|---------|---------|---------|--------|\n| **Nom.** | der/ein | die/eine | das/ein | die/— |\n| **Akk.** | **den/einen** | die/eine | das/ein | die/— |\n\n**Nur maskulin ändert sich!**\n\n**Merkhilfe:** Für Akkusativ-Fragen: *Ich sehe ____ Mann.* → 'Wen sehe ich?' → den Mann\n\n**Wichtige Akkusativ-Verben:**\nbrauchen, kaufen, haben, sehen, kennen, nehmen, essen, trinken, lernen, machen, lesen, suchen, fragen, finden",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "multiple_choice", "q": "Der Lehrer fragt ___ Schüler. (der Schüler)", "options": ["der", "die", "den", "dem"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Ich brauche ___ Stift. (ein Stift, maskulin)", "answer": "einen", "hint": "unbestimmter Artikel maskulin Akkusativ: einen"},
+    {"type": "fill_blank", "sentence": "Sie liest ___ Buch. (das Buch)", "answer": "das", "hint": "neutrum ändert sich nicht"},
+    {"type": "multiple_choice", "q": "Er kauft ___ Zeitung. (die Zeitung)", "options": ["den", "die", "das", "der"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Wir kennen ___ Mann nicht. (der Mann)", "answer": "den", "hint": "maskulin bestimmt Akkusativ: den"},
+    {"type": "fill_blank", "sentence": "Die Lehrerin erklärt ___ Grammatik. (die Grammatik)", "answer": "die", "hint": "feminin bleibt 'die'"},
+    {"type": "multiple_choice", "q": "Hast du ___ Hausaufgaben gemacht? (die Hausaufgaben, Plural)", "options": ["den", "die", "das", "dem"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Ich suche ___ Schlüssel. (der Schlüssel)", "answer": "den", "hint": "maskulin bestimmt Akkusativ: den"}
+  ]
 }

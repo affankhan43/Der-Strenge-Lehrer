@@ -190,6 +190,77 @@ router.delete('/feedback/:id', async (req, res) => {
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
+// ══════════════════════════════════════════════
+// CONTENT MANAGEMENT
+// ══════════════════════════════════════════════
+const path = require('path');
+const fs   = require('fs');
+
+const CONTENT_BASE = path.join(__dirname, '../../web/public/content/missions');
+const TYPES = ['vocab', 'reading', 'grammar', 'speaking'];
+const LEVEL_MAP = {
+  'A1.1': [1,28], 'A1.2': [29,56], 'A2.1': [57,84], 'A2.2': [85,112],
+  'B1.1': [113,140], 'B1.2': [141,168], 'B2.1': [169,196], 'B2.2': [197,224],
+};
+
+function dayDir(day) {
+  return path.join(CONTENT_BASE, 'day-' + String(day).padStart(2,'0'));
+}
+function contentFile(day, type) {
+  return path.join(dayDir(day), type + '.json');
+}
+function validateDay(d) {
+  const n = parseInt(d);
+  return Number.isInteger(n) && n >= 1 && n <= 224 ? n : null;
+}
+
+// GET /api/admin/content/index — list all days and which files exist
+router.get('/content/index', (req, res) => {
+  try {
+    const result = {};
+    for (const [level, [start, end]] of Object.entries(LEVEL_MAP)) {
+      result[level] = [];
+      for (let d = start; d <= end; d++) {
+        const dir = dayDir(d);
+        const files = {};
+        for (const t of TYPES) {
+          files[t] = fs.existsSync(path.join(dir, t + '.json'));
+        }
+        result[level].push({ day: d, files });
+      }
+    }
+    res.json(result);
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// GET /api/admin/content/:day/:type — read a content file
+router.get('/content/:day/:type', (req, res) => {
+  const day = validateDay(req.params.day);
+  if (!day) return res.status(400).json({ error: 'Invalid day' });
+  if (!TYPES.includes(req.params.type)) return res.status(400).json({ error: 'Invalid type' });
+  const file = contentFile(day, req.params.type);
+  if (!fs.existsSync(file)) return res.json({ exists: false, content: null });
+  try {
+    const raw = fs.readFileSync(file, 'utf8');
+    res.json({ exists: true, content: JSON.parse(raw) });
+  } catch (err) { res.status(500).json({ error: 'Parse error: ' + err.message }); }
+});
+
+// PUT /api/admin/content/:day/:type — write a content file
+router.put('/content/:day/:type', (req, res) => {
+  const day = validateDay(req.params.day);
+  if (!day) return res.status(400).json({ error: 'Invalid day' });
+  if (!TYPES.includes(req.params.type)) return res.status(400).json({ error: 'Invalid type' });
+  const { content } = req.body;
+  if (content === undefined || content === null) return res.status(400).json({ error: 'content required' });
+  try {
+    const dir = dayDir(day);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(contentFile(day, req.params.type), JSON.stringify(content, null, 2));
+    res.json({ ok: true });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
 // ── GET /api/admin/activity ── recent completions
 router.get('/activity', async (req, res) => {
   try {

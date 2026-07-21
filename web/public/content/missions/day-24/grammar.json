@@ -1,25 +1,65 @@
 {
   "day": 24,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Komparation — Komparativ & Superlativ",
+  "explanation": "Adjektive haben drei Stufen:\n\n| Positiv | Komparativ | Superlativ |\n|---------|-----------|------------|\n| groß | größ**er** | am größ**ten** |\n| klein | kleiner | am kleinsten |\n| gut | **besser** | am **besten** |\n| viel | **mehr** | am **meisten** |\n| gern | **lieber** | am **liebsten** |\n\n**Regeln:**\n- Komparativ: Positiv + **-er**\n- Superlativ: am + Positiv + **-sten** (oder **-esten** bei t/d/s-Endung)\n- Viele kurze Adjektive bekommen Umlaut: alt → **ält**er, jung → **jüng**er",
   "exercises": [
     {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "München ist ___ als Leipzig. (teuer)",
+      "answer": "teurer",
+      "hint": "teuer → teurer (Komparativ)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Dieser Zug ist am ___. (schnell)",
+      "answer": "schnellsten",
+      "hint": "Superlativ: am schnellsten"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Er ist ___ als sein Bruder. (alt)",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "alter",
+        "älter",
+        "ältsten",
+        "am ältesten"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das ist das ___ Restaurant in der Stadt. (gut)",
+      "answer": "beste",
+      "hint": "gut → besser → am besten / das beste"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich esse ___ Sushi als Pizza. (gern)",
+      "answer": "lieber",
+      "hint": "gern → lieber (prefer)"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Was bedeutet \"am meisten\"?",
+      "options": [
+        "a little",
+        "less",
+        "most",
+        "more"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Sie ist ___ als ihre Schwester. (jung)",
+      "answer": "jünger",
+      "hint": "jung → jünger (Umlaut)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das ist am ___. (billig)",
+      "answer": "billigsten",
+      "hint": "billig → am billigsten"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

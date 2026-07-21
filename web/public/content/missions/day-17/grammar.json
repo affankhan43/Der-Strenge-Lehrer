@@ -1,25 +1,15 @@
 {
   "day": 17,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Sein & Haben im Präsens — Berufsangaben",
+  "explanation": "Für Berufe benutzen wir im Deutschen **kein** unbestimmten Artikel!\n\n✅ *Ich bin Arzt.* (I am a doctor.)\n❌ *Ich bin ein Arzt.*\n\n**sein (to be):**\n| Person | Form |\n|--------|------|\n| ich | **bin** |\n| du | **bist** |\n| er/sie/es | **ist** |\n| wir | **sind** |\n| ihr | **seid** |\n| sie/Sie | **sind** |\n\n**haben (to have):**\n| Person | Form |\n|--------|------|\n| ich | **habe** |\n| du | **hast** |\n| er/sie/es | **hat** |\n| wir | **haben** |\n| ihr | **habt** |\n| sie/Sie | **haben** |\n\n**Berufe: maskulin vs. feminin**\nLehren → der Lehrer / die Lehrer**in**\nArzt → der Arzt / die Ärzt**in**",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "fill_blank", "sentence": "Ich ___ Lehrerin von Beruf.", "answer": "bin", "hint": "ich bin"},
+    {"type": "fill_blank", "sentence": "Er ___ einen neuen Job.", "answer": "hat", "hint": "er hat"},
+    {"type": "multiple_choice", "q": "Was ist richtig? 'Sie ist ___.'", "options": ["eine Ärztin", "Ärztin", "ein Ärztin", "der Ärztin"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Wir ___ keine Zeit.", "answer": "haben", "hint": "wir haben"},
+    {"type": "fill_blank", "sentence": "Du ___ so ein Glück!", "answer": "hast", "hint": "du hast"},
+    {"type": "multiple_choice", "q": "Wie fragt man nach dem Beruf?", "options": ["Was bist du?", "Was ist du?", "Was machst du beruflich?", "Wie heißt dein Job?"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Mein Vater ___ Ingenieur.", "answer": "ist", "hint": "er ist + Beruf (kein Artikel)"},
+    {"type": "fill_blank", "sentence": "Ihr ___ viel Arbeit heute.", "answer": "habt", "hint": "ihr habt"}
+  ]
 }

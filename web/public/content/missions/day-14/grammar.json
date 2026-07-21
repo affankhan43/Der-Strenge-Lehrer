@@ -1,25 +1,15 @@
 {
   "day": 14,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Akkusativ — Der direkte Fall",
+  "explanation": "Im Deutschen verändert sich der Artikel, wenn ein Nomen das **direkte Objekt** (Akkusativ) ist.\n\n**Akkusativ-Endungen:**\n\n| Genus | Nominativ | Akkusativ |\n|-------|-----------|----------|\n| maskulin | **der** Mann | **den** Mann |\n| feminin | **die** Frau | **die** Frau |\n| neutrum | **das** Kind | **das** Kind |\n| Plural | **die** Leute | **die** Leute |\n\n⚠️ **Nur der maskuline Artikel ändert sich:** der → den\n\n**Beispiele:**\n- Ich kaufe **den** Apfel. (maskulin → den)\n- Ich kaufe **die** Milch. (feminin → bleibt die)\n- Ich kaufe **das** Brot. (neutrum → bleibt das)\n\n**Wann Akkusativ?** Nach Verben wie: kaufen, essen, trinken, haben, sehen, kennen, brauchen, nehmen",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "multiple_choice", "q": "Ich sehe ___ Mann. (der Mann)", "options": ["der", "die", "den", "dem"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Ich kaufe ___ Apfel. (der Apfel)", "answer": "den", "hint": "maskulin → Akkusativ: den"},
+    {"type": "fill_blank", "sentence": "Er trinkt ___ Kaffee. (der Kaffee)", "answer": "den", "hint": "maskulin → Akkusativ: den"},
+    {"type": "multiple_choice", "q": "Sie kauft ___ Milch. (die Milch)", "options": ["den", "die", "das", "der"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Wir essen ___ Brot. (das Brot)", "answer": "das", "hint": "neutrum → Akkusativ: das (keine Änderung)"},
+    {"type": "fill_blank", "sentence": "Ich brauche ___ Stift. (der Stift)", "answer": "einen", "hint": "unbestimmter Artikel maskulin: einen"},
+    {"type": "multiple_choice", "q": "Er hat ___ Hund. (der Hund)", "options": ["ein", "eine", "einen", "dem"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Siehst du ___ Frau dort? (die Frau)", "answer": "die", "hint": "feminin → Akkusativ: die (keine Änderung)"}
+  ]
 }

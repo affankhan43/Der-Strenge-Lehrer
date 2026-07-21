@@ -1,25 +1,9 @@
-{
-  "day": 20,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
-  "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
-}
+{"day":20,"topic":"Reflexive Verben — sich fühlen, sich waschen, sich freuen","explanation":"Reflexive Verben brauchen ein **Reflexivpronomen** (sich, mich, dich...):\n\n| Person | Reflexivpronomen |\n|--------|------------------|\n| ich | **mich** |\n| du | **dich** |\n| er/sie/es | **sich** |\n| wir | **uns** |\n| ihr | **euch** |\n| sie/Sie | **sich** |\n\n**Wichtige reflexive Verben:**\n- sich **fühlen** → Ich fühle **mich** gut.\n- sich **waschen** → Er wäscht **sich**.\n- sich **freuen** → Wir freuen **uns** auf den Urlaub.\n- sich **erholen** → Du erholst **dich** langsam.\n- sich **erkälten** → Sie hat **sich** erkältet.","exercises":[
+{"type":"fill_blank","sentence":"Ich fühle ___ heute nicht gut.","answer":"mich","hint":"ich → mich"},
+{"type":"fill_blank","sentence":"Er wäscht ___ jeden Morgen.","answer":"sich","hint":"er → sich"},
+{"type":"multiple_choice","q":"Wir freuen ___ auf den Urlaub.","options":["mich","dich","sich","uns"],"correct":3},
+{"type":"fill_blank","sentence":"Wie fühlst du ___?","answer":"dich","hint":"du → dich"},
+{"type":"fill_blank","sentence":"Die Kinder erholen ___ im Urlaub.","answer":"sich","hint":"sie (Plural) → sich"},
+{"type":"multiple_choice","q":"Ich habe ___ erkältet.","options":["mich","dich","sich","uns"],"correct":0},
+{"type":"fill_blank","sentence":"Erholt ihr ___ gut?","answer":"euch","hint":"ihr → euch"},
+{"type":"fill_blank","sentence":"Sie (Frau Müller) fühlt ___ besser.","answer":"sich","hint":"sie (singular) → sich"}]}

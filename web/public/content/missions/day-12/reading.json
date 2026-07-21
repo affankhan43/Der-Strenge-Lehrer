@@ -1,19 +1,25 @@
 {
   "day": 12,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Das Wetter in Deutschland",
+  "level": "A1",
+  "text": "Das Wetter in Deutschland ist sehr wechselhaft. Das bedeutet: Es kann an einem Tag sonnig sein und am nächsten Tag regnen.\n\nIm Norden Deutschlands — zum Beispiel in Hamburg — ist es oft bewölkt und regnerisch. Der Wind vom Meer ist stark. Die Sommer sind kurz, aber schön. Im Winter ist es kalt, aber es schneit selten.\n\nIm Süden — in Bayern und Baden-Württemberg — ist das Wetter anders. Die Sommer sind wärmer und sonniger. Im Winter schneit es viel, besonders in den Alpen. Das ist gut für Skifahrer!\n\nIn Berlin — der Hauptstadt — ist der Sommer oft sehr heiß. Die Temperaturen können 35 Grad oder mehr erreichen. Das ist ungewöhnlich für Deutschland.\n\nDie Deutschen sprechen sehr gern über das Wetter. Es ist ein typisches Thema für Small Talk. 'Schönes Wetter heute, oder?' — Das hört man oft.\n\nWenn das Wetter schlecht ist, sagen die Deutschen: 'Es gibt kein schlechtes Wetter, nur schlechte Kleidung!'",
+  "glossary": {
+    "wechselhaft": {"en": "changeable / variable", "grammar": "Adjektiv (B1)"},
+    "bewölkt": {"en": "cloudy / overcast", "grammar": "Adjektiv (A1)"},
+    "selten": {"en": "rarely / seldom", "grammar": "Häufigkeitsadverb"},
+    "anders": {"en": "different", "grammar": "Adverb / Adjektiv"},
+    "besonders": {"en": "especially / particularly", "grammar": "Verstärkungsadverb"},
+    "Skifahrer": {"en": "skier(s)", "grammar": "der Skifahrer (m) — die Skifahrer (plural)"},
+    "ungewöhnlich": {"en": "unusual", "grammar": "Adjektiv (A2)"},
+    "Hauptstadt": {"en": "capital city", "grammar": "die Hauptstadt (f)"},
+    "erreichen": {"en": "to reach / achieve", "grammar": "erreichen (A2 Verb)"},
+    "Small Talk": {"en": "small talk", "grammar": "Anglizismus — sehr üblich im Deutschen"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Wie ist das Wetter in Hamburg oft?", "options": ["Heiß und trocken", "Bewölkt und regnerisch", "Sonnig und warm", "Kalt und schneereich"], "correct": 1},
+    {"q": "Wann schneit es besonders in Süddeutschland?", "options": ["Im Sommer", "Im Herbst", "Im Winter", "Im Frühling"], "correct": 2},
+    {"q": "Wie heiß kann es in Berlin im Sommer werden?", "options": ["Bis 20 Grad", "Bis 25 Grad", "Bis 30 Grad", "35 Grad oder mehr"], "correct": 3},
+    {"q": "Worüber sprechen die Deutschen gern?", "options": ["Über Politik", "Über Sport", "Über das Wetter", "Über Essen"], "correct": 2},
+    {"q": "Was bedeutet 'kein schlechtes Wetter'?", "options": ["Das Wetter ist immer gut", "Man muss die richtige Kleidung tragen", "Es regnet nie in Deutschland", "Der Winter ist warm"], "correct": 1}
+  ]
 }

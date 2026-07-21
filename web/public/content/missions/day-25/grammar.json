@@ -1,25 +1,70 @@
 {
   "day": 25,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Wechselpräpositionen — Dativ (Wo?) vs. Akkusativ (Wohin?)",
+  "explanation": "Neun Präpositionen können Dativ (Ort) ODER Akkusativ (Richtung) haben:\n\n**in, an, auf, über, unter, vor, hinter, neben, zwischen**\n\n| Frage | Kasus | Beispiel |\n|-------|-------|----------|\n| **Wo?** (Ort) | **Dativ** | Das Buch liegt auf **dem** Tisch. |\n| **Wohin?** (Richtung) | **Akkusativ** | Ich lege das Buch auf **den** Tisch. |\n\n**Merkhilfe:** Wo? → **D**ativ (D = Destination? Nein — **D**aheim = Ort)\nWohin? → **A**kkusativ (A = Richtung, Action)\n\n**Kontraktionen:**\n- in + dem = **im** → im Zimmer\n- an + dem = **am** → am Fenster\n- in + das = **ins** → ins Zimmer (gehen)",
   "exercises": [
     {
+      "type": "multiple_choice",
+      "q": "Das Buch liegt auf ___ Tisch. (Wo?)",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "correct": 1
+    },
+    {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "Ich gehe ___ Zimmer. (in + das, Wohin?)",
+      "answer": "ins",
+      "hint": "in + das = ins"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Die Lampe hängt über ___ Tisch. (Wo?)",
+      "answer": "dem",
+      "hint": "Wo? → Dativ: dem"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Er stellt die Vase auf ___ Regal. (Wohin?)",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "dem",
+        "das",
+        "des",
+        "der"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Das Kind schläft ___ Bett. (in, Wo?)",
+      "answer": "im",
+      "hint": "in + dem = im"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich hänge das Bild an ___ Wand. (Wohin?)",
+      "answer": "die",
+      "hint": "Wohin? → Akkusativ: die (feminin)"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Das Fahrrad steht vor ___ Haus. (Wo?)",
+      "options": [
+        "dem",
+        "das",
+        "den",
+        "der"
       ],
       "correct": 0
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Sie legt die Schlüssel auf ___ Tisch. (Wohin?)",
+      "answer": "den",
+      "hint": "Wohin? → Akkusativ: den (maskulin)"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

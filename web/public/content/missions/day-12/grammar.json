@@ -1,25 +1,15 @@
 {
   "day": 12,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Es-Konstruktionen & Wetterverben",
+  "explanation": "Im Deutschen benutzen wir **'es'** als unpersönliches Subjekt für Wetterphänomene:\n\n| Deutsch | Englisch |\n|---------|----------|\n| Es regnet. | It is raining. |\n| Es schneit. | It is snowing. |\n| Es ist sonnig. | It is sunny. |\n| Es ist kalt. | It is cold. |\n| Es gibt Nebel. | There is fog. |\n| Es wird wärmer. | It is getting warmer. |\n\n**Wichtige Wetterverben:**\n- *scheinen* → Die Sonne **scheint**.\n- *wehen* → Der Wind **weht** stark.\n- *regnen* → Es **regnet** den ganzen Tag.\n- *schneien* → Es **schneit** seit gestern.\n\n**Temperaturen:**\n- Es sind 20 Grad. (It is 20 degrees.)\n- Es ist minus fünf Grad. (It is -5 degrees.)",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "fill_blank", "sentence": "___ regnet heute den ganzen Tag.", "answer": "Es", "hint": "Wetterpronomen → Es"},
+    {"type": "fill_blank", "sentence": "Die Sonne ___ heute sehr stark. (scheinen)", "answer": "scheint", "hint": "scheinen → er/sie/es scheint"},
+    {"type": "multiple_choice", "q": "Wie sagt man 'It is snowing'?", "options": ["Es regnet.", "Es schneit.", "Es ist Schnee.", "Der Schnee kommt."], "correct": 1},
+    {"type": "fill_blank", "sentence": "___ ist heute sehr kalt — nur 2 Grad!", "answer": "Es", "hint": "unpersönliches Subjekt"},
+    {"type": "fill_blank", "sentence": "Es ___ Gewitter heute Abend. (geben)", "answer": "gibt", "hint": "es gibt = there is/are"},
+    {"type": "multiple_choice", "q": "Was ist richtig: 'Das Wetter ist ___.'", "options": ["sonnig", "sonne", "sonnen", "gesonnt"], "correct": 0},
+    {"type": "fill_blank", "sentence": "Im Winter ___ es oft in Hamburg.", "answer": "regnet", "hint": "regnen → es regnet"},
+    {"type": "multiple_choice", "q": "Wie fragt man nach dem Wetter?", "options": ["Wann ist das Wetter?", "Wie ist das Wetter?", "Was macht das Wetter?", "Wo ist das Wetter?"], "correct": 1}
+  ]
 }

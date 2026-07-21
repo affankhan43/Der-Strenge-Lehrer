@@ -1,19 +1,88 @@
 {
   "day": 28,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Ich spreche Deutsch!",
+  "level": "A1",
+  "text": "Du hast die ersten 28 Tage Deutsch gelernt. Das ist nicht wenig — du weißt jetzt sehr viel!\n\nDu kennst die wichtigsten Wörter für den Alltag: Begrüßungen, Zahlen, Farben, Familie, Essen, Arbeit, Transport und Wetter. Du kannst einfache Gespräche führen und verstehen.\n\nWas kommt als Nächstes? Du hast jetzt das Niveau A1 fast geschafft. In den nächsten Wochen wirst du tiefer in die deutsche Sprache eintauchen: komplexere Grammatik, mehr Vokabeln, längere Texte.\n\nDas Geheimnis des Erfolgs beim Sprachlernen ist einfach: Üben, üben, üben. Jeden Tag ein bisschen. Konsistenz ist wichtiger als Intensität. Besser 20 Minuten täglich als vier Stunden einmal pro Woche.\n\nHör deutsches Radio. Schau deutsche Serien mit deutschen Untertiteln. Sprich mit Muttersprachlern — das ist oft die beste Übung. Hab keine Angst vor Fehlern — Fehler sind normal und gehören zum Lernen.\n\nDu machst das fantastisch. Weitermachen! Der nächste Level wartet.",
+  "glossary": {
+    "Niveau": {
+      "en": "level",
+      "grammar": "das Niveau (n)"
+    },
+    "eintauchen": {
+      "en": "to dive into / immerse",
+      "grammar": "eintauchen → trennbar (B1)"
+    },
+    "Geheimnis": {
+      "en": "secret",
+      "grammar": "das Geheimnis (n)"
+    },
+    "Konsistenz": {
+      "en": "consistency",
+      "grammar": "die Konsistenz (f)"
+    },
+    "Intensität": {
+      "en": "intensity",
+      "grammar": "die Intensität (f)"
+    },
+    "Muttersprachler": {
+      "en": "native speaker",
+      "grammar": "der Muttersprachler (m)"
+    },
+    "gehören_zu": {
+      "en": "to be part of",
+      "grammar": "gehören zu + Dativ (A2)"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Wie viele Tage hat man in diesem Level gelernt?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "14",
+        "21",
+        "28",
+        "30"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "q": "Was ist das Geheimnis des Sprachlernens laut Text?",
+      "options": [
+        "Viel Geld ausgeben",
+        "Täglich üben",
+        "Einen Lehrer haben",
+        "Ins Ausland gehen"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was ist besser: 20 Minuten täglich oder 4 Stunden einmal?",
+      "options": [
+        "4 Stunden einmal",
+        "Beide gleich",
+        "20 Minuten täglich",
+        "Es ist egal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was ist oft die beste Übung?",
+      "options": [
+        "Bücher lesen",
+        "Vokabeln lernen",
+        "Mit Muttersprachlern sprechen",
+        "Deutsche Musik hören"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was soll man mit Fehlern machen?",
+      "options": [
+        "Sie vermeiden",
+        "Sie korrigieren immer",
+        "Keine Angst haben — sie gehören dazu",
+        "Aufhören zu lernen"
+      ],
+      "correct": 2
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

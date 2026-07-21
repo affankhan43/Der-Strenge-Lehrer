@@ -1,25 +1,15 @@
 {
   "day": 11,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Präpositionen mit Zeitangaben: am, im, um",
+  "explanation": "Für Zeitangaben benutzen wir drei verschiedene Präpositionen:\n\n| Präposition | Wann? | Beispiel |\n|-------------|-------|----------|\n| **um** | Uhrzeiten | um 8 Uhr, um Mitternacht |\n| **am** | Tage & Tageszeiten | am Montag, am Abend, am Wochenende |\n| **im** | Monate & Jahreszeiten | im Januar, im Sommer |\n\n⚠️ Ausnahmen:\n- *in der Nacht* (nicht: am Nacht)\n- *zu Weihnachten / zu Ostern*\n- *nächste Woche* (ohne Präposition!)\n\n**Merktrick:** um → Uhr | am → Tag | im → Monat/Jahreszeit",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "fill_blank", "sentence": "___ Montag habe ich keine Zeit.", "answer": "Am", "hint": "Wochentag → am"},
+    {"type": "fill_blank", "sentence": "Die Party beginnt ___ acht Uhr.", "answer": "um", "hint": "Uhrzeit → um"},
+    {"type": "fill_blank", "sentence": "___ Winter ist es kalt.", "answer": "Im", "hint": "Jahreszeit → im"},
+    {"type": "fill_blank", "sentence": "___ Abend esse ich mit der Familie.", "answer": "Am", "hint": "Tageszeit → am"},
+    {"type": "multiple_choice", "q": "Was ist richtig? ___ Juli fahren wir ans Meer.", "options": ["Um", "Am", "Im", "An"], "correct": 2},
+    {"type": "fill_blank", "sentence": "___ Wochenende schlafe ich lange.", "answer": "Am", "hint": "Wochenende → am"},
+    {"type": "multiple_choice", "q": "Wir treffen uns ___ 15 Uhr.", "options": ["am", "im", "um", "in"], "correct": 2},
+    {"type": "fill_blank", "sentence "___ Frühling blühen die Blumen.", "answer": "Im", "hint": "Jahreszeit → im"}
+  ]
 }

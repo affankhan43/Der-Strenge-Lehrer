@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import api from '../lib/api';
 import s from './AdminPage.module.css';
@@ -15,13 +15,15 @@ const STATUS_META = {
   resolved: { label: 'Erledigt', color: '#94a3b8', bg: 'rgba(148,163,184,0.1)' },
 };
 
-const LEVELS = ['A1.1','A1.2','A2.1','A2.2','B1.1','B1.2','B2.1','B2.2','C1.1','C1.2'];
+const LEVELS = ['A1.1','A1.2','A2.1','A2.2','B1.1','B1.2','B2.1','B2.2'];
 const LEVEL_COLORS = {
   'A1.1':'#22c55e','A1.2':'#10b981','A2.1':'#3b82f6','A2.2':'#6366f1',
   'B1.1':'#a855f7','B1.2':'#ec4899','B2.1':'#f59e0b','B2.2':'#ef4444',
-  'C1.1':'#8b5cf6','C1.2':'#06b6d4',
 };
-const LEVEL_START = [1,29,57,85,113,141,169,197,225,253];
+const LEVEL_START = [1,29,57,85,113,141,169,197];
+const CONTENT_TYPES = ['vocab','reading','grammar','speaking'];
+const TYPE_ICONS = { vocab:'📝', reading:'📖', grammar:'⚙️', speaking:'🎬' };
+const TYPE_LABELS = { vocab:'Vokabeln', reading:'Lesen', grammar:'Grammatik', speaking:'Video/Sprechen' };
 
 function StatCard({ icon, label, value, sub, color='#a78bfa', delay=0 }) {
   return (
@@ -49,6 +51,18 @@ export default function AdminPage() {
   const [sortBy, setSortBy]       = useState('xp');
   const [fbFilter, setFbFilter]   = useState('all');
   const [actionMsg, setActionMsg] = useState('');
+
+  // Content CMS state
+  const [cmsIndex, setCmsIndex]       = useState(null);   // { level: { day, files }[] }
+  const [cmsLevel, setCmsLevel]       = useState('A1.1');
+  const [cmsDay, setCmsDay]           = useState(null);
+  const [cmsType, setCmsType]         = useState('vocab');
+  const [cmsContent, setCmsContent]   = useState('');     // JSON string in editor
+  const [cmsOriginal, setCmsOriginal] = useState('');     // for dirty check
+  const [cmsSaving, setCmsSaving]     = useState(false);
+  const [cmsLoading, setCmsLoading]   = useState(false);
+  const [cmsSaveMsg, setCmsSaveMsg]   = useState('');
+  const [cmsError, setCmsError]       = useState('');
 
   useEffect(() => { loadUsers(); loadFeedback(); }, []);
 
@@ -103,6 +117,69 @@ export default function AdminPage() {
     } catch { setActionMsg('Fehler'); }
     setTimeout(() => setActionMsg(''), 3000);
   };
+
+  // Load content index when content tab opens
+  const loadCmsIndex = useCallback(async () => {
+    if (cmsIndex) return;
+    try {
+      const res = await api.get('/api/admin/content/index');
+      setCmsIndex(res.data);
+    } catch { setCmsIndex({}); }
+  }, [cmsIndex]);
+
+  useEffect(() => {
+    if (tab === 'content') loadCmsIndex();
+  }, [tab]);
+
+  const loadCmsFile = async (day, type) => {
+    setCmsLoading(true); setCmsError(''); setCmsSaveMsg('');
+    try {
+      const res = await api.get(`/api/admin/content/${day}/${type}`);
+      const text = res.data.exists
+        ? JSON.stringify(res.data.content, null, 2)
+        : getTemplate(day, type);
+      setCmsContent(text);
+      setCmsOriginal(text);
+    } catch (e) { setCmsError('Fehler beim Laden: ' + e.message); }
+    setCmsLoading(false);
+  };
+
+  const selectDay = (day) => {
+    setCmsDay(day); setCmsType('vocab');
+    loadCmsFile(day, 'vocab');
+  };
+
+  const selectType = (type) => {
+    if (cmsDay === null) return;
+    setCmsType(type);
+    loadCmsFile(cmsDay, type);
+  };
+
+  const saveCms = async () => {
+    let parsed;
+    try { parsed = JSON.parse(cmsContent); }
+    catch (e) { setCmsError('Ungültiges JSON: ' + e.message); return; }
+    setCmsSaving(true); setCmsError(''); setCmsSaveMsg('');
+    try {
+      await api.put(`/api/admin/content/${cmsDay}/${cmsType}`, { content: parsed });
+      setCmsOriginal(cmsContent);
+      setCmsSaveMsg('✓ Gespeichert!');
+      // refresh index to update file existence badges
+      const res = await api.get('/api/admin/content/index');
+      setCmsIndex(res.data);
+      setTimeout(() => setCmsSaveMsg(''), 3000);
+    } catch (e) { setCmsError('Speichern fehlgeschlagen: ' + e.message); }
+    setCmsSaving(false);
+  };
+
+  function getTemplate(day, type) {
+    if (type === 'vocab') return JSON.stringify({ day, topic: 'Thema', words: [{ de: 'das Wort', en: 'the word', artikel: 'das', example: 'Beispielsatz.' }] }, null, 2);
+    if (type === 'reading') return JSON.stringify({ day, title: 'Titel', level: 'A1', text: 'Lesetext hier...', glossary: {}, questions: [{ q: 'Frage?', options: ['A','B','C','D'], correct: 0 }] }, null, 2);
+    if (type === 'grammar') return JSON.stringify({ day, topic: 'Grammatikthema', explanation: 'Erklärung hier...', exercises: [{ type: 'fill_blank', sentence: 'Satz mit ___', answer: 'Antwort', hint: 'Hinweis' }] }, null, 2);
+    return JSON.stringify({ day, title: 'Titel', youtube_video_id: 'VIDEO_ID', channel: 'Kanal', notes: 'Notizen', tasks_after: ['Aufgabe 1'] }, null, 2);
+  }
+
+  const isDirty = cmsContent !== cmsOriginal;
 
   const totalUsers    = users.length;
   const activeToday   = users.filter(u => u.lastActiveToday).length;
@@ -260,30 +337,112 @@ export default function AdminPage() {
         )}
 
         {tab === 'content' && (
-          <motion.div key="content" initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}>
-            <div className={s.contentGrid}>
-              {LEVELS.map((lv,li) => {
-                const color  = LEVEL_COLORS[lv];
-                const start  = LEVEL_START[li];
-                const status = ['A1.1','A1.2'].includes(lv) ? { label:'✅ Vollständig', c:'#4ade80' }
-                             : ['A2.1','A2.2','B1.1','B1.2'].includes(lv) ? { label:'⚠️ Videos fehlen', c:'#fbbf24' }
-                             : { label:'🔨 Platzhalter', c:'#f87171' };
-                return (
-                  <motion.div key={lv} className={s.contentCard}
-                    style={{ '--lv-color': color }}
-                    initial={{ opacity:0, scale:.95 }} animate={{ opacity:1, scale:1 }}
-                    transition={{ delay:li*.05 }}>
-                    <div className={s.contentCardHead}>
-                      <span className={s.contentLv} style={{ color }}>{lv}</span>
-                      <span className={s.contentDays}>Tage {start}–{start+27}</span>
+          <motion.div key="content" className={s.cmsWrap} initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}>
+            {/* Left panel: level + day selector */}
+            <div className={s.cmsSidebar}>
+              <div className={s.cmsLevelTabs}>
+                {LEVELS.map((lv,li) => (
+                  <button key={lv}
+                    className={s.cmsLvBtn + (cmsLevel===lv ? ' '+s.cmsLvBtnActive : '')}
+                    style={{ '--lv-c': LEVEL_COLORS[lv] }}
+                    onClick={() => { setCmsLevel(lv); setCmsDay(null); setCmsContent(''); setCmsOriginal(''); }}>
+                    {lv}
+                  </button>
+                ))}
+              </div>
+
+              <div className={s.cmsDayGrid}>
+                {(cmsIndex?.[cmsLevel] || Array.from({length:28},(_,i)=>({ day: LEVEL_START[LEVELS.indexOf(cmsLevel)]+i, files:{} }))).map(({ day, files }) => {
+                  const allOk = CONTENT_TYPES.every(t => files[t]);
+                  const someOk = CONTENT_TYPES.some(t => files[t]);
+                  return (
+                    <button key={day}
+                      className={s.cmsDayBtn + (cmsDay===day ? ' '+s.cmsDayBtnActive : '')}
+                      style={{
+                        background: cmsDay===day ? LEVEL_COLORS[cmsLevel]+'33' : undefined,
+                        borderColor: cmsDay===day ? LEVEL_COLORS[cmsLevel] : allOk ? '#22c55e33' : someOk ? '#fbbf2433' : '#f8717133',
+                      }}
+                      onClick={() => selectDay(day)}>
+                      <span className={s.cmsDayNum}>T{day}</span>
+                      <span className={s.cmsDayDots}>
+                        {CONTENT_TYPES.map(t => (
+                          <span key={t} title={TYPE_LABELS[t]}
+                            style={{ background: files[t] ? '#4ade80' : '#f87171' }}
+                            className={s.cmsDot} />
+                        ))}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Right panel: editor */}
+            <div className={s.cmsEditor}>
+              {cmsDay === null ? (
+                <div className={s.cmsPlaceholder}>
+                  <div style={{ fontSize:'3rem' }}>📚</div>
+                  <div>Wähle einen Tag aus der linken Liste</div>
+                  <div style={{ fontSize:'0.85rem', opacity:.5, marginTop:'0.5rem' }}>
+                    🟢 Datei vorhanden &nbsp; 🔴 Datei fehlt
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <div className={s.cmsEditorHead}>
+                    <div className={s.cmsEditorTitle}>
+                      <span style={{ color: LEVEL_COLORS[cmsLevel] }}>{cmsLevel}</span>
+                      <span style={{ opacity:.5 }}> · </span>
+                      <span>Tag {cmsDay}</span>
+                      {isDirty && <span className={s.cmsDirty}>● ungespeichert</span>}
                     </div>
-                    <div className={s.contentStats}>
-                      <span>28 Tage · 140 Aufgaben</span>
-                      <span style={{ color:status.c }}>{status.label}</span>
+                    <div className={s.cmsTypeTabs}>
+                      {CONTENT_TYPES.map(t => (
+                        <button key={t}
+                          className={s.cmsTypeBtn + (cmsType===t ? ' '+s.cmsTypeBtnActive : '')}
+                          onClick={() => {
+                            if (isDirty && !window.confirm('Änderungen verwerfen?')) return;
+                            selectType(t);
+                          }}>
+                          {TYPE_ICONS[t]} {TYPE_LABELS[t]}
+                        </button>
+                      ))}
                     </div>
-                  </motion.div>
-                );
-              })}
+                  </div>
+
+                  {cmsLoading ? (
+                    <div className={s.cmsLoadingMsg}>⏳ Lädt…</div>
+                  ) : (
+                    <>
+                      <textarea
+                        className={s.cmsTextarea}
+                        value={cmsContent}
+                        onChange={e => { setCmsContent(e.target.value); setCmsSaveMsg(''); setCmsError(''); }}
+                        spellCheck={false}
+                        placeholder="JSON-Inhalt wird hier angezeigt…"
+                      />
+                      <div className={s.cmsActions}>
+                        <div className={s.cmsMsgs}>
+                          {cmsError  && <span className={s.cmsErrMsg}>{cmsError}</span>}
+                          {cmsSaveMsg && <span className={s.cmsOkMsg}>{cmsSaveMsg}</span>}
+                        </div>
+                        <div style={{ display:'flex', gap:'0.5rem' }}>
+                          <button className={s.cmsResetBtn}
+                            onClick={() => { if (window.confirm('Änderungen verwerfen?')) { setCmsContent(cmsOriginal); setCmsError(''); } }}
+                            disabled={!isDirty}>
+                            ↩ Zurücksetzen
+                          </button>
+                          <button className={s.cmsSaveBtn}
+                            onClick={saveCms}
+                            disabled={cmsSaving || !isDirty}>
+                            {cmsSaving ? '⏳ Speichert…' : '💾 Speichern'}
+                          </button>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </>
+              )}
             </div>
           </motion.div>
         )}

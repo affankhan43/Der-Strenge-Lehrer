@@ -1,25 +1,65 @@
 {
   "day": 27,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Imperativ — Befehle und Bitten",
+  "explanation": "Der Imperativ (Befehlsform) hat drei Formen:\n\n| Person | Bildung | Beispiel |\n|--------|---------|----------|\n| **du** | Verbstamm (+ e) | Komm! / Lerne! |\n| **ihr** | Verbstamm + t | Kommt! / Lernt! |\n| **Sie** | Infinitiv + Sie | Kommen Sie! |\n\n**Beispiele:**\n- *Lern Deutsch!* (du)\n- *Lernt Deutsch!* (ihr)\n- *Lernen Sie Deutsch!* (Sie, formal)\n\n**Starke Verben** (e→i/ie):\n- nehmen → Nimm! (du)\n- lesen → Lies! (du)\n- geben → Gib! (du)\n\n**sein (unregelmäßig):**\n- du: **Sei** ruhig!\n- ihr: **Seid** ruhig!\n- Sie: **Seien Sie** ruhig!",
   "exercises": [
     {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "___ die Hausaufgaben! (machen, du-Form)",
+      "answer": "Mach",
+      "hint": "machen → Mach! (du)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ schneller! (fahren, ihr-Form)",
+      "answer": "Fahrt",
+      "hint": "fahren → fahrt (ihr)"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Formal: \"___ bitte Platz!\" (nehmen)",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Nimm",
+        "Nehmt",
+        "Nehmen Sie",
+        "Nimmen Sie"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ mir bitte das Buch! (geben, du-Form)",
+      "answer": "Gib",
+      "hint": "geben → Gib! (stark: e→i)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ ruhig! (sein, ihr-Form)",
+      "answer": "Seid",
+      "hint": "sein → seid (ihr)"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "\"___ Sie bitte langsamer!\" (sprechen)",
+      "options": [
+        "Sprich",
+        "Sprecht",
+        "Sprechen Sie",
+        "Sprech"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ das Fenster! (öffnen, du-Form)",
+      "answer": "Öffne",
+      "hint": "öffnen → Öffne! (mit -e)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "___ nicht so laut! (sein, du-Form)",
+      "answer": "Sei",
+      "hint": "sein → Sei! (du)"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

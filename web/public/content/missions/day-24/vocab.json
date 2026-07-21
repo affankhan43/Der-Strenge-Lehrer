@@ -1,32 +1,101 @@
 {
   "day": 24,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Zahlen, Geld & Preise",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "zwanzig",
+      "en": "twenty",
+      "example": "Das T-Shirt kostet zwanzig Euro."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "dreißig",
+      "en": "thirty",
+      "example": "Er ist dreißig Jahre alt."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "vierzig",
+      "en": "forty",
+      "example": "Die Party beginnt um vierzig Minuten nach acht."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "fünfzig",
+      "en": "fifty",
+      "example": "Fünfzig Prozent der Deutschen sind Frauen."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "hundert",
+      "en": "one hundred",
+      "example": "Hundert Euro sind nicht viel für ein Smartphone."
+    },
+    {
+      "de": "tausend",
+      "en": "one thousand",
+      "example": "Das Auto kostet fünfzehn tausend Euro."
+    },
+    {
+      "de": "der Euro",
+      "en": "the euro",
+      "artikel": "der",
+      "example": "In Deutschland bezahlt man mit Euro."
+    },
+    {
+      "de": "der Cent",
+      "en": "the cent",
+      "artikel": "der",
+      "example": "Das kostet neunundneunzig Cent."
+    },
+    {
+      "de": "kosten",
+      "en": "to cost",
+      "example": "Was kostet das? — Es kostet drei Euro."
+    },
+    {
+      "de": "bezahlen",
+      "en": "to pay",
+      "example": "Ich bezahle mit Kreditkarte."
+    },
+    {
+      "de": "bar",
+      "en": "cash / in cash",
+      "example": "Zahlen Sie bar oder mit Karte?"
+    },
+    {
+      "de": "das Wechselgeld",
+      "en": "the change (money back)",
+      "artikel": "das",
+      "example": "Das Wechselgeld ist zwei Euro fünfzig."
+    },
+    {
+      "de": "die Kreditkarte",
+      "en": "the credit card",
+      "artikel": "die",
+      "example": "In Deutschland zahlen viele Menschen noch bar — keine Kreditkarte!"
+    },
+    {
+      "de": "das Konto",
+      "en": "the bank account",
+      "artikel": "das",
+      "example": "Ich überweise das Geld auf dein Konto."
+    },
+    {
+      "de": "sparen",
+      "en": "to save (money)",
+      "example": "Ich spare jeden Monat 200 Euro."
+    },
+    {
+      "de": "ausgeben",
+      "en": "to spend (money)",
+      "example": "Ich gebe zu viel Geld aus!"
+    },
+    {
+      "de": "teuer",
+      "en": "expensive",
+      "example": "Das Konzert war teuer — 80 Euro pro Person."
+    },
+    {
+      "de": "günstig",
+      "en": "cheap / affordable",
+      "example": "Der Supermarkt ist sehr günstig."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

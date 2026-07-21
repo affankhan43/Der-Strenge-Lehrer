@@ -1,32 +1,112 @@
 {
   "day": 21,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Natur & Tiere",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "das Tier",
+      "en": "the animal",
+      "artikel": "das",
+      "example": "Im Zoo gibt es viele Tiere."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "der Hund",
+      "en": "the dog",
+      "artikel": "der",
+      "example": "Mein Hund heißt Max und ist sehr treu."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Katze",
+      "en": "the cat",
+      "artikel": "die",
+      "example": "Die Katze schläft den ganzen Tag auf dem Sofa."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Vogel",
+      "en": "the bird",
+      "artikel": "der",
+      "example": "Der Vogel singt schön im Frühling."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "das Pferd",
+      "en": "the horse",
+      "artikel": "das",
+      "example": "Das Pferd galoppiert über das Feld."
+    },
+    {
+      "de": "der Baum",
+      "en": "the tree",
+      "artikel": "der",
+      "example": "Dieser Baum ist über 100 Jahre alt."
+    },
+    {
+      "de": "die Blume",
+      "en": "the flower",
+      "artikel": "die",
+      "example": "Im Garten wachsen bunte Blumen."
+    },
+    {
+      "de": "der Wald",
+      "en": "the forest",
+      "artikel": "der",
+      "example": "Wir machen einen Spaziergang im Wald."
+    },
+    {
+      "de": "der Berg",
+      "en": "the mountain",
+      "artikel": "der",
+      "example": "Im Sommer wandern wir in den Bergen."
+    },
+    {
+      "de": "der See",
+      "en": "the lake",
+      "artikel": "der",
+      "example": "Am See kann man gut schwimmen."
+    },
+    {
+      "de": "das Meer",
+      "en": "the sea / ocean",
+      "artikel": "das",
+      "example": "Im Urlaub fahren wir ans Meer."
+    },
+    {
+      "de": "der Fluss",
+      "en": "the river",
+      "artikel": "der",
+      "example": "Der Rhein ist ein großer Fluss."
+    },
+    {
+      "de": "das Gras",
+      "en": "the grass",
+      "artikel": "das",
+      "example": "Das Gras ist nach dem Regen schön grün."
+    },
+    {
+      "de": "wachsen",
+      "en": "to grow",
+      "example": "Die Pflanzen wachsen schnell im Sommer."
+    },
+    {
+      "de": "der Stein",
+      "en": "the stone / rock",
+      "artikel": "der",
+      "example": "Kinder werfen gern Steine ins Wasser."
+    },
+    {
+      "de": "die Natur",
+      "en": "nature",
+      "artikel": "die",
+      "example": "Ich liebe die Natur."
+    },
+    {
+      "de": "wild",
+      "en": "wild",
+      "example": "Das wilde Tier lief in den Wald."
+    },
+    {
+      "de": "der Fisch",
+      "en": "the fish",
+      "artikel": "der",
+      "example": "Im See gibt es viele verschiedene Fische."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

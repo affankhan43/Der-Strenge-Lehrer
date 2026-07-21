@@ -1,32 +1,24 @@
 {
   "day": 11,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Wochentage, Monate & Jahreszeiten",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "der Montag", "en": "Monday", "artikel": "der", "example": "Am Montag beginnt die Arbeitswoche."},
+    {"de": "der Dienstag", "en": "Tuesday", "artikel": "der", "example": "Dienstag ist mein Lieblingstag."},
+    {"de": "der Mittwoch", "en": "Wednesday", "artikel": "der", "example": "Am Mittwoch haben wir eine Besprechung."},
+    {"de": "der Donnerstag", "en": "Thursday", "artikel": "der", "example": "Donnerstag gehe ich einkaufen."},
+    {"de": "der Freitag", "en": "Friday", "artikel": "der", "example": "Am Freitag ist Feierabend — Wochenende!"},
+    {"de": "der Samstag", "en": "Saturday", "artikel": "der", "example": "Samstags schlafe ich lange."},
+    {"de": "der Sonntag", "en": "Sunday", "artikel": "der", "example": "Am Sonntag besuchen wir die Familie."},
+    {"de": "das Wochenende", "en": "the weekend", "artikel": "das", "example": "Am Wochenende mache ich Sport."},
+    {"de": "die Woche", "en": "the week", "artikel": "die", "example": "Diese Woche ist sehr stressig."},
+    {"de": "der Monat", "en": "the month", "artikel": "der", "example": "Januar ist der erste Monat des Jahres."},
+    {"de": "das Jahr", "en": "the year", "artikel": "das", "example": "Das Jahr hat 365 Tage."},
+    {"de": "der Frühling", "en": "spring", "artikel": "der", "example": "Im Frühling blühen die Blumen."},
+    {"de": "der Sommer", "en": "summer", "artikel": "der", "example": "Im Sommer ist es heiß."},
+    {"de": "der Herbst", "en": "autumn / fall", "artikel": "der", "example": "Im Herbst fallen die Blätter."},
+    {"de": "der Winter", "en": "winter", "artikel": "der", "example": "Im Winter schneit es oft."},
+    {"de": "gestern", "en": "yesterday", "example": "Gestern war ich krank."},
+    {"de": "übermorgen", "en": "the day after tomorrow", "example": "Übermorgen kommt meine Schwester."},
+    {"de": "nächste Woche", "en": "next week", "example": "Nächste Woche fahre ich nach Hamburg."}
+  ]
 }

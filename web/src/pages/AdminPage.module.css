@@ -74,3 +74,47 @@
 .fbEmail:hover { text-decoration:underline; }
 .loadingMsg { text-align:center; padding:40px; color:var(--text3); font-size:14px; }
 .emptyMsg   { text-align:center; padding:48px; color:var(--text3); font-size:14px; }
+
+/* ── Content CMS ── */
+.cmsWrap { display:grid; grid-template-columns:260px 1fr; gap:16px; min-height:70vh; }
+@media (max-width: 768px) { .cmsWrap { grid-template-columns:1fr; } }
+
+.cmsSidebar { display:flex; flex-direction:column; gap:12px; }
+.cmsLevelTabs { display:flex; flex-wrap:wrap; gap:6px; }
+.cmsLvBtn { padding:6px 12px; border-radius:8px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); color:var(--text2); font-size:12px; font-weight:700; cursor:pointer; transition:all .18s; }
+.cmsLvBtn:hover { background:rgba(255,255,255,.1); color:var(--text1); }
+.cmsLvBtnActive { background:color-mix(in srgb, var(--lv-c) 20%, transparent)!important; border-color:color-mix(in srgb, var(--lv-c) 60%, transparent)!important; color:var(--lv-c)!important; }
+
+.cmsDayGrid { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; overflow-y:auto; max-height:calc(100vh - 280px); }
+.cmsDayBtn { border-radius:8px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); padding:6px 4px; cursor:pointer; display:flex; flex-direction:column; align-items:center; gap:4px; transition:all .18s; }
+.cmsDayBtn:hover { transform:scale(1.04); }
+.cmsDayBtnActive { box-shadow:0 0 0 2px var(--lv-c,#a78bfa); }
+.cmsDayNum { font-size:11px; font-weight:700; color:var(--text1); }
+.cmsDayDots { display:flex; gap:2px; }
+.cmsDot { width:5px; height:5px; border-radius:50%; display:block; }
+
+.cmsEditor { background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:16px; display:flex; flex-direction:column; overflow:hidden; }
+.cmsPlaceholder { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; color:var(--text3); font-size:14px; padding:48px; text-align:center; }
+
+.cmsEditorHead { padding:14px 18px; border-bottom:1px solid rgba(255,255,255,.07); display:flex; flex-direction:column; gap:10px; }
+.cmsEditorTitle { font-size:15px; font-weight:900; color:var(--text1); display:flex; align-items:center; gap:4px; }
+.cmsDirty { font-size:11px; color:#fbbf24; margin-left:8px; font-weight:600; }
+.cmsTypeTabs { display:flex; gap:6px; flex-wrap:wrap; }
+.cmsTypeBtn { padding:6px 12px; border-radius:8px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); color:var(--text2); font-size:12px; font-weight:600; cursor:pointer; transition:all .18s; }
+.cmsTypeBtn:hover { background:rgba(255,255,255,.1); color:var(--text1); }
+.cmsTypeBtnActive { background:rgba(124,58,237,.2)!important; border-color:rgba(124,58,237,.4)!important; color:#c4b5fd!important; }
+
+.cmsLoadingMsg { flex:1; display:flex; align-items:center; justify-content:center; color:var(--text3); font-size:14px; }
+.cmsTextarea { flex:1; resize:none; background:rgba(0,0,0,.25); border:none; border-bottom:1px solid rgba(255,255,255,.07); color:#e2e8f0; font-family:'JetBrains Mono','Fira Code','Menlo',monospace; font-size:12.5px; line-height:1.65; padding:16px 20px; outline:none; min-height:420px; tab-size:2; }
+.cmsTextarea:focus { background:rgba(0,0,0,.3); }
+
+.cmsActions { display:flex; align-items:center; justify-content:space-between; padding:12px 18px; gap:12px; flex-wrap:wrap; }
+.cmsMsgs { flex:1; }
+.cmsErrMsg { color:#f87171; font-size:12px; font-weight:600; }
+.cmsOkMsg  { color:#4ade80; font-size:12px; font-weight:600; }
+.cmsResetBtn { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); color:var(--text2); border-radius:8px; padding:8px 14px; font-size:13px; cursor:pointer; transition:all .18s; }
+.cmsResetBtn:hover:not(:disabled) { background:rgba(255,255,255,.12); color:var(--text1); }
+.cmsResetBtn:disabled { opacity:.4; cursor:not-allowed; }
+.cmsSaveBtn { background:rgba(74,222,128,.15); border:1px solid rgba(74,222,128,.3); color:#4ade80; border-radius:8px; padding:8px 18px; font-size:13px; font-weight:700; cursor:pointer; transition:all .2s; }
+.cmsSaveBtn:hover:not(:disabled) { background:rgba(74,222,128,.25); }
+.cmsSaveBtn:disabled { opacity:.4; cursor:not-allowed; }

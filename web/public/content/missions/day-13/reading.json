@@ -1,19 +1,26 @@
 {
   "day": 13,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Mit dem Zug durch Deutschland",
+  "level": "A1",
+  "text": "Deutschland hat ein sehr gutes Bahnnetz. Die Deutsche Bahn — oder kurz: die DB — verbindet alle großen Städte miteinander. Von Berlin nach München fährt man mit dem ICE etwa vier Stunden.\n\nDer ICE ist der schnellste Zug in Deutschland. Er fährt bis zu 300 Kilometer pro Stunde. Es gibt auch langsamere Züge: den IC, den RE (Regionalexpress) und die S-Bahn.\n\nEine Fahrkarte kann man am Schalter im Bahnhof kaufen, am Automaten oder im Internet. Online ist es oft günstiger. Es gibt Sparpreise — das sind billige Tickets, die man früh buchen muss.\n\nIn deutschen Städten gibt es auch Busse, Straßenbahnen und U-Bahnen. Mit einem Tagesticket kann man den ganzen Tag fahren — das ist praktisch für Touristen.\n\nViele Deutsche fahren auch mit dem Fahrrad. In Städten wie München, Hamburg und Berlin gibt es viele Fahrradwege. Das ist gut für die Umwelt und für die Gesundheit.\n\nDas Deutschlandticket kostet 49 Euro pro Monat und man kann damit den ganzen ÖPNV nutzen — das ist sehr beliebt!",
+  "glossary": {
+    "Bahnnetz": {"en": "rail network", "grammar": "das Bahnnetz (n)"},
+    "verbindet": {"en": "connects", "grammar": "verbinden → er verbindet (trennbar? nein!)"},
+    "miteinander": {"en": "with each other", "grammar": "Adverb (A2)"},
+    "langsamer": {"en": "slower", "grammar": "langsam → langsamer (Komparativ)"},
+    "Schalter": {"en": "counter / ticket desk", "grammar": "der Schalter (m)"},
+    "Sparpreise": {"en": "discount prices / saver fares", "grammar": "der Sparpreis → die Sparpreise"},
+    "praktisch": {"en": "practical / convenient", "grammar": "Adjektiv (A2)"},
+    "Fahrradwege": {"en": "cycle paths / bike lanes", "grammar": "der Fahrradweg → die Fahrradwege"},
+    "Umwelt": {"en": "environment", "grammar": "die Umwelt (f) — kein Plural"},
+    "ÖPNV": {"en": "public transport (abbrev.)", "grammar": "Öffentlicher Personennahverkehr"},
+    "beliebt": {"en": "popular", "grammar": "Adjektiv (A2)"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Wie lange dauert die Fahrt von Berlin nach München mit dem ICE?", "options": ["Zwei Stunden", "Drei Stunden", "Vier Stunden", "Sechs Stunden"], "correct": 2},
+    {"q": "Wie schnell fährt der ICE maximal?", "options": ["200 km/h", "250 km/h", "300 km/h", "350 km/h"], "correct": 2},
+    {"q": "Was ist ein Sparpreis?", "options": ["Ein teures Ticket", "Ein frühzeitig gebuchtes, günstigeres Ticket", "Ein Ticket für Kinder", "Ein monatliches Ticket"], "correct": 1},
+    {"q": "Was kostet das Deutschlandticket pro Monat?", "options": ["29 Euro", "39 Euro", "49 Euro", "59 Euro"], "correct": 2},
+    {"q": "Was ist gut an Fahrrädern?", "options": ["Sie sind schnell", "Sie sind laut", "Sie sind gut für Umwelt und Gesundheit", "Sie kosten viel"], "correct": 2}
+  ]
 }

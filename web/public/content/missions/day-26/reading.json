@@ -1,19 +1,88 @@
 {
   "day": 26,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Digital leben in Deutschland",
+  "level": "A1",
+  "text": "Das Internet ist heute aus dem Alltag nicht mehr wegzudenken. Wir nutzen es für Arbeit, Kommunikation, Einkaufen und Unterhaltung. Aber wie digital ist Deutschland wirklich?\n\nDeutschland gilt in Europa als etwas rückständig, was die Digitalisierung angeht. Zum Beispiel nutzen viele Ämter noch Fax-Geräte — das ist in anderen Ländern kaum vorstellbar. Formulare müssen oft noch auf Papier ausgefüllt und persönlich abgegeben werden.\n\nAber die Deutschen holen auf. Immer mehr Menschen machen ihre Bankgeschäfte online, kaufen im Internet ein und kommunizieren über WhatsApp und andere Messenger-Dienste. Das Smartphone ist für die meisten Menschen unverzichtbar geworden.\n\nSoziale Medien sind sehr beliebt, besonders bei jungen Menschen. Instagram, TikTok und YouTube sind die populärsten Plattformen. Ältere Generationen nutzen eher Facebook.\n\nEin Problem: In manchen Regionen Deutschlands, besonders auf dem Land, ist das Internet noch sehr langsam. Die Bundesregierung arbeitet daran, schnelles Internet für alle zu ermöglichen.\n\nNicht alles muss digital sein — das sagen viele Deutsche. Bücher aus Papier sind immer noch beliebt. Und ein persönliches Gespräch ist manchmal besser als eine WhatsApp-Nachricht.",
+  "glossary": {
+    "unverzichtbar": {
+      "en": "indispensable",
+      "grammar": "Adjektiv (B2)"
+    },
+    "rückständig": {
+      "en": "backward / behind the times",
+      "grammar": "Adjektiv (B1)"
+    },
+    "Digitalisierung": {
+      "en": "digitisation / going digital",
+      "grammar": "die Digitalisierung (f)"
+    },
+    "Fax": {
+      "en": "fax",
+      "grammar": "das Fax (n) — Anglizismus"
+    },
+    "vorstellbar": {
+      "en": "imaginable",
+      "grammar": "Adjektiv (B1)"
+    },
+    "Bundesregierung": {
+      "en": "federal government",
+      "grammar": "die Bundesregierung (f)"
+    },
+    "ermöglichen": {
+      "en": "to enable / make possible",
+      "grammar": "ermöglichen → er ermöglicht (B1)"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Wofür wird das Internet NICHT genannt?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Arbeit",
+        "Kommunikation",
+        "Sport",
+        "Einkaufen"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "q": "Was gilt als rückständig in Deutschland?",
+      "options": [
+        "Das Bildungssystem",
+        "Die Digitalisierung",
+        "Das Gesundheitssystem",
+        "Der Verkehr"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was ist die beliebteste Plattform bei älteren Menschen?",
+      "options": [
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Facebook"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Wo ist das Internet in Deutschland noch langsam?",
+      "options": [
+        "In Großstädten",
+        "Im Ausland",
+        "Auf dem Land",
+        "In Schulen"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was ist laut Text manchmal besser als eine Nachricht?",
+      "options": [
+        "Ein Brief",
+        "Ein Telefonanruf",
+        "Ein persönliches Gespräch",
+        "Eine E-Mail"
+      ],
+      "correct": 2
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

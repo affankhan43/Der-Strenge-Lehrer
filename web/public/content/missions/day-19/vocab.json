@@ -1,32 +1,24 @@
 {
   "day": 19,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Stadt & Wegbeschreibung",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "die Straße", "en": "the street / road", "artikel": "die", "example": "Wie heißt diese Straße?"},
+    {"de": "die Ampel", "en": "the traffic light", "artikel": "die", "example": "Warte an der roten Ampel!"},
+    {"de": "die Kreuzung", "en": "the intersection / crossroads", "artikel": "die", "example": "Biegen Sie an der Kreuzung links ab."},
+    {"de": "die Brücke", "en": "the bridge", "artikel": "die", "example": "Geh über die Brücke und dann rechts."},
+    {"de": "geradeaus", "en": "straight ahead", "example": "Gehen Sie geradeaus — etwa 200 Meter."},
+    {"de": "links", "en": "left", "example": "Biegen Sie links ab."},
+    {"de": "rechts", "en": "right", "example": "Nehmen Sie die erste Straße rechts."},
+    {"de": "abbiegen", "en": "to turn (off)", "example": "Biegen Sie an der Ampel ab."},
+    {"de": "in der Nähe", "en": "nearby / close by", "example": "Ist ein Supermarkt in der Nähe?"},
+    {"de": "gegenüber", "en": "opposite / across from", "example": "Die Bank ist gegenüber dem Hotel."},
+    {"de": "neben", "en": "next to / beside", "example": "Das Café ist neben der Apotheke."},
+    {"de": "hinter", "en": "behind", "example": "Der Parkplatz ist hinter dem Supermarkt."},
+    {"de": "vor", "en": "in front of", "example": "Ich warte vor dem Bahnhof."},
+    {"de": "das Rathaus", "en": "the town hall / city hall", "artikel": "das", "example": "Das Rathaus ist im Zentrum der Stadt."},
+    {"de": "die Post", "en": "the post office", "artikel": "die", "example": "Ich muss ein Paket bei der Post abholen."},
+    {"de": "die Apotheke", "en": "the pharmacy", "artikel": "die", "example": "Diese Medikamente bekommst du in der Apotheke."},
+    {"de": "der Parkplatz", "en": "the car park / parking lot", "artikel": "der", "example": "Gibt es einen Parkplatz hier in der Nähe?"},
+    {"de": "entlang", "en": "along", "example": "Gehen Sie die Straße entlang bis zur Ampel."}
+  ]
 }

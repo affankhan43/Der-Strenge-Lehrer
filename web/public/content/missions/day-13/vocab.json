@@ -1,32 +1,24 @@
 {
   "day": 13,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Verkehr & Transport",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "das Auto", "en": "the car", "artikel": "das", "example": "Ich fahre jeden Tag mit dem Auto zur Arbeit."},
+    {"de": "der Bus", "en": "the bus", "artikel": "der", "example": "Der Bus Nummer 42 fährt zum Bahnhof."},
+    {"de": "die U-Bahn", "en": "the underground / subway", "artikel": "die", "example": "In Berlin fährt die U-Bahn sehr oft."},
+    {"de": "die Straßenbahn", "en": "the tram", "artikel": "die", "example": "Die Straßenbahn hält direkt vor dem Museum."},
+    {"de": "der Zug", "en": "the train", "artikel": "der", "example": "Der Zug nach München fährt um 10 Uhr ab."},
+    {"de": "das Fahrrad", "en": "the bicycle", "artikel": "das", "example": "Im Sommer fahre ich mit dem Fahrrad zur Arbeit."},
+    {"de": "der Bahnhof", "en": "the train station", "artikel": "der", "example": "Der Hauptbahnhof ist das Zentrum der Stadt."},
+    {"de": "die Haltestelle", "en": "the (bus/tram) stop", "artikel": "die", "example": "Ich warte an der Haltestelle auf den Bus."},
+    {"de": "die Fahrkarte", "en": "the ticket", "artikel": "die", "example": "Ich kaufe eine Fahrkarte am Automaten."},
+    {"de": "fahren", "en": "to drive / to travel (by vehicle)", "example": "Wir fahren mit dem Zug nach Berlin."},
+    {"de": "abfahren", "en": "to depart", "example": "Der Zug fährt um 14 Uhr ab."},
+    {"de": "ankommen", "en": "to arrive", "example": "Wir kommen um 17 Uhr in Hamburg an."},
+    {"de": "umsteigen", "en": "to change (trains/buses)", "example": "Du musst in Frankfurt umsteigen."},
+    {"de": "das Flugzeug", "en": "the airplane", "artikel": "das", "example": "Das Flugzeug fliegt nach Madrid."},
+    {"de": "der Flughafen", "en": "the airport", "artikel": "der", "example": "Der Flughafen ist zwanzig Kilometer von der Stadt."},
+    {"de": "zu Fuß", "en": "on foot", "example": "Ich gehe zu Fuß — es sind nur fünf Minuten."},
+    {"de": "der Stau", "en": "the traffic jam", "artikel": "der", "example": "Auf der Autobahn gibt es einen Stau."},
+    {"de": "pünktlich", "en": "punctual / on time", "example": "Der Zug ist heute pünktlich — sehr selten!"}
+  ]
 }

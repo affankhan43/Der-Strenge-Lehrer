@@ -1,25 +1,65 @@
 {
   "day": 26,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Konjunktionen — und, aber, oder, denn, weil, dass",
+  "explanation": "Konjunktionen verbinden Sätze:\n\n**Nebenordnende Konjunktionen** (kein Einfluss auf Wortfolge):\n- **und** (and): Ich lerne Deutsch **und** ich höre Musik.\n- **aber** (but): Er lernt viel, **aber** er schläft wenig.\n- **oder** (or): Trinkst du Kaffee **oder** Tee?\n- **denn** (because — nach Komma): Ich bin müde, **denn** ich habe nicht geschlafen.\n\n**Unterordnende Konjunktionen** (Verb ans Ende!):\n- **weil** (because): Ich lerne Deutsch, **weil** ich in Deutschland arbeite.\n- **dass** (that): Ich weiß, **dass** das schwer ist.\n- **wenn** (when/if): **Wenn** ich Zeit habe, lerne ich.\n\n⚠️ Nach weil/dass/wenn → Verb ans **Ende**!",
   "exercises": [
     {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "Ich lerne Deutsch, ___ ich in Berlin wohne. (because)",
+      "answer": "weil",
+      "hint": "Grund → weil (Verb ans Ende)"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Er ist müde, ___ er viel gearbeitet hat.",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "und",
+        "oder",
+        "weil",
+        "aber"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich trinke Kaffee, ___ ich mag keinen Tee. (but)",
+      "answer": "aber",
+      "hint": "Gegensatz → aber"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich weiß, ___ das nicht einfach ist.",
+      "answer": "dass",
+      "hint": "indirekter Gedanke → dass"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "___ du Zeit hast, ruf mich an! (if/when)",
+      "options": [
+        "Dass",
+        "Weil",
+        "Wenn",
+        "Und"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Möchtest du Kaffee ___ Tee?",
+      "answer": "oder",
+      "hint": "Alternative → oder"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich mag Deutsch, ___ es ist eine schöne Sprache. (denn)",
+      "answer": "denn",
+      "hint": "Grund (kein Verbende!) → denn"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er lernt nicht, weil er keine Zeit ___.",
+      "answer": "hat",
+      "hint": "weil → Verb ans Ende: hat"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

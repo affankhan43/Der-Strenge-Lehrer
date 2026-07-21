@@ -1,25 +1,15 @@
 {
   "day": 18,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Verben mit 'gern' — Vorlieben ausdrücken",
+  "explanation": "Im Deutschen benutzt man **gern** (oder **gerne**) nach einem Verb, um zu sagen, dass man etwas mag:\n\n*Ich spiele **gern** Fußball.* = I like playing football.\n*Sie liest **gern**.* = She likes reading.\n\n**Steigerung:**\n- gern → **lieber** → **am liebsten**\n- Ich spiele **gern** Gitarre.\n- Ich spiele **lieber** Klavier.\n- Ich spiele **am liebsten** Schlagzeug.\n\n**Gegenteil:**\n- *Ich spiele **nicht gern** Tennis.* = I don't like playing tennis.\n- *Ich mag Tennis **nicht**.* = I don't like tennis.\n\n**Mögen + Nomen:**\n*Ich **mag** Fußball.* (I like football.)\n*Er **mag** keine Bücher.* (He doesn't like books.)",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "fill_blank", "sentence": "Ich koche ___. (I like cooking)", "answer": "gern", "hint": "Verb + gern = to like doing"},
+    {"type": "multiple_choice", "q": "Wie sagt man 'She likes reading'?", "options": ["Sie liest gute.", "Sie liest gern.", "Sie liest lieber.", "Sie mag lesen gern."], "correct": 1},
+    {"type": "fill_blank", "sentence": "Was machst du ___? (What do you like to do?)", "answer": "gern", "hint": "Was machst du gern?"},
+    {"type": "fill_blank", "sentence": "Ich spiele ___ Fußball, aber ich spiele ___ Schwimmen. (prefer)", "answer": "gern / lieber", "hint": "gern = like, lieber = prefer"},
+    {"type": "multiple_choice", "q": "Was bedeutet 'am liebsten'?", "options": ["a little", "prefer", "most of all / best of all", "not at all"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Er mag keine ___. (Musik → he doesn't like music)", "answer": "Musik", "hint": "Er mag keine + Nomen"},
+    {"type": "multiple_choice", "q": "Was ist das Gegenteil von 'gern'?", "options": ["sehr gern", "lieber", "nicht gern", "am liebsten"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Was ___ du am liebsten? (mögen)", "answer": "magst", "hint": "du magst"}
+  ]
 }

@@ -1,32 +1,19 @@
-{
-  "day": 20,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
-  "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
-}
+{"day":20,"topic":"Gesundheit & Körper","words":[
+{"de":"der Kopf","en":"the head","artikel":"der","example":"Mir tut der Kopf weh."},
+{"de":"der Rücken","en":"the back","artikel":"der","example":"Ich habe Rückenschmerzen vom langen Sitzen."},
+{"de":"der Bauch","en":"the stomach / belly","artikel":"der","example":"Mein Bauch tut weh — ich habe zu viel gegessen."},
+{"de":"das Bein","en":"the leg","artikel":"das","example":"Er hat sich das Bein gebrochen."},
+{"de":"der Arm","en":"the arm","artikel":"der","example":"Sie hat Schmerzen im rechten Arm."},
+{"de":"die Hand","en":"the hand","artikel":"die","example":"Gib mir deine Hand — der Arzt kommt gleich."},
+{"de":"das Herz","en":"the heart","artikel":"das","example":"Das Herz schlägt sehr schnell nach dem Sport."},
+{"de":"krank","en":"sick / ill","example":"Ich bin krank — ich kann nicht zur Arbeit gehen."},
+{"de":"gesund","en":"healthy","example":"Er ist sehr gesund — er macht viel Sport."},
+{"de":"der Schmerz","en":"the pain","artikel":"der","example":"Wo haben Sie Schmerzen?"},
+{"de":"das Fieber","en":"the fever","artikel":"das","example":"Das Kind hat Fieber — 39 Grad."},
+{"de":"der Husten","en":"the cough","artikel":"der","example":"Ich habe seit einer Woche Husten."},
+{"de":"der Arzt / die Ärztin","en":"the doctor (m/f)","artikel":"der/die","example":"Ich muss zum Arzt — mir geht es nicht gut."},
+{"de":"die Apotheke","en":"the pharmacy","artikel":"die","example":"Das Medikament bekommst du in der Apotheke."},
+{"de":"das Medikament","en":"the medicine / medication","artikel":"das","example":"Nimm dieses Medikament dreimal täglich."},
+{"de":"sich fühlen","en":"to feel (a certain way)","example":"Wie fühlst du dich? — Ich fühle mich nicht gut."},
+{"de":"wehtun","en":"to hurt / be painful","example":"Mir tut der Hals weh."},
+{"de":"sich erholen","en":"to recover / rest up","example":"Ich muss mich erholen — ich war sehr krank."}]}

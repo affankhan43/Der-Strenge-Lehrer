@@ -1,25 +1,65 @@
 {
   "day": 21,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Plural der Nomen",
+  "explanation": "Im Deutschen gibt es keinen einzigen Pluralregel. Es gibt Muster:\n\n| Muster | Singular | Plural |\n|--------|---------|--------|\n| -e | der Hund | die Hunde |\n| -er (+ Umlaut) | das Kind | die Kinder |\n| -en | die Frau | die Frauen |\n| -s | das Auto | die Autos |\n| Umlaut | der Mann | die Männer |\n| kein Suffix | der Lehrer | die Lehrer |\n\n⚠️ Lerne immer: **Artikel + Singular + Plural**\nz.B. *der Hund — die Hunde*",
   "exercises": [
     {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "der Baum → die ___",
+      "answer": "Bäume",
+      "hint": "-e + Umlaut"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "das Kind → die ___",
+      "answer": "Kinder",
+      "hint": "-er Plural"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Plural von \"die Frau\"?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Fraus",
+        "Frauen",
+        "Fraue",
+        "Fräuen"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "das Auto → die ___",
+      "answer": "Autos",
+      "hint": "Fremdwörter: -s"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "der Mann → die ___",
+      "answer": "Männer",
+      "hint": "-er + Umlaut"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Plural von \"das Buch\"?",
+      "options": [
+        "Buchs",
+        "Büche",
+        "Bücher",
+        "Buchen"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "die Katze → die ___",
+      "answer": "Katzen",
+      "hint": "Feminine auf -e: -n"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "der Lehrer → die ___",
+      "answer": "Lehrer",
+      "hint": "Null-Endung"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

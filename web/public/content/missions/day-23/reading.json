@@ -1,19 +1,88 @@
 {
   "day": 23,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Meine Familie",
+  "level": "A1",
+  "text": "Hallo! Mein Name ist Erik und ich komme aus Schweden, aber ich lebe seit drei Jahren in Deutschland. Ich möchte dir meine Familie vorstellen.\n\nMeine Eltern wohnen noch in Schweden, in der Stadt Göteborg. Mein Vater ist Lehrer — er unterrichtet Mathematik an einer Schule. Meine Mutter ist Ärztin in einem Krankenhaus. Beide arbeiten viel, aber sie haben auch Zeit für die Familie.\n\nIch habe eine jüngere Schwester — sie heißt Maja und ist 24 Jahre alt. Maja studiert Design in Stockholm. Wir telefonieren jede Woche.\n\nMeine Großeltern leben auf dem Land, etwa 50 Kilometer von Göteborg. Mein Großvater ist Rentner — er war früher Fischer. Meine Großmutter bäckt den besten Zimtschnecken in ganz Schweden!\n\nHier in Deutschland habe ich auch eine kleine Familie gefunden: meine Freundin Julia und ihre Eltern mögen mich sehr. Julias Vater kommt aus München, ihre Mutter aus Polen. Sie sind verheiratet seit 30 Jahren.\n\nFamilie ist für mich das Wichtigste im Leben — egal, wie weit weg sie wohnen.",
+  "glossary": {
+    "vorstellen": {
+      "en": "introduce / present",
+      "grammar": "vorstellen → ich stelle vor (trennbar)"
+    },
+    "unterrichtet": {
+      "en": "teaches",
+      "grammar": "unterrichten → er unterrichtet"
+    },
+    "Großeltern": {
+      "en": "grandparents",
+      "grammar": "Plural: Großvater + Großmutter"
+    },
+    "Rentner": {
+      "en": "retired person / pensioner",
+      "grammar": "der Rentner (m)"
+    },
+    "früher": {
+      "en": "formerly / in the past",
+      "grammar": "Adverb der Zeit"
+    },
+    "Zimtschnecken": {
+      "en": "cinnamon rolls",
+      "grammar": "die Zimtschnecke → die Zimtschnecken"
+    },
+    "egal": {
+      "en": "no matter / regardless",
+      "grammar": "egal wie/ob/was — feste Wendung (A2)"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Woher kommt Erik?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Dänemark",
+        "Norwegen",
+        "Schweden",
+        "Finnland"
       ],
-      "correct": 0
+      "correct": 2
+    },
+    {
+      "q": "Was ist Eriks Mutter von Beruf?",
+      "options": [
+        "Lehrerin",
+        "Ingenieurin",
+        "Ärztin",
+        "Köchin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was studiert Eriks Schwester Maja?",
+      "options": [
+        "Medizin",
+        "Design",
+        "Informatik",
+        "Jura"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was war Eriks Großvater früher?",
+      "options": [
+        "Lehrer",
+        "Arzt",
+        "Bauer",
+        "Fischer"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Wie lange sind Julias Eltern schon verheiratet?",
+      "options": [
+        "10 Jahre",
+        "20 Jahre",
+        "30 Jahre",
+        "40 Jahre"
+      ],
+      "correct": 2
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

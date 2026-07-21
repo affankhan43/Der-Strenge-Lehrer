@@ -1,19 +1,96 @@
 {
   "day": 21,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Ein Tag im Wald",
+  "level": "A1",
+  "text": "Max liebt die Natur. Jedes Wochenende geht er wandern. Sein Lieblingsort ist der Wald hinter seinem Dorf.\n\nHeute ist Samstag. Max steht früh auf — um sieben Uhr. Er packt seinen Rucksack: Wasser, Brot, Obst und eine Karte. Dann geht er los.\n\nIm Wald ist die Luft frisch und klar. Die Bäume sind groß und alt — Eichen und Buchen. Vögel singen in den Ästen. Ein Bach fließt durch den Wald — das Wasser ist kalt und sauber.\n\nPlötzlich sieht Max ein Reh! Das Tier steht ruhig zwischen den Bäumen und schaut ihn an. Dann läuft es weg — schnell und lautlos. Was für ein schöner Moment!\n\nNach drei Stunden kommt Max an einem kleinen See an. Er setzt sich ans Ufer und isst sein Mittagessen. Die Sonne scheint. Ein paar Enten schwimmen auf dem See.\n\nAm Nachmittag geht Max nach Hause. Er ist müde, aber glücklich. Die Natur macht ihn immer glücklich.",
+  "glossary": {
+    "Rucksack": {
+      "en": "backpack",
+      "grammar": "der Rucksack (m)"
+    },
+    "Luft": {
+      "en": "air",
+      "grammar": "die Luft (f)"
+    },
+    "Eichen": {
+      "en": "oaks",
+      "grammar": "die Eiche → die Eichen"
+    },
+    "Bach": {
+      "en": "stream",
+      "grammar": "der Bach (m)"
+    },
+    "Reh": {
+      "en": "roe deer",
+      "grammar": "das Reh (n)"
+    },
+    "lautlos": {
+      "en": "silently",
+      "grammar": "Adverb"
+    },
+    "Ufer": {
+      "en": "bank / shore",
+      "grammar": "das Ufer (n)"
+    },
+    "Enten": {
+      "en": "ducks",
+      "grammar": "die Ente → die Enten"
+    },
+    "muede": {
+      "en": "tired",
+      "grammar": "Adjektiv (A1)"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Wann steht Max auf?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Um sechs Uhr",
+        "Um sieben Uhr",
+        "Um acht Uhr",
+        "Um neun Uhr"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "q": "Was packt Max in seinen Rucksack?",
+      "options": [
+        "Bücher und Stift",
+        "Wasser, Brot, Obst und Karte",
+        "Kleidung",
+        "Medikamente"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Was sieht Max im Wald?",
+      "options": [
+        "Ein Pferd",
+        "Einen Fuchs",
+        "Ein Reh",
+        "Einen Wolf"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Was macht Max am See?",
+      "options": [
+        "Er schwimmt",
+        "Er schläft",
+        "Er isst",
+        "Er fotografiert"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wie fühlt sich Max nach dem Spaziergang?",
+      "options": [
+        "Traurig",
+        "Wütend",
+        "Krank",
+        "Müde aber glücklich"
+      ],
+      "correct": 3
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

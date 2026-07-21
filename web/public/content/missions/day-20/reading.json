@@ -1,19 +1,8 @@
-{
-  "day": 20,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
-  "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
-}
+{"day":20,"title":"Beim Arzt","level":"A1","text":"Petra fühlt sich seit drei Tagen nicht gut. Sie hat Fieber, Husten und Halsschmerzen. Heute geht sie zur Ärztin, Dr. Bauer.\n\n'Guten Tag, Frau Petra. Was fehlt Ihnen?' fragt Dr. Bauer.\n\n'Guten Tag. Mir geht es nicht gut. Ich habe Fieber — gestern war es 38,5 Grad. Außerdem habe ich starke Halsschmerzen und Husten.'\n\nDr. Bauer untersucht Petra. Sie schaut in den Hals, hört das Herz und die Lunge ab und misst den Blutdruck.\n\n'Sie haben eine Erkältung mit leichter Halsentzündung,' sagt Dr. Bauer. 'Ich verschreibe Ihnen ein Antibiotikum. Nehmen Sie es dreimal täglich nach dem Essen. Außerdem: viel trinken, viel schlafen und zu Hause bleiben — mindestens drei Tage!'\n\n'Darf ich Sport machen?' fragt Petra.\n\n'Nein, auf keinen Fall! Ruhe ist das Wichtigste jetzt. Kaufen Sie das Medikament in der Apotheke und trinken Sie viel Tee mit Honig — das hilft bei Halsschmerzen.'\n\nPetra kauft das Medikament und geht nach Hause. Eine Woche später geht es ihr viel besser.",
+"glossary":{"Was fehlt Ihnen":{"en":"What's wrong with you? (formal)","grammar":"fehlen → Was fehlt Ihnen?"},"abhorchen":{"en":"listen to (with stethoscope)","grammar":"abhorchen / abhören (medical)"},"Halsentzündung":{"en":"throat infection","grammar":"die Halsentzündung (f)"},"verschreibe":{"en":"prescribe","grammar":"verschreiben → ich verschreibe (A2)"},"Antibiotikum":{"en":"antibiotic","grammar":"das Antibiotikum (n)"},"auf keinen Fall":{"en":"absolutely not / no way","grammar":"feste Verneinung (A2)"},"Ruhe":{"en":"rest / quiet","grammar":"die Ruhe (f) — kein Plural (meistens)"},"Honig":{"en":"honey","grammar":"der Honig (m) — kein Plural"}},
+"questions":[
+{"q":"Seit wann fühlt Petra sich nicht gut?","options":["1 Tag","2 Tage","3 Tage","5 Tage"],"correct":2},
+{"q":"Wie hoch ist Petras Fieber?","options":["37,5 Grad","38,5 Grad","39 Grad","40 Grad"],"correct":1},
+{"q":"Was hat Petra laut Ärztin?","options":["Grippe","Erkältung mit Halsentzündung","Lungenentzündung","Appendizitis"],"correct":1},
+{"q":"Wie oft muss Petra das Antibiotikum nehmen?","options":["Einmal täglich","Zweimal täglich","Dreimal täglich","Viermal täglich"],"correct":2},
+{"q":"Was empfiehlt Dr. Bauer NICHT?","options":["Viel trinken","Viel schlafen","Sport machen","Tee mit Honig trinken"],"correct":2}]}

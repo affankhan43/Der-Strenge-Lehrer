@@ -1,19 +1,92 @@
 {
   "day": 27,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Mode und Stil in Deutschland",
+  "level": "A1",
+  "text": "Wie kleiden sich die Deutschen? Das ist eine interessante Frage. Die Antwort: praktisch und komfortabel — und das ist kein Klischee!\n\nDeutsche Mode ist bekannt für ihre Qualität und Langlebigkeit. Viele Deutsche kaufen lieber weniger Kleidung, dafür aber hochwertigere Stücke. Das Motto: Qualität vor Quantität.\n\nIn deutschen Büros ist die Kleiderordnung meistens nicht sehr streng. In kreativen Berufen und in der Technologiebranche tragen viele Mitarbeiter Jeans und T-Shirt. Nur in Banken, Anwaltskanzleien und bei offiziellen Terminen muss man formeller gekleidet sein.\n\nDas Oktoberfest in München ist eine besondere Mode-Exception: Dann tragen viele Bayern traditionelle Tracht — Männer die Lederhose, Frauen das Dirndl. Das ist nicht nur für Touristen — echte Bayern tragen das wirklich gern!\n\nBekannte deutsche Modemarken sind Hugo Boss, Adidas, Puma und Jil Sander. Adidas und Puma sind besonders interessant: Die beiden Unternehmen wurden von zwei Brüdern gegründet — Rudolf und Adi Dassler — aus dem kleinen bayerischen Ort Herzogenaurach.",
+  "glossary": {
+    "Langlebigkeit": {
+      "en": "durability / longevity",
+      "grammar": "die Langlebigkeit (f)"
+    },
+    "hochwertig": {
+      "en": "high-quality",
+      "grammar": "Adjektiv (B1)"
+    },
+    "Kleiderordnung": {
+      "en": "dress code",
+      "grammar": "die Kleiderordnung (f)"
+    },
+    "Tracht": {
+      "en": "traditional folk costume",
+      "grammar": "die Tracht (f)"
+    },
+    "Lederhose": {
+      "en": "leather trousers",
+      "grammar": "die Lederhose (f)"
+    },
+    "Dirndl": {
+      "en": "traditional Bavarian dress",
+      "grammar": "das Dirndl (n)"
+    },
+    "gegründet": {
+      "en": "founded",
+      "grammar": "gründen → gegründet (Partizip II)"
+    },
+    "Ort": {
+      "en": "small town / place",
+      "grammar": "der Ort (m)"
+    }
+  },
   "questions": [
     {
-      "q": "Beispielfrage?",
+      "q": "Wie beschreibt man deutschen Kleidungsstil?",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "Sehr formal",
+        "Praktisch und komfortabel",
+        "Sehr modisch",
+        "Sehr teuer"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "q": "Was ist das Motto bei deutschen Kleidungskäufen?",
+      "options": [
+        "Billig kaufen",
+        "Viel kaufen",
+        "Qualität vor Quantität",
+        "Immer neue Trends"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Wann trägt man in Deutschland formelle Kleidung?",
+      "options": [
+        "Immer",
+        "Nur beim Sport",
+        "Nur bei Hochzeiten",
+        "In Banken und bei offiziellen Terminen"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Was ist eine Lederhose?",
+      "options": [
+        "Ein Kleid",
+        "Traditionelle Lederhose",
+        "Ein Hemd",
+        "Eine Jacke"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Welche deutsche Sportmarke ist KEIN deutsches Unternehmen?",
+      "options": [
+        "Adidas",
+        "Puma",
+        "Nike",
+        "Hugo Boss"
+      ],
+      "correct": 2
     }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+  ]
 }

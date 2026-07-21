@@ -1,25 +1,15 @@
 {
   "day": 13,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Trennbare Verben (Separable Verbs)",
+  "explanation": "Viele deutsche Verben haben ein Präfix, das sich in bestimmten Sätzen **trennt**:\n\n**Beispiele:**\n- *abfahren* → Der Zug **fährt** um 10 Uhr **ab**.\n- *ankommen* → Wir **kommen** um 17 Uhr **an**.\n- *umsteigen* → Du musst in Köln **umsteigen**.\n- *aufstehen* → Ich **stehe** um 7 Uhr **auf**.\n- *einkaufen* → Sie **kaufen** im Supermarkt **ein**.\n\n**Regel:** Im Hauptsatz (normal sentence) geht das Präfix ans **Ende**.\n\n| Position 1 | Verb (konjugiert) | Mitte | Präfix (Ende) |\n|-----------|-------------------|-------|---------------|\n| Der Zug | fährt | um 10 Uhr | ab. |\n| Ich | stehe | um 7 Uhr | auf. |\n\n**Im Infinitiv:** Das Präfix bleibt am Anfang: *abfahren, ankommen, aufstehen*",
   "exercises": [
-    {
-      "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
-    },
-    {
-      "type": "multiple_choice",
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+    {"type": "fill_blank", "sentence": "Der Zug ___ um 15 Uhr ___. (abfahren)", "answer": "fährt / ab", "hint": "abfahren → fährt...ab"},
+    {"type": "fill_blank", "sentence": "Wir ___ in Frankfurt ___. (umsteigen)", "answer": "steigen / um", "hint": "umsteigen → steigen...um"},
+    {"type": "multiple_choice", "q": "Was ist richtig? 'Ich ___ morgen früh ___.' (aufstehen)", "options": ["aufstehe / —", "stehe / auf", "aufstehen / —", "stehe auf / —"], "correct": 1},
+    {"type": "fill_blank", "sentence": "Sie ___ jeden Samstag im Supermarkt ___. (einkaufen)", "answer": "kauft / ein", "hint": "einkaufen → kauft...ein"},
+    {"type": "fill_blank", "sentence": "Wann ___ der nächste Zug ___? (abfahren)", "answer": "fährt / ab", "hint": "Frage: Wann fährt...ab?"},
+    {"type": "multiple_choice", "q": "Was bedeutet 'Der Bus kommt um 9 Uhr an'?", "options": ["Der Bus fährt ab", "Der Bus hält an", "Der Bus kommt an/arrives", "Der Bus ist kaputt"], "correct": 2},
+    {"type": "fill_blank", "sentence": "Ich ___ mein Handy jeden Abend ___. (aufladen)", "answer": "lade / auf", "hint": "aufladen → lade...auf"},
+    {"type": "fill_blank", "sentence": "Mein Vater ___ immer das Licht ___. (ausmachen)", "answer": "macht / aus", "hint": "ausmachen → macht...aus"}
+  ]
 }

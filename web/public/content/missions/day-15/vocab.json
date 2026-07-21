@@ -1,32 +1,24 @@
 {
   "day": 15,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Im Restaurant & Essen",
   "words": [
-    {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
-    },
-    {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
-    },
-    {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
-    },
-    {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
-    },
-    {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
-    }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+    {"de": "das Restaurant", "en": "the restaurant", "artikel": "das", "example": "Wir gehen heute Abend ins Restaurant."},
+    {"de": "der Kellner", "en": "the waiter (male)", "artikel": "der", "example": "Der Kellner bringt die Speisekarte."},
+    {"de": "die Kellnerin", "en": "the waitress", "artikel": "die", "example": "Die Kellnerin empfiehlt das Tagesessen."},
+    {"de": "die Speisekarte", "en": "the menu", "artikel": "die", "example": "Darf ich bitte die Speisekarte haben?"},
+    {"de": "bestellen", "en": "to order", "example": "Ich bestelle die Suppe und einen Salat."},
+    {"de": "die Vorspeise", "en": "the starter", "artikel": "die", "example": "Als Vorspeise nehme ich die Tomatensuppe."},
+    {"de": "die Hauptspeise", "en": "the main course", "artikel": "die", "example": "Die Hauptspeise ist Schnitzel mit Pommes."},
+    {"de": "der Nachtisch", "en": "the dessert", "artikel": "der", "example": "Als Nachtisch möchte ich Schokoladenkuchen."},
+    {"de": "das Getränk", "en": "the drink / beverage", "artikel": "das", "example": "Was trinken Sie? — Ein Mineralwasser, bitte."},
+    {"de": "lecker", "en": "delicious / tasty", "example": "Das Essen ist sehr lecker — Kompliment an den Koch!"},
+    {"de": "schmecken", "en": "to taste (good)", "example": "Wie schmeckt die Suppe? — Sie schmeckt sehr gut!"},
+    {"de": "die Rechnung", "en": "the bill", "artikel": "die", "example": "Die Rechnung, bitte! — Können wir zahlen?"},
+    {"de": "das Trinkgeld", "en": "the tip", "artikel": "das", "example": "In Deutschland gibt man etwa 10% Trinkgeld."},
+    {"de": "empfehlen", "en": "to recommend", "example": "Was empfehlen Sie heute? — Das Wiener Schnitzel."},
+    {"de": "vegetarisch", "en": "vegetarian", "example": "Haben Sie etwas Vegetarisches auf der Karte?"},
+    {"de": "die Portion", "en": "the portion", "artikel": "die", "example": "Die Portionen hier sind sehr groß!"},
+    {"de": "reservieren", "en": "to reserve / book a table", "example": "Ich möchte einen Tisch für zwei Personen reservieren."},
+    {"de": "der Hunger", "en": "the hunger", "artikel": "der", "example": "Ich habe großen Hunger — lass uns essen!"}
+  ]
 }

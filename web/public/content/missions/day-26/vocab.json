@@ -1,32 +1,107 @@
 {
   "day": 26,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Kommunikation & Medien",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "das Telefon",
+      "en": "the telephone",
+      "artikel": "das",
+      "example": "Das Telefon klingelt — geh ran!"
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "das Smartphone",
+      "en": "the smartphone",
+      "artikel": "das",
+      "example": "Ich benutze mein Smartphone für alles."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "anrufen",
+      "en": "to call / phone",
+      "example": "Ich rufe dich morgen an."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "schreiben",
+      "en": "to write",
+      "example": "Ich schreibe eine E-Mail an meinen Chef."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "die E-Mail",
+      "en": "the email",
+      "artikel": "die",
+      "example": "Hast du meine E-Mail bekommen?"
+    },
+    {
+      "de": "die Nachricht",
+      "en": "the message / news",
+      "artikel": "die",
+      "example": "Ich habe eine Nachricht auf WhatsApp."
+    },
+    {
+      "de": "das Internet",
+      "en": "the internet",
+      "artikel": "das",
+      "example": "Ohne Internet kann ich nicht arbeiten."
+    },
+    {
+      "de": "die Website",
+      "en": "the website",
+      "artikel": "die",
+      "example": "Die Website der Firma ist sehr modern."
+    },
+    {
+      "de": "das WLAN",
+      "en": "the WiFi",
+      "artikel": "das",
+      "example": "Wie ist das WLAN-Passwort hier?"
+    },
+    {
+      "de": "posten",
+      "en": "to post (on social media)",
+      "example": "Sie postet viele Fotos auf Instagram."
+    },
+    {
+      "de": "herunterladen",
+      "en": "to download",
+      "example": "Ich lade die App herunter."
+    },
+    {
+      "de": "der Computer",
+      "en": "the computer",
+      "artikel": "der",
+      "example": "Mein Computer ist zu langsam — er ist 8 Jahre alt."
+    },
+    {
+      "de": "das Passwort",
+      "en": "the password",
+      "artikel": "das",
+      "example": "Vergiss dein Passwort nicht!"
+    },
+    {
+      "de": "speichern",
+      "en": "to save (a file)",
+      "example": "Speicher die Datei, bevor du den Computer ausschaltest!"
+    },
+    {
+      "de": "der Akku",
+      "en": "the battery",
+      "artikel": "der",
+      "example": "Mein Akku ist leer — ich brauche ein Ladekabel."
+    },
+    {
+      "de": "aufladen",
+      "en": "to charge (a device)",
+      "example": "Ich lade mein Handy über Nacht auf."
+    },
+    {
+      "de": "der Bildschirm",
+      "en": "the screen",
+      "artikel": "der",
+      "example": "Der Bildschirm ist kaputt — ich brauche ein neues Handy."
+    },
+    {
+      "de": "löschen",
+      "en": "to delete",
+      "example": "Ich habe die alten Fotos gelöscht."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

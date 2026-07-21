@@ -1,25 +1,65 @@
 {
   "day": 28,
-  "topic": "Grammatikthema (Inhalt wird noch ergänzt)",
-  "explanation": "Diese Grammatikerklärung wird noch ergänzt.\n\nFüge eine klare Erklärung mit Tabellen und Beispielen ein.",
+  "topic": "Perfekt — Vergangene Handlungen",
+  "explanation": "Das Perfekt ist die häufigste Vergangenheitsform im gesprochenen Deutsch:\n\n**Bildung:** haben/sein (konjugiert) + Partizip II\n\n**Partizip II Bildung:**\n- Schwache Verben: ge- + Stamm + **-(e)t**\n  → lernen → **ge**lern**t**, kaufen → **ge**kauf**t**\n- Starke Verben: ge- + (veränderter) Stamm + **-en**\n  → kommen → **ge**komm**en**, essen → **ge**gess**en**\n\n**haben ODER sein?**\n- **haben**: die meisten Verben → Ich **habe** gelernt.\n- **sein**: Verben der Bewegung (gehen, kommen, fahren, fliegen) und Zustandsänderung (einschlafen, aufwachen, werden)\n  → Ich **bin** gegangen. Sie **ist** gekommen.",
   "exercises": [
     {
       "type": "fill_blank",
-      "sentence": "Beispielsatz ___ .",
-      "answer": "Antwort",
-      "hint": "Tipp hier"
+      "sentence": "Ich ___ gestern Deutsch gelernt. (haben, Perfekt)",
+      "answer": "habe",
+      "hint": "lernen → haben + gelernt"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wir ___ nach München gefahren. (sein, Perfekt)",
+      "answer": "sind",
+      "hint": "fahren (Bewegung) → sein"
     },
     {
       "type": "multiple_choice",
-      "q": "Beispielfrage?",
+      "q": "Er hat Kaffee ___. (trinken)",
       "options": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "trinkt",
+        "getrunken",
+        "trinkte",
+        "getrunkt"
       ],
-      "correct": 0
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Sie ___ gestern ins Kino gegangen. (sein)",
+      "answer": "ist",
+      "hint": "gehen → sein + gegangen"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Ich habe das Buch ___. (lesen)",
+      "answer": "gelesen",
+      "hint": "lesen → gelesen (stark)"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Das Kind ___ eingeschlafen.",
+      "options": [
+        "hat",
+        "ist",
+        "wird",
+        "war"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Habt ihr heute ___? (arbeiten)",
+      "answer": "gearbeitet",
+      "hint": "arbeiten → gearbeitet (schwach)"
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Er ___ den ganzen Tag geschlafen. (haben)",
+      "answer": "hat",
+      "hint": "schlafen → haben + geschlafen"
     }
-  ],
-  "_contributor_note": "Füge 8 Übungen hinzu: 4 fill_blank und 4 multiple_choice."
+  ]
 }

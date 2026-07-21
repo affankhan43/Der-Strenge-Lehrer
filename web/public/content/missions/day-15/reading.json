@@ -1,19 +1,25 @@
 {
   "day": 15,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Abendessen im Restaurant",
+  "level": "A1",
+  "text": "Es ist Freitagabend. Jonas und seine Freundin Laura gehen in ein italienisches Restaurant in der Stadtmitte. Sie haben einen Tisch für 19 Uhr reserviert.\n\nDer Kellner bringt die Speisekarten. 'Was darf ich Ihnen bringen?' fragt er höflich. Jonas und Laura lesen die Karte.\n\n'Ich nehme die Minestrone als Vorspeise und dann das Risotto,' sagt Laura. 'Und ich möchte bitte den Salat und das Schnitzel mit Pommes,' antwortet Jonas. 'Und zu trinken?' fragt der Kellner. 'Ein Glas Weißwein für mich und ein Mineralwasser, bitte,' sagt Laura.\n\nNach einer halben Stunde bringt der Kellner das Essen. 'Guten Appetit!' sagt er. Das Essen schmeckt fantastisch. Das Risotto ist cremig und frisch, das Schnitzel ist knusprig und groß.\n\nNach dem Essen kommen der Nachtisch: Tiramisu für Laura und Panna Cotta für Jonas. Beide sind köstlich.\n\n'Die Rechnung, bitte!' sagt Jonas. Die Rechnung beträgt 54 Euro. Jonas gibt dem Kellner 60 Euro. 'Stimmt so,' sagt er — das bedeutet, der Rest ist Trinkgeld.",
+  "glossary": {
+    "reserviert": {"en": "reserved", "grammar": "reservieren → er hat reserviert (Perfekt)"},
+    "höflich": {"en": "politely", "grammar": "Adverb von 'höflich' (polite)"},
+    "Minestrone": {"en": "minestrone (Italian soup)", "grammar": "Lehnwort aus dem Italienischen"},
+    "Risotto": {"en": "risotto", "grammar": "Lehnwort aus dem Italienischen"},
+    "Weißwein": {"en": "white wine", "grammar": "der Weißwein (m) — Kompositum"},
+    "cremig": {"en": "creamy", "grammar": "Adjektiv (B1)"},
+    "knusprig": {"en": "crispy", "grammar": "Adjektiv (B1)"},
+    "Tiramisu": {"en": "tiramisu (Italian dessert)", "grammar": "Lehnwort aus dem Italienischen"},
+    "beträgt": {"en": "amounts to / comes to", "grammar": "betragen → es beträgt (A2)"},
+    "Stimmt so": {"en": "keep the change", "grammar": "Redewendung beim Bezahlen im Restaurant"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Für wann haben Jonas und Laura reserviert?", "options": ["18 Uhr", "19 Uhr", "20 Uhr", "21 Uhr"], "correct": 1},
+    {"q": "Was bestellt Laura als Hauptspeise?", "options": ["Schnitzel", "Salat", "Risotto", "Minestrone"], "correct": 2},
+    {"q": "Was trinkt Jonas?", "options": ["Weißwein", "Bier", "Mineralwasser", "Rotwein"], "correct": 2},
+    {"q": "Was kostet das Abendessen insgesamt?", "options": ["44 Euro", "50 Euro", "54 Euro", "60 Euro"], "correct": 2},
+    {"q": "Was bedeutet 'Stimmt so'?", "options": ["Das ist falsch", "Bitte mehr Trinkgeld", "Behalten Sie das Wechselgeld", "Ich bezahle nicht"], "correct": 2}
+  ]
 }

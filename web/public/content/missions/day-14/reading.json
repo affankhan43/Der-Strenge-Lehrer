@@ -1,19 +1,26 @@
 {
   "day": 14,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Am Wochenmarkt",
+  "level": "A1",
+  "text": "Jeden Samstag gehe ich mit meiner Mutter auf den Wochenmarkt. Der Markt ist auf dem großen Platz in der Stadtmitte. Er beginnt um sieben Uhr morgens und endet um dreizehn Uhr.\n\nAuf dem Markt gibt es viele Stände: Obst und Gemüse, Käse, Brot, Blumen, Eier und frischen Fisch. Die Produkte sind frisch und oft günstiger als im Supermarkt.\n\n'Guten Morgen! Was darf es sein?' fragt der Gemüsehändler. 'Ich nehme ein Kilo Tomaten und einen halben Kilo Karotten, bitte,' antworte ich. 'Das macht zwei Euro fünfzig,' sagt er. Ich bezahle mit Münzen.\n\nMeine Lieblingsstand ist der Käsestand. Der Mann dort macht seinen Käse selbst — auf einem Bauernhof nicht weit von der Stadt. Der Käse schmeckt fantastisch.\n\nNach dem Einkauf trinken wir immer einen Kaffee in dem kleinen Café neben dem Markt. Das ist unser Samstagstradition — und ich liebe sie.",
+  "glossary": {
+    "Wochenmarkt": {"en": "weekly market", "grammar": "der Wochenmarkt (m)"},
+    "Stadtmitte": {"en": "city centre", "grammar": "die Stadtmitte (f)"},
+    "Stände": {"en": "stalls (plural)", "grammar": "der Stand → die Stände"},
+    "Gemüsehändler": {"en": "vegetable seller", "grammar": "der Gemüsehändler (m)"},
+    "darf es sein": {"en": "what would you like?", "grammar": "Höflichkeitsformel im Laden"},
+    "nehme": {"en": "take / will have", "grammar": "nehmen → ich nehme (A1)"},
+    "Kilo": {"en": "kilogram", "grammar": "das Kilo (n) — im Laden: ein Kilo"},
+    "Karotten": {"en": "carrots (plural)", "grammar": "die Karotte → die Karotten"},
+    "Münzen": {"en": "coins (plural)", "grammar": "die Münze → die Münzen"},
+    "Bauernhof": {"en": "farm", "grammar": "der Bauernhof (m)"},
+    "Samstagstradition": {"en": "Saturday tradition", "grammar": "Kompositum: Samstag + Tradition"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Wann beginnt der Markt?", "options": ["Um sechs Uhr", "Um sieben Uhr", "Um acht Uhr", "Um neun Uhr"], "correct": 1},
+    {"q": "Was kauft die Person beim Gemüsehändler?", "options": ["Tomaten und Zwiebeln", "Karotten und Salat", "Tomaten und Karotten", "Paprika und Tomaten"], "correct": 2},
+    {"q": "Was ist besonders am Käse auf dem Markt?", "options": ["Er ist sehr teuer", "Er kommt aus Frankreich", "Er wird selbst gemacht", "Er ist im Angebot"], "correct": 2},
+    {"q": "Was machen sie nach dem Einkauf?", "options": ["Sie gehen nach Hause", "Sie trinken Kaffee im Café", "Sie kaufen Blumen", "Sie gehen ins Restaurant"], "correct": 1},
+    {"q": "Was kostet das Gemüse?", "options": ["Zwei Euro", "Zwei Euro fünfzig", "Drei Euro", "Ein Euro fünfzig"], "correct": 1}
+  ]
 }

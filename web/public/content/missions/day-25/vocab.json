@@ -1,32 +1,111 @@
 {
   "day": 25,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Wohnen & Einrichtung",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "die Wohnung",
+      "en": "the apartment / flat",
+      "artikel": "die",
+      "example": "Ich suche eine neue Wohnung in Berlin."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "das Haus",
+      "en": "the house",
+      "artikel": "das",
+      "example": "Sie wohnen in einem großen Haus mit Garten."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Zimmer",
+      "en": "the room",
+      "artikel": "das",
+      "example": "Meine Wohnung hat drei Zimmer."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Küche",
+      "en": "the kitchen",
+      "artikel": "die",
+      "example": "Ich koche gern in meiner neuen Küche."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "das Badezimmer",
+      "en": "the bathroom",
+      "artikel": "das",
+      "example": "Das Badezimmer hat eine Badewanne und eine Dusche."
+    },
+    {
+      "de": "das Schlafzimmer",
+      "en": "the bedroom",
+      "artikel": "das",
+      "example": "Im Schlafzimmer steht ein großes Bett."
+    },
+    {
+      "de": "das Wohnzimmer",
+      "en": "the living room",
+      "artikel": "das",
+      "example": "Wir sitzen abends im Wohnzimmer und sehen fern."
+    },
+    {
+      "de": "der Balkon",
+      "en": "the balcony",
+      "artikel": "der",
+      "example": "Im Sommer frühstücke ich auf dem Balkon."
+    },
+    {
+      "de": "das Möbel",
+      "en": "the piece of furniture",
+      "artikel": "das",
+      "example": "Das Möbel ist aus Ikea — billig aber gut."
+    },
+    {
+      "de": "der Schrank",
+      "en": "the wardrobe / cupboard",
+      "artikel": "der",
+      "example": "Meine Kleider hängen im Schrank."
+    },
+    {
+      "de": "das Bett",
+      "en": "the bed",
+      "artikel": "das",
+      "example": "Ich brauche ein neues Bett — mein altes ist kaputt."
+    },
+    {
+      "de": "der Tisch",
+      "en": "the table",
+      "artikel": "der",
+      "example": "Wir essen am Tisch — nicht vor dem Fernseher!"
+    },
+    {
+      "de": "der Stuhl",
+      "en": "the chair",
+      "artikel": "der",
+      "example": "Dieser Stuhl ist unbequem — ich brauche einen neuen."
+    },
+    {
+      "de": "die Lampe",
+      "en": "the lamp / light",
+      "artikel": "die",
+      "example": "Die Lampe gibt schönes warmes Licht."
+    },
+    {
+      "de": "die Miete",
+      "en": "the rent",
+      "artikel": "die",
+      "example": "Die Miete in München ist sehr hoch."
+    },
+    {
+      "de": "mieten",
+      "en": "to rent",
+      "example": "Ich miete eine Wohnung für 800 Euro pro Monat."
+    },
+    {
+      "de": "umziehen",
+      "en": "to move (to a new home)",
+      "example": "Wir ziehen nächsten Monat in eine neue Wohnung um."
+    },
+    {
+      "de": "gemütlich",
+      "en": "cosy / comfortable",
+      "example": "Das Wohnzimmer ist sehr gemütlich."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

@@ -1,32 +1,111 @@
 {
   "day": 27,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Körper & Kleidung",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "das Hemd",
+      "en": "the shirt",
+      "artikel": "das",
+      "example": "Er trägt ein weißes Hemd zur Arbeit."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "die Hose",
+      "en": "the trousers / pants",
+      "artikel": "die",
+      "example": "Ich brauche eine neue Jeans."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Kleid",
+      "en": "the dress",
+      "artikel": "das",
+      "example": "Sie trägt ein rotes Kleid zur Hochzeit."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Pullover",
+      "en": "the sweater / jumper",
+      "artikel": "der",
+      "example": "Im Winter trage ich immer einen dicken Pullover."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "die Jacke",
+      "en": "the jacket",
+      "artikel": "die",
+      "example": "Nimm eine Jacke — es ist kalt draußen!"
+    },
+    {
+      "de": "der Mantel",
+      "en": "the coat",
+      "artikel": "der",
+      "example": "Dieser Mantel hält warm im Winter."
+    },
+    {
+      "de": "die Socke",
+      "en": "the sock",
+      "artikel": "die",
+      "example": "Ich habe immer zwei verschiedene Socken an!"
+    },
+    {
+      "de": "der Schuh",
+      "en": "the shoe",
+      "artikel": "der",
+      "example": "Diese Schuhe sind sehr bequem — ich trage sie jeden Tag."
+    },
+    {
+      "de": "die Größe",
+      "en": "the size",
+      "artikel": "die",
+      "example": "Welche Größe haben Sie? — Ich trage Größe 40."
+    },
+    {
+      "de": "anprobieren",
+      "en": "to try on (clothes)",
+      "example": "Kann ich dieses Kleid anprobieren?"
+    },
+    {
+      "de": "passen",
+      "en": "to fit",
+      "example": "Die Hose passt perfekt — ich nehme sie!"
+    },
+    {
+      "de": "tragen",
+      "en": "to wear / to carry",
+      "example": "Sie trägt heute eine schöne blaue Bluse."
+    },
+    {
+      "de": "die Farbe",
+      "en": "the colour",
+      "artikel": "die",
+      "example": "Welche Farbe magst du am liebsten?"
+    },
+    {
+      "de": "der Kopf",
+      "en": "the head",
+      "artikel": "der",
+      "example": "Mir tut der Kopf weh."
+    },
+    {
+      "de": "die Hand",
+      "en": "the hand",
+      "artikel": "die",
+      "example": "Wasch dir die Hände vor dem Essen!"
+    },
+    {
+      "de": "das Auge",
+      "en": "the eye",
+      "artikel": "das",
+      "example": "Sie hat schöne blaue Augen."
+    },
+    {
+      "de": "der Mund",
+      "en": "the mouth",
+      "artikel": "der",
+      "example": "Öffne deinen Mund — der Arzt schaut rein."
+    },
+    {
+      "de": "die Nase",
+      "en": "the nose",
+      "artikel": "die",
+      "example": "Im Winter läuft mir immer die Nase."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

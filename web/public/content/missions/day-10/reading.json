@@ -1,19 +1,28 @@
 {
   "day": 10,
-  "title": "Lesetext (Inhalt wird noch ergänzt)",
-  "level": "A2",
-  "text": "Dieser Lesetext wird noch von Mitwirkenden ergänzt. Du kannst auf GitHub helfen!\n\nFüge einen kurzen deutschen Text (150-200 Wörter) ein, der zum Thema des Tages passt. Der Text soll authentisch und interessant sein.",
+  "title": "Mein Tagesablauf",
+  "level": "A1",
+  "text": "Ich heiße Ben und ich erzähle dir von meinem Tag.\n\nIch stehe jeden Morgen um halb sieben auf. Das ist früh, aber ich mag den Morgen. Zuerst dusche ich — das dauert etwa zehn Minuten. Dann frühstücke ich. Ich esse meistens Brot mit Butter und trinke einen großen Kaffee. Ohne Kaffee kann ich nicht denken!\n\nUm Viertel nach acht fahre ich mit dem Bus zur Arbeit. Die Fahrt dauert zwanzig Minuten. Ich arbeite von neun Uhr bis achtzehn Uhr. Um zwölf Uhr mache ich eine Stunde Pause. Ich esse in der Kantine oder kaufe etwas in der Bäckerei neben dem Büro.\n\nNach der Arbeit gehe ich manchmal ins Fitnessstudio. Ich trainiere gern am Abend — es ist entspannend nach einem langen Tag. Zu Hause koche ich etwas Einfaches: Nudeln, Salat oder Suppe.\n\nUm halb elf gehe ich schlafen. Ich brauche mindestens sieben Stunden Schlaf. Am Wochenende schlafe ich länger — manchmal bis zehn Uhr! Das ist mein Lieblingstag.",
+  "glossary": {
+    "Tagesablauf": {"en": "daily routine", "grammar": "der Tagesablauf (m)"},
+    "erzähle": {"en": "tell / narrate", "grammar": "erzählen → ich erzähle"},
+    "zuerst": {"en": "first (of all)", "grammar": "Adverb der Reihenfolge"},
+    "dusche": {"en": "shower", "grammar": "sich duschen → ich dusche (reflexiv)"},
+    "meistens": {"en": "mostly / usually", "grammar": "Häufigkeitsadverb"},
+    "Viertel nach acht": {"en": "quarter past eight", "grammar": "Uhrzeit: Viertel nach = :15"},
+    "Kantine": {"en": "canteen / cafeteria", "grammar": "die Kantine (f)"},
+    "Bäckerei": {"en": "bakery", "grammar": "die Bäckerei (f)"},
+    "manchmal": {"en": "sometimes", "grammar": "Häufigkeitsadverb"},
+    "entspannend": {"en": "relaxing", "grammar": "Partizip I als Adjektiv"},
+    "einfaches": {"en": "something simple", "grammar": "Adjektiv nach 'etwas' → immer großgeschrieben"},
+    "mindestens": {"en": "at least", "grammar": "Adverb der Menge"},
+    "länger": {"en": "longer", "grammar": "lang → länger (Komparativ)"}
+  },
   "questions": [
-    {
-      "q": "Beispielfrage?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correct": 0
-    }
-  ],
-  "_contributor_note": "Füge einen Text (150-200 Wörter) und 5 Verständnisfragen hinzu."
+    {"q": "Wann steht Ben auf?", "options": ["Um sechs Uhr", "Um halb sieben", "Um sieben Uhr", "Um acht Uhr"], "correct": 1},
+    {"q": "Wie kommt Ben zur Arbeit?", "options": ["Mit dem Auto", "Zu Fuß", "Mit dem Bus", "Mit dem Fahrrad"], "correct": 2},
+    {"q": "Was macht Ben um zwölf Uhr?", "options": ["Er schläft", "Er macht eine Pause", "Er geht nach Hause", "Er trainiert"], "correct": 1},
+    {"q": "Was macht Ben manchmal nach der Arbeit?", "options": ["Er kocht sofort", "Er lernt Deutsch", "Er geht ins Fitnessstudio", "Er sieht fern"], "correct": 2},
+    {"q": "Wann geht Ben schlafen?", "options": ["Um zehn Uhr", "Um elf Uhr", "Um halb elf", "Um Mitternacht"], "correct": 2}
+  ]
 }
