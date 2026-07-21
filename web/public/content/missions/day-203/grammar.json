@@ -1,0 +1,42 @@
+{
+  "day": 203,
+  "level": "B2.2",
+  "topic": "Irreale Wünsche",
+  "explanation": "**Irreale Wünsche** auf B2.2-Niveau.\n\nBeispiel:\n- Wenn ich Zeit haette, wuerde ich mehr lesen. (Konjunktiv II)\n- Das Buch wird gelesen. (Passiv)",
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "q": "Was ist das Thema?",
+      "options": [
+        "Irreale Wünsche",
+        "Grundschule",
+        "Sport",
+        "Kochen"
+      ],
+      "correct": 0
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Dieser Text ist auf ___ Niveau.",
+      "answer": "B2.2",
+      "hint": "Das aktuelle Level"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Wie viele CEFR-Niveaus?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wenn ich koennte, ___ ich helfen. (wuerde)",
+      "answer": "wuerde",
+      "hint": "Konjunktiv II"
+    }
+  ]
+}

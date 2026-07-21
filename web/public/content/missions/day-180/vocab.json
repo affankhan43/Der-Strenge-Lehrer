@@ -1,0 +1,51 @@
+{
+  "day": 180,
+  "level": "B2.1",
+  "topic": "Konjunktiv I",
+  "words": [
+    {
+      "de": "die Zusammenfassung",
+      "en": "summary",
+      "article": "die",
+      "example": "Schreibe eine kurze Zusammenfassung."
+    },
+    {
+      "de": "das Argument",
+      "en": "argument",
+      "article": "das",
+      "example": "Das Argument ist stichhaltig."
+    },
+    {
+      "de": "der Standpunkt",
+      "en": "point of view",
+      "article": "der",
+      "example": "Ich vertrete meinen Standpunkt."
+    },
+    {
+      "de": "analysieren",
+      "en": "to analyze",
+      "example": "Wir analysieren den Text."
+    },
+    {
+      "de": "widerlegen",
+      "en": "to refute",
+      "example": "Er widerlegte die These."
+    },
+    {
+      "de": "überzeugen",
+      "en": "to convince",
+      "example": "Sie konnte ihn überzeugen."
+    },
+    {
+      "de": "die Schlussfolgerung",
+      "en": "conclusion",
+      "article": "die",
+      "example": "Was ist deine Schlussfolgerung?"
+    },
+    {
+      "de": "begründen",
+      "en": "to justify/explain",
+      "example": "Bitte begründe deine Antwort."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "day": 270,
+  "level": "C1.2",
+  "title": "Sprachpolitik — Lesetext",
+  "text": "Auf dem Niveau C1.2 beschaeftigen wir uns mit: Sprachpolitik.\n\nDiese Lektion vertieft dein Verstaendnis komplexer sprachlicher Strukturen. Lies aufmerksam und achte auf die grammatikalischen Besonderheiten.\n\nFortgeschrittene Sprachkenntnisse erfordern Praezision und einen reichen Wortschatz.",
+  "glossary": {
+    "Niveau": {
+      "en": "level",
+      "grammar": "das Niveau"
+    },
+    "Verstaendnis": {
+      "en": "understanding",
+      "grammar": "das Verständnis"
+    }
+  },
+  "questions": [
+    {
+      "q": "Was ist das Thema?",
+      "options": [
+        "Sprachpolitik",
+        "Geschichte",
+        "Sport",
+        "Technik"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Auf welchem Niveau?",
+      "options": [
+        "A1",
+        "B1",
+        "C1.2",
+        "C2"
+      ],
+      "correct": 2
+    }
+  ]
+}

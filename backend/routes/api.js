@@ -24,6 +24,10 @@ const LEVELS = [
   { name: 'A2.2', startDay: 85,  endDay: 112 },
   { name: 'B1.1', startDay: 113, endDay: 140 },
   { name: 'B1.2', startDay: 141, endDay: 168 },
+  { name: 'B2.1', startDay: 169, endDay: 196 },
+  { name: 'B2.2', startDay: 197, endDay: 224 },
+  { name: 'C1.1', startDay: 225, endDay: 252 },
+  { name: 'C1.2', startDay: 253, endDay: 280 },
 ];
 
 function getLevelInfo(day) {

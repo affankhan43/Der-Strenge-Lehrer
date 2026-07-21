@@ -1,0 +1,42 @@
+{
+  "day": 234,
+  "level": "C1.1",
+  "topic": "Implikaturen",
+  "explanation": "**Implikaturen** auf C1.1-Niveau.\n\nBeispiel:\n- Wenn ich Zeit haette, wuerde ich mehr lesen. (Konjunktiv II)\n- Das Buch wird gelesen. (Passiv)",
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "q": "Was ist das Thema?",
+      "options": [
+        "Implikaturen",
+        "Grundschule",
+        "Sport",
+        "Kochen"
+      ],
+      "correct": 0
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Dieser Text ist auf ___ Niveau.",
+      "answer": "C1.1",
+      "hint": "Das aktuelle Level"
+    },
+    {
+      "type": "multiple_choice",
+      "q": "Wie viele CEFR-Niveaus?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "fill_blank",
+      "sentence": "Wenn ich koennte, ___ ich helfen. (wuerde)",
+      "answer": "wuerde",
+      "hint": "Konjunktiv II"
+    }
+  ]
+}

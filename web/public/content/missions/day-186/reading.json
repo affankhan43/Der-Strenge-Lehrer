@@ -1,0 +1,38 @@
+{
+  "day": 186,
+  "level": "B2.1",
+  "title": "Komparativ und Superlativ — Lesetext",
+  "text": "Auf dem Niveau B2.1 beschaeftigen wir uns mit: Komparativ und Superlativ.\n\nDiese Lektion vertieft dein Verstaendnis komplexer sprachlicher Strukturen. Lies aufmerksam und achte auf die grammatikalischen Besonderheiten.\n\nFortgeschrittene Sprachkenntnisse erfordern Praezision und einen reichen Wortschatz.",
+  "glossary": {
+    "Niveau": {
+      "en": "level",
+      "grammar": "das Niveau"
+    },
+    "Verstaendnis": {
+      "en": "understanding",
+      "grammar": "das Verständnis"
+    }
+  },
+  "questions": [
+    {
+      "q": "Was ist das Thema?",
+      "options": [
+        "Komparativ und Superlativ",
+        "Geschichte",
+        "Sport",
+        "Technik"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Auf welchem Niveau?",
+      "options": [
+        "A1",
+        "B1",
+        "B2.1",
+        "C2"
+      ],
+      "correct": 2
+    }
+  ]
+}
