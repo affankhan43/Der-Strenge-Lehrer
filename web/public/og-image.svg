@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e18"/>
+      <stop offset="1" stop-color="#111228"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffe66b"/>
+      <stop offset="1" stop-color="#ffb300"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="40%" r="50%">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="70%" r="40%">
+      <stop offset="0" stop-color="#ffe66b" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#ffe66b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#purple)"/>
+
+  <!-- Logo icon (top-left) -->
+  <g transform="translate(72, 64)">
+    <rect width="64" height="64" rx="18" fill="url(#gold)" filter="url(#shadow)"/>
+    <!-- Glasses left -->
+    <rect x="8" y="24" width="18" height="14" rx="6" fill="none" stroke="#0b0e18" stroke-width="3.5"/>
+    <!-- Glasses right -->
+    <rect x="38" y="24" width="18" height="14" rx="6" fill="none" stroke="#0b0e18" stroke-width="3.5"/>
+    <!-- Bridge -->
+    <line x1="26" y1="30" x2="38" y2="30" stroke="#0b0e18" stroke-width="3.5"/>
+    <!-- Brow left -->
+    <line x1="9" y1="18" x2="24" y2="22" stroke="#0b0e18" stroke-width="3" stroke-linecap="round"/>
+    <!-- Brow right -->
+    <line x1="55" y1="18" x2="40" y2="22" stroke="#0b0e18" stroke-width="3" stroke-linecap="round"/>
+    <!-- Frown -->
+    <path d="M22 46 Q32 42 42 46" fill="none" stroke="#0b0e18" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- App name -->
+  <text x="154" y="105" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#888ab0" letter-spacing="0.08em">DER STRENGE LEHRER</text>
+
+  <!-- Main headline -->
+  <text x="72" y="240" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="88" font-weight="900" fill="#ffffff" letter-spacing="-0.03em">Kein</text>
+  <text x="72" y="340" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="88" font-weight="900" fill="url(#gold)" letter-spacing="-0.03em">Ausreden.</text>
+  <text x="72" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="56" font-weight="700" fill="#c4b5fd" letter-spacing="-0.02em">Nur Deutsch.</text>
+
+  <!-- Tagline -->
+  <text x="72" y="498" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#6b6b99" letter-spacing="0.01em">Learn German from A1 to C1 — in 280 days. No AI. No fluff. Just results.</text>
+
+  <!-- Level badges -->
+  <g transform="translate(72, 538)">
+    <!-- A1 -->
+    <rect width="68" height="32" rx="8" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
+    <text x="34" y="21" font-family="system-ui" font-size="14" font-weight="800" fill="#4ade80" text-anchor="middle">A1 🌱</text>
+    <!-- A2 -->
+    <rect x="80" width="68" height="32" rx="8" fill="rgba(59,130,246,0.15)" stroke="rgba(59,130,246,0.4)" stroke-width="1.5"/>
+    <text x="114" y="21" font-family="system-ui" font-size="14" font-weight="800" fill="#60a5fa" text-anchor="middle">A2 💧</text>
+    <!-- B1 -->
+    <rect x="160" width="68" height="32" rx="8" fill="rgba(168,85,247,0.15)" stroke="rgba(168,85,247,0.4)" stroke-width="1.5"/>
+    <text x="194" y="21" font-family="system-ui" font-size="14" font-weight="800" fill="#c084fc" text-anchor="middle">B1 🔥</text>
+    <!-- B2 -->
+    <rect x="240" width="68" height="32" rx="8" fill="rgba(249,115,22,0.15)" stroke="rgba(249,115,22,0.4)" stroke-width="1.5"/>
+    <text x="274" y="21" font-family="system-ui" font-size="14" font-weight="800" fill="#fb923c" text-anchor="middle">B2 🥇</text>
+    <!-- C1 -->
+    <rect x="320" width="68" height="32" rx="8" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" stroke-width="1.5"/>
+    <text x="354" y="21" font-family="system-ui" font-size="14" font-weight="800" fill="#f87171" text-anchor="middle">C1 👑</text>
+  </g>
+
+  <!-- Right panel — stat card -->
+  <rect x="820" y="80" width="320" height="460" rx="24" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="820" y="80" width="320" height="6" rx="3" fill="url(#purple)"/>
+
+  <!-- Stats inside card -->
+  <text x="980" y="135" font-family="system-ui" font-size="13" font-weight="700" fill="#888ab0" text-anchor="middle" letter-spacing="0.1em">DEIN FORTSCHRITT</text>
+
+  <!-- Stat: Days -->
+  <text x="870" y="200" font-family="system-ui" font-size="48" font-weight="900" fill="#ffffff">280</text>
+  <text x="870" y="226" font-family="system-ui" font-size="13" fill="#6b6b99">Lerntage</text>
+
+  <!-- Divider -->
+  <line x1="845" y1="250" x2="1115" y2="250" stroke="#ffffff" stroke-opacity="0.06"/>
+
+  <!-- Stat: Missions -->
+  <text x="870" y="300" font-family="system-ui" font-size="48" font-weight="900" fill="#c4b5fd">1400</text>
+  <text x="870" y="326" font-family="system-ui" font-size="13" fill="#6b6b99">Aufgaben</text>
+
+  <!-- Divider -->
+  <line x1="845" y1="350" x2="1115" y2="350" stroke="#ffffff" stroke-opacity="0.06"/>
+
+  <!-- Streak -->
+  <text x="870" y="400" font-family="system-ui" font-size="48" font-weight="900" fill="#fb923c">🔥 0→C1</text>
+  <text x="870" y="426" font-family="system-ui" font-size="13" fill="#6b6b99">Kein Ausreden</text>
+
+  <!-- Divider -->
+  <line x1="845" y1="450" x2="1115" y2="450" stroke="#ffffff" stroke-opacity="0.06"/>
+
+  <!-- Free forever badge -->
+  <rect x="845" y="468" width="270" height="50" rx="10" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.2)" stroke-width="1"/>
+  <text x="980" y="499" font-family="system-ui" font-size="15" font-weight="800" fill="#4ade80" text-anchor="middle">✓ 100% Kostenlos — für immer</text>
+
+  <!-- Domain watermark -->
+  <text x="1140" y="617" font-family="system-ui" font-size="14" fill="#333355" text-anchor="end">strenge-lehrer.de</text>
+</svg>
