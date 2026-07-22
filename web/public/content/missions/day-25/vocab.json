@@ -1,111 +1,133 @@
 {
   "day": 25,
-  "topic": "Wohnen & Einrichtung",
+  "topic": "Natur & Umwelt",
   "words": [
     {
-      "de": "die Wohnung",
-      "en": "the apartment / flat",
+      "de": "die Natur",
+      "en": "nature",
       "artikel": "die",
-      "example": "Ich suche eine neue Wohnung in Berlin."
+      "example": "Ich liebe die Natur."
     },
     {
-      "de": "das Haus",
-      "en": "the house",
-      "artikel": "das",
-      "example": "Sie wohnen in einem großen Haus mit Garten."
+      "de": "der Baum",
+      "en": "tree",
+      "artikel": "der",
+      "example": "Der Baum ist sehr alt."
     },
     {
-      "de": "das Zimmer",
-      "en": "the room",
-      "artikel": "das",
-      "example": "Meine Wohnung hat drei Zimmer."
-    },
-    {
-      "de": "die Küche",
-      "en": "the kitchen",
+      "de": "die Blume",
+      "en": "flower",
       "artikel": "die",
-      "example": "Ich koche gern in meiner neuen Küche."
+      "example": "Die Blume riecht sehr gut."
     },
     {
-      "de": "das Badezimmer",
-      "en": "the bathroom",
+      "de": "das Gras",
+      "en": "grass",
       "artikel": "das",
-      "example": "Das Badezimmer hat eine Badewanne und eine Dusche."
+      "example": "Das Gras ist grün und weich."
     },
     {
-      "de": "das Schlafzimmer",
-      "en": "the bedroom",
-      "artikel": "das",
-      "example": "Im Schlafzimmer steht ein großes Bett."
-    },
-    {
-      "de": "das Wohnzimmer",
-      "en": "the living room",
-      "artikel": "das",
-      "example": "Wir sitzen abends im Wohnzimmer und sehen fern."
-    },
-    {
-      "de": "der Balkon",
-      "en": "the balcony",
+      "de": "der Wald",
+      "en": "forest",
       "artikel": "der",
-      "example": "Im Sommer frühstücke ich auf dem Balkon."
+      "example": "Wir spazieren durch den Wald."
     },
     {
-      "de": "das Möbel",
-      "en": "the piece of furniture",
-      "artikel": "das",
-      "example": "Das Möbel ist aus Ikea — billig aber gut."
-    },
-    {
-      "de": "der Schrank",
-      "en": "the wardrobe / cupboard",
+      "de": "der Berg",
+      "en": "mountain",
       "artikel": "der",
-      "example": "Meine Kleider hängen im Schrank."
+      "example": "Der Berg ist mit Schnee bedeckt."
     },
     {
-      "de": "das Bett",
-      "en": "the bed",
-      "artikel": "das",
-      "example": "Ich brauche ein neues Bett — mein altes ist kaputt."
-    },
-    {
-      "de": "der Tisch",
-      "en": "the table",
+      "de": "der Fluss",
+      "en": "river",
       "artikel": "der",
-      "example": "Wir essen am Tisch — nicht vor dem Fernseher!"
+      "example": "Der Fluss fließt durch die Stadt."
     },
     {
-      "de": "der Stuhl",
-      "en": "the chair",
+      "de": "der See",
+      "en": "lake",
       "artikel": "der",
-      "example": "Dieser Stuhl ist unbequem — ich brauche einen neuen."
+      "example": "Wir schwimmen im See."
     },
     {
-      "de": "die Lampe",
-      "en": "the lamp / light",
+      "de": "der Ozean",
+      "en": "ocean",
+      "artikel": "der",
+      "example": "Der Ozean ist sehr tief."
+    },
+    {
+      "de": "die Umwelt",
+      "en": "environment",
       "artikel": "die",
-      "example": "Die Lampe gibt schönes warmes Licht."
+      "example": "Wir müssen die Umwelt schützen."
     },
     {
-      "de": "die Miete",
-      "en": "the rent",
+      "de": "der Müll",
+      "en": "trash / garbage",
+      "artikel": "der",
+      "example": "Wirf den Müll nicht auf die Straße."
+    },
+    {
+      "de": "recyceln",
+      "en": "to recycle",
+      "example": "Wir recyceln Papier und Plastik."
+    },
+    {
+      "de": "der Klimawandel",
+      "en": "climate change",
+      "artikel": "der",
+      "example": "Der Klimawandel betrifft uns alle."
+    },
+    {
+      "de": "die Luft",
+      "en": "air",
       "artikel": "die",
-      "example": "Die Miete in München ist sehr hoch."
+      "example": "Die Luft in der Stadt ist schlecht."
     },
     {
-      "de": "mieten",
-      "en": "to rent",
-      "example": "Ich miete eine Wohnung für 800 Euro pro Monat."
+      "de": "sauber",
+      "en": "clean",
+      "example": "Das Wasser ist sehr sauber."
     },
     {
-      "de": "umziehen",
-      "en": "to move (to a new home)",
-      "example": "Wir ziehen nächsten Monat in eine neue Wohnung um."
+      "de": "schmutzig",
+      "en": "dirty",
+      "example": "Die Straße ist schmutzig."
     },
     {
-      "de": "gemütlich",
-      "en": "cosy / comfortable",
-      "example": "Das Wohnzimmer ist sehr gemütlich."
+      "de": "die Erde",
+      "en": "earth / soil",
+      "artikel": "die",
+      "example": "Die Pflanze wächst in der Erde."
+    },
+    {
+      "de": "die Pflanze",
+      "en": "plant",
+      "artikel": "die",
+      "example": "Ich gieße meine Pflanzen jeden Tag."
+    },
+    {
+      "de": "schützen",
+      "en": "to protect",
+      "example": "Wir müssen die Tiere schützen."
+    },
+    {
+      "de": "die Energie",
+      "en": "energy",
+      "artikel": "die",
+      "example": "Wir sparen Energie zu Hause."
+    },
+    {
+      "de": "die Sonnenenergie",
+      "en": "solar energy",
+      "artikel": "die",
+      "example": "Wir nutzen Sonnenenergie für unser Haus."
+    },
+    {
+      "de": "nachhaltig",
+      "en": "sustainable",
+      "example": "Wir kaufen gern nachhaltige Produkte."
     }
   ]
 }

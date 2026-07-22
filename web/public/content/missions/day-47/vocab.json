@@ -1,32 +1,119 @@
 {
   "day": 47,
-  "topic": "Natur & Umwelt",
+  "topic": "Notfälle & Sicherheit",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Notfall",
+      "en": "emergency",
+      "artikel": "der",
+      "example": "Das ist ein Notfall!"
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Feuerwehr",
+      "en": "fire department",
+      "artikel": "die",
+      "example": "Ruf die Feuerwehr an!"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Feuer",
+      "en": "fire",
+      "artikel": "das",
+      "example": "Es gibt ein Feuer im Nachbarhaus."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Rauch",
+      "en": "smoke",
+      "artikel": "der",
+      "example": "Ich rieche Rauch in der Küche."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Notausgang",
+      "en": "emergency exit",
+      "artikel": "der",
+      "example": "Wo ist der Notausgang?"
+    },
+    {
+      "de": "die Gefahr",
+      "en": "danger",
+      "artikel": "die",
+      "example": "Vorsicht, hier besteht Gefahr!"
+    },
+    {
+      "de": "gefährlich",
+      "en": "dangerous",
+      "example": "Diese Straße ist sehr gefährlich."
+    },
+    {
+      "de": "sicher",
+      "en": "safe",
+      "example": "Hier bist du sicher."
+    },
+    {
+      "de": "die Sicherheit",
+      "en": "safety / security",
+      "artikel": "die",
+      "example": "Sicherheit ist sehr wichtig."
+    },
+    {
+      "de": "der Diebstahl",
+      "en": "theft",
+      "artikel": "der",
+      "example": "Es gab einen Diebstahl im Laden."
+    },
+    {
+      "de": "stehlen",
+      "en": "to steal",
+      "example": "Jemand hat mein Fahrrad gestohlen."
+    },
+    {
+      "de": "der Dieb",
+      "en": "thief",
+      "artikel": "der",
+      "example": "Der Dieb ist schnell weggelaufen."
+    },
+    {
+      "de": "der Unfall",
+      "en": "accident",
+      "artikel": "der",
+      "example": "Es gab einen Unfall auf der Autobahn."
+    },
+    {
+      "de": "verletzt sein",
+      "en": "to be injured",
+      "example": "Zum Glück ist niemand verletzt."
+    },
+    {
+      "de": "der Erste-Hilfe-Kasten",
+      "en": "first-aid kit",
+      "artikel": "der",
+      "example": "Der Erste-Hilfe-Kasten ist im Auto."
+    },
+    {
+      "de": "um Hilfe rufen",
+      "en": "to call for help",
+      "example": "Sie rief laut um Hilfe."
+    },
+    {
+      "de": "die Warnung",
+      "en": "warning",
+      "artikel": "die",
+      "example": "Das ist eine ernste Warnung."
+    },
+    {
+      "de": "warnen",
+      "en": "to warn",
+      "example": "Ich warne dich vor der Gefahr."
+    },
+    {
+      "de": "evakuieren",
+      "en": "to evacuate",
+      "example": "Das Gebäude wurde evakuiert."
+    },
+    {
+      "de": "der Alarm",
+      "en": "alarm",
+      "artikel": "der",
+      "example": "Der Alarm hat alle geweckt."
     }
-  ],
-  "_note": "Add 20 words about 'Natur & Umwelt'. Format: {de, en, example}"
+  ]
 }

@@ -1,32 +1,130 @@
 {
   "day": 36,
-  "topic": "Einkaufen & Preise",
+  "topic": "Musik & Kunst",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Kunst",
+      "en": "art",
+      "artikel": "die",
+      "example": "Sie interessiert sich sehr für Kunst."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Künstler",
+      "en": "artist (male)",
+      "artikel": "der",
+      "example": "Der Künstler malt ein neues Bild."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Künstlerin",
+      "en": "artist (female)",
+      "artikel": "die",
+      "example": "Die Künstlerin stellt ihre Werke aus."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Gemälde",
+      "en": "painting",
+      "artikel": "das",
+      "example": "Das Gemälde hängt im Museum."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Ausstellung",
+      "en": "exhibition",
+      "artikel": "die",
+      "example": "Die Ausstellung beginnt nächste Woche."
+    },
+    {
+      "de": "das Konzert",
+      "en": "concert",
+      "artikel": "das",
+      "example": "Wir gehen heute Abend ins Konzert."
+    },
+    {
+      "de": "die Band",
+      "en": "band",
+      "artikel": "die",
+      "example": "Die Band spielt Rockmusik."
+    },
+    {
+      "de": "der Sänger",
+      "en": "singer (male)",
+      "artikel": "der",
+      "example": "Der Sänger hat eine tolle Stimme."
+    },
+    {
+      "de": "die Sängerin",
+      "en": "singer (female)",
+      "artikel": "die",
+      "example": "Die Sängerin ist sehr bekannt."
+    },
+    {
+      "de": "die Stimme",
+      "en": "voice",
+      "artikel": "die",
+      "example": "Sie hat eine schöne Stimme."
+    },
+    {
+      "de": "das Lied",
+      "en": "song",
+      "artikel": "das",
+      "example": "Dieses Lied gefällt mir sehr."
+    },
+    {
+      "de": "komponieren",
+      "en": "to compose",
+      "example": "Er komponiert eigene Lieder."
+    },
+    {
+      "de": "der Komponist",
+      "en": "composer",
+      "artikel": "der",
+      "example": "Beethoven war ein berühmter Komponist."
+    },
+    {
+      "de": "das Orchester",
+      "en": "orchestra",
+      "artikel": "das",
+      "example": "Das Orchester spielt heute Abend."
+    },
+    {
+      "de": "die Oper",
+      "en": "opera",
+      "artikel": "die",
+      "example": "Wir haben Karten für die Oper."
+    },
+    {
+      "de": "das Theaterstück",
+      "en": "play (theater)",
+      "artikel": "das",
+      "example": "Das Theaterstück war sehr berührend."
+    },
+    {
+      "de": "die Skulptur",
+      "en": "sculpture",
+      "artikel": "die",
+      "example": "Die Skulptur steht im Park."
+    },
+    {
+      "de": "die Galerie",
+      "en": "gallery",
+      "artikel": "die",
+      "example": "Die Galerie zeigt moderne Kunst."
+    },
+    {
+      "de": "kreativ",
+      "en": "creative",
+      "example": "Meine Schwester ist sehr kreativ."
+    },
+    {
+      "de": "der Rhythmus",
+      "en": "rhythm",
+      "artikel": "der",
+      "example": "Der Rhythmus des Liedes ist schnell."
+    },
+    {
+      "de": "die Melodie",
+      "en": "melody",
+      "artikel": "die",
+      "example": "Die Melodie ist sehr eingängig."
     }
-  ],
-  "_note": "Add 20 words about 'Einkaufen & Preise'. Format: {de, en, example}"
+  ]
 }

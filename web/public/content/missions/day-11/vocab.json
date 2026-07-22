@@ -1,24 +1,146 @@
 {
   "day": 11,
-  "topic": "Wochentage, Monate & Jahreszeiten",
+  "topic": "Körperteile",
   "words": [
-    {"de": "der Montag", "en": "Monday", "artikel": "der", "example": "Am Montag beginnt die Arbeitswoche."},
-    {"de": "der Dienstag", "en": "Tuesday", "artikel": "der", "example": "Dienstag ist mein Lieblingstag."},
-    {"de": "der Mittwoch", "en": "Wednesday", "artikel": "der", "example": "Am Mittwoch haben wir eine Besprechung."},
-    {"de": "der Donnerstag", "en": "Thursday", "artikel": "der", "example": "Donnerstag gehe ich einkaufen."},
-    {"de": "der Freitag", "en": "Friday", "artikel": "der", "example": "Am Freitag ist Feierabend — Wochenende!"},
-    {"de": "der Samstag", "en": "Saturday", "artikel": "der", "example": "Samstags schlafe ich lange."},
-    {"de": "der Sonntag", "en": "Sunday", "artikel": "der", "example": "Am Sonntag besuchen wir die Familie."},
-    {"de": "das Wochenende", "en": "the weekend", "artikel": "das", "example": "Am Wochenende mache ich Sport."},
-    {"de": "die Woche", "en": "the week", "artikel": "die", "example": "Diese Woche ist sehr stressig."},
-    {"de": "der Monat", "en": "the month", "artikel": "der", "example": "Januar ist der erste Monat des Jahres."},
-    {"de": "das Jahr", "en": "the year", "artikel": "das", "example": "Das Jahr hat 365 Tage."},
-    {"de": "der Frühling", "en": "spring", "artikel": "der", "example": "Im Frühling blühen die Blumen."},
-    {"de": "der Sommer", "en": "summer", "artikel": "der", "example": "Im Sommer ist es heiß."},
-    {"de": "der Herbst", "en": "autumn / fall", "artikel": "der", "example": "Im Herbst fallen die Blätter."},
-    {"de": "der Winter", "en": "winter", "artikel": "der", "example": "Im Winter schneit es oft."},
-    {"de": "gestern", "en": "yesterday", "example": "Gestern war ich krank."},
-    {"de": "übermorgen", "en": "the day after tomorrow", "example": "Übermorgen kommt meine Schwester."},
-    {"de": "nächste Woche", "en": "next week", "example": "Nächste Woche fahre ich nach Hamburg."}
+    {
+      "de": "der Kopf",
+      "en": "head",
+      "artikel": "der",
+      "example": "Mein Kopf tut weh."
+    },
+    {
+      "de": "das Haar",
+      "en": "hair",
+      "artikel": "das",
+      "example": "Sie hat lange Haare."
+    },
+    {
+      "de": "das Auge",
+      "en": "eye",
+      "artikel": "das",
+      "example": "Er hat blaue Augen."
+    },
+    {
+      "de": "das Ohr",
+      "en": "ear",
+      "artikel": "das",
+      "example": "Mein Ohr tut weh."
+    },
+    {
+      "de": "die Nase",
+      "en": "nose",
+      "artikel": "die",
+      "example": "Die Nase läuft, ich bin erkältet."
+    },
+    {
+      "de": "der Mund",
+      "en": "mouth",
+      "artikel": "der",
+      "example": "Mach den Mund auf, bitte."
+    },
+    {
+      "de": "der Zahn",
+      "en": "tooth",
+      "artikel": "der",
+      "example": "Ich habe Schmerzen am Zahn."
+    },
+    {
+      "de": "der Hals",
+      "en": "neck",
+      "artikel": "der",
+      "example": "Mein Hals tut weh."
+    },
+    {
+      "de": "die Schulter",
+      "en": "shoulder",
+      "artikel": "die",
+      "example": "Er trägt die Tasche auf der Schulter."
+    },
+    {
+      "de": "der Arm",
+      "en": "arm",
+      "artikel": "der",
+      "example": "Ich habe mir den Arm verletzt."
+    },
+    {
+      "de": "die Hand",
+      "en": "hand",
+      "artikel": "die",
+      "example": "Gib mir bitte die Hand."
+    },
+    {
+      "de": "der Finger",
+      "en": "finger",
+      "artikel": "der",
+      "example": "Ich habe mir den Finger geschnitten."
+    },
+    {
+      "de": "der Bauch",
+      "en": "stomach / belly",
+      "artikel": "der",
+      "example": "Mein Bauch tut weh."
+    },
+    {
+      "de": "der Rücken",
+      "en": "back",
+      "artikel": "der",
+      "example": "Mein Rücken tut weh vom Sitzen."
+    },
+    {
+      "de": "das Bein",
+      "en": "leg",
+      "artikel": "das",
+      "example": "Er hat sich das Bein gebrochen."
+    },
+    {
+      "de": "das Knie",
+      "en": "knee",
+      "artikel": "das",
+      "example": "Mein Knie tut nach dem Laufen weh."
+    },
+    {
+      "de": "der Fuß",
+      "en": "foot",
+      "artikel": "der",
+      "example": "Meine Füße sind kalt."
+    },
+    {
+      "de": "die Haut",
+      "en": "skin",
+      "artikel": "die",
+      "example": "Die Sonne ist schlecht für die Haut."
+    },
+    {
+      "de": "das Herz",
+      "en": "heart",
+      "artikel": "das",
+      "example": "Mein Herz schlägt schnell."
+    },
+    {
+      "de": "der Körper",
+      "en": "body",
+      "artikel": "der",
+      "example": "Sport ist gut für den Körper."
+    },
+    {
+      "de": "stark",
+      "en": "strong",
+      "example": "Er ist sehr stark."
+    },
+    {
+      "de": "schwach",
+      "en": "weak",
+      "example": "Nach der Krankheit fühle ich mich schwach."
+    },
+    {
+      "de": "gesund",
+      "en": "healthy",
+      "example": "Obst und Gemüse sind gesund."
+    },
+    {
+      "de": "krank",
+      "en": "sick",
+      "example": "Mein Bruder ist heute krank."
+    }
   ]
 }

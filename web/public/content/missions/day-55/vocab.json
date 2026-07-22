@@ -1,32 +1,120 @@
 {
   "day": 55,
-  "topic": "Umwelt & Nachhaltigkeit",
+  "topic": "Umzug & Wohnungssuche",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "umziehen",
+      "en": "to move (residence)",
+      "example": "Wir ziehen nächsten Monat um."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Umzug",
+      "en": "move / relocation",
+      "artikel": "der",
+      "example": "Der Umzug war sehr anstrengend."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Miete",
+      "en": "rent",
+      "artikel": "die",
+      "example": "Die Miete ist jeden Monat fällig."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "mieten",
+      "en": "to rent",
+      "example": "Wir mieten eine kleine Wohnung."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Vermieter",
+      "en": "landlord",
+      "artikel": "der",
+      "example": "Der Vermieter wohnt im selben Haus."
+    },
+    {
+      "de": "der Mieter",
+      "en": "tenant",
+      "artikel": "der",
+      "example": "Der Mieter zahlt jeden Monat pünktlich."
+    },
+    {
+      "de": "der Mietvertrag",
+      "en": "rental contract",
+      "artikel": "der",
+      "example": "Wir unterschreiben heute den Mietvertrag."
+    },
+    {
+      "de": "kündigen (Wohnung)",
+      "en": "to give notice (apartment)",
+      "example": "Wir haben die Wohnung gekündigt."
+    },
+    {
+      "de": "die Kaution",
+      "en": "deposit",
+      "artikel": "die",
+      "example": "Die Kaution beträgt zwei Monatsmieten."
+    },
+    {
+      "de": "die Nebenkosten",
+      "en": "utility costs",
+      "artikel": "die",
+      "example": "Die Nebenkosten sind im Preis enthalten."
+    },
+    {
+      "de": "möbliert",
+      "en": "furnished",
+      "example": "Die Wohnung ist möbliert."
+    },
+    {
+      "de": "unmöbliert",
+      "en": "unfurnished",
+      "example": "Wir suchen eine unmöblierte Wohnung."
+    },
+    {
+      "de": "der Makler",
+      "en": "real estate agent",
+      "artikel": "der",
+      "example": "Der Makler hat uns die Wohnung gezeigt."
+    },
+    {
+      "de": "die Besichtigung",
+      "en": "viewing (apartment)",
+      "artikel": "die",
+      "example": "Die Besichtigung ist morgen um vier Uhr."
+    },
+    {
+      "de": "der Stadtteil",
+      "en": "district / neighborhood",
+      "artikel": "der",
+      "example": "Wir suchen eine Wohnung in einem ruhigen Stadtteil."
+    },
+    {
+      "de": "die Nachbarschaft",
+      "en": "neighborhood",
+      "artikel": "die",
+      "example": "Die Nachbarschaft ist sehr freundlich."
+    },
+    {
+      "de": "der Nachbar",
+      "en": "neighbor (male)",
+      "artikel": "der",
+      "example": "Mein Nachbar ist sehr hilfsbereit."
+    },
+    {
+      "de": "die Nachbarin",
+      "en": "neighbor (female)",
+      "artikel": "die",
+      "example": "Meine Nachbarin gießt meine Pflanzen."
+    },
+    {
+      "de": "renovieren",
+      "en": "to renovate",
+      "example": "Wir renovieren die neue Wohnung."
+    },
+    {
+      "de": "der Kasten (Kartons)",
+      "en": "box (moving box)",
+      "artikel": "der",
+      "example": "Wir haben zwanzig Kartons gepackt."
     }
-  ],
-  "_note": "Add 20 words about 'Umwelt & Nachhaltigkeit'. Format: {de, en, example}"
+  ]
 }

@@ -1,26 +1,135 @@
 {
   "day": 1,
-  "topic": "Grundwortschatz — Begrüßungen & Zahlen",
+  "topic": "Begrüßung & Vorstellung",
   "words": [
-    {"de": "hallo", "en": "hello", "example": "Hallo! Wie geht es dir?"},
-    {"de": "guten Morgen", "en": "good morning", "example": "Guten Morgen! Schläfst du noch?"},
-    {"de": "guten Abend", "en": "good evening", "example": "Guten Abend, Frau Müller."},
-    {"de": "auf Wiedersehen", "en": "goodbye", "example": "Auf Wiedersehen! Bis morgen."},
-    {"de": "tschüss", "en": "bye (informal)", "example": "Tschüss! Bis bald."},
-    {"de": "bitte", "en": "please / you're welcome", "example": "Bitte, nehmen Sie Platz."},
-    {"de": "danke", "en": "thank you", "example": "Danke schön!"},
-    {"de": "entschuldigung", "en": "excuse me / sorry", "example": "Entschuldigung, wo ist der Bahnhof?"},
-    {"de": "ja", "en": "yes", "example": "Ja, ich lerne Deutsch."},
-    {"de": "nein", "en": "no", "example": "Nein, das stimmt nicht."},
-    {"de": "ich", "en": "I", "example": "Ich heiße Max."},
-    {"de": "du", "en": "you (informal)", "example": "Wie heißt du?"},
-    {"de": "er / sie / es", "en": "he / she / it", "example": "Er ist Student."},
-    {"de": "wir", "en": "we", "example": "Wir lernen Deutsch."},
-    {"de": "heißen", "en": "to be called", "example": "Ich heiße Anna."},
-    {"de": "wohnen", "en": "to live (somewhere)", "example": "Ich wohne in Berlin."},
-    {"de": "sprechen", "en": "to speak", "example": "Ich spreche ein bisschen Deutsch."},
-    {"de": "lernen", "en": "to learn", "example": "Ich lerne jeden Tag."},
-    {"de": "verstehen", "en": "to understand", "example": "Ich verstehe das nicht."},
-    {"de": "der Name", "en": "the name", "example": "Mein Name ist Lisa."}
+    {
+      "de": "hallo",
+      "en": "hello",
+      "example": "Hallo, wie geht es dir?"
+    },
+    {
+      "de": "tschüss",
+      "en": "bye",
+      "example": "Tschüss, bis morgen!"
+    },
+    {
+      "de": "guten Morgen",
+      "en": "good morning",
+      "example": "Guten Morgen! Hast du gut geschlafen?"
+    },
+    {
+      "de": "guten Tag",
+      "en": "good day / hello",
+      "example": "Guten Tag, mein Name ist Anna."
+    },
+    {
+      "de": "guten Abend",
+      "en": "good evening",
+      "example": "Guten Abend, wie war Ihr Tag?"
+    },
+    {
+      "de": "gute Nacht",
+      "en": "good night",
+      "example": "Gute Nacht, schlaf gut!"
+    },
+    {
+      "de": "der Name",
+      "en": "the name",
+      "artikel": "der",
+      "example": "Wie ist dein Name?"
+    },
+    {
+      "de": "heißen",
+      "en": "to be called",
+      "example": "Ich heiße Peter."
+    },
+    {
+      "de": "kommen",
+      "en": "to come / be from",
+      "example": "Ich komme aus Deutschland."
+    },
+    {
+      "de": "wohnen",
+      "en": "to live",
+      "example": "Ich wohne in Berlin."
+    },
+    {
+      "de": "sprechen",
+      "en": "to speak",
+      "example": "Sprichst du Englisch?"
+    },
+    {
+      "de": "verstehen",
+      "en": "to understand",
+      "example": "Ich verstehe nicht."
+    },
+    {
+      "de": "die Frage",
+      "en": "the question",
+      "artikel": "die",
+      "example": "Das ist eine gute Frage."
+    },
+    {
+      "de": "die Antwort",
+      "en": "the answer",
+      "artikel": "die",
+      "example": "Deine Antwort ist richtig."
+    },
+    {
+      "de": "bitte",
+      "en": "please",
+      "example": "Bitte, komm herein."
+    },
+    {
+      "de": "danke",
+      "en": "thank you",
+      "example": "Danke für deine Hilfe."
+    },
+    {
+      "de": "die Entschuldigung",
+      "en": "excuse me / sorry",
+      "artikel": "die",
+      "example": "Entschuldigung, wo ist der Bahnhof?"
+    },
+    {
+      "de": "der Freund",
+      "en": "the friend (male)",
+      "artikel": "der",
+      "example": "Er ist mein bester Freund."
+    },
+    {
+      "de": "die Freundin",
+      "en": "the friend (female)",
+      "artikel": "die",
+      "example": "Sie ist meine Freundin."
+    },
+    {
+      "de": "das Land",
+      "en": "the country",
+      "artikel": "das",
+      "example": "Welches Land besuchst du?"
+    },
+    {
+      "de": "die Stadt",
+      "en": "the city",
+      "artikel": "die",
+      "example": "Ich komme aus einer kleinen Stadt."
+    },
+    {
+      "de": "das Alter",
+      "en": "the age",
+      "artikel": "das",
+      "example": "Wie alt bist du?"
+    },
+    {
+      "de": "jung",
+      "en": "young",
+      "example": "Er ist noch sehr jung."
+    },
+    {
+      "de": "alt",
+      "en": "old",
+      "example": "Meine Oma ist 80 Jahre alt."
+    }
   ]
 }

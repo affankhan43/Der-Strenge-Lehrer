@@ -1,32 +1,107 @@
 {
   "day": 44,
-  "topic": "Feste & Traditionen",
+  "topic": "Fragewörter & Sätze",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "wer",
+      "en": "who",
+      "example": "Wer ist das?"
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "was",
+      "en": "what",
+      "example": "Was machst du gerade?"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "wo",
+      "en": "where",
+      "example": "Wo wohnst du?"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "wann",
+      "en": "when",
+      "example": "Wann beginnt der Film?"
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "warum",
+      "en": "why",
+      "example": "Warum bist du traurig?"
+    },
+    {
+      "de": "wie",
+      "en": "how",
+      "example": "Wie geht es dir?"
+    },
+    {
+      "de": "welcher",
+      "en": "which (masc.)",
+      "example": "Welcher Bus fährt zum Bahnhof?"
+    },
+    {
+      "de": "welche",
+      "en": "which (fem./plural)",
+      "example": "Welche Farbe magst du?"
+    },
+    {
+      "de": "welches",
+      "en": "which (neut.)",
+      "example": "Welches Buch liest du?"
+    },
+    {
+      "de": "wie viel",
+      "en": "how much",
+      "example": "Wie viel kostet das?"
+    },
+    {
+      "de": "wie viele",
+      "en": "how many",
+      "example": "Wie viele Geschwister hast du?"
+    },
+    {
+      "de": "wie lange",
+      "en": "how long",
+      "example": "Wie lange dauert die Reise?"
+    },
+    {
+      "de": "wie oft",
+      "en": "how often",
+      "example": "Wie oft trainierst du?"
+    },
+    {
+      "de": "woher",
+      "en": "from where",
+      "example": "Woher kommst du?"
+    },
+    {
+      "de": "wohin",
+      "en": "to where",
+      "example": "Wohin gehst du?"
+    },
+    {
+      "de": "womit",
+      "en": "with what",
+      "example": "Womit schreibst du?"
+    },
+    {
+      "de": "wozu",
+      "en": "for what purpose",
+      "example": "Wozu brauchst du das?"
+    },
+    {
+      "de": "die Antwort geben",
+      "en": "to give an answer",
+      "example": "Er gibt keine klare Antwort."
+    },
+    {
+      "de": "nachfragen",
+      "en": "to ask again / follow up",
+      "example": "Ich muss noch einmal nachfragen."
+    },
+    {
+      "de": "die Erklärung",
+      "en": "explanation",
+      "artikel": "die",
+      "example": "Ich brauche eine bessere Erklärung."
     }
-  ],
-  "_note": "Add 20 words about 'Feste & Traditionen'. Format: {de, en, example}"
+  ]
 }

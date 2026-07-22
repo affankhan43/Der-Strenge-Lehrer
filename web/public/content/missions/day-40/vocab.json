@@ -1,32 +1,118 @@
 {
   "day": 40,
-  "topic": "Internet & Social Media",
+  "topic": "Küche & Kochen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Kochrezept",
+      "en": "cooking recipe",
+      "artikel": "das",
+      "example": "Ich brauche ein gutes Kochrezept für Kuchen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Zutat",
+      "en": "ingredient",
+      "artikel": "die",
+      "example": "Welche Zutaten brauchen wir?"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "schneiden",
+      "en": "to cut",
+      "example": "Schneide die Zwiebel klein."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Zwiebel",
+      "en": "onion",
+      "artikel": "die",
+      "example": "Die Zwiebel macht mich weinen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "rühren",
+      "en": "to stir",
+      "example": "Rühr die Soße gut um."
+    },
+    {
+      "de": "braten",
+      "en": "to fry / roast",
+      "example": "Wir braten das Fleisch in der Pfanne."
+    },
+    {
+      "de": "die Pfanne",
+      "en": "frying pan",
+      "artikel": "die",
+      "example": "Die Pfanne ist sehr heiß."
+    },
+    {
+      "de": "der Topf",
+      "en": "pot",
+      "artikel": "der",
+      "example": "Der Topf steht auf dem Herd."
+    },
+    {
+      "de": "backen",
+      "en": "to bake",
+      "example": "Wir backen heute einen Kuchen."
+    },
+    {
+      "de": "der Ofen",
+      "en": "oven",
+      "artikel": "der",
+      "example": "Der Kuchen ist im Ofen."
+    },
+    {
+      "de": "schälen",
+      "en": "to peel",
+      "example": "Schäl bitte die Kartoffeln."
+    },
+    {
+      "de": "würzen",
+      "en": "to season",
+      "example": "Würze die Suppe mit Pfeffer."
+    },
+    {
+      "de": "der Pfeffer",
+      "en": "pepper",
+      "artikel": "der",
+      "example": "Gib etwas Pfeffer dazu."
+    },
+    {
+      "de": "die Soße",
+      "en": "sauce",
+      "artikel": "die",
+      "example": "Die Soße schmeckt sehr würzig."
+    },
+    {
+      "de": "die Schüssel",
+      "en": "bowl",
+      "artikel": "die",
+      "example": "Gib den Salat in die Schüssel."
+    },
+    {
+      "de": "mischen",
+      "en": "to mix",
+      "example": "Misch alle Zutaten zusammen."
+    },
+    {
+      "de": "das Rezeptbuch",
+      "en": "cookbook",
+      "artikel": "das",
+      "example": "Ich habe ein neues Rezeptbuch gekauft."
+    },
+    {
+      "de": "die Küchenmaschine",
+      "en": "kitchen appliance / mixer",
+      "artikel": "die",
+      "example": "Die Küchenmaschine hilft beim Teig."
+    },
+    {
+      "de": "der Teig",
+      "en": "dough",
+      "artikel": "der",
+      "example": "Der Teig muss noch ruhen."
+    },
+    {
+      "de": "servieren",
+      "en": "to serve (food)",
+      "example": "Wir servieren das Essen um sieben Uhr."
     }
-  ],
-  "_note": "Add 20 words about 'Internet & Social Media'. Format: {de, en, example}"
+  ]
 }

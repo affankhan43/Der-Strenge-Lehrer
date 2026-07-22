@@ -1,32 +1,117 @@
 {
   "day": 35,
-  "topic": "Kleidung & Mode",
+  "topic": "Feiertage & Feste",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Feiertag",
+      "en": "holiday",
+      "artikel": "der",
+      "example": "Morgen ist ein Feiertag."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "Weihnachten",
+      "en": "Christmas",
+      "example": "Wir feiern Weihnachten mit der Familie."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "Ostern",
+      "en": "Easter",
+      "example": "Zu Ostern suchen die Kinder Eier."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "Silvester",
+      "en": "New Year's Eve",
+      "example": "An Silvester feiern wir bis Mitternacht."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "Neujahr",
+      "en": "New Year",
+      "example": "Ich wünsche dir ein frohes Neujahr."
+    },
+    {
+      "de": "der Karneval",
+      "en": "carnival",
+      "artikel": "der",
+      "example": "Der Karneval ist in Köln sehr bekannt."
+    },
+    {
+      "de": "das Fest",
+      "en": "festival / celebration",
+      "artikel": "das",
+      "example": "Das Fest dauert drei Tage."
+    },
+    {
+      "de": "das Feuerwerk",
+      "en": "fireworks",
+      "artikel": "das",
+      "example": "Das Feuerwerk war wunderschön."
+    },
+    {
+      "de": "die Tradition",
+      "en": "tradition",
+      "artikel": "die",
+      "example": "Das ist eine alte Tradition."
+    },
+    {
+      "de": "traditionell",
+      "en": "traditional",
+      "example": "Wir essen traditionelles Essen an Weihnachten."
+    },
+    {
+      "de": "der Brauch",
+      "en": "custom",
+      "artikel": "der",
+      "example": "Dieser Brauch ist in Bayern bekannt."
+    },
+    {
+      "de": "die Kerze",
+      "en": "candle",
+      "artikel": "die",
+      "example": "Wir zünden vier Kerzen an."
+    },
+    {
+      "de": "der Baum schmücken",
+      "en": "to decorate the tree",
+      "example": "Wir schmücken den Weihnachtsbaum zusammen."
+    },
+    {
+      "de": "das Geschenk auspacken",
+      "en": "to unwrap a gift",
+      "example": "Die Kinder packen ihre Geschenke aus."
+    },
+    {
+      "de": "der Gottesdienst",
+      "en": "church service",
+      "artikel": "der",
+      "example": "Wir gehen an Weihnachten zum Gottesdienst."
+    },
+    {
+      "de": "die Parade",
+      "en": "parade",
+      "artikel": "die",
+      "example": "Die Parade zieht durch die Innenstadt."
+    },
+    {
+      "de": "das Kostüm",
+      "en": "costume",
+      "artikel": "das",
+      "example": "Im Karneval tragen alle Kostüme."
+    },
+    {
+      "de": "sich verkleiden",
+      "en": "to dress up (costume)",
+      "example": "Die Kinder verkleiden sich gern."
+    },
+    {
+      "de": "die Kerze anzünden",
+      "en": "to light a candle",
+      "example": "Sie zündet eine Kerze für die Familie an."
+    },
+    {
+      "de": "der Nationalfeiertag",
+      "en": "national holiday",
+      "artikel": "der",
+      "example": "Der 3. Oktober ist der deutsche Nationalfeiertag."
     }
-  ],
-  "_note": "Add 20 words about 'Kleidung & Mode'. Format: {de, en, example}"
+  ]
 }

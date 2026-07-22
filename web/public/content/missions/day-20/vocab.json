@@ -1,19 +1,130 @@
-{"day":20,"topic":"Gesundheit & Körper","words":[
-{"de":"der Kopf","en":"the head","artikel":"der","example":"Mir tut der Kopf weh."},
-{"de":"der Rücken","en":"the back","artikel":"der","example":"Ich habe Rückenschmerzen vom langen Sitzen."},
-{"de":"der Bauch","en":"the stomach / belly","artikel":"der","example":"Mein Bauch tut weh — ich habe zu viel gegessen."},
-{"de":"das Bein","en":"the leg","artikel":"das","example":"Er hat sich das Bein gebrochen."},
-{"de":"der Arm","en":"the arm","artikel":"der","example":"Sie hat Schmerzen im rechten Arm."},
-{"de":"die Hand","en":"the hand","artikel":"die","example":"Gib mir deine Hand — der Arzt kommt gleich."},
-{"de":"das Herz","en":"the heart","artikel":"das","example":"Das Herz schlägt sehr schnell nach dem Sport."},
-{"de":"krank","en":"sick / ill","example":"Ich bin krank — ich kann nicht zur Arbeit gehen."},
-{"de":"gesund","en":"healthy","example":"Er ist sehr gesund — er macht viel Sport."},
-{"de":"der Schmerz","en":"the pain","artikel":"der","example":"Wo haben Sie Schmerzen?"},
-{"de":"das Fieber","en":"the fever","artikel":"das","example":"Das Kind hat Fieber — 39 Grad."},
-{"de":"der Husten","en":"the cough","artikel":"der","example":"Ich habe seit einer Woche Husten."},
-{"de":"der Arzt / die Ärztin","en":"the doctor (m/f)","artikel":"der/die","example":"Ich muss zum Arzt — mir geht es nicht gut."},
-{"de":"die Apotheke","en":"the pharmacy","artikel":"die","example":"Das Medikament bekommst du in der Apotheke."},
-{"de":"das Medikament","en":"the medicine / medication","artikel":"das","example":"Nimm dieses Medikament dreimal täglich."},
-{"de":"sich fühlen","en":"to feel (a certain way)","example":"Wie fühlst du dich? — Ich fühle mich nicht gut."},
-{"de":"wehtun","en":"to hurt / be painful","example":"Mir tut der Hals weh."},
-{"de":"sich erholen","en":"to recover / rest up","example":"Ich muss mich erholen — ich war sehr krank."}]}
+{
+  "day": 20,
+  "topic": "Hobbys & Freizeit",
+  "words": [
+    {
+      "de": "das Hobby",
+      "en": "hobby",
+      "artikel": "das",
+      "example": "Mein Hobby ist Fotografieren."
+    },
+    {
+      "de": "die Freizeit",
+      "en": "free time",
+      "artikel": "die",
+      "example": "Was machst du in deiner Freizeit?"
+    },
+    {
+      "de": "lesen",
+      "en": "to read",
+      "example": "Ich lese gern Bücher."
+    },
+    {
+      "de": "malen",
+      "en": "to paint",
+      "example": "Sie malt gern Bilder."
+    },
+    {
+      "de": "zeichnen",
+      "en": "to draw",
+      "example": "Er zeichnet sehr gut."
+    },
+    {
+      "de": "fotografieren",
+      "en": "to photograph",
+      "example": "Ich fotografiere gern die Natur."
+    },
+    {
+      "de": "tanzen",
+      "en": "to dance",
+      "example": "Wir tanzen jeden Freitag."
+    },
+    {
+      "de": "singen",
+      "en": "to sing",
+      "example": "Sie singt in einem Chor."
+    },
+    {
+      "de": "das Instrument",
+      "en": "instrument",
+      "artikel": "das",
+      "example": "Spielst du ein Instrument?"
+    },
+    {
+      "de": "die Gitarre",
+      "en": "guitar",
+      "artikel": "die",
+      "example": "Ich lerne Gitarre spielen."
+    },
+    {
+      "de": "das Klavier",
+      "en": "piano",
+      "artikel": "das",
+      "example": "Sie spielt seit Jahren Klavier."
+    },
+    {
+      "de": "reisen",
+      "en": "to travel",
+      "example": "Ich reise gern in andere Länder."
+    },
+    {
+      "de": "wandern",
+      "en": "to hike",
+      "example": "Am Wochenende gehen wir wandern."
+    },
+    {
+      "de": "schwimmen",
+      "en": "to swim",
+      "example": "Im Sommer gehe ich oft schwimmen."
+    },
+    {
+      "de": "angeln",
+      "en": "to fish",
+      "example": "Mein Vater angelt am Wochenende."
+    },
+    {
+      "de": "basteln",
+      "en": "to do crafts",
+      "example": "Die Kinder basteln gern."
+    },
+    {
+      "de": "spielen",
+      "en": "to play",
+      "example": "Die Kinder spielen im Garten."
+    },
+    {
+      "de": "das Spiel",
+      "en": "game",
+      "artikel": "das",
+      "example": "Wir spielen ein neues Spiel."
+    },
+    {
+      "de": "das Videospiel",
+      "en": "video game",
+      "artikel": "das",
+      "example": "Er spielt gern Videospiele."
+    },
+    {
+      "de": "entspannen",
+      "en": "to relax",
+      "example": "Am Wochenende entspanne ich zu Hause."
+    },
+    {
+      "de": "der Film",
+      "en": "movie",
+      "artikel": "der",
+      "example": "Wir schauen heute einen Film."
+    },
+    {
+      "de": "die Musik",
+      "en": "music",
+      "artikel": "die",
+      "example": "Ich höre gern Musik."
+    },
+    {
+      "de": "gärtnern",
+      "en": "to garden",
+      "example": "Meine Oma gärtnert jeden Tag."
+    }
+  ]
+}

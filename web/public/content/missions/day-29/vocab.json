@@ -1,32 +1,123 @@
 {
   "day": 29,
-  "topic": "Reisen & Transport",
+  "topic": "Modalverben & Wünsche",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "können",
+      "en": "can / to be able to",
+      "example": "Ich kann gut Deutsch sprechen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "müssen",
+      "en": "must / to have to",
+      "example": "Ich muss heute arbeiten."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "dürfen",
+      "en": "may / to be allowed to",
+      "example": "Darf ich das Fenster öffnen?"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "sollen",
+      "en": "should / to be supposed to",
+      "example": "Du sollst mehr schlafen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "wollen",
+      "en": "to want to",
+      "example": "Ich will nach Deutschland reisen."
+    },
+    {
+      "de": "möchten",
+      "en": "would like to",
+      "example": "Ich möchte einen Kaffee, bitte."
+    },
+    {
+      "de": "der Wunsch",
+      "en": "the wish",
+      "artikel": "der",
+      "example": "Hast du einen Wunsch zum Geburtstag?"
+    },
+    {
+      "de": "wünschen",
+      "en": "to wish",
+      "example": "Ich wünsche dir alles Gute."
+    },
+    {
+      "de": "die Erlaubnis",
+      "en": "permission",
+      "artikel": "die",
+      "example": "Ich brauche die Erlaubnis meiner Eltern."
+    },
+    {
+      "de": "erlauben",
+      "en": "to allow",
+      "example": "Meine Eltern erlauben mir das nicht."
+    },
+    {
+      "de": "verbieten",
+      "en": "to forbid",
+      "example": "Rauchen ist hier verboten."
+    },
+    {
+      "de": "die Pflicht",
+      "en": "duty / obligation",
+      "artikel": "die",
+      "example": "Das ist meine Pflicht."
+    },
+    {
+      "de": "nötig",
+      "en": "necessary",
+      "example": "Ist das wirklich nötig?"
+    },
+    {
+      "de": "die Möglichkeit",
+      "en": "possibility",
+      "artikel": "die",
+      "example": "Es gibt eine andere Möglichkeit."
+    },
+    {
+      "de": "möglich",
+      "en": "possible",
+      "example": "Das ist leider nicht möglich."
+    },
+    {
+      "de": "unmöglich",
+      "en": "impossible",
+      "example": "Das ist unmöglich zu schaffen."
+    },
+    {
+      "de": "die Entscheidung",
+      "en": "decision",
+      "artikel": "die",
+      "example": "Das war eine schwere Entscheidung."
+    },
+    {
+      "de": "sich entscheiden",
+      "en": "to decide",
+      "example": "Ich kann mich nicht entscheiden."
+    },
+    {
+      "de": "die Absicht",
+      "en": "intention",
+      "artikel": "die",
+      "example": "Das war nicht meine Absicht."
+    },
+    {
+      "de": "vorhaben",
+      "en": "to plan / intend",
+      "example": "Was hast du heute vor?"
+    },
+    {
+      "de": "hoffen",
+      "en": "to hope",
+      "example": "Ich hoffe, wir sehen uns bald."
+    },
+    {
+      "de": "die Hoffnung",
+      "en": "hope",
+      "artikel": "die",
+      "example": "Die Hoffnung stirbt zuletzt."
     }
-  ],
-  "_note": "Add 20 words about 'Reisen & Transport'. Format: {de, en, example}"
+  ]
 }

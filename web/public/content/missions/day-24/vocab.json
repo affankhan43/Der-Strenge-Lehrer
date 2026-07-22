@@ -1,101 +1,138 @@
 {
   "day": 24,
-  "topic": "Zahlen, Geld & Preise",
+  "topic": "Tiere",
   "words": [
     {
-      "de": "zwanzig",
-      "en": "twenty",
-      "example": "Das T-Shirt kostet zwanzig Euro."
-    },
-    {
-      "de": "dreißig",
-      "en": "thirty",
-      "example": "Er ist dreißig Jahre alt."
-    },
-    {
-      "de": "vierzig",
-      "en": "forty",
-      "example": "Die Party beginnt um vierzig Minuten nach acht."
-    },
-    {
-      "de": "fünfzig",
-      "en": "fifty",
-      "example": "Fünfzig Prozent der Deutschen sind Frauen."
-    },
-    {
-      "de": "hundert",
-      "en": "one hundred",
-      "example": "Hundert Euro sind nicht viel für ein Smartphone."
-    },
-    {
-      "de": "tausend",
-      "en": "one thousand",
-      "example": "Das Auto kostet fünfzehn tausend Euro."
-    },
-    {
-      "de": "der Euro",
-      "en": "the euro",
-      "artikel": "der",
-      "example": "In Deutschland bezahlt man mit Euro."
-    },
-    {
-      "de": "der Cent",
-      "en": "the cent",
-      "artikel": "der",
-      "example": "Das kostet neunundneunzig Cent."
-    },
-    {
-      "de": "kosten",
-      "en": "to cost",
-      "example": "Was kostet das? — Es kostet drei Euro."
-    },
-    {
-      "de": "bezahlen",
-      "en": "to pay",
-      "example": "Ich bezahle mit Kreditkarte."
-    },
-    {
-      "de": "bar",
-      "en": "cash / in cash",
-      "example": "Zahlen Sie bar oder mit Karte?"
-    },
-    {
-      "de": "das Wechselgeld",
-      "en": "the change (money back)",
+      "de": "das Tier",
+      "en": "animal",
       "artikel": "das",
-      "example": "Das Wechselgeld ist zwei Euro fünfzig."
+      "example": "Welches Tier magst du am liebsten?"
     },
     {
-      "de": "die Kreditkarte",
-      "en": "the credit card",
+      "de": "der Hund",
+      "en": "dog",
+      "artikel": "der",
+      "example": "Der Hund bellt laut."
+    },
+    {
+      "de": "die Katze",
+      "en": "cat",
       "artikel": "die",
-      "example": "In Deutschland zahlen viele Menschen noch bar — keine Kreditkarte!"
+      "example": "Die Katze schläft auf dem Sofa."
     },
     {
-      "de": "das Konto",
-      "en": "the bank account",
+      "de": "der Vogel",
+      "en": "bird",
+      "artikel": "der",
+      "example": "Der Vogel singt jeden Morgen."
+    },
+    {
+      "de": "das Pferd",
+      "en": "horse",
       "artikel": "das",
-      "example": "Ich überweise das Geld auf dein Konto."
+      "example": "Das Pferd läuft schnell."
     },
     {
-      "de": "sparen",
-      "en": "to save (money)",
-      "example": "Ich spare jeden Monat 200 Euro."
+      "de": "die Kuh",
+      "en": "cow",
+      "artikel": "die",
+      "example": "Die Kuh steht auf der Wiese."
     },
     {
-      "de": "ausgeben",
-      "en": "to spend (money)",
-      "example": "Ich gebe zu viel Geld aus!"
+      "de": "das Schwein",
+      "en": "pig",
+      "artikel": "das",
+      "example": "Das Schwein lebt auf dem Bauernhof."
     },
     {
-      "de": "teuer",
-      "en": "expensive",
-      "example": "Das Konzert war teuer — 80 Euro pro Person."
+      "de": "das Schaf",
+      "en": "sheep",
+      "artikel": "das",
+      "example": "Die Schafe fressen Gras."
     },
     {
-      "de": "günstig",
-      "en": "cheap / affordable",
-      "example": "Der Supermarkt ist sehr günstig."
+      "de": "die Ziege",
+      "en": "goat",
+      "artikel": "die",
+      "example": "Die Ziege klettert auf den Felsen."
+    },
+    {
+      "de": "das Huhn",
+      "en": "chicken",
+      "artikel": "das",
+      "example": "Das Huhn legt jeden Tag ein Ei."
+    },
+    {
+      "de": "die Maus",
+      "en": "mouse",
+      "artikel": "die",
+      "example": "Die Katze jagt die Maus."
+    },
+    {
+      "de": "der Löwe",
+      "en": "lion",
+      "artikel": "der",
+      "example": "Der Löwe lebt in Afrika."
+    },
+    {
+      "de": "der Elefant",
+      "en": "elephant",
+      "artikel": "der",
+      "example": "Der Elefant ist sehr groß."
+    },
+    {
+      "de": "der Bär",
+      "en": "bear",
+      "artikel": "der",
+      "example": "Der Bär schläft im Winter."
+    },
+    {
+      "de": "der Affe",
+      "en": "monkey",
+      "artikel": "der",
+      "example": "Der Affe klettert auf den Baum."
+    },
+    {
+      "de": "die Schlange",
+      "en": "snake",
+      "artikel": "die",
+      "example": "Die Schlange hat keine Beine."
+    },
+    {
+      "de": "der Fuchs",
+      "en": "fox",
+      "artikel": "der",
+      "example": "Der Fuchs lebt im Wald."
+    },
+    {
+      "de": "der Wolf",
+      "en": "wolf",
+      "artikel": "der",
+      "example": "Der Wolf jagt in der Nacht."
+    },
+    {
+      "de": "das Insekt",
+      "en": "insect",
+      "artikel": "das",
+      "example": "Ein Käfer ist ein Insekt."
+    },
+    {
+      "de": "die Biene",
+      "en": "bee",
+      "artikel": "die",
+      "example": "Die Biene macht Honig."
+    },
+    {
+      "de": "der Schmetterling",
+      "en": "butterfly",
+      "artikel": "der",
+      "example": "Der Schmetterling fliegt von Blume zu Blume."
+    },
+    {
+      "de": "das Haustier",
+      "en": "pet",
+      "artikel": "das",
+      "example": "Hast du ein Haustier?"
     }
   ]
 }

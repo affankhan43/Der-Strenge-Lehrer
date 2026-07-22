@@ -1,106 +1,126 @@
 {
   "day": 4,
-  "topic": "Farben & Eigenschaften",
+  "topic": "Länder & Sprachen",
   "words": [
     {
-      "de": "rot",
-      "en": "red",
-      "example": "Das Auto ist rot."
+      "de": "Deutschland",
+      "en": "Germany",
+      "example": "Ich lerne Deutsch, weil ich in Deutschland arbeite."
     },
     {
-      "de": "blau",
-      "en": "blue",
-      "example": "Der Himmel ist blau."
+      "de": "Österreich",
+      "en": "Austria",
+      "example": "Wien ist die Hauptstadt von Österreich."
     },
     {
-      "de": "grün",
-      "en": "green",
-      "example": "Das Gras ist grün."
+      "de": "die Schweiz",
+      "en": "Switzerland",
+      "artikel": "die",
+      "example": "In der Schweiz spricht man vier Sprachen."
     },
     {
-      "de": "gelb",
-      "en": "yellow",
-      "example": "Die Sonne ist gelb."
+      "de": "England",
+      "en": "England",
+      "example": "Meine Schwester lebt in England."
     },
     {
-      "de": "schwarz",
-      "en": "black",
-      "example": "Ich mag schwarzen Kaffee."
+      "de": "Frankreich",
+      "en": "France",
+      "example": "Frankreich ist bekannt für gutes Essen."
     },
     {
-      "de": "weiß",
-      "en": "white",
-      "example": "Der Schnee ist weiß."
+      "de": "Spanien",
+      "en": "Spain",
+      "example": "Im Sommer fahren wir nach Spanien."
     },
     {
-      "de": "groß",
-      "en": "big / tall",
-      "example": "Berlin ist eine große Stadt."
+      "de": "Italien",
+      "en": "Italy",
+      "example": "Die Pizza kommt aus Italien."
     },
     {
-      "de": "klein",
-      "en": "small / short",
-      "example": "Das ist ein kleines Café."
+      "de": "die Türkei",
+      "en": "Turkey",
+      "artikel": "die",
+      "example": "Mein Kollege kommt aus der Türkei."
     },
     {
-      "de": "schön",
-      "en": "beautiful",
-      "example": "Das Wetter ist heute schön."
+      "de": "die Sprache",
+      "en": "language",
+      "artikel": "die",
+      "example": "Wie viele Sprachen sprichst du?"
     },
     {
-      "de": "gut",
-      "en": "good",
-      "example": "Das Essen ist sehr gut."
+      "de": "Deutsch",
+      "en": "German (language)",
+      "example": "Deutsch ist nicht so schwer."
     },
     {
-      "de": "schlecht",
-      "en": "bad",
-      "example": "Das Wetter ist schlecht heute."
+      "de": "Englisch",
+      "en": "English",
+      "example": "Sie spricht fließend Englisch."
     },
     {
-      "de": "neu",
-      "en": "new",
-      "example": "Ich habe ein neues Buch."
+      "de": "Französisch",
+      "en": "French",
+      "example": "Er lernt Französisch in der Schule."
     },
     {
-      "de": "alt",
-      "en": "old (things)",
-      "example": "Das ist ein altes Haus."
+      "de": "die Nationalität",
+      "en": "nationality",
+      "artikel": "die",
+      "example": "Welche Nationalität hast du?"
     },
     {
-      "de": "teuer",
-      "en": "expensive",
-      "example": "Das Restaurant ist sehr teuer."
+      "de": "der Deutsche",
+      "en": "German (person)",
+      "artikel": "der",
+      "example": "Er ist Deutscher."
     },
     {
-      "de": "billig",
-      "en": "cheap",
-      "example": "Der Supermarkt ist billiger."
+      "de": "die Hauptstadt",
+      "en": "capital city",
+      "artikel": "die",
+      "example": "Berlin ist die Hauptstadt von Deutschland."
     },
     {
-      "de": "schnell",
-      "en": "fast",
-      "example": "Der Zug fährt schnell."
+      "de": "die Grenze",
+      "en": "border",
+      "artikel": "die",
+      "example": "Die Grenze zwischen Deutschland und Polen ist lang."
     },
     {
-      "de": "langsam",
-      "en": "slow",
-      "example": "Bitte sprechen Sie langsam!"
+      "de": "der Kontinent",
+      "en": "continent",
+      "artikel": "der",
+      "example": "Europa ist ein Kontinent."
     },
     {
-      "de": "laut",
-      "en": "loud",
-      "example": "Die Musik ist zu laut."
+      "de": "Europa",
+      "en": "Europe",
+      "example": "Viele Länder liegen in Europa."
     },
     {
-      "de": "leise",
-      "en": "quiet",
-      "example": "Bitte spreche leise."
+      "de": "die Welt",
+      "en": "world",
+      "artikel": "die",
+      "example": "Deutsch spricht man in vielen Ländern der Welt."
     },
     {
-      "de": "interessant",
-      "en": "interesting",
-      "example": "Das Buch ist sehr interessant."
+      "de": "fließend",
+      "en": "fluent",
+      "example": "Sie spricht fließend Deutsch."
+    },
+    {
+      "de": "der Akzent",
+      "en": "accent",
+      "artikel": "der",
+      "example": "Er hat einen leichten Akzent."
+    },
+    {
+      "de": "übersetzen",
+      "en": "to translate",
+      "example": "Kannst du das für mich übersetzen?"
     }
   ]
 }

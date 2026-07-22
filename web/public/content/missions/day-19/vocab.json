@@ -1,24 +1,139 @@
 {
   "day": 19,
-  "topic": "Stadt & Wegbeschreibung",
+  "topic": "Schule & Studium",
   "words": [
-    {"de": "die Straße", "en": "the street / road", "artikel": "die", "example": "Wie heißt diese Straße?"},
-    {"de": "die Ampel", "en": "the traffic light", "artikel": "die", "example": "Warte an der roten Ampel!"},
-    {"de": "die Kreuzung", "en": "the intersection / crossroads", "artikel": "die", "example": "Biegen Sie an der Kreuzung links ab."},
-    {"de": "die Brücke", "en": "the bridge", "artikel": "die", "example": "Geh über die Brücke und dann rechts."},
-    {"de": "geradeaus", "en": "straight ahead", "example": "Gehen Sie geradeaus — etwa 200 Meter."},
-    {"de": "links", "en": "left", "example": "Biegen Sie links ab."},
-    {"de": "rechts", "en": "right", "example": "Nehmen Sie die erste Straße rechts."},
-    {"de": "abbiegen", "en": "to turn (off)", "example": "Biegen Sie an der Ampel ab."},
-    {"de": "in der Nähe", "en": "nearby / close by", "example": "Ist ein Supermarkt in der Nähe?"},
-    {"de": "gegenüber", "en": "opposite / across from", "example": "Die Bank ist gegenüber dem Hotel."},
-    {"de": "neben", "en": "next to / beside", "example": "Das Café ist neben der Apotheke."},
-    {"de": "hinter", "en": "behind", "example": "Der Parkplatz ist hinter dem Supermarkt."},
-    {"de": "vor", "en": "in front of", "example": "Ich warte vor dem Bahnhof."},
-    {"de": "das Rathaus", "en": "the town hall / city hall", "artikel": "das", "example": "Das Rathaus ist im Zentrum der Stadt."},
-    {"de": "die Post", "en": "the post office", "artikel": "die", "example": "Ich muss ein Paket bei der Post abholen."},
-    {"de": "die Apotheke", "en": "the pharmacy", "artikel": "die", "example": "Diese Medikamente bekommst du in der Apotheke."},
-    {"de": "der Parkplatz", "en": "the car park / parking lot", "artikel": "der", "example": "Gibt es einen Parkplatz hier in der Nähe?"},
-    {"de": "entlang", "en": "along", "example": "Gehen Sie die Straße entlang bis zur Ampel."}
+    {
+      "de": "die Schule",
+      "en": "school",
+      "artikel": "die",
+      "example": "Meine Kinder gehen gern zur Schule."
+    },
+    {
+      "de": "die Universität",
+      "en": "university",
+      "artikel": "die",
+      "example": "Er studiert an der Universität München."
+    },
+    {
+      "de": "der Schüler",
+      "en": "pupil (male)",
+      "artikel": "der",
+      "example": "Der Schüler macht seine Hausaufgaben."
+    },
+    {
+      "de": "die Schülerin",
+      "en": "pupil (female)",
+      "artikel": "die",
+      "example": "Die Schülerin lernt für die Prüfung."
+    },
+    {
+      "de": "das Fach",
+      "en": "subject",
+      "artikel": "das",
+      "example": "Mathematik ist mein Lieblingsfach."
+    },
+    {
+      "de": "die Prüfung",
+      "en": "exam",
+      "artikel": "die",
+      "example": "Die Prüfung ist nächste Woche."
+    },
+    {
+      "de": "die Note",
+      "en": "grade",
+      "artikel": "die",
+      "example": "Ich habe eine gute Note bekommen."
+    },
+    {
+      "de": "die Hausaufgabe",
+      "en": "homework",
+      "artikel": "die",
+      "example": "Ich mache jeden Tag Hausaufgaben."
+    },
+    {
+      "de": "das Buch",
+      "en": "book",
+      "artikel": "das",
+      "example": "Ich lese ein interessantes Buch."
+    },
+    {
+      "de": "das Heft",
+      "en": "notebook",
+      "artikel": "das",
+      "example": "Schreib die Wörter in dein Heft."
+    },
+    {
+      "de": "der Stift",
+      "en": "pen",
+      "artikel": "der",
+      "example": "Hast du einen Stift für mich?"
+    },
+    {
+      "de": "der Bleistift",
+      "en": "pencil",
+      "artikel": "der",
+      "example": "Ich schreibe mit einem Bleistift."
+    },
+    {
+      "de": "lernen",
+      "en": "to learn",
+      "example": "Ich lerne jeden Tag Deutsch."
+    },
+    {
+      "de": "studieren",
+      "en": "to study (university)",
+      "example": "Sie studiert Medizin in Berlin."
+    },
+    {
+      "de": "unterrichten",
+      "en": "to teach",
+      "example": "Er unterrichtet Deutsch als Fremdsprache."
+    },
+    {
+      "de": "die Klasse",
+      "en": "class",
+      "artikel": "die",
+      "example": "Meine Klasse hat 20 Schüler."
+    },
+    {
+      "de": "der Unterricht",
+      "en": "lesson / class",
+      "artikel": "der",
+      "example": "Der Unterricht beginnt um acht Uhr."
+    },
+    {
+      "de": "der Kurs",
+      "en": "course",
+      "artikel": "der",
+      "example": "Ich mache einen Deutschkurs."
+    },
+    {
+      "de": "bestehen",
+      "en": "to pass (an exam)",
+      "example": "Ich hoffe, ich bestehe die Prüfung."
+    },
+    {
+      "de": "durchfallen",
+      "en": "to fail (an exam)",
+      "example": "Er ist leider durch die Prüfung gefallen."
+    },
+    {
+      "de": "das Zeugnis",
+      "en": "report card / certificate",
+      "artikel": "das",
+      "example": "Er hat ein gutes Zeugnis bekommen."
+    },
+    {
+      "de": "die Ferien",
+      "en": "holidays (school break)",
+      "artikel": "die",
+      "example": "In den Ferien fahren wir ans Meer."
+    },
+    {
+      "de": "das Semester",
+      "en": "semester",
+      "artikel": "das",
+      "example": "Das neue Semester beginnt im Oktober."
+    }
   ]
 }

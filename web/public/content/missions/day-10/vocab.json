@@ -1,24 +1,140 @@
 {
   "day": 10,
-  "topic": "Uhrzeit & Tagesablauf",
+  "topic": "Kleidung",
   "words": [
-    {"de": "die Uhrzeit", "en": "the time (of day)", "artikel": "die", "example": "Wie spät ist es? — Was ist die Uhrzeit?"},
-    {"de": "die Stunde", "en": "the hour", "artikel": "die", "example": "Eine Stunde hat sechzig Minuten."},
-    {"de": "die Minute", "en": "the minute", "artikel": "die", "example": "Warte bitte fünf Minuten!"},
-    {"de": "die Sekunde", "en": "the second", "artikel": "die", "example": "Das dauert nur eine Sekunde."},
-    {"de": "der Morgen", "en": "the morning", "artikel": "der", "example": "Am Morgen trinke ich Kaffee."},
-    {"de": "der Mittag", "en": "noon / midday", "artikel": "der", "example": "Wir essen um zwölf Uhr zu Mittag."},
-    {"de": "der Nachmittag", "en": "the afternoon", "artikel": "der", "example": "Am Nachmittag lerne ich Deutsch."},
-    {"de": "der Abend", "en": "the evening", "artikel": "der", "example": "Guten Abend! Wie war Ihr Tag?"},
-    {"de": "die Nacht", "en": "the night", "artikel": "die", "example": "Gute Nacht! Schlaf gut."},
-    {"de": "aufstehen", "en": "to get up", "example": "Ich stehe um sieben Uhr auf."},
-    {"de": "frühstücken", "en": "to have breakfast", "example": "Wir frühstücken um acht Uhr."},
-    {"de": "arbeiten", "en": "to work", "example": "Mein Vater arbeitet von neun bis fünf."},
-    {"de": "schlafen", "en": "to sleep", "example": "Ich schlafe acht Stunden pro Nacht."},
-    {"de": "früh", "en": "early", "example": "Ich stehe sehr früh auf."},
-    {"de": "spät", "en": "late", "example": "Es ist schon spät — geh schlafen!"},
-    {"de": "jetzt", "en": "now", "example": "Jetzt ist es zehn Uhr."},
-    {"de": "heute", "en": "today", "example": "Heute ist Montag."},
-    {"de": "morgen", "en": "tomorrow", "example": "Morgen gehe ich in die Schule."}
+    {
+      "de": "die Kleidung",
+      "en": "clothing",
+      "artikel": "die",
+      "example": "Ich brauche neue Kleidung."
+    },
+    {
+      "de": "das Hemd",
+      "en": "shirt",
+      "artikel": "das",
+      "example": "Er trägt ein weißes Hemd."
+    },
+    {
+      "de": "die Hose",
+      "en": "pants",
+      "artikel": "die",
+      "example": "Die Hose ist zu lang."
+    },
+    {
+      "de": "das T-Shirt",
+      "en": "t-shirt",
+      "artikel": "das",
+      "example": "Ich trage gern ein T-Shirt."
+    },
+    {
+      "de": "der Rock",
+      "en": "skirt",
+      "artikel": "der",
+      "example": "Sie trägt einen schwarzen Rock."
+    },
+    {
+      "de": "das Kleid",
+      "en": "dress",
+      "artikel": "das",
+      "example": "Das Kleid ist sehr schön."
+    },
+    {
+      "de": "die Jacke",
+      "en": "jacket",
+      "artikel": "die",
+      "example": "Zieh eine Jacke an, es ist kalt."
+    },
+    {
+      "de": "der Mantel",
+      "en": "coat",
+      "artikel": "der",
+      "example": "Im Winter trage ich einen Mantel."
+    },
+    {
+      "de": "die Schuhe",
+      "en": "shoes",
+      "artikel": "die",
+      "example": "Meine Schuhe sind neu."
+    },
+    {
+      "de": "die Socke",
+      "en": "sock",
+      "artikel": "die",
+      "example": "Ich brauche saubere Socken."
+    },
+    {
+      "de": "der Hut",
+      "en": "hat",
+      "artikel": "der",
+      "example": "Er trägt einen Hut in der Sonne."
+    },
+    {
+      "de": "die Mütze",
+      "en": "cap / beanie",
+      "artikel": "die",
+      "example": "Im Winter trage ich eine Mütze."
+    },
+    {
+      "de": "der Schal",
+      "en": "scarf",
+      "artikel": "der",
+      "example": "Der Schal hält meinen Hals warm."
+    },
+    {
+      "de": "die Handschuhe",
+      "en": "gloves",
+      "artikel": "die",
+      "example": "Meine Hände sind kalt, ich brauche Handschuhe."
+    },
+    {
+      "de": "der Gürtel",
+      "en": "belt",
+      "artikel": "der",
+      "example": "Der Gürtel passt nicht mehr."
+    },
+    {
+      "de": "die Krawatte",
+      "en": "tie",
+      "artikel": "die",
+      "example": "Er trägt eine Krawatte zur Arbeit."
+    },
+    {
+      "de": "der Anzug",
+      "en": "suit",
+      "artikel": "der",
+      "example": "Er trägt einen Anzug zur Hochzeit."
+    },
+    {
+      "de": "das Kleidungsstück",
+      "en": "piece of clothing",
+      "artikel": "das",
+      "example": "Dieses Kleidungsstück gefällt mir."
+    },
+    {
+      "de": "anziehen",
+      "en": "to put on (clothes)",
+      "example": "Zieh deine Jacke an!"
+    },
+    {
+      "de": "ausziehen",
+      "en": "to take off (clothes)",
+      "example": "Zieh deine Schuhe aus."
+    },
+    {
+      "de": "tragen",
+      "en": "to wear",
+      "example": "Sie trägt heute ein rotes Kleid."
+    },
+    {
+      "de": "die Größe",
+      "en": "size",
+      "artikel": "die",
+      "example": "Welche Größe brauchst du?"
+    },
+    {
+      "de": "passen",
+      "en": "to fit",
+      "example": "Die Hose passt mir nicht."
+    }
   ]
 }

@@ -1,24 +1,144 @@
 {
   "day": 16,
-  "topic": "Schule & Bildung",
+  "topic": "Verkehrsmittel",
   "words": [
-    {"de": "die Schule", "en": "the school", "artikel": "die", "example": "Ich gehe jeden Tag in die Schule."},
-    {"de": "der Lehrer / die Lehrerin", "en": "the teacher (m/f)", "artikel": "der/die", "example": "Unsere Deutschlehrerin ist sehr streng."},
-    {"de": "der Schüler / die Schülerin", "en": "the pupil (m/f)", "artikel": "der/die", "example": "Die Schüler lernen fleißig für die Prüfung."},
-    {"de": "die Klasse", "en": "the class / classroom", "artikel": "die", "example": "In meiner Klasse sind 25 Schüler."},
-    {"de": "das Fach", "en": "the subject (at school)", "artikel": "das", "example": "Mein Lieblingsfach ist Mathematik."},
-    {"de": "die Hausaufgaben", "en": "the homework (plural)", "artikel": "die", "example": "Ich mache meine Hausaufgaben nach der Schule."},
-    {"de": "die Prüfung", "en": "the exam / test", "artikel": "die", "example": "Nächste Woche schreibe ich eine Prüfung."},
-    {"de": "die Note", "en": "the grade / mark", "artikel": "die", "example": "Ich habe eine Eins in Deutsch bekommen — super!"},
-    {"de": "bestehen", "en": "to pass (an exam)", "example": "Ich hoffe, ich bestehe die Prüfung."},
-    {"de": "durchfallen", "en": "to fail (an exam)", "example": "Er ist durchgefallen — er muss die Prüfung wiederholen."},
-    {"de": "das Zeugnis", "en": "the school report / certificate", "artikel": "das", "example": "Am Ende des Schuljahres bekomme ich ein Zeugnis."},
-    {"de": "die Universität", "en": "the university", "artikel": "die", "example": "Nach dem Abitur studiert sie an der Universität."},
-    {"de": "studieren", "en": "to study (at university)", "example": "Er studiert Medizin in Berlin."},
-    {"de": "das Abitur", "en": "the German high school diploma", "artikel": "das", "example": "Mit dem Abitur kann man an die Uni gehen."},
-    {"de": "der Unterricht", "en": "the lesson / instruction", "artikel": "der", "example": "Der Unterricht beginnt um acht Uhr."},
-    {"de": "fragen", "en": "to ask", "example": "Der Schüler fragt den Lehrer eine Frage."},
-    {"de": "antworten", "en": "to answer", "example": "Kannst du die Frage antworten?"},
-    {"de": "erklären", "en": "to explain", "example": "Der Lehrer erklärt die Grammatik sehr gut."}
+    {
+      "de": "das Auto",
+      "en": "car",
+      "artikel": "das",
+      "example": "Ich fahre mit dem Auto zur Arbeit."
+    },
+    {
+      "de": "der Bus",
+      "en": "bus",
+      "artikel": "der",
+      "example": "Der Bus kommt in fünf Minuten."
+    },
+    {
+      "de": "der Zug",
+      "en": "train",
+      "artikel": "der",
+      "example": "Der Zug fährt pünktlich ab."
+    },
+    {
+      "de": "die U-Bahn",
+      "en": "subway",
+      "artikel": "die",
+      "example": "Ich fahre mit der U-Bahn zur Uni."
+    },
+    {
+      "de": "die Straßenbahn",
+      "en": "tram",
+      "artikel": "die",
+      "example": "Die Straßenbahn hält an jeder Ecke."
+    },
+    {
+      "de": "das Fahrrad",
+      "en": "bicycle",
+      "artikel": "das",
+      "example": "Ich fahre gern mit dem Fahrrad."
+    },
+    {
+      "de": "das Flugzeug",
+      "en": "airplane",
+      "artikel": "das",
+      "example": "Das Flugzeug landet um zehn Uhr."
+    },
+    {
+      "de": "das Schiff",
+      "en": "ship",
+      "artikel": "das",
+      "example": "Das Schiff fährt über den Fluss."
+    },
+    {
+      "de": "das Taxi",
+      "en": "taxi",
+      "artikel": "das",
+      "example": "Wir nehmen ein Taxi zum Flughafen."
+    },
+    {
+      "de": "der Bahnhof",
+      "en": "train station",
+      "artikel": "der",
+      "example": "Der Bahnhof ist in der Stadtmitte."
+    },
+    {
+      "de": "die Haltestelle",
+      "en": "(bus/tram) stop",
+      "artikel": "die",
+      "example": "Die Haltestelle ist gleich um die Ecke."
+    },
+    {
+      "de": "der Flughafen",
+      "en": "airport",
+      "artikel": "der",
+      "example": "Der Flughafen ist weit von hier."
+    },
+    {
+      "de": "das Ticket",
+      "en": "ticket",
+      "artikel": "das",
+      "example": "Ich habe ein Ticket für den Zug gekauft."
+    },
+    {
+      "de": "die Fahrkarte",
+      "en": "(transport) ticket",
+      "artikel": "die",
+      "example": "Die Fahrkarte kostet drei Euro."
+    },
+    {
+      "de": "fahren",
+      "en": "to drive / ride",
+      "example": "Wir fahren morgen nach Berlin."
+    },
+    {
+      "de": "fliegen",
+      "en": "to fly",
+      "example": "Wir fliegen nächste Woche nach Spanien."
+    },
+    {
+      "de": "laufen",
+      "en": "to walk / run",
+      "example": "Ich laufe jeden Morgen zur Arbeit."
+    },
+    {
+      "de": "der Führerschein",
+      "en": "driver's license",
+      "artikel": "der",
+      "example": "Ich habe letztes Jahr den Führerschein gemacht."
+    },
+    {
+      "de": "parken",
+      "en": "to park",
+      "example": "Hier darf man nicht parken."
+    },
+    {
+      "de": "der Parkplatz",
+      "en": "parking lot",
+      "artikel": "der",
+      "example": "Der Parkplatz ist voll."
+    },
+    {
+      "de": "die Ampel",
+      "en": "traffic light",
+      "artikel": "die",
+      "example": "Die Ampel ist rot."
+    },
+    {
+      "de": "die Straße",
+      "en": "street",
+      "artikel": "die",
+      "example": "Die Straße ist sehr laut."
+    },
+    {
+      "de": "verspätet",
+      "en": "delayed",
+      "example": "Der Zug ist heute verspätet."
+    },
+    {
+      "de": "umsteigen",
+      "en": "to transfer (transport)",
+      "example": "Sie müssen in Frankfurt umsteigen."
+    }
   ]
 }

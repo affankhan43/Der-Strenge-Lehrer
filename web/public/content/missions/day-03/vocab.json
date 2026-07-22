@@ -1,106 +1,136 @@
 {
   "day": 3,
-  "topic": "Zahlen, Zeit & Datum",
+  "topic": "Familie",
   "words": [
     {
-      "de": "eins",
-      "en": "one",
-      "example": "Ich habe eine Schwester."
+      "de": "die Familie",
+      "en": "family",
+      "artikel": "die",
+      "example": "Meine Familie ist sehr groß."
     },
     {
-      "de": "zwei",
-      "en": "two",
-      "example": "Ich habe zwei Brüder."
+      "de": "die Mutter",
+      "en": "mother",
+      "artikel": "die",
+      "example": "Meine Mutter kocht sehr gut."
     },
     {
-      "de": "drei",
-      "en": "three",
-      "example": "Das kostet drei Euro."
+      "de": "der Vater",
+      "en": "father",
+      "artikel": "der",
+      "example": "Mein Vater arbeitet in einer Bank."
     },
     {
-      "de": "zehn",
-      "en": "ten",
-      "example": "Er ist zehn Jahre alt."
+      "de": "die Eltern",
+      "en": "parents",
+      "artikel": "die",
+      "example": "Meine Eltern wohnen in München."
     },
     {
-      "de": "zwanzig",
-      "en": "twenty",
-      "example": "Ich bin zwanzig Jahre alt."
+      "de": "der Bruder",
+      "en": "brother",
+      "artikel": "der",
+      "example": "Ich habe einen Bruder."
     },
     {
-      "de": "hundert",
-      "en": "hundred",
-      "example": "Das kostet hundert Euro."
+      "de": "die Schwester",
+      "en": "sister",
+      "artikel": "die",
+      "example": "Meine Schwester studiert Medizin."
     },
     {
-      "de": "die Uhr",
-      "en": "clock / time",
-      "example": "Wie spät ist es? — Es ist zwei Uhr."
+      "de": "die Geschwister",
+      "en": "siblings",
+      "artikel": "die",
+      "example": "Ich habe zwei Geschwister."
     },
     {
-      "de": "die Stunde",
-      "en": "hour",
-      "example": "In einer Stunde bin ich fertig."
+      "de": "der Sohn",
+      "en": "son",
+      "artikel": "der",
+      "example": "Ihr Sohn geht in die Schule."
     },
     {
-      "de": "die Minute",
-      "en": "minute",
-      "example": "Warte fünf Minuten."
+      "de": "die Tochter",
+      "en": "daughter",
+      "artikel": "die",
+      "example": "Seine Tochter ist noch klein."
     },
     {
-      "de": "der Tag",
-      "en": "day",
-      "example": "Jeden Tag lerne ich Deutsch."
+      "de": "das Kind",
+      "en": "child",
+      "artikel": "das",
+      "example": "Das Kind spielt im Garten."
     },
     {
-      "de": "die Woche",
-      "en": "week",
-      "example": "Diese Woche lerne ich viel."
+      "de": "die Großmutter",
+      "en": "grandmother",
+      "artikel": "die",
+      "example": "Meine Großmutter erzählt gern Geschichten."
     },
     {
-      "de": "der Monat",
-      "en": "month",
-      "example": "Im nächsten Monat fahre ich nach Berlin."
+      "de": "der Großvater",
+      "en": "grandfather",
+      "artikel": "der",
+      "example": "Mein Großvater liest jeden Tag Zeitung."
     },
     {
-      "de": "das Jahr",
-      "en": "year",
-      "example": "Dieses Jahr ist besonders."
+      "de": "die Tante",
+      "en": "aunt",
+      "artikel": "die",
+      "example": "Meine Tante wohnt in Hamburg."
     },
     {
-      "de": "heute",
-      "en": "today",
-      "example": "Heute ist Montag."
+      "de": "der Onkel",
+      "en": "uncle",
+      "artikel": "der",
+      "example": "Mein Onkel fährt gern Fahrrad."
     },
     {
-      "de": "morgen",
-      "en": "tomorrow",
-      "example": "Morgen habe ich frei."
+      "de": "der Cousin",
+      "en": "cousin (male)",
+      "artikel": "der",
+      "example": "Mein Cousin ist genauso alt wie ich."
     },
     {
-      "de": "gestern",
-      "en": "yesterday",
-      "example": "Gestern habe ich viel gelernt."
+      "de": "die Cousine",
+      "en": "cousin (female)",
+      "artikel": "die",
+      "example": "Meine Cousine besucht uns oft."
     },
     {
-      "de": "jetzt",
-      "en": "now",
-      "example": "Ich lerne jetzt Deutsch."
+      "de": "der Mann",
+      "en": "husband / man",
+      "artikel": "der",
+      "example": "Ihr Mann arbeitet als Lehrer."
     },
     {
-      "de": "früh",
-      "en": "early / in the morning",
-      "example": "Ich stehe früh auf."
+      "de": "die Frau",
+      "en": "wife / woman",
+      "artikel": "die",
+      "example": "Seine Frau ist Ärztin."
     },
     {
-      "de": "spät",
-      "en": "late",
-      "example": "Es ist schon spät."
+      "de": "das Baby",
+      "en": "baby",
+      "artikel": "das",
+      "example": "Das Baby schläft im Wohnzimmer."
     },
     {
-      "de": "immer",
-      "en": "always",
-      "example": "Ich trinke immer Kaffee."
+      "de": "verheiratet",
+      "en": "married",
+      "example": "Meine Eltern sind seit 20 Jahren verheiratet."
+    },
+    {
+      "de": "ledig",
+      "en": "single (unmarried)",
+      "example": "Mein Bruder ist noch ledig."
+    },
+    {
+      "de": "die Verwandten",
+      "en": "relatives",
+      "artikel": "die",
+      "example": "Wir treffen unsere Verwandten an Weihnachten."
     }
   ]
 }

@@ -1,32 +1,106 @@
 {
   "day": 56,
-  "topic": "Rückblick A1.2",
+  "topic": "Wiederholung: Konnektoren",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "und",
+      "en": "and",
+      "example": "Ich trinke Kaffee und esse Brot."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "aber",
+      "en": "but",
+      "example": "Ich möchte kommen, aber ich habe keine Zeit."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "oder",
+      "en": "or",
+      "example": "Möchtest du Tee oder Kaffee?"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "denn",
+      "en": "because / for",
+      "example": "Ich bleibe zu Hause, denn ich bin müde."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "weil",
+      "en": "because",
+      "example": "Ich lerne Deutsch, weil ich in Berlin arbeite."
+    },
+    {
+      "de": "deshalb",
+      "en": "therefore",
+      "example": "Es regnet, deshalb bleiben wir drinnen."
+    },
+    {
+      "de": "trotzdem",
+      "en": "nevertheless",
+      "example": "Es regnet, trotzdem gehen wir spazieren."
+    },
+    {
+      "de": "außerdem",
+      "en": "furthermore / besides",
+      "example": "Das Hotel ist günstig, außerdem liegt es zentral."
+    },
+    {
+      "de": "sowohl als auch",
+      "en": "both ... and",
+      "example": "Sie spricht sowohl Deutsch als auch Englisch."
+    },
+    {
+      "de": "entweder oder",
+      "en": "either or",
+      "example": "Wir fahren entweder mit dem Zug oder mit dem Auto."
+    },
+    {
+      "de": "obwohl",
+      "en": "although",
+      "example": "Obwohl es regnet, gehen wir raus."
+    },
+    {
+      "de": "wenn",
+      "en": "if / when",
+      "example": "Wenn es regnet, bleibe ich zu Hause."
+    },
+    {
+      "de": "bevor",
+      "en": "before (conjunction)",
+      "example": "Wasch dir die Hände, bevor du isst."
+    },
+    {
+      "de": "nachdem",
+      "en": "after (conjunction)",
+      "example": "Nachdem wir gegessen haben, gehen wir spazieren."
+    },
+    {
+      "de": "während",
+      "en": "while / during",
+      "example": "Während der Pause trinke ich Kaffee."
+    },
+    {
+      "de": "sodass",
+      "en": "so that",
+      "example": "Er spricht laut, sodass alle ihn hören."
+    },
+    {
+      "de": "damit",
+      "en": "so that / in order that",
+      "example": "Ich übe jeden Tag, damit ich die Prüfung bestehe."
+    },
+    {
+      "de": "also",
+      "en": "so / therefore",
+      "example": "Ich bin krank, also bleibe ich zu Hause."
+    },
+    {
+      "de": "zum Beispiel",
+      "en": "for example",
+      "example": "Ich mag Obst, zum Beispiel Äpfel und Bananen."
+    },
+    {
+      "de": "das heißt",
+      "en": "that means / i.e.",
+      "example": "Er kommt später, das heißt gegen acht Uhr."
     }
-  ],
-  "_note": "Add 20 words about 'Rückblick A1.2'. Format: {de, en, example}"
+  ]
 }

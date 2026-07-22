@@ -1,32 +1,122 @@
 {
   "day": 30,
-  "topic": "Hotel & Unterkunft",
+  "topic": "Possessivartikel & Besitz",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "mein",
+      "en": "my (masc./neut.)",
+      "example": "Das ist mein Buch."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "meine",
+      "en": "my (fem./plural)",
+      "example": "Das ist meine Tasche."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "dein",
+      "en": "your (informal, masc./neut.)",
+      "example": "Ist das dein Auto?"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "sein (Possessiv)",
+      "en": "his / its",
+      "example": "Das ist sein Fahrrad."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "ihr",
+      "en": "her / their",
+      "example": "Das ist ihr Haus."
+    },
+    {
+      "de": "unser",
+      "en": "our",
+      "example": "Das ist unser Garten."
+    },
+    {
+      "de": "euer",
+      "en": "your (plural, informal)",
+      "example": "Ist das euer Hund?"
+    },
+    {
+      "de": "Ihr",
+      "en": "your (formal)",
+      "example": "Ist das Ihr Mantel?"
+    },
+    {
+      "de": "der Besitz",
+      "en": "possession / property",
+      "artikel": "der",
+      "example": "Das Auto ist mein Besitz."
+    },
+    {
+      "de": "besitzen",
+      "en": "to own",
+      "example": "Er besitzt ein großes Haus."
+    },
+    {
+      "de": "gehören",
+      "en": "to belong to",
+      "example": "Dieses Buch gehört mir."
+    },
+    {
+      "de": "das Eigentum",
+      "en": "property",
+      "artikel": "das",
+      "example": "Das ist privates Eigentum."
+    },
+    {
+      "de": "eigen",
+      "en": "own (adjective)",
+      "example": "Ich habe mein eigenes Zimmer."
+    },
+    {
+      "de": "leihen",
+      "en": "to lend / borrow",
+      "example": "Kannst du mir einen Stift leihen?"
+    },
+    {
+      "de": "ausleihen",
+      "en": "to borrow (e.g. from a library)",
+      "example": "Ich leihe mir ein Buch aus der Bibliothek aus."
+    },
+    {
+      "de": "zurückgeben",
+      "en": "to give back",
+      "example": "Kannst du mir mein Buch zurückgeben?"
+    },
+    {
+      "de": "weg sein (verloren)",
+      "en": "to be missing / gone",
+      "example": "Mein Schlüssel ist weg."
+    },
+    {
+      "de": "der Schlüssel",
+      "en": "key",
+      "artikel": "der",
+      "example": "Hast du den Schlüssel gesehen?"
+    },
+    {
+      "de": "die Tasche",
+      "en": "bag",
+      "artikel": "die",
+      "example": "Meine Tasche ist sehr schwer."
+    },
+    {
+      "de": "die Brieftasche",
+      "en": "wallet",
+      "artikel": "die",
+      "example": "Ich habe meine Brieftasche vergessen."
+    },
+    {
+      "de": "das Portemonnaie",
+      "en": "purse / wallet",
+      "artikel": "das",
+      "example": "Mein Portemonnaie ist leer."
+    },
+    {
+      "de": "verlegen",
+      "en": "to misplace",
+      "example": "Ich habe meine Brille verlegt."
     }
-  ],
-  "_note": "Add 20 words about 'Hotel & Unterkunft'. Format: {de, en, example}"
+  ]
 }

@@ -1,106 +1,135 @@
 {
   "day": 2,
-  "topic": "Familie & Beziehungen",
+  "topic": "Zahlen & Alphabet",
   "words": [
     {
-      "de": "die Mutter",
-      "en": "mother",
-      "example": "Meine Mutter kocht sehr gut."
+      "de": "eins",
+      "en": "one",
+      "example": "Ich zähle: eins, zwei, drei."
     },
     {
-      "de": "der Vater",
-      "en": "father",
-      "example": "Mein Vater arbeitet in Berlin."
+      "de": "zwei",
+      "en": "two",
+      "example": "Ich habe zwei Kinder."
     },
     {
-      "de": "die Schwester",
-      "en": "sister",
-      "example": "Meine Schwester heißt Lena."
+      "de": "drei",
+      "en": "three",
+      "example": "Wir sind zu dritt: drei Freunde."
     },
     {
-      "de": "der Bruder",
-      "en": "brother",
-      "example": "Ich habe einen Bruder."
+      "de": "vier",
+      "en": "four",
+      "example": "Der Tisch hat vier Beine."
     },
     {
-      "de": "die Großmutter",
-      "en": "grandmother",
-      "example": "Meine Großmutter ist 75 Jahre alt."
+      "de": "fünf",
+      "en": "five",
+      "example": "Ich arbeite fünf Tage pro Woche."
     },
     {
-      "de": "der Großvater",
-      "en": "grandfather",
-      "example": "Mein Großvater lebt in Hamburg."
+      "de": "sechs",
+      "en": "six",
+      "example": "Die Schule beginnt um sechs Uhr."
     },
     {
-      "de": "die Familie",
-      "en": "family",
-      "example": "Meine Familie ist sehr wichtig."
+      "de": "sieben",
+      "en": "seven",
+      "example": "Eine Woche hat sieben Tage."
     },
     {
-      "de": "das Kind",
-      "en": "child",
-      "example": "Das Kind spielt im Garten."
+      "de": "acht",
+      "en": "eight",
+      "example": "Ich stehe um acht Uhr auf."
     },
     {
-      "de": "die Frau",
-      "en": "woman / wife",
-      "example": "Die Frau ist Ärztin."
+      "de": "neun",
+      "en": "nine",
+      "example": "Der Laden öffnet um neun Uhr."
     },
     {
-      "de": "der Mann",
-      "en": "man / husband",
-      "example": "Der Mann liest die Zeitung."
+      "de": "zehn",
+      "en": "ten",
+      "example": "Ich zähle bis zehn."
     },
     {
-      "de": "die Freundin",
-      "en": "female friend / girlfriend",
-      "example": "Meine Freundin wohnt in Wien."
+      "de": "elf",
+      "en": "eleven",
+      "example": "Um elf Uhr mache ich Pause."
     },
     {
-      "de": "der Freund",
-      "en": "male friend / boyfriend",
-      "example": "Mein Freund ist sehr lustig."
+      "de": "zwölf",
+      "en": "twelve",
+      "example": "Ein Jahr hat zwölf Monate."
     },
     {
-      "de": "verheiratet",
-      "en": "married",
-      "example": "Meine Eltern sind verheiratet."
+      "de": "zwanzig",
+      "en": "twenty",
+      "example": "Ich bin zwanzig Jahre alt."
     },
     {
-      "de": "ledig",
-      "en": "single",
-      "example": "Ich bin noch ledig."
+      "de": "dreißig",
+      "en": "thirty",
+      "example": "Mein Onkel ist dreißig Jahre alt."
     },
     {
-      "de": "das Baby",
-      "en": "baby",
-      "example": "Das Baby schläft gerade."
+      "de": "hundert",
+      "en": "hundred",
+      "example": "Das kostet hundert Euro."
     },
     {
-      "de": "jung",
-      "en": "young",
-      "example": "Sie ist sehr jung."
+      "de": "die Zahl",
+      "en": "the number",
+      "artikel": "die",
+      "example": "Wie heißt diese Zahl?"
     },
     {
-      "de": "alt",
-      "en": "old",
-      "example": "Er ist 80 Jahre alt."
+      "de": "zählen",
+      "en": "to count",
+      "example": "Kannst du auf Deutsch zählen?"
     },
     {
-      "de": "die Eltern",
-      "en": "parents",
-      "example": "Meine Eltern wohnen in München."
+      "de": "das Alphabet",
+      "en": "the alphabet",
+      "artikel": "das",
+      "example": "Das deutsche Alphabet hat 26 Buchstaben."
     },
     {
-      "de": "das Geschwister",
-      "en": "sibling",
-      "example": "Hast du Geschwister?"
+      "de": "der Buchstabe",
+      "en": "the letter",
+      "artikel": "der",
+      "example": "Das Wort beginnt mit dem Buchstaben B."
     },
     {
-      "de": "lieben",
-      "en": "to love",
-      "example": "Ich liebe meine Familie."
+      "de": "buchstabieren",
+      "en": "to spell",
+      "example": "Kannst du deinen Namen buchstabieren?"
+    },
+    {
+      "de": "die Nummer",
+      "en": "the number (reference)",
+      "artikel": "die",
+      "example": "Wie ist deine Telefonnummer?"
+    },
+    {
+      "de": "plus",
+      "en": "plus",
+      "example": "Zwei plus zwei ist vier."
+    },
+    {
+      "de": "minus",
+      "en": "minus",
+      "example": "Zehn minus fünf ist fünf."
+    },
+    {
+      "de": "gerade",
+      "en": "even (number)",
+      "example": "Vier ist eine gerade Zahl."
+    },
+    {
+      "de": "ungerade",
+      "en": "odd (number)",
+      "example": "Fünf ist eine ungerade Zahl."
     }
   ]
 }

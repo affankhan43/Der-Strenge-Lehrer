@@ -1,32 +1,142 @@
 {
   "day": 9,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Zuhause & Möbel",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "das Haus",
+      "en": "house",
+      "artikel": "das",
+      "example": "Wir wohnen in einem kleinen Haus."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "die Wohnung",
+      "en": "apartment",
+      "artikel": "die",
+      "example": "Meine Wohnung hat drei Zimmer."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Zimmer",
+      "en": "room",
+      "artikel": "das",
+      "example": "Das Zimmer ist sehr hell."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Wohnzimmer",
+      "en": "living room",
+      "artikel": "das",
+      "example": "Wir sitzen abends im Wohnzimmer."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "das Schlafzimmer",
+      "en": "bedroom",
+      "artikel": "das",
+      "example": "Mein Schlafzimmer ist klein aber gemütlich."
+    },
+    {
+      "de": "die Küche",
+      "en": "kitchen",
+      "artikel": "die",
+      "example": "Die Küche ist neu renoviert."
+    },
+    {
+      "de": "das Badezimmer",
+      "en": "bathroom",
+      "artikel": "das",
+      "example": "Das Badezimmer hat eine Dusche."
+    },
+    {
+      "de": "der Schreibtisch",
+      "en": "desk",
+      "artikel": "der",
+      "example": "Der Laptop steht auf dem Schreibtisch."
+    },
+    {
+      "de": "der Stuhl",
+      "en": "chair",
+      "artikel": "der",
+      "example": "Der Stuhl steht am Tisch."
+    },
+    {
+      "de": "das Bett",
+      "en": "bed",
+      "artikel": "das",
+      "example": "Das Bett ist sehr bequem."
+    },
+    {
+      "de": "der Schrank",
+      "en": "closet / cabinet",
+      "artikel": "der",
+      "example": "Die Kleidung liegt im Schrank."
+    },
+    {
+      "de": "das Sofa",
+      "en": "sofa",
+      "artikel": "das",
+      "example": "Wir sitzen zusammen auf dem Sofa."
+    },
+    {
+      "de": "das Fenster",
+      "en": "window",
+      "artikel": "das",
+      "example": "Das Fenster ist geöffnet."
+    },
+    {
+      "de": "die Tür",
+      "en": "door",
+      "artikel": "die",
+      "example": "Bitte mach die Tür zu."
+    },
+    {
+      "de": "der Boden",
+      "en": "floor",
+      "artikel": "der",
+      "example": "Der Boden ist aus Holz."
+    },
+    {
+      "de": "die Wand",
+      "en": "wall",
+      "artikel": "die",
+      "example": "An der Wand hängt ein Bild."
+    },
+    {
+      "de": "die Lampe",
+      "en": "lamp",
+      "artikel": "die",
+      "example": "Die Lampe steht neben dem Bett."
+    },
+    {
+      "de": "der Spiegel",
+      "en": "mirror",
+      "artikel": "der",
+      "example": "Der Spiegel hängt im Bad."
+    },
+    {
+      "de": "der Kühlschrank",
+      "en": "refrigerator",
+      "artikel": "der",
+      "example": "Die Milch ist im Kühlschrank."
+    },
+    {
+      "de": "der Herd",
+      "en": "stove",
+      "artikel": "der",
+      "example": "Das Essen kocht auf dem Herd."
+    },
+    {
+      "de": "die Waschmaschine",
+      "en": "washing machine",
+      "artikel": "die",
+      "example": "Die Waschmaschine ist kaputt."
+    },
+    {
+      "de": "einrichten",
+      "en": "to furnish",
+      "example": "Wir richten die neue Wohnung ein."
+    },
+    {
+      "de": "gemütlich",
+      "en": "cozy",
+      "example": "Das Wohnzimmer ist sehr gemütlich."
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

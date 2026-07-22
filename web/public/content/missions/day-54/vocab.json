@@ -1,32 +1,121 @@
 {
   "day": 54,
-  "topic": "Gesundheitssystem",
+  "topic": "Verkehrsregeln & Autofahren",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Verkehrsregel",
+      "en": "traffic rule",
+      "artikel": "die",
+      "example": "Man muss die Verkehrsregeln kennen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Verkehrsschild",
+      "en": "traffic sign",
+      "artikel": "das",
+      "example": "Das Verkehrsschild zeigt ein Stoppschild."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Geschwindigkeit",
+      "en": "speed",
+      "artikel": "die",
+      "example": "Die Geschwindigkeit ist hier begrenzt."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "bremsen",
+      "en": "to brake",
+      "example": "Er musste plötzlich bremsen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "überholen",
+      "en": "to overtake / pass",
+      "example": "Bitte nicht auf der rechten Seite überholen."
+    },
+    {
+      "de": "die Autobahn",
+      "en": "highway",
+      "artikel": "die",
+      "example": "Auf der Autobahn gibt es keine Geschwindigkeitsbegrenzung."
+    },
+    {
+      "de": "tanken",
+      "en": "to refuel",
+      "example": "Wir müssen tanken, bevor wir losfahren."
+    },
+    {
+      "de": "die Tankstelle",
+      "en": "gas station",
+      "artikel": "die",
+      "example": "Die nächste Tankstelle ist zwei Kilometer entfernt."
+    },
+    {
+      "de": "das Benzin",
+      "en": "gasoline",
+      "artikel": "das",
+      "example": "Das Benzin ist heute teurer."
+    },
+    {
+      "de": "der Stau",
+      "en": "traffic jam",
+      "artikel": "der",
+      "example": "Wir stehen seit einer Stunde im Stau."
+    },
+    {
+      "de": "anschnallen",
+      "en": "to buckle up",
+      "example": "Bitte schnall dich an."
+    },
+    {
+      "de": "der Sicherheitsgurt",
+      "en": "seatbelt",
+      "artikel": "der",
+      "example": "Der Sicherheitsgurt ist Pflicht."
+    },
+    {
+      "de": "hupen",
+      "en": "to honk",
+      "example": "Er hat laut gehupt."
+    },
+    {
+      "de": "der Blinker",
+      "en": "turn signal",
+      "artikel": "der",
+      "example": "Setz den Blinker, bevor du abbiegst."
+    },
+    {
+      "de": "das Nummernschild",
+      "en": "license plate",
+      "artikel": "das",
+      "example": "Das Nummernschild ist schmutzig."
+    },
+    {
+      "de": "die Fahrschule",
+      "en": "driving school",
+      "artikel": "die",
+      "example": "Ich mache gerade die Fahrschule."
+    },
+    {
+      "de": "der Verkehr",
+      "en": "traffic",
+      "artikel": "der",
+      "example": "Der Verkehr ist heute sehr stark."
+    },
+    {
+      "de": "die Reifenpanne",
+      "en": "flat tire",
+      "artikel": "die",
+      "example": "Wir hatten unterwegs eine Reifenpanne."
+    },
+    {
+      "de": "die Werkstatt",
+      "en": "repair shop",
+      "artikel": "die",
+      "example": "Das Auto ist in der Werkstatt."
+    },
+    {
+      "de": "die Versicherung (Auto)",
+      "en": "insurance (car)",
+      "artikel": "die",
+      "example": "Meine Autoversicherung ist teuer."
     }
-  ],
-  "_note": "Add 20 words about 'Gesundheitssystem'. Format: {de, en, example}"
+  ]
 }

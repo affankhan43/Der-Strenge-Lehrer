@@ -1,111 +1,122 @@
 {
   "day": 27,
-  "topic": "Körper & Kleidung",
+  "topic": "Gefühle & Charaktereigenschaften",
   "words": [
     {
-      "de": "das Hemd",
-      "en": "the shirt",
+      "de": "das Gefühl",
+      "en": "feeling",
       "artikel": "das",
-      "example": "Er trägt ein weißes Hemd zur Arbeit."
+      "example": "Ich habe ein komisches Gefühl."
     },
     {
-      "de": "die Hose",
-      "en": "the trousers / pants",
-      "artikel": "die",
-      "example": "Ich brauche eine neue Jeans."
+      "de": "glücklich",
+      "en": "happy",
+      "example": "Ich bin heute sehr glücklich."
     },
     {
-      "de": "das Kleid",
-      "en": "the dress",
-      "artikel": "das",
-      "example": "Sie trägt ein rotes Kleid zur Hochzeit."
+      "de": "traurig",
+      "en": "sad",
+      "example": "Sie ist traurig, weil ihr Hund krank ist."
     },
     {
-      "de": "der Pullover",
-      "en": "the sweater / jumper",
-      "artikel": "der",
-      "example": "Im Winter trage ich immer einen dicken Pullover."
+      "de": "wütend",
+      "en": "angry",
+      "example": "Er ist wütend über die Verspätung."
     },
     {
-      "de": "die Jacke",
-      "en": "the jacket",
-      "artikel": "die",
-      "example": "Nimm eine Jacke — es ist kalt draußen!"
+      "de": "müde",
+      "en": "tired",
+      "example": "Ich bin nach der Arbeit sehr müde."
     },
     {
-      "de": "der Mantel",
-      "en": "the coat",
-      "artikel": "der",
-      "example": "Dieser Mantel hält warm im Winter."
+      "de": "nervös",
+      "en": "nervous",
+      "example": "Vor der Prüfung bin ich nervös."
     },
     {
-      "de": "die Socke",
-      "en": "the sock",
-      "artikel": "die",
-      "example": "Ich habe immer zwei verschiedene Socken an!"
+      "de": "ängstlich",
+      "en": "afraid / anxious",
+      "example": "Das Kind ist ängstlich im Dunkeln."
     },
     {
-      "de": "der Schuh",
-      "en": "the shoe",
-      "artikel": "der",
-      "example": "Diese Schuhe sind sehr bequem — ich trage sie jeden Tag."
+      "de": "überrascht",
+      "en": "surprised",
+      "example": "Ich war sehr überrascht von der Nachricht."
     },
     {
-      "de": "die Größe",
-      "en": "the size",
-      "artikel": "die",
-      "example": "Welche Größe haben Sie? — Ich trage Größe 40."
+      "de": "zufrieden",
+      "en": "satisfied / content",
+      "example": "Ich bin mit meiner Arbeit zufrieden."
     },
     {
-      "de": "anprobieren",
-      "en": "to try on (clothes)",
-      "example": "Kann ich dieses Kleid anprobieren?"
+      "de": "gelangweilt",
+      "en": "bored",
+      "example": "Die Kinder sind gelangweilt zu Hause."
     },
     {
-      "de": "passen",
-      "en": "to fit",
-      "example": "Die Hose passt perfekt — ich nehme sie!"
+      "de": "aufgeregt",
+      "en": "excited",
+      "example": "Ich bin aufgeregt wegen der Reise."
     },
     {
-      "de": "tragen",
-      "en": "to wear / to carry",
-      "example": "Sie trägt heute eine schöne blaue Bluse."
+      "de": "freundlich",
+      "en": "friendly",
+      "example": "Meine Nachbarn sind sehr freundlich."
     },
     {
-      "de": "die Farbe",
-      "en": "the colour",
-      "artikel": "die",
-      "example": "Welche Farbe magst du am liebsten?"
+      "de": "nett",
+      "en": "nice",
+      "example": "Er ist ein sehr netter Mensch."
     },
     {
-      "de": "der Kopf",
-      "en": "the head",
-      "artikel": "der",
-      "example": "Mir tut der Kopf weh."
+      "de": "lustig",
+      "en": "funny",
+      "example": "Der Film war sehr lustig."
     },
     {
-      "de": "die Hand",
-      "en": "the hand",
-      "artikel": "die",
-      "example": "Wasch dir die Hände vor dem Essen!"
+      "de": "ernst",
+      "en": "serious",
+      "example": "Sie ist heute sehr ernst."
     },
     {
-      "de": "das Auge",
-      "en": "the eye",
-      "artikel": "das",
-      "example": "Sie hat schöne blaue Augen."
+      "de": "schüchtern",
+      "en": "shy",
+      "example": "Mein Bruder ist ziemlich schüchtern."
     },
     {
-      "de": "der Mund",
-      "en": "the mouth",
-      "artikel": "der",
-      "example": "Öffne deinen Mund — der Arzt schaut rein."
+      "de": "mutig",
+      "en": "brave",
+      "example": "Die Feuerwehrleute sind sehr mutig."
     },
     {
-      "de": "die Nase",
-      "en": "the nose",
-      "artikel": "die",
-      "example": "Im Winter läuft mir immer die Nase."
+      "de": "faul",
+      "en": "lazy",
+      "example": "Am Sonntag bin ich etwas faul."
+    },
+    {
+      "de": "fleißig",
+      "en": "hardworking",
+      "example": "Sie ist eine sehr fleißige Studentin."
+    },
+    {
+      "de": "ehrlich",
+      "en": "honest",
+      "example": "Er ist immer ehrlich zu mir."
+    },
+    {
+      "de": "geduldig",
+      "en": "patient",
+      "example": "Meine Lehrerin ist sehr geduldig."
+    },
+    {
+      "de": "neugierig",
+      "en": "curious",
+      "example": "Die Kinder sind sehr neugierig."
+    },
+    {
+      "de": "optimistisch",
+      "en": "optimistic",
+      "example": "Ich bin optimistisch für die Zukunft."
     }
   ]
 }

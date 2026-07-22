@@ -1,106 +1,144 @@
 {
   "day": 7,
-  "topic": "Modalverben & Wünsche",
+  "topic": "Essen & Trinken",
   "words": [
     {
-      "de": "können",
-      "en": "can / to be able to",
-      "example": "Ich kann Deutsch sprechen."
+      "de": "das Brot",
+      "en": "bread",
+      "artikel": "das",
+      "example": "Ich esse jeden Morgen Brot."
     },
     {
-      "de": "müssen",
-      "en": "must / to have to",
-      "example": "Ich muss heute arbeiten."
+      "de": "das Wasser",
+      "en": "water",
+      "artikel": "das",
+      "example": "Ich trinke viel Wasser."
     },
     {
-      "de": "wollen",
-      "en": "to want to",
-      "example": "Ich will Deutsch lernen."
+      "de": "der Kaffee",
+      "en": "coffee",
+      "artikel": "der",
+      "example": "Trinkst du Kaffee am Morgen?"
     },
     {
-      "de": "dürfen",
-      "en": "may / to be allowed",
-      "example": "Darf ich hier parken?"
+      "de": "der Tee",
+      "en": "tea",
+      "artikel": "der",
+      "example": "Ich trinke lieber Tee als Kaffee."
     },
     {
-      "de": "sollen",
-      "en": "should / supposed to",
-      "example": "Ich soll um 9 Uhr da sein."
+      "de": "die Milch",
+      "en": "milk",
+      "artikel": "die",
+      "example": "Das Kind trinkt Milch."
     },
     {
-      "de": "mögen",
-      "en": "to like",
-      "example": "Ich mag Kaffee sehr."
+      "de": "der Saft",
+      "en": "juice",
+      "artikel": "der",
+      "example": "Der Orangensaft schmeckt gut."
     },
     {
-      "de": "möchten",
-      "en": "would like",
-      "example": "Ich möchte ein Bier, bitte."
+      "de": "der Käse",
+      "en": "cheese",
+      "artikel": "der",
+      "example": "Ich esse gern Käse."
     },
     {
-      "de": "brauchen",
-      "en": "to need",
-      "example": "Ich brauche Hilfe."
+      "de": "das Ei",
+      "en": "egg",
+      "artikel": "das",
+      "example": "Zum Frühstück esse ich ein Ei."
     },
     {
-      "de": "helfen",
-      "en": "to help",
-      "example": "Kannst du mir helfen?"
+      "de": "das Obst",
+      "en": "fruit",
+      "artikel": "das",
+      "example": "Obst ist gesund."
     },
     {
-      "de": "versuchen",
-      "en": "to try",
-      "example": "Ich versuche es."
+      "de": "das Gemüse",
+      "en": "vegetables",
+      "artikel": "das",
+      "example": "Ich esse jeden Tag Gemüse."
     },
     {
-      "de": "wissen",
-      "en": "to know (a fact)",
-      "example": "Ich weiß das nicht."
+      "de": "der Apfel",
+      "en": "apple",
+      "artikel": "der",
+      "example": "Der Apfel ist rot und süß."
     },
     {
-      "de": "kennen",
-      "en": "to know (a person/place)",
-      "example": "Kennst du Berlin?"
+      "de": "die Banane",
+      "en": "banana",
+      "artikel": "die",
+      "example": "Die Banane ist gelb."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Ich verstehe das nicht."
+      "de": "die Kartoffel",
+      "en": "potato",
+      "artikel": "die",
+      "example": "Wir essen heute Kartoffeln."
     },
     {
-      "de": "beginnen",
-      "en": "to begin",
-      "example": "Wann beginnt der Kurs?"
+      "de": "der Reis",
+      "en": "rice",
+      "artikel": "der",
+      "example": "Reis passt gut zu Fisch."
     },
     {
-      "de": "aufhören",
-      "en": "to stop / quit",
-      "example": "Hör auf! Das ist genug."
+      "de": "das Fleisch",
+      "en": "meat",
+      "artikel": "das",
+      "example": "Er isst kein Fleisch."
     },
     {
-      "de": "arbeiten",
-      "en": "to work",
-      "example": "Ich arbeite von 9 bis 17 Uhr."
+      "de": "der Fisch",
+      "en": "fish",
+      "artikel": "der",
+      "example": "Am Freitag essen wir Fisch."
     },
     {
-      "de": "spielen",
-      "en": "to play",
-      "example": "Die Kinder spielen im Garten."
+      "de": "der Zucker",
+      "en": "sugar",
+      "artikel": "der",
+      "example": "Ich nehme keinen Zucker im Kaffee."
     },
     {
-      "de": "lesen",
-      "en": "to read",
-      "example": "Ich lese jeden Abend."
+      "de": "das Salz",
+      "en": "salt",
+      "artikel": "das",
+      "example": "Das Essen braucht mehr Salz."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf!"
+      "de": "hungrig",
+      "en": "hungry",
+      "example": "Ich bin sehr hungrig."
     },
     {
-      "de": "hören",
-      "en": "to hear / listen",
-      "example": "Hörst du Musik?"
+      "de": "durstig",
+      "en": "thirsty",
+      "example": "Nach dem Sport bin ich durstig."
+    },
+    {
+      "de": "essen",
+      "en": "to eat",
+      "example": "Wir essen um 18 Uhr."
+    },
+    {
+      "de": "trinken",
+      "en": "to drink",
+      "example": "Was möchtest du trinken?"
+    },
+    {
+      "de": "kochen",
+      "en": "to cook",
+      "example": "Meine Mutter kocht jeden Tag."
+    },
+    {
+      "de": "schmecken",
+      "en": "to taste",
+      "example": "Das Essen schmeckt sehr gut."
     }
   ]
 }

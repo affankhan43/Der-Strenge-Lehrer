@@ -1,112 +1,135 @@
 {
   "day": 23,
-  "topic": "Familie & Verwandtschaft",
+  "topic": "Reisen & Urlaub",
   "words": [
     {
-      "de": "die Mutter",
-      "en": "the mother",
-      "artikel": "die",
-      "example": "Meine Mutter kocht sehr gut."
-    },
-    {
-      "de": "der Vater",
-      "en": "the father",
+      "de": "der Urlaub",
+      "en": "vacation",
       "artikel": "der",
-      "example": "Mein Vater ist Ingenieur bei Bosch."
+      "example": "Wir fahren im Sommer in den Urlaub."
     },
     {
-      "de": "die Eltern",
-      "en": "the parents (plural)",
+      "de": "die Reise",
+      "en": "trip / journey",
       "artikel": "die",
-      "example": "Meine Eltern wohnen in Hamburg."
+      "example": "Die Reise nach Italien war schön."
     },
     {
-      "de": "der Bruder",
-      "en": "the brother",
+      "de": "der Koffer",
+      "en": "suitcase",
       "artikel": "der",
-      "example": "Mein Bruder ist zwei Jahre älter als ich."
+      "example": "Ich packe meinen Koffer."
     },
     {
-      "de": "die Schwester",
-      "en": "the sister",
-      "artikel": "die",
-      "example": "Ich habe eine Schwester — sie heißt Anna."
-    },
-    {
-      "de": "der Großvater",
-      "en": "the grandfather",
-      "artikel": "der",
-      "example": "Mein Großvater ist 80 Jahre alt und noch fit."
-    },
-    {
-      "de": "die Großmutter",
-      "en": "the grandmother",
-      "artikel": "die",
-      "example": "Meine Großmutter macht den besten Kuchen."
-    },
-    {
-      "de": "der Onkel",
-      "en": "the uncle",
-      "artikel": "der",
-      "example": "Mein Onkel lebt in Berlin."
-    },
-    {
-      "de": "die Tante",
-      "en": "the aunt",
-      "artikel": "die",
-      "example": "Meine Tante hat drei Kinder."
-    },
-    {
-      "de": "der Cousin",
-      "en": "the cousin (male)",
-      "artikel": "der",
-      "example": "Mein Cousin spielt in einem Fußballverein."
-    },
-    {
-      "de": "die Cousine",
-      "en": "the cousin (female)",
-      "artikel": "die",
-      "example": "Meine Cousine studiert Medizin."
-    },
-    {
-      "de": "die Nichte",
-      "en": "the niece",
-      "artikel": "die",
-      "example": "Meine Nichte ist erst zwei Jahre alt."
-    },
-    {
-      "de": "der Neffe",
-      "en": "the nephew",
-      "artikel": "der",
-      "example": "Mein Neffe geht in die erste Klasse."
-    },
-    {
-      "de": "verheiratet",
-      "en": "married",
-      "example": "Sind Sie verheiratet? — Ja, seit fünf Jahren."
-    },
-    {
-      "de": "ledig",
-      "en": "single / unmarried",
-      "example": "Er ist noch ledig — er sucht die große Liebe."
-    },
-    {
-      "de": "das Kind",
-      "en": "the child",
+      "de": "das Gepäck",
+      "en": "luggage",
       "artikel": "das",
-      "example": "Das Kind ist sehr neugierig und lebhaft."
+      "example": "Das Gepäck ist sehr schwer."
     },
     {
-      "de": "die Familie",
-      "en": "the family",
-      "artikel": "die",
-      "example": "Meine Familie ist sehr groß — 15 Personen!"
+      "de": "der Reisepass",
+      "en": "passport",
+      "artikel": "der",
+      "example": "Vergiss deinen Reisepass nicht."
     },
     {
-      "de": "die Hochzeit",
-      "en": "the wedding",
+      "de": "das Visum",
+      "en": "visa",
+      "artikel": "das",
+      "example": "Ich brauche ein Visum für dieses Land."
+    },
+    {
+      "de": "buchen",
+      "en": "to book",
+      "example": "Wir buchen das Hotel online."
+    },
+    {
+      "de": "die Buchung",
+      "en": "booking",
       "artikel": "die",
-      "example": "Wir waren auf der Hochzeit meiner Cousine."
+      "example": "Die Buchung ist bestätigt."
+    },
+    {
+      "de": "der Urlaubsort",
+      "en": "vacation destination",
+      "artikel": "der",
+      "example": "Unser Urlaubsort liegt am Meer."
+    },
+    {
+      "de": "der Strand",
+      "en": "beach",
+      "artikel": "der",
+      "example": "Wir liegen den ganzen Tag am Strand."
+    },
+    {
+      "de": "das Meer",
+      "en": "sea",
+      "artikel": "das",
+      "example": "Das Meer ist heute sehr ruhig."
+    },
+    {
+      "de": "die Insel",
+      "en": "island",
+      "artikel": "die",
+      "example": "Wir verbringen die Ferien auf einer Insel."
+    },
+    {
+      "de": "das Gebirge",
+      "en": "mountain range",
+      "artikel": "das",
+      "example": "Im Gebirge ist die Luft frisch."
+    },
+    {
+      "de": "übernachten",
+      "en": "to stay overnight",
+      "example": "Wir übernachten in einem Hotel."
+    },
+    {
+      "de": "die Unterkunft",
+      "en": "accommodation",
+      "artikel": "die",
+      "example": "Die Unterkunft war sehr günstig."
+    },
+    {
+      "de": "die Jugendherberge",
+      "en": "youth hostel",
+      "artikel": "die",
+      "example": "Wir übernachten in einer Jugendherberge."
+    },
+    {
+      "de": "der Campingplatz",
+      "en": "campsite",
+      "artikel": "der",
+      "example": "Der Campingplatz liegt am See."
+    },
+    {
+      "de": "das Souvenir",
+      "en": "souvenir",
+      "artikel": "das",
+      "example": "Ich kaufe ein Souvenir für meine Familie."
+    },
+    {
+      "de": "die Sehenswürdigkeit",
+      "en": "tourist attraction",
+      "artikel": "die",
+      "example": "Diese Stadt hat viele Sehenswürdigkeiten."
+    },
+    {
+      "de": "besichtigen",
+      "en": "to visit / sightsee",
+      "example": "Wir besichtigen morgen das Museum."
+    },
+    {
+      "de": "der Tourist",
+      "en": "tourist (male)",
+      "artikel": "der",
+      "example": "Der Tourist macht viele Fotos."
+    },
+    {
+      "de": "die Touristin",
+      "en": "tourist (female)",
+      "artikel": "die",
+      "example": "Die Touristin fragt nach dem Weg."
     }
   ]
 }

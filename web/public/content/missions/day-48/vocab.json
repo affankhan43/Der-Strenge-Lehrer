@@ -1,32 +1,112 @@
 {
   "day": 48,
-  "topic": "Haustiere & Tiere",
+  "topic": "Meinung äußern",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Meinung",
+      "en": "opinion",
+      "artikel": "die",
+      "example": "Was ist deine Meinung dazu?"
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "meinen",
+      "en": "to think / mean (opinion)",
+      "example": "Ich meine, das ist eine gute Idee."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "denken",
+      "en": "to think",
+      "example": "Ich denke, das stimmt nicht."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "glauben",
+      "en": "to believe / think",
+      "example": "Ich glaube, das ist richtig."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "finden (Meinung)",
+      "en": "to find / think (opinion)",
+      "example": "Ich finde den Film sehr gut."
+    },
+    {
+      "de": "meiner Meinung nach",
+      "en": "in my opinion",
+      "example": "Meiner Meinung nach ist das falsch."
+    },
+    {
+      "de": "einverstanden sein",
+      "en": "to agree",
+      "example": "Ich bin damit einverstanden."
+    },
+    {
+      "de": "zustimmen",
+      "en": "to agree with",
+      "example": "Ich stimme dir voll zu."
+    },
+    {
+      "de": "widersprechen",
+      "en": "to contradict / disagree",
+      "example": "Ich muss dir widersprechen."
+    },
+    {
+      "de": "die Zustimmung",
+      "en": "agreement / approval",
+      "artikel": "die",
+      "example": "Wir brauchen die Zustimmung aller."
+    },
+    {
+      "de": "der Streit",
+      "en": "argument / dispute",
+      "artikel": "der",
+      "example": "Sie hatten einen Streit über Politik."
+    },
+    {
+      "de": "sich streiten",
+      "en": "to argue",
+      "example": "Meine Geschwister streiten sich oft."
+    },
+    {
+      "de": "überzeugen",
+      "en": "to convince",
+      "example": "Kannst du ihn überzeugen?"
+    },
+    {
+      "de": "diskutieren",
+      "en": "to discuss",
+      "example": "Wir diskutieren über das Thema."
+    },
+    {
+      "de": "die Diskussion",
+      "en": "discussion",
+      "artikel": "die",
+      "example": "Die Diskussion war sehr interessant."
+    },
+    {
+      "de": "der Standpunkt",
+      "en": "point of view",
+      "artikel": "der",
+      "example": "Jeder hat einen anderen Standpunkt."
+    },
+    {
+      "de": "betonen",
+      "en": "to emphasize",
+      "example": "Er betont, wie wichtig das ist."
+    },
+    {
+      "de": "erwähnen",
+      "en": "to mention",
+      "example": "Sie hat das gestern erwähnt."
+    },
+    {
+      "de": "bezweifeln",
+      "en": "to doubt",
+      "example": "Ich bezweifle, dass das stimmt."
+    },
+    {
+      "de": "der Zweifel",
+      "en": "doubt",
+      "artikel": "der",
+      "example": "Ich habe keinen Zweifel daran."
     }
-  ],
-  "_note": "Add 20 words about 'Haustiere & Tiere'. Format: {de, en, example}"
+  ]
 }

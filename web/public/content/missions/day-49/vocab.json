@@ -1,32 +1,116 @@
 {
   "day": 49,
-  "topic": "Schule & Bildung",
+  "topic": "Telefonieren",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Telefon",
+      "en": "telephone",
+      "artikel": "das",
+      "example": "Das Telefon klingelt."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "telefonieren",
+      "en": "to talk on the phone",
+      "example": "Ich telefoniere gerade mit meiner Mutter."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Telefonnummer",
+      "en": "phone number",
+      "artikel": "die",
+      "example": "Kannst du mir deine Telefonnummer geben?"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Gespräch",
+      "en": "conversation / call",
+      "artikel": "das",
+      "example": "Das Gespräch dauerte eine Stunde."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "klingeln",
+      "en": "to ring",
+      "example": "Das Telefon klingelt schon lange."
+    },
+    {
+      "de": "abnehmen (Telefon)",
+      "en": "to pick up (the phone)",
+      "example": "Warum nimmst du nicht ab?"
+    },
+    {
+      "de": "auflegen",
+      "en": "to hang up",
+      "example": "Sie hat einfach aufgelegt."
+    },
+    {
+      "de": "besetzt",
+      "en": "busy (line)",
+      "example": "Die Leitung ist besetzt."
+    },
+    {
+      "de": "die Mailbox",
+      "en": "voicemail",
+      "artikel": "die",
+      "example": "Ich habe eine Nachricht auf der Mailbox."
+    },
+    {
+      "de": "die SMS",
+      "en": "text message",
+      "artikel": "die",
+      "example": "Ich schicke dir eine SMS."
+    },
+    {
+      "de": "simsen",
+      "en": "to text",
+      "example": "Kannst du mir später simsen?"
+    },
+    {
+      "de": "der Rückruf",
+      "en": "callback",
+      "artikel": "der",
+      "example": "Ich warte auf deinen Rückruf."
+    },
+    {
+      "de": "das Freizeichen",
+      "en": "dial tone",
+      "artikel": "das",
+      "example": "Ich höre nur das Freizeichen."
+    },
+    {
+      "de": "die Vorwahl",
+      "en": "area code",
+      "artikel": "die",
+      "example": "Wie ist die Vorwahl für Berlin?"
+    },
+    {
+      "de": "das Gespräch beenden",
+      "en": "to end the call",
+      "example": "Ich muss das Gespräch jetzt beenden."
+    },
+    {
+      "de": "stumm schalten",
+      "en": "to mute",
+      "example": "Bitte schalte dein Mikrofon stumm."
+    },
+    {
+      "de": "der Videoanruf",
+      "en": "video call",
+      "artikel": "der",
+      "example": "Wir machen einen Videoanruf mit Oma."
+    },
+    {
+      "de": "die Verbindung",
+      "en": "connection",
+      "artikel": "die",
+      "example": "Die Verbindung ist sehr schlecht."
+    },
+    {
+      "de": "unterbrechen",
+      "en": "to interrupt",
+      "example": "Entschuldigung, darf ich dich unterbrechen?"
+    },
+    {
+      "de": "erreichbar sein",
+      "en": "to be reachable",
+      "example": "Ich bin den ganzen Tag erreichbar."
     }
-  ],
-  "_note": "Add 20 words about 'Schule & Bildung'. Format: {de, en, example}"
+  ]
 }

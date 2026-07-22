@@ -1,24 +1,131 @@
 {
   "day": 15,
-  "topic": "Im Restaurant & Essen",
+  "topic": "Einkaufen",
   "words": [
-    {"de": "das Restaurant", "en": "the restaurant", "artikel": "das", "example": "Wir gehen heute Abend ins Restaurant."},
-    {"de": "der Kellner", "en": "the waiter (male)", "artikel": "der", "example": "Der Kellner bringt die Speisekarte."},
-    {"de": "die Kellnerin", "en": "the waitress", "artikel": "die", "example": "Die Kellnerin empfiehlt das Tagesessen."},
-    {"de": "die Speisekarte", "en": "the menu", "artikel": "die", "example": "Darf ich bitte die Speisekarte haben?"},
-    {"de": "bestellen", "en": "to order", "example": "Ich bestelle die Suppe und einen Salat."},
-    {"de": "die Vorspeise", "en": "the starter", "artikel": "die", "example": "Als Vorspeise nehme ich die Tomatensuppe."},
-    {"de": "die Hauptspeise", "en": "the main course", "artikel": "die", "example": "Die Hauptspeise ist Schnitzel mit Pommes."},
-    {"de": "der Nachtisch", "en": "the dessert", "artikel": "der", "example": "Als Nachtisch möchte ich Schokoladenkuchen."},
-    {"de": "das Getränk", "en": "the drink / beverage", "artikel": "das", "example": "Was trinken Sie? — Ein Mineralwasser, bitte."},
-    {"de": "lecker", "en": "delicious / tasty", "example": "Das Essen ist sehr lecker — Kompliment an den Koch!"},
-    {"de": "schmecken", "en": "to taste (good)", "example": "Wie schmeckt die Suppe? — Sie schmeckt sehr gut!"},
-    {"de": "die Rechnung", "en": "the bill", "artikel": "die", "example": "Die Rechnung, bitte! — Können wir zahlen?"},
-    {"de": "das Trinkgeld", "en": "the tip", "artikel": "das", "example": "In Deutschland gibt man etwa 10% Trinkgeld."},
-    {"de": "empfehlen", "en": "to recommend", "example": "Was empfehlen Sie heute? — Das Wiener Schnitzel."},
-    {"de": "vegetarisch", "en": "vegetarian", "example": "Haben Sie etwas Vegetarisches auf der Karte?"},
-    {"de": "die Portion", "en": "the portion", "artikel": "die", "example": "Die Portionen hier sind sehr groß!"},
-    {"de": "reservieren", "en": "to reserve / book a table", "example": "Ich möchte einen Tisch für zwei Personen reservieren."},
-    {"de": "der Hunger", "en": "the hunger", "artikel": "der", "example": "Ich habe großen Hunger — lass uns essen!"}
+    {
+      "de": "einkaufen",
+      "en": "to shop",
+      "example": "Ich gehe heute einkaufen."
+    },
+    {
+      "de": "der Supermarkt",
+      "en": "supermarket",
+      "artikel": "der",
+      "example": "Ich kaufe im Supermarkt ein."
+    },
+    {
+      "de": "das Geschäft",
+      "en": "store / shop",
+      "artikel": "das",
+      "example": "Das Geschäft öffnet um neun Uhr."
+    },
+    {
+      "de": "der Markt",
+      "en": "market",
+      "artikel": "der",
+      "example": "Am Samstag gehen wir auf den Markt."
+    },
+    {
+      "de": "die Kasse",
+      "en": "checkout / register",
+      "artikel": "die",
+      "example": "Bitte zahlen Sie an der Kasse."
+    },
+    {
+      "de": "das Geld",
+      "en": "money",
+      "artikel": "das",
+      "example": "Ich habe nicht viel Geld dabei."
+    },
+    {
+      "de": "der Preis",
+      "en": "price",
+      "artikel": "der",
+      "example": "Der Preis ist sehr hoch."
+    },
+    {
+      "de": "billig",
+      "en": "cheap",
+      "example": "Dieses Brot ist sehr billig."
+    },
+    {
+      "de": "teuer",
+      "en": "expensive",
+      "example": "Das Auto ist zu teuer."
+    },
+    {
+      "de": "die Kreditkarte",
+      "en": "credit card",
+      "artikel": "die",
+      "example": "Ich zahle mit Kreditkarte."
+    },
+    {
+      "de": "das Bargeld",
+      "en": "cash",
+      "artikel": "das",
+      "example": "Ich habe kein Bargeld dabei."
+    },
+    {
+      "de": "der Einkaufswagen",
+      "en": "shopping cart",
+      "artikel": "der",
+      "example": "Der Einkaufswagen ist voll."
+    },
+    {
+      "de": "die Einkaufsliste",
+      "en": "shopping list",
+      "artikel": "die",
+      "example": "Ich schreibe eine Einkaufsliste."
+    },
+    {
+      "de": "kaufen",
+      "en": "to buy",
+      "example": "Ich möchte ein Brot kaufen."
+    },
+    {
+      "de": "verkaufen",
+      "en": "to sell",
+      "example": "Er verkauft sein altes Auto."
+    },
+    {
+      "de": "der Rabatt",
+      "en": "discount",
+      "artikel": "der",
+      "example": "Es gibt 20% Rabatt auf Schuhe."
+    },
+    {
+      "de": "das Angebot",
+      "en": "offer / deal",
+      "artikel": "das",
+      "example": "Das ist ein gutes Angebot."
+    },
+    {
+      "de": "die Tüte",
+      "en": "bag",
+      "artikel": "die",
+      "example": "Ich brauche eine Tüte für die Äpfel."
+    },
+    {
+      "de": "der Kunde",
+      "en": "customer (male)",
+      "artikel": "der",
+      "example": "Der Kunde ist zufrieden."
+    },
+    {
+      "de": "die Kundin",
+      "en": "customer (female)",
+      "artikel": "die",
+      "example": "Die Kundin fragt nach dem Preis."
+    },
+    {
+      "de": "anprobieren",
+      "en": "to try on",
+      "example": "Kann ich das Kleid anprobieren?"
+    },
+    {
+      "de": "umtauschen",
+      "en": "to exchange (goods)",
+      "example": "Ich möchte die Schuhe umtauschen."
+    }
   ]
 }

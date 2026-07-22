@@ -1,32 +1,118 @@
 {
   "day": 34,
-  "topic": "Sport & Fitness",
+  "topic": "Jahreszeiten",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Jahreszeit",
+      "en": "season",
+      "artikel": "die",
+      "example": "Welche Jahreszeit magst du am liebsten?"
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Frühling",
+      "en": "spring",
+      "artikel": "der",
+      "example": "Im Frühling blühen die Blumen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Sommer",
+      "en": "summer",
+      "artikel": "der",
+      "example": "Im Sommer fahren wir ans Meer."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Herbst",
+      "en": "autumn / fall",
+      "artikel": "der",
+      "example": "Im Herbst fallen die Blätter."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Winter",
+      "en": "winter",
+      "artikel": "der",
+      "example": "Im Winter schneit es oft."
+    },
+    {
+      "de": "warm",
+      "en": "warm",
+      "example": "Im Sommer ist es warm."
+    },
+    {
+      "de": "mild",
+      "en": "mild",
+      "example": "Der Winter war dieses Jahr sehr mild."
+    },
+    {
+      "de": "frostig",
+      "en": "frosty",
+      "example": "Heute Morgen war es frostig."
+    },
+    {
+      "de": "das Blatt",
+      "en": "leaf",
+      "artikel": "das",
+      "example": "Das Blatt fällt vom Baum."
+    },
+    {
+      "de": "die Ernte",
+      "en": "harvest",
+      "artikel": "die",
+      "example": "Die Ernte beginnt im Herbst."
+    },
+    {
+      "de": "blühen",
+      "en": "to bloom",
+      "example": "Die Bäume blühen im April."
+    },
+    {
+      "de": "wachsen",
+      "en": "to grow",
+      "example": "Die Pflanzen wachsen schnell im Sommer."
+    },
+    {
+      "de": "die Blüte",
+      "en": "blossom / bloom",
+      "artikel": "die",
+      "example": "Die Kirschblüte ist sehr schön."
+    },
+    {
+      "de": "das Eis",
+      "en": "ice",
+      "artikel": "das",
+      "example": "Der See ist im Winter voller Eis."
+    },
+    {
+      "de": "frieren",
+      "en": "to freeze",
+      "example": "Ich friere, mir ist kalt."
+    },
+    {
+      "de": "schwitzen",
+      "en": "to sweat",
+      "example": "Im Sommer schwitze ich viel."
+    },
+    {
+      "de": "die Hitze",
+      "en": "heat",
+      "artikel": "die",
+      "example": "Die Hitze im August ist unangenehm."
+    },
+    {
+      "de": "die Kälte",
+      "en": "cold (noun)",
+      "artikel": "die",
+      "example": "Die Kälte im Winter ist streng."
+    },
+    {
+      "de": "sich verändern",
+      "en": "to change",
+      "example": "Die Natur verändert sich mit den Jahreszeiten."
+    },
+    {
+      "de": "der Wechsel",
+      "en": "change / transition",
+      "artikel": "der",
+      "example": "Der Wechsel der Jahreszeiten ist schön."
     }
-  ],
-  "_note": "Add 20 words about 'Sport & Fitness'. Format: {de, en, example}"
+  ]
 }

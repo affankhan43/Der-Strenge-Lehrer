@@ -1,32 +1,121 @@
 {
   "day": 32,
-  "topic": "Jahreszeiten",
+  "topic": "Einladungen & Verabredungen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "einladen",
+      "en": "to invite",
+      "example": "Ich lade dich zu meiner Party ein."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Einladung",
+      "en": "invitation",
+      "artikel": "die",
+      "example": "Danke für die Einladung!"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Party",
+      "en": "party",
+      "artikel": "die",
+      "example": "Die Party beginnt um acht Uhr."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "feiern",
+      "en": "to celebrate",
+      "example": "Wir feiern heute meinen Geburtstag."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Geburtstag",
+      "en": "birthday",
+      "artikel": "der",
+      "example": "Herzlichen Glückwunsch zum Geburtstag!"
+    },
+    {
+      "de": "die Verabredung",
+      "en": "arrangement / date",
+      "artikel": "die",
+      "example": "Ich habe eine Verabredung um sechs Uhr."
+    },
+    {
+      "de": "sich treffen",
+      "en": "to meet up",
+      "example": "Wir treffen uns am Bahnhof."
+    },
+    {
+      "de": "vorschlagen",
+      "en": "to suggest",
+      "example": "Ich schlage vor, dass wir ins Kino gehen."
+    },
+    {
+      "de": "der Vorschlag",
+      "en": "suggestion",
+      "artikel": "der",
+      "example": "Das ist ein guter Vorschlag."
+    },
+    {
+      "de": "zusagen",
+      "en": "to accept (an invitation)",
+      "example": "Ich sage gerne zu."
+    },
+    {
+      "de": "absagen",
+      "en": "to cancel / decline",
+      "example": "Ich muss die Verabredung leider absagen."
+    },
+    {
+      "de": "verschieben",
+      "en": "to postpone",
+      "example": "Können wir das Treffen verschieben?"
+    },
+    {
+      "de": "pünktlich sein",
+      "en": "to be on time",
+      "example": "Bitte sei pünktlich."
+    },
+    {
+      "de": "sich verspäten",
+      "en": "to be late",
+      "example": "Entschuldigung, ich habe mich verspätet."
+    },
+    {
+      "de": "der Gastgeber",
+      "en": "host (male)",
+      "artikel": "der",
+      "example": "Der Gastgeber begrüßt alle Gäste."
+    },
+    {
+      "de": "die Gastgeberin",
+      "en": "host (female)",
+      "artikel": "die",
+      "example": "Die Gastgeberin hat alles vorbereitet."
+    },
+    {
+      "de": "mitbringen",
+      "en": "to bring along",
+      "example": "Soll ich etwas mitbringen?"
+    },
+    {
+      "de": "das Geschenk",
+      "en": "gift",
+      "artikel": "das",
+      "example": "Ich habe ein kleines Geschenk für dich."
+    },
+    {
+      "de": "gratulieren",
+      "en": "to congratulate",
+      "example": "Ich gratuliere dir zur Prüfung!"
+    },
+    {
+      "de": "die Glückwünsche",
+      "en": "congratulations",
+      "artikel": "die",
+      "example": "Herzliche Glückwünsche zur Hochzeit!"
+    },
+    {
+      "de": "die Hochzeit",
+      "en": "wedding",
+      "artikel": "die",
+      "example": "Die Hochzeit findet im Juni statt."
     }
-  ],
-  "_note": "Add 20 words about 'Jahreszeiten'. Format: {de, en, example}"
+  ]
 }

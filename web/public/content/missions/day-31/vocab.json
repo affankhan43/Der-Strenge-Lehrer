@@ -1,32 +1,111 @@
 {
   "day": 31,
-  "topic": "Wetter & Klima",
+  "topic": "Präpositionen (Ort)",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "in",
+      "en": "in",
+      "example": "Das Buch liegt in der Tasche."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "auf",
+      "en": "on",
+      "example": "Die Tasse steht auf dem Tisch."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "unter",
+      "en": "under",
+      "example": "Die Katze schläft unter dem Bett."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "über",
+      "en": "above / over",
+      "example": "Die Lampe hängt über dem Tisch."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "an",
+      "en": "at / on (vertical surface)",
+      "example": "Das Bild hängt an der Wand."
+    },
+    {
+      "de": "bei",
+      "en": "at / with (someone's place)",
+      "example": "Ich bin bei meiner Freundin."
+    },
+    {
+      "de": "mit",
+      "en": "with",
+      "example": "Ich gehe mit meinem Bruder einkaufen."
+    },
+    {
+      "de": "ohne",
+      "en": "without",
+      "example": "Ich trinke Kaffee ohne Zucker."
+    },
+    {
+      "de": "für",
+      "en": "for",
+      "example": "Das Geschenk ist für dich."
+    },
+    {
+      "de": "durch",
+      "en": "through",
+      "example": "Wir gehen durch den Park."
+    },
+    {
+      "de": "um",
+      "en": "around",
+      "example": "Die Kinder sitzen um den Tisch."
+    },
+    {
+      "de": "außerhalb",
+      "en": "outside of",
+      "example": "Er wohnt außerhalb der Stadt."
+    },
+    {
+      "de": "innerhalb",
+      "en": "inside of / within",
+      "example": "Bitte antworten Sie innerhalb einer Woche."
+    },
+    {
+      "de": "oben",
+      "en": "above / upstairs",
+      "example": "Das Bad ist oben."
+    },
+    {
+      "de": "unten",
+      "en": "below / downstairs",
+      "example": "Die Küche ist unten."
+    },
+    {
+      "de": "drinnen",
+      "en": "inside",
+      "example": "Bei Regen bleiben wir drinnen."
+    },
+    {
+      "de": "draußen",
+      "en": "outside",
+      "example": "Die Kinder spielen draußen."
+    },
+    {
+      "de": "mitten in",
+      "en": "in the middle of",
+      "example": "Wir stehen mitten in der Stadt."
+    },
+    {
+      "de": "überall",
+      "en": "everywhere",
+      "example": "Ich habe überall gesucht."
+    },
+    {
+      "de": "nirgendwo",
+      "en": "nowhere",
+      "example": "Meine Schlüssel sind nirgendwo zu finden."
+    },
+    {
+      "de": "irgendwo",
+      "en": "somewhere",
+      "example": "Ich habe die Brille irgendwo liegen lassen."
     }
-  ],
-  "_note": "Add 20 words about 'Wetter & Klima'. Format: {de, en, example}"
+  ]
 }

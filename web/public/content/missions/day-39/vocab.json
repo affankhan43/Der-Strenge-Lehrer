@@ -1,32 +1,119 @@
 {
   "day": 39,
-  "topic": "Technik & Smartphone",
+  "topic": "Körperpflege",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "sich waschen",
+      "en": "to wash oneself",
+      "example": "Ich wasche mich jeden Morgen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Seife",
+      "en": "soap",
+      "artikel": "die",
+      "example": "Die Seife riecht nach Lavendel."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Shampoo",
+      "en": "shampoo",
+      "artikel": "das",
+      "example": "Ich brauche neues Shampoo."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "sich kämmen",
+      "en": "to comb one's hair",
+      "example": "Sie kämmt sich vor dem Spiegel."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Kamm",
+      "en": "comb",
+      "artikel": "der",
+      "example": "Wo ist mein Kamm?"
+    },
+    {
+      "de": "die Bürste",
+      "en": "brush",
+      "artikel": "die",
+      "example": "Ich benutze eine Bürste für meine Haare."
+    },
+    {
+      "de": "sich rasieren",
+      "en": "to shave",
+      "example": "Er rasiert sich jeden Morgen."
+    },
+    {
+      "de": "der Rasierer",
+      "en": "razor",
+      "artikel": "der",
+      "example": "Der Rasierer ist im Badschrank."
+    },
+    {
+      "de": "sich schminken",
+      "en": "to put on makeup",
+      "example": "Sie schminkt sich vor der Arbeit."
+    },
+    {
+      "de": "die Zahnbürste",
+      "en": "toothbrush",
+      "artikel": "die",
+      "example": "Meine Zahnbürste ist neu."
+    },
+    {
+      "de": "die Zahnpasta",
+      "en": "toothpaste",
+      "artikel": "die",
+      "example": "Ich brauche noch Zahnpasta."
+    },
+    {
+      "de": "sich die Zähne putzen",
+      "en": "to brush one's teeth",
+      "example": "Putz dir die Zähne vor dem Schlafen."
+    },
+    {
+      "de": "das Handtuch",
+      "en": "towel",
+      "artikel": "das",
+      "example": "Das Handtuch hängt im Bad."
+    },
+    {
+      "de": "die Creme",
+      "en": "cream / lotion",
+      "artikel": "die",
+      "example": "Ich benutze jeden Tag Creme."
+    },
+    {
+      "de": "das Parfüm",
+      "en": "perfume",
+      "artikel": "das",
+      "example": "Das Parfüm riecht sehr gut."
+    },
+    {
+      "de": "die Nagelschere",
+      "en": "nail scissors",
+      "artikel": "die",
+      "example": "Ich brauche eine Nagelschere."
+    },
+    {
+      "de": "sich die Nägel schneiden",
+      "en": "to cut one's nails",
+      "example": "Ich schneide mir die Nägel einmal pro Woche."
+    },
+    {
+      "de": "die Dusche",
+      "en": "shower (noun)",
+      "artikel": "die",
+      "example": "Die Dusche ist neu."
+    },
+    {
+      "de": "die Badewanne",
+      "en": "bathtub",
+      "artikel": "die",
+      "example": "Ich entspanne gern in der Badewanne."
+    },
+    {
+      "de": "sich entspannen",
+      "en": "to relax (oneself)",
+      "example": "Nach der Arbeit entspanne ich mich."
     }
-  ],
-  "_note": "Add 20 words about 'Technik & Smartphone'. Format: {de, en, example}"
+  ]
 }

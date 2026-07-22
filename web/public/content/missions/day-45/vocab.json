@@ -1,32 +1,125 @@
 {
   "day": 45,
-  "topic": "Familie & Generationen",
+  "topic": "Am Flughafen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Check-in",
+      "en": "check-in",
+      "artikel": "der",
+      "example": "Der Check-in dauert nicht lange."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "einchecken",
+      "en": "to check in",
+      "example": "Wir checken zwei Stunden vor dem Flug ein."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Gate",
+      "en": "gate",
+      "artikel": "das",
+      "example": "Unser Gate ist B12."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Boarding",
+      "en": "boarding",
+      "artikel": "das",
+      "example": "Das Boarding beginnt in 20 Minuten."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Abflug",
+      "en": "departure",
+      "artikel": "der",
+      "example": "Der Abflug ist um 14 Uhr."
+    },
+    {
+      "de": "die Ankunft",
+      "en": "arrival",
+      "artikel": "die",
+      "example": "Die Ankunft ist für 18 Uhr geplant."
+    },
+    {
+      "de": "die Landung",
+      "en": "landing",
+      "artikel": "die",
+      "example": "Die Landung war sehr sanft."
+    },
+    {
+      "de": "der Start",
+      "en": "take-off",
+      "artikel": "der",
+      "example": "Der Start war etwas holprig."
+    },
+    {
+      "de": "die Sicherheitskontrolle",
+      "en": "security check",
+      "artikel": "die",
+      "example": "Die Sicherheitskontrolle dauerte lange."
+    },
+    {
+      "de": "die Passkontrolle",
+      "en": "passport control",
+      "artikel": "die",
+      "example": "An der Passkontrolle gab es eine lange Schlange."
+    },
+    {
+      "de": "der Zoll",
+      "en": "customs",
+      "artikel": "der",
+      "example": "Am Zoll müssen wir die Koffer zeigen."
+    },
+    {
+      "de": "das Handgepäck",
+      "en": "hand luggage",
+      "artikel": "das",
+      "example": "Mein Handgepäck ist sehr leicht."
+    },
+    {
+      "de": "der Sitzplatz",
+      "en": "seat",
+      "artikel": "der",
+      "example": "Mein Sitzplatz ist am Fenster."
+    },
+    {
+      "de": "das Gepäckband",
+      "en": "baggage carousel",
+      "artikel": "das",
+      "example": "Unser Koffer kommt auf Band drei."
+    },
+    {
+      "de": "die Fluggesellschaft",
+      "en": "airline",
+      "artikel": "die",
+      "example": "Diese Fluggesellschaft ist sehr pünktlich."
+    },
+    {
+      "de": "die Bordkarte",
+      "en": "boarding pass",
+      "artikel": "die",
+      "example": "Zeigen Sie bitte Ihre Bordkarte."
+    },
+    {
+      "de": "der Flugbegleiter",
+      "en": "flight attendant (male)",
+      "artikel": "der",
+      "example": "Der Flugbegleiter bringt Getränke."
+    },
+    {
+      "de": "die Flugbegleiterin",
+      "en": "flight attendant (female)",
+      "artikel": "die",
+      "example": "Die Flugbegleiterin ist sehr freundlich."
+    },
+    {
+      "de": "die Zwischenlandung",
+      "en": "layover",
+      "artikel": "die",
+      "example": "Wir haben eine Zwischenlandung in Wien."
+    },
+    {
+      "de": "der Direktflug",
+      "en": "direct flight",
+      "artikel": "der",
+      "example": "Ich bevorzuge einen Direktflug."
     }
-  ],
-  "_note": "Add 20 words about 'Familie & Generationen'. Format: {de, en, example}"
+  ]
 }

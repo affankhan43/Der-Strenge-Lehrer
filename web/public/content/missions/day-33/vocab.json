@@ -1,32 +1,128 @@
 {
   "day": 33,
-  "topic": "Freizeit & Hobbys",
+  "topic": "Post & Kommunikation",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Brief",
+      "en": "letter",
+      "artikel": "der",
+      "example": "Ich schreibe einen Brief an meine Oma."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Paket",
+      "en": "package",
+      "artikel": "das",
+      "example": "Das Paket ist heute angekommen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Umschlag",
+      "en": "envelope",
+      "artikel": "der",
+      "example": "Steck den Brief in den Umschlag."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Briefmarke",
+      "en": "stamp",
+      "artikel": "die",
+      "example": "Ich brauche eine Briefmarke für den Brief."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "senden",
+      "en": "to send",
+      "example": "Ich sende dir die Dokumente per Post."
+    },
+    {
+      "de": "empfangen",
+      "en": "to receive",
+      "example": "Hast du meinen Brief empfangen?"
+    },
+    {
+      "de": "der Absender",
+      "en": "sender",
+      "artikel": "der",
+      "example": "Der Absender steht oben links."
+    },
+    {
+      "de": "der Empfänger",
+      "en": "recipient",
+      "artikel": "der",
+      "example": "Der Empfänger wohnt in Hamburg."
+    },
+    {
+      "de": "die Adresse",
+      "en": "address",
+      "artikel": "die",
+      "example": "Wie ist deine Adresse?"
+    },
+    {
+      "de": "unterschreiben",
+      "en": "to sign",
+      "example": "Bitte unterschreiben Sie hier."
+    },
+    {
+      "de": "das Formular",
+      "en": "form",
+      "artikel": "das",
+      "example": "Füllen Sie bitte das Formular aus."
+    },
+    {
+      "de": "ausfüllen",
+      "en": "to fill out",
+      "example": "Können Sie dieses Formular ausfüllen?"
+    },
+    {
+      "de": "die Unterschrift",
+      "en": "signature",
+      "artikel": "die",
+      "example": "Ihre Unterschrift fehlt noch."
+    },
+    {
+      "de": "der Stempel",
+      "en": "stamp / seal",
+      "artikel": "der",
+      "example": "Der Brief braucht noch einen Stempel."
+    },
+    {
+      "de": "zustellen",
+      "en": "to deliver",
+      "example": "Die Post stellt Pakete jeden Tag zu."
+    },
+    {
+      "de": "die Postkarte",
+      "en": "postcard",
+      "artikel": "die",
+      "example": "Ich schicke dir eine Postkarte aus Italien."
+    },
+    {
+      "de": "dringend",
+      "en": "urgent",
+      "example": "Diese Nachricht ist sehr dringend."
+    },
+    {
+      "de": "die Nachricht hinterlassen",
+      "en": "to leave a message",
+      "example": "Ich hinterlasse eine Nachricht auf der Mailbox."
+    },
+    {
+      "de": "der Anruf",
+      "en": "phone call",
+      "artikel": "der",
+      "example": "Ich habe einen Anruf verpasst."
+    },
+    {
+      "de": "verpassen",
+      "en": "to miss (a call, event)",
+      "example": "Ich habe den Bus verpasst."
+    },
+    {
+      "de": "zurückrufen",
+      "en": "to call back",
+      "example": "Ich rufe dich später zurück."
+    },
+    {
+      "de": "benachrichtigen",
+      "en": "to notify",
+      "example": "Wir benachrichtigen Sie, sobald es fertig ist."
     }
-  ],
-  "_note": "Add 20 words about 'Freizeit & Hobbys'. Format: {de, en, example}"
+  ]
 }

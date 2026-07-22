@@ -1,32 +1,114 @@
 {
   "day": 50,
-  "topic": "Beruf & Karriere",
+  "topic": "Wochenplan & Termine",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Kalender",
+      "en": "calendar",
+      "artikel": "der",
+      "example": "Ich schreibe alles in meinen Kalender."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Termin (planen)",
+      "en": "appointment (to schedule)",
+      "artikel": "der",
+      "example": "Wann passt dir ein Termin?"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "planen",
+      "en": "to plan",
+      "example": "Wir planen das Wochenende zusammen."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Plan",
+      "en": "plan",
+      "artikel": "der",
+      "example": "Hast du schon einen Plan für morgen?"
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "eintragen",
+      "en": "to enter / note down",
+      "example": "Ich trage den Termin in den Kalender ein."
+    },
+    {
+      "de": "erinnern",
+      "en": "to remind",
+      "example": "Erinnerst du mich an den Termin?"
+    },
+    {
+      "de": "die Erinnerung",
+      "en": "reminder",
+      "artikel": "die",
+      "example": "Ich habe eine Erinnerung eingestellt."
+    },
+    {
+      "de": "bevorstehend",
+      "en": "upcoming",
+      "example": "Ich freue mich auf das bevorstehende Wochenende."
+    },
+    {
+      "de": "die Frist einhalten",
+      "en": "to meet a deadline",
+      "example": "Wir müssen die Frist einhalten."
+    },
+    {
+      "de": "frei haben",
+      "en": "to be free / off",
+      "example": "Ich habe morgen frei."
+    },
+    {
+      "de": "beschäftigt sein",
+      "en": "to be busy",
+      "example": "Ich bin diese Woche sehr beschäftigt."
+    },
+    {
+      "de": "die Routine",
+      "en": "routine",
+      "artikel": "die",
+      "example": "Meine Routine ändert sich am Wochenende."
+    },
+    {
+      "de": "regelmäßig",
+      "en": "regularly",
+      "example": "Ich gehe regelmäßig zum Sport."
+    },
+    {
+      "de": "unregelmäßig",
+      "en": "irregularly",
+      "example": "Er isst sehr unregelmäßig."
+    },
+    {
+      "de": "die Wochenplanung",
+      "en": "weekly planning",
+      "artikel": "die",
+      "example": "Die Wochenplanung hilft mir sehr."
+    },
+    {
+      "de": "nachholen",
+      "en": "to catch up on / make up for",
+      "example": "Ich muss die Arbeit von gestern nachholen."
+    },
+    {
+      "de": "die Priorität",
+      "en": "priority",
+      "artikel": "die",
+      "example": "Meine Priorität ist die Familie."
+    },
+    {
+      "de": "priorisieren",
+      "en": "to prioritize",
+      "example": "Ich priorisiere meine Aufgaben jeden Morgen."
+    },
+    {
+      "de": "die Tagesordnung",
+      "en": "agenda",
+      "artikel": "die",
+      "example": "Was steht auf der Tagesordnung?"
+    },
+    {
+      "de": "organisieren",
+      "en": "to organize",
+      "example": "Ich organisiere gern meinen Tag im Voraus."
     }
-  ],
-  "_note": "Add 20 words about 'Beruf & Karriere'. Format: {de, en, example}"
+  ]
 }

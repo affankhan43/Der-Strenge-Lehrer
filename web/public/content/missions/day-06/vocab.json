@@ -1,106 +1,127 @@
 {
   "day": 6,
-  "topic": "Stadt & Orte",
+  "topic": "Farben & Formen",
   "words": [
     {
-      "de": "die Stadt",
-      "en": "city",
-      "example": "München ist eine schöne Stadt."
+      "de": "die Farbe",
+      "en": "color",
+      "artikel": "die",
+      "example": "Welche Farbe magst du?"
     },
     {
-      "de": "das Haus",
-      "en": "house",
-      "example": "Ich wohne in einem kleinen Haus."
+      "de": "rot",
+      "en": "red",
+      "example": "Die Ampel ist rot."
     },
     {
-      "de": "die Wohnung",
-      "en": "apartment",
-      "example": "Meine Wohnung ist im dritten Stock."
+      "de": "blau",
+      "en": "blue",
+      "example": "Der Himmel ist blau."
     },
     {
-      "de": "die Straße",
-      "en": "street",
-      "example": "Die Straße ist sehr laut."
+      "de": "gelb",
+      "en": "yellow",
+      "example": "Die Banane ist gelb."
     },
     {
-      "de": "der Bahnhof",
-      "en": "train station",
-      "example": "Der Bahnhof ist nicht weit."
+      "de": "grün",
+      "en": "green",
+      "example": "Das Gras ist grün."
     },
     {
-      "de": "der Supermarkt",
-      "en": "supermarket",
-      "example": "Ich gehe in den Supermarkt."
+      "de": "schwarz",
+      "en": "black",
+      "example": "Die Nacht ist schwarz."
     },
     {
-      "de": "die Bank",
-      "en": "bank",
-      "example": "Ich muss zur Bank gehen."
+      "de": "weiß",
+      "en": "white",
+      "example": "Der Schnee ist weiß."
     },
     {
-      "de": "das Krankenhaus",
-      "en": "hospital",
-      "example": "Das Krankenhaus ist links."
+      "de": "grau",
+      "en": "grey",
+      "example": "Der Himmel ist heute grau."
     },
     {
-      "de": "die Schule",
-      "en": "school",
-      "example": "Meine Kinder gehen zur Schule."
+      "de": "braun",
+      "en": "brown",
+      "example": "Der Tisch ist braun."
     },
     {
-      "de": "die Universität",
-      "en": "university",
-      "example": "Ich studiere an der Universität."
+      "de": "rosa",
+      "en": "pink",
+      "example": "Ihr Kleid ist rosa."
     },
     {
-      "de": "der Park",
-      "en": "park",
-      "example": "Im Park ist es schön."
+      "de": "orange",
+      "en": "orange",
+      "example": "Die Orange ist orange."
     },
     {
-      "de": "links",
-      "en": "left",
-      "example": "Biegen Sie links ab."
+      "de": "lila",
+      "en": "purple",
+      "example": "Die Blume ist lila."
     },
     {
-      "de": "rechts",
-      "en": "right",
-      "example": "Das Café ist rechts."
+      "de": "die Form",
+      "en": "shape",
+      "artikel": "die",
+      "example": "Welche Form hat das?"
     },
     {
-      "de": "geradeaus",
-      "en": "straight ahead",
-      "example": "Gehen Sie geradeaus."
+      "de": "der Kreis",
+      "en": "circle",
+      "artikel": "der",
+      "example": "Der Ball hat die Form eines Kreises."
     },
     {
-      "de": "nah",
-      "en": "near",
-      "example": "Der Bahnhof ist nah."
+      "de": "das Quadrat",
+      "en": "square",
+      "artikel": "das",
+      "example": "Das Fenster ist ein Quadrat."
     },
     {
-      "de": "weit",
-      "en": "far",
-      "example": "Das ist zu weit."
+      "de": "das Dreieck",
+      "en": "triangle",
+      "artikel": "das",
+      "example": "Das Dach hat die Form eines Dreiecks."
     },
     {
-      "de": "der Weg",
-      "en": "way / path",
-      "example": "Wie komme ich zum Bahnhof?"
+      "de": "das Rechteck",
+      "en": "rectangle",
+      "artikel": "das",
+      "example": "Der Tisch ist ein Rechteck."
     },
     {
-      "de": "fahren",
-      "en": "to drive / travel",
-      "example": "Ich fahre mit dem Bus."
+      "de": "groß",
+      "en": "big",
+      "example": "Das Haus ist sehr groß."
     },
     {
-      "de": "gehen",
-      "en": "to go / walk",
-      "example": "Ich gehe zu Fuß."
+      "de": "klein",
+      "en": "small",
+      "example": "Die Wohnung ist klein."
     },
     {
-      "de": "ankommen",
-      "en": "to arrive",
-      "example": "Wann kommst du an?"
+      "de": "rund",
+      "en": "round",
+      "example": "Der Ball ist rund."
+    },
+    {
+      "de": "eckig",
+      "en": "angular / cornered",
+      "example": "Die Box ist eckig."
+    },
+    {
+      "de": "hell",
+      "en": "light / bright",
+      "example": "Das Zimmer ist sehr hell."
+    },
+    {
+      "de": "dunkel",
+      "en": "dark",
+      "example": "Der Keller ist dunkel."
     }
   ]
 }

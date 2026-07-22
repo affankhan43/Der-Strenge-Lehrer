@@ -1,32 +1,115 @@
 {
   "day": 51,
-  "topic": "Geld & Finanzen",
+  "topic": "Persönliche Beschreibung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Aussehen",
+      "en": "appearance",
+      "artikel": "das",
+      "example": "Das Aussehen ist ihm nicht wichtig."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "aussehen",
+      "en": "to look / appear",
+      "example": "Du siehst heute müde aus."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "schlank",
+      "en": "slim",
+      "example": "Sie ist groß und schlank."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "dick",
+      "en": "fat / thick",
+      "example": "Das Buch ist sehr dick."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "lang (Haare)",
+      "en": "long (hair)",
+      "example": "Sie hat lange, dunkle Haare."
+    },
+    {
+      "de": "kurz",
+      "en": "short",
+      "example": "Er hat kurze Haare."
+    },
+    {
+      "de": "die Brille",
+      "en": "glasses",
+      "artikel": "die",
+      "example": "Er trägt eine Brille."
+    },
+    {
+      "de": "der Bart",
+      "en": "beard",
+      "artikel": "der",
+      "example": "Mein Vater hat einen grauen Bart."
+    },
+    {
+      "de": "die Glatze",
+      "en": "bald head",
+      "artikel": "die",
+      "example": "Er hat eine Glatze."
+    },
+    {
+      "de": "hübsch",
+      "en": "pretty",
+      "example": "Sie ist ein hübsches Mädchen."
+    },
+    {
+      "de": "attraktiv",
+      "en": "attractive",
+      "example": "Er ist ein attraktiver Mann."
+    },
+    {
+      "de": "ähnlich sehen",
+      "en": "to look similar / alike",
+      "example": "Die Zwillinge sehen sich sehr ähnlich."
+    },
+    {
+      "de": "die Ähnlichkeit",
+      "en": "similarity",
+      "artikel": "die",
+      "example": "Es gibt eine große Ähnlichkeit zwischen ihnen."
+    },
+    {
+      "de": "die Locken",
+      "en": "curls",
+      "artikel": "die",
+      "example": "Sie hat schöne Locken."
+    },
+    {
+      "de": "glatt (Haare)",
+      "en": "straight (hair)",
+      "example": "Meine Haare sind ganz glatt."
+    },
+    {
+      "de": "die Sommersprossen",
+      "en": "freckles",
+      "artikel": "die",
+      "example": "Sie hat viele Sommersprossen."
+    },
+    {
+      "de": "die Größe (Person)",
+      "en": "height (person)",
+      "artikel": "die",
+      "example": "Wie groß ist deine Größe?"
+    },
+    {
+      "de": "mittelgroß",
+      "en": "medium height",
+      "example": "Er ist mittelgroß."
+    },
+    {
+      "de": "das Merkmal",
+      "en": "characteristic / feature",
+      "artikel": "das",
+      "example": "Ein besonderes Merkmal ist seine Stimme."
+    },
+    {
+      "de": "beschreiben",
+      "en": "to describe",
+      "example": "Kannst du die Person beschreiben?"
     }
-  ],
-  "_note": "Add 20 words about 'Geld & Finanzen'. Format: {de, en, example}"
+  ]
 }

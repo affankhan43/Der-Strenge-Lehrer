@@ -1,32 +1,121 @@
 {
   "day": 46,
-  "topic": "Nachbarschaft & Gemeinschaft",
+  "topic": "Im Hotel",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Rezeption",
+      "en": "reception",
+      "artikel": "die",
+      "example": "Die Rezeption ist rund um die Uhr geöffnet."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "einchecken (Hotel)",
+      "en": "to check in (hotel)",
+      "example": "Wir checken um 15 Uhr ein."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "auschecken",
+      "en": "to check out",
+      "example": "Wir checken morgen früh aus."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Einzelzimmer",
+      "en": "single room",
+      "artikel": "das",
+      "example": "Ich hätte gern ein Einzelzimmer."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "das Doppelzimmer",
+      "en": "double room",
+      "artikel": "das",
+      "example": "Wir brauchen ein Doppelzimmer."
+    },
+    {
+      "de": "das Frühstück",
+      "en": "breakfast (noun)",
+      "artikel": "das",
+      "example": "Das Frühstück ist im Preis inbegriffen."
+    },
+    {
+      "de": "das Zimmermädchen",
+      "en": "housekeeper",
+      "artikel": "das",
+      "example": "Das Zimmermädchen reinigt die Zimmer."
+    },
+    {
+      "de": "der Aufzug",
+      "en": "elevator",
+      "artikel": "der",
+      "example": "Der Aufzug ist links neben der Treppe."
+    },
+    {
+      "de": "die Treppe",
+      "en": "stairs",
+      "artikel": "die",
+      "example": "Ich nehme lieber die Treppe."
+    },
+    {
+      "de": "der Balkon",
+      "en": "balcony",
+      "artikel": "der",
+      "example": "Das Zimmer hat einen schönen Balkon."
+    },
+    {
+      "de": "die Klimaanlage",
+      "en": "air conditioning",
+      "artikel": "die",
+      "example": "Die Klimaanlage funktioniert nicht."
+    },
+    {
+      "de": "die Minibar",
+      "en": "minibar",
+      "artikel": "die",
+      "example": "Die Minibar ist gut gefüllt."
+    },
+    {
+      "de": "das Zimmerservice",
+      "en": "room service",
+      "artikel": "das",
+      "example": "Wir bestellen etwas beim Zimmerservice."
+    },
+    {
+      "de": "die Beschwerde",
+      "en": "complaint",
+      "artikel": "die",
+      "example": "Ich habe eine Beschwerde über das Zimmer."
+    },
+    {
+      "de": "sich beschweren",
+      "en": "to complain",
+      "example": "Ich möchte mich beschweren."
+    },
+    {
+      "de": "der Ausblick",
+      "en": "view",
+      "artikel": "der",
+      "example": "Der Ausblick vom Zimmer ist wunderschön."
+    },
+    {
+      "de": "ruhig (Zimmer)",
+      "en": "quiet (room)",
+      "example": "Ich hätte gern ein ruhiges Zimmer."
+    },
+    {
+      "de": "die Reservierung",
+      "en": "reservation",
+      "artikel": "die",
+      "example": "Ich habe eine Reservierung für zwei Nächte."
+    },
+    {
+      "de": "stornieren",
+      "en": "to cancel (a booking)",
+      "example": "Ich möchte meine Reservierung stornieren."
+    },
+    {
+      "de": "die Nacht (Übernachtung)",
+      "en": "night (stay)",
+      "artikel": "die",
+      "example": "Wie viel kostet eine Nacht?"
     }
-  ],
-  "_note": "Add 20 words about 'Nachbarschaft & Gemeinschaft'. Format: {de, en, example}"
+  ]
 }

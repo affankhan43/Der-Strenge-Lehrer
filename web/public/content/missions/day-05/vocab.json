@@ -1,106 +1,141 @@
 {
   "day": 5,
-  "topic": "Essen & Trinken",
+  "topic": "Berufe",
   "words": [
     {
-      "de": "das Wasser",
-      "en": "water",
-      "example": "Ich trinke viel Wasser."
+      "de": "der Beruf",
+      "en": "job / profession",
+      "artikel": "der",
+      "example": "Was ist dein Beruf?"
     },
     {
-      "de": "der Kaffee",
-      "en": "coffee",
-      "example": "Morgens trinke ich immer Kaffee."
+      "de": "der Lehrer",
+      "en": "teacher (male)",
+      "artikel": "der",
+      "example": "Der Lehrer erklärt die Grammatik."
     },
     {
-      "de": "der Tee",
-      "en": "tea",
-      "example": "Ich möchte Tee, bitte."
+      "de": "die Lehrerin",
+      "en": "teacher (female)",
+      "artikel": "die",
+      "example": "Die Lehrerin ist sehr geduldig."
     },
     {
-      "de": "das Bier",
-      "en": "beer",
-      "example": "In Deutschland ist Bier sehr beliebt."
+      "de": "der Arzt",
+      "en": "doctor (male)",
+      "artikel": "der",
+      "example": "Der Arzt untersucht den Patienten."
     },
     {
-      "de": "das Brot",
-      "en": "bread",
-      "example": "Deutsches Brot ist sehr gut."
+      "de": "die Ärztin",
+      "en": "doctor (female)",
+      "artikel": "die",
+      "example": "Die Ärztin arbeitet im Krankenhaus."
     },
     {
-      "de": "die Butter",
-      "en": "butter",
-      "example": "Ich nehme Butter auf das Brot."
+      "de": "der Ingenieur",
+      "en": "engineer (male)",
+      "artikel": "der",
+      "example": "Der Ingenieur plant die Brücke."
     },
     {
-      "de": "der Käse",
-      "en": "cheese",
-      "example": "Ich esse gerne Käse."
+      "de": "die Ingenieurin",
+      "en": "engineer (female)",
+      "artikel": "die",
+      "example": "Die Ingenieurin arbeitet bei Siemens."
     },
     {
-      "de": "das Fleisch",
-      "en": "meat",
-      "example": "Er isst kein Fleisch."
+      "de": "der Koch",
+      "en": "cook / chef (male)",
+      "artikel": "der",
+      "example": "Der Koch kocht ein leckeres Essen."
     },
     {
-      "de": "das Gemüse",
-      "en": "vegetables",
-      "example": "Ich esse viel Gemüse."
+      "de": "die Köchin",
+      "en": "cook / chef (female)",
+      "artikel": "die",
+      "example": "Die Köchin arbeitet in einem Restaurant."
     },
     {
-      "de": "die Frucht",
-      "en": "fruit",
-      "example": "Obst und Gemüse sind gesund."
+      "de": "der Verkäufer",
+      "en": "salesperson (male)",
+      "artikel": "der",
+      "example": "Der Verkäufer hilft den Kunden."
     },
     {
-      "de": "essen",
-      "en": "to eat",
-      "example": "Was isst du gerne?"
+      "de": "die Verkäuferin",
+      "en": "salesperson (female)",
+      "artikel": "die",
+      "example": "Die Verkäuferin arbeitet im Supermarkt."
     },
     {
-      "de": "trinken",
-      "en": "to drink",
-      "example": "Ich trinke gerne Wasser."
+      "de": "der Student",
+      "en": "student (male, university)",
+      "artikel": "der",
+      "example": "Der Student lernt für die Prüfung."
     },
     {
-      "de": "kochen",
-      "en": "to cook",
-      "example": "Ich koche heute Abend."
+      "de": "die Studentin",
+      "en": "student (female, university)",
+      "artikel": "die",
+      "example": "Die Studentin studiert Medizin."
     },
     {
-      "de": "hungrig",
-      "en": "hungry",
-      "example": "Ich bin hungrig!"
+      "de": "arbeiten",
+      "en": "to work",
+      "example": "Ich arbeite von Montag bis Freitag."
     },
     {
-      "de": "satt",
-      "en": "full (after eating)",
-      "example": "Danke, ich bin satt."
+      "de": "arbeitslos",
+      "en": "unemployed",
+      "example": "Er ist seit einem Monat arbeitslos."
     },
     {
-      "de": "lecker",
-      "en": "delicious",
-      "example": "Die Pizza ist sehr lecker!"
+      "de": "das Büro",
+      "en": "office",
+      "artikel": "das",
+      "example": "Ich fahre jeden Tag ins Büro."
     },
     {
-      "de": "das Restaurant",
-      "en": "restaurant",
-      "example": "Wir gehen ins Restaurant."
+      "de": "die Firma",
+      "en": "company",
+      "artikel": "die",
+      "example": "Die Firma hat 200 Mitarbeiter."
     },
     {
-      "de": "die Speisekarte",
-      "en": "menu",
-      "example": "Darf ich die Speisekarte sehen?"
+      "de": "der Chef",
+      "en": "boss (male)",
+      "artikel": "der",
+      "example": "Mein Chef ist sehr freundlich."
     },
     {
-      "de": "bestellen",
-      "en": "to order",
-      "example": "Ich möchte bestellen."
+      "de": "die Chefin",
+      "en": "boss (female)",
+      "artikel": "die",
+      "example": "Meine Chefin lobt gute Arbeit."
     },
     {
-      "de": "die Rechnung",
-      "en": "bill / check",
-      "example": "Die Rechnung, bitte!"
+      "de": "das Gehalt",
+      "en": "salary",
+      "artikel": "das",
+      "example": "Das Gehalt wird am Monatsende bezahlt."
+    },
+    {
+      "de": "der Kollege",
+      "en": "colleague (male)",
+      "artikel": "der",
+      "example": "Mein Kollege sitzt neben mir."
+    },
+    {
+      "de": "die Kollegin",
+      "en": "colleague (female)",
+      "artikel": "die",
+      "example": "Meine Kollegin hilft mir oft."
+    },
+    {
+      "de": "verdienen",
+      "en": "to earn",
+      "example": "Wie viel verdienst du im Monat?"
     }
   ]
 }

@@ -1,32 +1,106 @@
 {
   "day": 41,
-  "topic": "Musik & Konzerte",
+  "topic": "Verben der Bewegung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "springen",
+      "en": "to jump",
+      "example": "Das Kind springt über die Pfütze."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "klettern",
+      "en": "to climb",
+      "example": "Er klettert auf den Baum."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "kriechen",
+      "en": "to crawl",
+      "example": "Das Baby kriecht durch das Zimmer."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "rennen",
+      "en": "to run (fast)",
+      "example": "Er rennt zum Bus."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "fallen",
+      "en": "to fall",
+      "example": "Pass auf, dass du nicht fällst!"
+    },
+    {
+      "de": "aufstehen (nach Sturz)",
+      "en": "to get up (after falling)",
+      "example": "Er ist gefallen, aber gleich wieder aufgestanden."
+    },
+    {
+      "de": "sich hinsetzen",
+      "en": "to sit down",
+      "example": "Setz dich bitte hin."
+    },
+    {
+      "de": "sich hinlegen",
+      "en": "to lie down",
+      "example": "Ich lege mich kurz hin."
+    },
+    {
+      "de": "aufwachen",
+      "en": "to wake up",
+      "example": "Ich wache jeden Tag um sechs Uhr auf."
+    },
+    {
+      "de": "sich bewegen",
+      "en": "to move (oneself)",
+      "example": "Bewege dich mehr für deine Gesundheit."
+    },
+    {
+      "de": "ziehen",
+      "en": "to pull",
+      "example": "Zieh die Tür auf."
+    },
+    {
+      "de": "schieben",
+      "en": "to push",
+      "example": "Schieb den Wagen zur Seite."
+    },
+    {
+      "de": "werfen",
+      "en": "to throw",
+      "example": "Wirf mir den Ball zu."
+    },
+    {
+      "de": "fangen",
+      "en": "to catch",
+      "example": "Kannst du den Ball fangen?"
+    },
+    {
+      "de": "rutschen",
+      "en": "to slide / slip",
+      "example": "Pass auf, der Boden ist rutschig."
+    },
+    {
+      "de": "hüpfen",
+      "en": "to hop",
+      "example": "Das Kaninchen hüpft über die Wiese."
+    },
+    {
+      "de": "sich beeilen",
+      "en": "to hurry",
+      "example": "Beeil dich, wir sind spät dran!"
+    },
+    {
+      "de": "schleichen",
+      "en": "to sneak / creep",
+      "example": "Die Katze schleicht durch den Garten."
+    },
+    {
+      "de": "stolpern",
+      "en": "to stumble / trip",
+      "example": "Er ist über den Stein gestolpert."
+    },
+    {
+      "de": "sich drehen",
+      "en": "to turn / spin (oneself)",
+      "example": "Die Tänzerin dreht sich schnell."
     }
-  ],
-  "_note": "Add 20 words about 'Musik & Konzerte'. Format: {de, en, example}"
+  ]
 }

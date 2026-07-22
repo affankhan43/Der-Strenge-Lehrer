@@ -1,96 +1,126 @@
 {
   "day": 28,
-  "topic": "Wiederholung A1 — Wichtigste Wörter",
+  "topic": "Wiederholung: Wichtige Verben & Adjektive",
   "words": [
     {
-      "de": "alles",
-      "en": "everything",
-      "example": "Alles klar! — Ich verstehe alles."
+      "de": "sein",
+      "en": "to be",
+      "example": "Ich bin müde."
     },
     {
-      "de": "nichts",
-      "en": "nothing",
-      "example": "Ich habe nichts gegessen — ich habe keinen Hunger."
+      "de": "haben",
+      "en": "to have",
+      "example": "Ich habe zwei Brüder."
     },
     {
-      "de": "jemand",
-      "en": "someone",
-      "example": "Hat jemand meinen Schlüssel gesehen?"
+      "de": "machen",
+      "en": "to do / make",
+      "example": "Was machst du heute?"
     },
     {
-      "de": "niemand",
-      "en": "nobody / no one",
-      "example": "Niemand war zu Hause."
+      "de": "gehen",
+      "en": "to go",
+      "example": "Wir gehen jetzt nach Hause."
     },
     {
-      "de": "schon",
-      "en": "already",
-      "example": "Ich bin schon fertig — sehr schnell!"
+      "de": "sehen",
+      "en": "to see",
+      "example": "Ich sehe meine Freunde am Wochenende."
     },
     {
-      "de": "noch",
-      "en": "still / yet",
-      "example": "Ich bin noch nicht fertig — warte bitte."
+      "de": "wissen",
+      "en": "to know (facts)",
+      "example": "Ich weiß die Antwort nicht."
     },
     {
-      "de": "immer",
-      "en": "always",
-      "example": "Ich trinke immer Kaffee am Morgen."
+      "de": "kennen",
+      "en": "to know (people/places)",
+      "example": "Kennst du diese Stadt?"
     },
     {
-      "de": "nie",
-      "en": "never",
-      "example": "Ich esse nie Fast Food."
+      "de": "mögen",
+      "en": "to like",
+      "example": "Ich mag deutsches Essen."
     },
     {
-      "de": "manchmal",
-      "en": "sometimes",
-      "example": "Manchmal gehe ich ins Kino."
+      "de": "lieben",
+      "en": "to love",
+      "example": "Ich liebe meine Familie."
     },
     {
-      "de": "oft",
-      "en": "often",
-      "example": "Ich fahre oft mit dem Fahrrad."
+      "de": "brauchen",
+      "en": "to need",
+      "example": "Ich brauche mehr Zeit."
     },
     {
-      "de": "selten",
-      "en": "rarely",
-      "example": "Ich esse selten Fleisch."
+      "de": "helfen",
+      "en": "to help",
+      "example": "Kannst du mir helfen?"
     },
     {
-      "de": "sehr",
-      "en": "very",
-      "example": "Ich bin sehr glücklich heute."
+      "de": "geben",
+      "en": "to give",
+      "example": "Gib mir bitte das Buch."
     },
     {
-      "de": "zu",
-      "en": "too (much)",
-      "example": "Das ist zu teuer für mich!"
+      "de": "nehmen",
+      "en": "to take",
+      "example": "Nimm einen Regenschirm mit."
     },
     {
-      "de": "auch",
-      "en": "also / too",
-      "example": "Ich lerne auch Spanisch."
+      "de": "bringen",
+      "en": "to bring",
+      "example": "Bring bitte das Salz."
     },
     {
-      "de": "nur",
-      "en": "only / just",
-      "example": "Ich habe nur fünf Euro."
+      "de": "schön",
+      "en": "beautiful",
+      "example": "Das Wetter ist heute schön."
+    },
+    {
+      "de": "wichtig",
+      "en": "important",
+      "example": "Das ist eine wichtige Entscheidung."
+    },
+    {
+      "de": "einfach",
+      "en": "simple / easy",
+      "example": "Diese Aufgabe ist einfach."
+    },
+    {
+      "de": "schwierig",
+      "en": "difficult",
+      "example": "Deutsch ist manchmal schwierig."
+    },
+    {
+      "de": "richtig",
+      "en": "correct / right",
+      "example": "Deine Antwort ist richtig."
+    },
+    {
+      "de": "falsch",
+      "en": "wrong",
+      "example": "Diese Antwort ist falsch."
+    },
+    {
+      "de": "neu",
+      "en": "new",
+      "example": "Ich habe ein neues Handy."
+    },
+    {
+      "de": "fertig",
+      "en": "finished / ready",
+      "example": "Bist du mit der Arbeit fertig?"
+    },
+    {
+      "de": "genau",
+      "en": "exact / precise",
+      "example": "Ich weiß es nicht genau."
     },
     {
       "de": "vielleicht",
-      "en": "maybe / perhaps",
-      "example": "Vielleicht gehe ich morgen ins Kino."
-    },
-    {
-      "de": "natürlich",
-      "en": "of course / naturally",
-      "example": "Natürlich helfe ich dir!"
-    },
-    {
-      "de": "leider",
-      "en": "unfortunately",
-      "example": "Leider kann ich heute nicht kommen."
+      "en": "maybe",
+      "example": "Vielleicht komme ich später."
     }
   ]
 }

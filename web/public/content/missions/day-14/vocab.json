@@ -1,24 +1,141 @@
 {
   "day": 14,
-  "topic": "Einkaufen & Lebensmittel",
+  "topic": "Wochentage & Monate",
   "words": [
-    {"de": "der Supermarkt", "en": "the supermarket", "artikel": "der", "example": "Ich gehe jeden Freitag in den Supermarkt."},
-    {"de": "das Geschäft", "en": "the shop / store", "artikel": "das", "example": "Das Geschäft schließt um 20 Uhr."},
-    {"de": "der Markt", "en": "the market", "artikel": "der", "example": "Am Samstag gibt es frisches Obst auf dem Markt."},
-    {"de": "kaufen", "en": "to buy", "example": "Ich kaufe Brot und Milch."},
-    {"de": "der Preis", "en": "the price", "artikel": "der", "example": "Was kostet das? — Der Preis ist 3 Euro."},
-    {"de": "teuer", "en": "expensive", "example": "Das Restaurant ist sehr teuer — 50 Euro pro Person!"},
-    {"de": "günstig", "en": "cheap / affordable", "example": "Der Supermarkt ist günstig — ich kaufe dort immer ein."},
-    {"de": "das Obst", "en": "the fruit (collective)", "artikel": "das", "example": "Ich esse jeden Tag Obst — Äpfel und Bananen."},
-    {"de": "das Gemüse", "en": "the vegetables (collective)", "artikel": "das", "example": "Gemüse ist gesund — iss mehr Gemüse!"},
-    {"de": "das Brot", "en": "the bread", "artikel": "das", "example": "Deutsches Brot ist weltweit bekannt und lecker."},
-    {"de": "die Milch", "en": "the milk", "artikel": "die", "example": "Ich trinke morgens ein Glas Milch."},
-    {"de": "das Fleisch", "en": "the meat", "artikel": "das", "example": "Er isst kein Fleisch — er ist Vegetarier."},
-    {"de": "der Fisch", "en": "the fish", "artikel": "der", "example": "Frischer Fisch vom Markt ist köstlich."},
-    {"de": "die Kasse", "en": "the checkout / cashier", "artikel": "die", "example": "Bitte zahlen Sie an der Kasse."},
-    {"de": "bezahlen", "en": "to pay", "example": "Ich bezahle mit Karte oder bar."},
-    {"de": "der Einkaufskorb", "en": "the shopping basket", "artikel": "der", "example": "Mein Einkaufskorb ist schon voll!"},
-    {"de": "das Angebot", "en": "the offer / sale / deal", "artikel": "das", "example": "Diese Woche sind Erdbeeren im Angebot."},
-    {"de": "die Quittung", "en": "the receipt", "artikel": "die", "example": "Brauchen Sie eine Quittung? — Ja, bitte!"}
+    {
+      "de": "der Montag",
+      "en": "Monday",
+      "artikel": "der",
+      "example": "Am Montag beginnt die Arbeitswoche."
+    },
+    {
+      "de": "der Dienstag",
+      "en": "Tuesday",
+      "artikel": "der",
+      "example": "Am Dienstag habe ich einen Termin."
+    },
+    {
+      "de": "der Mittwoch",
+      "en": "Wednesday",
+      "artikel": "der",
+      "example": "Mittwoch ist die Mitte der Woche."
+    },
+    {
+      "de": "der Donnerstag",
+      "en": "Thursday",
+      "artikel": "der",
+      "example": "Am Donnerstag treffe ich Freunde."
+    },
+    {
+      "de": "der Freitag",
+      "en": "Friday",
+      "artikel": "der",
+      "example": "Freitag ist mein Lieblingstag."
+    },
+    {
+      "de": "der Samstag",
+      "en": "Saturday",
+      "artikel": "der",
+      "example": "Am Samstag schlafe ich lange."
+    },
+    {
+      "de": "der Sonntag",
+      "en": "Sunday",
+      "artikel": "der",
+      "example": "Am Sonntag besuchen wir die Familie."
+    },
+    {
+      "de": "die Woche",
+      "en": "week",
+      "artikel": "die",
+      "example": "Die Woche hat sieben Tage."
+    },
+    {
+      "de": "das Wochenende",
+      "en": "weekend",
+      "artikel": "das",
+      "example": "Das Wochenende ist zu kurz."
+    },
+    {
+      "de": "der Januar",
+      "en": "January",
+      "artikel": "der",
+      "example": "Im Januar ist es sehr kalt."
+    },
+    {
+      "de": "der Februar",
+      "en": "February",
+      "artikel": "der",
+      "example": "Der Februar hat nur 28 Tage."
+    },
+    {
+      "de": "der März",
+      "en": "March",
+      "artikel": "der",
+      "example": "Im März beginnt der Frühling."
+    },
+    {
+      "de": "der April",
+      "en": "April",
+      "artikel": "der",
+      "example": "Im April regnet es oft."
+    },
+    {
+      "de": "der Mai",
+      "en": "May",
+      "artikel": "der",
+      "example": "Im Mai blühen die Blumen."
+    },
+    {
+      "de": "der Juni",
+      "en": "June",
+      "artikel": "der",
+      "example": "Im Juni beginnen die Ferien."
+    },
+    {
+      "de": "der Juli",
+      "en": "July",
+      "artikel": "der",
+      "example": "Im Juli fahren wir in den Urlaub."
+    },
+    {
+      "de": "der August",
+      "en": "August",
+      "artikel": "der",
+      "example": "Der August ist sehr heiß."
+    },
+    {
+      "de": "der September",
+      "en": "September",
+      "artikel": "der",
+      "example": "Im September beginnt die Schule wieder."
+    },
+    {
+      "de": "der Monat",
+      "en": "month",
+      "artikel": "der",
+      "example": "Ein Jahr hat zwölf Monate."
+    },
+    {
+      "de": "das Jahr",
+      "en": "year",
+      "artikel": "das",
+      "example": "Dieses Jahr lerne ich Deutsch."
+    },
+    {
+      "de": "heute",
+      "en": "today",
+      "example": "Was machst du heute?"
+    },
+    {
+      "de": "morgen",
+      "en": "tomorrow",
+      "example": "Morgen habe ich einen Test."
+    },
+    {
+      "de": "gestern",
+      "en": "yesterday",
+      "example": "Gestern war ich müde."
+    }
   ]
 }

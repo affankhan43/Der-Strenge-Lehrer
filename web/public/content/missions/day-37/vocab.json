@@ -1,32 +1,124 @@
 {
   "day": 37,
-  "topic": "Kochen & Rezepte",
+  "topic": "Bank & Geld",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Konto",
+      "en": "account",
+      "artikel": "das",
+      "example": "Ich habe ein Konto bei dieser Bank."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "eröffnen",
+      "en": "to open (an account)",
+      "example": "Ich möchte ein Konto eröffnen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "einzahlen",
+      "en": "to deposit",
+      "example": "Ich zahle Geld auf mein Konto ein."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "abheben",
+      "en": "to withdraw",
+      "example": "Ich hebe Geld vom Automaten ab."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "überweisen",
+      "en": "to transfer (money)",
+      "example": "Ich überweise dir das Geld morgen."
+    },
+    {
+      "de": "die Überweisung",
+      "en": "transfer",
+      "artikel": "die",
+      "example": "Die Überweisung dauert zwei Tage."
+    },
+    {
+      "de": "der Geldautomat",
+      "en": "ATM",
+      "artikel": "der",
+      "example": "Der Geldautomat ist gleich um die Ecke."
+    },
+    {
+      "de": "die IBAN",
+      "en": "IBAN",
+      "artikel": "die",
+      "example": "Ich brauche deine IBAN für die Überweisung."
+    },
+    {
+      "de": "die Gebühr",
+      "en": "fee",
+      "artikel": "die",
+      "example": "Die Bank verlangt eine Gebühr."
+    },
+    {
+      "de": "sparen",
+      "en": "to save (money)",
+      "example": "Ich spare jeden Monat etwas Geld."
+    },
+    {
+      "de": "das Sparkonto",
+      "en": "savings account",
+      "artikel": "das",
+      "example": "Ich habe ein Sparkonto für den Urlaub."
+    },
+    {
+      "de": "die Schulden",
+      "en": "debt",
+      "artikel": "die",
+      "example": "Er hat viele Schulden."
+    },
+    {
+      "de": "leihen (Geld)",
+      "en": "to borrow (money)",
+      "example": "Ich habe mir Geld von meinem Bruder geliehen."
+    },
+    {
+      "de": "der Kredit",
+      "en": "loan",
+      "artikel": "der",
+      "example": "Wir brauchen einen Kredit für das Auto."
+    },
+    {
+      "de": "die Zinsen",
+      "en": "interest",
+      "artikel": "die",
+      "example": "Die Zinsen sind im Moment niedrig."
+    },
+    {
+      "de": "der Kontostand",
+      "en": "account balance",
+      "artikel": "der",
+      "example": "Ich prüfe meinen Kontostand online."
+    },
+    {
+      "de": "bezahlen mit Karte",
+      "en": "to pay by card",
+      "example": "Kann ich mit Karte bezahlen?"
+    },
+    {
+      "de": "die Münze",
+      "en": "coin",
+      "artikel": "die",
+      "example": "Ich habe nur eine Münze dabei."
+    },
+    {
+      "de": "der Schein",
+      "en": "banknote",
+      "artikel": "der",
+      "example": "Hast du einen Zehn-Euro-Schein?"
+    },
+    {
+      "de": "wechseln (Geld)",
+      "en": "to exchange (money)",
+      "example": "Ich möchte Euro in Dollar wechseln."
+    },
+    {
+      "de": "die Wechselstube",
+      "en": "currency exchange office",
+      "artikel": "die",
+      "example": "Die Wechselstube ist am Flughafen."
     }
-  ],
-  "_note": "Add 20 words about 'Kochen & Rezepte'. Format: {de, en, example}"
+  ]
 }

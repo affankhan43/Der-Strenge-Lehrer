@@ -1,32 +1,135 @@
 {
   "day": 38,
-  "topic": "Gesundheit & Ernährung",
+  "topic": "Im Büro",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Arbeitsplatz",
+      "en": "workplace / desk",
+      "artikel": "der",
+      "example": "Mein Arbeitsplatz ist sehr ordentlich."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Besprechung",
+      "en": "meeting",
+      "artikel": "die",
+      "example": "Die Besprechung beginnt um zehn Uhr."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Konferenz",
+      "en": "conference",
+      "artikel": "die",
+      "example": "Wir haben nächste Woche eine Konferenz."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Bericht",
+      "en": "report",
+      "artikel": "der",
+      "example": "Ich schreibe einen Bericht für meinen Chef."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Präsentation",
+      "en": "presentation",
+      "artikel": "die",
+      "example": "Meine Präsentation dauert 15 Minuten."
+    },
+    {
+      "de": "präsentieren",
+      "en": "to present",
+      "example": "Ich präsentiere morgen unser Projekt."
+    },
+    {
+      "de": "das Projekt",
+      "en": "project",
+      "artikel": "das",
+      "example": "Das Projekt ist fast fertig."
+    },
+    {
+      "de": "die Aufgabe",
+      "en": "task",
+      "artikel": "die",
+      "example": "Ich habe viele Aufgaben heute."
+    },
+    {
+      "de": "die Frist",
+      "en": "deadline",
+      "artikel": "die",
+      "example": "Die Frist ist am Freitag."
+    },
+    {
+      "de": "die Unterlagen",
+      "en": "documents",
+      "artikel": "die",
+      "example": "Die Unterlagen liegen auf dem Tisch."
+    },
+    {
+      "de": "der Kopierer",
+      "en": "photocopier",
+      "artikel": "der",
+      "example": "Der Kopierer ist im Nebenraum."
+    },
+    {
+      "de": "das Papier",
+      "en": "paper",
+      "artikel": "das",
+      "example": "Ich brauche mehr Papier."
+    },
+    {
+      "de": "der Ordner",
+      "en": "folder",
+      "artikel": "der",
+      "example": "Alle Dokumente sind in diesem Ordner."
+    },
+    {
+      "de": "die Kollegen",
+      "en": "colleagues",
+      "artikel": "die",
+      "example": "Meine Kollegen sind sehr nett."
+    },
+    {
+      "de": "die Abteilung",
+      "en": "department",
+      "artikel": "die",
+      "example": "Ich arbeite in der Abteilung Marketing."
+    },
+    {
+      "de": "der Vertrag",
+      "en": "contract",
+      "artikel": "der",
+      "example": "Ich unterschreibe morgen meinen Vertrag."
+    },
+    {
+      "de": "die Karriere",
+      "en": "career",
+      "artikel": "die",
+      "example": "Sie möchte in ihrer Karriere weiterkommen."
+    },
+    {
+      "de": "die Beförderung",
+      "en": "promotion",
+      "artikel": "die",
+      "example": "Er hat gerade eine Beförderung bekommen."
+    },
+    {
+      "de": "kündigen (Job)",
+      "en": "to quit / resign",
+      "example": "Sie hat letzte Woche gekündigt."
+    },
+    {
+      "de": "die Bewerbung",
+      "en": "job application",
+      "artikel": "die",
+      "example": "Ich schreibe eine Bewerbung."
+    },
+    {
+      "de": "sich bewerben",
+      "en": "to apply (for a job)",
+      "example": "Ich bewerbe mich um diese Stelle."
+    },
+    {
+      "de": "das Vorstellungsgespräch",
+      "en": "job interview",
+      "artikel": "das",
+      "example": "Mein Vorstellungsgespräch ist am Montag."
     }
-  ],
-  "_note": "Add 20 words about 'Gesundheit & Ernährung'. Format: {de, en, example}"
+  ]
 }

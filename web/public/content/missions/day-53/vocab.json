@@ -1,32 +1,117 @@
 {
   "day": 53,
-  "topic": "Öffentlicher Verkehr",
+  "topic": "Große Zahlen & Datum",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "tausend",
+      "en": "thousand",
+      "example": "Das Auto kostet zehntausend Euro."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Million",
+      "en": "million",
+      "artikel": "die",
+      "example": "Die Stadt hat zwei Millionen Einwohner."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Milliarde",
+      "en": "billion",
+      "artikel": "die",
+      "example": "Das Unternehmen ist Milliarden wert."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Einwohner",
+      "en": "inhabitant",
+      "artikel": "der",
+      "example": "Berlin hat viele Einwohner."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "erste",
+      "en": "first (ordinal)",
+      "example": "Das ist mein erster Deutschkurs."
+    },
+    {
+      "de": "zweite",
+      "en": "second (ordinal)",
+      "example": "Das ist meine zweite Reise nach Berlin."
+    },
+    {
+      "de": "dritte",
+      "en": "third (ordinal)",
+      "example": "Er wohnt im dritten Stock."
+    },
+    {
+      "de": "letzte",
+      "en": "last",
+      "example": "Das ist mein letzter Tag hier."
+    },
+    {
+      "de": "das Datum",
+      "en": "date",
+      "artikel": "das",
+      "example": "Welches Datum haben wir heute?"
+    },
+    {
+      "de": "der Stock (Etage)",
+      "en": "floor / storey",
+      "artikel": "der",
+      "example": "Meine Wohnung ist im vierten Stock."
+    },
+    {
+      "de": "das Prozent",
+      "en": "percent",
+      "artikel": "das",
+      "example": "Fünfzig Prozent der Leute stimmen zu."
+    },
+    {
+      "de": "die Hälfte",
+      "en": "half",
+      "artikel": "die",
+      "example": "Ich esse nur die Hälfte des Kuchens."
+    },
+    {
+      "de": "das Viertel",
+      "en": "quarter",
+      "artikel": "das",
+      "example": "Es ist Viertel nach zwei."
+    },
+    {
+      "de": "das Drittel",
+      "en": "third (fraction)",
+      "artikel": "das",
+      "example": "Ein Drittel der Klasse fehlt heute."
+    },
+    {
+      "de": "doppelt",
+      "en": "double",
+      "example": "Das kostet doppelt so viel."
+    },
+    {
+      "de": "ungefähr",
+      "en": "approximately",
+      "example": "Es sind ungefähr hundert Leute hier."
+    },
+    {
+      "de": "genau (Zahl)",
+      "en": "exactly (number)",
+      "example": "Es sind genau fünfzig Euro."
+    },
+    {
+      "de": "die Statistik",
+      "en": "statistic",
+      "artikel": "die",
+      "example": "Diese Statistik ist sehr interessant."
+    },
+    {
+      "de": "die Summe",
+      "en": "sum / total",
+      "artikel": "die",
+      "example": "Die Summe ist zu hoch."
+    },
+    {
+      "de": "addieren",
+      "en": "to add up",
+      "example": "Addiere diese Zahlen bitte."
     }
-  ],
-  "_note": "Add 20 words about 'Öffentlicher Verkehr'. Format: {de, en, example}"
+  ]
 }

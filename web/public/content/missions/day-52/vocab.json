@@ -1,32 +1,123 @@
 {
   "day": 52,
-  "topic": "Wohnen & Mieten",
+  "topic": "Familie erweitert",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Schwiegervater",
+      "en": "father-in-law",
+      "artikel": "der",
+      "example": "Mein Schwiegervater ist sehr freundlich."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Schwiegermutter",
+      "en": "mother-in-law",
+      "artikel": "die",
+      "example": "Meine Schwiegermutter kocht sehr gut."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Enkel",
+      "en": "grandson",
+      "artikel": "der",
+      "example": "Mein Enkel besucht mich jeden Sonntag."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Enkelin",
+      "en": "granddaughter",
+      "artikel": "die",
+      "example": "Meine Enkelin ist sehr klug."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Neffe",
+      "en": "nephew",
+      "artikel": "der",
+      "example": "Mein Neffe spielt gern Fußball."
+    },
+    {
+      "de": "die Nichte",
+      "en": "niece",
+      "artikel": "die",
+      "example": "Meine Nichte ist erst drei Jahre alt."
+    },
+    {
+      "de": "der Stiefvater",
+      "en": "stepfather",
+      "artikel": "der",
+      "example": "Mein Stiefvater wohnt in Bremen."
+    },
+    {
+      "de": "die Stiefmutter",
+      "en": "stepmother",
+      "artikel": "die",
+      "example": "Meine Stiefmutter ist sehr nett."
+    },
+    {
+      "de": "die Zwillinge",
+      "en": "twins",
+      "artikel": "die",
+      "example": "Meine Zwillinge sehen sich sehr ähnlich."
+    },
+    {
+      "de": "das Einzelkind",
+      "en": "only child",
+      "artikel": "das",
+      "example": "Ich bin ein Einzelkind."
+    },
+    {
+      "de": "der Halbbruder",
+      "en": "half-brother",
+      "artikel": "der",
+      "example": "Mein Halbbruder lebt in Spanien."
+    },
+    {
+      "de": "die Halbschwester",
+      "en": "half-sister",
+      "artikel": "die",
+      "example": "Meine Halbschwester studiert in Wien."
+    },
+    {
+      "de": "die Großfamilie",
+      "en": "extended family",
+      "artikel": "die",
+      "example": "Wir sind eine große Großfamilie."
+    },
+    {
+      "de": "der Vorname",
+      "en": "first name",
+      "artikel": "der",
+      "example": "Wie lautet dein Vorname?"
+    },
+    {
+      "de": "der Nachname",
+      "en": "last name / surname",
+      "artikel": "der",
+      "example": "Wie schreibt man deinen Nachnamen?"
+    },
+    {
+      "de": "der Familienstand",
+      "en": "marital status",
+      "artikel": "der",
+      "example": "Wie ist dein Familienstand?"
+    },
+    {
+      "de": "geschieden",
+      "en": "divorced",
+      "example": "Meine Eltern sind geschieden."
+    },
+    {
+      "de": "verwitwet",
+      "en": "widowed",
+      "example": "Meine Großmutter ist verwitwet."
+    },
+    {
+      "de": "die Verlobung",
+      "en": "engagement",
+      "artikel": "die",
+      "example": "Wir feiern heute ihre Verlobung."
+    },
+    {
+      "de": "verlobt sein",
+      "en": "to be engaged",
+      "example": "Meine Schwester ist seit Mai verlobt."
     }
-  ],
-  "_note": "Add 20 words about 'Wohnen & Mieten'. Format: {de, en, example}"
+  ]
 }

@@ -1,107 +1,140 @@
 {
   "day": 26,
-  "topic": "Kommunikation & Medien",
+  "topic": "Technologie & Medien",
   "words": [
     {
-      "de": "das Telefon",
-      "en": "the telephone",
+      "de": "der Computer",
+      "en": "computer",
+      "artikel": "der",
+      "example": "Ich arbeite am Computer."
+    },
+    {
+      "de": "das Handy",
+      "en": "mobile phone",
       "artikel": "das",
-      "example": "Das Telefon klingelt — geh ran!"
-    },
-    {
-      "de": "das Smartphone",
-      "en": "the smartphone",
-      "artikel": "das",
-      "example": "Ich benutze mein Smartphone für alles."
-    },
-    {
-      "de": "anrufen",
-      "en": "to call / phone",
-      "example": "Ich rufe dich morgen an."
-    },
-    {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Ich schreibe eine E-Mail an meinen Chef."
-    },
-    {
-      "de": "die E-Mail",
-      "en": "the email",
-      "artikel": "die",
-      "example": "Hast du meine E-Mail bekommen?"
-    },
-    {
-      "de": "die Nachricht",
-      "en": "the message / news",
-      "artikel": "die",
-      "example": "Ich habe eine Nachricht auf WhatsApp."
+      "example": "Mein Handy ist kaputt."
     },
     {
       "de": "das Internet",
-      "en": "the internet",
+      "en": "internet",
       "artikel": "das",
-      "example": "Ohne Internet kann ich nicht arbeiten."
+      "example": "Wir haben schnelles Internet zu Hause."
     },
     {
-      "de": "die Website",
-      "en": "the website",
+      "de": "die E-Mail",
+      "en": "email",
       "artikel": "die",
-      "example": "Die Website der Firma ist sehr modern."
+      "example": "Ich schreibe dir eine E-Mail."
     },
     {
-      "de": "das WLAN",
-      "en": "the WiFi",
+      "de": "die Webseite",
+      "en": "website",
+      "artikel": "die",
+      "example": "Die Webseite lädt sehr langsam."
+    },
+    {
+      "de": "die App",
+      "en": "app",
+      "artikel": "die",
+      "example": "Ich habe eine neue App installiert."
+    },
+    {
+      "de": "das Passwort",
+      "en": "password",
       "artikel": "das",
-      "example": "Wie ist das WLAN-Passwort hier?"
-    },
-    {
-      "de": "posten",
-      "en": "to post (on social media)",
-      "example": "Sie postet viele Fotos auf Instagram."
+      "example": "Ich habe mein Passwort vergessen."
     },
     {
       "de": "herunterladen",
       "en": "to download",
-      "example": "Ich lade die App herunter."
+      "example": "Ich lade die Datei herunter."
     },
     {
-      "de": "der Computer",
-      "en": "the computer",
-      "artikel": "der",
-      "example": "Mein Computer ist zu langsam — er ist 8 Jahre alt."
-    },
-    {
-      "de": "das Passwort",
-      "en": "the password",
-      "artikel": "das",
-      "example": "Vergiss dein Passwort nicht!"
+      "de": "hochladen",
+      "en": "to upload",
+      "example": "Ich lade das Foto hoch."
     },
     {
       "de": "speichern",
-      "en": "to save (a file)",
-      "example": "Speicher die Datei, bevor du den Computer ausschaltest!"
-    },
-    {
-      "de": "der Akku",
-      "en": "the battery",
-      "artikel": "der",
-      "example": "Mein Akku ist leer — ich brauche ein Ladekabel."
-    },
-    {
-      "de": "aufladen",
-      "en": "to charge (a device)",
-      "example": "Ich lade mein Handy über Nacht auf."
+      "en": "to save",
+      "example": "Speicher die Datei, bevor du gehst."
     },
     {
       "de": "der Bildschirm",
-      "en": "the screen",
+      "en": "screen",
       "artikel": "der",
-      "example": "Der Bildschirm ist kaputt — ich brauche ein neues Handy."
+      "example": "Der Bildschirm ist zu klein."
     },
     {
-      "de": "löschen",
-      "en": "to delete",
-      "example": "Ich habe die alten Fotos gelöscht."
+      "de": "die Tastatur",
+      "en": "keyboard",
+      "artikel": "die",
+      "example": "Die Tastatur ist sehr leise."
+    },
+    {
+      "de": "der Drucker",
+      "en": "printer",
+      "artikel": "der",
+      "example": "Der Drucker funktioniert nicht."
+    },
+    {
+      "de": "das Foto",
+      "en": "photo",
+      "artikel": "das",
+      "example": "Ich mache ein Foto von dir."
+    },
+    {
+      "de": "das Video",
+      "en": "video",
+      "artikel": "das",
+      "example": "Das Video ist sehr lustig."
+    },
+    {
+      "de": "die Nachricht",
+      "en": "message / news",
+      "artikel": "die",
+      "example": "Ich habe eine Nachricht bekommen."
+    },
+    {
+      "de": "anrufen",
+      "en": "to call",
+      "example": "Ruf mich später an, bitte."
+    },
+    {
+      "de": "das Programm",
+      "en": "program",
+      "artikel": "das",
+      "example": "Dieses Programm ist sehr nützlich."
+    },
+    {
+      "de": "das Netzwerk",
+      "en": "network",
+      "artikel": "das",
+      "example": "Das Netzwerk ist heute sehr langsam."
+    },
+    {
+      "de": "das WLAN",
+      "en": "wifi",
+      "artikel": "das",
+      "example": "Wie ist das Passwort für das WLAN?"
+    },
+    {
+      "de": "der Fernseher",
+      "en": "television",
+      "artikel": "der",
+      "example": "Wir schauen abends Fernsehen."
+    },
+    {
+      "de": "die Kamera",
+      "en": "camera",
+      "artikel": "die",
+      "example": "Die Kamera macht tolle Fotos."
+    },
+    {
+      "de": "die sozialen Medien",
+      "en": "social media",
+      "artikel": "die",
+      "example": "Ich benutze soziale Medien nicht so oft."
     }
   ]
 }

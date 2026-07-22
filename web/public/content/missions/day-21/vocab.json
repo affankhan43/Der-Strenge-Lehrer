@@ -1,112 +1,133 @@
 {
   "day": 21,
-  "topic": "Natur & Tiere",
+  "topic": "Sport",
   "words": [
     {
-      "de": "das Tier",
-      "en": "the animal",
-      "artikel": "das",
-      "example": "Im Zoo gibt es viele Tiere."
-    },
-    {
-      "de": "der Hund",
-      "en": "the dog",
+      "de": "der Sport",
+      "en": "sport",
       "artikel": "der",
-      "example": "Mein Hund heißt Max und ist sehr treu."
+      "example": "Sport ist gut für die Gesundheit."
     },
     {
-      "de": "die Katze",
-      "en": "the cat",
+      "de": "der Fußball",
+      "en": "soccer",
+      "artikel": "der",
+      "example": "Er spielt jeden Samstag Fußball."
+    },
+    {
+      "de": "der Basketball",
+      "en": "basketball",
+      "artikel": "der",
+      "example": "Sie spielt Basketball in der Schule."
+    },
+    {
+      "de": "das Tennis",
+      "en": "tennis",
+      "artikel": "das",
+      "example": "Wir spielen am Sonntag Tennis."
+    },
+    {
+      "de": "das Training",
+      "en": "training",
+      "artikel": "das",
+      "example": "Das Training beginnt um sechs Uhr."
+    },
+    {
+      "de": "trainieren",
+      "en": "to train",
+      "example": "Ich trainiere dreimal pro Woche."
+    },
+    {
+      "de": "joggen",
+      "en": "to jog",
+      "example": "Ich jogge jeden Morgen im Park."
+    },
+    {
+      "de": "das Fitnessstudio",
+      "en": "gym",
+      "artikel": "das",
+      "example": "Ich gehe ins Fitnessstudio."
+    },
+    {
+      "de": "die Mannschaft",
+      "en": "team",
       "artikel": "die",
-      "example": "Die Katze schläft den ganzen Tag auf dem Sofa."
+      "example": "Unsere Mannschaft hat gewonnen."
     },
     {
-      "de": "der Vogel",
-      "en": "the bird",
+      "de": "der Spieler",
+      "en": "player (male)",
       "artikel": "der",
-      "example": "Der Vogel singt schön im Frühling."
+      "example": "Der Spieler schießt ein Tor."
     },
     {
-      "de": "das Pferd",
-      "en": "the horse",
-      "artikel": "das",
-      "example": "Das Pferd galoppiert über das Feld."
-    },
-    {
-      "de": "der Baum",
-      "en": "the tree",
-      "artikel": "der",
-      "example": "Dieser Baum ist über 100 Jahre alt."
-    },
-    {
-      "de": "die Blume",
-      "en": "the flower",
+      "de": "die Spielerin",
+      "en": "player (female)",
       "artikel": "die",
-      "example": "Im Garten wachsen bunte Blumen."
+      "example": "Die Spielerin läuft sehr schnell."
     },
     {
-      "de": "der Wald",
-      "en": "the forest",
-      "artikel": "der",
-      "example": "Wir machen einen Spaziergang im Wald."
+      "de": "gewinnen",
+      "en": "to win",
+      "example": "Unser Team gewinnt oft."
     },
     {
-      "de": "der Berg",
-      "en": "the mountain",
-      "artikel": "der",
-      "example": "Im Sommer wandern wir in den Bergen."
+      "de": "verlieren",
+      "en": "to lose",
+      "example": "Wir haben das Spiel verloren."
     },
     {
-      "de": "der See",
-      "en": "the lake",
-      "artikel": "der",
-      "example": "Am See kann man gut schwimmen."
-    },
-    {
-      "de": "das Meer",
-      "en": "the sea / ocean",
+      "de": "das Turnier",
+      "en": "tournament",
       "artikel": "das",
-      "example": "Im Urlaub fahren wir ans Meer."
+      "example": "Das Turnier findet im Juni statt."
     },
     {
-      "de": "der Fluss",
-      "en": "the river",
+      "de": "der Sieger",
+      "en": "winner",
       "artikel": "der",
-      "example": "Der Rhein ist ein großer Fluss."
+      "example": "Der Sieger bekommt einen Pokal."
     },
     {
-      "de": "das Gras",
-      "en": "the grass",
-      "artikel": "das",
-      "example": "Das Gras ist nach dem Regen schön grün."
-    },
-    {
-      "de": "wachsen",
-      "en": "to grow",
-      "example": "Die Pflanzen wachsen schnell im Sommer."
-    },
-    {
-      "de": "der Stein",
-      "en": "the stone / rock",
-      "artikel": "der",
-      "example": "Kinder werfen gern Steine ins Wasser."
-    },
-    {
-      "de": "die Natur",
-      "en": "nature",
+      "de": "die Niederlage",
+      "en": "defeat / loss",
       "artikel": "die",
-      "example": "Ich liebe die Natur."
+      "example": "Die Niederlage war sehr knapp."
     },
     {
-      "de": "wild",
-      "en": "wild",
-      "example": "Das wilde Tier lief in den Wald."
+      "de": "die Meisterschaft",
+      "en": "championship",
+      "artikel": "die",
+      "example": "Sie spielen um die Meisterschaft."
     },
     {
-      "de": "der Fisch",
-      "en": "the fish",
+      "de": "Yoga",
+      "en": "yoga",
+      "example": "Ich mache jeden Morgen Yoga."
+    },
+    {
+      "de": "die Fitness",
+      "en": "fitness",
+      "artikel": "die",
+      "example": "Fitness ist wichtig für mich."
+    },
+    {
+      "de": "der Muskel",
+      "en": "muscle",
       "artikel": "der",
-      "example": "Im See gibt es viele verschiedene Fische."
+      "example": "Nach dem Training tut mein Muskel weh."
+    },
+    {
+      "de": "die Ausdauer",
+      "en": "stamina / endurance",
+      "artikel": "die",
+      "example": "Laufen verbessert die Ausdauer."
+    },
+    {
+      "de": "das Stadion",
+      "en": "stadium",
+      "artikel": "das",
+      "example": "Das Spiel findet im Stadion statt."
     }
   ]
 }

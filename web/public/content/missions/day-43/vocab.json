@@ -1,32 +1,106 @@
 {
   "day": 43,
-  "topic": "Bücher & Literatur",
+  "topic": "Zeit-Ausdrücke",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "immer",
+      "en": "always",
+      "example": "Sie kommt immer pünktlich."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "oft",
+      "en": "often",
+      "example": "Ich gehe oft ins Kino."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "manchmal",
+      "en": "sometimes",
+      "example": "Manchmal koche ich am Wochenende."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "selten",
+      "en": "rarely",
+      "example": "Er kommt selten zu spät."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "nie",
+      "en": "never",
+      "example": "Ich trinke nie Alkohol."
+    },
+    {
+      "de": "schon",
+      "en": "already",
+      "example": "Ich habe das schon gemacht."
+    },
+    {
+      "de": "noch",
+      "en": "still / yet",
+      "example": "Ich bin noch nicht fertig."
+    },
+    {
+      "de": "noch nicht",
+      "en": "not yet",
+      "example": "Ich habe noch nicht gegessen."
+    },
+    {
+      "de": "bald",
+      "en": "soon",
+      "example": "Wir sehen uns bald wieder."
+    },
+    {
+      "de": "momentan",
+      "en": "at the moment",
+      "example": "Ich koche momentan das Abendessen."
+    },
+    {
+      "de": "sofort",
+      "en": "immediately",
+      "example": "Komm bitte sofort her."
+    },
+    {
+      "de": "gleich",
+      "en": "right away / soon",
+      "example": "Ich bin gleich fertig."
+    },
+    {
+      "de": "zuerst",
+      "en": "first (of all)",
+      "example": "Zuerst frühstücke ich, dann gehe ich zur Arbeit."
+    },
+    {
+      "de": "danach",
+      "en": "afterwards",
+      "example": "Danach räume ich die Küche auf."
+    },
+    {
+      "de": "schließlich",
+      "en": "finally",
+      "example": "Schließlich haben wir das Problem gelöst."
+    },
+    {
+      "de": "inzwischen",
+      "en": "meanwhile",
+      "example": "Inzwischen habe ich die Tickets gekauft."
+    },
+    {
+      "de": "neulich",
+      "en": "recently",
+      "example": "Neulich habe ich einen alten Freund getroffen."
+    },
+    {
+      "de": "damals",
+      "en": "back then",
+      "example": "Damals war das Leben einfacher."
+    },
+    {
+      "de": "ab und zu",
+      "en": "now and then",
+      "example": "Ab und zu gehe ich joggen."
+    },
+    {
+      "de": "jederzeit",
+      "en": "anytime",
+      "example": "Du kannst mich jederzeit anrufen."
     }
-  ],
-  "_note": "Add 20 words about 'Bücher & Literatur'. Format: {de, en, example}"
+  ]
 }

@@ -1,32 +1,133 @@
 {
   "day": 8,
-  "topic": "Vokabeln (Inhalt wird noch ergänzt)",
+  "topic": "Im Restaurant",
   "words": [
     {
-      "de": "Beispiel",
-      "en": "example",
-      "example": "Das ist ein Beispiel."
+      "de": "das Restaurant",
+      "en": "restaurant",
+      "artikel": "das",
+      "example": "Wir essen heute im Restaurant."
     },
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag."
+      "de": "die Speisekarte",
+      "en": "menu",
+      "artikel": "die",
+      "example": "Kann ich bitte die Speisekarte haben?"
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "bestellen",
+      "en": "to order",
+      "example": "Ich möchte jetzt bestellen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Rechnung",
+      "en": "the bill",
+      "artikel": "die",
+      "example": "Die Rechnung, bitte!"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Sprechen Sie Deutsch?"
+      "de": "das Trinkgeld",
+      "en": "tip",
+      "artikel": "das",
+      "example": "Wir geben immer Trinkgeld."
+    },
+    {
+      "de": "der Kellner",
+      "en": "waiter",
+      "artikel": "der",
+      "example": "Der Kellner bringt das Essen."
+    },
+    {
+      "de": "die Kellnerin",
+      "en": "waitress",
+      "artikel": "die",
+      "example": "Die Kellnerin ist sehr freundlich."
+    },
+    {
+      "de": "der Tisch",
+      "en": "table",
+      "artikel": "der",
+      "example": "Wir sitzen am Tisch neben dem Fenster."
+    },
+    {
+      "de": "reservieren",
+      "en": "to reserve",
+      "example": "Ich möchte einen Tisch reservieren."
+    },
+    {
+      "de": "die Vorspeise",
+      "en": "appetizer",
+      "artikel": "die",
+      "example": "Als Vorspeise nehme ich Suppe."
+    },
+    {
+      "de": "die Hauptspeise",
+      "en": "main course",
+      "artikel": "die",
+      "example": "Die Hauptspeise kommt in zehn Minuten."
+    },
+    {
+      "de": "die Nachspeise",
+      "en": "dessert",
+      "artikel": "die",
+      "example": "Zur Nachspeise gibt es Eis."
+    },
+    {
+      "de": "lecker",
+      "en": "delicious",
+      "example": "Das Essen ist sehr lecker."
+    },
+    {
+      "de": "die Gabel",
+      "en": "fork",
+      "artikel": "die",
+      "example": "Ich brauche noch eine Gabel."
+    },
+    {
+      "de": "das Messer",
+      "en": "knife",
+      "artikel": "das",
+      "example": "Das Messer ist sehr scharf."
+    },
+    {
+      "de": "der Löffel",
+      "en": "spoon",
+      "artikel": "der",
+      "example": "Ich esse die Suppe mit einem Löffel."
+    },
+    {
+      "de": "der Teller",
+      "en": "plate",
+      "artikel": "der",
+      "example": "Der Teller ist leer."
+    },
+    {
+      "de": "das Glas",
+      "en": "glass",
+      "artikel": "das",
+      "example": "Ich hätte gern ein Glas Wasser."
+    },
+    {
+      "de": "die Serviette",
+      "en": "napkin",
+      "artikel": "die",
+      "example": "Die Serviette liegt neben dem Teller."
+    },
+    {
+      "de": "zahlen",
+      "en": "to pay",
+      "example": "Können wir bitte zahlen?"
+    },
+    {
+      "de": "der Gast",
+      "en": "guest / customer",
+      "artikel": "der",
+      "example": "Der Gast ist mit dem Essen zufrieden."
+    },
+    {
+      "de": "empfehlen",
+      "en": "to recommend",
+      "example": "Was können Sie mir empfehlen?"
     }
-  ],
-  "_contributor_note": "Füge 20 Wörter zum Thema dieses Tages hinzu. Jedes Wort braucht: de, en, example."
+  ]
 }

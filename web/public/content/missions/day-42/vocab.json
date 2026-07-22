@@ -1,32 +1,116 @@
 {
   "day": 42,
-  "topic": "Kino & Filme",
+  "topic": "Adjektive: Gegensätze",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "voll",
+      "en": "full",
+      "example": "Das Glas ist voll."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "leer",
+      "en": "empty",
+      "example": "Die Flasche ist leer."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "laut",
+      "en": "loud",
+      "example": "Die Musik ist zu laut."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "leise",
+      "en": "quiet",
+      "example": "Sprich bitte leiser."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "schnell",
+      "en": "fast",
+      "example": "Das Auto fährt sehr schnell."
+    },
+    {
+      "de": "langsam",
+      "en": "slow",
+      "example": "Die Schnecke ist sehr langsam."
+    },
+    {
+      "de": "hart",
+      "en": "hard",
+      "example": "Das Brot ist hart geworden."
+    },
+    {
+      "de": "weich",
+      "en": "soft",
+      "example": "Das Kissen ist sehr weich."
+    },
+    {
+      "de": "nass",
+      "en": "wet",
+      "example": "Meine Kleidung ist nass vom Regen."
+    },
+    {
+      "de": "trocken",
+      "en": "dry",
+      "example": "Das Handtuch ist schon trocken."
+    },
+    {
+      "de": "stark (Geschmack)",
+      "en": "strong (taste/smell)",
+      "example": "Der Kaffee ist mir zu stark."
+    },
+    {
+      "de": "schwach (Geschmack)",
+      "en": "weak (taste)",
+      "example": "Der Tee ist zu schwach."
+    },
+    {
+      "de": "leicht (Gewicht)",
+      "en": "light (weight)",
+      "example": "Die Tasche ist sehr leicht."
+    },
+    {
+      "de": "schwer (Gewicht)",
+      "en": "heavy (weight)",
+      "example": "Der Koffer ist zu schwer."
+    },
+    {
+      "de": "breit",
+      "en": "wide",
+      "example": "Die Straße ist sehr breit."
+    },
+    {
+      "de": "schmal",
+      "en": "narrow",
+      "example": "Der Weg ist schmal."
+    },
+    {
+      "de": "hoch",
+      "en": "high / tall",
+      "example": "Der Turm ist sehr hoch."
+    },
+    {
+      "de": "niedrig",
+      "en": "low",
+      "example": "Der Tisch ist niedrig."
+    },
+    {
+      "de": "tief",
+      "en": "deep",
+      "example": "Der See ist sehr tief."
+    },
+    {
+      "de": "flach",
+      "en": "flat / shallow",
+      "example": "Das Wasser ist hier flach."
+    },
+    {
+      "de": "sauber machen",
+      "en": "to clean",
+      "example": "Ich mache heute die Wohnung sauber."
+    },
+    {
+      "de": "ordentlich",
+      "en": "tidy",
+      "example": "Sein Zimmer ist immer ordentlich."
     }
-  ],
-  "_note": "Add 20 words about 'Kino & Filme'. Format: {de, en, example}"
+  ]
 }

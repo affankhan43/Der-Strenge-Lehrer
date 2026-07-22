@@ -1,96 +1,134 @@
 {
   "day": 22,
-  "topic": "Adjektive & Gegensätze",
+  "topic": "Gesundheit & Arztbesuch",
   "words": [
     {
-      "de": "groß",
-      "en": "big / tall",
-      "example": "Das Haus ist sehr groß — drei Stockwerke."
+      "de": "die Gesundheit",
+      "en": "health",
+      "artikel": "die",
+      "example": "Gesundheit ist das Wichtigste."
     },
     {
-      "de": "klein",
-      "en": "small / little",
-      "example": "Das Kind ist noch sehr klein."
+      "de": "die Praxis",
+      "en": "doctor's office / clinic",
+      "artikel": "die",
+      "example": "Die Praxis ist bis 18 Uhr geöffnet."
     },
     {
-      "de": "alt",
-      "en": "old",
-      "example": "Dieses Gebäude ist 200 Jahre alt."
+      "de": "der Termin",
+      "en": "appointment",
+      "artikel": "der",
+      "example": "Ich habe morgen einen Termin beim Arzt."
     },
     {
-      "de": "jung",
-      "en": "young",
-      "example": "Sie ist noch sehr jung — erst 22 Jahre."
+      "de": "die Schmerzen",
+      "en": "pain",
+      "artikel": "die",
+      "example": "Ich habe starke Schmerzen im Rücken."
     },
     {
-      "de": "lang",
-      "en": "long",
-      "example": "Das Konzert dauerte lange — fast drei Stunden."
+      "de": "der Kopfschmerz",
+      "en": "headache",
+      "artikel": "der",
+      "example": "Ich habe seit heute Kopfschmerzen."
     },
     {
-      "de": "kurz",
-      "en": "short",
-      "example": "Das Meeting war kurz und effektiv."
+      "de": "das Fieber",
+      "en": "fever",
+      "artikel": "das",
+      "example": "Das Kind hat hohes Fieber."
     },
     {
-      "de": "schnell",
-      "en": "fast / quick",
-      "example": "Der ICE-Zug ist sehr schnell."
+      "de": "der Husten",
+      "en": "cough",
+      "artikel": "der",
+      "example": "Er hat seit Tagen Husten."
     },
     {
-      "de": "langsam",
-      "en": "slow",
-      "example": "Fahre langsam — hier spielen Kinder."
+      "de": "die Erkältung",
+      "en": "cold (illness)",
+      "artikel": "die",
+      "example": "Ich habe eine schlimme Erkältung."
     },
     {
-      "de": "stark",
-      "en": "strong",
-      "example": "Er ist sehr stark — ein echter Sportler."
+      "de": "die Grippe",
+      "en": "flu",
+      "artikel": "die",
+      "example": "Im Winter gibt es viel Grippe."
     },
     {
-      "de": "schwach",
-      "en": "weak",
-      "example": "Nach der Grippe war ich sehr schwach."
+      "de": "die Medizin",
+      "en": "medicine",
+      "artikel": "die",
+      "example": "Nimm diese Medizin dreimal täglich."
     },
     {
-      "de": "schön",
-      "en": "beautiful / nice",
-      "example": "Das ist ein wirklich schöner Tag!"
+      "de": "die Tablette",
+      "en": "pill / tablet",
+      "artikel": "die",
+      "example": "Nimm eine Tablette gegen die Schmerzen."
     },
     {
-      "de": "hässlich",
-      "en": "ugly",
-      "example": "Das alte Industriegebäude ist hässlich."
+      "de": "das Rezept",
+      "en": "prescription",
+      "artikel": "das",
+      "example": "Der Arzt schreibt ein Rezept."
     },
     {
-      "de": "neu",
-      "en": "new",
-      "example": "Ich habe ein neues Smartphone."
+      "de": "der Verband",
+      "en": "bandage",
+      "artikel": "der",
+      "example": "Die Krankenschwester legt einen Verband an."
     },
     {
-      "de": "schwer",
-      "en": "heavy / difficult",
-      "example": "Der Koffer ist sehr schwer — 20 Kilo."
+      "de": "die Verletzung",
+      "en": "injury",
+      "artikel": "die",
+      "example": "Die Verletzung ist nicht schlimm."
     },
     {
-      "de": "leicht",
-      "en": "light / easy",
-      "example": "Diese Prüfung war leicht — ich war vorbereitet."
+      "de": "sich verletzen",
+      "en": "to injure oneself",
+      "example": "Er hat sich beim Sport verletzt."
     },
     {
-      "de": "interessant",
-      "en": "interesting",
-      "example": "Das Buch ist wirklich interessant."
+      "de": "untersuchen",
+      "en": "to examine",
+      "example": "Der Arzt untersucht den Patienten."
     },
     {
-      "de": "langweilig",
-      "en": "boring",
-      "example": "Der Film war leider sehr langweilig."
+      "de": "der Krankenwagen",
+      "en": "ambulance",
+      "artikel": "der",
+      "example": "Der Krankenwagen kommt sofort."
     },
     {
-      "de": "teuer",
-      "en": "expensive",
-      "example": "Das Restaurant ist viel zu teuer!"
+      "de": "die Versicherung",
+      "en": "insurance",
+      "artikel": "die",
+      "example": "Meine Versicherung bezahlt die Behandlung."
+    },
+    {
+      "de": "sich erholen",
+      "en": "to recover",
+      "example": "Ich muss mich von der Grippe erholen."
+    },
+    {
+      "de": "die Behandlung",
+      "en": "treatment",
+      "artikel": "die",
+      "example": "Die Behandlung dauert zwei Wochen."
+    },
+    {
+      "de": "impfen",
+      "en": "to vaccinate",
+      "example": "Der Arzt impft die Kinder."
+    },
+    {
+      "de": "die Impfung",
+      "en": "vaccination",
+      "artikel": "die",
+      "example": "Die Impfung ist kostenlos."
     }
   ]
 }

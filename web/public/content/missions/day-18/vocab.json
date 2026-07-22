@@ -1,24 +1,129 @@
 {
   "day": 18,
-  "topic": "Hobbys & Freizeit",
+  "topic": "Wegbeschreibung",
   "words": [
-    {"de": "das Hobby", "en": "the hobby", "artikel": "das", "example": "Was ist dein Hobby? — Ich spiele gern Gitarre."},
-    {"de": "die Freizeit", "en": "the free time / leisure time", "artikel": "die", "example": "In meiner Freizeit lese ich viel."},
-    {"de": "lesen", "en": "to read", "example": "Ich lese jeden Abend ein Buch."},
-    {"de": "Musik hören", "en": "to listen to music", "example": "Ich höre gern Musik — besonders Jazz."},
-    {"de": "Sport treiben", "en": "to do sports", "example": "Ich treibe dreimal pro Woche Sport."},
-    {"de": "schwimmen", "en": "to swim", "example": "Im Sommer schwimme ich jeden Tag."},
-    {"de": "laufen / joggen", "en": "to run / jog", "example": "Ich laufe jeden Morgen 5 Kilometer."},
-    {"de": "reisen", "en": "to travel", "example": "In den Ferien reise ich gern nach Europa."},
-    {"de": "kochen", "en": "to cook", "example": "Ich koche gern — besonders italienisches Essen."},
-    {"de": "fotografieren", "en": "to take photographs", "example": "Ich fotografiere gern Natur und Städte."},
-    {"de": "malen", "en": "to paint", "example": "In meiner Freizeit male ich Aquarelle."},
-    {"de": "tanzen", "en": "to dance", "example": "Wir tanzen jeden Samstagabend."},
-    {"de": "spielen", "en": "to play", "example": "Ich spiele Gitarre und Klavier."},
-    {"de": "das Konzert", "en": "the concert", "artikel": "das", "example": "Morgen gehe ich ins Konzert."},
-    {"de": "das Kino", "en": "the cinema / movie theater", "artikel": "das", "example": "Am Wochenende gehen wir ins Kino."},
-    {"de": "der Verein", "en": "the club / association", "artikel": "der", "example": "Ich bin Mitglied im Fußballverein."},
-    {"de": "der Film", "en": "the film / movie", "artikel": "der", "example": "Ich sehe gern Horrorfilme."},
-    {"de": "gern", "en": "gladly / with pleasure (= to like doing)", "example": "Ich koche gern. = I like cooking."}
+    {
+      "de": "links",
+      "en": "left",
+      "example": "Geh nach links."
+    },
+    {
+      "de": "rechts",
+      "en": "right",
+      "example": "Die Bank ist auf der rechten Seite."
+    },
+    {
+      "de": "geradeaus",
+      "en": "straight ahead",
+      "example": "Gehen Sie geradeaus bis zur Ampel."
+    },
+    {
+      "de": "die Ecke",
+      "en": "corner",
+      "artikel": "die",
+      "example": "Der Laden ist an der Ecke."
+    },
+    {
+      "de": "die Kreuzung",
+      "en": "intersection",
+      "artikel": "die",
+      "example": "An der Kreuzung biegen Sie links ab."
+    },
+    {
+      "de": "die Richtung",
+      "en": "direction",
+      "artikel": "die",
+      "example": "Ich gehe in die falsche Richtung."
+    },
+    {
+      "de": "der Weg",
+      "en": "way / path",
+      "artikel": "der",
+      "example": "Zeigst du mir den Weg?"
+    },
+    {
+      "de": "abbiegen",
+      "en": "to turn",
+      "example": "Biegen Sie an der Kreuzung rechts ab."
+    },
+    {
+      "de": "gegenüber",
+      "en": "opposite / across from",
+      "example": "Die Post ist gegenüber der Bank."
+    },
+    {
+      "de": "neben",
+      "en": "next to",
+      "example": "Die Apotheke ist neben dem Kino."
+    },
+    {
+      "de": "zwischen",
+      "en": "between",
+      "example": "Der Park liegt zwischen zwei Straßen."
+    },
+    {
+      "de": "hinter",
+      "en": "behind",
+      "example": "Das Auto steht hinter dem Haus."
+    },
+    {
+      "de": "vor",
+      "en": "in front of",
+      "example": "Er wartet vor dem Bahnhof."
+    },
+    {
+      "de": "weit",
+      "en": "far",
+      "example": "Der Bahnhof ist weit von hier."
+    },
+    {
+      "de": "nah",
+      "en": "near / close",
+      "example": "Die Schule ist ganz nah."
+    },
+    {
+      "de": "die Entfernung",
+      "en": "distance",
+      "artikel": "die",
+      "example": "Die Entfernung ist nur zwei Kilometer."
+    },
+    {
+      "de": "der Kilometer",
+      "en": "kilometer",
+      "artikel": "der",
+      "example": "Es sind noch drei Kilometer bis zur Stadt."
+    },
+    {
+      "de": "der Meter",
+      "en": "meter",
+      "artikel": "der",
+      "example": "Die Straße ist hundert Meter lang."
+    },
+    {
+      "de": "suchen",
+      "en": "to look for",
+      "example": "Ich suche den Bahnhof."
+    },
+    {
+      "de": "finden",
+      "en": "to find",
+      "example": "Ich kann die Adresse nicht finden."
+    },
+    {
+      "de": "die Karte",
+      "en": "map",
+      "artikel": "die",
+      "example": "Schau auf die Karte."
+    },
+    {
+      "de": "sich verlaufen",
+      "en": "to get lost",
+      "example": "Wir haben uns in der Stadt verlaufen."
+    },
+    {
+      "de": "fragen",
+      "en": "to ask",
+      "example": "Frag doch einen Passanten."
+    }
   ]
 }
