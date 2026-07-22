@@ -1,0 +1,8 @@
+{
+  "day": 42,
+  "topic": "Reflexive Verben",
+  "prompt": "Schreibe deine Morgenroutine mit 6 Sätzen. Benutze reflexive Verben.",
+  "vocabulary_hint": "Ich wasche mich. Ich ziehe mich an. Ich kämme mich. Ich freue mich auf den Tag.",
+  "min_sentences": 5,
+  "example": null
+}

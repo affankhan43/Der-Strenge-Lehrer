@@ -1,0 +1,8 @@
+{
+  "day": 33,
+  "topic": "Adjektivdeklination",
+  "prompt": "Beschreibe 6 Gegenstände oder Personen mit Adjektiven im richtigen Fall (der/die/das + Adjektiv + Nomen).",
+  "vocabulary_hint": "Ich trage einen roten Pullover. Das alte Buch liegt auf dem Tisch. Die kleine Katze schläft.",
+  "min_sentences": 5,
+  "example": null
+}

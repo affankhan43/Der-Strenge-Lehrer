@@ -1,0 +1,8 @@
+{
+  "day": 36,
+  "topic": "Präpositionen mit Akkusativ",
+  "prompt": "Schreibe 6 Sätze über deine Pläne für heute/morgen mit: durch, für, gegen, ohne, um, bis, entlang.",
+  "vocabulary_hint": "Ich laufe durch den Park. Ich kaufe etwas für meine Mutter. Ich gehe um 9 Uhr ins Bett.",
+  "min_sentences": 5,
+  "example": null
+}

@@ -1,0 +1,8 @@
+{
+  "day": 47,
+  "topic": "Natur & Umwelt",
+  "prompt": "Was machst du für die Umwelt? Schreibe 6 Sätze über deinen ökologischen Alltag.",
+  "vocabulary_hint": "Ich recycele ..., Ich fahre mit dem Fahrrad, weil ..., Ich kaufe ..., Ich spare Energie indem ...",
+  "min_sentences": 5,
+  "example": null
+}

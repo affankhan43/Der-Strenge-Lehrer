@@ -1,0 +1,8 @@
+{
+  "day": 50,
+  "topic": "Kochen — Ein Rezept",
+  "prompt": "Erkläre wie man dein Lieblingsessen kocht. Schreibe 6 Schritte im Imperativ oder mit \"man muss/soll\".",
+  "vocabulary_hint": "Zuerst schneidet man ..., Dann kocht man ..., Man braucht ..., Am Ende ...",
+  "min_sentences": 5,
+  "example": null
+}

@@ -1,0 +1,241 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 0px);
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+/* ── Level filter strip ── */
+.levelStrip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: rgba(0,0,0,.85);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  overflow-x: auto;
+  flex-shrink: 0;
+  z-index: 20;
+  scrollbar-width: none;
+}
+.levelStrip::-webkit-scrollbar { display: none; }
+.stripLabel { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .08em; flex-shrink: 0; }
+.lvBtn {
+  flex-shrink: 0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+  color: rgba(255,255,255,.5);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .18s;
+}
+.lvBtn:hover { border-color: var(--lv); color: var(--lv); }
+.lvBtnActive {
+  background: color-mix(in srgb, var(--lv) 20%, transparent) !important;
+  border-color: var(--lv) !important;
+  color: var(--lv) !important;
+}
+
+/* ── Feed container ── */
+.feed {
+  flex: 1;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  position: relative;
+}
+.feed::-webkit-scrollbar { display: none; }
+
+.reelSlot {
+  height: calc(100vh - 45px);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+/* ── Single reel card ── */
+.reel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reelBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, #0d0d0d 0%, #000 100%);
+  z-index: 0;
+}
+
+/* ── Embed ── */
+.embedWrap {
+  position: relative;
+  z-index: 1;
+  width: min(400px, 90vw);
+  aspect-ratio: 9/16;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 0 60px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.06);
+}
+
+.iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.embedLoader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  z-index: 2;
+}
+
+/* ── HUD overlays ── */
+.reelTop {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+  width: min(400px, 90vw);
+}
+
+.platformBadge,
+.levelBadge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.reelBottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(400px, 90vw);
+  padding: 40px 16px 20px;
+  background: linear-gradient(to top, rgba(0,0,0,.85) 0%, transparent 100%);
+  z-index: 10;
+  border-radius: 0 0 16px 16px;
+}
+
+.reelTitle { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.reelDesc  { font-size: 12px; color: rgba(255,255,255,.65); line-height: 1.5; }
+
+/* ── Progress dots (right side) ── */
+.dots {
+  position: fixed;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 30;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.25);
+  border: none;
+  cursor: pointer;
+  transition: all .2s;
+  padding: 0;
+}
+.dotActive {
+  background: #fff;
+  height: 18px;
+  border-radius: 3px;
+}
+
+/* ── Nav arrows (right side bottom) ── */
+.navArrows {
+  position: fixed;
+  right: 24px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 30;
+}
+
+.arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+  backdrop-filter: blur(8px);
+}
+.arrow:hover:not(:disabled) { background: rgba(255,255,255,.22); }
+.arrow:disabled { opacity: .25; cursor: not-allowed; }
+.arrowCount { font-size: 10px; color: rgba(255,255,255,.45); font-weight: 700; }
+
+/* ── Empty / loading ── */
+.empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgba(255,255,255,.4);
+  font-size: 14px;
+}
+.emptyTitle { font-size: 16px; font-weight: 700; color: rgba(255,255,255,.6); }
+.emptySub   { font-size: 13px; color: rgba(255,255,255,.35); }
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255,255,255,.1);
+  border-top-color: rgba(255,255,255,.6);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .embedWrap { width: 100vw; border-radius: 0; aspect-ratio: 9/16; }
+  .reelTop   { width: 100vw; padding: 0 12px; }
+  .reelBottom { width: 100vw; border-radius: 0; }
+  .dots { display: none; }
+}

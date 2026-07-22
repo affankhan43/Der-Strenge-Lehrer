@@ -1,0 +1,8 @@
+{
+  "day": 34,
+  "topic": "Dativ — Wem gibst du was?",
+  "prompt": "Schreibe 5 Sätze: Was gibst/zeigst/schenkst du wem? Benutze Dativ-Artikel (dem/der/einem/einer).",
+  "vocabulary_hint": "Ich gebe meinem Vater ..., Ich zeige meiner Schwester ..., Ich schenke dem Lehrer ...",
+  "min_sentences": 5,
+  "example": null
+}

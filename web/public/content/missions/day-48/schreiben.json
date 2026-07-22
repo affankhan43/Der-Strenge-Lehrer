@@ -1,0 +1,8 @@
+{
+  "day": 48,
+  "topic": "Reiseerfahrung",
+  "prompt": "Erzähle von einer Reise, die du gemacht hast (oder eine Traumreise). Perfekt und Präsens mischen. 7 Sätze.",
+  "vocabulary_hint": "Ich bin nach ... gefahren. Ich habe ... gesehen. Es war ..., weil ... Dort gibt es ...",
+  "min_sentences": 5,
+  "example": null
+}

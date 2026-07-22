@@ -1,0 +1,8 @@
+{
+  "day": 40,
+  "topic": "Relativsätze",
+  "prompt": "Beschreibe 5 Personen, Orte oder Dinge mit einem Relativsatz (die/der/das ... die/der/das).",
+  "vocabulary_hint": "Das Buch, das ich lese, ist sehr interessant. Die Frau, die dort steht, ist meine Lehrerin.",
+  "min_sentences": 5,
+  "example": null
+}

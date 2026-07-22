@@ -52,6 +52,17 @@ export default function AdminPage() {
   const [fbFilter, setFbFilter]   = useState('all');
   const [actionMsg, setActionMsg] = useState('');
 
+  // Reels state
+  const [reels, setReels]           = useState([]);
+  const [reelsLoading, setRLoading] = useState(false);
+  const [reelUrl, setReelUrl]       = useState('');
+  const [reelLevel, setReelLevel]   = useState('A1.1');
+  const [reelTitle, setReelTitle]   = useState('');
+  const [reelDesc, setReelDesc]     = useState('');
+  const [reelSaving, setRSaving]    = useState(false);
+  const [reelMsg, setReelMsg]       = useState('');
+  const [reelFilter, setRFilter]    = useState('all');
+
   // Content CMS state
   const [cmsIndex, setCmsIndex]       = useState(null);   // { level: { day, files }[] }
   const [cmsLevel, setCmsLevel]       = useState('A1.1');
@@ -64,7 +75,7 @@ export default function AdminPage() {
   const [cmsSaveMsg, setCmsSaveMsg]   = useState('');
   const [cmsError, setCmsError]       = useState('');
 
-  useEffect(() => { loadUsers(); loadFeedback(); }, []);
+  useEffect(() => { loadUsers(); loadFeedback(); loadReels(); }, []);
 
   const loadUsers = async () => {
     setLoading(true);
@@ -181,6 +192,37 @@ export default function AdminPage() {
 
   const isDirty = cmsContent !== cmsOriginal;
 
+  const loadReels = async () => {
+    setRLoading(true);
+    try {
+      const res = await api.get('/api/admin/reels');
+      setReels(res.data.reels || []);
+    } catch { setReels([]); }
+    setRLoading(false);
+  };
+
+  const addReel = async () => {
+    if (!reelUrl.trim()) return;
+    setRSaving(true); setReelMsg('');
+    try {
+      await api.post('/api/admin/reels', { url: reelUrl.trim(), level: reelLevel, title: reelTitle.trim(), description: reelDesc.trim() });
+      setReelUrl(''); setReelTitle(''); setReelDesc('');
+      setReelMsg('✓ Reel hinzugefügt!');
+      loadReels();
+      setTimeout(() => setReelMsg(''), 3000);
+    } catch (e) { setReelMsg('⚠ ' + (e.response?.data?.error || 'Fehler')); }
+    setRSaving(false);
+  };
+
+  const deleteReel = async (id) => {
+    if (!window.confirm('Reel löschen?')) return;
+    try { await api.delete(`/api/admin/reels/${id}`); loadReels(); } catch {}
+  };
+
+  const toggleReel = async (id, active) => {
+    try { await api.patch(`/api/admin/reels/${id}`, { active: !active }); loadReels(); } catch {}
+  };
+
   const totalUsers    = users.length;
   const activeToday   = users.filter(u => u.lastActiveToday).length;
   const avgXP         = totalUsers > 0 ? Math.round(users.reduce((a,u)=>a+(u.xp||0),0)/totalUsers) : 0;
@@ -203,6 +245,7 @@ export default function AdminPage() {
     { id:'overview', label:'📊 Übersicht' },
     { id:'users',    label:'👥 Nutzer'    },
     { id:'content',  label:'📚 Inhalt'    },
+    { id:'reels',    label:'🎬 Reels'     },
     { id:'feedback', label: newFbCount > 0 ? `💬 Feedback (${newFbCount})` : '💬 Feedback' },
   ];
 
@@ -446,6 +489,87 @@ export default function AdminPage() {
             </div>
           </motion.div>
         )}
+        {tab === 'reels' && (
+          <motion.div key="reels" initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}>
+            {/* Add reel form */}
+            <div className={s.section} style={{ marginBottom:20 }}>
+              <div className={s.sectionTitle}>🎬 Neues Reel hinzufügen</div>
+              <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+                <input className={s.searchInput}
+                  placeholder="Video-URL (YouTube, Instagram, TikTok)…"
+                  value={reelUrl} onChange={e => setReelUrl(e.target.value)}
+                  onKeyDown={e => e.key === 'Enter' && addReel()}
+                  style={{ width:'100%', boxSizing:'border-box' }} />
+                <div style={{ display:'flex', gap:10, flexWrap:'wrap' }}>
+                  <select className={s.sortSelect} value={reelLevel} onChange={e => setReelLevel(e.target.value)}>
+                    {LEVELS.map(lv => <option key={lv} value={lv}>{lv}</option>)}
+                  </select>
+                  <input className={s.searchInput} style={{ flex:1, minWidth:160 }}
+                    placeholder="Titel (optional)"
+                    value={reelTitle} onChange={e => setReelTitle(e.target.value)} />
+                  <input className={s.searchInput} style={{ flex:2, minWidth:200 }}
+                    placeholder="Beschreibung (optional)"
+                    value={reelDesc} onChange={e => setReelDesc(e.target.value)} />
+                  <button className={s.cmsSaveBtn} onClick={addReel} disabled={reelSaving || !reelUrl.trim()}>
+                    {reelSaving ? '⏳' : '+ Hinzufügen'}
+                  </button>
+                </div>
+                {reelMsg && <div style={{ fontSize:13, fontWeight:700, color: reelMsg.startsWith('✓') ? '#4ade80' : '#f87171' }}>{reelMsg}</div>}
+              </div>
+            </div>
+
+            {/* Filter bar */}
+            <div className={s.fbHeader}>
+              <div className={s.fbCountChips}>
+                <button className={s.fbChip + (reelFilter==='all' ? ' '+s.fbChipActive : '')} onClick={() => setRFilter('all')}>Alle ({reels.length})</button>
+                {LEVELS.map(lv => {
+                  const cnt = reels.filter(r => r.level === lv).length;
+                  if (!cnt) return null;
+                  return <button key={lv} className={s.fbChip + (reelFilter===lv ? ' '+s.fbChipActive : '')} onClick={() => setRFilter(lv)}>{lv} ({cnt})</button>;
+                })}
+              </div>
+              <button className={s.refreshBtn} onClick={loadReels}>↺</button>
+            </div>
+
+            {reelsLoading ? (
+              <div className={s.loadingMsg}>⏳ Lädt…</div>
+            ) : reels.length === 0 ? (
+              <div className={s.emptyMsg}>Noch keine Reels. Füge den ersten hinzu!</div>
+            ) : (
+              <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+                {reels
+                  .filter(r => reelFilter === 'all' || r.level === reelFilter)
+                  .map((r, i) => {
+                    const lvc = LEVEL_COLORS[r.level] || '#a78bfa';
+                    const plat = r.platform === 'youtube' ? '▶ YouTube' : r.platform === 'instagram' ? '◈ Instagram' : '♪ TikTok';
+                    return (
+                      <motion.div key={r._id} initial={{ opacity:0, y:8 }} animate={{ opacity:1, y:0 }} transition={{ delay:i*.03 }}
+                        style={{ background:'var(--card)', border:'1px solid rgba(255,255,255,.07)', borderLeft:`3px solid ${lvc}`, borderRadius:12, padding:'14px 18px', display:'flex', gap:14, alignItems:'center', flexWrap:'wrap', opacity: r.active ? 1 : 0.45 }}>
+                        <div style={{ flex:1, minWidth:0 }}>
+                          <div style={{ display:'flex', gap:8, alignItems:'center', marginBottom:4, flexWrap:'wrap' }}>
+                            <span style={{ fontSize:11, fontWeight:800, color:lvc, padding:'2px 8px', borderRadius:6, background:lvc+'18', border:'1px solid '+lvc+'33' }}>{r.level}</span>
+                            <span style={{ fontSize:11, color:'var(--text3)', fontWeight:600 }}>{plat}</span>
+                            {!r.active && <span style={{ fontSize:11, color:'#f87171', fontWeight:700 }}>● Versteckt</span>}
+                          </div>
+                          {r.title && <div style={{ fontSize:13, fontWeight:700, color:'var(--text1)', marginBottom:2 }}>{r.title}</div>}
+                          <div style={{ fontSize:11, color:'var(--text3)', wordBreak:'break-all' }}>{r.url}</div>
+                        </div>
+                        <div style={{ display:'flex', gap:6, flexShrink:0 }}>
+                          <button className={s.fbBtn}
+                            onClick={() => toggleReel(r._id, r.active)}
+                            style={{ color: r.active ? '#fbbf24' : '#4ade80' }}>
+                            {r.active ? '👁 Verbergen' : '👁 Zeigen'}
+                          </button>
+                          <button className={s.fbBtn} style={{ color:'#f87171' }} onClick={() => deleteReel(r._id)}>✕</button>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+              </div>
+            )}
+          </motion.div>
+        )}
+
         {tab === 'feedback' && (
           <motion.div key="feedback" initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}>
             <div className={s.fbHeader}>

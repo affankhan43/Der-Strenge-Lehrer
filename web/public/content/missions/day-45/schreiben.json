@@ -1,0 +1,8 @@
+{
+  "day": 45,
+  "topic": "Zeitangaben",
+  "prompt": "Beschreibe deine Lerngeschichte: Wann hast du angefangen? Wie lange lernst du schon? Schreibe 5 Sätze mit: seit, vor, nach, in, während.",
+  "vocabulary_hint": "Ich lerne seit ... Monaten Deutsch. Vor einem Jahr habe ich angefangen. In zwei Monaten ...",
+  "min_sentences": 5,
+  "example": null
+}

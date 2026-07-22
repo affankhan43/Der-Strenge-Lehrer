@@ -3,6 +3,7 @@ const router   = express.Router();
 const Progress = require('../models/Progress');
 const User     = require('../models/User');
 const Feedback = require('../models/Feedback');
+const Reel     = require('../models/Reel');
 const { requireAuth } = require('../middleware/auth');
 const tasks    = require('../../data/tasks.json');
 
@@ -390,6 +391,17 @@ router.post('/feedback', async (req, res) => {
       message: message.trim().slice(0, 2000),
     });
     res.json({ ok: true, id: item._id });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── GET /api/reels?level=A1.1 ── public, auth required
+router.get('/reels', requireAuth, async (req, res) => {
+  try {
+    const level = req.query.level;
+    const filter = { active: true };
+    if (level) filter.level = level;
+    const reels = await Reel.find(filter).sort({ order: 1, createdAt: -1 }).lean();
+    res.json({ reels });
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 

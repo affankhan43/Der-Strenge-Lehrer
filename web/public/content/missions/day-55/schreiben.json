@@ -1,0 +1,8 @@
+{
+  "day": 55,
+  "topic": "Meinungen äußern",
+  "prompt": "Gib deine Meinung zu 3 Themen: Schule, Social Media, Klima. 2 Sätze pro Thema mit Begründung.",
+  "vocabulary_hint": "Ich finde, dass ..., Meiner Meinung nach ..., Ich bin dafür/dagegen, weil ...",
+  "min_sentences": 5,
+  "example": null
+}

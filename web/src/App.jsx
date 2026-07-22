@@ -10,6 +10,7 @@ import TaskPage      from './pages/TaskPage';
 import HistoryPage   from './pages/HistoryPage';
 import ProfilePage   from './pages/ProfilePage';
 import AdminPage     from './pages/AdminPage';
+import ReelsPage     from './pages/ReelsPage';
 import AppLayout     from './components/AppLayout';
 
 function Protected({ children }) {
@@ -57,6 +58,9 @@ export default function App() {
         />
         <Route path="/app/task/:day/:order"
           element={<Protected><TaskPage /></Protected>}
+        />
+        <Route path="/reels"
+          element={<Protected><ReelsPage /></Protected>}
         />
         <Route path="/history"
           element={<Protected><HistoryPage /></Protected>}

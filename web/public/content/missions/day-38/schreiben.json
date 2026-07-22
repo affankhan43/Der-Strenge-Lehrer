@@ -1,0 +1,8 @@
+{
+  "day": 38,
+  "topic": "Komparativ & Superlativ",
+  "prompt": "Vergleiche 3 Dinge oder Personen. Schreibe Sätze mit dem Komparativ und Superlativ.",
+  "vocabulary_hint": "Berlin ist größer als München. Hamburg ist am schönsten. Mein Bruder ist älter als ich.",
+  "min_sentences": 5,
+  "example": null
+}

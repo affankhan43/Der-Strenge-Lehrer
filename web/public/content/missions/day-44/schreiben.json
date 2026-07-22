@@ -1,0 +1,8 @@
+{
+  "day": 44,
+  "topic": "Futur I — Zukunftspläne",
+  "prompt": "Was wirst du nächste Woche machen? Schreibe 6 Zukunftssätze mit \"werden\".",
+  "vocabulary_hint": "Ich werde am Montag ..., Nächste Woche werde ich ..., Im Sommer werde ich ...",
+  "min_sentences": 5,
+  "example": null
+}

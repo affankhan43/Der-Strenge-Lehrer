@@ -1,0 +1,8 @@
+{
+  "day": 37,
+  "topic": "Wo oder Wohin? — Wechselpräpositionen",
+  "prompt": "Beschreibe wo Dinge sind und wohin du sie legst/stellst (6 Sätze, je 3 Lage + 3 Richtung).",
+  "vocabulary_hint": "Das Buch liegt auf dem Tisch. (Wo?) Ich lege das Buch auf den Tisch. (Wohin?)",
+  "min_sentences": 5,
+  "example": null
+}

@@ -1,0 +1,8 @@
+{
+  "day": 54,
+  "topic": "Deutsche Kultur",
+  "prompt": "Was weißt du über Deutschland? Schreibe 6 Sätze über Kultur, Essen, Traditionen oder Städte.",
+  "vocabulary_hint": "In Deutschland gibt es ..., Die Deutschen ..., Ein bekanntes Gericht ist ..., Ich möchte ... besuchen.",
+  "min_sentences": 5,
+  "example": null
+}

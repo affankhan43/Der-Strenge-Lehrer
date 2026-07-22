@@ -1,0 +1,8 @@
+{
+  "day": 29,
+  "topic": "Perfekt — Mein Wochenende",
+  "prompt": "Was hast du letztes Wochenende gemacht? Schreibe 6 Sätze im Perfekt.",
+  "vocabulary_hint": "Ich habe ... gemacht, Ich bin ... gefahren, Wir haben ... gegessen, Ich habe ... geschlafen",
+  "min_sentences": 5,
+  "example": null
+}

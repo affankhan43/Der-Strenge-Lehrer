@@ -1,0 +1,8 @@
+{
+  "day": 53,
+  "topic": "Gesundheit & Arzt",
+  "prompt": "Du bist krank und gehst zum Arzt. Schreibe den Dialog (8 Zeilen). Was sagst du? Was sagt der Arzt?",
+  "vocabulary_hint": "Arzt: Was fehlt Ihnen? Patient: Ich habe ..., Arzt: Sie müssen ..., Patient: Wie lange soll ich ...",
+  "min_sentences": 5,
+  "example": null
+}

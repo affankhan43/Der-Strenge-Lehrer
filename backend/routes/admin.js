@@ -3,6 +3,7 @@ const router   = express.Router();
 const User     = require('../models/User');
 const Progress = require('../models/Progress');
 const Feedback = require('../models/Feedback');
+const Reel     = require('../models/Reel');
 const { requireAuth } = require('../middleware/auth');
 
 // ── Admin guard: only users whose email is in ADMIN_EMAILS ──
@@ -270,6 +271,59 @@ router.get('/activity', async (req, res) => {
       .populate('userId', 'displayName email')
       .lean();
     res.json({ activity: recent });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ══════════════════════════════════════════════
+// REELS MANAGEMENT
+// ══════════════════════════════════════════════
+function parseReelUrl(url) {
+  const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  if (yt) return { platform: 'youtube', videoId: yt[1] };
+  const ig = url.match(/instagram\.com\/(?:p|reel|tv)\/([a-zA-Z0-9_-]+)/);
+  if (ig) return { platform: 'instagram', videoId: ig[1] };
+  const tt = url.match(/tiktok\.com\/@[^/]+\/video\/(\d+)/);
+  if (tt) return { platform: 'tiktok', videoId: tt[1] };
+  const ttShort = url.match(/vm\.tiktok\.com\/([a-zA-Z0-9]+)/);
+  if (ttShort) return { platform: 'tiktok', videoId: ttShort[1] };
+  return null;
+}
+
+router.get('/reels', async (req, res) => {
+  try {
+    const filter = {};
+    if (req.query.level) filter.level = req.query.level;
+    const reels = await Reel.find(filter).sort({ level: 1, order: 1, createdAt: -1 });
+    res.json({ reels });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+router.post('/reels', async (req, res) => {
+  try {
+    const { url, level, title, description, order } = req.body;
+    if (!url || !level) return res.status(400).json({ error: 'url and level required' });
+    const parsed = parseReelUrl(url.trim());
+    if (!parsed) return res.status(400).json({ error: 'Unbekannte URL. Unterstützt: YouTube, Instagram, TikTok.' });
+    const reel = await Reel.create({ url: url.trim(), ...parsed, level, title: title || '', description: description || '', order: order || 0 });
+    res.json({ reel });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+router.patch('/reels/:id', async (req, res) => {
+  try {
+    const allowed = ['level','title','description','order','active'];
+    const updates = {};
+    allowed.forEach(k => { if (req.body[k] !== undefined) updates[k] = req.body[k]; });
+    const reel = await Reel.findByIdAndUpdate(req.params.id, updates, { new: true });
+    if (!reel) return res.status(404).json({ error: 'Not found' });
+    res.json({ reel });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+router.delete('/reels/:id', async (req, res) => {
+  try {
+    await Reel.findByIdAndDelete(req.params.id);
+    res.json({ ok: true });
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 

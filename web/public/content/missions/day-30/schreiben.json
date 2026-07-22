@@ -1,0 +1,8 @@
+{
+  "day": 30,
+  "topic": "Trennbare Verben",
+  "prompt": "Schreibe 6 Sätze über deinen Tag mit trennbaren Verben (aufstehen, anrufen, einkaufen, fernsehen, aufräumen, mitkommen).",
+  "vocabulary_hint": "Ich stehe um 7 Uhr auf. Ich rufe meine Mutter an. Ich kaufe im Supermarkt ein.",
+  "min_sentences": 5,
+  "example": null
+}

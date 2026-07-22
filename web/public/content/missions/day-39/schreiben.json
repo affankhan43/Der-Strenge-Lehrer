@@ -1,0 +1,8 @@
+{
+  "day": 39,
+  "topic": "Nebensätze mit weil & dass",
+  "prompt": "Schreibe 5 Sätze mit \"weil\" und 3 mit \"dass\". Erkläre Entscheidungen in deinem Leben.",
+  "vocabulary_hint": "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte. Ich denke, dass Deutsch schwer ist.",
+  "min_sentences": 5,
+  "example": null
+}

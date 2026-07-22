@@ -1,0 +1,8 @@
+{
+  "day": 31,
+  "topic": "Modalverben",
+  "prompt": "Schreibe 6 Sätze: Was musst du, was darfst du nicht, was sollst du, was kannst du, was willst du?",
+  "vocabulary_hint": "Ich muss ..., Ich darf nicht ..., Ich soll ..., Ich kann ..., Ich will ...",
+  "min_sentences": 5,
+  "example": null
+}

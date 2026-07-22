@@ -1,0 +1,8 @@
+{
+  "day": 41,
+  "topic": "Imperativ — Anweisungen geben",
+  "prompt": "Schreibe 8 Anweisungen: 4 für einen Freund (du-Form) und 4 formell (Sie-Form). Thema: gesund leben.",
+  "vocabulary_hint": "Trink mehr Wasser! Essen Sie mehr Gemüse! Schlaf früh! Machen Sie Sport!",
+  "min_sentences": 5,
+  "example": null
+}

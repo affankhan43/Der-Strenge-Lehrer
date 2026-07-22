@@ -1,0 +1,8 @@
+{
+  "day": 43,
+  "topic": "Kleidung & Stil",
+  "prompt": "Beschreibe was du heute trägst und was dein Lieblingsstil ist (6 Sätze).",
+  "vocabulary_hint": "Ich trage heute ..., Meine Lieblingsfarbe ist ..., Im Sommer trage ich ..., Ich kaufe gern ...",
+  "min_sentences": 5,
+  "example": null
+}

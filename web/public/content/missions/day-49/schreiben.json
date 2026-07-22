@@ -1,0 +1,8 @@
+{
+  "day": 49,
+  "topic": "Sport & Fitness",
+  "prompt": "Beschreibe deine sportlichen Aktivitäten. Was machst du? Was möchtest du machen? 6 Sätze.",
+  "vocabulary_hint": "Ich spiele ..., Ich gehe ... mal pro Woche ins ..., Ich möchte lernen wie man ...",
+  "min_sentences": 5,
+  "example": null
+}

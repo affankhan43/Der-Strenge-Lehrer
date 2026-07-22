@@ -9,6 +9,7 @@ const BASE_NAV = [
   { section: 'LERNEN', items: [
     { to: '/app',      icon: '🏠', label: 'Dashboard'  },
     { to: '/app/task', icon: '⚔️', label: 'Aufgaben'   },
+    { to: '/reels',    icon: '🎬', label: 'Reels'      },
     { to: '/history',  icon: '📜', label: 'Verlauf'    },
   ]},
   { section: 'KONTO', items: [

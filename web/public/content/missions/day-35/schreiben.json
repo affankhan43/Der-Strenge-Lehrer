@@ -1,0 +1,8 @@
+{
+  "day": 35,
+  "topic": "Präpositionen mit Dativ",
+  "prompt": "Beschreibe deinen Schulweg oder Arbeitsweg mit 6 Sätzen. Benutze: mit, aus, bei, nach, seit, von, zu.",
+  "vocabulary_hint": "Ich fahre mit dem Bus. Ich komme aus der Schule. Ich bin seit 8 Uhr hier.",
+  "min_sentences": 5,
+  "example": null
+}

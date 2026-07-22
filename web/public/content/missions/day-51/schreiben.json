@@ -1,0 +1,8 @@
+{
+  "day": 51,
+  "topic": "Wohnen & Umzug",
+  "prompt": "Beschreibe deine ideale Wohnung oder dein ideales Haus. Wo? Wie groß? Was muss es haben? 6 Sätze.",
+  "vocabulary_hint": "Ich möchte in einer ... Wohnung wohnen. Sie soll ... haben. Die Wohnung liegt ...",
+  "min_sentences": 5,
+  "example": null
+}

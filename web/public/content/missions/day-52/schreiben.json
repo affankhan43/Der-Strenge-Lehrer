@@ -1,0 +1,8 @@
+{
+  "day": 52,
+  "topic": "Arbeit & Karriere",
+  "prompt": "Beschreibe deinen Traumjob. Was machst du? Warum? Wie viel verdienst du (idealerweise)? 6 Sätze.",
+  "vocabulary_hint": "Mein Traumjob ist ..., weil ..., Ich würde ..., Das Gehalt wäre ..., Ich müsste ...",
+  "min_sentences": 5,
+  "example": null
+}
