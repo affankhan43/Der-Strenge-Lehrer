@@ -100,6 +100,47 @@
   border: none;
 }
 
+/* ── Instagram crop ──────────────────────────────────────────
+   IG embed = 72px header + video + 220px footer (likes/comments/logo).
+   We clip the container with overflow:hidden, shift the iframe up by
+   72px to hide the header, and add 292px of extra height so the video
+   still fills the container. The footer is clipped by overflow:hidden.
+─────────────────────────────────────────────────────────────── */
+.igClip {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.igFrame {
+  position: absolute;
+  top: -72px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 292px); /* 72px top + 220px bottom */
+  border: none;
+  background: #000;
+}
+
+/* Unmute hint for YouTube autoplay (always starts muted) */
+.unmuteHint {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,.7);
+  color: rgba(255,255,255,.8);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 5;
+  animation: fadeOut 3s ease 2s forwards;
+}
+@keyframes fadeOut { to { opacity: 0; } }
+
 .embedLoader {
   position: absolute;
   inset: 0;

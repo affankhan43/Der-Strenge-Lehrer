@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 import api from '../lib/api';
 import { useProgressStore } from '../store/progressStore';
 import s from './ReelsPage.module.css';
@@ -17,60 +16,92 @@ const LEVEL_COLORS = {
 
 const LEVEL_MAP = ['A1.1','A1.2','A2.1','A2.2','B1.1','B1.2','B2.1','B2.2'];
 
-function embedUrl(reel) {
+// Build embed URL with autoplay where supported
+function embedUrl(reel, active) {
+  if (!active) return null; // lazy — don't load until visible
   if (reel.platform === 'youtube')
-    return `https://www.youtube.com/embed/${reel.videoId}?rel=0&modestbranding=1&playsinline=1`;
+    return `https://www.youtube.com/embed/${reel.videoId}?rel=0&modestbranding=1&playsinline=1&autoplay=1&mute=1`;
   if (reel.platform === 'instagram')
     return `https://www.instagram.com/p/${reel.videoId}/embed/`;
   if (reel.platform === 'tiktok')
-    return `https://www.tiktok.com/embed/v2/${reel.videoId}`;
+    return `https://www.tiktok.com/embed/v2/${reel.videoId}?autoplay=1`;
   return null;
 }
 
+/* ── Instagram crop constants ──────────────────────────────────
+   The IG embed renders:  header ~72px | video | footer ~220px
+   We shift the iframe up by IG_TOP so the header scrolls out,
+   and the container's overflow:hidden clips the footer.
+   The extra height keeps the video filling the container.
+────────────────────────────────────────────────────────────── */
+const IG_TOP    = 72;   // px to hide at top (profile bar)
+const IG_BOTTOM = 220;  // px to hide at bottom (likes/comments/logo)
+
 function ReelCard({ reel, isActive }) {
   const [loaded, setLoaded] = useState(false);
-  const pm = PLATFORM_META[reel.platform] || PLATFORM_META.youtube;
-  const lc = LEVEL_COLORS[reel.level] || '#a78bfa';
-  const url = embedUrl(reel);
+  const pm  = PLATFORM_META[reel.platform] || PLATFORM_META.youtube;
+  const lc  = LEVEL_COLORS[reel.level] || '#a78bfa';
+  const url = embedUrl(reel, isActive);
+  const isIG = reel.platform === 'instagram';
 
   return (
     <div className={s.reel}>
-      {/* Background blur layer */}
       <div className={s.reelBg} />
 
-      {/* Video embed */}
+      {/* ── Video embed ── */}
       <div className={s.embedWrap}>
-        {!loaded && (
-          <div className={s.embedLoader}>
-            <div className={s.spinner} />
-          </div>
+        {/* Loader shown until iframe fires onLoad */}
+        {isActive && !loaded && (
+          <div className={s.embedLoader}><div className={s.spinner} /></div>
         )}
+
         {url && (
-          <iframe
-            src={isActive ? url : undefined}
-            title={reel.title || 'Reel'}
-            className={s.iframe}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            onLoad={() => setLoaded(true)}
-          />
+          isIG ? (
+            /* Instagram: outer clip div hides header & footer */
+            <div className={s.igClip}>
+              <iframe
+                key={reel._id + '-active'}
+                src={url}
+                title={reel.title || 'Instagram Reel'}
+                className={s.igFrame}
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                onLoad={() => setLoaded(true)}
+              />
+            </div>
+          ) : (
+            <iframe
+              key={reel._id + (isActive ? '-on' : '-off')}
+              src={url}
+              title={reel.title || 'Reel'}
+              className={s.iframe}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              onLoad={() => setLoaded(true)}
+            />
+          )
+        )}
+
+        {/* Unmute hint for YouTube (autoplays muted) */}
+        {isActive && loaded && reel.platform === 'youtube' && (
+          <div className={s.unmuteHint}>🔇 Ton im Player aktivieren</div>
         )}
       </div>
 
-      {/* Top HUD */}
+      {/* ── Top badges ── */}
       <div className={s.reelTop}>
-        <span className={s.platformBadge} style={{ background: pm.color + '22', borderColor: pm.color + '55', color: pm.color }}>
+        <span className={s.platformBadge} style={{ background: pm.color+'22', borderColor: pm.color+'55', color: pm.color }}>
           {pm.icon} {pm.label}
         </span>
-        <span className={s.levelBadge} style={{ background: lc + '22', borderColor: lc + '55', color: lc }}>
+        <span className={s.levelBadge} style={{ background: lc+'22', borderColor: lc+'55', color: lc }}>
           {reel.level}
         </span>
       </div>
 
-      {/* Bottom info */}
+      {/* ── Bottom info ── */}
       {(reel.title || reel.description) && (
         <div className={s.reelBottom}>
-          {reel.title && <div className={s.reelTitle}>{reel.title}</div>}
+          {reel.title      && <div className={s.reelTitle}>{reel.title}</div>}
           {reel.description && <div className={s.reelDesc}>{reel.description}</div>}
         </div>
       )}
@@ -79,37 +110,29 @@ function ReelCard({ reel, isActive }) {
 }
 
 export default function ReelsPage() {
-  const { progress } = useProgressStore();
-  const [reels, setReels]       = useState([]);
-  const [loading, setLoading]   = useState(true);
-  const [activeIdx, setActive]  = useState(0);
-  const [levelFilter, setLevel] = useState(null);
-  const containerRef = useRef(null);
-  const observerRef  = useRef(null);
+  const { progress }               = useProgressStore();
+  const [reels, setReels]          = useState([]);
+  const [loading, setLoading]      = useState(true);
+  const [activeIdx, setActive]     = useState(0);
+  const [levelFilter, setLevel]    = useState(null);
+  const containerRef               = useRef(null);
+  const observerRef                = useRef(null);
 
   const userLevel = progress?.currentLevel || 'A1.1';
 
-  useEffect(() => {
-    setLevel(userLevel);
-  }, [userLevel]);
-
-  useEffect(() => {
-    if (!levelFilter) return;
-    loadReels(levelFilter);
-  }, [levelFilter]);
+  useEffect(() => { setLevel(userLevel); }, [userLevel]);
+  useEffect(() => { if (levelFilter) loadReels(levelFilter); }, [levelFilter]);
 
   const loadReels = async (lv) => {
     setLoading(true); setActive(0);
     try {
       const res = await api.get(`/api/reels?level=${lv}`);
       setReels(res.data.reels || []);
-    } catch {
-      setReels([]);
-    }
+    } catch { setReels([]); }
     setLoading(false);
   };
 
-  // Intersection Observer for snap-scroll tracking
+  // Track which slot is ≥60% in view → set as active (triggers autoplay)
   useEffect(() => {
     if (!containerRef.current || !reels.length) return;
     observerRef.current?.disconnect();
@@ -130,18 +153,18 @@ export default function ReelsPage() {
   }, [reels]);
 
   const scrollTo = (idx) => {
-    const el = containerRef.current?.querySelector(`[data-idx="${idx}"]`);
-    el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    containerRef.current?.querySelector(`[data-idx="${idx}"]`)
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
     <div className={s.page}>
-      {/* Level filter strip */}
+      {/* Level strip */}
       <div className={s.levelStrip}>
         <span className={s.stripLabel}>Level:</span>
         {LEVEL_MAP.map(lv => (
           <button key={lv}
-            className={s.lvBtn + (levelFilter === lv ? ' ' + s.lvBtnActive : '')}
+            className={s.lvBtn + (levelFilter === lv ? ' '+s.lvBtnActive : '')}
             style={{ '--lv': LEVEL_COLORS[lv] }}
             onClick={() => setLevel(lv)}>
             {lv}
@@ -151,12 +174,12 @@ export default function ReelsPage() {
 
       {loading ? (
         <div className={s.empty}>
-          <div className={s.spinner} style={{ width: 36, height: 36 }} />
+          <div className={s.spinner} style={{ width:36, height:36 }} />
           <span>Lade Reels…</span>
         </div>
       ) : reels.length === 0 ? (
         <div className={s.empty}>
-          <div style={{ fontSize: '3rem' }}>🎬</div>
+          <div style={{ fontSize:'3rem' }}>🎬</div>
           <div className={s.emptyTitle}>Keine Reels für {levelFilter}</div>
           <div className={s.emptySub}>Der Admin fügt bald Videos für dieses Level hinzu.</div>
         </div>
@@ -168,21 +191,22 @@ export default function ReelsPage() {
             </div>
           ))}
 
-          {/* Progress dots on right */}
+          {/* Dot progress rail */}
           <div className={s.dots}>
             {reels.map((_, idx) => (
               <button key={idx}
-                className={s.dot + (activeIdx === idx ? ' ' + s.dotActive : '')}
-                onClick={() => scrollTo(idx)}
-              />
+                className={s.dot + (activeIdx === idx ? ' '+s.dotActive : '')}
+                onClick={() => scrollTo(idx)} />
             ))}
           </div>
 
-          {/* Nav arrows */}
+          {/* Arrows */}
           <div className={s.navArrows}>
-            <button className={s.arrow} disabled={activeIdx === 0} onClick={() => scrollTo(activeIdx - 1)}>↑</button>
-            <span className={s.arrowCount}>{activeIdx + 1}/{reels.length}</span>
-            <button className={s.arrow} disabled={activeIdx === reels.length - 1} onClick={() => scrollTo(activeIdx + 1)}>↓</button>
+            <button className={s.arrow} disabled={activeIdx === 0}
+              onClick={() => scrollTo(activeIdx - 1)}>↑</button>
+            <span className={s.arrowCount}>{activeIdx+1}/{reels.length}</span>
+            <button className={s.arrow} disabled={activeIdx === reels.length - 1}
+              onClick={() => scrollTo(activeIdx + 1)}>↓</button>
           </div>
         </div>
       )}
