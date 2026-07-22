@@ -677,6 +677,30 @@ export default function DashboardPage() {
 
   return (
     <div className={s.page}>
+      {/* ── Animated floating orbs ── */}
+      <div aria-hidden style={{ position:'fixed', inset:0, pointerEvents:'none', zIndex:0, overflow:'hidden' }}>
+        {[
+          { w:520, h:520, x:'72%', y:'-8%',  c:'rgba(124,58,237,.07)',  dur:18 },
+          { w:400, h:400, x:'-8%', y:'60%',  c:'rgba(6,182,212,.055)', dur:24 },
+          { w:350, h:350, x:'40%', y:'80%',  c:'rgba(139,92,246,.065)',dur:20 },
+          { w:280, h:280, x:'15%', y:'10%',  c:'rgba(59,130,246,.05)', dur:28 },
+        ].map((o, i) => (
+          <motion.div key={i}
+            style={{
+              position:'absolute', left:o.x, top:o.y,
+              width:o.w, height:o.h, borderRadius:'50%',
+              background: `radial-gradient(circle, ${o.c} 0%, transparent 70%)`,
+              filter:'blur(2px)',
+            }}
+            animate={{
+              x: [0, 30, -20, 15, 0],
+              y: [0, -25, 20, -10, 0],
+              scale: [1, 1.08, 0.95, 1.04, 1],
+            }}
+            transition={{ duration: o.dur, repeat: Infinity, ease:'easeInOut', delay: i * 3 }}
+          />
+        ))}
+      </div>
 
       {/* ── Header ── */}
       <header className={s.header}>
