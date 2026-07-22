@@ -10,8 +10,9 @@ import TaskPage      from './pages/TaskPage';
 import HistoryPage   from './pages/HistoryPage';
 import ProfilePage   from './pages/ProfilePage';
 import AdminPage     from './pages/AdminPage';
-import ReelsPage     from './pages/ReelsPage';
-import AppLayout     from './components/AppLayout';
+import ReelsPage      from './pages/ReelsPage';
+import BookmarksPage  from './pages/BookmarksPage';
+import AppLayout      from './components/AppLayout';
 
 function Protected({ children }) {
   const { user } = useAuthStore();
@@ -61,6 +62,9 @@ export default function App() {
         />
         <Route path="/reels"
           element={<Protected><ReelsPage /></Protected>}
+        />
+        <Route path="/bookmarks"
+          element={<Protected><BookmarksPage /></Protected>}
         />
         <Route path="/history"
           element={<Protected><HistoryPage /></Protected>}

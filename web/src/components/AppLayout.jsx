@@ -1,64 +1,68 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useAuthStore } from '../store/authStore';
+import { useAuthStore }    from '../store/authStore';
 import { useProgressStore } from '../store/progressStore';
+import { useThemeStore }   from '../store/themeStore';
+import { useBookmarkStore } from '../store/bookmarkStore';
 import s from './AppLayout.module.css';
 
 const BASE_NAV = [
   { section: 'LERNEN', items: [
-    { to: '/app',      icon: '🏠', label: 'Dashboard'  },
-    { to: '/app/task', icon: '⚔️', label: 'Aufgaben'   },
-    { to: '/reels',    icon: '🎬', label: 'Reels'      },
-    { to: '/history',  icon: '📜', label: 'Verlauf'    },
+    { to: '/app',           icon: '🏠', label: 'Dashboard'   },
+    { to: '/app/task',      icon: '⚔️',  label: 'Aufgaben'    },
+    { to: '/reels',         icon: '🎬', label: 'Reels'       },
+    { to: '/bookmarks',     icon: '🔖', label: 'Lesezeichen' },
+    { to: '/history',       icon: '📜', label: 'Verlauf'     },
   ]},
   { section: 'KONTO', items: [
-    { to: '/profile',  icon: '👤', label: 'Profil'     },
+    { to: '/profile',       icon: '👤', label: 'Profil'      },
   ]},
 ];
 
-const SIDEBAR_W   = 248;
+const SIDEBAR_W   = 252;
 const SIDEBAR_COL = 64;
 
 export default function AppLayout({ children }) {
-  const { user, logout, isAdmin }     = useAuthStore();
-  const { stats, progress, fetchAll } = useProgressStore();
+  const { user, logout, isAdmin }      = useAuthStore();
+  const { stats, progress, fetchAll }  = useProgressStore();
+  const { dark, toggle }               = useThemeStore();
+  const { bookmarks }                  = useBookmarkStore();
 
   const NAV = isAdmin
     ? BASE_NAV.map(g => g.section === 'KONTO'
         ? { ...g, items: [...g.items, { to: '/admin', icon: '⚙️', label: 'Admin' }] }
         : g)
     : BASE_NAV;
-  const navigate   = useNavigate();
-  const location   = useLocation();
-  const [collapsed, setCollapsed] = useState(false);
+
+  const navigate  = useNavigate();
+  const location  = useLocation();
+  const [collapsed, setCollapsed]   = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Close mobile drawer on route change
   useEffect(() => { setMobileOpen(false); }, [location.pathname]);
-
-  // Fetch stats once
   useEffect(() => { fetchAll(); }, []);
 
-  const streak = stats?.streak       || 0;
-  const xp     = stats?.totalXP      || 0;
+  const streak = stats?.streak          || 0;
+  const xp     = stats?.totalXP         || 0;
   const lvl    = progress?.currentLevel || 'A1.1';
+  const bookmarkCount = bookmarks.length;
 
   const handleLogout = () => { logout(); navigate('/'); };
-
-  const isDesktopCollapsed = collapsed;
-  const sideW = isDesktopCollapsed ? SIDEBAR_COL : SIDEBAR_W;
+  const sideW = collapsed ? SIDEBAR_COL : SIDEBAR_W;
 
   function SidebarContent({ isMobile = false }) {
+    const expanded = !collapsed || isMobile;
     return (
       <>
         {/* Logo */}
         <div className={s.logo}>
-          <span className={s.logoIcon}>😤</span>
+          <div className={s.logoIconWrap}>
+            <span className={s.logoIcon}>😤</span>
+          </div>
           <AnimatePresence>
-            {(!isDesktopCollapsed || isMobile) && (
-              <motion.div
-                className={s.logoText}
+            {expanded && (
+              <motion.div className={s.logoText}
                 initial={{ opacity:0, x:-10 }} animate={{ opacity:1, x:0 }}
                 exit={{ opacity:0, x:-10 }} transition={{ duration:.18 }}
               >
@@ -74,7 +78,7 @@ export default function AppLayout({ children }) {
           {NAV.map(group => (
             <div key={group.section} className={s.navGroup}>
               <AnimatePresence>
-                {(!isDesktopCollapsed || isMobile) && (
+                {expanded && (
                   <motion.div className={s.navSection}
                     initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}
                   >
@@ -87,19 +91,20 @@ export default function AppLayout({ children }) {
                 const active = exact
                   ? location.pathname === '/app'
                   : location.pathname.startsWith(item.to);
+                const badge = item.to === '/bookmarks' && bookmarkCount > 0 ? bookmarkCount : null;
                 return (
                   <NavLink key={item.to} to={item.to} end={exact}
                     className={`${s.navItem} ${active ? s.navItemActive : ''}`}
-                    title={isDesktopCollapsed && !isMobile ? item.label : undefined}
+                    title={!expanded ? item.label : undefined}
                   >
                     <motion.span className={s.navIcon}
-                      animate={{ scale: active ? 1.15 : 1 }}
+                      animate={{ scale: active ? 1.12 : 1 }}
                       transition={{ type:'spring', stiffness:400, damping:20 }}
                     >
                       {item.icon}
                     </motion.span>
                     <AnimatePresence>
-                      {(!isDesktopCollapsed || isMobile) && (
+                      {expanded && (
                         <motion.span className={s.navLabel}
                           initial={{ opacity:0, x:-8 }} animate={{ opacity:1, x:0 }}
                           exit={{ opacity:0, x:-8 }} transition={{ duration:.16 }}
@@ -108,6 +113,9 @@ export default function AppLayout({ children }) {
                         </motion.span>
                       )}
                     </AnimatePresence>
+                    {badge && expanded && (
+                      <span className={s.navBadge}>{badge}</span>
+                    )}
                     {active && (
                       <motion.div className={s.activeBar}
                         layoutId="activeBar"
@@ -124,7 +132,7 @@ export default function AppLayout({ children }) {
         {/* Bottom */}
         <div className={s.sideBottom}>
           <AnimatePresence>
-            {(!isDesktopCollapsed || isMobile) && (
+            {expanded && (
               <motion.div className={s.xpChip}
                 initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}
               >
@@ -135,18 +143,36 @@ export default function AppLayout({ children }) {
             )}
           </AnimatePresence>
 
+          {/* Theme toggle */}
+          <button
+            className={s.themeBtn}
+            onClick={toggle}
+            title={dark ? 'Hell-Modus' : 'Dunkel-Modus'}
+          >
+            <span className={s.themeBtnIcon}>{dark ? '☀️' : '🌙'}</span>
+            <AnimatePresence>
+              {expanded && (
+                <motion.span className={s.themeBtnLabel}
+                  initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}
+                >
+                  {dark ? 'Hell-Modus' : 'Dunkel-Modus'}
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </button>
+
           {!isMobile && (
             <button className={s.collapseBtn} onClick={() => setCollapsed(c => !c)}
-              title={isDesktopCollapsed ? 'Ausklappen' : 'Einklappen'}
+              title={collapsed ? 'Ausklappen' : 'Einklappen'}
             >
-              <motion.span animate={{ rotate: isDesktopCollapsed ? 0 : 180 }}>›</motion.span>
+              <motion.span animate={{ rotate: collapsed ? 0 : 180 }}>›</motion.span>
             </button>
           )}
 
           <button className={s.logoutBtn} onClick={handleLogout} title="Abmelden">
             <span>🚪</span>
             <AnimatePresence>
-              {(!isDesktopCollapsed || isMobile) && (
+              {expanded && (
                 <motion.span initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}>
                   Abmelden
                 </motion.span>
@@ -160,7 +186,7 @@ export default function AppLayout({ children }) {
 
   return (
     <div className={s.shell}>
-      {/* ── Desktop sidebar ── */}
+      {/* Desktop sidebar */}
       <motion.aside
         className={s.sidebar}
         animate={{ width: sideW }}
@@ -169,12 +195,12 @@ export default function AppLayout({ children }) {
         <SidebarContent />
       </motion.aside>
 
-      {/* ── Mobile hamburger button ── */}
+      {/* Mobile hamburger */}
       <button className={s.hamburger} onClick={() => setMobileOpen(true)} aria-label="Menü öffnen">
         <span /><span /><span />
       </button>
 
-      {/* ── Mobile drawer ── */}
+      {/* Mobile drawer */}
       <AnimatePresence>
         {mobileOpen && (
           <>
@@ -195,7 +221,7 @@ export default function AppLayout({ children }) {
         )}
       </AnimatePresence>
 
-      {/* ── Main content ── */}
+      {/* Main content */}
       <main className={s.main}>
         <AnimatePresence mode="wait">
           <motion.div key={location.pathname}

@@ -1,0 +1,239 @@
+.page {
+  min-height: 100vh;
+  padding: 32px 32px 60px;
+  background: var(--bg);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.headerIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--purple-d), var(--blue-d));
+  border: 1px solid var(--border2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: var(--shadow);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: -.02em;
+  line-height: 1.2;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--text2);
+  margin-top: 3px;
+}
+
+/* ── Search ── */
+.searchWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 13px;
+  font-size: 14px;
+  pointer-events: none;
+  opacity: .5;
+}
+
+.search {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 16px 11px 38px;
+  color: var(--text);
+  font-size: 14px;
+  width: 260px;
+  transition: border-color .2s, box-shadow .2s;
+  box-shadow: var(--shadow);
+}
+
+.search:focus {
+  outline: none;
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px var(--purple-d);
+}
+
+.search::placeholder { color: var(--text3); }
+
+/* ── Empty state ── */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.emptyIcon { font-size: 56px; opacity: .5; }
+
+.emptyTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.emptySub {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.65;
+  max-width: 360px;
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .18s, box-shadow .18s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardAccent {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  opacity: .7;
+}
+
+.articlePill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  border-radius: 6px;
+  padding: 1px 7px;
+  align-self: flex-start;
+  margin-top: 4px;
+  text-transform: lowercase;
+}
+
+.wordDe {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--text);
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.wordEn {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+.example {
+  font-size: 12px;
+  color: var(--text3);
+  font-style: italic;
+  line-height: 1.5;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+  margin-top: 2px;
+}
+
+.dayTag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text3);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-top: 4px;
+  letter-spacing: .04em;
+}
+
+/* ── Card actions ── */
+.cardActions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.speakBtn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all .18s;
+}
+
+.speakBtn:hover { background: var(--bg3); color: var(--text); }
+
+.removeBtn {
+  margin-left: auto;
+  background: var(--red-d);
+  border: 1px solid rgba(220,38,38,.2);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--red);
+  cursor: pointer;
+  font-weight: 700;
+  transition: all .18s;
+}
+
+.removeBtn:hover { background: rgba(220,38,38,.18); }
+
+@media (max-width: 600px) {
+  .page { padding: 20px 16px 40px; }
+  .title { font-size: 22px; }
+  .search { width: 100%; }
+  .header { flex-direction: column; align-items: flex-start; }
+}
