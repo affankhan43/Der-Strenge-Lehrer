@@ -1,0 +1,8 @@
+{
+  "day": 8,
+  "topic": "Wochentage & Pläne",
+  "prompt": "Was machst du diese Woche? Schreibe einen Satz für jeden Wochentag (Mo–Fr).",
+  "vocabulary_hint": "Am Montag..., Am Dienstag..., Am Mittwoch...",
+  "min_sentences": 5,
+  "example": null
+}

@@ -1,0 +1,8 @@
+{
+  "day": 11,
+  "topic": "Einkaufen",
+  "prompt": "Du gehst einkaufen. Schreibe eine Einkaufsliste mit 8 Artikeln und den Preisen.",
+  "vocabulary_hint": "Ich brauche..., Das kostet..., Ich möchte ... kaufen.",
+  "min_sentences": 5,
+  "example": null
+}

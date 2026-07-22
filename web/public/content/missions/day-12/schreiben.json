@@ -1,0 +1,8 @@
+{
+  "day": 12,
+  "topic": "Mein Beruf / Studium",
+  "prompt": "Was studierst oder arbeitest du? Beschreibe deinen Berufswunsch in 5 Sätzen.",
+  "vocabulary_hint": "Ich studiere..., Ich arbeite als..., Mein Traumberuf ist..., weil...",
+  "min_sentences": 5,
+  "example": null
+}

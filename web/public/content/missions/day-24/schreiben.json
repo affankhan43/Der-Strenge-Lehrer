@@ -1,0 +1,8 @@
+{
+  "day": 24,
+  "topic": "Wünsche & Träume",
+  "prompt": "Was möchtest du in den nächsten 5 Jahren erreichen? Schreibe 5 Zukunftspläne.",
+  "vocabulary_hint": "Ich möchte..., Ich will..., In 5 Jahren..., Ich hoffe dass...",
+  "min_sentences": 5,
+  "example": null
+}

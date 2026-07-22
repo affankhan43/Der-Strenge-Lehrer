@@ -1,0 +1,8 @@
+{
+  "day": 6,
+  "topic": "Mein Zuhause",
+  "prompt": "Beschreibe dein Zimmer oder deine Wohnung in 6 Sätzen. Was gibt es? Wo ist alles?",
+  "vocabulary_hint": "In meinem Zimmer gibt es..., Das Bett steht..., Ich wohne in einer...",
+  "min_sentences": 5,
+  "example": null
+}

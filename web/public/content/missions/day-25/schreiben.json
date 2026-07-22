@@ -1,0 +1,8 @@
+{
+  "day": 25,
+  "topic": "Jahreszeiten",
+  "prompt": "Beschreibe deine Lieblingsjahreszeit in 6 Sätzen. Warum magst du sie? Was machst du in dieser Zeit?",
+  "vocabulary_hint": "Meine Lieblingsjahreszeit ist..., weil..., Im ... mache ich...",
+  "min_sentences": 5,
+  "example": null
+}

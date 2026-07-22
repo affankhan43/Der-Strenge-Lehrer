@@ -1,0 +1,8 @@
+{
+  "day": 20,
+  "topic": "Musik & Kultur",
+  "prompt": "Beschreibe dein Lieblingsmusik oder deinen Lieblingsfilm in 5 Sätzen.",
+  "vocabulary_hint": "Ich höre gern..., Mein Lieblingsfilm ist..., Er handelt von...",
+  "min_sentences": 5,
+  "example": null
+}

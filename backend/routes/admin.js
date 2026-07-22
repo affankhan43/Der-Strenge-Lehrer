@@ -197,7 +197,7 @@ const path = require('path');
 const fs   = require('fs');
 
 const CONTENT_BASE = path.join(__dirname, '../../web/public/content/missions');
-const TYPES = ['vocab', 'reading', 'grammar', 'speaking'];
+const TYPES = ['vocab', 'course_video', 'reading', 'grammar', 'schreiben', 'easygerman', 'speaking'];
 const LEVEL_MAP = {
   'A1.1': [1,28], 'A1.2': [29,56], 'A2.1': [57,84], 'A2.2': [85,112],
   'B1.1': [113,140], 'B1.2': [141,168], 'B2.1': [169,196], 'B2.2': [197,224],

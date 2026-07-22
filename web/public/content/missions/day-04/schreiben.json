@@ -1,0 +1,8 @@
+{
+  "day": 4,
+  "topic": "Farben & Beschreibungen",
+  "prompt": "Wähle 5 Gegenstände in deinem Zimmer und beschreibe ihre Farbe und Größe.",
+  "vocabulary_hint": "Das Buch ist blau und klein. Der Tisch ist groß und braun.",
+  "min_sentences": 5,
+  "example": null
+}

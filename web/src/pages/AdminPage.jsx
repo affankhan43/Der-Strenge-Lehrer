@@ -21,9 +21,9 @@ const LEVEL_COLORS = {
   'B1.1':'#a855f7','B1.2':'#ec4899','B2.1':'#f59e0b','B2.2':'#ef4444',
 };
 const LEVEL_START = [1,29,57,85,113,141,169,197];
-const CONTENT_TYPES = ['vocab','reading','grammar','speaking'];
-const TYPE_ICONS = { vocab:'📝', reading:'📖', grammar:'⚙️', speaking:'🎬' };
-const TYPE_LABELS = { vocab:'Vokabeln', reading:'Lesen', grammar:'Grammatik', speaking:'Video/Sprechen' };
+const CONTENT_TYPES = ['vocab','course_video','reading','grammar','schreiben','easygerman'];
+const TYPE_ICONS  = { vocab:'📝', course_video:'🎓', reading:'📖', grammar:'⚙️', schreiben:'✍️', easygerman:'📺' };
+const TYPE_LABELS = { vocab:'Vokabeln', course_video:'Kursvideo', reading:'Lesen', grammar:'Grammatik', schreiben:'Schreiben', easygerman:'Easy German' };
 
 function StatCard({ icon, label, value, sub, color='#a78bfa', delay=0 }) {
   return (

@@ -1,0 +1,8 @@
+{
+  "day": 19,
+  "topic": "Reisen & Urlaub",
+  "prompt": "Schreibe über deinen Traumurlaub in 6 Sätzen. Wohin? Mit wem? Was machst du dort?",
+  "vocabulary_hint": "Ich möchte nach ... reisen. Ich fahre mit... Dort möchte ich...",
+  "min_sentences": 5,
+  "example": null
+}

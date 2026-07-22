@@ -1,0 +1,8 @@
+{
+  "day": 15,
+  "topic": "In der Stadt",
+  "prompt": "Beschreibe deine Stadt oder ein Stadtviertel in 6 Sätzen. Was gibt es dort?",
+  "vocabulary_hint": "In meiner Stadt gibt es..., Es ist ... Minuten vom Zentrum..., Ich mag...",
+  "min_sentences": 5,
+  "example": null
+}

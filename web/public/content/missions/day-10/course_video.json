@@ -1,0 +1,16 @@
+{
+  "day": 10,
+  "playlist": "course",
+  "channel": "Deutsch für Euch / Learn German",
+  "notes": "Schau das Video aufmerksam an. Mache Notizen zu neuen Wörtern und Phrasen.",
+  "videos": [
+    {
+      "id": "xy4a1c7W7k0",
+      "title": "Lektion 12"
+    }
+  ],
+  "tasks_after": [
+    "Schreibe 3 neue Wörter aus dem Video auf.",
+    "Wiederhole die wichtigsten Phrasen laut nach."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "day": 16,
+  "topic": "Gesundheit",
+  "prompt": "Wie geht es dir heute? Beschreibe deinen Gesundheitszustand und gib einem Freund Gesundheitstipps.",
+  "vocabulary_hint": "Mir geht es..., Ich habe Kopfschmerzen/bin müde..., Du solltest...",
+  "min_sentences": 5,
+  "example": null
+}

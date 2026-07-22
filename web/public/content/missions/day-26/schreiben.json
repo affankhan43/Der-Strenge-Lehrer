@@ -1,0 +1,8 @@
+{
+  "day": 26,
+  "topic": "Präpositionen & Orte",
+  "prompt": "Beschreibe wo 6 Dinge in deinem Zimmer oder deiner Wohnung sind.",
+  "vocabulary_hint": "Das Buch liegt auf dem Tisch. Die Lampe steht neben dem Bett.",
+  "min_sentences": 5,
+  "example": null
+}

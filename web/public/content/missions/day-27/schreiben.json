@@ -1,0 +1,8 @@
+{
+  "day": 27,
+  "topic": "Sätze verbinden",
+  "prompt": "Schreibe 5 Sätze mit \"weil\", 3 mit \"aber\" und 2 mit \"dass\". Über dich oder dein Leben.",
+  "vocabulary_hint": "Ich lerne Deutsch, weil..., Ich mag..., aber..., Ich denke, dass...",
+  "min_sentences": 5,
+  "example": null
+}

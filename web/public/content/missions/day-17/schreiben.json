@@ -1,0 +1,8 @@
+{
+  "day": 17,
+  "topic": "Natur & Tiere",
+  "prompt": "Beschreibe dein Lieblingstier in 5 Sätzen. Was frisst es? Wo lebt es? Warum magst du es?",
+  "vocabulary_hint": "Mein Lieblingstier ist der/die/das..., Es lebt in..., Es frisst...",
+  "min_sentences": 5,
+  "example": null
+}

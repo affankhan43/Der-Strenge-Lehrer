@@ -1,0 +1,8 @@
+{
+  "day": 14,
+  "topic": "Schule & Lernen",
+  "prompt": "Beschreibe deine Erfahrungen mit dem Deutschlernen in 6 Sätzen. Was ist leicht? Was ist schwer?",
+  "vocabulary_hint": "Ich lerne Deutsch seit..., Es ist ... weil..., Ich finde ... leicht/schwer.",
+  "min_sentences": 5,
+  "example": null
+}

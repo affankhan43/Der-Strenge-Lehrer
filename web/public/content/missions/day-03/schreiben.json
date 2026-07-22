@@ -1,0 +1,8 @@
+{
+  "day": 3,
+  "topic": "Meine Familie",
+  "prompt": "Beschreibe deine Familie in 5-7 Sätzen. Wie heißen sie? Wie alt sind sie? Was machen sie?",
+  "vocabulary_hint": "Mein Vater heißt..., Meine Mutter ist..., Ich habe ... Geschwister.",
+  "min_sentences": 5,
+  "example": null
+}

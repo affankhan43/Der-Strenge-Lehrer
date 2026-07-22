@@ -1,0 +1,8 @@
+{
+  "day": 9,
+  "topic": "Das Wetter",
+  "prompt": "Beschreibe das Wetter heute und in deiner Lieblingsstadt in 5 Sätzen.",
+  "vocabulary_hint": "Heute ist es..., Es regnet/schneit/scheint die Sonne. In ... ist es immer...",
+  "min_sentences": 5,
+  "example": null
+}

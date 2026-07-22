@@ -1,0 +1,8 @@
+{
+  "day": 7,
+  "topic": "Hobbys & Freizeit",
+  "prompt": "Was machst du in deiner Freizeit? Nenne 3 Hobbys und erkläre warum du sie magst.",
+  "vocabulary_hint": "Ich spiele gern..., Ich lese..., Ich mag ... weil es ... ist.",
+  "min_sentences": 5,
+  "example": null
+}

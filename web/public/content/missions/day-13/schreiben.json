@@ -1,0 +1,8 @@
+{
+  "day": 13,
+  "topic": "Verkehr & Transport",
+  "prompt": "Wie kommst du zur Schule oder Arbeit? Beschreibe deinen Weg in 5 Sätzen.",
+  "vocabulary_hint": "Ich fahre mit dem Bus/der U-Bahn/dem Fahrrad..., Die Fahrt dauert...",
+  "min_sentences": 5,
+  "example": null
+}

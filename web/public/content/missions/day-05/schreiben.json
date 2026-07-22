@@ -1,0 +1,8 @@
+{
+  "day": 5,
+  "topic": "Essen & Trinken",
+  "prompt": "Was isst und trinkst du heute? Schreibe ein Mini-Tagebuch für heute (Frühstück, Mittagessen, Abendessen).",
+  "vocabulary_hint": "Zum Frühstück esse ich..., Ich trinke gern..., Mein Lieblingsessen ist...",
+  "min_sentences": 5,
+  "example": null
+}

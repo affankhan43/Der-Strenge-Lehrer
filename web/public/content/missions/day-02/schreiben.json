@@ -1,0 +1,8 @@
+{
+  "day": 2,
+  "topic": "Mein Alltag",
+  "prompt": "Beschreibe deinen Tagesablauf in 6 Sätzen. Was machst du morgens, mittags und abends?",
+  "vocabulary_hint": "Ich stehe auf um..., Ich frühstücke..., Ich gehe..., Am Abend...",
+  "min_sentences": 5,
+  "example": null
+}

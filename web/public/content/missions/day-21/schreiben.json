@@ -1,0 +1,8 @@
+{
+  "day": 21,
+  "topic": "Freunde",
+  "prompt": "Beschreibe deinen besten Freund / deine beste Freundin in 6 Sätzen.",
+  "vocabulary_hint": "Mein bester Freund heißt..., Er/Sie ist..., Wir machen zusammen...",
+  "min_sentences": 5,
+  "example": null
+}

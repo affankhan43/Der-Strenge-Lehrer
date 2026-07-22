@@ -1,0 +1,8 @@
+{
+  "day": 23,
+  "topic": "Familie & Verwandtschaft",
+  "prompt": "Schreibe einen Brief an einen deutschen Brieffreund. Stelle deine Familie vor (8 Sätze).",
+  "vocabulary_hint": "Lieber/Liebe..., Ich heiße..., Meine Familie ist..., Wir wohnen...",
+  "min_sentences": 5,
+  "example": null
+}

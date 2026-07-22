@@ -1,0 +1,8 @@
+{
+  "day": 18,
+  "topic": "Adjektive & Gegensätze",
+  "prompt": "Beschreibe 5 Menschen oder Dinge mit je zwei Adjektiven (Gegensätze willkommen!).",
+  "vocabulary_hint": "Mein Bruder ist groß und dünn. Das Wetter ist kalt aber schön.",
+  "min_sentences": 5,
+  "example": null
+}

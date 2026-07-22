@@ -1,0 +1,8 @@
+{
+  "day": 22,
+  "topic": "Zahlen & Geld",
+  "prompt": "Du kaufst 5 Artikel in einem Supermarkt. Schreibe auf was du kaufst, den Preis, und wie viel alles zusammen kostet.",
+  "vocabulary_hint": "Ich kaufe... für ... Euro. Zusammen zahle ich ... Euro.",
+  "min_sentences": 5,
+  "example": null
+}

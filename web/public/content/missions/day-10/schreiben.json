@@ -1,0 +1,8 @@
+{
+  "day": 10,
+  "topic": "Im Restaurant",
+  "prompt": "Schreibe einen kurzen Dialog im Restaurant (6-8 Zeilen): Kellner und Gast bestellen.",
+  "vocabulary_hint": "Kellner: Was möchten Sie? Gast: Ich nehme..., Bitte bringen Sie mir...",
+  "min_sentences": 5,
+  "example": null
+}

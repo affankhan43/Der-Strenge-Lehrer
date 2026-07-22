@@ -1,0 +1,20 @@
+{
+  "day": 17,
+  "playlist": "easygerman",
+  "channel": "Easy German",
+  "notes": "Hör auf die echte Aussprache und Intonation. Versuche mitzureden!",
+  "videos": [
+    {
+      "id": "kQPvtHeUUfU",
+      "title": "Easy German #25"
+    },
+    {
+      "id": "bonBD3n2cy8",
+      "title": "Easy German #26"
+    }
+  ],
+  "tasks_after": [
+    "Welche 2 Ausdrücke findest du am interessantesten?",
+    "Schreibe einen Satz nach, den du gehört hast."
+  ]
+}

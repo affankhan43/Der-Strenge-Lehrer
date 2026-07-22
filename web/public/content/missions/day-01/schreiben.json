@@ -1,0 +1,8 @@
+{
+  "day": 1,
+  "topic": "Selbstvorstellung",
+  "prompt": "Schreibe 5 Sätze: Wie heißt du? Woher kommst du? Wie alt bist du? Was machst du? Warum lernst du Deutsch?",
+  "vocabulary_hint": "Ich heiße, ich komme aus, ich bin ... Jahre alt, ich studiere/arbeite, ich lerne Deutsch weil...",
+  "min_sentences": 5,
+  "example": null
+}

@@ -10,6 +10,7 @@ import VideoTask from '../components/tasks/VideoTask';
 import VocabTask from '../components/tasks/VocabTask';
 import ReadingTask from '../components/tasks/ReadingTask';
 import GrammarTask from '../components/tasks/GrammarTask';
+import WritingTask from '../components/tasks/WritingTask';
 import s from './TaskPage.module.css';
 
 const TOTAL_DAYS = 112; // 4 levels × 28 days
@@ -21,6 +22,7 @@ const TYPE_REMAP = {
   reading: 'reading_native',
   grammar: 'grammar_native',
   speaking: 'video_embed',
+  writing: 'writing',
 };
 const CONTENT_FILE = {
   anki: 'vocab', vocab: 'vocab',
@@ -28,6 +30,7 @@ const CONTENT_FILE = {
   reading: 'reading', reading_native: 'reading',
   grammar: 'grammar', grammar_native: 'grammar',
   speaking: 'speaking',
+  writing: 'schreiben',
 };
 
 function resolveTask(task) {
@@ -41,24 +44,24 @@ function resolveTask(task) {
 }
 
 const isNativeType = (type) =>
-  ['vocab', 'video_embed', 'reading_native', 'grammar_native'].includes(type);
+  ['vocab', 'video_embed', 'reading_native', 'grammar_native', 'writing'].includes(type);
 
 const ICONS = {
   vocab: '🃏', video_embed: '📺', reading_native: '📖',
-  grammar_native: '✏️', video: '📺', reading: '📖', grammar: '✏️', speaking: '🎤',
+  grammar_native: '✏️', writing: '✍️', video: '📺', reading: '📖', grammar: '✏️', speaking: '🎤',
 };
 const LABELS = {
   vocab: 'Vokabeln', video_embed: 'Video', reading_native: 'Lesen',
-  grammar_native: 'Grammatik', video: 'Video', reading: 'Lesen',
+  grammar_native: 'Grammatik', writing: 'Schreiben', video: 'Video', reading: 'Lesen',
   grammar: 'Grammatik', speaking: 'Sprechen',
 };
 const TYPE_XP = {
   vocab: 10, video_embed: 15, reading_native: 20, grammar_native: 25,
-  video: 15, reading: 20, grammar: 25, speaking: 20,
+  writing: 20, video: 15, reading: 20, grammar: 25, speaking: 20,
 };
 const TYPE_COLOR = {
   vocab: '#b06aff', video_embed: '#00e676', reading_native: '#ffd700',
-  grammar_native: '#4d9fff', video: '#00e676', reading: '#ffd700',
+  grammar_native: '#4d9fff', writing: '#fb923c', video: '#00e676', reading: '#ffd700',
   grammar: '#4d9fff', speaking: '#ff4d6a',
 };
 
@@ -86,6 +89,7 @@ const TEACHER_LINES = {
   video:    ['Augen auf. Kein Multitasking.', 'Schau bis zum Ende.'],
   reading:  ['Lies langsam. Schreib neue Wörter auf.', 'Lesen bildet.'],
   grammar:  ['Grammatik verstehen, nicht auswendig lernen.', 'Übe jeden Satz.'],
+  writing:  ['Schreiben übt man durch Schreiben. Fang an.', 'Vollständige Sätze. Kein Stichwort-Stil.'],
   speaking: ['Mund auf. Laut sprechen. Jetzt.', 'Shadowing: gleichzeitig mit dem Audio.'],
 };
 
@@ -497,6 +501,9 @@ export default function TaskPage() {
           )}
           {resolvedTask.type === 'grammar_native' && nativeContent && (
             <GrammarTask content={nativeContent} onReady={setReady} />
+          )}
+          {resolvedTask.type === 'writing' && nativeContent && (
+            <WritingTask content={nativeContent} onReady={setReady} />
           )}
           {isNativeType(resolvedTask.type) && !nativeContent && (
             <div className={s.contentLoading}>
