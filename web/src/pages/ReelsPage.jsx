@@ -61,7 +61,7 @@ function ReelCard({ reel, isActive }) {
         )}
 
         {/* YouTube mute hint + unmute tap zone */}
-        {isActive && loaded && reel.platform === 'youtube' && muted && (
+        {isActive && loaded && (reel.platform === 'youtube' || reel.platform === 'tiktok') && muted && (
           <button className={s.unmuteBtn} onClick={() => setMuted(false)}>
             🔇 Tippen zum Entstummen
           </button>
