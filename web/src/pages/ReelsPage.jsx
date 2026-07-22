@@ -14,14 +14,6 @@ const LEVEL_COLORS = {
 };
 const LEVEL_MAP = ['A1.1','A1.2','A2.1','A2.2','B1.1','B1.2','B2.1','B2.2'];
 
-/* ── Instagram embed clip values (px) ──────────────────────────
-   clip-path: inset(TOP RIGHT BOTTOM LEFT) visually trims the
-   rendered iframe. These values hide the IG profile header and
-   the footer (likes / comments / logo) without touching the video.
-   Tuned for the Instagram embed at ~390-420px wide (portrait reel).
-──────────────────────────────────────────────────────────────── */
-const IG_CROP_TOP    = 68;   // hide profile bar
-const IG_CROP_BOTTOM = 210;  // hide "View more" + icons + likes + comment + logo
 
 function embedUrl(reel, active) {
   if (!active) return null;
@@ -39,16 +31,9 @@ function ReelCard({ reel, isActive }) {
   const [muted, setMuted]   = useState(true);
   const pm = PLATFORM_META[reel.platform] || PLATFORM_META.youtube;
   const lc = LEVEL_COLORS[reel.level] || '#a78bfa';
-  const isIG = reel.platform === 'instagram';
   const url  = embedUrl(reel, isActive);
 
-  /* When this reel goes inactive, reset loaded state so it re-mounts
-     fresh next time (forces autoplay on re-entry).                    */
   useEffect(() => { if (!isActive) setLoaded(false); }, [isActive]);
-
-  /* IG: the iframe needs to be taller than the visible crop area.
-     We add the cropped-off amounts so the full video fills the slot. */
-  const igExtraH = IG_CROP_TOP + IG_CROP_BOTTOM;
 
   return (
     <div className={s.reel}>
@@ -56,18 +41,7 @@ function ReelCard({ reel, isActive }) {
       <div className={s.reelGlow} style={{ background: pm.color }} />
 
       {/* ── Embed wrapper ── */}
-      <div
-        className={s.embedWrap}
-        style={isIG ? {
-          /* clip-path is the reliable way to crop cross-origin iframes */
-          clipPath: `inset(${IG_CROP_TOP}px 0 ${IG_CROP_BOTTOM}px 0 round 16px)`,
-          /* Make the slot taller so video still fills after crop */
-          height: `calc(min(400px, 90vw) * 16/9 + ${igExtraH}px)`,
-          marginTop: `-${IG_CROP_TOP}px`,
-          aspectRatio: 'unset',
-          borderRadius: '16px',
-        } : undefined}
-      >
+      <div className={s.embedWrap}>
         {/* Loader */}
         {isActive && !loaded && (
           <div className={s.embedLoader}><div className={s.spinner} /></div>
@@ -95,7 +69,7 @@ function ReelCard({ reel, isActive }) {
       </div>
 
       {/* ── Top badges ── */}
-      <div className={s.reelTop} style={isIG ? { top: `calc(${IG_CROP_TOP}px + 12px)` } : undefined}>
+      <div className={s.reelTop}>
         <span className={s.platformBadge} style={{ background:pm.color+'22', borderColor:pm.color+'55', color:pm.color }}>
           {pm.icon} {pm.label}
         </span>
@@ -106,7 +80,7 @@ function ReelCard({ reel, isActive }) {
 
       {/* ── Bottom info ── */}
       {(reel.title || reel.description) && (
-        <div className={s.reelBottom} style={isIG ? { bottom: `calc(${IG_CROP_BOTTOM}px + 8px)` } : undefined}>
+        <div className={s.reelBottom}>
           {reel.title       && <div className={s.reelTitle}>{reel.title}</div>}
           {reel.description && <div className={s.reelDesc}>{reel.description}</div>}
         </div>
