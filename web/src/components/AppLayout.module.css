@@ -281,27 +281,31 @@
   white-space: nowrap;
   position: relative;
   cursor: pointer;
-  /* only colour transitions — no layout shift */
-  transition: color .15s;
+  /* CSS-only transition — no JS, no layout shift */
+  transition: color .15s, background .15s;
 }
-.navItem:hover { color: var(--text); }
+
+/* hover via CSS pseudo-element — zero React involvement */
+.navItem:not(.navItemActive):hover {
+  background: rgba(0,0,0,.045);
+  color: var(--text);
+}
+[data-theme="dark"] .navItem:not(.navItemActive):hover {
+  background: rgba(255,255,255,.055);
+}
 
 .navItemActive {
   color: var(--purple) !important;
   font-weight: 700;
 }
 
-/* ── absolutely positioned backgrounds — zero layout impact ── */
-.navActiveBg,
-.navHoverBg {
+/* active pill — framer layout animation slides it between items */
+.navActiveBg {
   position: absolute;
   inset: 0;
   border-radius: 11px;
   pointer-events: none;
   z-index: 0;
-}
-
-.navActiveBg {
   background: color-mix(in srgb, var(--purple) 10%, transparent);
   border: 1px solid color-mix(in srgb, var(--purple) 20%, transparent);
 }
@@ -310,15 +314,7 @@
   border-color: color-mix(in srgb, var(--purple) 28%, transparent);
 }
 
-.navHoverBg {
-  background: rgba(0,0,0,.045);
-  border: 1px solid transparent;
-}
-[data-theme="dark"] .navHoverBg {
-  background: rgba(255,255,255,.055);
-}
-
-/* nav content sits above the bg layers */
+/* content always above the active bg */
 .navEmoji {
   font-size: 17px;
   flex-shrink: 0;

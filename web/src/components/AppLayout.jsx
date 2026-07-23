@@ -50,7 +50,7 @@ export default function AppLayout({ children }) {
   const location  = useLocation();
   const [collapsed, setCollapsed]   = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [hoveredItem, setHoveredItem] = useState(null);
+;
 
   useEffect(() => { setMobileOpen(false); }, [location.pathname]);
   useEffect(() => { fetchAll(); }, []);
@@ -158,8 +158,6 @@ export default function AppLayout({ children }) {
                     end={exact}
                     className={`${s.navItem} ${active ? s.navItemActive : ''}`}
                     title={!expanded ? item.label : undefined}
-                    onMouseEnter={() => setHoveredItem(item.to)}
-                    onMouseLeave={() => setHoveredItem(null)}
                   >
                     {active && (
                       <motion.div
@@ -169,23 +167,7 @@ export default function AppLayout({ children }) {
                       />
                     )}
 
-                    {!active && hoveredItem === item.to && (
-                      <motion.div
-                        className={s.navHoverBg}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: .12 }}
-                      />
-                    )}
-
-                    <motion.span
-                      className={s.navEmoji}
-                      animate={{ scale: active ? 1.1 : 1 }}
-                      transition={{ type: 'spring', stiffness: 500, damping: 22 }}
-                    >
-                      {item.emoji}
-                    </motion.span>
+                    <span className={s.navEmoji}>{item.emoji}</span>
 
                     <AnimatePresence>
                       {expanded && (
@@ -202,13 +184,7 @@ export default function AppLayout({ children }) {
                     </AnimatePresence>
 
                     {badge && expanded && (
-                      <motion.span
-                        className={s.navBadge}
-                        initial={{ scale: 0 }} animate={{ scale: 1 }}
-                        transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-                      >
-                        {badge}
-                      </motion.span>
+                      <span className={s.navBadge}>{badge}</span>
                     )}
                   </NavLink>
                 );
