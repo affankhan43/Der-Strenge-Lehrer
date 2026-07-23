@@ -49,12 +49,12 @@ function LevelBar({ currentLevel }) {
       </div>
       <div className={s.levelBarTrack}>
         <motion.div className={s.levelBarFill}
-          initial={{ width: 0 }}
+          initial={{ width: '0%' }}
           animate={{ width: `${pct}%` }}
           transition={{ duration: 1.2, ease: [.22, 1, .36, 1] }}
         />
         <motion.div className={s.levelBarDot}
-          initial={{ left: 0 }}
+          initial={{ left: '0%' }}
           animate={{ left: `${pct}%` }}
           transition={{ duration: 1.2, ease: [.22, 1, .36, 1] }}
         />

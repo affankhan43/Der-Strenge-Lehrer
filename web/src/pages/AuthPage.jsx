@@ -57,7 +57,7 @@ export default function AuthPage() {
   const handleLogin = async (e) => {
     e.preventDefault();
     const r = await login(form.email, form.password);
-    if (r.ok) navigate('/');
+    if (r.ok) navigate('/app');
   };
 
   const handleStep1 = (e) => {
@@ -68,7 +68,7 @@ export default function AuthPage() {
 
   const handleFinish = async () => {
     const r = await signup(form);
-    if (r.ok) navigate('/');
+    if (r.ok) navigate('/app');
   };
 
   const addSocial = () => {

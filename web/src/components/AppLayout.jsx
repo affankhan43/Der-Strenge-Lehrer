@@ -30,8 +30,8 @@ const LEVEL_COLORS = {
 };
 
 function getLevelColor(lvl) {
-  const prefix = lvl?.slice(0, 2) || 'A1';
-  return LEVEL_COLORS[prefix] || '#8b5cf6';
+  if (typeof lvl !== 'string') return '#8b5cf6';
+  return LEVEL_COLORS[lvl.slice(0, 2)] || '#8b5cf6';
 }
 
 export default function AppLayout({ children }) {
@@ -133,7 +133,7 @@ export default function AppLayout({ children }) {
                 </div>
                 <div className={s.levelProgressBar}>
                   <motion.div className={s.levelProgressFill}
-                    initial={{ width: 0 }}
+                    initial={{ width: '0%' }}
                     animate={{ width: `${Math.min((xp % 100), 100)}%` }}
                     transition={{ duration: 1.2, ease: [.22,1,.36,1], delay: .3 }}
                     style={{ background: lvlColor }}
@@ -187,7 +187,6 @@ export default function AppLayout({ children }) {
                     {!active && hoveredItem === item.to && (
                       <motion.div
                         className={s.navHoverBg}
-                        layoutId="navHoverBg"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
