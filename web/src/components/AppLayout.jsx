@@ -97,21 +97,6 @@ export default function AppLayout({ children }) {
             )}
           </AnimatePresence>
 
-          {!isMobile && (
-            <button
-              className={s.collapseBtn}
-              onClick={() => setCollapsed(c => !c)}
-              title={collapsed ? 'Ausklappen' : 'Einklappen'}
-            >
-              <motion.span
-                animate={{ rotate: collapsed ? 0 : 180 }}
-                transition={{ duration: .3, ease: [.22,1,.36,1] }}
-                style={{ display: 'block', lineHeight: 1 }}
-              >
-                ‹
-              </motion.span>
-            </button>
-          )}
         </div>
 
         {/* ── XP / Level strip ── */}
@@ -308,6 +293,22 @@ export default function AppLayout({ children }) {
         transition={{ type: 'spring', stiffness: 320, damping: 34 }}
       >
         <SidebarContent />
+
+        {/* Collapse toggle — lives outside sideInner so overflow:visible works */}
+        <button
+          className={s.collapseBtn}
+          onClick={() => setCollapsed(c => !c)}
+          title={collapsed ? 'Ausklappen' : 'Einklappen'}
+          aria-label={collapsed ? 'Ausklappen' : 'Einklappen'}
+        >
+          <motion.span
+            animate={{ rotate: collapsed ? 0 : 180 }}
+            transition={{ duration: .32, ease: [.22, 1, .36, 1] }}
+            style={{ display: 'block', lineHeight: 1 }}
+          >
+            ‹
+          </motion.span>
+        </button>
       </motion.aside>
 
       {/* Mobile hamburger */}

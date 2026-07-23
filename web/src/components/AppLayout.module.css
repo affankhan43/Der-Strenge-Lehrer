@@ -16,7 +16,8 @@
   top: 0;
   height: 100vh;
   z-index: 50;
-  overflow: hidden;
+  /* allow the collapse button pill to poke out on the right */
+  overflow: visible;
 
   /* Light mode */
   background: #ffffff;
@@ -48,6 +49,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  overflow: hidden; /* clips inner content, not the sidebar edge button */
 }
 
 /* ═══════════════════════════════════════════════
@@ -124,34 +126,44 @@
 }
 
 .collapseBtn {
-  width: 26px;
-  height: 26px;
-  border-radius: 8px;
-  background: transparent;
-  border: 1px solid rgba(0,0,0,.08);
+  /* floating pill anchored to the right edge of the sidebar */
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  width: 28px;
+  height: 52px;
+  border-radius: 0 10px 10px 0;
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,.09);
+  border-left: none;
   color: var(--text3);
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 900;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: background .15s, color .15s, border-color .15s;
-  line-height: 1;
+  transition: background .18s, color .18s, box-shadow .18s;
   padding: 0;
-  margin-left: auto;
+  box-shadow: 3px 0 12px rgba(0,0,0,.07);
 }
 .collapseBtn:hover {
-  background: var(--bg2);
-  color: var(--text);
-  border-color: rgba(0,0,0,.14);
+  background: color-mix(in srgb, var(--purple) 8%, var(--card));
+  color: var(--purple);
+  box-shadow: 4px 0 18px rgba(124,58,237,.14);
 }
 [data-theme="dark"] .collapseBtn {
-  border-color: rgba(255,255,255,.1);
+  background: #1a1a2e;
+  border-color: rgba(255,255,255,.08);
+  box-shadow: 3px 0 14px rgba(0,0,0,.4);
 }
 [data-theme="dark"] .collapseBtn:hover {
-  border-color: rgba(255,255,255,.2);
+  background: color-mix(in srgb, var(--purple) 14%, #1a1a2e);
+  color: var(--purple);
 }
 
 /* ═══════════════════════════════════════════════
@@ -269,43 +281,44 @@
   white-space: nowrap;
   position: relative;
   cursor: pointer;
+  /* only colour transitions — no layout shift */
   transition: color .15s;
-  overflow: hidden;
 }
-.navItem:hover {
-  color: var(--text);
-}
+.navItem:hover { color: var(--text); }
 
 .navItemActive {
   color: var(--purple) !important;
   font-weight: 700;
 }
 
-/* shared animated background layers */
-.navActiveBg {
-  position: absolute;
-  inset: 0;
-  border-radius: 11px;
-  background: color-mix(in srgb, var(--purple) 10%, transparent);
-  border: 1px solid color-mix(in srgb, var(--purple) 20%, transparent);
-  z-index: 0;
-}
-[data-theme="dark"] .navActiveBg {
-  background: color-mix(in srgb, var(--purple) 14%, transparent);
-  border-color: color-mix(in srgb, var(--purple) 26%, transparent);
-}
-
+/* ── absolutely positioned backgrounds — zero layout impact ── */
+.navActiveBg,
 .navHoverBg {
   position: absolute;
   inset: 0;
   border-radius: 11px;
-  background: rgba(0,0,0,.04);
+  pointer-events: none;
   z-index: 0;
 }
-[data-theme="dark"] .navHoverBg {
-  background: rgba(255,255,255,.05);
+
+.navActiveBg {
+  background: color-mix(in srgb, var(--purple) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--purple) 20%, transparent);
+}
+[data-theme="dark"] .navActiveBg {
+  background: color-mix(in srgb, var(--purple) 15%, transparent);
+  border-color: color-mix(in srgb, var(--purple) 28%, transparent);
 }
 
+.navHoverBg {
+  background: rgba(0,0,0,.045);
+  border: 1px solid transparent;
+}
+[data-theme="dark"] .navHoverBg {
+  background: rgba(255,255,255,.055);
+}
+
+/* nav content sits above the bg layers */
 .navEmoji {
   font-size: 17px;
   flex-shrink: 0;
