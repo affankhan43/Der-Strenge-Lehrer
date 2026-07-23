@@ -177,6 +177,7 @@ export default function LandingPage() {
           <Faq openFaq={openFaq} setOpenFaq={setOpenFaq} />
           <Testimonials />
           <FinalCTA ctaLabel={ctaLabel} onCTA={handleCTA} />
+          <HelpUsSection onFeedback={() => setShowFeedback(true)} />
           <Footer onFeedback={() => setShowFeedback(true)} />
           {showFeedback && <FeedbackModal onClose={() => setShowFeedback(false)} />}
         </div>
@@ -593,6 +594,166 @@ function FinalCTA({ ctaLabel, onCTA }) {
         {ctaLabel}
       </button>
       <div style={{ color: '#7c86a8', fontSize: 15, marginTop: 22 }}>112 Tage · 560 Aufgaben · A1 → B2</div>
+    </section>
+  );
+}
+
+function HelpUsSection({ onFeedback }) {
+  const ways = [
+    { icon: '💬', title: 'Share Feedback', desc: 'Tell us what works, what doesn\'t, and what you wish existed.' },
+    { icon: '🐛', title: 'Report a Bug', desc: 'Found something broken? We want to fix it immediately.' },
+    { icon: '💡', title: 'Suggest a Feature', desc: 'Have an idea that would help German learners? We\'re listening.' },
+    { icon: '📢', title: 'Spread the Word', desc: 'Share with someone learning German — help them find us.' },
+  ];
+
+  return (
+    <section style={{
+      padding: '100px 40px',
+      position: 'relative',
+      overflow: 'hidden',
+      textAlign: 'center',
+    }}>
+      {/* Animated background blobs */}
+      <motion.div style={{
+        position:'absolute', inset:0, pointerEvents:'none',
+        background: 'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(124,58,237,.12) 0%, transparent 70%)',
+      }} animate={{ scale:[1,1.08,1], opacity:[0.7,1,0.7] }} transition={{ duration:6, repeat:Infinity, ease:'easeInOut' }}/>
+      <motion.div style={{
+        position:'absolute', top:'-10%', left:'-5%', width:400, height:400, borderRadius:'50%',
+        background:'radial-gradient(circle, rgba(255,214,10,.07) 0%, transparent 70%)',
+        pointerEvents:'none',
+      }} animate={{ x:[0,30,-20,0], y:[0,-20,15,0] }} transition={{ duration:12, repeat:Infinity, ease:'easeInOut' }}/>
+      <motion.div style={{
+        position:'absolute', bottom:'-15%', right:'-5%', width:360, height:360, borderRadius:'50%',
+        background:'radial-gradient(circle, rgba(6,182,212,.07) 0%, transparent 70%)',
+        pointerEvents:'none',
+      }} animate={{ x:[0,-25,18,0], y:[0,20,-12,0] }} transition={{ duration:10, repeat:Infinity, ease:'easeInOut', delay:2 }}/>
+
+      {/* Grid dots */}
+      <div style={{
+        position:'absolute', inset:0, pointerEvents:'none',
+        backgroundImage:'radial-gradient(circle, rgba(148,163,255,.18) 1px, transparent 1px)',
+        backgroundSize:'28px 28px',
+        maskImage:'radial-gradient(ellipse 80% 90% at 50% 50%, black 30%, transparent 100%)',
+        WebkitMaskImage:'radial-gradient(ellipse 80% 90% at 50% 50%, black 30%, transparent 100%)',
+        opacity:.5,
+      }}/>
+
+      <div style={{ position:'relative', zIndex:1, maxWidth:900, margin:'0 auto' }}>
+        {/* Eyebrow */}
+        <motion.div
+          initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }}
+          transition={{ duration:.6 }}
+          style={{
+            display:'inline-flex', alignItems:'center', gap:8,
+            background:'rgba(255,214,10,.1)', border:'1px solid rgba(255,214,10,.25)',
+            borderRadius:20, padding:'6px 16px', marginBottom:24,
+            fontSize:12, fontWeight:700, color:'#ffd60a', letterSpacing:'.08em', textTransform:'uppercase',
+          }}
+        >
+          <motion.span animate={{ scale:[1,1.3,1] }} transition={{ duration:1.5, repeat:Infinity }}>🌍</motion.span>
+          Open Mission
+        </motion.div>
+
+        {/* Headline */}
+        <motion.h2
+          initial={{ opacity:0, y:30 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }}
+          transition={{ duration:.7, delay:.1 }}
+          style={{
+            fontFamily:"'Space Grotesk',sans-serif", fontWeight:900,
+            fontSize:'clamp(28px, 5vw, 52px)', lineHeight:1.1, margin:'0 0 20px',
+            letterSpacing:'-.03em',
+          }}
+        >
+          Help Us{' '}
+          <span style={{
+            background:'linear-gradient(135deg, #ffd60a 0%, #ff9f0a 50%, #ff6b6b 100%)',
+            WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text',
+          }}>
+            Shape the Future
+          </span>
+          {' '}of German Learning
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }}
+          transition={{ duration:.6, delay:.2 }}
+          style={{ fontSize:17, color:'#9aa2bf', lineHeight:1.7, maxWidth:620, margin:'0 auto 52px' }}
+        >
+          We're on a mission to make German accessible to every learner on earth —
+          completely free, forever. Your input directly shapes what we build next.
+        </motion.p>
+
+        {/* Ways to help */}
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:16, marginBottom:52 }}>
+          {ways.map((w, i) => (
+            <motion.div key={i}
+              initial={{ opacity:0, y:30 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }}
+              transition={{ duration:.5, delay:.1 + i*.08 }}
+              whileHover={{ y:-6, scale:1.02 }}
+              style={{
+                background:'rgba(255,255,255,.03)', border:'1px solid rgba(148,163,255,.12)',
+                borderRadius:18, padding:'24px 18px', textAlign:'center',
+                transition:'border-color .2s',
+              }}
+              onMouseEnter={e => e.currentTarget.style.borderColor='rgba(255,214,10,.3)'}
+              onMouseLeave={e => e.currentTarget.style.borderColor='rgba(148,163,255,.12)'}
+            >
+              <motion.div style={{ fontSize:32, marginBottom:12 }}
+                animate={{ scale:[1,1.1,1], rotate:[0,5,-5,0] }}
+                transition={{ duration:3+i*0.5, repeat:Infinity, ease:'easeInOut', delay:i*0.6 }}>
+                {w.icon}
+              </motion.div>
+              <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontWeight:800, fontSize:15, color:'#eef0f7', marginBottom:8 }}>{w.title}</div>
+              <div style={{ fontSize:13, color:'#6b7280', lineHeight:1.6 }}>{w.desc}</div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity:0, scale:.95 }} whileInView={{ opacity:1, scale:1 }} viewport={{ once:true }}
+          transition={{ duration:.5, delay:.4 }}
+          style={{ display:'flex', gap:14, justifyContent:'center', flexWrap:'wrap', alignItems:'center' }}
+        >
+          <motion.button
+            onClick={onFeedback}
+            whileHover={{ scale:1.04, y:-2 }}
+            whileTap={{ scale:.97 }}
+            style={{
+              background:'linear-gradient(135deg, #ffd60a, #ff9f0a)',
+              border:'none', borderRadius:14, padding:'15px 32px',
+              fontSize:16, fontWeight:800, color:'#06070c',
+              cursor:'pointer', fontFamily:"'Space Grotesk',sans-serif",
+              boxShadow:'0 12px 36px -8px rgba(255,214,10,.5)',
+              letterSpacing:'.01em',
+            }}
+          >
+            💬 Feedback geben
+          </motion.button>
+
+          <motion.a
+            href="mailto:help@derstrengelehrer.de"
+            whileHover={{ scale:1.04, y:-2 }}
+            style={{
+              background:'rgba(148,163,255,.08)', border:'1px solid rgba(148,163,255,.2)',
+              borderRadius:14, padding:'15px 32px', fontSize:16, fontWeight:700,
+              color:'#c4b5fd', cursor:'pointer', display:'inline-block',
+              fontFamily:"'Space Grotesk',sans-serif", letterSpacing:'.01em',
+              textDecoration:'none',
+            }}
+          >
+            ✉️ E-Mail schreiben
+          </motion.a>
+        </motion.div>
+
+        {/* Pulse ring decoration */}
+        <motion.div style={{
+          position:'absolute', left:'50%', top:'50%', transform:'translate(-50%,-50%)',
+          width:600, height:600, borderRadius:'50%', pointerEvents:'none',
+          border:'1px solid rgba(255,214,10,.06)',
+        }} animate={{ scale:[0.8,1.1,0.8], opacity:[0.3,0.6,0.3] }} transition={{ duration:5, repeat:Infinity }}/>
+      </div>
     </section>
   );
 }

@@ -602,6 +602,374 @@ function LiftLesson() {
   );
 }
 
+function RunLesson() {
+  const [t, setT] = useState(0);
+  useEffect(() => { const id = setInterval(() => setT(p => p + 1), 80); return () => clearInterval(id); }, []);
+  const legAngle = Math.sin(t * 0.35) * 28;
+  const armAngle = Math.sin(t * 0.35 + Math.PI) * 22;
+  const bodyX = ((t * 1.8) % 110) - 10;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#f97316','--lesson-color2':'#ea580c' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <line x1="0" y1="88" x2="110" y2="88" stroke="var(--border)" strokeWidth="2"/>
+          <motion.g animate={{ x: bodyX }} transition={{ duration: 0 }}>
+            <circle cx="20" cy="20" r="9" fill="#c4b5fd"/>
+            <line x1="20" y1="29" x2="20" y2="56" stroke="#a78bfa" strokeWidth="5" strokeLinecap="round"/>
+            <motion.line x1="20" y1="40" x2={20 + Math.sin((t*0.35+Math.PI)*1)*14} y2={40 + Math.abs(Math.cos(t*0.35))*8} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+            <motion.line x1="20" y1="40" x2={20 - Math.sin((t*0.35+Math.PI)*1)*14} y2={40 + Math.abs(Math.cos(t*0.35+Math.PI))*8} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+            <motion.line x1="20" y1="56" x2={20 + Math.sin(t*0.35)*16} y2={56 + Math.cos(t*0.35)*14 + 14} stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+            <motion.line x1="20" y1="56" x2={20 - Math.sin(t*0.35)*16} y2={56 - Math.cos(t*0.35)*14 + 14} stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          </motion.g>
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>laufen</span><span className={s.lessonEn}>to run / to walk</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>schnell laufen — to run fast</span>
+        <span className={s.lessonPhrase}>der Läufer — the runner (der)</span>
+      </div>
+    </div>
+  );
+}
+
+function DrinkLesson() {
+  const [level, setLevel] = useState(100);
+  useEffect(() => {
+    const id = setInterval(() => setLevel(l => l <= 0 ? 100 : l - 2), 60);
+    return () => clearInterval(id);
+  }, []);
+  const pct = level / 100;
+  const waterY = 38 + (1 - pct) * 36;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#3b82f6','--lesson-color2':'#06b6d4' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <path d="M35 20 L30 76 Q30 82 37 82 L73 82 Q80 82 80 76 L75 20 Z" fill="none" stroke="var(--border)" strokeWidth="2"/>
+          <clipPath id="glassClip"><path d="M36 20 L31 76 Q31 81 37 81 L73 81 Q79 81 79 76 L74 20 Z"/></clipPath>
+          <rect x="0" y={waterY} width="110" height="80" fill="#3b82f6" opacity=".55" clipPath="url(#glassClip)"/>
+          <motion.ellipse cx="55" cy={waterY} rx="20" ry="3" fill="#60a5fa" opacity=".7"
+            animate={{ rx: [18,22,18], ry: [2,4,2] }} transition={{ duration:1.5, repeat:Infinity }}/>
+          <path d="M35 20 L30 76 Q30 82 37 82 L73 82 Q80 82 80 76 L75 20 Z" fill="none" stroke="var(--border)" strokeWidth="2"/>
+          <motion.text x="55" y="55" textAnchor="middle" fontSize="11" fill="#fff" fontWeight="800" opacity={pct < 0.3 ? 0.9 : 0}>fast leer!</motion.text>
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>trinken</span><span className={s.lessonEn}>to drink</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>das Glas — the glass (das)</span>
+        <span className={s.lessonPhrase}>das Wasser — the water (das)</span>
+      </div>
+    </div>
+  );
+}
+
+function JumpLesson() {
+  const [phase, setPhase] = useState(0);
+  useEffect(() => { const id = setInterval(() => setPhase(p => (p + 1) % 60), 40); return () => clearInterval(id); }, []);
+  const arc = Math.sin(phase / 60 * Math.PI);
+  const groundY = 80;
+  const figY = groundY - arc * 42;
+  const stretch = 1 + arc * 0.12;
+  const squash = 1 - arc * 0.08;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#f59e0b','--lesson-color2':'#f97316' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <line x1="10" y1="88" x2="100" y2="88" stroke="var(--border)" strokeWidth="2"/>
+          <motion.ellipse cx="55" cy="89" rx={arc > 0.05 ? 16 - arc*8 : 16} ry="2.5" fill="rgba(0,0,0,.15)"/>
+          <motion.g animate={{ y: figY - groundY }} transition={{ duration: 0 }}>
+            <ellipse cx="55" cy={groundY - 28} rx={8 * squash} ry={9 * stretch} fill="#c4b5fd"/>
+            <rect x={50 * squash + (55*(1-squash))} y={groundY - 18} width={10 * squash} height={22 * stretch} rx="4" fill="#a78bfa"/>
+            <motion.line x1="55" y1={groundY - 10}
+              animate={{ x2: arc > 0.3 ? 40 : 48, y2: arc > 0.3 ? groundY - 20 : groundY + 4 }}
+              stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+            <motion.line x1="55" y1={groundY - 10}
+              animate={{ x2: arc > 0.3 ? 70 : 62, y2: arc > 0.3 ? groundY - 20 : groundY + 4 }}
+              stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+            <motion.line x1="55" y1={groundY + 4}
+              animate={{ x2: arc > 0.3 ? 44 : 50, y2: arc > 0.3 ? groundY + 18 : groundY + 22 }}
+              stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+            <motion.line x1="55" y1={groundY + 4}
+              animate={{ x2: arc > 0.3 ? 66 : 60, y2: arc > 0.3 ? groundY + 18 : groundY + 22 }}
+              stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          </motion.g>
+          {arc > 0.7 && <motion.text x="55" y="18" textAnchor="middle" fontSize="14" initial={{opacity:0}} animate={{opacity:1}}>🎉</motion.text>}
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>springen</span><span className={s.lessonEn}>to jump</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>hoch springen — to jump high</span>
+        <span className={s.lessonPhrase}>der Sprung — the jump (der)</span>
+      </div>
+    </div>
+  );
+}
+
+function SleepLesson() {
+  const [zIdx, setZIdx] = useState(0);
+  useEffect(() => { const id = setInterval(() => setZIdx(p => (p + 1) % 3), 900); return () => clearInterval(id); }, []);
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#6366f1','--lesson-color2':'#4f46e5' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <rect x="10" y="60" width="90" height="20" rx="8" fill="#1e1e3a" stroke="var(--border)" strokeWidth="1.5"/>
+          <rect x="10" y="52" width="30" height="14" rx="6" fill="#2a2a4a" stroke="var(--border)" strokeWidth="1.5"/>
+          <motion.g animate={{ x: [0, 1, -1, 0] }} transition={{ duration: 3, repeat: Infinity }}>
+            <circle cx="40" cy="54" r="10" fill="#c4b5fd"/>
+            <motion.path d="M34 52 Q37 49 40 52" fill="none" stroke="#a78bfa" strokeWidth="1.5" strokeLinecap="round"
+              animate={{ d: ['M34 52 Q37 49 40 52', 'M34 53 Q37 51 40 53'] }} transition={{ duration:3, repeat:Infinity }}/>
+            <motion.path d="M40 52 Q43 49 46 52" fill="none" stroke="#a78bfa" strokeWidth="1.5" strokeLinecap="round"
+              animate={{ d: ['M40 52 Q43 49 46 52', 'M40 53 Q43 51 46 53'] }} transition={{ duration:3, repeat:Infinity }}/>
+            <line x1="37" y1="59" x2="43" y2="59" stroke="#a78bfa" strokeWidth="1.5" strokeLinecap="round"/>
+          </motion.g>
+          {[0,1,2].map(i => (
+            <motion.text key={i} x={62 + i * 10} y={50 - i * 12} fontSize={10 + i*3} fill="#818cf8" fontWeight="800"
+              animate={{ opacity: zIdx === i ? 1 : 0.15, y: [50 - i*12, 44 - i*12] }}
+              transition={{ duration: 1.5, repeat: Infinity, repeatType:'reverse', delay: i * 0.4 }}>
+              z
+            </motion.text>
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>schlafen</span><span className={s.lessonEn}>to sleep</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>gut schlafen — to sleep well</span>
+        <span className={s.lessonPhrase}>das Bett — the bed (das)</span>
+      </div>
+    </div>
+  );
+}
+
+function CookLesson() {
+  const [bubble, setBubble] = useState([]);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setBubble(b => [...b.slice(-5), { id: Date.now(), x: 38 + Math.random() * 34, delay: Math.random() * 0.3 }]);
+    }, 400);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#ef4444','--lesson-color2':'#dc2626' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <line x1="20" y1="50" x2="90" y2="50" stroke="var(--border)" strokeWidth="3" strokeLinecap="round"/>
+          <rect x="28" y="50" width="54" height="28" rx="8" fill="#1a1a3a" stroke="var(--border)" strokeWidth="1.5"/>
+          <ellipse cx="55" cy="50" rx="30" ry="7" fill="#252540" stroke="var(--border)" strokeWidth="1.5"/>
+          {bubble.map(b => (
+            <motion.circle key={b.id} cx={b.x} cy="48" r="3" fill="none" stroke="#fb923c" strokeWidth="1.5"
+              initial={{ y: 0, opacity: 0.9, r: 2 }}
+              animate={{ y: -28, opacity: 0, r: 6 }}
+              transition={{ duration: 1.2, delay: b.delay, ease:'easeOut' }}/>
+          ))}
+          <line x1="55" y1="25" x2="55" y2="50" stroke="#555" strokeWidth="3" strokeLinecap="round"/>
+          <ellipse cx="55" cy="24" rx="18" ry="5" fill="#333" stroke="var(--border)" strokeWidth="1.5"/>
+          <text x="55" y="68" textAnchor="middle" fontSize="10" fill="#fb923c" fontWeight="700">🍲</text>
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>kochen</span><span className={s.lessonEn}>to cook</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>die Küche — the kitchen (die)</span>
+        <span className={s.lessonPhrase}>der Topf — the pot (der)</span>
+      </div>
+    </div>
+  );
+}
+
+function PhoneLesson() {
+  const [ringing, setRinging] = useState(false);
+  const [answered, setAnswered] = useState(false);
+  useEffect(() => {
+    const cycle = () => {
+      setRinging(true); setAnswered(false);
+      setTimeout(() => { setRinging(false); setAnswered(true); }, 2000);
+      setTimeout(() => { setAnswered(false); }, 4000);
+    };
+    cycle();
+    const id = setInterval(cycle, 4800);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#10b981','--lesson-color2':'#059669' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <motion.g animate={{ rotate: ringing ? [0,8,-8,6,-6,0] : 0 }} transition={{ duration:.5, repeat: ringing ? Infinity : 0 }} style={{ originX:'55px', originY:'55px' }}>
+            <rect x="38" y="18" width="34" height="60" rx="8" fill="#1a1a3a" stroke="var(--border)" strokeWidth="2"/>
+            <rect x="44" y="24" width="22" height="36" rx="3" fill={answered ? '#22c55e' : '#0f172a'}/>
+            <circle cx="55" cy="70" r="4" fill="var(--border)"/>
+            {answered && <motion.text x="55" y="46" textAnchor="middle" fontSize="18" initial={{scale:0}} animate={{scale:1}}>😊</motion.text>}
+          </motion.g>
+          {ringing && [1,2].map(r=>(
+            <motion.ellipse key={r} cx="55" cy="50" rx={20+r*14} ry={26+r*16} fill="none" stroke="#4ade80" strokeWidth="1.5"
+              initial={{opacity:.7,scale:.6}} animate={{opacity:0,scale:1.3}} transition={{duration:.8,delay:r*.2,repeat:Infinity}}/>
+          ))}
+          {ringing && <motion.text x="55" y="12" textAnchor="middle" fontSize="10" fill="#4ade80" fontWeight="700"
+            animate={{opacity:[1,0,1]}} transition={{duration:.5,repeat:Infinity}}>klingeln!</motion.text>}
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>{answered ? 'telefonieren' : 'klingeln'}</span><span className={s.lessonEn}>{answered ? 'to make a call' : 'to ring'}</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>das Handy — the mobile phone (das)</span>
+        <span className={s.lessonPhrase}>anrufen — to call someone</span>
+      </div>
+    </div>
+  );
+}
+
+function EatLesson() {
+  const [bite, setBite] = useState(0);
+  useEffect(() => { const id = setInterval(() => setBite(p => (p + 1) % 4), 700); return () => clearInterval(id); }, []);
+  const armY = bite === 1 || bite === 2 ? 36 : 50;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#f59e0b','--lesson-color2':'#d97706' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <circle cx="55" cy="20" r="10" fill="#c4b5fd"/>
+          <line x1="55" y1="30" x2="55" y2="60" stroke="#a78bfa" strokeWidth="5" strokeLinecap="round"/>
+          <motion.line x1="55" y1="40" animate={{ x2: 72, y2: armY }} transition={{ duration:.35, ease:'easeInOut' }} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+          <motion.line x1="55" y1="40" animate={{ x2: 38, y2: 55 }} transition={{ duration:.35 }} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="55" y1="60" x2="46" y2="78" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="55" y1="60" x2="64" y2="78" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          <motion.g animate={{ x: 72, y: armY - 8 }} transition={{ duration:.35, ease:'easeInOut' }}>
+            <line x1="0" y1="0" x2="0" y2="-12" stroke="#fbbf24" strokeWidth="2.5" strokeLinecap="round"/>
+            <circle cx="0" cy="-16" r="5" fill="#fbbf24"/>
+          </motion.g>
+          <line x1="10" y1="88" x2="100" y2="88" stroke="var(--border)" strokeWidth="2"/>
+          {bite === 2 && <motion.text x="42" y="34" fontSize="12" initial={{opacity:0,y:-4}} animate={{opacity:1,y:0}}>😋</motion.text>}
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>essen</span><span className={s.lessonEn}>to eat</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>das Essen — the food / meal (das)</span>
+        <span className={s.lessonPhrase}>die Gabel — the fork (die)</span>
+      </div>
+    </div>
+  );
+}
+
+function WashLesson() {
+  const [t, setT] = useState(0);
+  useEffect(() => { const id = setInterval(() => setT(p => p + 1), 80); return () => clearInterval(id); }, []);
+  const rub = Math.sin(t * 0.25) * 8;
+  const drops = [0,1,2].map(i => ({ x: 48 + i * 8, delay: i * 0.3 }));
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#06b6d4','--lesson-color2':'#0891b2' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <motion.g animate={{ x: rub }} transition={{ duration:0 }}>
+            <rect x="30" y="46" width="26" height="14" rx="7" fill="#c4b5fd"/>
+            {[0,1,2,3].map(i=>(<circle key={i} cx={33+i*6} cy="46" r="4" fill="#ddd6fe"/>))}
+            <ellipse cx="31" cy="54" rx="5" ry="4" fill="#c4b5fd" transform="rotate(-15,31,54)"/>
+          </motion.g>
+          <motion.g animate={{ x: -rub }} transition={{ duration:0 }}>
+            <rect x="54" y="46" width="26" height="14" rx="7" fill="#a78bfa"/>
+            {[0,1,2,3].map(i=>(<circle key={i} cx={57+i*6} cy="46" r="4" fill="#c4b5fd"/>))}
+            <ellipse cx="79" cy="54" rx="5" ry="4" fill="#a78bfa" transform="rotate(15,79,54)"/>
+          </motion.g>
+          {drops.map((d,i)=>(
+            <motion.g key={i}>
+              <motion.circle cx={d.x} cy="64" r="3" fill="#38bdf8" opacity=".8"
+                animate={{ y: [0, 16], opacity: [0.8, 0] }}
+                transition={{ duration:0.8, delay:d.delay, repeat:Infinity, repeatDelay:0.5 }}/>
+            </motion.g>
+          ))}
+          <path d="M20 82 Q55 78 90 82" fill="none" stroke="#0284c7" strokeWidth="2" strokeLinecap="round"/>
+          <motion.text x="55" y="26" textAnchor="middle" fontSize="18"
+            animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 2, repeat: Infinity }}>🧼</motion.text>
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>waschen</span><span className={s.lessonEn}>to wash</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>Hände waschen — wash hands</span>
+        <span className={s.lessonPhrase}>die Seife — the soap (die)</span>
+      </div>
+    </div>
+  );
+}
+
+function ThrowLesson() {
+  const [phase, setPhase] = useState(0);
+  useEffect(() => { const id = setInterval(() => setPhase(p => (p + 1) % 60), 40); return () => clearInterval(id); }, []);
+  const t = phase / 60;
+  const throwing = t > 0.3 && t < 0.7;
+  const ballT = Math.max(0, (t - 0.4) / 0.4);
+  const ballX = 30 + ballT * 70;
+  const ballY = 40 - Math.sin(ballT * Math.PI) * 28;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#ec4899','--lesson-color2':'#db2777' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <line x1="0" y1="88" x2="110" y2="88" stroke="var(--border)" strokeWidth="2"/>
+          <circle cx="25" cy="20" r="9" fill="#c4b5fd"/>
+          <line x1="25" y1="29" x2="25" y2="60" stroke="#a78bfa" strokeWidth="5" strokeLinecap="round"/>
+          <motion.line x1="25" y1="40"
+            animate={{ x2: throwing ? 50 : 16, y2: throwing ? 30 : 48 }}
+            transition={{ duration:.2 }} stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="25" y1="40" x2="14" y2="52" stroke="#c4b5fd" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="25" y1="60" x2="16" y2="78" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          <line x1="25" y1="60" x2="34" y2="78" stroke="#a78bfa" strokeWidth="4" strokeLinecap="round"/>
+          {ballT > 0 && ballT < 1 && (
+            <motion.circle cx={ballX} cy={ballY} r="7" fill="#f472b6" animate={{ rotate: 360 }} transition={{ duration:.3, repeat:Infinity }}/>
+          )}
+          {ballT >= 1 && <circle cx="100" cy="82" r="7" fill="#f472b6"/>}
+          {ballT > 0 && ballT < 0.5 && [1,2].map(i=>(
+            <motion.circle key={i} cx={ballX - i*10} cy={ballY + i*4} r={4-i} fill="none" stroke="#f9a8d4" strokeWidth="1" opacity={0.6-i*0.2}/>
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>werfen</span><span className={s.lessonEn}>to throw</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>der Ball — the ball (der)</span>
+        <span className={s.lessonPhrase}>fangen — to catch (opposite)</span>
+      </div>
+    </div>
+  );
+}
+
+function BikeLesson() {
+  const [t, setT] = useState(0);
+  useEffect(() => { const id = setInterval(() => setT(p => p + 1), 40); return () => clearInterval(id); }, []);
+  const wheelRot = t * 6;
+  return (
+    <div className={s.lessonCard} style={{ '--lesson-color1':'#84cc16','--lesson-color2':'#65a30d' }}>
+      <div className={s.lessonAnim}>
+        <svg viewBox="0 0 110 100" width="110" height="100">
+          <line x1="0" y1="82" x2="110" y2="82" stroke="var(--border)" strokeWidth="2"/>
+          <g transform="translate(20,66)">
+            <circle cx="0" cy="0" r="16" fill="none" stroke="#84cc16" strokeWidth="3"/>
+            <motion.line x1="0" y1="-13" x2="0" y2="13" stroke="#84cc16" strokeWidth="2" style={{ originX:'0px', originY:'0px' }} animate={{ rotate: wheelRot }} transition={{ duration:0 }}/>
+            <motion.line x1="-13" y1="0" x2="13" y2="0" stroke="#84cc16" strokeWidth="2" style={{ originX:'0px', originY:'0px' }} animate={{ rotate: wheelRot }} transition={{ duration:0 }}/>
+          </g>
+          <g transform="translate(90,66)">
+            <circle cx="0" cy="0" r="16" fill="none" stroke="#84cc16" strokeWidth="3"/>
+            <motion.line x1="0" y1="-13" x2="0" y2="13" stroke="#84cc16" strokeWidth="2" style={{ originX:'0px', originY:'0px' }} animate={{ rotate: wheelRot }} transition={{ duration:0 }}/>
+            <motion.line x1="-13" y1="0" x2="13" y2="0" stroke="#84cc16" strokeWidth="2" style={{ originX:'0px', originY:'0px' }} animate={{ rotate: wheelRot }} transition={{ duration:0 }}/>
+          </g>
+          <line x1="20" y1="66" x2="55" y2="46" stroke="#555" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="55" y1="46" x2="90" y2="66" stroke="#555" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="55" y1="46" x2="55" y2="32" stroke="#555" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="45" y1="32" x2="65" y2="32" stroke="#555" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="55" y1="46" x2="68" y2="40" stroke="#555" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="62" y1="40" x2="74" y2="40" stroke="#777" strokeWidth="2.5" strokeLinecap="round"/>
+          <circle cx="55" cy="22" r="9" fill="#c4b5fd"/>
+          <motion.line x1="55" y1="31" x2="65" y2="44" stroke="#c4b5fd" strokeWidth="3" strokeLinecap="round"
+            animate={{ x2: [65, 68, 65], y2: [44, 48, 44] }} transition={{ duration:.6, repeat:Infinity }}/>
+          <motion.line x1="55" y1="31" x2="45" y2="44" stroke="#c4b5fd" strokeWidth="3" strokeLinecap="round"
+            animate={{ x2: [45, 42, 45], y2: [44, 48, 44] }} transition={{ duration:.6, repeat:Infinity, delay:.3 }}/>
+          {[0,1,2,3].map(i=>(
+            <motion.line key={i} x1={108-i*8} y1={74-i*3} x2={104-i*8} y2={72-i*3}
+              stroke="#a3e635" strokeWidth="1.5" strokeLinecap="round"
+              animate={{ opacity:[0.8,0] }} transition={{ duration:.4, delay:i*.08, repeat:Infinity }}/>
+          ))}
+        </svg>
+      </div>
+      <div className={s.lessonWord}><span className={s.lessonDe}>Fahrrad fahren</span><span className={s.lessonEn}>to ride a bike</span></div>
+      <div className={s.lessonPhrases}>
+        <span className={s.lessonPhrase}>das Fahrrad — the bicycle (das)</span>
+        <span className={s.lessonPhrase}>fahren — to drive / to ride</span>
+      </div>
+    </div>
+  );
+}
+
 function AnimatedLessons() {
   return (
     <motion.section
@@ -626,6 +994,16 @@ function AnimatedLessons() {
         <PushLesson />
         <WriteLesson />
         <LiftLesson />
+        <RunLesson />
+        <DrinkLesson />
+        <JumpLesson />
+        <SleepLesson />
+        <CookLesson />
+        <PhoneLesson />
+        <EatLesson />
+        <WashLesson />
+        <ThrowLesson />
+        <BikeLesson />
       </div>
     </motion.section>
   );
