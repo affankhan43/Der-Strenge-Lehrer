@@ -3,6 +3,7 @@ const router   = express.Router();
 const User     = require('../models/User');
 const Progress = require('../models/Progress');
 const Feedback = require('../models/Feedback');
+const Review   = require('../models/Review');
 const Reel     = require('../models/Reel');
 const { requireAuth } = require('../middleware/auth');
 
@@ -323,6 +324,42 @@ router.patch('/reels/:id', async (req, res) => {
 router.delete('/reels/:id', async (req, res) => {
   try {
     await Reel.findByIdAndDelete(req.params.id);
+    res.json({ ok: true });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── GET /api/admin/reviews ── list all (pending first)
+router.get('/reviews', requireAdmin, async (req, res) => {
+  try {
+    const filter = {};
+    if (req.query.approved === 'true')  filter.approved = true;
+    if (req.query.approved === 'false') filter.approved = false;
+    const reviews = await Review.find(filter).sort({ approved: 1, createdAt: -1 }).lean();
+    const counts = {
+      pending:  await Review.countDocuments({ approved: false }),
+      approved: await Review.countDocuments({ approved: true }),
+      featured: await Review.countDocuments({ featured: true }),
+    };
+    res.json({ reviews, counts });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── PATCH /api/admin/reviews/:id ── approve / feature / reject
+router.patch('/reviews/:id', requireAdmin, async (req, res) => {
+  try {
+    const allowed = ['approved', 'featured', 'displayName', 'levelTag'];
+    const updates = {};
+    allowed.forEach(k => { if (req.body[k] !== undefined) updates[k] = req.body[k]; });
+    const review = await Review.findByIdAndUpdate(req.params.id, updates, { new: true });
+    if (!review) return res.status(404).json({ error: 'Not found' });
+    res.json({ review });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── DELETE /api/admin/reviews/:id
+router.delete('/reviews/:id', requireAdmin, async (req, res) => {
+  try {
+    await Review.findByIdAndDelete(req.params.id);
     res.json({ ok: true });
   } catch (err) { res.status(500).json({ error: err.message }); }
 });

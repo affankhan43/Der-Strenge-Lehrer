@@ -583,6 +583,41 @@
   min-height: 100vh;
 }
 
+/* ── Review nudge banner ── */
+.reviewNudge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: linear-gradient(90deg,
+    color-mix(in srgb, #7c3aed 14%, var(--surface, var(--card))),
+    color-mix(in srgb, #2563eb 10%, var(--surface, var(--card))));
+  border-bottom: 1px solid color-mix(in srgb, #7c3aed 25%, transparent);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  flex-wrap: wrap;
+}
+.nudgeEmoji { font-size: 1.2rem; flex-shrink: 0; }
+.nudgeText  { flex: 1; font-size: .84rem; color: var(--text); }
+.nudgeText strong { color: #7c3aed; }
+.nudgeAction {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  border: none; color: #fff;
+  border-radius: 8px; padding: 7px 14px;
+  font-size: .82rem; font-weight: 700; cursor: pointer;
+  white-space: nowrap; flex-shrink: 0;
+  transition: opacity .15s;
+}
+.nudgeAction:hover { opacity: .88; }
+.nudgeDismiss {
+  background: none; border: none;
+  color: var(--text-muted); cursor: pointer;
+  font-size: .85rem; padding: 4px 6px; flex-shrink: 0;
+  transition: color .14s;
+}
+.nudgeDismiss:hover { color: var(--text); }
+
 /* ═══════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════ */

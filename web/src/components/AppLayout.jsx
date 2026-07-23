@@ -11,6 +11,7 @@ import {
   IconSun, IconMoon, IconLogOut, IconMenu, IconX,
   IconChevronLeft, IconChevronRight, IconGraduationCap,
 } from './Icons';
+import ReviewModal from './ReviewModal';
 import s from './AppLayout.module.css';
 
 const BASE_NAV = [
@@ -233,9 +234,19 @@ export default function AppLayout({ children }) {
   const location  = useLocation();
   const [collapsed, setCollapsed]   = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [showReview, setShowReview] = useState(false);
+  const [showNudge, setShowNudge]   = useState(false);
 
   useEffect(() => { setMobileOpen(false); }, [location.pathname]);
   useEffect(() => { fetchAll(); }, []);
+
+  /* Show review nudge after 3 completed days, once ever */
+  useEffect(() => {
+    if (localStorage.getItem('dsl_review_done') || localStorage.getItem('dsl_nudge_dismissed')) return;
+    const hist = JSON.parse(localStorage.getItem('dsl_history') || '[]');
+    const completedDays = hist.filter(d => d.tasks?.every(t => t.completed)).length;
+    if (completedDays >= 3) setShowNudge(true);
+  }, [stats]);
 
   const streak   = stats?.streak          || stats?.streakCount || 0;
   const xp       = stats?.totalXP         || user?.xp || 0;
@@ -319,6 +330,35 @@ export default function AppLayout({ children }) {
 
       {/* Main content */}
       <main className={s.main}>
+        {/* Review nudge banner */}
+        <AnimatePresence>
+          {showNudge && (
+            <motion.div
+              className={s.reviewNudge}
+              initial={{ opacity: 0, y: -48 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -48 }}
+              transition={{ duration: .3, ease: [.22, 1, .36, 1] }}
+            >
+              <span className={s.nudgeEmoji}>⭐</span>
+              <span className={s.nudgeText}>
+                Du hast schon <strong>3 Tage</strong> abgeschlossen — wie läuft's? Hinterlasse eine Bewertung!
+              </span>
+              <button
+                className={s.nudgeAction}
+                onClick={() => { setShowNudge(false); setShowReview(true); }}
+              >
+                Jetzt bewerten
+              </button>
+              <button
+                className={s.nudgeDismiss}
+                onClick={() => { setShowNudge(false); localStorage.setItem('dsl_nudge_dismissed', '1'); }}
+                title="Schließen"
+              >✕</button>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
@@ -332,6 +372,9 @@ export default function AppLayout({ children }) {
           </motion.div>
         </AnimatePresence>
       </main>
+
+      {/* Review modal */}
+      {showReview && <ReviewModal onClose={() => setShowReview(false)} />}
     </div>
   );
 }

@@ -553,7 +553,50 @@ function Faq({ openFaq, setOpenFaq }) {
   );
 }
 
+const STAR_PALETTE = ['#a855f7','#22d3ee','#ffd60a','#34d399','#f87171','#60a5fa'];
+const STAR_COLORS_LP = ['#ef4444','#f97316','#eab308','#22c55e','#7c3aed'];
+
+function StarRow({ value }) {
+  return (
+    <span style={{ display:'inline-flex', gap:2 }}>
+      {[1,2,3,4,5].map(n => (
+        <span key={n} style={{ fontSize:14, color: value >= n ? STAR_COLORS_LP[Math.min(n-1,4)] : 'rgba(255,255,255,0.15)' }}>★</span>
+      ))}
+    </span>
+  );
+}
+
 function Testimonials() {
+  const [liveReviews, setLiveReviews] = useState([]);
+  const [avg, setAvg] = useState(null);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    fetch('/api/reviews')
+      .then(r => r.ok ? r.json() : null)
+      .then(d => {
+        if (d?.reviews?.length) {
+          setLiveReviews(d.reviews);
+          setAvg(d.avg);
+          setTotal(d.total);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  /* Merge: live approved reviews first, then fallback hardcoded ones to fill gaps */
+  const liveCards = liveReviews.map((r, i) => ({
+    name: r.displayName,
+    initials: r.initials || r.displayName?.slice(0,2).toUpperCase() || '??',
+    tag: r.levelTag || 'Schüler',
+    quote: r.message,
+    color: STAR_PALETTE[i % STAR_PALETTE.length],
+    rating: r.rating,
+    isLive: true,
+  }));
+  const fallback = TESTIMONIALS.map(t => ({ ...t, rating: 5, isLive: false }));
+  const cards = liveCards.length >= 3 ? liveCards.slice(0, 6) : [...liveCards, ...fallback].slice(0, Math.max(3, liveCards.length + fallback.length));
+
   return (
     <section style={{ maxWidth: 1240, margin: '0 auto', padding: '90px 40px 60px' }}>
       <div style={{ textAlign: 'center', marginBottom: 56 }}>
@@ -561,12 +604,41 @@ function Testimonials() {
         <h2 data-reveal="" style={revealStyle('delay:.08s', { fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 'clamp(38px,5vw,66px)', letterSpacing: '-0.03em', margin: 0 })}>
           Sie hassten ihn.<br /><span style={{ color: '#ffd60a' }}>Am Ende dankten.</span>
         </h2>
+        {avg && (
+          <div data-reveal="" style={revealStyle('delay:.16s', { marginTop: 20, display:'flex', alignItems:'center', justifyContent:'center', gap:10 })}>
+            <span style={{ fontSize:28, fontWeight:900, color:'#ffd60a', fontFamily:"'Space Grotesk',sans-serif" }}>{avg}</span>
+            <div style={{ display:'flex', gap:2 }}>
+              {[1,2,3,4,5].map(n => (
+                <span key={n} style={{ fontSize:22, color: parseFloat(avg) >= n ? '#ffd60a' : 'rgba(255,255,255,0.15)' }}>★</span>
+              ))}
+            </div>
+            <span style={{ fontSize:14, color:'#6b7396' }}>({total} Bewertungen)</span>
+          </div>
+        )}
       </div>
-      <div className="lp-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 22 }}>
-        {TESTIMONIALS.map((t) => (
-          <div key={t.name} className="lp-hover-test" data-reveal="" style={revealStyle('', { position: 'relative', padding: '34px 30px', borderRadius: 22, background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))', border: '1px solid rgba(148,163,255,0.12)', overflow: 'hidden' })}>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: `repeat(${Math.min(cards.length, 3)}, 1fr)`,
+        gap: 22,
+      }}>
+        {cards.map((t, i) => (
+          <div key={i} className="lp-hover-test" data-reveal="" style={revealStyle('', {
+            position: 'relative', padding: '34px 30px', borderRadius: 22,
+            background: 'linear-gradient(165deg,rgba(20,24,40,0.7),rgba(10,12,22,0.55))',
+            border: `1px solid ${t.isLive ? 'rgba(124,58,237,0.3)' : 'rgba(148,163,255,0.12)'}`,
+            overflow: 'hidden',
+          })}>
+            {t.isLive && (
+              <div style={{ position:'absolute', top:14, right:14 }}>
+                <span style={{ fontSize:10, fontWeight:800, color:'#7c3aed', background:'rgba(124,58,237,0.15)', border:'1px solid rgba(124,58,237,0.3)', borderRadius:20, padding:'2px 8px', letterSpacing:'.06em', textTransform:'uppercase' }}>
+                  Echte Bewertung
+                </span>
+              </div>
+            )}
+            <div style={{ marginBottom:10 }}><StarRow value={t.rating} /></div>
             <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 64, lineHeight: 0.6, color: t.color, opacity: 0.5 }}>"</div>
-            <p style={{ fontSize: 19, lineHeight: 1.55, color: '#eef0f7', margin: '8px 0 26px', fontWeight: 500 }}>{t.quote}</p>
+            <p style={{ fontSize: 17, lineHeight: 1.6, color: '#eef0f7', margin: '8px 0 26px', fontWeight: 500 }}>{t.quote}</p>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
               <div style={{ width: 44, height: 44, borderRadius: '50%', display: 'grid', placeItems: 'center', fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 15, color: '#06070c', background: t.color, flexShrink: 0 }}>{t.initials}</div>
               <div>

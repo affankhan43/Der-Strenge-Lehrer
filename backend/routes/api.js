@@ -3,6 +3,7 @@ const router   = express.Router();
 const Progress = require('../models/Progress');
 const User     = require('../models/User');
 const Feedback = require('../models/Feedback');
+const Review   = require('../models/Review');
 const Reel     = require('../models/Reel');
 const { requireAuth } = require('../middleware/auth');
 const tasks    = require('../../data/tasks.json');
@@ -391,6 +392,58 @@ router.post('/feedback', async (req, res) => {
       message: message.trim().slice(0, 2000),
     });
     res.json({ ok: true, id: item._id });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── GET /api/reviews ── public — approved reviews for landing page
+router.get('/reviews', async (req, res) => {
+  try {
+    const reviews = await Review.find({ approved: true })
+      .sort({ featured: -1, createdAt: -1 })
+      .limit(20)
+      .select('-userId')
+      .lean();
+    const avg = reviews.length
+      ? (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1)
+      : null;
+    res.json({ reviews, avg, total: reviews.length });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// ── POST /api/reviews ── auth required — submit a review
+router.post('/reviews', requireAuth, async (req, res) => {
+  try {
+    const { rating, message, levelTag } = req.body;
+    if (!rating || rating < 1 || rating > 5)
+      return res.status(400).json({ error: 'Bewertung muss 1–5 Sterne sein.' });
+    if (!message || message.trim().length < 10)
+      return res.status(400).json({ error: 'Bitte schreibe mindestens 10 Zeichen.' });
+
+    // one review per user — update if exists
+    const user = await User.findById(req.user.id).lean();
+    const name = user?.displayName || user?.email?.split('@')[0] || 'Schüler';
+    const initials = name.slice(0, 2).toUpperCase();
+
+    const existing = await Review.findOne({ userId: req.user.id });
+    if (existing) {
+      existing.rating    = rating;
+      existing.message   = message.trim().slice(0, 500);
+      existing.levelTag  = levelTag?.trim().slice(0, 40) || '';
+      existing.approved  = false; // re-submit goes back to pending
+      await existing.save();
+      return res.json({ ok: true, updated: true });
+    }
+
+    await Review.create({
+      userId: req.user.id,
+      displayName: name,
+      initials,
+      rating,
+      message: message.trim().slice(0, 500),
+      levelTag: levelTag?.trim().slice(0, 40) || '',
+      approved: false,
+    });
+    res.json({ ok: true });
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
