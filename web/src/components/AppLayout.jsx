@@ -99,35 +99,26 @@ export default function AppLayout({ children }) {
 
         </div>
 
-        {/* ── XP / Level strip ── */}
-        <AnimatePresence>
-          {expanded && (
-            <motion.div className={s.levelStrip}
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: .22 }}
-            >
-              <div className={s.levelStripInner} style={{ '--lc': lvlColor }}>
-                <div className={s.levelStripLeft}>
-                  <span className={s.levelBadge} style={{ background: lvlColor }}>{lvl}</span>
-                  <div className={s.levelStripStats}>
-                    <span className={s.xpStat}>⭐ {xp} XP</span>
-                    {streak > 0 && <span className={s.streakStat}>🔥 {streak}</span>}
-                  </div>
-                </div>
-                <div className={s.levelProgressBar}>
-                  <motion.div className={s.levelProgressFill}
-                    initial={{ width: '0%' }}
-                    animate={{ width: `${Math.min((xp % 100), 100)}%` }}
-                    transition={{ duration: 1.2, ease: [.22,1,.36,1], delay: .3 }}
-                    style={{ background: lvlColor }}
-                  />
-                </div>
+        {/* ── XP / Level strip — always in DOM, CSS-only show/hide ── */}
+        <div className={`${s.levelStrip} ${!expanded ? s.levelStripHidden : ''}`}>
+          <div className={s.levelStripInner} style={{ '--lc': lvlColor }}>
+            <div className={s.levelStripLeft}>
+              <span className={s.levelBadge} style={{ background: lvlColor }}>{lvl}</span>
+              <div className={s.levelStripStats}>
+                <span className={s.xpStat}>⭐ {xp} XP</span>
+                {streak > 0 && <span className={s.streakStat}>🔥 {streak}</span>}
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            </div>
+            <div className={s.levelProgressBar}>
+              <motion.div className={s.levelProgressFill}
+                initial={{ width: '0%' }}
+                animate={{ width: `${Math.min((xp % 100), 100)}%` }}
+                transition={{ duration: 1.2, ease: [.22,1,.36,1], delay: .3 }}
+                style={{ background: lvlColor }}
+              />
+            </div>
+          </div>
+        </div>
 
         {/* ── Nav ── */}
         <nav className={s.nav}>

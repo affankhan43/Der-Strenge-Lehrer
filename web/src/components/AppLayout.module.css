@@ -172,6 +172,14 @@
 .levelStrip {
   overflow: hidden;
   flex-shrink: 0;
+  max-height: 120px;
+  opacity: 1;
+  transition: max-height .28s ease, opacity .2s ease;
+}
+.levelStripHidden {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .levelStripInner {
