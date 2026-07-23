@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuthStore } from '../store/authStore';
+import api from '../lib/api';
 
 /* ── data ─────────────────────────────────────────────────────────────── */
 const FEATURES = [
@@ -572,9 +573,9 @@ function Testimonials() {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    fetch('/api/reviews')
-      .then(r => r.ok ? r.json() : null)
-      .then(d => {
+    api.get('/api/reviews')
+      .then(res => {
+        const d = res.data;
         if (d?.reviews?.length) {
           setLiveReviews(d.reviews);
           setAvg(d.avg);
@@ -868,15 +869,10 @@ function FeedbackModal({ onClose }) {
     }
     setSending(true); setError('');
     try {
-      const res = await fetch('/api/feedback', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      if (!res.ok) throw new Error();
+      await api.post('/api/feedback', form);
       setSent(true);
-    } catch {
-      setError('Fehler beim Senden. Bitte versuche es erneut.');
+    } catch (err) {
+      setError(err.response?.data?.error || 'Fehler beim Senden. Bitte versuche es erneut.');
     }
     setSending(false);
   };
