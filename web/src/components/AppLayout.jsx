@@ -14,6 +14,7 @@ const BASE_NAV = [
     { to: '/reels',      icon: '▶',  emoji: '🎬', label: 'Reels'       },
     { to: '/bookmarks',  icon: '◈',  emoji: '🔖', label: 'Lesezeichen' },
     { to: '/history',    icon: '◷',  emoji: '📜', label: 'Verlauf'     },
+    { to: '/app/sentence-practice', icon: '✍', emoji: '✍️', label: 'Satzübung' },
   ]},
   { section: 'Konto', items: [
     { to: '/profile',    icon: '◉',  emoji: '👤', label: 'Profil'      },
@@ -151,11 +152,7 @@ export default function AppLayout({ children }) {
                     title={!expanded ? item.label : undefined}
                   >
                     {active && (
-                      <motion.div
-                        className={s.navActiveBg}
-                        layoutId="navActiveBg"
-                        transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                      />
+                      <div className={s.navActiveBg} />
                     )}
 
                     <span className={s.navEmoji}>{item.emoji}</span>

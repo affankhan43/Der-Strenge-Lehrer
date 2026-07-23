@@ -1,0 +1,459 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 24px 60px;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.headerIcon {
+  font-size: 2.4rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.15));
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: var(--text);
+  margin: 0 0 2px;
+}
+.subtitle {
+  font-size: .82rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Layout ── */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .rightCol { order: -1; }
+}
+
+.leftCol, .rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.04);
+}
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.cardTitle {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  flex: 1;
+}
+
+/* ── Example chips ── */
+.examplesLabel {
+  font-size: .73rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.exampleChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+}
+.exampleChip {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: .73rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.exampleChip:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* ── Textarea ── */
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 14px 16px;
+  resize: vertical;
+  font-family: inherit;
+  outline: none;
+  transition: border-color .18s, box-shadow .18s;
+}
+.textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 15%, transparent);
+}
+.textarea::placeholder { color: var(--text-muted); }
+
+/* ── Input actions ── */
+.inputActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.charCount {
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+.btns {
+  display: flex;
+  gap: 8px;
+}
+.checkBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .15s, transform .12s;
+}
+.checkBtn:hover:not(:disabled) { opacity: .88; transform: translateY(-1px); }
+.checkBtn:disabled { opacity: .4; cursor: not-allowed; }
+.btnIcon { font-size: .9rem; }
+.resetBtn {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: .85rem;
+  cursor: pointer;
+  transition: background .15s;
+}
+.resetBtn:hover { background: var(--border); }
+
+/* ── Annotated text ── */
+.annotatedText {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: .01em;
+}
+.annotatedError {
+  position: relative;
+  cursor: pointer;
+  background: color-mix(in srgb, var(--ec) 14%, transparent);
+  border-bottom: 2px solid var(--ec);
+  border-radius: 3px;
+  padding: 0 2px;
+  transition: background .15s;
+}
+.annotatedError:hover, .annotatedErrorActive {
+  background: color-mix(in srgb, var(--ec) 26%, transparent);
+}
+.errorDot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--ec);
+  border-radius: 50%;
+  vertical-align: super;
+  margin-left: 1px;
+  font-size: .5em;
+}
+.perfectBadge {
+  background: #22c55e;
+  color: #fff;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+/* ── Issue tooltip ── */
+.issueTooltip {
+  margin-top: 16px;
+  background: var(--bg);
+  border: 1.5px solid var(--ec);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.tooltipHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.tooltipRule {
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--ec);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.tooltipClose {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: .85rem;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.tooltipMsg {
+  font-size: .9rem;
+  color: var(--text);
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+.tooltipExpl {
+  font-size: .84rem;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
+.tooltipFix {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: color-mix(in srgb, var(--ec) 8%, transparent);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+.tooltipFixLabel {
+  font-size: .78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.tooltipFixCode {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: .88rem;
+  color: var(--ec);
+  font-weight: 600;
+}
+.tooltipExample {
+  font-size: .82rem;
+  color: var(--text-muted);
+}
+.tooltipExLabel {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* ── Summary row ── */
+.summaryRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.allGood {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.allGoodIcon { font-size: 2rem; }
+.allGoodTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+.allGoodSub {
+  font-size: .83rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.summaryTitle {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.badge {
+  background: color-mix(in srgb, var(--bc) 12%, transparent);
+  color: var(--bc);
+  border: 1px solid color-mix(in srgb, var(--bc) 30%, transparent);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+/* ── Issues list ── */
+.issuesList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.issueItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+  background: var(--bg);
+}
+.issueItem:hover, .issueItemActive {
+  border-color: var(--ec);
+  background: color-mix(in srgb, var(--ec) 5%, var(--bg));
+}
+.issueSev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-width: 44px;
+}
+.issueIcon { font-size: 1.1rem; font-weight: 700; }
+.issueSevLabel {
+  font-size: .64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.issueBody { flex: 1; }
+.issueRule {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 4px;
+}
+.issueMsg {
+  font-size: .88rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+.issueFix {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+.issueFixLabel {
+  color: #22c55e;
+  font-weight: 700;
+}
+.issueFixCode {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: .83rem;
+  background: color-mix(in srgb, #22c55e 10%, transparent);
+  color: #22c55e;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+.issueChevron {
+  font-size: .65rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ── Corrected box ── */
+.correctedBox {
+  background: color-mix(in srgb, #22c55e 7%, var(--bg));
+  border: 1.5px solid color-mix(in srgb, #22c55e 30%, transparent);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.correctedText {
+  font-size: 1.02rem;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.7;
+}
+.copyBtn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: .78rem;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.copyBtn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* ── Grammar tips ── */
+.tipsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tip {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tipHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px 4px;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  transition: background .14s;
+}
+.tipHeader:hover { background: var(--bg); border-radius: 8px; }
+.tipIcon { font-size: 1.1rem; min-width: 24px; text-align: center; }
+.tipTitle { flex: 1; font-size: .87rem; font-weight: 600; color: var(--text); }
+.tipChevron { font-size: .62rem; color: var(--text-muted); }
+.tipBody { overflow: hidden; }
+.tipText {
+  font-size: .83rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding: 10px 4px 10px 34px;
+  margin: 0;
+}

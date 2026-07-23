@@ -11,8 +11,9 @@ import HistoryPage   from './pages/HistoryPage';
 import ProfilePage   from './pages/ProfilePage';
 import AdminPage     from './pages/AdminPage';
 import ReelsPage      from './pages/ReelsPage';
-import BookmarksPage  from './pages/BookmarksPage';
-import AppLayout      from './components/AppLayout';
+import BookmarksPage        from './pages/BookmarksPage';
+import SentencePracticePage from './pages/SentencePracticePage';
+import AppLayout            from './components/AppLayout';
 
 function Protected({ children }) {
   const { user } = useAuthStore();
@@ -59,6 +60,9 @@ export default function App() {
         />
         <Route path="/app/task/:day/:order"
           element={<Protected><TaskPage /></Protected>}
+        />
+        <Route path="/app/sentence-practice"
+          element={<Protected><SentencePracticePage /></Protected>}
         />
         <Route path="/reels"
           element={<Protected><ReelsPage /></Protected>}

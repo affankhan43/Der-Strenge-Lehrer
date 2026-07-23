@@ -113,7 +113,7 @@
 /* ── Grid ── */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 14px;
 }
 
@@ -230,6 +230,141 @@
 }
 
 .removeBtn:hover { background: rgba(220,38,38,.18); }
+
+/* ── Examples button ── */
+.examplesBtn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--text2);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all .18s;
+  white-space: nowrap;
+}
+.examplesBtn:hover { background: var(--purple-d); color: var(--purple); border-color: var(--purple); }
+.examplesBtnActive { background: var(--purple-d); color: var(--purple); border-color: var(--purple); }
+
+.cardExpanded { grid-column: span 2; }
+@media (max-width: 680px) { .cardExpanded { grid-column: span 1; } }
+
+/* ── Examples panel ── */
+.examplesPanel { overflow: hidden; }
+.examplesPanelInner { padding-top: 2px; }
+.examplesDivider {
+  height: 1px;
+  background: var(--border);
+  margin: 12px 0;
+}
+
+/* ── Word examples ── */
+.examples { padding-bottom: 4px; }
+
+.examplesMeta { margin-bottom: 12px; }
+.verbMeta { display: flex; flex-wrap: wrap; gap: 6px; }
+.metaPill {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: .75rem;
+  color: var(--text2);
+}
+.metaPill strong { color: var(--text); }
+
+.tenseTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.tenseTab {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--text2);
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.tenseTab:hover { background: var(--bg3); color: var(--text); }
+.tenseTabActive {
+  background: color-mix(in srgb, var(--tc) 14%, transparent);
+  color: var(--tc);
+  border-color: color-mix(in srgb, var(--tc) 40%, transparent);
+}
+
+.tensePane {}
+.tenseNote {
+  font-size: .78rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+  opacity: .85;
+}
+.tenseNoteIcon { font-style: normal; }
+
+.tenseRows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tenseRow {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.tenseRowDe {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.tenseMarker {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.tenseRowDeText {
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+}
+.tenseSpeak {
+  background: none;
+  border: none;
+  font-size: .8rem;
+  cursor: pointer;
+  opacity: .55;
+  padding: 2px 4px;
+  transition: opacity .14s;
+}
+.tenseSpeak:hover { opacity: 1; }
+.tenseRowEn {
+  font-size: .8rem;
+  color: var(--text2);
+  padding-left: 12px;
+  font-style: italic;
+}
+
+.examplesEmpty {
+  text-align: center;
+  padding: 20px 10px;
+  color: var(--text2);
+  font-size: .83rem;
+}
+.examplesEmptyIcon { font-size: 2rem; display: block; margin-bottom: 8px; opacity: .4; }
+.examplesEmptyHint { font-size: .75rem; color: var(--text3); margin-top: 4px; }
 
 @media (max-width: 600px) {
   .page { padding: 20px 16px 40px; }
