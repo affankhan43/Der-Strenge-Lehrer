@@ -1,32 +1,116 @@
 {
   "day": 80,
-  "topic": "Energie & Nachhaltigkeit",
+  "topic": "Zeitmanagement & Produktivität",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Zeitmanagement",
+      "en": "time management",
+      "artikel": "das",
+      "example": "Ich möchte mein Zeitmanagement verbessern."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Produktivität",
+      "en": "productivity",
+      "artikel": "die",
+      "example": "Meine Produktivität ist morgens am höchsten."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "effizient",
+      "en": "efficient",
+      "example": "Wir arbeiten sehr effizient."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Ablenkung",
+      "en": "distraction",
+      "artikel": "die",
+      "example": "Das Handy ist eine große Ablenkung."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "sich konzentrieren",
+      "en": "to concentrate",
+      "example": "Ich kann mich gut konzentrieren."
+    },
+    {
+      "de": "die Konzentration",
+      "en": "concentration",
+      "artikel": "die",
+      "example": "Die Konzentration lässt am Nachmittag nach."
+    },
+    {
+      "de": "die Aufgabe erledigen",
+      "en": "to complete a task",
+      "example": "Ich erledige zuerst die wichtigste Aufgabe."
+    },
+    {
+      "de": "aufschieben",
+      "en": "to procrastinate / postpone",
+      "example": "Ich schiebe diese Aufgabe immer wieder auf."
+    },
+    {
+      "de": "die Prokrastination",
+      "en": "procrastination",
+      "artikel": "die",
+      "example": "Prokrastination ist mein größtes Problem."
+    },
+    {
+      "de": "die To-do-Liste",
+      "en": "to-do list",
+      "artikel": "die",
+      "example": "Ich schreibe jeden Morgen eine To-do-Liste."
+    },
+    {
+      "de": "delegieren",
+      "en": "to delegate",
+      "example": "Ich delegiere Aufgaben an mein Team."
+    },
+    {
+      "de": "multitasken",
+      "en": "to multitask",
+      "example": "Ich versuche, nicht zu multitasken."
+    },
+    {
+      "de": "die Fokuszeit",
+      "en": "focus time",
+      "artikel": "die",
+      "example": "Ich blocke mir jeden Morgen Fokuszeit."
+    },
+    {
+      "de": "die Pause einlegen",
+      "en": "to take a break",
+      "example": "Leg zwischendurch eine kurze Pause ein."
+    },
+    {
+      "de": "produktiv sein",
+      "en": "to be productive",
+      "example": "Ich bin morgens am produktivsten."
+    },
+    {
+      "de": "die Struktur",
+      "en": "structure",
+      "artikel": "die",
+      "example": "Struktur hilft mir, fokussiert zu bleiben."
+    },
+    {
+      "de": "strukturieren",
+      "en": "to structure",
+      "example": "Ich strukturiere meinen Tag im Voraus."
+    },
+    {
+      "de": "die Deadline",
+      "en": "deadline (informal)",
+      "artikel": "die",
+      "example": "Die Deadline ist morgen früh."
+    },
+    {
+      "de": "unter Zeitdruck",
+      "en": "under time pressure",
+      "example": "Ich stehe gerade unter Zeitdruck."
+    },
+    {
+      "de": "die Selbstdisziplin",
+      "en": "self-discipline",
+      "artikel": "die",
+      "example": "Selbstdisziplin ist der Schlüssel zum Erfolg."
     }
-  ],
-  "_note": "Add 20 words about 'Energie & Nachhaltigkeit'. Format: {de, en, example}"
+  ]
 }

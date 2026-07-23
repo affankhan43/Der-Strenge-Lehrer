@@ -1,32 +1,110 @@
 {
   "day": 87,
-  "topic": "Gesellschaft & Werte",
+  "topic": "Indirekte Rede",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "er sagte, dass",
+      "en": "he said that",
+      "example": "Er sagte, dass er müde sei."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "sie behauptet, dass",
+      "en": "she claims that",
+      "example": "Sie behauptet, dass sie recht hat."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "angeblich sein",
+      "en": "to allegedly be",
+      "example": "Er ist angeblich krank."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "berichten, dass",
+      "en": "to report that",
+      "example": "Die Zeitung berichtet, dass die Preise steigen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "erwähnen, dass",
+      "en": "to mention that",
+      "example": "Sie erwähnte, dass sie umzieht."
+    },
+    {
+      "de": "zufolge",
+      "en": "according to",
+      "example": "Den Nachrichten zufolge wird es kälter."
+    },
+    {
+      "de": "laut (Angabe)",
+      "en": "according to (a source)",
+      "example": "Laut Wetterbericht regnet es morgen."
+    },
+    {
+      "de": "wie er sagt",
+      "en": "as he says",
+      "example": "Wie er sagt, kommt er später."
+    },
+    {
+      "de": "die Aussage",
+      "en": "statement",
+      "artikel": "die",
+      "example": "Seine Aussage war sehr klar."
+    },
+    {
+      "de": "bestätigen",
+      "en": "to confirm",
+      "example": "Er bestätigte die Nachricht."
+    },
+    {
+      "de": "dementieren",
+      "en": "to deny (a statement)",
+      "example": "Sie hat die Gerüchte dementiert."
+    },
+    {
+      "de": "das Gerücht",
+      "en": "rumor",
+      "artikel": "das",
+      "example": "Das ist nur ein Gerücht."
+    },
+    {
+      "de": "weitererzählen",
+      "en": "to pass on / retell",
+      "example": "Erzähl das bitte nicht weiter."
+    },
+    {
+      "de": "zitieren",
+      "en": "to quote",
+      "example": "Der Journalist zitiert den Minister."
+    },
+    {
+      "de": "das Zitat",
+      "en": "quote",
+      "artikel": "das",
+      "example": "Das Zitat stammt aus einem Interview."
+    },
+    {
+      "de": "angeben (behaupten)",
+      "en": "to state / claim",
+      "example": "Er gibt an, unschuldig zu sein."
+    },
+    {
+      "de": "mitteilen",
+      "en": "to inform / notify",
+      "example": "Sie teilte uns die Neuigkeit mit."
+    },
+    {
+      "de": "die Mitteilung",
+      "en": "announcement / notice",
+      "artikel": "die",
+      "example": "Wir haben eine wichtige Mitteilung erhalten."
+    },
+    {
+      "de": "versichern (behaupten)",
+      "en": "to assure",
+      "example": "Er versicherte mir, dass alles gut sei."
+    },
+    {
+      "de": "scheinbar",
+      "en": "apparently",
+      "example": "Scheinbar hat sich der Termin geändert."
     }
-  ],
-  "_note": "Add 20 words about 'Gesellschaft & Werte'. Format: {de, en, example}"
+  ]
 }

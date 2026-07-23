@@ -1,32 +1,121 @@
 {
   "day": 63,
-  "topic": "Krankenhaus & Pflege",
+  "topic": "Arbeitswelt: Vertiefung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Lebenslauf",
+      "en": "CV / resume",
+      "artikel": "der",
+      "example": "Ich schicke meinen Lebenslauf heute ab."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Qualifikation",
+      "en": "qualification",
+      "artikel": "die",
+      "example": "Er hat die passende Qualifikation."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Erfahrung",
+      "en": "experience",
+      "artikel": "die",
+      "example": "Ich habe fünf Jahre Erfahrung."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Fähigkeit",
+      "en": "ability / skill",
+      "artikel": "die",
+      "example": "Teamarbeit ist eine wichtige Fähigkeit."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "das Team",
+      "en": "team",
+      "artikel": "das",
+      "example": "Unser Team arbeitet sehr gut zusammen."
+    },
+    {
+      "de": "die Verantwortung",
+      "en": "responsibility",
+      "artikel": "die",
+      "example": "Sie trägt viel Verantwortung."
+    },
+    {
+      "de": "verantwortlich sein",
+      "en": "to be responsible",
+      "example": "Er ist für das Projekt verantwortlich."
+    },
+    {
+      "de": "die Herausforderung",
+      "en": "challenge",
+      "artikel": "die",
+      "example": "Das ist eine große Herausforderung."
+    },
+    {
+      "de": "die Chance",
+      "en": "chance / opportunity",
+      "artikel": "die",
+      "example": "Das ist eine gute Chance für dich."
+    },
+    {
+      "de": "die Perspektive (Job)",
+      "en": "career prospect",
+      "artikel": "die",
+      "example": "Diese Stelle bietet gute Perspektiven."
+    },
+    {
+      "de": "entlassen",
+      "en": "to dismiss / lay off",
+      "example": "Die Firma musste zehn Mitarbeiter entlassen."
+    },
+    {
+      "de": "die Kündigung",
+      "en": "dismissal / notice",
+      "artikel": "die",
+      "example": "Er hat gestern seine Kündigung bekommen."
+    },
+    {
+      "de": "befördert werden",
+      "en": "to be promoted",
+      "example": "Sie wurde letzten Monat befördert."
+    },
+    {
+      "de": "die Teilzeit",
+      "en": "part-time",
+      "artikel": "die",
+      "example": "Ich arbeite Teilzeit."
+    },
+    {
+      "de": "die Vollzeit",
+      "en": "full-time",
+      "artikel": "die",
+      "example": "Er arbeitet Vollzeit."
+    },
+    {
+      "de": "das Homeoffice",
+      "en": "home office / remote work",
+      "artikel": "das",
+      "example": "Ich arbeite heute im Homeoffice."
+    },
+    {
+      "de": "flexibel",
+      "en": "flexible",
+      "example": "Meine Arbeitszeiten sind flexibel."
+    },
+    {
+      "de": "die Work-Life-Balance",
+      "en": "work-life balance",
+      "artikel": "die",
+      "example": "Work-Life-Balance ist mir sehr wichtig."
+    },
+    {
+      "de": "das Vorstellungsgespräch führen",
+      "en": "to conduct/have an interview",
+      "example": "Wir führen morgen ein Vorstellungsgespräch."
+    },
+    {
+      "de": "die Referenz",
+      "en": "reference",
+      "artikel": "die",
+      "example": "Ich brauche eine Referenz von meinem alten Chef."
     }
-  ],
-  "_note": "Add 20 words about 'Krankenhaus & Pflege'. Format: {de, en, example}"
+  ]
 }

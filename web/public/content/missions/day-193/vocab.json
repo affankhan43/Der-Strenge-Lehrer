@@ -1,51 +1,124 @@
 {
   "day": 193,
-  "level": "B2.1",
-  "topic": "Erörterung",
+  "topic": "Kunstkritik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Kunstkritik",
+      "en": "art criticism",
+      "artikel": "die",
+      "example": "Kunstkritik bewertet und interpretiert Kunstwerke."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die künstlerische Aussage",
+      "en": "artistic statement",
+      "artikel": "die",
+      "example": "Die künstlerische Aussage ist stark politisch."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Formsprache",
+      "en": "formal language (art)",
+      "artikel": "die",
+      "example": "Die Formsprache dieses Künstlers ist minimalistisch."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Bildkomposition",
+      "en": "pictorial composition",
+      "artikel": "die",
+      "example": "Die Bildkomposition ist sehr ausgewogen."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die künstlerische Freiheit",
+      "en": "artistic freedom",
+      "artikel": "die",
+      "example": "Künstlerische Freiheit ist ein hohes Gut."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Kunstströmung",
+      "en": "art movement",
+      "artikel": "die",
+      "example": "Diese Kunstströmung entstand Anfang des 20. Jahrhunderts."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das zeitgenössische Kunstwerk",
+      "en": "contemporary artwork",
+      "artikel": "das",
+      "example": "Das zeitgenössische Kunstwerk provoziert bewusst."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Interpretationsfreiheit",
+      "en": "interpretive freedom",
+      "artikel": "die",
+      "example": "Der Betrachter hat viel Interpretationsfreiheit."
+    },
+    {
+      "de": "die künstlerische Handschrift",
+      "en": "artistic style / signature",
+      "artikel": "die",
+      "example": "Seine künstlerische Handschrift ist unverwechselbar."
+    },
+    {
+      "de": "die Bedeutungsebenen entschlüsseln",
+      "en": "to decode layers of meaning",
+      "example": "Wir entschlüsseln die Bedeutungsebenen des Werkes."
+    },
+    {
+      "de": "die Kunstkritikerin",
+      "en": "art critic (female)",
+      "artikel": "die",
+      "example": "Die Kunstkritikerin lobte die Ausstellung."
+    },
+    {
+      "de": "der Kunstkritiker",
+      "en": "art critic (male)",
+      "artikel": "der",
+      "example": "Der Kunstkritiker war von der Ausstellung begeistert."
+    },
+    {
+      "de": "die visuelle Wirkung",
+      "en": "visual impact",
+      "artikel": "die",
+      "example": "Die visuelle Wirkung des Werkes ist stark."
+    },
+    {
+      "de": "die künstlerische Provokation",
+      "en": "artistic provocation",
+      "artikel": "die",
+      "example": "Diese künstlerische Provokation löste Diskussionen aus."
+    },
+    {
+      "de": "die Werkbetrachtung",
+      "en": "art appreciation / contemplation",
+      "artikel": "die",
+      "example": "Die Werkbetrachtung dauerte fast eine Stunde."
+    },
+    {
+      "de": "die kuratorische Entscheidung",
+      "en": "curatorial decision",
+      "artikel": "die",
+      "example": "Die kuratorische Entscheidung überzeugte das Publikum."
+    },
+    {
+      "de": "der Kurator",
+      "en": "curator (male)",
+      "artikel": "der",
+      "example": "Der Kurator wählte die Werke sorgfältig aus."
+    },
+    {
+      "de": "die Kuratorin",
+      "en": "curator (female)",
+      "artikel": "die",
+      "example": "Die Kuratorin plante die gesamte Ausstellung."
+    },
+    {
+      "de": "die künstlerische Vision",
+      "en": "artistic vision",
+      "artikel": "die",
+      "example": "Seine künstlerische Vision ist einzigartig."
+    },
+    {
+      "de": "die zeitlose Ästhetik",
+      "en": "timeless aesthetics",
+      "example": "Das Werk hat eine zeitlose Ästhetik."
     }
   ]
 }

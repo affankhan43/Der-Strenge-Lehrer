@@ -1,32 +1,121 @@
 {
   "day": 102,
-  "topic": "Architektur & Stadtentwicklung",
+  "topic": "Vereine & Gemeinschaft",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Verein",
+      "en": "club / association",
+      "artikel": "der",
+      "example": "Ich bin Mitglied in einem Sportverein."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Mitglied",
+      "en": "member",
+      "artikel": "das",
+      "example": "Wir haben über hundert Mitglieder."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "beitreten",
+      "en": "to join (a club)",
+      "example": "Ich bin dem Verein letztes Jahr beigetreten."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Mitgliedsbeitrag",
+      "en": "membership fee",
+      "artikel": "der",
+      "example": "Der Mitgliedsbeitrag ist jährlich fällig."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Versammlung",
+      "en": "assembly / meeting",
+      "artikel": "die",
+      "example": "Die Versammlung findet einmal im Monat statt."
+    },
+    {
+      "de": "der Vorstand",
+      "en": "board (of a club/organization)",
+      "artikel": "der",
+      "example": "Der Vorstand trifft die Entscheidungen."
+    },
+    {
+      "de": "wählen (Vorstand)",
+      "en": "to elect (a board)",
+      "example": "Wir wählen jedes Jahr einen neuen Vorstand."
+    },
+    {
+      "de": "die Satzung",
+      "en": "bylaws / statutes",
+      "artikel": "die",
+      "example": "Die Satzung regelt die Rechte der Mitglieder."
+    },
+    {
+      "de": "die Gemeinschaft",
+      "en": "community",
+      "artikel": "die",
+      "example": "Die Gemeinschaft hilft sich gegenseitig."
+    },
+    {
+      "de": "das Gemeinschaftsgefühl",
+      "en": "sense of community",
+      "artikel": "das",
+      "example": "Das Gemeinschaftsgefühl ist hier stark."
+    },
+    {
+      "de": "die Nachbarschaftsgruppe",
+      "en": "neighborhood group",
+      "artikel": "die",
+      "example": "Wir haben eine aktive Nachbarschaftsgruppe."
+    },
+    {
+      "de": "das Ehrenamt ausüben",
+      "en": "to do volunteer work",
+      "example": "Sie übt seit Jahren ein Ehrenamt aus."
+    },
+    {
+      "de": "die Freiwilligenarbeit",
+      "en": "volunteer work",
+      "artikel": "die",
+      "example": "Freiwilligenarbeit macht mir viel Freude."
+    },
+    {
+      "de": "die Initiative",
+      "en": "initiative",
+      "artikel": "die",
+      "example": "Diese Initiative hilft Obdachlosen."
+    },
+    {
+      "de": "gründen (Verein)",
+      "en": "to found (a club/organization)",
+      "example": "Sie haben letztes Jahr einen Verein gegründet."
+    },
+    {
+      "de": "die Aktivität (Gruppe)",
+      "en": "activity (group)",
+      "artikel": "die",
+      "example": "Der Verein bietet viele Aktivitäten an."
+    },
+    {
+      "de": "das Treffen",
+      "en": "meeting / gathering",
+      "artikel": "das",
+      "example": "Unser nächstes Treffen ist am Montag."
+    },
+    {
+      "de": "die Teilnahme",
+      "en": "participation",
+      "artikel": "die",
+      "example": "Die Teilnahme ist kostenlos."
+    },
+    {
+      "de": "zusammenhalten",
+      "en": "to stick together",
+      "example": "In schwierigen Zeiten halten wir zusammen."
+    },
+    {
+      "de": "der Zusammenhalt",
+      "en": "cohesion / solidarity",
+      "artikel": "der",
+      "example": "Der Zusammenhalt in unserer Gruppe ist stark."
     }
-  ],
-  "_note": "Add 20 words about 'Architektur & Stadtentwicklung'. Format: {de, en, example}"
+  ]
 }

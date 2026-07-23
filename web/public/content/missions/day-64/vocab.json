@@ -1,32 +1,122 @@
 {
   "day": 64,
-  "topic": "Psychische Gesundheit",
+  "topic": "Wohnformen & Umgebung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Villa",
+      "en": "villa / mansion",
+      "artikel": "die",
+      "example": "Sie wohnen in einer großen Villa."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Reihenhaus",
+      "en": "terraced house",
+      "artikel": "das",
+      "example": "Wir wohnen in einem Reihenhaus."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Bungalow",
+      "en": "bungalow",
+      "artikel": "der",
+      "example": "Der Bungalow hat nur ein Stockwerk."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Hochhaus",
+      "en": "high-rise building",
+      "artikel": "das",
+      "example": "Ich wohne im zehnten Stock eines Hochhauses."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Wohngemeinschaft",
+      "en": "shared flat (WG)",
+      "artikel": "die",
+      "example": "Ich wohne in einer Wohngemeinschaft."
+    },
+    {
+      "de": "der Mitbewohner",
+      "en": "flatmate (male)",
+      "artikel": "der",
+      "example": "Mein Mitbewohner kocht sehr gut."
+    },
+    {
+      "de": "die Mitbewohnerin",
+      "en": "flatmate (female)",
+      "artikel": "die",
+      "example": "Meine Mitbewohnerin ist sehr ordentlich."
+    },
+    {
+      "de": "die Lage",
+      "en": "location",
+      "artikel": "die",
+      "example": "Die Lage der Wohnung ist perfekt."
+    },
+    {
+      "de": "zentral (Lage)",
+      "en": "central (location)",
+      "example": "Die Wohnung liegt sehr zentral."
+    },
+    {
+      "de": "ländlich",
+      "en": "rural",
+      "example": "Meine Großeltern wohnen ländlich."
+    },
+    {
+      "de": "städtisch",
+      "en": "urban",
+      "example": "Ich bevorzuge ein städtisches Leben."
+    },
+    {
+      "de": "die Infrastruktur",
+      "en": "infrastructure",
+      "artikel": "die",
+      "example": "Die Infrastruktur hier ist sehr gut."
+    },
+    {
+      "de": "die Aussicht",
+      "en": "view / outlook",
+      "artikel": "die",
+      "example": "Die Aussicht vom Balkon ist toll."
+    },
+    {
+      "de": "die Vorstadt",
+      "en": "suburb",
+      "artikel": "die",
+      "example": "Wir wohnen in einer ruhigen Vorstadt."
+    },
+    {
+      "de": "das Dorf",
+      "en": "village",
+      "artikel": "das",
+      "example": "Meine Familie kommt aus einem kleinen Dorf."
+    },
+    {
+      "de": "die Nachbarschaftshilfe",
+      "en": "neighborhood assistance",
+      "artikel": "die",
+      "example": "Die Nachbarschaftshilfe funktioniert hier sehr gut."
+    },
+    {
+      "de": "das Eigenheim",
+      "en": "one's own home",
+      "artikel": "das",
+      "example": "Ihr Traum ist ein eigenes Eigenheim."
+    },
+    {
+      "de": "bauen",
+      "en": "to build",
+      "example": "Wir bauen gerade ein neues Haus."
+    },
+    {
+      "de": "der Bauplatz",
+      "en": "building plot",
+      "artikel": "der",
+      "example": "Wir haben einen Bauplatz gekauft."
+    },
+    {
+      "de": "die Architektur",
+      "en": "architecture",
+      "artikel": "die",
+      "example": "Die Architektur dieser Stadt ist beeindruckend."
     }
-  ],
-  "_note": "Add 20 words about 'Psychische Gesundheit'. Format: {de, en, example}"
+  ]
 }

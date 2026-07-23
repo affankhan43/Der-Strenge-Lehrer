@@ -1,32 +1,109 @@
 {
   "day": 86,
-  "topic": "Parteien & Wahlen",
+  "topic": "Passiv: Vorgänge beschreiben",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "wird gemacht",
+      "en": "is being made/done (passive)",
+      "example": "Das Essen wird gerade gemacht."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "wurde gebaut",
+      "en": "was built (passive)",
+      "example": "Das Haus wurde 1990 gebaut."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "wird verkauft",
+      "en": "is being sold",
+      "example": "Das Auto wird verkauft."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "wird repariert",
+      "en": "is being repaired",
+      "example": "Mein Fahrrad wird gerade repariert."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "wird geliefert",
+      "en": "is being delivered",
+      "example": "Das Paket wird morgen geliefert."
+    },
+    {
+      "de": "hergestellt werden",
+      "en": "to be manufactured",
+      "example": "Diese Schuhe werden in Italien hergestellt."
+    },
+    {
+      "de": "der Vorgang",
+      "en": "process / procedure",
+      "artikel": "der",
+      "example": "Der Vorgang dauert nur wenige Minuten."
+    },
+    {
+      "de": "durchgeführt werden",
+      "en": "to be carried out",
+      "example": "Die Untersuchung wird morgen durchgeführt."
+    },
+    {
+      "de": "erledigt werden",
+      "en": "to be completed / taken care of",
+      "example": "Die Arbeit wird bis Freitag erledigt."
+    },
+    {
+      "de": "verursacht werden",
+      "en": "to be caused",
+      "example": "Der Schaden wurde durch den Sturm verursacht."
+    },
+    {
+      "de": "entwickelt werden",
+      "en": "to be developed",
+      "example": "Der Impfstoff wurde schnell entwickelt."
+    },
+    {
+      "de": "kontrolliert werden",
+      "en": "to be checked / controlled",
+      "example": "Die Pässe werden am Flughafen kontrolliert."
+    },
+    {
+      "de": "bearbeitet werden",
+      "en": "to be processed",
+      "example": "Ihr Antrag wird bearbeitet."
+    },
+    {
+      "de": "der Antrag",
+      "en": "application / request",
+      "artikel": "der",
+      "example": "Ich habe einen Antrag gestellt."
+    },
+    {
+      "de": "genehmigt werden",
+      "en": "to be approved",
+      "example": "Der Antrag wurde genehmigt."
+    },
+    {
+      "de": "abgelehnt werden",
+      "en": "to be rejected",
+      "example": "Der Antrag wurde leider abgelehnt."
+    },
+    {
+      "de": "veranlasst werden",
+      "en": "to be initiated / arranged",
+      "example": "Die Reparatur wurde sofort veranlasst."
+    },
+    {
+      "de": "automatisch",
+      "en": "automatically",
+      "example": "Die Rechnung wird automatisch bezahlt."
+    },
+    {
+      "de": "manuell",
+      "en": "manually",
+      "example": "Diese Daten werden manuell eingegeben."
+    },
+    {
+      "de": "der Prozess",
+      "en": "process",
+      "artikel": "der",
+      "example": "Der Prozess dauert mehrere Wochen."
     }
-  ],
-  "_note": "Add 20 words about 'Parteien & Wahlen'. Format: {de, en, example}"
+  ]
 }

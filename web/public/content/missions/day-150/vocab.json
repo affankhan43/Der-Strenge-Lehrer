@@ -1,0 +1,121 @@
+{
+  "day": 150,
+  "topic": "Medizinische Fortschritte",
+  "words": [
+    {
+      "de": "der medizinische Fortschritt",
+      "en": "medical progress",
+      "artikel": "der",
+      "example": "Der medizinische Fortschritt rettet viele Leben."
+    },
+    {
+      "de": "der Impfstoff entwickeln",
+      "en": "to develop a vaccine",
+      "example": "Forscher entwickelten den Impfstoff in Rekordzeit."
+    },
+    {
+      "de": "die Gentherapie",
+      "en": "gene therapy",
+      "artikel": "die",
+      "example": "Gentherapie behandelt seltene Krankheiten."
+    },
+    {
+      "de": "die Organtransplantation",
+      "en": "organ transplant",
+      "artikel": "die",
+      "example": "Die Organtransplantation verlief erfolgreich."
+    },
+    {
+      "de": "der Organspender",
+      "en": "organ donor",
+      "artikel": "der",
+      "example": "Er wurde nach seinem Tod Organspender."
+    },
+    {
+      "de": "die Präzisionsmedizin",
+      "en": "precision medicine",
+      "artikel": "die",
+      "example": "Präzisionsmedizin behandelt individuell."
+    },
+    {
+      "de": "die Diagnosemethode",
+      "en": "diagnostic method",
+      "artikel": "die",
+      "example": "Neue Diagnosemethoden erkennen Krankheiten früher."
+    },
+    {
+      "de": "die Krebsforschung",
+      "en": "cancer research",
+      "artikel": "die",
+      "example": "Die Krebsforschung macht große Fortschritte."
+    },
+    {
+      "de": "die Heilungschance",
+      "en": "chance of recovery",
+      "artikel": "die",
+      "example": "Die Heilungschancen sind heute viel besser."
+    },
+    {
+      "de": "die Lebenserwartung steigt",
+      "en": "life expectancy is rising",
+      "example": "Die Lebenserwartung steigt weltweit."
+    },
+    {
+      "de": "die Telemedizin",
+      "en": "telemedicine",
+      "artikel": "die",
+      "example": "Telemedizin ermöglicht ärztliche Beratung online."
+    },
+    {
+      "de": "die Robotik in der Medizin",
+      "en": "robotics in medicine",
+      "artikel": "die",
+      "example": "Robotik in der Medizin unterstützt Operationen."
+    },
+    {
+      "de": "der minimalinvasive Eingriff",
+      "en": "minimally invasive procedure",
+      "artikel": "der",
+      "example": "Der minimalinvasive Eingriff verkürzt die Genesung."
+    },
+    {
+      "de": "die personalisierte Behandlung",
+      "en": "personalized treatment",
+      "artikel": "die",
+      "example": "Personalisierte Behandlung berücksichtigt genetische Faktoren."
+    },
+    {
+      "de": "der medizinische Durchbruch",
+      "en": "medical breakthrough",
+      "artikel": "der",
+      "example": "Das war ein wichtiger medizinischer Durchbruch."
+    },
+    {
+      "de": "die klinische Studie",
+      "en": "clinical trial",
+      "artikel": "die",
+      "example": "Die klinische Studie zeigte positive Ergebnisse."
+    },
+    {
+      "de": "das Medikament entwickeln",
+      "en": "to develop a medication",
+      "example": "Die Firma entwickelt ein neues Medikament."
+    },
+    {
+      "de": "die Nebenwirkung minimieren",
+      "en": "to minimize side effects",
+      "example": "Forscher versuchen, Nebenwirkungen zu minimieren."
+    },
+    {
+      "de": "die Lebensqualität verbessern",
+      "en": "to improve quality of life",
+      "example": "Die Behandlung verbessert die Lebensqualität."
+    },
+    {
+      "de": "die medizinische Ethik",
+      "en": "medical ethics",
+      "artikel": "die",
+      "example": "Medizinische Ethik begleitet neue Technologien."
+    }
+  ]
+}

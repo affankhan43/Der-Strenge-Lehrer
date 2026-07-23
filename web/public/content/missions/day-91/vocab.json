@@ -1,32 +1,123 @@
 {
   "day": 91,
-  "topic": "Musik & Komponisten",
+  "topic": "Steuern & Finanzen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Steuererklärung",
+      "en": "tax return",
+      "artikel": "die",
+      "example": "Ich mache jedes Jahr meine Steuererklärung."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Finanzamt",
+      "en": "tax office",
+      "artikel": "das",
+      "example": "Das Finanzamt hat mir eine Nachricht geschickt."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Einkommensteuer",
+      "en": "income tax",
+      "artikel": "die",
+      "example": "Die Einkommensteuer wird monatlich abgezogen."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Steuernummer",
+      "en": "tax number",
+      "artikel": "die",
+      "example": "Trag deine Steuernummer hier ein."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Rückerstattung (Steuer)",
+      "en": "tax refund",
+      "artikel": "die",
+      "example": "Ich bekomme dieses Jahr eine Rückerstattung."
+    },
+    {
+      "de": "absetzen (Steuer)",
+      "en": "to deduct (from taxes)",
+      "example": "Ich setze meine Arbeitskosten von der Steuer ab."
+    },
+    {
+      "de": "die Abgabe",
+      "en": "levy / tax payment",
+      "artikel": "die",
+      "example": "Die Abgaben sind dieses Jahr gestiegen."
+    },
+    {
+      "de": "das Finanzamt kontaktieren",
+      "en": "to contact the tax office",
+      "example": "Ich muss das Finanzamt kontaktieren."
+    },
+    {
+      "de": "das Bruttogehalt",
+      "en": "gross salary",
+      "artikel": "das",
+      "example": "Mein Bruttogehalt ist höher als das Nettogehalt."
+    },
+    {
+      "de": "das Nettogehalt",
+      "en": "net salary",
+      "artikel": "das",
+      "example": "Das Nettogehalt kommt aufs Konto."
+    },
+    {
+      "de": "die Rente",
+      "en": "pension",
+      "artikel": "die",
+      "example": "Meine Großeltern bekommen jeden Monat Rente."
+    },
+    {
+      "de": "die Altersvorsorge",
+      "en": "retirement provision",
+      "artikel": "die",
+      "example": "Altersvorsorge ist wichtig für die Zukunft."
+    },
+    {
+      "de": "das Budget",
+      "en": "budget",
+      "artikel": "das",
+      "example": "Wir planen unser monatliches Budget."
+    },
+    {
+      "de": "budgetieren",
+      "en": "to budget",
+      "example": "Wir budgetieren jeden Monat unsere Ausgaben."
+    },
+    {
+      "de": "die Ausgabe (Finanzen)",
+      "en": "expense",
+      "artikel": "die",
+      "example": "Meine größte Ausgabe ist die Miete."
+    },
+    {
+      "de": "die Einnahme",
+      "en": "income / revenue",
+      "artikel": "die",
+      "example": "Die Einnahmen sind diesen Monat gestiegen."
+    },
+    {
+      "de": "die Rücklage",
+      "en": "reserve / savings buffer",
+      "artikel": "die",
+      "example": "Wir haben eine kleine Rücklage."
+    },
+    {
+      "de": "das Vermögen",
+      "en": "wealth / assets",
+      "artikel": "das",
+      "example": "Sein Vermögen ist beträchtlich."
+    },
+    {
+      "de": "die Buchhaltung",
+      "en": "bookkeeping / accounting",
+      "artikel": "die",
+      "example": "Sie arbeitet in der Buchhaltung."
+    },
+    {
+      "de": "der Steuerberater",
+      "en": "tax advisor",
+      "artikel": "der",
+      "example": "Mein Steuerberater hilft mir jedes Jahr."
     }
-  ],
-  "_note": "Add 20 words about 'Musik & Komponisten'. Format: {de, en, example}"
+  ]
 }

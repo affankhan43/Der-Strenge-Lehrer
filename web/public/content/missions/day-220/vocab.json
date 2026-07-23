@@ -1,51 +1,122 @@
 {
   "day": 220,
-  "level": "B2.2",
-  "topic": "Fachsprache",
+  "topic": "Rentensystem & Altersvorsorge",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Rentensystem",
+      "en": "pension system",
+      "artikel": "das",
+      "example": "Das Rentensystem steht vor großen Herausforderungen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die gesetzliche Rente",
+      "en": "statutory pension",
+      "artikel": "die",
+      "example": "Die gesetzliche Rente reicht oft nicht aus."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die private Altersvorsorge",
+      "en": "private retirement provision",
+      "artikel": "die",
+      "example": "Private Altersvorsorge ergänzt die gesetzliche Rente."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die betriebliche Altersvorsorge",
+      "en": "occupational pension scheme",
+      "artikel": "die",
+      "example": "Viele Firmen bieten betriebliche Altersvorsorge an."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Riester-Rente",
+      "en": "Riester pension",
+      "example": "Die Riester-Rente wird staatlich gefördert."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Rürup-Rente",
+      "en": "Rürup pension",
+      "example": "Die Rürup-Rente eignet sich für Selbstständige."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das Renteneintrittsalter",
+      "en": "retirement age",
+      "artikel": "das",
+      "example": "Das Renteneintrittsalter wurde schrittweise erhöht."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Rentenreform",
+      "en": "pension reform",
+      "artikel": "die",
+      "example": "Die Rentenreform wurde kontrovers diskutiert."
+    },
+    {
+      "de": "die Rentenkasse",
+      "en": "pension fund",
+      "artikel": "die",
+      "example": "Die Rentenkasse zahlt monatlich an Rentner aus."
+    },
+    {
+      "de": "die Altersarmut",
+      "en": "old-age poverty",
+      "artikel": "die",
+      "example": "Altersarmut betrifft immer mehr Menschen."
+    },
+    {
+      "de": "die Rentenanpassung",
+      "en": "pension adjustment",
+      "artikel": "die",
+      "example": "Die Rentenanpassung erfolgt jährlich."
+    },
+    {
+      "de": "die Rentenbeiträge",
+      "en": "pension contributions",
+      "artikel": "die",
+      "example": "Die Rentenbeiträge werden vom Gehalt abgezogen."
+    },
+    {
+      "de": "die Vorsorgelücke",
+      "en": "provision gap",
+      "artikel": "die",
+      "example": "Viele haben eine erhebliche Vorsorgelücke."
+    },
+    {
+      "de": "die kapitalgedeckte Rente",
+      "en": "capital-funded pension",
+      "artikel": "die",
+      "example": "Die kapitalgedeckte Rente basiert auf Kapitalmärkten."
+    },
+    {
+      "de": "die Rentenversicherungspflicht",
+      "en": "compulsory pension insurance",
+      "artikel": "die",
+      "example": "Die Rentenversicherungspflicht gilt für Arbeitnehmer."
+    },
+    {
+      "de": "das Rentenalter flexibilisieren",
+      "en": "to make retirement age flexible",
+      "example": "Manche fordern, das Rentenalter zu flexibilisieren."
+    },
+    {
+      "de": "die Rentenhöhe berechnen",
+      "en": "to calculate pension amount",
+      "example": "Die Rentenhöhe wird nach festen Regeln berechnet."
+    },
+    {
+      "de": "die Grundrente",
+      "en": "basic pension",
+      "artikel": "die",
+      "example": "Die Grundrente unterstützt Geringverdiener im Alter."
+    },
+    {
+      "de": "die zusätzliche Vorsorge",
+      "en": "additional provision",
+      "artikel": "die",
+      "example": "Zusätzliche Vorsorge wird immer wichtiger."
+    },
+    {
+      "de": "die Altersvorsorgeplanung",
+      "en": "retirement planning",
+      "artikel": "die",
+      "example": "Altersvorsorgeplanung sollte früh beginnen."
     }
   ]
 }

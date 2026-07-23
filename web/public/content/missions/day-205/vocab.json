@@ -1,51 +1,124 @@
 {
   "day": 205,
-  "level": "B2.2",
-  "topic": "Finalangaben",
+  "topic": "Bildungsökonomie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Bildungsökonomie",
+      "en": "education economics",
+      "artikel": "die",
+      "example": "Bildungsökonomie untersucht den Nutzen von Bildung."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Bildungsinvestition",
+      "en": "investment in education",
+      "artikel": "die",
+      "example": "Bildungsinvestitionen zahlen sich langfristig aus."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Bildungsertrag",
+      "en": "return on education",
+      "artikel": "der",
+      "example": "Der Bildungsertrag zeigt sich im späteren Gehalt."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Bildungsfinanzierung",
+      "en": "education financing",
+      "artikel": "die",
+      "example": "Die Bildungsfinanzierung liegt bei den Bundesländern."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das Bildungsbudget",
+      "en": "education budget",
+      "artikel": "das",
+      "example": "Das Bildungsbudget wurde erhöht."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Bildungsausgaben",
+      "en": "education spending",
+      "artikel": "die",
+      "example": "Die Bildungsausgaben pro Schüler variieren stark."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "der Humankapitalansatz",
+      "en": "human capital approach",
+      "artikel": "der",
+      "example": "Der Humankapitalansatz betrachtet Bildung als Investition."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Bildungsrendite",
+      "en": "return on education investment",
+      "artikel": "die",
+      "example": "Die Bildungsrendite ist bei Hochschulabsolventen hoch."
+    },
+    {
+      "de": "die Kosten-Nutzen-Abwägung (Bildung)",
+      "en": "cost-benefit consideration (education)",
+      "artikel": "die",
+      "example": "Kosten-Nutzen-Abwägung spielt bei Bildungsentscheidungen eine Rolle."
+    },
+    {
+      "de": "die private Bildungsfinanzierung",
+      "en": "private education financing",
+      "artikel": "die",
+      "example": "Private Bildungsfinanzierung wird in manchen Ländern genutzt."
+    },
+    {
+      "de": "das öffentliche Bildungswesen",
+      "en": "public education system",
+      "artikel": "das",
+      "example": "Das öffentliche Bildungswesen ist kostenlos."
+    },
+    {
+      "de": "die Bildungsungerechtigkeit",
+      "en": "educational inequality",
+      "artikel": "die",
+      "example": "Bildungsungerechtigkeit hängt oft vom Elternhaus ab."
+    },
+    {
+      "de": "der Bildungserfolg",
+      "en": "educational success",
+      "artikel": "der",
+      "example": "Bildungserfolg hängt von vielen Faktoren ab."
+    },
+    {
+      "de": "die Studienfinanzierung",
+      "en": "study financing",
+      "artikel": "die",
+      "example": "Studienfinanzierung erfolgt oft über BAföG."
+    },
+    {
+      "de": "das Stipendiensystem",
+      "en": "scholarship system",
+      "artikel": "das",
+      "example": "Das Stipendiensystem fördert begabte Studierende."
+    },
+    {
+      "de": "die Bildungsexpansion",
+      "en": "educational expansion",
+      "artikel": "die",
+      "example": "Die Bildungsexpansion erhöhte die Zahl der Studierenden."
+    },
+    {
+      "de": "die Akademisierung",
+      "en": "academization",
+      "artikel": "die",
+      "example": "Die Akademisierung der Gesellschaft nimmt zu."
+    },
+    {
+      "de": "der Fachkräfteertrag",
+      "en": "return in skilled labor",
+      "artikel": "der",
+      "example": "Der Fachkräfteertrag rechtfertigt Bildungsinvestitionen."
+    },
+    {
+      "de": "die Bildungspolitik gestalten",
+      "en": "to shape education policy",
+      "example": "Die Regierung gestaltet die Bildungspolitik neu."
+    },
+    {
+      "de": "die volkswirtschaftliche Bedeutung von Bildung",
+      "en": "the macroeconomic importance of education",
+      "example": "Die volkswirtschaftliche Bedeutung von Bildung ist unbestritten."
     }
   ]
 }

@@ -1,32 +1,116 @@
 {
   "day": 101,
-  "topic": "Mode & Design",
+  "topic": "Umgang mit Behörden",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Behörde",
+      "en": "authority / government office",
+      "artikel": "die",
+      "example": "Ich muss zur Behörde gehen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Bürgeramt",
+      "en": "citizens' registration office",
+      "artikel": "das",
+      "example": "Ich melde meine neue Adresse im Bürgeramt an."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "sich anmelden (Wohnsitz)",
+      "en": "to register (residence)",
+      "example": "Ich muss mich innerhalb von zwei Wochen anmelden."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "sich abmelden",
+      "en": "to deregister",
+      "example": "Ich melde mich vor dem Umzug ab."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Ausweis",
+      "en": "ID card",
+      "artikel": "der",
+      "example": "Zeigen Sie bitte Ihren Ausweis."
+    },
+    {
+      "de": "die Aufenthaltserlaubnis",
+      "en": "residence permit",
+      "artikel": "die",
+      "example": "Ich habe eine Aufenthaltserlaubnis für zwei Jahre."
+    },
+    {
+      "de": "die Arbeitserlaubnis",
+      "en": "work permit",
+      "artikel": "die",
+      "example": "Ich brauche eine Arbeitserlaubnis."
+    },
+    {
+      "de": "der Antrag stellen",
+      "en": "to submit an application",
+      "example": "Ich stelle morgen einen Antrag."
+    },
+    {
+      "de": "das Formular ausfüllen",
+      "en": "to fill out a form",
+      "example": "Füllen Sie bitte alle Felder aus."
+    },
+    {
+      "de": "die Wartenummer",
+      "en": "queue number",
+      "example": "Ziehen Sie eine Wartenummer."
+    },
+    {
+      "de": "der Sachbearbeiter",
+      "en": "case worker (male)",
+      "artikel": "der",
+      "example": "Der Sachbearbeiter prüft meine Unterlagen."
+    },
+    {
+      "de": "die Sachbearbeiterin",
+      "en": "case worker (female)",
+      "artikel": "die",
+      "example": "Die Sachbearbeiterin war sehr hilfsbereit."
+    },
+    {
+      "de": "die Unterlagen einreichen",
+      "en": "to submit documents",
+      "example": "Reichen Sie bitte alle Unterlagen ein."
+    },
+    {
+      "de": "die Bescheinigung",
+      "en": "certificate / confirmation",
+      "artikel": "die",
+      "example": "Ich brauche eine Bescheinigung von der Uni."
+    },
+    {
+      "de": "beglaubigen",
+      "en": "to certify / authenticate",
+      "example": "Die Kopie muss beglaubigt werden."
+    },
+    {
+      "de": "die Frist einhalten (Behörde)",
+      "en": "to meet a deadline (authority)",
+      "example": "Bitte halten Sie die Frist ein."
+    },
+    {
+      "de": "der Öffnungszeiten-Plan",
+      "en": "opening hours schedule",
+      "artikel": "der",
+      "example": "Der Öffnungszeiten-Plan hängt an der Tür."
+    },
+    {
+      "de": "der Termin online buchen",
+      "en": "to book an appointment online",
+      "example": "Ich buche meinen Termin online."
+    },
+    {
+      "de": "zuständig sein",
+      "en": "to be responsible / in charge",
+      "example": "Wer ist für diesen Antrag zuständig?"
+    },
+    {
+      "de": "die Zuständigkeit",
+      "en": "jurisdiction / responsibility",
+      "artikel": "die",
+      "example": "Das fällt nicht in meine Zuständigkeit."
     }
-  ],
-  "_note": "Add 20 words about 'Mode & Design'. Format: {de, en, example}"
+  ]
 }

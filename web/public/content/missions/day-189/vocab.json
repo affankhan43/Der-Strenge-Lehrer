@@ -1,51 +1,123 @@
 {
   "day": 189,
-  "level": "B2.1",
-  "topic": "Textstruktur",
+  "topic": "Meinungsforschung & Umfragen",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Meinungsforschung",
+      "en": "public opinion research",
+      "artikel": "die",
+      "example": "Meinungsforschung misst gesellschaftliche Trends."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Umfrage durchführen",
+      "en": "to conduct a survey",
+      "example": "Wir führen eine Umfrage zu diesem Thema durch."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Fragebogen",
+      "en": "questionnaire",
+      "artikel": "der",
+      "example": "Der Fragebogen enthält zwanzig Fragen."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die repräsentative Stichprobe",
+      "en": "representative sample",
+      "artikel": "die",
+      "example": "Die repräsentative Stichprobe spiegelt die Bevölkerung wider."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Meinungsumfrage",
+      "en": "opinion poll",
+      "artikel": "die",
+      "example": "Die Meinungsumfrage zeigte ein knappes Ergebnis."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das Meinungsbild",
+      "en": "public opinion picture",
+      "artikel": "das",
+      "example": "Das Meinungsbild hat sich stark verändert."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Zustimmungsrate",
+      "en": "approval rating",
+      "artikel": "die",
+      "example": "Die Zustimmungsrate ist stark gesunken."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Verzerrung (Umfrage)",
+      "en": "bias (survey)",
+      "artikel": "die",
+      "example": "Die Fragestellung kann zu Verzerrung führen."
+    },
+    {
+      "de": "die Nichtwählerquote",
+      "en": "non-voter rate",
+      "artikel": "die",
+      "example": "Die Nichtwählerquote ist bei jungen Menschen hoch."
+    },
+    {
+      "de": "die Umfrageergebnisse auswerten",
+      "en": "to evaluate survey results",
+      "example": "Wir werten die Umfrageergebnisse morgen aus."
+    },
+    {
+      "de": "die anonyme Befragung",
+      "en": "anonymous survey",
+      "artikel": "die",
+      "example": "Die anonyme Befragung ermöglicht ehrlichere Antworten."
+    },
+    {
+      "de": "die Rücklaufquote",
+      "en": "response rate",
+      "artikel": "die",
+      "example": "Die Rücklaufquote war leider gering."
+    },
+    {
+      "de": "die Panelbefragung",
+      "en": "panel survey",
+      "artikel": "die",
+      "example": "Die Panelbefragung wiederholt sich jährlich."
+    },
+    {
+      "de": "die Trendumfrage",
+      "en": "trend survey",
+      "artikel": "die",
+      "example": "Die Trendumfrage zeigt eine klare Entwicklung."
+    },
+    {
+      "de": "die repräsentative Erhebung",
+      "en": "representative survey/study",
+      "artikel": "die",
+      "example": "Die repräsentative Erhebung dauerte einen Monat."
+    },
+    {
+      "de": "die öffentliche Meinung",
+      "en": "public opinion",
+      "artikel": "die",
+      "example": "Die öffentliche Meinung hat sich gewandelt."
+    },
+    {
+      "de": "die Wahlprognose",
+      "en": "election forecast",
+      "artikel": "die",
+      "example": "Die Wahlprognose lag knapp daneben."
+    },
+    {
+      "de": "das Meinungsforschungsinstitut",
+      "en": "polling institute",
+      "artikel": "das",
+      "example": "Das Meinungsforschungsinstitut veröffentlichte die Zahlen."
+    },
+    {
+      "de": "die statistische Fehlerspanne",
+      "en": "margin of error",
+      "artikel": "die",
+      "example": "Die statistische Fehlerspanne beträgt drei Prozent."
+    },
+    {
+      "de": "die Umfrageergebnisse interpretieren",
+      "en": "to interpret survey results",
+      "example": "Wir müssen die Umfrageergebnisse vorsichtig interpretieren."
     }
   ]
 }

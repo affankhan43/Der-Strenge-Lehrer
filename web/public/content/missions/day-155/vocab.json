@@ -1,0 +1,126 @@
+{
+  "day": 155,
+  "topic": "Musikgeschichte & Genres",
+  "words": [
+    {
+      "de": "die Musikrichtung",
+      "en": "music genre / direction",
+      "artikel": "die",
+      "example": "Jazz ist meine bevorzugte Musikrichtung."
+    },
+    {
+      "de": "die Klassik (Musik)",
+      "en": "classical music",
+      "artikel": "die",
+      "example": "Klassik entspannt mich sehr."
+    },
+    {
+      "de": "der Barock",
+      "en": "baroque (era)",
+      "artikel": "der",
+      "example": "Der Barock brachte komplexe Kompositionen hervor."
+    },
+    {
+      "de": "der Jazz",
+      "en": "jazz",
+      "artikel": "der",
+      "example": "Jazz entstand Anfang des 20. Jahrhunderts."
+    },
+    {
+      "de": "der Rock (Musik)",
+      "en": "rock (music)",
+      "artikel": "der",
+      "example": "Rock wurde in den 1950ern populär."
+    },
+    {
+      "de": "der Hip-Hop",
+      "en": "hip-hop",
+      "artikel": "der",
+      "example": "Hip-Hop hat weltweiten Einfluss."
+    },
+    {
+      "de": "die elektronische Musik",
+      "en": "electronic music",
+      "artikel": "die",
+      "example": "Elektronische Musik entwickelte sich in den 1980ern."
+    },
+    {
+      "de": "die Volksmusik",
+      "en": "folk music",
+      "artikel": "die",
+      "example": "Volksmusik ist Teil unserer Tradition."
+    },
+    {
+      "de": "die Musikepoche",
+      "en": "musical era",
+      "artikel": "die",
+      "example": "Jede Musikepoche hat einen eigenen Klang."
+    },
+    {
+      "de": "der Komponist (Musik)",
+      "en": "composer",
+      "artikel": "der",
+      "example": "Der Komponist schrieb viele Symphonien."
+    },
+    {
+      "de": "die Symphonie",
+      "en": "symphony",
+      "artikel": "die",
+      "example": "Die Symphonie wurde vom Orchester aufgeführt."
+    },
+    {
+      "de": "das Musikstück",
+      "en": "piece of music",
+      "artikel": "das",
+      "example": "Dieses Musikstück ist sehr bekannt."
+    },
+    {
+      "de": "die Tonart",
+      "en": "musical key",
+      "artikel": "die",
+      "example": "Das Stück steht in einer Molltonart."
+    },
+    {
+      "de": "der Rhythmuswechsel",
+      "en": "rhythm change",
+      "artikel": "der",
+      "example": "Der Rhythmuswechsel überraschte das Publikum."
+    },
+    {
+      "de": "die musikalische Innovation",
+      "en": "musical innovation",
+      "artikel": "die",
+      "example": "Diese musikalische Innovation prägte die Epoche."
+    },
+    {
+      "de": "die Popkultur",
+      "en": "pop culture",
+      "artikel": "die",
+      "example": "Popkultur beeinflusst Mode und Sprache."
+    },
+    {
+      "de": "das Musiklabel",
+      "en": "music label",
+      "artikel": "das",
+      "example": "Das Musiklabel unterstützt junge Künstler."
+    },
+    {
+      "de": "die Musikindustrie",
+      "en": "music industry",
+      "artikel": "die",
+      "example": "Die Musikindustrie veränderte sich durch Streaming."
+    },
+    {
+      "de": "das Streaming (Musik)",
+      "en": "streaming (music)",
+      "artikel": "das",
+      "example": "Streaming hat den Musikkonsum verändert."
+    },
+    {
+      "de": "der Musiktrend",
+      "en": "music trend",
+      "artikel": "der",
+      "example": "Dieser Musiktrend hält schon lange an."
+    }
+  ]
+}

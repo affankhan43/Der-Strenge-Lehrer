@@ -1,51 +1,118 @@
 {
   "day": 169,
-  "level": "B2.1",
-  "topic": "Subjunktiv II",
+  "topic": "Wissenschaftliches Schreiben & Argumentation",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die wissenschaftliche Arbeit",
+      "en": "academic paper",
+      "artikel": "die",
+      "example": "Ich schreibe gerade meine wissenschaftliche Arbeit."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die These aufstellen",
+      "en": "to formulate a thesis",
+      "example": "Sie stellt eine klare These auf."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Argumentationskette",
+      "en": "chain of argument",
+      "artikel": "die",
+      "example": "Die Argumentationskette war logisch aufgebaut."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Belegstelle",
+      "en": "reference / citation point",
+      "artikel": "die",
+      "example": "Jede Belegstelle muss korrekt zitiert werden."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das Zitat einfügen",
+      "en": "to insert a quote",
+      "example": "Füge das Zitat mit Quellenangabe ein."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Fußnote",
+      "en": "footnote",
+      "artikel": "die",
+      "example": "Die Quelle steht in der Fußnote."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das Literaturverzeichnis",
+      "en": "bibliography",
+      "artikel": "das",
+      "example": "Das Literaturverzeichnis listet alle Quellen auf."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Forschungsfrage",
+      "en": "research question",
+      "artikel": "die",
+      "example": "Die Forschungsfrage lenkt die ganze Arbeit."
+    },
+    {
+      "de": "die Methodik",
+      "en": "methodology",
+      "artikel": "die",
+      "example": "Die Methodik wird im zweiten Kapitel erklärt."
+    },
+    {
+      "de": "die Fragestellung eingrenzen",
+      "en": "to narrow down the research question",
+      "example": "Ich muss meine Fragestellung noch eingrenzen."
+    },
+    {
+      "de": "empirisch belegen",
+      "en": "to prove empirically",
+      "example": "Diese Aussage lässt sich empirisch belegen."
+    },
+    {
+      "de": "die Plausibilität",
+      "en": "plausibility",
+      "artikel": "die",
+      "example": "Die Plausibilität der These ist hoch."
+    },
+    {
+      "de": "die Gegenthese",
+      "en": "counter-thesis",
+      "artikel": "die",
+      "example": "Die Gegenthese widerspricht den Ergebnissen."
+    },
+    {
+      "de": "die Schlussfolgerung ziehen",
+      "en": "to draw a conclusion",
+      "example": "Am Ende ziehe ich meine Schlussfolgerung."
+    },
+    {
+      "de": "kohärent argumentieren",
+      "en": "to argue coherently",
+      "example": "Er argumentiert sehr kohärent."
+    },
+    {
+      "de": "die logische Lücke",
+      "en": "logical gap",
+      "artikel": "die",
+      "example": "Es gibt eine logische Lücke in der Argumentation."
+    },
+    {
+      "de": "stichhaltig",
+      "en": "sound / valid (argument)",
+      "example": "Ihr Argument ist sehr stichhaltig."
+    },
+    {
+      "de": "die wissenschaftliche Redlichkeit",
+      "en": "academic integrity",
+      "artikel": "die",
+      "example": "Wissenschaftliche Redlichkeit ist unverzichtbar."
+    },
+    {
+      "de": "das Plagiat vermeiden",
+      "en": "to avoid plagiarism",
+      "example": "Man muss Plagiate unbedingt vermeiden."
+    },
+    {
+      "de": "die Peer-Review",
+      "en": "peer review",
+      "artikel": "die",
+      "example": "Der Artikel durchläuft eine Peer-Review."
     }
   ]
 }

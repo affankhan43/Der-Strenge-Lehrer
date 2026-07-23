@@ -1,32 +1,120 @@
 {
   "day": 104,
-  "topic": "Globalisierung & Kultur",
+  "topic": "Wetterphänomene & Vorhersage",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Klimawandel spüren",
+      "en": "to feel the effects of climate change",
+      "example": "Wir spüren den Klimawandel jedes Jahr mehr."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Wetterlage",
+      "en": "weather situation",
+      "artikel": "die",
+      "example": "Die Wetterlage bleibt instabil."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Hochdruck",
+      "en": "high pressure",
+      "artikel": "der",
+      "example": "Ein Hochdruckgebiet bringt sonniges Wetter."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Tiefdruck",
+      "en": "low pressure",
+      "artikel": "der",
+      "example": "Das Tiefdruckgebiet bringt Regen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Luftfeuchtigkeit",
+      "en": "humidity",
+      "artikel": "die",
+      "example": "Die Luftfeuchtigkeit ist heute sehr hoch."
+    },
+    {
+      "de": "der Niederschlag",
+      "en": "precipitation",
+      "artikel": "der",
+      "example": "Der Niederschlag war diesen Monat gering."
+    },
+    {
+      "de": "der Hagel",
+      "en": "hail",
+      "artikel": "der",
+      "example": "Der Hagel hat die Autos beschädigt."
+    },
+    {
+      "de": "der Sturmwarnung",
+      "en": "storm warning",
+      "example": "Es gibt eine Sturmwarnung für morgen."
+    },
+    {
+      "de": "die Wettervorhersage",
+      "en": "weather forecast",
+      "artikel": "die",
+      "example": "Die Wettervorhersage sagt Sonne für morgen."
+    },
+    {
+      "de": "der Meteorologe",
+      "en": "meteorologist (male)",
+      "artikel": "der",
+      "example": "Der Meteorologe erklärt das Wetterphänomen."
+    },
+    {
+      "de": "die Meteorologin",
+      "en": "meteorologist (female)",
+      "artikel": "die",
+      "example": "Die Meteorologin arbeitet beim Wetterdienst."
+    },
+    {
+      "de": "wolkenlos",
+      "en": "cloudless",
+      "example": "Der Himmel ist heute wolkenlos."
+    },
+    {
+      "de": "durchwachsen (Wetter)",
+      "en": "mixed (weather)",
+      "example": "Das Wetter bleibt diese Woche durchwachsen."
+    },
+    {
+      "de": "die Kaltfront",
+      "en": "cold front",
+      "artikel": "die",
+      "example": "Eine Kaltfront zieht heute Nacht durch."
+    },
+    {
+      "de": "die Warmfront",
+      "en": "warm front",
+      "artikel": "die",
+      "example": "Die Warmfront bringt mildere Temperaturen."
+    },
+    {
+      "de": "schwül",
+      "en": "humid / muggy",
+      "example": "Es ist heute sehr schwül."
+    },
+    {
+      "de": "der Wetterbericht",
+      "en": "weather report",
+      "artikel": "der",
+      "example": "Ich schaue jeden Abend den Wetterbericht."
+    },
+    {
+      "de": "die Wärmewelle",
+      "en": "heat wave",
+      "artikel": "die",
+      "example": "Die Wärmewelle hält noch eine Woche an."
+    },
+    {
+      "de": "die Kältewelle",
+      "en": "cold snap",
+      "artikel": "die",
+      "example": "Die Kältewelle kommt aus dem Norden."
+    },
+    {
+      "de": "umschlagen (Wetter)",
+      "en": "to change suddenly (weather)",
+      "example": "Das Wetter kann schnell umschlagen."
     }
-  ],
-  "_note": "Add 20 words about 'Globalisierung & Kultur'. Format: {de, en, example}"
+  ]
 }

@@ -1,51 +1,119 @@
 {
   "day": 191,
-  "level": "B2.1",
-  "topic": "Beschwerdebrief",
+  "topic": "Literaturkritik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Literaturkritik",
+      "en": "literary criticism",
+      "artikel": "die",
+      "example": "Literaturkritik bewertet die Qualität eines Werkes."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Rezension",
+      "en": "review (book)",
+      "artikel": "die",
+      "example": "Die Rezension war sehr differenziert."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "literarisch bewerten",
+      "en": "to evaluate literarily",
+      "example": "Der Kritiker bewertet das Buch literarisch."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die erzählerische Qualität",
+      "en": "narrative quality",
+      "artikel": "die",
+      "example": "Die erzählerische Qualität des Romans ist beeindruckend."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Sprachgewalt",
+      "en": "linguistic power / force",
+      "artikel": "die",
+      "example": "Die Sprachgewalt des Autors ist außergewöhnlich."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Figurenzeichnung",
+      "en": "characterization",
+      "artikel": "die",
+      "example": "Die Figurenzeichnung ist sehr differenziert."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die erzählerische Perspektive wechseln",
+      "en": "to change narrative perspective",
+      "example": "Die Autorin wechselt die erzählerische Perspektive geschickt."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "der rote Faden",
+      "en": "the common thread / consistent theme",
+      "artikel": "der",
+      "example": "Der rote Faden des Romans ist gut erkennbar."
+    },
+    {
+      "de": "die Spannungskurve",
+      "en": "tension arc / narrative arc",
+      "artikel": "die",
+      "example": "Die Spannungskurve steigt kontinuierlich an."
+    },
+    {
+      "de": "das literarische Urteil",
+      "en": "literary judgment",
+      "artikel": "das",
+      "example": "Ihr literarisches Urteil wird sehr geschätzt."
+    },
+    {
+      "de": "die Textinterpretation vertiefen",
+      "en": "to deepen text interpretation",
+      "example": "Wir vertiefen unsere Textinterpretation im Seminar."
+    },
+    {
+      "de": "die Symbolik entschlüsseln",
+      "en": "to decode symbolism",
+      "example": "Die Symbolik des Romans lässt sich entschlüsseln."
+    },
+    {
+      "de": "die literarische Tradition",
+      "en": "literary tradition",
+      "artikel": "die",
+      "example": "Der Autor steht in einer langen literarischen Tradition."
+    },
+    {
+      "de": "die Erzählstruktur",
+      "en": "narrative structure",
+      "artikel": "die",
+      "example": "Die Erzählstruktur ist ungewöhnlich komplex."
+    },
+    {
+      "de": "das ambivalente Werk",
+      "en": "ambivalent work",
+      "example": "Das ist ein sehr ambivalentes Werk."
+    },
+    {
+      "de": "die kritische Rezeption",
+      "en": "critical reception",
+      "artikel": "die",
+      "example": "Die kritische Rezeption war gemischt."
+    },
+    {
+      "de": "die Nachwirkung eines Werkes",
+      "en": "the lasting impact of a work",
+      "artikel": "die",
+      "example": "Die Nachwirkung dieses Werkes ist enorm."
+    },
+    {
+      "de": "die literarische Innovation",
+      "en": "literary innovation",
+      "artikel": "die",
+      "example": "Diese literarische Innovation prägte eine ganze Generation."
+    },
+    {
+      "de": "das vielschichtige Werk",
+      "en": "multi-layered work",
+      "example": "Das ist ein sehr vielschichtiges Werk."
+    },
+    {
+      "de": "die Textanalyse vertiefen",
+      "en": "to deepen text analysis",
+      "example": "Wir vertiefen die Textanalyse in der nächsten Sitzung."
     }
   ]
 }

@@ -1,32 +1,113 @@
 {
   "day": 73,
-  "topic": "Bildungssystem",
+  "topic": "Reisen: Kulturschock & Erfahrungen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Auslandserfahrung",
+      "en": "experience abroad",
+      "artikel": "die",
+      "example": "Diese Auslandserfahrung hat mich verändert."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "im Ausland leben",
+      "en": "to live abroad",
+      "example": "Ich möchte ein Jahr im Ausland leben."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "heimweh haben",
+      "en": "to be homesick",
+      "example": "Am Anfang hatte ich starkes Heimweh."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Heimweh",
+      "en": "homesickness",
+      "artikel": "das",
+      "example": "Das Heimweh wurde mit der Zeit weniger."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "sich eingewöhnen",
+      "en": "to settle in / get used to",
+      "example": "Ich habe mich schnell eingewöhnt."
+    },
+    {
+      "de": "fremd",
+      "en": "foreign / unfamiliar",
+      "example": "Am Anfang fühlte sich alles fremd an."
+    },
+    {
+      "de": "die Fremde",
+      "en": "foreign place / abroad",
+      "artikel": "die",
+      "example": "Er lebt seit Jahren in der Fremde."
+    },
+    {
+      "de": "die Erfahrung machen",
+      "en": "to have/gain an experience",
+      "example": "Ich habe viele neue Erfahrungen gemacht."
+    },
+    {
+      "de": "überraschend",
+      "en": "surprising",
+      "example": "Das Essen war überraschend anders."
+    },
+    {
+      "de": "gewöhnungsbedürftig",
+      "en": "takes some getting used to",
+      "example": "Das Klima hier ist gewöhnungsbedürftig."
+    },
+    {
+      "de": "anders als erwartet",
+      "en": "different than expected",
+      "example": "Alles war anders als erwartet."
+    },
+    {
+      "de": "die Gastfamilie",
+      "en": "host family",
+      "artikel": "die",
+      "example": "Meine Gastfamilie war sehr freundlich."
+    },
+    {
+      "de": "der Austausch",
+      "en": "exchange (student)",
+      "artikel": "der",
+      "example": "Ich mache ein Auslandssemester im Austausch."
+    },
+    {
+      "de": "das Auslandssemester",
+      "en": "semester abroad",
+      "artikel": "das",
+      "example": "Mein Auslandssemester war die beste Zeit."
+    },
+    {
+      "de": "die Erfahrung sammeln",
+      "en": "to gain experience",
+      "example": "Ich möchte Erfahrung im Ausland sammeln."
+    },
+    {
+      "de": "offen sein (Kultur)",
+      "en": "to be open-minded",
+      "example": "Man sollte offen für neue Kulturen sein."
+    },
+    {
+      "de": "neugierig sein (Reise)",
+      "en": "to be curious (travel)",
+      "example": "Ich bin sehr neugierig auf das neue Land."
+    },
+    {
+      "de": "sich zurechtfinden",
+      "en": "to find one's way / manage",
+      "example": "Ich finde mich hier langsam zurecht."
+    },
+    {
+      "de": "die Erinnerung (Reise)",
+      "en": "memory (travel)",
+      "artikel": "die",
+      "example": "Diese Reise wird eine schöne Erinnerung bleiben."
+    },
+    {
+      "de": "bereichern",
+      "en": "to enrich",
+      "example": "Diese Erfahrung hat mein Leben bereichert."
     }
-  ],
-  "_note": "Add 20 words about 'Bildungssystem'. Format: {de, en, example}"
+  ]
 }

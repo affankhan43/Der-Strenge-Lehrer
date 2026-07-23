@@ -1,51 +1,125 @@
 {
   "day": 175,
-  "level": "B2.1",
-  "topic": "Relativsätze",
+  "topic": "Unternehmensführung & Management",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Unternehmensführung",
+      "en": "corporate management",
+      "artikel": "die",
+      "example": "Die Unternehmensführung trifft strategische Entscheidungen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Geschäftsführung",
+      "en": "executive management",
+      "artikel": "die",
+      "example": "Die Geschäftsführung genehmigte das Budget."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die strategische Planung",
+      "en": "strategic planning",
+      "artikel": "die",
+      "example": "Strategische Planung sichert langfristigen Erfolg."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Unternehmensstrategie",
+      "en": "corporate strategy",
+      "artikel": "die",
+      "example": "Die Unternehmensstrategie wurde neu ausgerichtet."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das Organigramm",
+      "en": "organizational chart",
+      "artikel": "das",
+      "example": "Das Organigramm zeigt die Hierarchie."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Zuständigkeitsbereiche",
+      "en": "areas of responsibility",
+      "artikel": "die",
+      "example": "Die Zuständigkeitsbereiche sind klar definiert."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Entscheidungsbefugnis",
+      "en": "decision-making authority",
+      "artikel": "die",
+      "example": "Sie hat volle Entscheidungsbefugnis."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "delegieren (Management)",
+      "en": "to delegate (management)",
+      "example": "Ein guter Chef delegiert Aufgaben sinnvoll."
+    },
+    {
+      "de": "die Kennzahl",
+      "en": "key metric / KPI",
+      "artikel": "die",
+      "example": "Umsatz ist eine wichtige Kennzahl."
+    },
+    {
+      "de": "die Unternehmensziele",
+      "en": "company goals",
+      "artikel": "die",
+      "example": "Die Unternehmensziele wurden klar formuliert."
+    },
+    {
+      "de": "die operative Ebene",
+      "en": "operational level",
+      "artikel": "die",
+      "example": "Auf der operativen Ebene läuft alles reibungslos."
+    },
+    {
+      "de": "die Restrukturierung",
+      "en": "restructuring",
+      "artikel": "die",
+      "example": "Die Restrukturierung betraf mehrere Abteilungen."
+    },
+    {
+      "de": "die Fusion",
+      "en": "merger",
+      "artikel": "die",
+      "example": "Die Fusion beider Firmen wurde angekündigt."
+    },
+    {
+      "de": "die Übernahme (Unternehmen)",
+      "en": "acquisition (company)",
+      "artikel": "die",
+      "example": "Die Übernahme kostete Millionen."
+    },
+    {
+      "de": "das Tochterunternehmen",
+      "en": "subsidiary",
+      "artikel": "das",
+      "example": "Das Tochterunternehmen ist eigenständig organisiert."
+    },
+    {
+      "de": "die Muttergesellschaft",
+      "en": "parent company",
+      "artikel": "die",
+      "example": "Die Muttergesellschaft sitzt in München."
+    },
+    {
+      "de": "die Vorstandssitzung",
+      "en": "board meeting",
+      "artikel": "die",
+      "example": "Die Vorstandssitzung dauerte drei Stunden."
+    },
+    {
+      "de": "die Marktposition",
+      "en": "market position",
+      "artikel": "die",
+      "example": "Unsere Marktposition ist sehr stark."
+    },
+    {
+      "de": "das Führungsteam",
+      "en": "leadership team",
+      "artikel": "das",
+      "example": "Das Führungsteam trifft sich wöchentlich."
+    },
+    {
+      "de": "die Unternehmensvision",
+      "en": "corporate vision",
+      "artikel": "die",
+      "example": "Die Unternehmensvision inspiriert die Mitarbeiter."
     }
   ]
 }

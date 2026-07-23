@@ -1,0 +1,113 @@
+{
+  "day": 113,
+  "topic": "Konjunktiv I: Indirekte Rede vertieft",
+  "words": [
+    {
+      "de": "er sei",
+      "en": "he is (Konjunktiv I of sein)",
+      "example": "Er sagte, er sei krank."
+    },
+    {
+      "de": "sie habe",
+      "en": "she has (Konjunktiv I of haben)",
+      "example": "Sie sagte, sie habe keine Zeit."
+    },
+    {
+      "de": "er komme",
+      "en": "he is coming (Konjunktiv I)",
+      "example": "Er sagte, er komme später."
+    },
+    {
+      "de": "sie könne",
+      "en": "she can (Konjunktiv I of können)",
+      "example": "Sie behauptete, sie könne das schaffen."
+    },
+    {
+      "de": "er müsse",
+      "en": "he must (Konjunktiv I of müssen)",
+      "example": "Er erklärte, er müsse früher gehen."
+    },
+    {
+      "de": "sie werde",
+      "en": "she will (Konjunktiv I of werden)",
+      "example": "Sie sagte, sie werde pünktlich sein."
+    },
+    {
+      "de": "die wörtliche Rede",
+      "en": "direct speech",
+      "artikel": "die",
+      "example": "Das war ihre wörtliche Rede."
+    },
+    {
+      "de": "die indirekte Rede",
+      "en": "indirect/reported speech",
+      "artikel": "die",
+      "example": "Die indirekte Rede verändert die Verbform."
+    },
+    {
+      "de": "der Konjunktiv I",
+      "en": "subjunctive I",
+      "artikel": "der",
+      "example": "Der Konjunktiv I wird in Berichten benutzt."
+    },
+    {
+      "de": "wiedergeben",
+      "en": "to relay / report (speech)",
+      "example": "Er gibt die Aussage genau wieder."
+    },
+    {
+      "de": "die Originalaussage",
+      "en": "original statement",
+      "artikel": "die",
+      "example": "Die Originalaussage war anders formuliert."
+    },
+    {
+      "de": "umformulieren",
+      "en": "to rephrase",
+      "example": "Ich muss den Satz umformulieren."
+    },
+    {
+      "de": "neutral berichten",
+      "en": "to report neutrally",
+      "example": "Der Reporter berichtet neutral über den Vorfall."
+    },
+    {
+      "de": "die Nachrichtenagentur",
+      "en": "news agency",
+      "artikel": "die",
+      "example": "Die Meldung kam von einer Nachrichtenagentur."
+    },
+    {
+      "de": "dementsprechend",
+      "en": "accordingly",
+      "example": "Er handelte dementsprechend."
+    },
+    {
+      "de": "gemäß",
+      "en": "according to / in accordance with",
+      "example": "Gemäß dem Bericht steigen die Preise."
+    },
+    {
+      "de": "die Quelle angeben",
+      "en": "to cite a source",
+      "example": "Bitte gib die Quelle an."
+    },
+    {
+      "de": "die Behauptung",
+      "en": "assertion / claim",
+      "artikel": "die",
+      "example": "Diese Behauptung ist nicht bewiesen."
+    },
+    {
+      "de": "unbestätigt",
+      "en": "unconfirmed",
+      "example": "Die Nachricht ist noch unbestätigt."
+    },
+    {
+      "de": "die Pressemitteilung",
+      "en": "press release",
+      "artikel": "die",
+      "example": "Die Firma veröffentlichte eine Pressemitteilung."
+    }
+  ]
+}

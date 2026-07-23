@@ -1,51 +1,124 @@
 {
   "day": 197,
-  "level": "B2.2",
-  "topic": "Erweitertes Passiv",
+  "topic": "Rechtssystem & Zivilrecht",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Zivilrecht",
+      "en": "civil law",
+      "artikel": "das",
+      "example": "Das Zivilrecht regelt Beziehungen zwischen Privatpersonen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "das Bürgerliche Gesetzbuch",
+      "en": "German Civil Code (BGB)",
+      "artikel": "das",
+      "example": "Das Bürgerliche Gesetzbuch regelt Verträge und Eigentum."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Vertragspartner (Recht)",
+      "en": "contracting party (law)",
+      "artikel": "der",
+      "example": "Beide Vertragspartner unterschrieben den Vertrag."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Rechtsfähigkeit",
+      "en": "legal capacity",
+      "artikel": "die",
+      "example": "Jede Person besitzt Rechtsfähigkeit ab der Geburt."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Geschäftsfähigkeit",
+      "en": "legal capacity to contract",
+      "artikel": "die",
+      "example": "Minderjährige haben eingeschränkte Geschäftsfähigkeit."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "der Schadensersatz",
+      "en": "damages / compensation",
+      "artikel": "der",
+      "example": "Er verlangt Schadensersatz für den kaputten Zaun."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Haftung",
+      "en": "liability",
+      "artikel": "die",
+      "example": "Die Haftung liegt beim Verursacher des Schadens."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "haften für",
+      "en": "to be liable for",
+      "example": "Der Eigentümer haftet für Schäden am Gebäude."
+    },
+    {
+      "de": "die Klageschrift",
+      "en": "statement of claim",
+      "artikel": "die",
+      "example": "Die Klageschrift wurde beim Gericht eingereicht."
+    },
+    {
+      "de": "das Zivilverfahren",
+      "en": "civil proceedings",
+      "artikel": "das",
+      "example": "Das Zivilverfahren dauerte über ein Jahr."
+    },
+    {
+      "de": "die Verjährung",
+      "en": "statute of limitations",
+      "artikel": "die",
+      "example": "Die Verjährung dieser Forderung beträgt drei Jahre."
+    },
+    {
+      "de": "der Rechtsanspruch",
+      "en": "legal claim / entitlement",
+      "artikel": "der",
+      "example": "Sie hat einen Rechtsanspruch auf Rückerstattung."
+    },
+    {
+      "de": "die Vertragsfreiheit",
+      "en": "freedom of contract",
+      "artikel": "die",
+      "example": "Vertragsfreiheit ist ein Grundprinzip des Zivilrechts."
+    },
+    {
+      "de": "die Nichtigkeit",
+      "en": "nullity / invalidity",
+      "artikel": "die",
+      "example": "Der Vertrag wurde wegen Nichtigkeit aufgehoben."
+    },
+    {
+      "de": "die Rechtsgültigkeit",
+      "en": "legal validity",
+      "artikel": "die",
+      "example": "Die Rechtsgültigkeit des Vertrags wurde bestätigt."
+    },
+    {
+      "de": "das Eigentumsrecht",
+      "en": "property law / ownership right",
+      "artikel": "das",
+      "example": "Das Eigentumsrecht ist im Grundgesetz verankert."
+    },
+    {
+      "de": "der Besitz (Recht)",
+      "en": "possession (law)",
+      "artikel": "der",
+      "example": "Besitz und Eigentum sind rechtlich unterschiedlich."
+    },
+    {
+      "de": "die Rechtsprechung",
+      "en": "case law / jurisdiction",
+      "artikel": "die",
+      "example": "Die Rechtsprechung hat sich in diesem Bereich gewandelt."
+    },
+    {
+      "de": "das Präzedenzurteil",
+      "en": "precedent ruling",
+      "artikel": "das",
+      "example": "Dieses Präzedenzurteil beeinflusst künftige Fälle."
+    },
+    {
+      "de": "den Vertrag anfechten",
+      "en": "to contest a contract",
+      "example": "Sie möchte den Vertrag gerichtlich anfechten."
     }
   ]
 }

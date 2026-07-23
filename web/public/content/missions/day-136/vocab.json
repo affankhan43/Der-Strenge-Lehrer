@@ -1,0 +1,124 @@
+{
+  "day": 136,
+  "topic": "Arbeitsmarkt & Fachkräftemangel",
+  "words": [
+    {
+      "de": "der Arbeitsmarkt",
+      "en": "labor market",
+      "artikel": "der",
+      "example": "Der Arbeitsmarkt hat sich stark verändert."
+    },
+    {
+      "de": "der Fachkräftemangel",
+      "en": "shortage of skilled workers",
+      "artikel": "der",
+      "example": "Der Fachkräftemangel betrifft viele Branchen."
+    },
+    {
+      "de": "die Fachkraft",
+      "en": "skilled worker",
+      "artikel": "die",
+      "example": "Wir suchen dringend eine Fachkraft."
+    },
+    {
+      "de": "die offene Stelle",
+      "en": "job vacancy",
+      "artikel": "die",
+      "example": "Es gibt viele offene Stellen in dieser Branche."
+    },
+    {
+      "de": "die Arbeitslosenquote",
+      "en": "unemployment rate",
+      "artikel": "die",
+      "example": "Die Arbeitslosenquote ist gesunken."
+    },
+    {
+      "de": "die Vollbeschäftigung",
+      "en": "full employment",
+      "artikel": "die",
+      "example": "Vollbeschäftigung ist ein wirtschaftliches Ziel."
+    },
+    {
+      "de": "die Zuwanderung von Fachkräften",
+      "en": "immigration of skilled workers",
+      "artikel": "die",
+      "example": "Zuwanderung von Fachkräften wird gefördert."
+    },
+    {
+      "de": "die Umschulung",
+      "en": "retraining",
+      "artikel": "die",
+      "example": "Er macht eine Umschulung zum IT-Techniker."
+    },
+    {
+      "de": "die Weiterbildungsmöglichkeit",
+      "en": "further training opportunity",
+      "artikel": "die",
+      "example": "Diese Firma bietet gute Weiterbildungsmöglichkeiten."
+    },
+    {
+      "de": "der Strukturwandel",
+      "en": "structural change",
+      "artikel": "der",
+      "example": "Der Strukturwandel betrifft die Industrie."
+    },
+    {
+      "de": "der Arbeitsplatzabbau",
+      "en": "job cuts",
+      "artikel": "der",
+      "example": "Der Arbeitsplatzabbau traf viele Mitarbeiter."
+    },
+    {
+      "de": "neue Arbeitsplätze schaffen",
+      "en": "to create new jobs",
+      "example": "Die Firma schafft hundert neue Arbeitsplätze."
+    },
+    {
+      "de": "die Automatisierung der Arbeit",
+      "en": "automation of work",
+      "artikel": "die",
+      "example": "Automatisierung der Arbeit verändert viele Berufe."
+    },
+    {
+      "de": "der Berufswechsel",
+      "en": "career change",
+      "artikel": "der",
+      "example": "Ein Berufswechsel mit vierzig ist mutig."
+    },
+    {
+      "de": "die Gehaltsverhandlung",
+      "en": "salary negotiation",
+      "artikel": "die",
+      "example": "Die Gehaltsverhandlung verlief erfolgreich."
+    },
+    {
+      "de": "die Fachkräfteeinwanderung",
+      "en": "skilled worker immigration",
+      "artikel": "die",
+      "example": "Fachkräfteeinwanderung soll erleichtert werden."
+    },
+    {
+      "de": "die Nachwuchsförderung",
+      "en": "promotion of young talent",
+      "artikel": "die",
+      "example": "Nachwuchsförderung sichert die Zukunft der Firma."
+    },
+    {
+      "de": "der Arbeitskräftebedarf",
+      "en": "labor demand",
+      "artikel": "der",
+      "example": "Der Arbeitskräftebedarf steigt in der Pflege."
+    },
+    {
+      "de": "die duale Ausbildung",
+      "en": "dual vocational training",
+      "artikel": "die",
+      "example": "Die duale Ausbildung kombiniert Theorie und Praxis."
+    },
+    {
+      "de": "attraktiv als Arbeitgeber sein",
+      "en": "to be an attractive employer",
+      "example": "Die Firma möchte attraktiv als Arbeitgeber sein."
+    }
+  ]
+}

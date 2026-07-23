@@ -1,51 +1,113 @@
 {
   "day": 194,
-  "level": "B2.1",
-  "topic": "Referat",
+  "topic": "Gesellschaftskritik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Gesellschaftskritik",
+      "en": "social criticism",
+      "artikel": "die",
+      "example": "Gesellschaftskritik hinterfragt bestehende Strukturen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "gesellschaftliche Missstände",
+      "en": "social grievances",
+      "example": "Der Roman thematisiert gesellschaftliche Missstände."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das gesellschaftliche System hinterfragen",
+      "en": "to question the social system",
+      "example": "Der Autor hinterfragt das gesellschaftliche System."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die soziale Ungerechtigkeit anprangern",
+      "en": "to denounce social injustice",
+      "example": "Sie prangert soziale Ungerechtigkeit in ihren Texten an."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die kritische Auseinandersetzung",
+      "en": "critical engagement",
+      "artikel": "die",
+      "example": "Eine kritische Auseinandersetzung mit dem Thema ist nötig."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "gesellschaftliche Normen infrage stellen",
+      "en": "to question social norms",
+      "example": "Der Film stellt gesellschaftliche Normen infrage."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Machtstrukturen aufdecken",
+      "en": "to expose power structures",
+      "example": "Das Buch deckt bestehende Machtstrukturen auf."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die soziale Spaltung",
+      "en": "social division",
+      "artikel": "die",
+      "example": "Die soziale Spaltung nimmt in vielen Ländern zu."
+    },
+    {
+      "de": "die Polarisierung",
+      "en": "polarization",
+      "artikel": "die",
+      "example": "Politische Polarisierung erschwert den Dialog."
+    },
+    {
+      "de": "die gesellschaftliche Debatte anstoßen",
+      "en": "to spark a social debate",
+      "example": "Der Artikel stieß eine wichtige gesellschaftliche Debatte an."
+    },
+    {
+      "de": "die kritische Stimme",
+      "en": "critical voice",
+      "artikel": "die",
+      "example": "Sie ist eine wichtige kritische Stimme in den Medien."
+    },
+    {
+      "de": "den Status quo herausfordern",
+      "en": "to challenge the status quo",
+      "example": "Die Bewegung fordert den Status quo heraus."
+    },
+    {
+      "de": "das gesellschaftliche Bewusstsein schärfen",
+      "en": "to sharpen social awareness",
+      "example": "Der Dokumentarfilm schärft das gesellschaftliche Bewusstsein."
+    },
+    {
+      "de": "die soziale Bewegung",
+      "en": "social movement",
+      "artikel": "die",
+      "example": "Die soziale Bewegung wuchs schnell."
+    },
+    {
+      "de": "die Systemkritik",
+      "en": "criticism of the system",
+      "artikel": "die",
+      "example": "Systemkritik findet sich in vielen zeitgenössischen Werken."
+    },
+    {
+      "de": "die kritische Distanz wahren",
+      "en": "to maintain critical distance",
+      "example": "Ein guter Beobachter wahrt kritische Distanz."
+    },
+    {
+      "de": "die gesellschaftliche Verantwortung übernehmen",
+      "en": "to take on social responsibility",
+      "example": "Künstler übernehmen oft gesellschaftliche Verantwortung."
+    },
+    {
+      "de": "die Ungleichheit thematisieren",
+      "en": "to address inequality",
+      "example": "Der Roman thematisiert soziale Ungleichheit."
+    },
+    {
+      "de": "provokant hinterfragen",
+      "en": "to provocatively question",
+      "example": "Der Künstler hinterfragt provokant gesellschaftliche Werte."
+    },
+    {
+      "de": "die kritische Reflexion anregen",
+      "en": "to encourage critical reflection",
+      "example": "Das Werk regt zur kritischen Reflexion an."
     }
   ]
 }

@@ -1,51 +1,117 @@
 {
   "day": 182,
-  "level": "B2.1",
-  "topic": "Präpositionaladverbien",
+  "topic": "Führungsstile",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "der Führungsstil",
+      "en": "leadership style",
+      "artikel": "der",
+      "example": "Ihr Führungsstil ist sehr kooperativ."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "autoritär führen",
+      "en": "to lead authoritatively",
+      "example": "Er führt sein Team eher autoritär."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "kooperativ führen",
+      "en": "to lead cooperatively",
+      "example": "Sie führt ihr Team sehr kooperativ."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "der Laissez-faire-Stil",
+      "en": "laissez-faire style",
+      "artikel": "der",
+      "example": "Der Laissez-faire-Stil gibt viel Freiraum."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der situative Führungsstil",
+      "en": "situational leadership style",
+      "artikel": "der",
+      "example": "Der situative Führungsstil passt sich der Lage an."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "transformational führen",
+      "en": "to lead transformationally",
+      "example": "Er führt transformational und inspiriert sein Team."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Vorbildfunktion",
+      "en": "role model function",
+      "artikel": "die",
+      "example": "Führungskräfte haben eine wichtige Vorbildfunktion."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "Vertrauen aufbauen (Führung)",
+      "en": "to build trust (leadership)",
+      "example": "Gute Führung baut Vertrauen im Team auf."
+    },
+    {
+      "de": "die Mitarbeitermotivation",
+      "en": "employee motivation",
+      "artikel": "die",
+      "example": "Mitarbeitermotivation hängt stark vom Führungsstil ab."
+    },
+    {
+      "de": "die Selbstorganisation fördern",
+      "en": "to promote self-organization",
+      "example": "Sie fördert die Selbstorganisation ihres Teams."
+    },
+    {
+      "de": "die Führungsverantwortung",
+      "en": "leadership responsibility",
+      "artikel": "die",
+      "example": "Führungsverantwortung bringt viele Herausforderungen."
+    },
+    {
+      "de": "empathisch führen",
+      "en": "to lead empathetically",
+      "example": "Er führt sein Team sehr empathisch."
+    },
+    {
+      "de": "die Mikroführung",
+      "en": "micromanagement",
+      "artikel": "die",
+      "example": "Mikroführung demotiviert oft erfahrene Mitarbeiter."
+    },
+    {
+      "de": "Freiraum gewähren",
+      "en": "to grant freedom / autonomy",
+      "example": "Sie gewährt ihrem Team viel Freiraum."
+    },
+    {
+      "de": "die Führungsqualität",
+      "en": "leadership quality",
+      "artikel": "die",
+      "example": "Seine Führungsqualität wird sehr geschätzt."
+    },
+    {
+      "de": "die klare Kommunikation (Führung)",
+      "en": "clear communication (leadership)",
+      "artikel": "die",
+      "example": "Klare Kommunikation ist die Basis guter Führung."
+    },
+    {
+      "de": "das Vertrauen der Mitarbeiter gewinnen",
+      "en": "to earn employees' trust",
+      "example": "Sie gewann schnell das Vertrauen der Mitarbeiter."
+    },
+    {
+      "de": "die Führungsrolle übernehmen",
+      "en": "to take on a leadership role",
+      "example": "Er übernahm die Führungsrolle im Team."
+    },
+    {
+      "de": "die Feedbackkultur",
+      "en": "feedback culture",
+      "artikel": "die",
+      "example": "Eine gute Feedbackkultur stärkt das Team."
+    },
+    {
+      "de": "das Servant Leadership",
+      "en": "servant leadership",
+      "artikel": "das",
+      "example": "Servant Leadership stellt die Bedürfnisse des Teams in den Mittelpunkt."
     }
   ]
 }

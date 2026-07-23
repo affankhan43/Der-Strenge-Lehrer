@@ -1,51 +1,121 @@
 {
   "day": 185,
-  "level": "B2.1",
-  "topic": "Wortbildung Adjektive",
+  "topic": "Nachhaltigkeitsmanagement (CSR)",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Nachhaltigkeitsmanagement",
+      "en": "sustainability management",
+      "artikel": "das",
+      "example": "Nachhaltigkeitsmanagement gehört zur Unternehmensstrategie."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Corporate Social Responsibility",
+      "en": "corporate social responsibility",
+      "artikel": "die",
+      "example": "Corporate Social Responsibility stärkt das Firmenimage."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Nachhaltigkeitsbericht",
+      "en": "sustainability report",
+      "artikel": "der",
+      "example": "Der Nachhaltigkeitsbericht wird jährlich veröffentlicht."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die ökologische Verantwortung",
+      "en": "ecological responsibility",
+      "artikel": "die",
+      "example": "Ökologische Verantwortung gehört zu unseren Werten."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die soziale Verantwortung übernehmen",
+      "en": "to take on social responsibility",
+      "example": "Das Unternehmen übernimmt soziale Verantwortung."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die CO2-Bilanz",
+      "en": "carbon footprint / balance",
+      "artikel": "die",
+      "example": "Die CO2-Bilanz des Unternehmens sinkt jährlich."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "klimaneutral produzieren",
+      "en": "to produce climate-neutrally",
+      "example": "Wir produzieren seit letztem Jahr klimaneutral."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die nachhaltige Lieferkette",
+      "en": "sustainable supply chain",
+      "artikel": "die",
+      "example": "Eine nachhaltige Lieferkette ist unser Ziel."
+    },
+    {
+      "de": "die ESG-Kriterien",
+      "en": "ESG criteria",
+      "artikel": "die",
+      "example": "Investoren achten zunehmend auf ESG-Kriterien."
+    },
+    {
+      "de": "die Nachhaltigkeitsziele erreichen",
+      "en": "to achieve sustainability goals",
+      "example": "Wir wollen unsere Nachhaltigkeitsziele bis 2030 erreichen."
+    },
+    {
+      "de": "die soziale Nachhaltigkeit",
+      "en": "social sustainability",
+      "artikel": "die",
+      "example": "Soziale Nachhaltigkeit umfasst faire Löhne."
+    },
+    {
+      "de": "die ökologische Bilanz",
+      "en": "ecological balance sheet",
+      "artikel": "die",
+      "example": "Die ökologische Bilanz verbesserte sich deutlich."
+    },
+    {
+      "de": "die Ressourcenschonung",
+      "en": "resource conservation",
+      "artikel": "die",
+      "example": "Ressourcenschonung ist Teil unserer Strategie."
+    },
+    {
+      "de": "die Kreislaufwirtschaft fördern",
+      "en": "to promote circular economy",
+      "example": "Wir fördern aktiv die Kreislaufwirtschaft."
+    },
+    {
+      "de": "die Nachhaltigkeitsstrategie",
+      "en": "sustainability strategy",
+      "artikel": "die",
+      "example": "Unsere Nachhaltigkeitsstrategie umfasst alle Abteilungen."
+    },
+    {
+      "de": "das grüne Image",
+      "en": "green image",
+      "artikel": "das",
+      "example": "Das grüne Image zieht umweltbewusste Kunden an."
+    },
+    {
+      "de": "die Umweltbilanz verbessern",
+      "en": "to improve the environmental balance",
+      "example": "Wir verbessern kontinuierlich unsere Umweltbilanz."
+    },
+    {
+      "de": "die verantwortungsvolle Beschaffung",
+      "en": "responsible procurement",
+      "artikel": "die",
+      "example": "Verantwortungsvolle Beschaffung schließt Kinderarbeit aus."
+    },
+    {
+      "de": "das nachhaltige Investment",
+      "en": "sustainable investment",
+      "artikel": "das",
+      "example": "Nachhaltiges Investment wird immer beliebter."
+    },
+    {
+      "de": "die langfristige Verantwortung",
+      "en": "long-term responsibility",
+      "artikel": "die",
+      "example": "Langfristige Verantwortung prägt unsere Entscheidungen."
     }
   ]
 }

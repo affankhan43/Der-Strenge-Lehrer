@@ -1,32 +1,120 @@
 {
   "day": 68,
-  "topic": "Soziale Medien & Einfluss",
+  "topic": "Kultur & Bräuche international",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Kultur",
+      "en": "culture",
+      "artikel": "die",
+      "example": "Jedes Land hat seine eigene Kultur."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Brauch (Kultur)",
+      "en": "custom / tradition",
+      "artikel": "der",
+      "example": "Dieser Brauch ist typisch für diese Region."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Sitte",
+      "en": "custom / manner",
+      "artikel": "die",
+      "example": "Es ist eine alte Sitte hier."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "interkulturell",
+      "en": "intercultural",
+      "example": "Interkulturelle Kommunikation ist spannend."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Höflichkeit",
+      "en": "politeness",
+      "artikel": "die",
+      "example": "Höflichkeit ist in jeder Kultur wichtig."
+    },
+    {
+      "de": "die Etikette",
+      "en": "etiquette",
+      "artikel": "die",
+      "example": "Die Etikette ist von Land zu Land anders."
+    },
+    {
+      "de": "der Kulturschock",
+      "en": "culture shock",
+      "artikel": "der",
+      "example": "Ich hatte am Anfang einen Kulturschock."
+    },
+    {
+      "de": "sich anpassen",
+      "en": "to adapt",
+      "example": "Ich musste mich an die neue Kultur anpassen."
+    },
+    {
+      "de": "die Vielfalt",
+      "en": "diversity",
+      "artikel": "die",
+      "example": "Die kulturelle Vielfalt ist beeindruckend."
+    },
+    {
+      "de": "vielfältig",
+      "en": "diverse",
+      "example": "Die Stadt ist sehr vielfältig."
+    },
+    {
+      "de": "die Toleranz",
+      "en": "tolerance",
+      "artikel": "die",
+      "example": "Toleranz ist mir sehr wichtig."
+    },
+    {
+      "de": "tolerant",
+      "en": "tolerant",
+      "example": "Die Menschen hier sind sehr tolerant."
+    },
+    {
+      "de": "die Religion",
+      "en": "religion",
+      "artikel": "die",
+      "example": "Es gibt viele verschiedene Religionen."
+    },
+    {
+      "de": "der Feiertag (Kultur)",
+      "en": "cultural holiday",
+      "artikel": "der",
+      "example": "Jede Kultur hat eigene Feiertage."
+    },
+    {
+      "de": "das Vorurteil",
+      "en": "prejudice",
+      "artikel": "das",
+      "example": "Vorurteile schaden dem Miteinander."
+    },
+    {
+      "de": "das Klischee",
+      "en": "stereotype / cliché",
+      "example": "Das ist nur ein Klischee."
+    },
+    {
+      "de": "die Wertschätzung",
+      "en": "appreciation",
+      "artikel": "die",
+      "example": "Wertschätzung ist in jeder Kultur wichtig."
+    },
+    {
+      "de": "die Gastfreundschaft",
+      "en": "hospitality",
+      "artikel": "die",
+      "example": "Die Gastfreundschaft hier ist beeindruckend."
+    },
+    {
+      "de": "gastfreundlich",
+      "en": "hospitable",
+      "example": "Die Menschen sind sehr gastfreundlich."
+    },
+    {
+      "de": "die Weltanschauung",
+      "en": "worldview",
+      "artikel": "die",
+      "example": "Reisen verändert die Weltanschauung."
     }
-  ],
-  "_note": "Add 20 words about 'Soziale Medien & Einfluss'. Format: {de, en, example}"
+  ]
 }

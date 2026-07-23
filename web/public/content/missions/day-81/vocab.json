@@ -1,32 +1,118 @@
 {
   "day": 81,
-  "topic": "Tourismus & Reiseziele",
+  "topic": "Reisevorbereitung: Dokumente & Versicherung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Reisedokument",
+      "en": "travel document",
+      "artikel": "das",
+      "example": "Vergiss deine Reisedokumente nicht."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Reiseversicherung",
+      "en": "travel insurance",
+      "artikel": "die",
+      "example": "Wir haben eine Reiseversicherung abgeschlossen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Auslandskrankenversicherung",
+      "en": "overseas health insurance",
+      "artikel": "die",
+      "example": "Eine Auslandskrankenversicherung ist wichtig."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Impfausweis",
+      "en": "vaccination card",
+      "artikel": "der",
+      "example": "Nimm deinen Impfausweis mit."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "das Visum beantragen",
+      "en": "to apply for a visa",
+      "example": "Ich muss ein Visum beantragen."
+    },
+    {
+      "de": "die Botschaft",
+      "en": "embassy",
+      "artikel": "die",
+      "example": "Die Botschaft hilft bei Notfällen."
+    },
+    {
+      "de": "das Konsulat",
+      "en": "consulate",
+      "artikel": "das",
+      "example": "Wende dich an das Konsulat."
+    },
+    {
+      "de": "gültig",
+      "en": "valid",
+      "example": "Dein Reisepass ist noch gültig."
+    },
+    {
+      "de": "abgelaufen",
+      "en": "expired",
+      "example": "Mein Reisepass ist leider abgelaufen."
+    },
+    {
+      "de": "verlängern",
+      "en": "to extend / renew",
+      "example": "Ich muss meinen Reisepass verlängern."
+    },
+    {
+      "de": "die Kopie",
+      "en": "copy (document)",
+      "artikel": "die",
+      "example": "Mach eine Kopie von deinem Pass."
+    },
+    {
+      "de": "kopieren",
+      "en": "to copy",
+      "example": "Kannst du das Dokument kopieren?"
+    },
+    {
+      "de": "der Notfallkontakt",
+      "en": "emergency contact",
+      "artikel": "der",
+      "example": "Trag deinen Notfallkontakt ein."
+    },
+    {
+      "de": "die Reisewarnung",
+      "en": "travel warning",
+      "artikel": "die",
+      "example": "Es gibt eine Reisewarnung für diese Region."
+    },
+    {
+      "de": "das Auswärtige Amt",
+      "en": "foreign office",
+      "artikel": "das",
+      "example": "Das Auswärtige Amt informiert über Reisewarnungen."
+    },
+    {
+      "de": "die Auslandskrankenkarte",
+      "en": "overseas health card",
+      "artikel": "die",
+      "example": "Zeig deine Auslandskrankenkarte im Krankenhaus."
+    },
+    {
+      "de": "verschieben (Reise)",
+      "en": "to postpone (a trip)",
+      "example": "Wir mussten die Reise verschieben."
+    },
+    {
+      "de": "stornieren (Reise)",
+      "en": "to cancel (a trip)",
+      "example": "Wir haben den Flug storniert."
+    },
+    {
+      "de": "die Erstattung",
+      "en": "refund",
+      "artikel": "die",
+      "example": "Ich warte auf die Erstattung."
+    },
+    {
+      "de": "erstatten",
+      "en": "to refund",
+      "example": "Die Fluggesellschaft erstattet das Geld."
     }
-  ],
-  "_note": "Add 20 words about 'Tourismus & Reiseziele'. Format: {de, en, example}"
+  ]
 }

@@ -1,0 +1,121 @@
+{
+  "day": 129,
+  "topic": "Architektur & Wohnraum",
+  "words": [
+    {
+      "de": "der Baustil",
+      "en": "architectural style",
+      "artikel": "der",
+      "example": "Der Baustil dieses Hauses ist modern."
+    },
+    {
+      "de": "der Architekt",
+      "en": "architect (male)",
+      "artikel": "der",
+      "example": "Der Architekt hat das Gebäude entworfen."
+    },
+    {
+      "de": "die Architektin",
+      "en": "architect (female)",
+      "artikel": "die",
+      "example": "Die Architektin plant ein neues Museum."
+    },
+    {
+      "de": "der Grundriss",
+      "en": "floor plan",
+      "artikel": "der",
+      "example": "Der Grundriss der Wohnung ist praktisch."
+    },
+    {
+      "de": "die Fassade",
+      "en": "facade",
+      "artikel": "die",
+      "example": "Die Fassade wurde renoviert."
+    },
+    {
+      "de": "das Fundament",
+      "en": "foundation",
+      "artikel": "das",
+      "example": "Das Fundament muss stabil sein."
+    },
+    {
+      "de": "die Statik",
+      "en": "structural engineering / statics",
+      "artikel": "die",
+      "example": "Die Statik des Gebäudes wurde geprüft."
+    },
+    {
+      "de": "nachhaltig bauen",
+      "en": "to build sustainably",
+      "example": "Wir bauen nachhaltig mit Holz."
+    },
+    {
+      "de": "energieeffizient",
+      "en": "energy-efficient",
+      "example": "Das Haus ist sehr energieeffizient."
+    },
+    {
+      "de": "die Dämmung",
+      "en": "insulation",
+      "artikel": "die",
+      "example": "Eine gute Dämmung spart Heizkosten."
+    },
+    {
+      "de": "der Wohnraum schaffen",
+      "en": "to create living space",
+      "example": "Wir schaffen neuen Wohnraum in der Stadt."
+    },
+    {
+      "de": "die Raumaufteilung",
+      "en": "room layout",
+      "artikel": "die",
+      "example": "Die Raumaufteilung ist sehr durchdacht."
+    },
+    {
+      "de": "der offene Grundriss",
+      "en": "open floor plan",
+      "example": "Wir bevorzugen einen offenen Grundriss."
+    },
+    {
+      "de": "der Baustoff",
+      "en": "building material",
+      "artikel": "der",
+      "example": "Holz ist ein nachhaltiger Baustoff."
+    },
+    {
+      "de": "das Baudenkmal",
+      "en": "historic building / monument",
+      "artikel": "das",
+      "example": "Dieses Baudenkmal steht unter Schutz."
+    },
+    {
+      "de": "der Denkmalschutz",
+      "en": "heritage protection",
+      "artikel": "der",
+      "example": "Das Gebäude steht unter Denkmalschutz."
+    },
+    {
+      "de": "modernisieren",
+      "en": "to modernize",
+      "example": "Wir modernisieren die alte Wohnung."
+    },
+    {
+      "de": "die Bauweise",
+      "en": "construction method",
+      "artikel": "die",
+      "example": "Diese Bauweise ist sehr langlebig."
+    },
+    {
+      "de": "die Wohnfläche",
+      "en": "living space (area)",
+      "artikel": "die",
+      "example": "Die Wohnfläche beträgt 80 Quadratmeter."
+    },
+    {
+      "de": "das Passivhaus",
+      "en": "passive house",
+      "artikel": "das",
+      "example": "Ein Passivhaus braucht kaum Heizenergie."
+    }
+  ]
+}

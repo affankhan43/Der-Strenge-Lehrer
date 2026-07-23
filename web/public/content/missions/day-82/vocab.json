@@ -1,32 +1,119 @@
 {
   "day": 82,
-  "topic": "Geschichte & Erinnerung",
+  "topic": "Soziale Gerechtigkeit",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Gerechtigkeit",
+      "en": "justice",
+      "artikel": "die",
+      "example": "Gerechtigkeit ist ein wichtiger Wert."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "ungerecht",
+      "en": "unjust",
+      "example": "Das ist total ungerecht!"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Ungleichheit",
+      "en": "inequality",
+      "artikel": "die",
+      "example": "Soziale Ungleichheit ist ein großes Problem."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Chance haben",
+      "en": "to have a chance/opportunity",
+      "example": "Jeder sollte die gleiche Chance haben."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "benachteiligt sein",
+      "en": "to be disadvantaged",
+      "example": "Manche Gruppen sind benachteiligt."
+    },
+    {
+      "de": "die Diskriminierung",
+      "en": "discrimination",
+      "artikel": "die",
+      "example": "Diskriminierung ist gesetzlich verboten."
+    },
+    {
+      "de": "diskriminieren",
+      "en": "to discriminate",
+      "example": "Niemand darf diskriminiert werden."
+    },
+    {
+      "de": "die Solidarität",
+      "en": "solidarity",
+      "artikel": "die",
+      "example": "Solidarität verbindet die Menschen."
+    },
+    {
+      "de": "solidarisch sein",
+      "en": "to be in solidarity",
+      "example": "Wir sind solidarisch mit den Betroffenen."
+    },
+    {
+      "de": "das Menschenrecht",
+      "en": "human right",
+      "artikel": "das",
+      "example": "Bildung ist ein Menschenrecht."
+    },
+    {
+      "de": "die Armut",
+      "en": "poverty",
+      "artikel": "die",
+      "example": "Armut betrifft viele Familien."
+    },
+    {
+      "de": "der Reichtum",
+      "en": "wealth",
+      "artikel": "der",
+      "example": "Reichtum ist ungleich verteilt."
+    },
+    {
+      "de": "die soziale Verantwortung",
+      "en": "social responsibility",
+      "artikel": "die",
+      "example": "Unternehmen tragen soziale Verantwortung."
+    },
+    {
+      "de": "sich engagieren",
+      "en": "to get involved / volunteer",
+      "example": "Sie engagiert sich für Kinderrechte."
+    },
+    {
+      "de": "das Ehrenamt",
+      "en": "volunteer work",
+      "artikel": "das",
+      "example": "Er macht ein Ehrenamt im Altenheim."
+    },
+    {
+      "de": "die Spende",
+      "en": "donation",
+      "artikel": "die",
+      "example": "Wir haben eine Spende für die Schule gesammelt."
+    },
+    {
+      "de": "spenden",
+      "en": "to donate",
+      "example": "Ich spende jedes Jahr an eine Organisation."
+    },
+    {
+      "de": "die Organisation (sozial)",
+      "en": "organization (social)",
+      "artikel": "die",
+      "example": "Diese Organisation hilft Obdachlosen."
+    },
+    {
+      "de": "die Inklusion",
+      "en": "inclusion",
+      "artikel": "die",
+      "example": "Inklusion bedeutet, niemanden auszuschließen."
+    },
+    {
+      "de": "die Barrierefreiheit",
+      "en": "accessibility",
+      "artikel": "die",
+      "example": "Barrierefreiheit ist in öffentlichen Gebäuden wichtig."
     }
-  ],
-  "_note": "Add 20 words about 'Geschichte & Erinnerung'. Format: {de, en, example}"
+  ]
 }

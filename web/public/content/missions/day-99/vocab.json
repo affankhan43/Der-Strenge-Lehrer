@@ -1,32 +1,111 @@
 {
   "day": 99,
-  "topic": "Sport & Nationalgefühl",
+  "topic": "Verben: Wechselpräpositionen (Übung)",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "legen",
+      "en": "to lay / put (flat)",
+      "example": "Leg das Buch auf den Tisch."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "liegen",
+      "en": "to lie / be lying",
+      "example": "Das Buch liegt auf dem Tisch."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "stellen",
+      "en": "to put / place (upright)",
+      "example": "Stell die Flasche in den Kühlschrank."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "stehen (Objekt)",
+      "en": "to stand (object)",
+      "example": "Die Flasche steht im Kühlschrank."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "setzen",
+      "en": "to set / put (someone/something)",
+      "example": "Setz das Kind auf den Stuhl."
+    },
+    {
+      "de": "sitzen (Objekt)",
+      "en": "to sit (object)",
+      "example": "Das Kind sitzt auf dem Stuhl."
+    },
+    {
+      "de": "hängen (transitiv)",
+      "en": "to hang (something up)",
+      "example": "Häng das Bild an die Wand."
+    },
+    {
+      "de": "hängen (intransitiv)",
+      "en": "to hang / be hanging",
+      "example": "Das Bild hängt an der Wand."
+    },
+    {
+      "de": "stecken",
+      "en": "to put / insert",
+      "example": "Steck den Schlüssel ins Schloss."
+    },
+    {
+      "de": "stecken (Zustand)",
+      "en": "to be stuck / inserted",
+      "example": "Der Schlüssel steckt im Schloss."
+    },
+    {
+      "de": "legen vs. liegen",
+      "en": "to lay vs. to lie (contrast)",
+      "example": "Ich lege das Handtuch auf den Stuhl, jetzt liegt es dort."
+    },
+    {
+      "de": "die Wechselpräposition",
+      "en": "two-way preposition",
+      "artikel": "die",
+      "example": "\"In\" ist eine Wechselpräposition."
+    },
+    {
+      "de": "der Akkusativ",
+      "en": "accusative case",
+      "artikel": "der",
+      "example": "Bei Bewegung benutzt man den Akkusativ."
+    },
+    {
+      "de": "der Dativ",
+      "en": "dative case",
+      "artikel": "der",
+      "example": "Bei Position benutzt man den Dativ."
+    },
+    {
+      "de": "die Bewegung (Grammatik)",
+      "en": "movement (grammar context)",
+      "artikel": "die",
+      "example": "Bei Bewegung ändert sich der Fall."
+    },
+    {
+      "de": "die Position (Grammatik)",
+      "en": "position (grammar context)",
+      "artikel": "die",
+      "example": "Bei Position bleibt der Fall gleich."
+    },
+    {
+      "de": "wohin?",
+      "en": "to where? (movement)",
+      "example": "Wohin stellst du die Vase?"
+    },
+    {
+      "de": "wo? (Position)",
+      "en": "where? (static position)",
+      "example": "Wo steht die Vase?"
+    },
+    {
+      "de": "verstauen",
+      "en": "to stow / put away",
+      "example": "Verstau die Koffer im Kofferraum."
+    },
+    {
+      "de": "platzieren",
+      "en": "to place / position",
+      "example": "Platziere die Möbel im Raum."
     }
-  ],
-  "_note": "Add 20 words about 'Sport & Nationalgefühl'. Format: {de, en, example}"
+  ]
 }

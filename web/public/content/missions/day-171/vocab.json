@@ -1,51 +1,116 @@
 {
   "day": 171,
-  "level": "B2.1",
-  "topic": "Passiv Präteritum",
+  "topic": "Nominalstil vs. Verbalstil",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "der Nominalstil",
+      "en": "nominal style",
+      "artikel": "der",
+      "example": "Der Nominalstil wird oft in Behördentexten verwendet."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Verbalstil",
+      "en": "verbal style",
+      "artikel": "der",
+      "example": "Der Verbalstil wirkt lebendiger und persönlicher."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Funktionsverbgefüge",
+      "en": "compound verb constructions",
+      "artikel": "die",
+      "example": "\"Zur Anwendung bringen\" ist ein Funktionsverbgefüge."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "umformen (Stil)",
+      "en": "to transform / rephrase (style)",
+      "example": "Ich forme den Satz vom Nominal- in den Verbalstil um."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "bürokratisch klingen",
+      "en": "to sound bureaucratic",
+      "example": "Dieser Satz klingt sehr bürokratisch."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "lebendig formulieren",
+      "en": "to phrase vividly",
+      "example": "Verbalstil formuliert oft lebendiger."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Verschachtelung (Satz)",
+      "en": "nesting / embedding (sentence)",
+      "artikel": "die",
+      "example": "Zu viel Verschachtelung erschwert das Lesen."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Lesbarkeit verbessern",
+      "en": "to improve readability",
+      "example": "Kürzere Sätze verbessern die Lesbarkeit."
+    },
+    {
+      "de": "der Schachtelsatz",
+      "en": "nested/complex sentence",
+      "artikel": "der",
+      "example": "Ein Schachtelsatz ist schwer zu verstehen."
+    },
+    {
+      "de": "die Textwirkung",
+      "en": "text effect / impact",
+      "artikel": "die",
+      "example": "Der Stil beeinflusst die Textwirkung stark."
+    },
+    {
+      "de": "adressatengerecht schreiben",
+      "en": "to write appropriately for the audience",
+      "example": "Schreib immer adressatengerecht."
+    },
+    {
+      "de": "die Verständlichkeit",
+      "en": "comprehensibility",
+      "artikel": "die",
+      "example": "Verständlichkeit sollte immer Priorität haben."
+    },
+    {
+      "de": "den Stil anpassen",
+      "en": "to adapt the style",
+      "example": "Ich passe meinen Stil je nach Zielgruppe an."
+    },
+    {
+      "de": "die Textfunktion",
+      "en": "text function",
+      "artikel": "die",
+      "example": "Die Textfunktion bestimmt den passenden Stil."
+    },
+    {
+      "de": "die sprachliche Ökonomie",
+      "en": "linguistic economy",
+      "artikel": "die",
+      "example": "Sprachliche Ökonomie bedeutet, kurz und klar zu schreiben."
+    },
+    {
+      "de": "überladen (Stil)",
+      "en": "overloaded (style)",
+      "example": "Dieser Satz wirkt sprachlich überladen."
+    },
+    {
+      "de": "aufgeblähte Sprache",
+      "en": "bloated / inflated language",
+      "example": "Vermeide aufgeblähte Sprache in offiziellen Texten."
+    },
+    {
+      "de": "den Kerngedanken hervorheben",
+      "en": "to highlight the core idea",
+      "example": "Hebe den Kerngedanken klar hervor."
+    },
+    {
+      "de": "die stilistische Klarheit",
+      "en": "stylistic clarity",
+      "artikel": "die",
+      "example": "Stilistische Klarheit erleichtert das Verständnis."
+    },
+    {
+      "de": "den Text straffen",
+      "en": "to tighten up a text",
+      "example": "Ich straffe den Text noch etwas."
     }
   ]
 }

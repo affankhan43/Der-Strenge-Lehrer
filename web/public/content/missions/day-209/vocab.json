@@ -1,51 +1,126 @@
 {
   "day": 209,
-  "level": "B2.2",
-  "topic": "Nominalisierung",
+  "topic": "Finanzmärkte & Börse",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Börse",
+      "en": "stock exchange",
+      "artikel": "die",
+      "example": "Die Börse öffnet um neun Uhr."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Aktie",
+      "en": "stock / share",
+      "artikel": "die",
+      "example": "Ich habe Aktien von diesem Unternehmen gekauft."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Anleihe",
+      "en": "bond",
+      "artikel": "die",
+      "example": "Staatsanleihen gelten als sicher."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "der Fonds",
+      "en": "fund",
+      "artikel": "der",
+      "example": "Ich investiere in einen breit gestreuten Fonds."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das Portfolio",
+      "en": "portfolio",
+      "artikel": "das",
+      "example": "Mein Portfolio ist gut diversifiziert."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Diversifikation",
+      "en": "diversification",
+      "artikel": "die",
+      "example": "Diversifikation reduziert das Anlagerisiko."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Rendite",
+      "en": "return (investment)",
+      "artikel": "die",
+      "example": "Die Rendite dieser Anlage war hoch."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Volatilität",
+      "en": "volatility",
+      "artikel": "die",
+      "example": "Die Volatilität an den Märkten stieg stark."
+    },
+    {
+      "de": "der Börsenkurs",
+      "en": "stock price",
+      "artikel": "der",
+      "example": "Der Börsenkurs fiel um zehn Prozent."
+    },
+    {
+      "de": "der Aktienindex",
+      "en": "stock index",
+      "artikel": "der",
+      "example": "Der Aktienindex stieg auf ein Rekordhoch."
+    },
+    {
+      "de": "die Spekulation",
+      "en": "speculation",
+      "artikel": "die",
+      "example": "Spekulation kann hohe Risiken bergen."
+    },
+    {
+      "de": "der Börsencrash",
+      "en": "stock market crash",
+      "artikel": "der",
+      "example": "Der Börsencrash von 2008 war historisch."
+    },
+    {
+      "de": "die Marktkapitalisierung",
+      "en": "market capitalization",
+      "artikel": "die",
+      "example": "Die Marktkapitalisierung des Unternehmens stieg deutlich."
+    },
+    {
+      "de": "der Investor",
+      "en": "investor (male)",
+      "artikel": "der",
+      "example": "Der Investor kaufte einen großen Aktienanteil."
+    },
+    {
+      "de": "die Investorin",
+      "en": "investor (female)",
+      "artikel": "die",
+      "example": "Die Investorin analysiert jedes Risiko genau."
+    },
+    {
+      "de": "der Hedgefonds",
+      "en": "hedge fund",
+      "artikel": "der",
+      "example": "Der Hedgefonds verfolgt eine aggressive Strategie."
+    },
+    {
+      "de": "die Dividende",
+      "en": "dividend",
+      "artikel": "die",
+      "example": "Das Unternehmen zahlt jährlich Dividende."
+    },
+    {
+      "de": "das Wertpapier",
+      "en": "security (financial)",
+      "artikel": "das",
+      "example": "Dieses Wertpapier gilt als risikoarm."
+    },
+    {
+      "de": "der Broker",
+      "en": "broker",
+      "artikel": "der",
+      "example": "Der Broker führte die Transaktion aus."
+    },
+    {
+      "de": "die Kursschwankung",
+      "en": "price fluctuation",
+      "artikel": "die",
+      "example": "Kursschwankungen sind an der Börse normal."
     }
   ]
 }

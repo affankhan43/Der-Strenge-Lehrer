@@ -1,32 +1,108 @@
 {
   "day": 110,
-  "topic": "Persönliche Entwicklung",
+  "topic": "Verben: Trennbare & untrennbare Präfixe",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "anrufen (trennbar)",
+      "en": "to call (separable)",
+      "example": "Ich rufe dich später an."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "aufstehen (trennbar)",
+      "en": "to get up (separable)",
+      "example": "Ich stehe um sieben Uhr auf."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "einkaufen (trennbar)",
+      "en": "to shop (separable)",
+      "example": "Ich kaufe morgen ein."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "mitkommen (trennbar)",
+      "en": "to come along (separable)",
+      "example": "Kommst du mit?"
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "vorbereiten (trennbar)",
+      "en": "to prepare (separable)",
+      "example": "Ich bereite das Essen vor."
+    },
+    {
+      "de": "zumachen (trennbar)",
+      "en": "to close (separable)",
+      "example": "Mach bitte das Fenster zu."
+    },
+    {
+      "de": "aufmachen (trennbar)",
+      "en": "to open (separable)",
+      "example": "Mach die Tür auf."
+    },
+    {
+      "de": "mitnehmen (trennbar)",
+      "en": "to take along (separable)",
+      "example": "Nimm einen Regenschirm mit."
+    },
+    {
+      "de": "weggehen (trennbar)",
+      "en": "to go away (separable)",
+      "example": "Er geht früh weg."
+    },
+    {
+      "de": "zurückkommen (trennbar)",
+      "en": "to come back (separable)",
+      "example": "Ich komme bald zurück."
+    },
+    {
+      "de": "verstehen (untrennbar)",
+      "en": "to understand (inseparable)",
+      "example": "Ich verstehe die Aufgabe."
+    },
+    {
+      "de": "bezahlen (untrennbar)",
+      "en": "to pay (inseparable)",
+      "example": "Ich bezahle die Rechnung."
+    },
+    {
+      "de": "besuchen (untrennbar)",
+      "en": "to visit (inseparable)",
+      "example": "Ich besuche meine Oma."
+    },
+    {
+      "de": "erklären (untrennbar)",
+      "en": "to explain (inseparable)",
+      "example": "Kannst du mir das erklären?"
+    },
+    {
+      "de": "entscheiden (untrennbar)",
+      "en": "to decide (inseparable)",
+      "example": "Ich entscheide mich für diese Option."
+    },
+    {
+      "de": "gefallen (untrennbar)",
+      "en": "to please / like (inseparable)",
+      "example": "Das Kleid gefällt mir sehr."
+    },
+    {
+      "de": "die Vorsilbe",
+      "en": "prefix",
+      "artikel": "die",
+      "example": "Die Vorsilbe ändert die Bedeutung."
+    },
+    {
+      "de": "trennbar",
+      "en": "separable",
+      "example": "Diese Verben sind trennbar."
+    },
+    {
+      "de": "untrennbar",
+      "en": "inseparable",
+      "example": "Diese Verben sind untrennbar."
+    },
+    {
+      "de": "die Verbstellung",
+      "en": "verb position (grammar)",
+      "artikel": "die",
+      "example": "Die Verbstellung im Satz ist wichtig."
     }
-  ],
-  "_note": "Add 20 words about 'Persönliche Entwicklung'. Format: {de, en, example}"
+  ]
 }

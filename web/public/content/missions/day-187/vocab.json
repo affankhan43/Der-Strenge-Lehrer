@@ -1,51 +1,126 @@
 {
   "day": 187,
-  "level": "B2.1",
-  "topic": "Graduierung",
+  "topic": "Wissenschaftstheorie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Wissenschaftstheorie",
+      "en": "philosophy of science",
+      "artikel": "die",
+      "example": "Wissenschaftstheorie untersucht, wie Wissen entsteht."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Falsifizierbarkeit",
+      "en": "falsifiability",
+      "artikel": "die",
+      "example": "Falsifizierbarkeit ist ein Kriterium wissenschaftlicher Theorien."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das Paradigma",
+      "en": "paradigm",
+      "artikel": "das",
+      "example": "Ein neues Paradigma veränderte die Forschung."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "der Paradigmenwechsel",
+      "en": "paradigm shift",
+      "artikel": "der",
+      "example": "Der Paradigmenwechsel war revolutionär."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die induktive Methode",
+      "en": "inductive method",
+      "artikel": "die",
+      "example": "Die induktive Methode schließt vom Einzelfall aufs Allgemeine."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die deduktive Methode",
+      "en": "deductive method",
+      "artikel": "die",
+      "example": "Die deduktive Methode geht vom Allgemeinen aus."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die empirische Forschung",
+      "en": "empirical research",
+      "artikel": "die",
+      "example": "Empirische Forschung basiert auf Beobachtung."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Reproduzierbarkeit",
+      "en": "reproducibility",
+      "artikel": "die",
+      "example": "Reproduzierbarkeit ist zentral für wissenschaftliche Ergebnisse."
+    },
+    {
+      "de": "die wissenschaftliche Methode",
+      "en": "scientific method",
+      "artikel": "die",
+      "example": "Die wissenschaftliche Methode folgt klaren Schritten."
+    },
+    {
+      "de": "die Objektivität",
+      "en": "objectivity",
+      "artikel": "die",
+      "example": "Objektivität ist ein zentrales wissenschaftliches Ideal."
+    },
+    {
+      "de": "die Subjektivität",
+      "en": "subjectivity",
+      "artikel": "die",
+      "example": "Subjektivität kann Ergebnisse verzerren."
+    },
+    {
+      "de": "die Validität",
+      "en": "validity",
+      "artikel": "die",
+      "example": "Die Validität der Studie wurde bestätigt."
+    },
+    {
+      "de": "die Reliabilität",
+      "en": "reliability",
+      "artikel": "die",
+      "example": "Die Reliabilität des Tests ist hoch."
+    },
+    {
+      "de": "das Experimentdesign",
+      "en": "experimental design",
+      "artikel": "das",
+      "example": "Das Experimentdesign war methodisch sauber."
+    },
+    {
+      "de": "die Kontrollgruppe",
+      "en": "control group",
+      "artikel": "die",
+      "example": "Die Kontrollgruppe erhielt kein Medikament."
+    },
+    {
+      "de": "die Stichprobe",
+      "en": "sample (research)",
+      "artikel": "die",
+      "example": "Die Stichprobe war repräsentativ."
+    },
+    {
+      "de": "die wissenschaftliche Skepsis",
+      "en": "scientific skepticism",
+      "artikel": "die",
+      "example": "Wissenschaftliche Skepsis ist gesund und notwendig."
+    },
+    {
+      "de": "die Erkenntnistheorie",
+      "en": "epistemology",
+      "artikel": "die",
+      "example": "Erkenntnistheorie fragt, was wir wissen können."
+    },
+    {
+      "de": "die Grundlagenforschung",
+      "en": "basic research",
+      "artikel": "die",
+      "example": "Grundlagenforschung schafft neues Wissen ohne direkten Nutzen."
+    },
+    {
+      "de": "die angewandte Forschung",
+      "en": "applied research",
+      "artikel": "die",
+      "example": "Angewandte Forschung löst konkrete Probleme."
     }
   ]
 }

@@ -1,51 +1,125 @@
 {
   "day": 217,
-  "level": "B2.2",
-  "topic": "Redewendungen",
+  "topic": "Umweltrecht",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Umweltrecht",
+      "en": "environmental law",
+      "artikel": "das",
+      "example": "Umweltrecht schützt Natur und Ressourcen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Umweltverträglichkeitsprüfung",
+      "en": "environmental impact assessment",
+      "artikel": "die",
+      "example": "Die Umweltverträglichkeitsprüfung ist vor dem Bau vorgeschrieben."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das Verursacherprinzip",
+      "en": "polluter pays principle",
+      "artikel": "das",
+      "example": "Das Verursacherprinzip verpflichtet Firmen zur Schadensbegrenzung."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Emissionsgrenzwerte",
+      "en": "emission limits",
+      "artikel": "die",
+      "example": "Emissionsgrenzwerte wurden gesetzlich verschärft."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Umweltauflage",
+      "en": "environmental requirement",
+      "artikel": "die",
+      "example": "Die Umweltauflage begrenzt den CO2-Ausstoß."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das Naturschutzgebiet",
+      "en": "nature reserve",
+      "artikel": "das",
+      "example": "Das Naturschutzgebiet ist streng geschützt."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Umweltverschmutzung sanktionieren",
+      "en": "to sanction environmental pollution",
+      "example": "Der Staat sanktioniert Umweltverschmutzung mit hohen Strafen."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "das Artenschutzgesetz",
+      "en": "species protection law",
+      "artikel": "das",
+      "example": "Das Artenschutzgesetz schützt bedrohte Tierarten."
+    },
+    {
+      "de": "die Umweltklage",
+      "en": "environmental lawsuit",
+      "artikel": "die",
+      "example": "Umweltverbände reichten eine Umweltklage ein."
+    },
+    {
+      "de": "die Emissionshandelssystem",
+      "en": "emissions trading system",
+      "artikel": "das",
+      "example": "Das Emissionshandelssystem reguliert den CO2-Ausstoß."
+    },
+    {
+      "de": "die Umweltbehörde",
+      "en": "environmental authority",
+      "artikel": "die",
+      "example": "Die Umweltbehörde überwacht die Einhaltung der Gesetze."
+    },
+    {
+      "de": "die gesetzliche Umweltpflicht",
+      "en": "legal environmental obligation",
+      "artikel": "die",
+      "example": "Unternehmen unterliegen gesetzlicher Umweltpflicht."
+    },
+    {
+      "de": "die Grenzwertüberschreitung",
+      "en": "exceeding limits",
+      "artikel": "die",
+      "example": "Die Grenzwertüberschreitung führte zu einer Strafe."
+    },
+    {
+      "de": "das Umweltbundesamt",
+      "en": "federal environmental agency",
+      "artikel": "das",
+      "example": "Das Umweltbundesamt veröffentlicht jährliche Berichte."
+    },
+    {
+      "de": "die Umweltverbände",
+      "en": "environmental associations",
+      "artikel": "die",
+      "example": "Umweltverbände klagen häufig gegen Großprojekte."
+    },
+    {
+      "de": "die Nachhaltigkeitspflicht",
+      "en": "sustainability obligation",
+      "artikel": "die",
+      "example": "Die Nachhaltigkeitspflicht gilt für alle großen Unternehmen."
+    },
+    {
+      "de": "das Wasserrecht",
+      "en": "water law",
+      "artikel": "das",
+      "example": "Das Wasserrecht regelt die Nutzung von Gewässern."
+    },
+    {
+      "de": "die Bodenschutzverordnung",
+      "en": "soil protection regulation",
+      "artikel": "die",
+      "example": "Die Bodenschutzverordnung schützt landwirtschaftliche Flächen."
+    },
+    {
+      "de": "das Immissionsschutzgesetz",
+      "en": "pollution control act",
+      "artikel": "das",
+      "example": "Das Immissionsschutzgesetz begrenzt Lärm und Emissionen."
+    },
+    {
+      "de": "die rechtliche Durchsetzbarkeit (Umwelt)",
+      "en": "legal enforceability (environment)",
+      "artikel": "die",
+      "example": "Die rechtliche Durchsetzbarkeit von Umweltgesetzen ist entscheidend."
     }
   ]
 }

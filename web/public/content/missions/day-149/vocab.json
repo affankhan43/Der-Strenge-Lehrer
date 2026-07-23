@@ -1,0 +1,125 @@
+{
+  "day": 149,
+  "topic": "Raumfahrt & Astronomie",
+  "words": [
+    {
+      "de": "das Universum",
+      "en": "universe",
+      "artikel": "das",
+      "example": "Das Universum ist unendlich groß."
+    },
+    {
+      "de": "die Galaxie",
+      "en": "galaxy",
+      "artikel": "die",
+      "example": "Unsere Galaxie heißt Milchstraße."
+    },
+    {
+      "de": "der Planet",
+      "en": "planet",
+      "artikel": "der",
+      "example": "Die Erde ist ein bewohnbarer Planet."
+    },
+    {
+      "de": "der Stern",
+      "en": "star",
+      "artikel": "der",
+      "example": "Der nächste Stern ist die Sonne."
+    },
+    {
+      "de": "die Rakete",
+      "en": "rocket",
+      "artikel": "die",
+      "example": "Die Rakete startete erfolgreich."
+    },
+    {
+      "de": "der Astronaut",
+      "en": "astronaut (male)",
+      "artikel": "der",
+      "example": "Der Astronaut lebt monatelang im All."
+    },
+    {
+      "de": "die Astronautin",
+      "en": "astronaut (female)",
+      "artikel": "die",
+      "example": "Die Astronautin führte Experimente durch."
+    },
+    {
+      "de": "die Raumstation",
+      "en": "space station",
+      "artikel": "die",
+      "example": "Die Raumstation umkreist die Erde."
+    },
+    {
+      "de": "der Mond",
+      "en": "moon",
+      "artikel": "der",
+      "example": "Der Mond beeinflusst die Gezeiten."
+    },
+    {
+      "de": "die Umlaufbahn",
+      "en": "orbit",
+      "artikel": "die",
+      "example": "Der Satellit bewegt sich auf einer Umlaufbahn."
+    },
+    {
+      "de": "die Schwerelosigkeit",
+      "en": "weightlessness",
+      "artikel": "die",
+      "example": "In der Schwerelosigkeit schwebt alles."
+    },
+    {
+      "de": "die Marsmission",
+      "en": "Mars mission",
+      "artikel": "die",
+      "example": "Die Marsmission dauert mehrere Jahre."
+    },
+    {
+      "de": "die Sternwarte",
+      "en": "observatory",
+      "artikel": "die",
+      "example": "Die Sternwarte beobachtet ferne Galaxien."
+    },
+    {
+      "de": "das Teleskop",
+      "en": "telescope",
+      "artikel": "das",
+      "example": "Mit dem Teleskop sehen wir ferne Sterne."
+    },
+    {
+      "de": "das Sonnensystem",
+      "en": "solar system",
+      "artikel": "das",
+      "example": "Unser Sonnensystem hat acht Planeten."
+    },
+    {
+      "de": "das schwarze Loch",
+      "en": "black hole",
+      "artikel": "das",
+      "example": "Ein schwarzes Loch verschlingt sogar Licht."
+    },
+    {
+      "de": "außerirdisches Leben",
+      "en": "extraterrestrial life",
+      "example": "Gibt es außerirdisches Leben?"
+    },
+    {
+      "de": "die Erforschung des Weltalls",
+      "en": "exploration of space",
+      "artikel": "die",
+      "example": "Die Erforschung des Weltalls fasziniert viele Menschen."
+    },
+    {
+      "de": "die Sonnenfinsternis",
+      "en": "solar eclipse",
+      "artikel": "die",
+      "example": "Die Sonnenfinsternis war ein beeindruckendes Schauspiel."
+    },
+    {
+      "de": "der Meteorit",
+      "en": "meteorite",
+      "artikel": "der",
+      "example": "Ein Meteorit schlug in der Wüste ein."
+    }
+  ]
+}

@@ -1,51 +1,125 @@
 {
   "day": 201,
-  "level": "B2.2",
-  "topic": "Konjunktiv II Vergangenheit",
+  "topic": "Steuerrecht vertieft",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Steuerrecht",
+      "en": "tax law",
+      "artikel": "das",
+      "example": "Steuerrecht regelt die Besteuerung von Einkommen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Steuerpflicht",
+      "en": "tax liability",
+      "artikel": "die",
+      "example": "Jeder Bürger unterliegt der Steuerpflicht."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Steuerklasse",
+      "en": "tax bracket / class",
+      "artikel": "die",
+      "example": "Die Steuerklasse beeinflusst die Höhe der Abzüge."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Umsatzsteuer",
+      "en": "value-added tax",
+      "artikel": "die",
+      "example": "Die Umsatzsteuer beträgt in Deutschland 19 Prozent."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Körperschaftsteuer",
+      "en": "corporate tax",
+      "artikel": "die",
+      "example": "Die Körperschaftsteuer betrifft Unternehmen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Gewerbesteuer",
+      "en": "trade tax",
+      "artikel": "die",
+      "example": "Die Gewerbesteuer variiert von Gemeinde zu Gemeinde."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Steuerhinterziehung",
+      "en": "tax evasion",
+      "artikel": "die",
+      "example": "Steuerhinterziehung ist eine Straftat."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Steuerbelastung",
+      "en": "tax burden",
+      "artikel": "die",
+      "example": "Die Steuerbelastung ist in manchen Ländern hoch."
+    },
+    {
+      "de": "der Steuersatz",
+      "en": "tax rate",
+      "artikel": "der",
+      "example": "Der Steuersatz steigt mit dem Einkommen."
+    },
+    {
+      "de": "die Steuerfreiheit",
+      "en": "tax exemption",
+      "artikel": "die",
+      "example": "Bestimmte Einkommen genießen Steuerfreiheit."
+    },
+    {
+      "de": "die Steuerprüfung",
+      "en": "tax audit",
+      "artikel": "die",
+      "example": "Die Firma wurde einer Steuerprüfung unterzogen."
+    },
+    {
+      "de": "die Betriebsausgabe",
+      "en": "business expense",
+      "artikel": "die",
+      "example": "Betriebsausgaben mindern den zu versteuernden Gewinn."
+    },
+    {
+      "de": "die Abschreibung",
+      "en": "depreciation",
+      "artikel": "die",
+      "example": "Die Abschreibung verteilt die Kosten über Jahre."
+    },
+    {
+      "de": "die Doppelbesteuerung",
+      "en": "double taxation",
+      "artikel": "die",
+      "example": "Ein Abkommen verhindert Doppelbesteuerung."
+    },
+    {
+      "de": "das Steuerabkommen",
+      "en": "tax treaty",
+      "artikel": "das",
+      "example": "Das Steuerabkommen regelt grenzüberschreitende Einkünfte."
+    },
+    {
+      "de": "die Steuerlast senken",
+      "en": "to reduce the tax burden",
+      "example": "Man kann die Steuerlast legal senken."
+    },
+    {
+      "de": "das Steuerschlupfloch",
+      "en": "tax loophole",
+      "artikel": "das",
+      "example": "Dieses Steuerschlupfloch wurde geschlossen."
+    },
+    {
+      "de": "die Progressivsteuer",
+      "en": "progressive tax",
+      "artikel": "die",
+      "example": "Die Einkommensteuer ist eine Progressivsteuer."
+    },
+    {
+      "de": "die Kapitalertragsteuer",
+      "en": "capital gains tax",
+      "artikel": "die",
+      "example": "Kapitalertragsteuer wird auf Zinsen erhoben."
+    },
+    {
+      "de": "das Steuerjahr",
+      "en": "tax year",
+      "artikel": "das",
+      "example": "Das Steuerjahr endet am 31. Dezember."
     }
   ]
 }

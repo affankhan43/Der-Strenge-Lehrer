@@ -1,32 +1,119 @@
 {
   "day": 62,
-  "topic": "Arztbesuch & Symptome",
+  "topic": "Umweltschutz: Vertiefung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Mülltrennung",
+      "en": "waste separation",
+      "artikel": "die",
+      "example": "Mülltrennung ist in Deutschland Pflicht."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Biomüll",
+      "en": "organic waste",
+      "artikel": "der",
+      "example": "Essensreste kommen in den Biomüll."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Restmüll",
+      "en": "residual waste",
+      "artikel": "der",
+      "example": "Der Restmüll wird einmal pro Woche abgeholt."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Verpackung",
+      "en": "packaging",
+      "artikel": "die",
+      "example": "Zu viel Verpackung ist schlecht für die Umwelt."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "vermeiden",
+      "en": "to avoid",
+      "example": "Wir vermeiden Plastiktüten."
+    },
+    {
+      "de": "wiederverwenden",
+      "en": "to reuse",
+      "example": "Ich wiederverwende alte Gläser."
+    },
+    {
+      "de": "kompostieren",
+      "en": "to compost",
+      "example": "Wir kompostieren unsere Gemüsereste."
+    },
+    {
+      "de": "der Komposthaufen",
+      "en": "compost heap",
+      "artikel": "der",
+      "example": "Der Komposthaufen ist im Garten."
+    },
+    {
+      "de": "umweltfreundlich",
+      "en": "environmentally friendly",
+      "example": "Dieses Produkt ist umweltfreundlich."
+    },
+    {
+      "de": "der ökologische Fußabdruck",
+      "en": "ecological footprint",
+      "artikel": "der",
+      "example": "Wir wollen unseren ökologischen Fußabdruck reduzieren."
+    },
+    {
+      "de": "die Emission",
+      "en": "emission",
+      "artikel": "die",
+      "example": "Die Emissionen müssen sinken."
+    },
+    {
+      "de": "der Treibhauseffekt",
+      "en": "greenhouse effect",
+      "artikel": "der",
+      "example": "Der Treibhauseffekt erwärmt die Erde."
+    },
+    {
+      "de": "erneuerbar",
+      "en": "renewable",
+      "example": "Wir setzen auf erneuerbare Energien."
+    },
+    {
+      "de": "die Ressource",
+      "en": "resource",
+      "artikel": "die",
+      "example": "Wasser ist eine wichtige Ressource."
+    },
+    {
+      "de": "Energie sparen",
+      "en": "to save energy",
+      "example": "Wir sparen zu Hause Energie."
+    },
+    {
+      "de": "der Plastikmüll",
+      "en": "plastic waste",
+      "artikel": "der",
+      "example": "Der Plastikmüll im Meer ist ein großes Problem."
+    },
+    {
+      "de": "die Windkraft",
+      "en": "wind power",
+      "artikel": "die",
+      "example": "Die Windkraft liefert sauberen Strom."
+    },
+    {
+      "de": "die Wasserkraft",
+      "en": "hydropower",
+      "artikel": "die",
+      "example": "Die Wasserkraft nutzt die Kraft der Flüsse."
+    },
+    {
+      "de": "die Luftverschmutzung",
+      "en": "air pollution",
+      "artikel": "die",
+      "example": "Die Luftverschmutzung ist in Großstädten hoch."
+    },
+    {
+      "de": "bewusst leben",
+      "en": "to live consciously",
+      "example": "Wir versuchen, bewusster zu leben."
     }
-  ],
-  "_note": "Add 20 words about 'Arztbesuch & Symptome'. Format: {de, en, example}"
+  ]
 }

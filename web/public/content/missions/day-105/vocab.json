@@ -1,32 +1,116 @@
 {
   "day": 105,
-  "topic": "Ethik & Moral",
+  "topic": "Verkehrsmittel im Vergleich",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "umweltschonend",
+      "en": "environmentally friendly (transport)",
+      "example": "Der Zug ist umweltschonender als das Auto."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Emissionen (Verkehr)",
+      "en": "emissions (transport)",
+      "artikel": "die",
+      "example": "Elektroautos haben keine direkten Emissionen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Reisezeit",
+      "en": "travel time",
+      "artikel": "die",
+      "example": "Die Reisezeit mit dem Zug beträgt drei Stunden."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Reisekosten",
+      "en": "travel costs",
+      "artikel": "die",
+      "example": "Die Reisekosten sind mit dem Flugzeug höher."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "bequemer sein",
+      "en": "to be more comfortable",
+      "example": "Der Zug ist bequemer als der Bus."
+    },
+    {
+      "de": "die Pendlerin",
+      "en": "commuter (female)",
+      "artikel": "die",
+      "example": "Sie ist Pendlerin zwischen zwei Städten."
+    },
+    {
+      "de": "der Pendler",
+      "en": "commuter (male)",
+      "artikel": "der",
+      "example": "Viele Pendler nutzen die Bahn."
+    },
+    {
+      "de": "pendeln",
+      "en": "to commute",
+      "example": "Ich pendle jeden Tag eine Stunde zur Arbeit."
+    },
+    {
+      "de": "die Verbindung (Zug)",
+      "en": "connection (train)",
+      "artikel": "die",
+      "example": "Es gibt eine direkte Verbindung nach Berlin."
+    },
+    {
+      "de": "umsteigefrei",
+      "en": "without changing (trains/buses)",
+      "example": "Diese Verbindung ist umsteigefrei."
+    },
+    {
+      "de": "das Verkehrsmittel wählen",
+      "en": "to choose a means of transport",
+      "example": "Ich wähle je nach Wetter das Verkehrsmittel."
+    },
+    {
+      "de": "nachhaltig reisen",
+      "en": "to travel sustainably",
+      "example": "Wir versuchen, nachhaltig zu reisen."
+    },
+    {
+      "de": "der ökologische Vorteil",
+      "en": "ecological advantage",
+      "artikel": "der",
+      "example": "Der ökologische Vorteil des Zuges ist klar."
+    },
+    {
+      "de": "die Flugscham",
+      "en": "flight shame",
+      "example": "Viele Menschen spüren Flugscham."
+    },
+    {
+      "de": "die Alternative (Verkehr)",
+      "en": "alternative (transport)",
+      "artikel": "die",
+      "example": "Der Zug ist eine gute Alternative zum Flugzeug."
+    },
+    {
+      "de": "praktikabel",
+      "en": "practical / feasible",
+      "example": "Diese Lösung ist nicht praktikabel."
+    },
+    {
+      "de": "der Preisunterschied",
+      "en": "price difference",
+      "artikel": "der",
+      "example": "Der Preisunterschied ist erheblich."
+    },
+    {
+      "de": "günstiger sein",
+      "en": "to be cheaper",
+      "example": "Der Bus ist günstiger als der Zug."
+    },
+    {
+      "de": "die Fahrtdauer",
+      "en": "journey duration",
+      "artikel": "die",
+      "example": "Die Fahrtdauer hängt vom Verkehr ab."
+    },
+    {
+      "de": "abwägen",
+      "en": "to weigh up / consider",
+      "example": "Ich wäge die Vor- und Nachteile ab."
     }
-  ],
-  "_note": "Add 20 words about 'Ethik & Moral'. Format: {de, en, example}"
+  ]
 }

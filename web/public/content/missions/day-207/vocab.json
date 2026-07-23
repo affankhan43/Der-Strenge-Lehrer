@@ -1,51 +1,125 @@
 {
   "day": 207,
-  "level": "B2.2",
-  "topic": "Adversativsätze",
+  "topic": "Makroökonomie: Grundlagen",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Makroökonomie",
+      "en": "macroeconomics",
+      "artikel": "die",
+      "example": "Makroökonomie untersucht die Gesamtwirtschaft."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "das Bruttoinlandsprodukt",
+      "en": "gross domestic product",
+      "artikel": "das",
+      "example": "Das Bruttoinlandsprodukt misst die Wirtschaftsleistung."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Inflation",
+      "en": "inflation",
+      "artikel": "die",
+      "example": "Die Inflation stieg im letzten Jahr deutlich."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Deflation",
+      "en": "deflation",
+      "artikel": "die",
+      "example": "Deflation kann die Wirtschaft ebenfalls schädigen."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Zentralbank",
+      "en": "central bank",
+      "artikel": "die",
+      "example": "Die Zentralbank steuert den Leitzins."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "der Leitzins",
+      "en": "key interest rate",
+      "artikel": "der",
+      "example": "Der Leitzins wurde erneut erhöht."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Geldpolitik",
+      "en": "monetary policy",
+      "artikel": "die",
+      "example": "Die Geldpolitik beeinflusst die Inflation."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Fiskalpolitik",
+      "en": "fiscal policy",
+      "artikel": "die",
+      "example": "Fiskalpolitik steuert Staatsausgaben und Steuern."
+    },
+    {
+      "de": "die Konjunktur",
+      "en": "economic cycle / business cycle",
+      "artikel": "die",
+      "example": "Die Konjunktur erholt sich langsam."
+    },
+    {
+      "de": "die Rezession",
+      "en": "recession",
+      "artikel": "die",
+      "example": "Das Land befindet sich in einer Rezession."
+    },
+    {
+      "de": "der Konjunkturzyklus",
+      "en": "business cycle",
+      "artikel": "der",
+      "example": "Der Konjunkturzyklus hat vier Phasen."
+    },
+    {
+      "de": "die Staatsverschuldung",
+      "en": "national debt",
+      "artikel": "die",
+      "example": "Die Staatsverschuldung stieg während der Krise."
+    },
+    {
+      "de": "das Haushaltsdefizit",
+      "en": "budget deficit",
+      "artikel": "das",
+      "example": "Das Haushaltsdefizit muss reduziert werden."
+    },
+    {
+      "de": "die Handelsbilanz",
+      "en": "trade balance",
+      "artikel": "die",
+      "example": "Die Handelsbilanz zeigt einen Überschuss."
+    },
+    {
+      "de": "der Wechselkurs",
+      "en": "exchange rate",
+      "artikel": "der",
+      "example": "Der Wechselkurs schwankt täglich."
+    },
+    {
+      "de": "die Arbeitslosenquote (Makro)",
+      "en": "unemployment rate (macro)",
+      "artikel": "die",
+      "example": "Die Arbeitslosenquote sank auf ein neues Tief."
+    },
+    {
+      "de": "das Volkseinkommen",
+      "en": "national income",
+      "artikel": "das",
+      "example": "Das Volkseinkommen wuchs im letzten Jahrzehnt."
+    },
+    {
+      "de": "die gesamtwirtschaftliche Nachfrage",
+      "en": "aggregate demand",
+      "artikel": "die",
+      "example": "Die gesamtwirtschaftliche Nachfrage steigt saisonal."
+    },
+    {
+      "de": "das Wirtschaftswachstum steuern",
+      "en": "to steer economic growth",
+      "example": "Die Regierung versucht, das Wirtschaftswachstum zu steuern."
+    },
+    {
+      "de": "die volkswirtschaftliche Analyse",
+      "en": "macroeconomic analysis",
+      "artikel": "die",
+      "example": "Die volkswirtschaftliche Analyse zeigt klare Trends."
     }
   ]
 }

@@ -1,32 +1,115 @@
 {
   "day": 66,
-  "topic": "Podcasts & Radio",
+  "topic": "Konflikte & Versöhnung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Konflikt",
+      "en": "conflict",
+      "artikel": "der",
+      "example": "Der Konflikt dauert schon lange."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Missverständnis",
+      "en": "misunderstanding",
+      "artikel": "das",
+      "example": "Das war nur ein Missverständnis."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "missverstehen",
+      "en": "to misunderstand",
+      "example": "Ich habe dich missverstanden."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "sich beschweren (Konflikt)",
+      "en": "to complain",
+      "example": "Er beschwert sich oft über kleine Dinge."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Beschwerde (Konflikt)",
+      "en": "complaint",
+      "artikel": "die",
+      "example": "Ihre Beschwerde war berechtigt."
+    },
+    {
+      "de": "beleidigen",
+      "en": "to insult",
+      "example": "Er wollte mich nicht beleidigen."
+    },
+    {
+      "de": "die Beleidigung",
+      "en": "insult",
+      "artikel": "die",
+      "example": "Das war eine grobe Beleidigung."
+    },
+    {
+      "de": "sich entschuldigen",
+      "en": "to apologize",
+      "example": "Ich möchte mich bei dir entschuldigen."
+    },
+    {
+      "de": "verzeihen",
+      "en": "to forgive",
+      "example": "Kannst du mir verzeihen?"
+    },
+    {
+      "de": "die Verzeihung",
+      "en": "forgiveness",
+      "artikel": "die",
+      "example": "Ich bitte um Verzeihung."
+    },
+    {
+      "de": "der Kompromiss",
+      "en": "compromise",
+      "artikel": "der",
+      "example": "Wir haben einen Kompromiss gefunden."
+    },
+    {
+      "de": "nachgeben",
+      "en": "to give in",
+      "example": "Am Ende hat er nachgegeben."
+    },
+    {
+      "de": "die Lösung",
+      "en": "solution",
+      "artikel": "die",
+      "example": "Wir brauchen eine gute Lösung."
+    },
+    {
+      "de": "lösen (Problem)",
+      "en": "to solve",
+      "example": "Wir haben das Problem gemeinsam gelöst."
+    },
+    {
+      "de": "vermitteln",
+      "en": "to mediate",
+      "example": "Ein Freund hat zwischen uns vermittelt."
+    },
+    {
+      "de": "die Spannung",
+      "en": "tension",
+      "artikel": "die",
+      "example": "Die Spannung zwischen ihnen war spürbar."
+    },
+    {
+      "de": "beruhigen",
+      "en": "to calm down (someone)",
+      "example": "Ich versuche, sie zu beruhigen."
+    },
+    {
+      "de": "sich beruhigen",
+      "en": "to calm down (oneself)",
+      "example": "Beruhig dich, es ist alles in Ordnung."
+    },
+    {
+      "de": "das Verständnis",
+      "en": "understanding",
+      "artikel": "das",
+      "example": "Ich habe Verständnis für deine Situation."
+    },
+    {
+      "de": "respektieren",
+      "en": "to respect",
+      "example": "Wir respektieren die Meinung des anderen."
     }
-  ],
-  "_note": "Add 20 words about 'Podcasts & Radio'. Format: {de, en, example}"
+  ]
 }

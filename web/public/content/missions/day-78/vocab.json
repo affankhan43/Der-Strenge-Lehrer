@@ -1,32 +1,110 @@
 {
   "day": 78,
-  "topic": "Export & globaler Handel",
+  "topic": "Small Talk & Höflichkeit",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "Wie geht's?",
+      "en": "How's it going?",
+      "example": "Wie geht's dir denn so?"
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "Was gibt's Neues?",
+      "en": "What's new?",
+      "example": "Hey, was gibt's Neues bei dir?"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "Schön, dich zu sehen!",
+      "en": "Nice to see you!",
+      "example": "Schön, dich endlich wieder zu sehen!"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "Lange nicht gesehen!",
+      "en": "Long time no see!",
+      "example": "Lange nicht gesehen, wie geht es dir?"
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "das Wetter (Gesprächsthema)",
+      "en": "the weather (small talk topic)",
+      "artikel": "das",
+      "example": "Schönes Wetter heute, oder?"
+    },
+    {
+      "de": "höflich",
+      "en": "polite",
+      "example": "Er ist immer sehr höflich."
+    },
+    {
+      "de": "unhöflich",
+      "en": "impolite",
+      "example": "Es war unhöflich, so zu antworten."
+    },
+    {
+      "de": "die Umgangsformen",
+      "en": "manners",
+      "artikel": "die",
+      "example": "Gute Umgangsformen sind wichtig."
+    },
+    {
+      "de": "sich vorstellen (Person)",
+      "en": "to introduce oneself",
+      "example": "Darf ich mich kurz vorstellen?"
+    },
+    {
+      "de": "die Höflichkeitsform",
+      "en": "polite form (Sie)",
+      "artikel": "die",
+      "example": "Benutze die Höflichkeitsform mit deinem Chef."
+    },
+    {
+      "de": "das Kompliment",
+      "en": "compliment",
+      "artikel": "das",
+      "example": "Danke für das nette Kompliment."
+    },
+    {
+      "de": "ein Kompliment machen",
+      "en": "to pay a compliment",
+      "example": "Er macht ihr oft Komplimente."
+    },
+    {
+      "de": "sich bedanken",
+      "en": "to thank (someone)",
+      "example": "Ich möchte mich herzlich bedanken."
+    },
+    {
+      "de": "es tut mir leid",
+      "en": "I'm sorry",
+      "example": "Es tut mir leid, dass ich zu spät bin."
+    },
+    {
+      "de": "kein Problem",
+      "en": "no problem",
+      "example": "Kein Problem, das macht nichts."
+    },
+    {
+      "de": "gerne (Antwort)",
+      "en": "you're welcome / gladly",
+      "example": "Gerne, das mache ich doch gern."
+    },
+    {
+      "de": "Alles klar!",
+      "en": "Got it! / All good!",
+      "example": "Alles klar, bis später!"
+    },
+    {
+      "de": "Viel Glück!",
+      "en": "Good luck!",
+      "example": "Viel Glück bei deiner Prüfung!"
+    },
+    {
+      "de": "Gute Besserung!",
+      "en": "Get well soon!",
+      "example": "Gute Besserung, ich hoffe, es geht dir bald besser."
+    },
+    {
+      "de": "Schönen Tag noch!",
+      "en": "Have a nice day!",
+      "example": "Schönen Tag noch und bis bald!"
     }
-  ],
-  "_note": "Add 20 words about 'Export & globaler Handel'. Format: {de, en, example}"
+  ]
 }

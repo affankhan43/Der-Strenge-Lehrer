@@ -1,51 +1,118 @@
 {
   "day": 183,
-  "level": "B2.1",
-  "topic": "Wortbildung Nomen",
+  "topic": "Konfliktmanagement im Team",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Konfliktmanagement",
+      "en": "conflict management",
+      "artikel": "das",
+      "example": "Konfliktmanagement verhindert eskalierende Streits."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Teamkonflikt",
+      "en": "team conflict",
+      "artikel": "der",
+      "example": "Der Teamkonflikt wurde offen angesprochen."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Eskalation vermeiden",
+      "en": "to avoid escalation",
+      "example": "Wir vermeiden eine Eskalation durch frühes Eingreifen."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Konfliktursache",
+      "en": "root cause of conflict",
+      "artikel": "die",
+      "example": "Die Konfliktursache lag in unklaren Rollen."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das klärende Gespräch",
+      "en": "clarifying conversation",
+      "artikel": "das",
+      "example": "Ein klärendes Gespräch löste das Missverständnis."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Mediation",
+      "en": "mediation",
+      "artikel": "die",
+      "example": "Die Mediation half beiden Seiten weiterzukommen."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "der Mediator",
+      "en": "mediator (male)",
+      "artikel": "der",
+      "example": "Der Mediator moderierte das Gespräch neutral."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Mediatorin",
+      "en": "mediator (female)",
+      "artikel": "die",
+      "example": "Die Mediatorin half, eine Lösung zu finden."
+    },
+    {
+      "de": "die Konfliktlösung finden",
+      "en": "to find a conflict resolution",
+      "example": "Wir haben gemeinsam eine Konfliktlösung gefunden."
+    },
+    {
+      "de": "die Interessen ausgleichen",
+      "en": "to balance interests",
+      "example": "Wir gleichen die Interessen beider Seiten aus."
+    },
+    {
+      "de": "die Sichtweisen abgleichen",
+      "en": "to reconcile viewpoints",
+      "example": "Wir gleichen unsere Sichtweisen im Gespräch ab."
+    },
+    {
+      "de": "die konstruktive Kritik üben",
+      "en": "to practice constructive criticism",
+      "example": "Übe Kritik immer konstruktiv."
+    },
+    {
+      "de": "die Teamdynamik verbessern",
+      "en": "to improve team dynamics",
+      "example": "Ein Workshop verbesserte die Teamdynamik."
+    },
+    {
+      "de": "die offene Kommunikationskultur",
+      "en": "open communication culture",
+      "artikel": "die",
+      "example": "Eine offene Kommunikationskultur beugt Konflikten vor."
+    },
+    {
+      "de": "das Konfliktpotenzial",
+      "en": "conflict potential",
+      "artikel": "das",
+      "example": "Das Konfliktpotenzial in diesem Projekt war hoch."
+    },
+    {
+      "de": "die Rollen klären",
+      "en": "to clarify roles",
+      "example": "Wir klären die Rollen zu Beginn des Projekts."
+    },
+    {
+      "de": "die Konfliktscheu",
+      "en": "conflict avoidance",
+      "artikel": "die",
+      "example": "Konfliktscheu verschlimmert oft das Problem."
+    },
+    {
+      "de": "direkt ansprechen (Konflikt)",
+      "en": "to address directly (conflict)",
+      "example": "Sprich das Problem direkt an."
+    },
+    {
+      "de": "die Deeskalationstechnik",
+      "en": "de-escalation technique",
+      "artikel": "die",
+      "example": "Diese Deeskalationstechnik beruhigt die Situation."
+    },
+    {
+      "de": "die Konfliktkultur",
+      "en": "conflict culture",
+      "artikel": "die",
+      "example": "Eine gesunde Konfliktkultur stärkt das Team."
     }
   ]
 }

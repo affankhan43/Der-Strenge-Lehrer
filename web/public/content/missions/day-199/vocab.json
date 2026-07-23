@@ -1,51 +1,126 @@
 {
   "day": 199,
-  "level": "B2.2",
-  "topic": "Doppelter Infinitiv",
+  "topic": "Verfassungsrecht & Grundrechte",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Verfassungsrecht",
+      "en": "constitutional law",
+      "artikel": "das",
+      "example": "Verfassungsrecht schützt die Grundordnung des Staates."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Grundrechte",
+      "en": "fundamental rights",
+      "artikel": "die",
+      "example": "Die Grundrechte sind im Grundgesetz verankert."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Menschenwürde",
+      "en": "human dignity",
+      "artikel": "die",
+      "example": "Die Menschenwürde ist unantastbar."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Meinungsfreiheit",
+      "en": "freedom of speech",
+      "artikel": "die",
+      "example": "Meinungsfreiheit ist ein zentrales Grundrecht."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Versammlungsfreiheit",
+      "en": "freedom of assembly",
+      "artikel": "die",
+      "example": "Versammlungsfreiheit erlaubt friedliche Demonstrationen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Religionsfreiheit",
+      "en": "freedom of religion",
+      "artikel": "die",
+      "example": "Religionsfreiheit schützt alle Glaubensrichtungen."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Gewaltenteilung",
+      "en": "separation of powers",
+      "artikel": "die",
+      "example": "Gewaltenteilung verhindert Machtmissbrauch."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Legislative",
+      "en": "legislature",
+      "artikel": "die",
+      "example": "Die Legislative erlässt neue Gesetze."
+    },
+    {
+      "de": "die Exekutive",
+      "en": "executive branch",
+      "artikel": "die",
+      "example": "Die Exekutive setzt die Gesetze um."
+    },
+    {
+      "de": "die Judikative",
+      "en": "judiciary",
+      "artikel": "die",
+      "example": "Die Judikative überprüft die Rechtmäßigkeit von Gesetzen."
+    },
+    {
+      "de": "das Bundesverfassungsgericht",
+      "en": "Federal Constitutional Court",
+      "artikel": "das",
+      "example": "Das Bundesverfassungsgericht prüft Gesetze auf Verfassungskonformität."
+    },
+    {
+      "de": "die Verfassungsklage",
+      "en": "constitutional complaint",
+      "artikel": "die",
+      "example": "Sie reichte eine Verfassungsklage ein."
+    },
+    {
+      "de": "die Grundrechtsverletzung",
+      "en": "violation of fundamental rights",
+      "artikel": "die",
+      "example": "Das Gericht stellte eine Grundrechtsverletzung fest."
+    },
+    {
+      "de": "die verfassungsmäßige Ordnung",
+      "en": "constitutional order",
+      "artikel": "die",
+      "example": "Die verfassungsmäßige Ordnung muss geschützt werden."
+    },
+    {
+      "de": "die Rechtsstaatlichkeit",
+      "en": "rule of law",
+      "artikel": "die",
+      "example": "Rechtsstaatlichkeit ist eine Grundlage der Demokratie."
+    },
+    {
+      "de": "die Verhältnismäßigkeit",
+      "en": "proportionality",
+      "artikel": "die",
+      "example": "Der Eingriff muss verhältnismäßig sein."
+    },
+    {
+      "de": "die Grundgesetzänderung",
+      "en": "constitutional amendment",
+      "artikel": "die",
+      "example": "Eine Grundgesetzänderung braucht eine Zweidrittelmehrheit."
+    },
+    {
+      "de": "das Widerstandsrecht",
+      "en": "right to resist",
+      "artikel": "das",
+      "example": "Das Widerstandsrecht ist im Grundgesetz verankert."
+    },
+    {
+      "de": "die verfassungsrechtliche Prüfung",
+      "en": "constitutional review",
+      "artikel": "die",
+      "example": "Das Gesetz durchläuft eine verfassungsrechtliche Prüfung."
+    },
+    {
+      "de": "die Grundrechtseinschränkung",
+      "en": "restriction of fundamental rights",
+      "artikel": "die",
+      "example": "Jede Grundrechtseinschränkung muss gerechtfertigt sein."
     }
   ]
 }

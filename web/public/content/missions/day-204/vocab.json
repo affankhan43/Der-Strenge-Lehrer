@@ -1,51 +1,122 @@
 {
   "day": 204,
-  "level": "B2.2",
-  "topic": "Irreale Vergleiche",
+  "topic": "Gesundheitsökonomie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Gesundheitsökonomie",
+      "en": "health economics",
+      "artikel": "die",
+      "example": "Gesundheitsökonomie untersucht die Kosten des Gesundheitswesens."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Gesundheitsausgaben",
+      "en": "healthcare spending",
+      "artikel": "die",
+      "example": "Die Gesundheitsausgaben steigen jedes Jahr."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Kosteneffizienz (Medizin)",
+      "en": "cost efficiency (medicine)",
+      "artikel": "die",
+      "example": "Kosteneffizienz ist im Gesundheitswesen wichtig."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Krankenhausfinanzierung",
+      "en": "hospital financing",
+      "artikel": "die",
+      "example": "Die Krankenhausfinanzierung wird oft diskutiert."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das Fallpauschalensystem",
+      "en": "flat-rate case system (hospital billing)",
+      "artikel": "das",
+      "example": "Das Fallpauschalensystem bezahlt Krankenhäuser pro Fall."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Arzneimittelpreise",
+      "en": "drug prices",
+      "artikel": "die",
+      "example": "Arzneimittelpreise variieren stark zwischen Ländern."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Priorisierung von Behandlungen",
+      "en": "prioritization of treatments",
+      "artikel": "die",
+      "example": "Priorisierung von Behandlungen ist ethisch komplex."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Rationierung (Gesundheit)",
+      "en": "rationing (healthcare)",
+      "artikel": "die",
+      "example": "Rationierung von Ressourcen ist ein sensibles Thema."
+    },
+    {
+      "de": "die Wirtschaftlichkeit im Gesundheitswesen",
+      "en": "cost-effectiveness in healthcare",
+      "example": "Wirtschaftlichkeit im Gesundheitswesen darf Qualität nicht gefährden."
+    },
+    {
+      "de": "der Pflegenotstand",
+      "en": "nursing care crisis / shortage",
+      "artikel": "der",
+      "example": "Der Pflegenotstand betrifft viele Krankenhäuser."
+    },
+    {
+      "de": "die Fachkräftesituation (Pflege)",
+      "en": "staffing situation (nursing)",
+      "artikel": "die",
+      "example": "Die Fachkräftesituation in der Pflege ist angespannt."
+    },
+    {
+      "de": "die Krankenkassenbeiträge",
+      "en": "health insurance contributions",
+      "artikel": "die",
+      "example": "Die Krankenkassenbeiträge steigen leicht."
+    },
+    {
+      "de": "die Versorgungssicherheit (Gesundheit)",
+      "en": "supply security (healthcare)",
+      "artikel": "die",
+      "example": "Versorgungssicherheit bei Medikamenten hat oberste Priorität."
+    },
+    {
+      "de": "die Gesundheitsreform",
+      "en": "healthcare reform",
+      "artikel": "die",
+      "example": "Die Gesundheitsreform sorgte für Diskussionen."
+    },
+    {
+      "de": "die Gesundheitsversorgung sichern",
+      "en": "to secure healthcare provision",
+      "example": "Wir müssen die Gesundheitsversorgung langfristig sichern."
+    },
+    {
+      "de": "die private Zusatzversicherung",
+      "en": "private supplementary insurance",
+      "artikel": "die",
+      "example": "Viele schließen eine private Zusatzversicherung ab."
+    },
+    {
+      "de": "das Gesundheitssystem finanzieren",
+      "en": "to finance the healthcare system",
+      "example": "Der Staat finanziert das Gesundheitssystem mit."
+    },
+    {
+      "de": "die Kosten-Nutzen-Analyse (Medizin)",
+      "en": "cost-benefit analysis (medicine)",
+      "artikel": "die",
+      "example": "Eine Kosten-Nutzen-Analyse begleitet neue Therapien."
+    },
+    {
+      "de": "die Krankenhausdichte",
+      "en": "hospital density",
+      "artikel": "die",
+      "example": "Die Krankenhausdichte variiert regional stark."
+    },
+    {
+      "de": "die Gesundheitsvorsorge fördern",
+      "en": "to promote preventive healthcare",
+      "example": "Der Staat fördert die Gesundheitsvorsorge aktiv."
     }
   ]
 }

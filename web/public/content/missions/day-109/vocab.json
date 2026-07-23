@@ -1,32 +1,119 @@
 {
   "day": 109,
-  "topic": "Interkulturelle Kommunikation",
+  "topic": "Digitale Kommunikation & Etikette",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die E-Mail-Etikette",
+      "en": "email etiquette",
+      "artikel": "die",
+      "example": "Die E-Mail-Etikette ist im Beruf wichtig."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Betreffzeile",
+      "en": "subject line",
+      "artikel": "die",
+      "example": "Schreib eine klare Betreffzeile."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Anrede",
+      "en": "salutation (letter/email)",
+      "artikel": "die",
+      "example": "Wähle eine passende Anrede."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Grußformel",
+      "en": "closing phrase (letter/email)",
+      "artikel": "die",
+      "example": "Die Grußformel am Ende ist wichtig."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Anhang",
+      "en": "attachment",
+      "artikel": "der",
+      "example": "Ich habe die Datei als Anhang geschickt."
+    },
+    {
+      "de": "anhängen",
+      "en": "to attach",
+      "example": "Häng bitte das Dokument an."
+    },
+    {
+      "de": "weiterleiten",
+      "en": "to forward",
+      "example": "Kannst du mir die E-Mail weiterleiten?"
+    },
+    {
+      "de": "in Kopie setzen (CC)",
+      "en": "to CC someone",
+      "example": "Setz meinen Chef bitte in Kopie."
+    },
+    {
+      "de": "die Antwortzeit",
+      "en": "response time",
+      "artikel": "die",
+      "example": "Die Antwortzeit ist bei ihm sehr kurz."
+    },
+    {
+      "de": "der Chatverlauf",
+      "en": "chat history",
+      "artikel": "der",
+      "example": "Ich schaue im Chatverlauf nach."
+    },
+    {
+      "de": "die Emoji",
+      "en": "emoji",
+      "artikel": "die",
+      "example": "Ein Emoji macht die Nachricht freundlicher."
+    },
+    {
+      "de": "die Gruppenchat",
+      "en": "group chat",
+      "artikel": "die",
+      "example": "Wir haben einen Gruppenchat für das Projekt."
+    },
+    {
+      "de": "die Videokonferenz",
+      "en": "video conference",
+      "artikel": "die",
+      "example": "Die Videokonferenz beginnt um zehn Uhr."
+    },
+    {
+      "de": "das Mikrofon stummschalten",
+      "en": "to mute the microphone",
+      "example": "Bitte schalte dein Mikrofon stumm."
+    },
+    {
+      "de": "der Bildschirm teilen",
+      "en": "to share the screen",
+      "example": "Kannst du deinen Bildschirm teilen?"
+    },
+    {
+      "de": "die Netiquette",
+      "en": "netiquette",
+      "artikel": "die",
+      "example": "Netiquette bedeutet Höflichkeit im Internet."
+    },
+    {
+      "de": "respektvoll kommunizieren",
+      "en": "to communicate respectfully",
+      "example": "Wir sollten respektvoll miteinander kommunizieren."
+    },
+    {
+      "de": "die Reaktionszeit",
+      "en": "reaction time (messaging)",
+      "artikel": "die",
+      "example": "Ihre Reaktionszeit auf Nachrichten ist sehr kurz."
+    },
+    {
+      "de": "der Statusupdate",
+      "en": "status update",
+      "artikel": "der",
+      "example": "Er hat sein Statusupdate geändert."
+    },
+    {
+      "de": "professionell schreiben",
+      "en": "to write professionally",
+      "example": "Ich versuche, immer professionell zu schreiben."
     }
-  ],
-  "_note": "Add 20 words about 'Interkulturelle Kommunikation'. Format: {de, en, example}"
+  ]
 }

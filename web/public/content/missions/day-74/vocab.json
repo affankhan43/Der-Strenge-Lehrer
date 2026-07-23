@@ -1,32 +1,116 @@
 {
   "day": 74,
-  "topic": "Sprache & Dialekte",
+  "topic": "Ernährung & gesunde Lebensweise",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Ernährung",
+      "en": "nutrition / diet",
+      "artikel": "die",
+      "example": "Eine gesunde Ernährung ist mir wichtig."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "ausgewogen",
+      "en": "balanced",
+      "example": "Ich esse eine ausgewogene Mahlzeit."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Vitamine",
+      "en": "vitamins",
+      "artikel": "die",
+      "example": "Obst enthält viele Vitamine."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Protein",
+      "en": "protein",
+      "artikel": "das",
+      "example": "Fleisch und Bohnen enthalten viel Protein."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Ballaststoffe",
+      "en": "fiber",
+      "artikel": "die",
+      "example": "Vollkornbrot enthält viele Ballaststoffe."
+    },
+    {
+      "de": "das Fett",
+      "en": "fat",
+      "artikel": "das",
+      "example": "Zu viel Fett ist ungesund."
+    },
+    {
+      "de": "die Kalorie",
+      "en": "calorie",
+      "artikel": "die",
+      "example": "Diese Mahlzeit hat viele Kalorien."
+    },
+    {
+      "de": "vegetarisch",
+      "en": "vegetarian",
+      "example": "Sie isst vegetarisch."
+    },
+    {
+      "de": "vegan",
+      "en": "vegan",
+      "example": "Er lebt seit zwei Jahren vegan."
+    },
+    {
+      "de": "die Unverträglichkeit",
+      "en": "intolerance (food)",
+      "artikel": "die",
+      "example": "Sie hat eine Laktoseunverträglichkeit."
+    },
+    {
+      "de": "die Allergie",
+      "en": "allergy",
+      "artikel": "die",
+      "example": "Ich habe eine Allergie gegen Nüsse."
+    },
+    {
+      "de": "bio",
+      "en": "organic",
+      "example": "Wir kaufen meistens Bio-Produkte."
+    },
+    {
+      "de": "verarbeitet (Essen)",
+      "en": "processed (food)",
+      "example": "Verarbeitete Lebensmittel sind oft ungesund."
+    },
+    {
+      "de": "frisch",
+      "en": "fresh",
+      "example": "Dieses Gemüse ist ganz frisch."
+    },
+    {
+      "de": "abnehmen",
+      "en": "to lose weight",
+      "example": "Sie möchte ein paar Kilo abnehmen."
+    },
+    {
+      "de": "zunehmen",
+      "en": "to gain weight",
+      "example": "Im Winter nehme ich oft zu."
+    },
+    {
+      "de": "das Übergewicht",
+      "en": "overweight",
+      "artikel": "das",
+      "example": "Übergewicht kann gesundheitliche Probleme verursachen."
+    },
+    {
+      "de": "der Lebensstil",
+      "en": "lifestyle",
+      "artikel": "der",
+      "example": "Sie hat einen gesunden Lebensstil."
+    },
+    {
+      "de": "die Portion (Ernährung)",
+      "en": "portion (nutrition)",
+      "example": "Iss kleinere Portionen."
+    },
+    {
+      "de": "achtsam essen",
+      "en": "to eat mindfully",
+      "example": "Ich versuche, achtsamer zu essen."
     }
-  ],
-  "_note": "Add 20 words about 'Sprache & Dialekte'. Format: {de, en, example}"
+  ]
 }

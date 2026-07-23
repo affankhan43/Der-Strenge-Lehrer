@@ -1,51 +1,124 @@
 {
   "day": 177,
-  "level": "B2.1",
-  "topic": "Partizipialkonstruktionen",
+  "topic": "Innovationsmanagement",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Innovationsmanagement",
+      "en": "innovation management",
+      "artikel": "das",
+      "example": "Innovationsmanagement fördert neue Ideen im Unternehmen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Innovationskultur",
+      "en": "innovation culture",
+      "artikel": "die",
+      "example": "Eine offene Innovationskultur motiviert Mitarbeiter."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das Ideenmanagement",
+      "en": "idea management",
+      "artikel": "das",
+      "example": "Ideenmanagement sammelt Vorschläge aus dem Team."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Produktentwicklung",
+      "en": "product development",
+      "artikel": "die",
+      "example": "Die Produktentwicklung dauert oft mehrere Jahre."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der Prototyp",
+      "en": "prototype",
+      "artikel": "der",
+      "example": "Der Prototyp wird jetzt getestet."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das Pilotprojekt",
+      "en": "pilot project",
+      "artikel": "das",
+      "example": "Das Pilotprojekt läuft seit drei Monaten."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Markteinführung",
+      "en": "market launch",
+      "artikel": "die",
+      "example": "Die Markteinführung ist für Herbst geplant."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Innovationsfähigkeit",
+      "en": "capacity for innovation",
+      "artikel": "die",
+      "example": "Die Innovationsfähigkeit sichert die Zukunft der Firma."
+    },
+    {
+      "de": "disruptiv",
+      "en": "disruptive",
+      "example": "Diese Technologie ist wirklich disruptiv."
+    },
+    {
+      "de": "die Innovationsbarriere",
+      "en": "innovation barrier",
+      "artikel": "die",
+      "example": "Bürokratie ist oft eine Innovationsbarriere."
+    },
+    {
+      "de": "das Start-up",
+      "en": "start-up",
+      "artikel": "das",
+      "example": "Das Start-up wuchs sehr schnell."
+    },
+    {
+      "de": "die Gründerkultur",
+      "en": "founder/startup culture",
+      "artikel": "die",
+      "example": "Die Gründerkultur ist in dieser Stadt stark."
+    },
+    {
+      "de": "das Inkubatorprogramm",
+      "en": "incubator program",
+      "artikel": "das",
+      "example": "Das Inkubatorprogramm unterstützt junge Firmen."
+    },
+    {
+      "de": "die Skalierbarkeit",
+      "en": "scalability",
+      "artikel": "die",
+      "example": "Skalierbarkeit ist für Investoren wichtig."
+    },
+    {
+      "de": "das Geschäftsmodell",
+      "en": "business model",
+      "artikel": "das",
+      "example": "Ihr Geschäftsmodell ist sehr innovativ."
+    },
+    {
+      "de": "die Marktlücke",
+      "en": "market gap",
+      "artikel": "die",
+      "example": "Sie entdeckten eine interessante Marktlücke."
+    },
+    {
+      "de": "die Wertschöpfung",
+      "en": "value creation",
+      "artikel": "die",
+      "example": "Wertschöpfung entsteht durch Innovation."
+    },
+    {
+      "de": "die Innovationsförderung",
+      "en": "innovation support/funding",
+      "artikel": "die",
+      "example": "Der Staat bietet Innovationsförderung an."
+    },
+    {
+      "de": "iterativ entwickeln",
+      "en": "to develop iteratively",
+      "example": "Wir entwickeln das Produkt iterativ."
+    },
+    {
+      "de": "die Technologieführerschaft",
+      "en": "technological leadership",
+      "artikel": "die",
+      "example": "Das Unternehmen strebt Technologieführerschaft an."
     }
   ]
 }

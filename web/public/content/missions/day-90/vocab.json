@@ -1,32 +1,120 @@
 {
   "day": 90,
-  "topic": "Theater & Oper",
+  "topic": "Versicherungen im Alltag",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Haftpflichtversicherung",
+      "en": "liability insurance",
+      "artikel": "die",
+      "example": "Jeder sollte eine Haftpflichtversicherung haben."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Hausratversicherung",
+      "en": "home contents insurance",
+      "artikel": "die",
+      "example": "Die Hausratversicherung deckt Einbrüche ab."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Rechtsschutzversicherung",
+      "en": "legal insurance",
+      "artikel": "die",
+      "example": "Die Rechtsschutzversicherung übernimmt die Anwaltskosten."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Versicherungsschutz",
+      "en": "insurance coverage",
+      "artikel": "der",
+      "example": "Der Versicherungsschutz gilt weltweit."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "abschließen (Vertrag)",
+      "en": "to take out (a policy)",
+      "example": "Ich möchte eine Versicherung abschließen."
+    },
+    {
+      "de": "kündigen (Versicherung)",
+      "en": "to cancel (an insurance policy)",
+      "example": "Ich kündige meine alte Versicherung."
+    },
+    {
+      "de": "der Beitrag (Versicherung)",
+      "en": "premium / contribution",
+      "artikel": "der",
+      "example": "Der monatliche Beitrag ist gestiegen."
+    },
+    {
+      "de": "die Selbstbeteiligung",
+      "en": "deductible",
+      "artikel": "die",
+      "example": "Die Selbstbeteiligung beträgt 200 Euro."
+    },
+    {
+      "de": "der Schadensfall",
+      "en": "insurance claim / case of damage",
+      "artikel": "der",
+      "example": "Im Schadensfall rufen Sie uns an."
+    },
+    {
+      "de": "melden (Schaden)",
+      "en": "to report (damage)",
+      "example": "Ich melde den Schaden sofort."
+    },
+    {
+      "de": "die Police",
+      "en": "insurance policy",
+      "artikel": "die",
+      "example": "Die Police liegt in der Schublade."
+    },
+    {
+      "de": "abgedeckt sein",
+      "en": "to be covered",
+      "example": "Dieser Schaden ist nicht abgedeckt."
+    },
+    {
+      "de": "der Vertragspartner",
+      "en": "contract partner",
+      "artikel": "der",
+      "example": "Der Vertragspartner hat alle Unterlagen."
+    },
+    {
+      "de": "die Laufzeit",
+      "en": "term / duration (contract)",
+      "artikel": "die",
+      "example": "Die Laufzeit beträgt ein Jahr."
+    },
+    {
+      "de": "verlängern (Vertrag)",
+      "en": "to renew (a contract)",
+      "example": "Wir verlängern den Vertrag automatisch."
+    },
+    {
+      "de": "die Kündigungsfrist",
+      "en": "notice period",
+      "artikel": "die",
+      "example": "Die Kündigungsfrist beträgt drei Monate."
+    },
+    {
+      "de": "die Risikoabsicherung",
+      "en": "risk coverage",
+      "artikel": "die",
+      "example": "Diese Police bietet gute Risikoabsicherung."
+    },
+    {
+      "de": "der Schutz (Versicherung)",
+      "en": "protection (insurance)",
+      "artikel": "der",
+      "example": "Dieser Schutz ist sehr umfassend."
+    },
+    {
+      "de": "die Deckungssumme",
+      "en": "coverage amount",
+      "artikel": "die",
+      "example": "Die Deckungssumme ist sehr hoch."
+    },
+    {
+      "de": "beraten (Versicherung)",
+      "en": "to advise (insurance)",
+      "example": "Der Berater hat mich gut beraten."
     }
-  ],
-  "_note": "Add 20 words about 'Theater & Oper'. Format: {de, en, example}"
+  ]
 }

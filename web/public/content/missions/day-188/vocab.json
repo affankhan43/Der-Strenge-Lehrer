@@ -1,51 +1,120 @@
 {
   "day": 188,
-  "level": "B2.1",
-  "topic": "Stilmittel",
+  "topic": "Statistik & Datenanalyse im Alltag",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Statistik (Fach)",
+      "en": "statistics (discipline)",
+      "artikel": "die",
+      "example": "Statistik hilft, große Datenmengen zu verstehen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Durchschnitt",
+      "en": "average",
+      "artikel": "der",
+      "example": "Der Durchschnitt liegt bei 25 Jahren."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Median",
+      "en": "median",
+      "artikel": "der",
+      "example": "Der Median ist manchmal aussagekräftiger als der Durchschnitt."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Stichprobengröße",
+      "en": "sample size",
+      "artikel": "die",
+      "example": "Die Stichprobengröße beeinflusst die Genauigkeit."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Datenerhebung",
+      "en": "data collection",
+      "artikel": "die",
+      "example": "Die Datenerhebung dauerte drei Monate."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Datenauswertung",
+      "en": "data evaluation",
+      "artikel": "die",
+      "example": "Die Datenauswertung zeigte klare Trends."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das Diagramm interpretieren",
+      "en": "to interpret a chart/diagram",
+      "example": "Interpretiere das Diagramm sorgfältig."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Fehlerquote",
+      "en": "error rate",
+      "artikel": "die",
+      "example": "Die Fehlerquote lag unter fünf Prozent."
+    },
+    {
+      "de": "die Signifikanz",
+      "en": "significance (statistical)",
+      "artikel": "die",
+      "example": "Das Ergebnis war statistisch signifikant."
+    },
+    {
+      "de": "die Irreführung durch Zahlen",
+      "en": "misleading through numbers",
+      "artikel": "die",
+      "example": "Irreführung durch Zahlen kommt oft in der Werbung vor."
+    },
+    {
+      "de": "die Manipulation von Statistiken",
+      "en": "manipulation of statistics",
+      "artikel": "die",
+      "example": "Manipulation von Statistiken untergräbt das Vertrauen."
+    },
+    {
+      "de": "der Trend erkennen (Daten)",
+      "en": "to identify a trend (data)",
+      "example": "Wir erkennen einen klaren Trend in den Daten."
+    },
+    {
+      "de": "die Verteilung (Statistik)",
+      "en": "distribution (statistics)",
+      "artikel": "die",
+      "example": "Die Verteilung der Werte war ungleichmäßig."
+    },
+    {
+      "de": "die Standardabweichung",
+      "en": "standard deviation",
+      "artikel": "die",
+      "example": "Die Standardabweichung zeigt die Streuung der Werte."
+    },
+    {
+      "de": "die Prognose erstellen",
+      "en": "to create a forecast",
+      "example": "Wir erstellen eine Prognose basierend auf den Daten."
+    },
+    {
+      "de": "die Datenvisualisierung",
+      "en": "data visualization",
+      "artikel": "die",
+      "example": "Datenvisualisierung macht komplexe Zahlen verständlich."
+    },
+    {
+      "de": "die repräsentative Umfrage",
+      "en": "representative survey",
+      "artikel": "die",
+      "example": "Die repräsentative Umfrage befragte tausend Personen."
+    },
+    {
+      "de": "die statistische Signifikanz prüfen",
+      "en": "to test statistical significance",
+      "example": "Wir prüfen die statistische Signifikanz der Ergebnisse."
+    },
+    {
+      "de": "die Datenquelle bewerten",
+      "en": "to evaluate the data source",
+      "example": "Bewerte immer die Datenquelle kritisch."
+    },
+    {
+      "de": "die Zahlen richtig interpretieren",
+      "en": "to correctly interpret numbers",
+      "example": "Man muss Zahlen im Kontext richtig interpretieren."
     }
   ]
 }

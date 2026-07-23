@@ -1,51 +1,114 @@
 {
   "day": 179,
-  "level": "B2.1",
-  "topic": "Indirekte Rede",
+  "topic": "Change Management",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Change Management",
+      "en": "change management",
+      "artikel": "das",
+      "example": "Change Management begleitet Veränderungsprozesse."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Veränderungsprozess",
+      "en": "change process",
+      "artikel": "der",
+      "example": "Der Veränderungsprozess dauert oft Monate."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Widerstände überwinden",
+      "en": "to overcome resistance",
+      "example": "Wir müssen Widerstände im Team überwinden."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "der Wandel gestalten",
+      "en": "to shape change",
+      "example": "Führungskräfte sollten den Wandel aktiv gestalten."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Akzeptanz fördern",
+      "en": "to promote acceptance",
+      "example": "Kommunikation fördert die Akzeptanz von Veränderungen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Betroffenen einbeziehen",
+      "en": "to involve those affected",
+      "example": "Wir beziehen alle Betroffenen frühzeitig ein."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Umstellungsphase",
+      "en": "transition phase",
+      "artikel": "die",
+      "example": "Die Umstellungsphase war für alle anstrengend."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Veränderungsbereitschaft",
+      "en": "willingness to change",
+      "artikel": "die",
+      "example": "Veränderungsbereitschaft ist entscheidend für den Erfolg."
+    },
+    {
+      "de": "die Unternehmenskultur verändern",
+      "en": "to change the corporate culture",
+      "example": "Es dauert Jahre, die Unternehmenskultur zu verändern."
+    },
+    {
+      "de": "den Wandel kommunizieren",
+      "en": "to communicate change",
+      "example": "Wir kommunizieren den Wandel transparent."
+    },
+    {
+      "de": "die Change-Agenten",
+      "en": "change agents",
+      "artikel": "die",
+      "example": "Change-Agenten treiben die Veränderung voran."
+    },
+    {
+      "de": "die Transformationsstrategie",
+      "en": "transformation strategy",
+      "artikel": "die",
+      "example": "Die Transformationsstrategie wurde sorgfältig geplant."
+    },
+    {
+      "de": "den Status quo hinterfragen",
+      "en": "to question the status quo",
+      "example": "Wir sollten den Status quo regelmäßig hinterfragen."
+    },
+    {
+      "de": "die Trägheit überwinden",
+      "en": "to overcome inertia",
+      "example": "Organisatorische Trägheit ist schwer zu überwinden."
+    },
+    {
+      "de": "die Umstrukturierung begleiten",
+      "en": "to accompany restructuring",
+      "example": "HR begleitet die Umstrukturierung des Teams."
+    },
+    {
+      "de": "die neue Ausrichtung",
+      "en": "new direction / realignment",
+      "artikel": "die",
+      "example": "Die neue Ausrichtung des Unternehmens war notwendig."
+    },
+    {
+      "de": "die Anpassungsfähigkeit stärken",
+      "en": "to strengthen adaptability",
+      "example": "Wir stärken die Anpassungsfähigkeit unserer Teams."
+    },
+    {
+      "de": "den Wandel vorantreiben",
+      "en": "to drive change forward",
+      "example": "Das Management treibt den Wandel entschlossen voran."
+    },
+    {
+      "de": "die Change-Kommunikation",
+      "en": "change communication",
+      "artikel": "die",
+      "example": "Change-Kommunikation reduziert Unsicherheit im Team."
+    },
+    {
+      "de": "die nachhaltige Veränderung",
+      "en": "sustainable change",
+      "example": "Wir streben eine nachhaltige Veränderung an."
     }
   ]
 }

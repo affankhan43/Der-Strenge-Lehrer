@@ -1,51 +1,120 @@
 {
   "day": 206,
-  "level": "B2.2",
-  "topic": "Konzessivangaben",
+  "topic": "Verhaltensökonomie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Verhaltensökonomie",
+      "en": "behavioral economics",
+      "artikel": "die",
+      "example": "Verhaltensökonomie untersucht irrationales Kaufverhalten."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Verlustaversion (Ökonomie)",
+      "en": "loss aversion (economics)",
+      "artikel": "die",
+      "example": "Verlustaversion beeinflusst finanzielle Entscheidungen stark."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Ankereffekt",
+      "en": "anchoring effect",
+      "artikel": "der",
+      "example": "Der Ankereffekt beeinflusst Preisverhandlungen."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Nudge-Theorie",
+      "en": "nudge theory",
+      "artikel": "die",
+      "example": "Die Nudge-Theorie lenkt Verhalten sanft."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das irrationale Verhalten",
+      "en": "irrational behavior",
+      "example": "Irrationales Verhalten widerspricht klassischen Wirtschaftsmodellen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Entscheidungsheuristik",
+      "en": "decision heuristic",
+      "artikel": "die",
+      "example": "Menschen nutzen oft einfache Entscheidungsheuristiken."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Selbstkontrolle (Ökonomie)",
+      "en": "self-control (economics)",
+      "artikel": "die",
+      "example": "Selbstkontrolle beeinflusst das Sparverhalten."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "das Herdenverhalten",
+      "en": "herd behavior",
+      "artikel": "das",
+      "example": "Herdenverhalten erklärt viele Börsenbewegungen."
+    },
+    {
+      "de": "die kognitive Verzerrung (Ökonomie)",
+      "en": "cognitive bias (economics)",
+      "artikel": "die",
+      "example": "Kognitive Verzerrungen beeinflussen Investitionsentscheidungen."
+    },
+    {
+      "de": "die Zeitpräferenz",
+      "en": "time preference",
+      "artikel": "die",
+      "example": "Menschen haben oft eine hohe Zeitpräferenz für Gegenwärtiges."
+    },
+    {
+      "de": "die Verhaltensanreize setzen",
+      "en": "to set behavioral incentives",
+      "example": "Der Staat setzt Verhaltensanreize durch Steuervorteile."
+    },
+    {
+      "de": "die Standardoption",
+      "en": "default option",
+      "artikel": "die",
+      "example": "Die Standardoption beeinflusst die meisten Entscheidungen."
+    },
+    {
+      "de": "die Entscheidungsarchitektur",
+      "en": "choice architecture",
+      "example": "Entscheidungsarchitektur gestaltet Optionen bewusst."
+    },
+    {
+      "de": "das begrenzt rationale Verhalten",
+      "en": "bounded rational behavior",
+      "example": "Begrenzt rationales Verhalten prägt reale Märkte."
+    },
+    {
+      "de": "die Präferenzumkehr",
+      "en": "preference reversal",
+      "artikel": "die",
+      "example": "Präferenzumkehr zeigt inkonsistente Entscheidungen."
+    },
+    {
+      "de": "die Selbstbindung (Ökonomie)",
+      "en": "self-commitment (economics)",
+      "artikel": "die",
+      "example": "Selbstbindung hilft, langfristige Ziele zu erreichen."
+    },
+    {
+      "de": "die Verhaltensmuster analysieren",
+      "en": "to analyze behavioral patterns",
+      "example": "Ökonomen analysieren Verhaltensmuster von Konsumenten."
+    },
+    {
+      "de": "das ökonomische Experiment",
+      "en": "economic experiment",
+      "artikel": "das",
+      "example": "Das ökonomische Experiment zeigte überraschende Ergebnisse."
+    },
+    {
+      "de": "die Rationalitätsannahme",
+      "en": "rationality assumption",
+      "artikel": "die",
+      "example": "Die klassische Rationalitätsannahme wird oft kritisiert."
+    },
+    {
+      "de": "die Entscheidungsfreiheit einschränken",
+      "en": "to restrict freedom of choice",
+      "example": "Manche Maßnahmen schränken die Entscheidungsfreiheit ein."
     }
   ]
 }

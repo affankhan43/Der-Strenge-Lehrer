@@ -1,51 +1,120 @@
 {
   "day": 186,
-  "level": "B2.1",
-  "topic": "Komparativ und Superlativ",
+  "topic": "Kritisches Denken & Logik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das kritische Denken",
+      "en": "critical thinking",
+      "artikel": "das",
+      "example": "Kritisches Denken hilft, Informationen zu bewerten."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Trugschluss",
+      "en": "fallacy",
+      "artikel": "der",
+      "example": "Das ist ein klassischer logischer Trugschluss."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Zirkelschluss",
+      "en": "circular reasoning",
+      "artikel": "der",
+      "example": "Dieses Argument ist ein Zirkelschluss."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Kausalität",
+      "en": "causality",
+      "artikel": "die",
+      "example": "Kausalität ist nicht dasselbe wie Korrelation."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Korrelation",
+      "en": "correlation",
+      "artikel": "die",
+      "example": "Diese Korrelation beweist keinen Zusammenhang."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Voreingenommenheit erkennen",
+      "en": "to recognize bias",
+      "example": "Wir sollten unsere eigene Voreingenommenheit erkennen."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Verallgemeinerung vermeiden",
+      "en": "to avoid generalization",
+      "example": "Vermeide voreilige Verallgemeinerungen."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Prämisse",
+      "en": "premise",
+      "artikel": "die",
+      "example": "Die Prämisse dieses Arguments ist fragwürdig."
+    },
+    {
+      "de": "die Schlussfolgerung überprüfen",
+      "en": "to check a conclusion",
+      "example": "Überprüfe deine Schlussfolgerung kritisch."
+    },
+    {
+      "de": "die logische Konsistenz",
+      "en": "logical consistency",
+      "artikel": "die",
+      "example": "Die logische Konsistenz des Arguments überzeugt."
+    },
+    {
+      "de": "der Denkfehler",
+      "en": "thinking error / cognitive error",
+      "artikel": "der",
+      "example": "Das ist ein häufiger Denkfehler."
+    },
+    {
+      "de": "die Beweislast",
+      "en": "burden of proof",
+      "artikel": "die",
+      "example": "Die Beweislast liegt bei demjenigen, der behauptet."
+    },
+    {
+      "de": "objektiv bewerten",
+      "en": "to assess objectively",
+      "example": "Wir sollten die Fakten objektiv bewerten."
+    },
+    {
+      "de": "die Faktenlage prüfen",
+      "en": "to check the facts",
+      "example": "Prüfe immer die aktuelle Faktenlage."
+    },
+    {
+      "de": "die Scheinkorrelation",
+      "en": "spurious correlation",
+      "artikel": "die",
+      "example": "Das ist nur eine Scheinkorrelation."
+    },
+    {
+      "de": "die Beweisführung",
+      "en": "line of proof / argumentation",
+      "artikel": "die",
+      "example": "Seine Beweisführung war lückenhaft."
+    },
+    {
+      "de": "die Widerlegung",
+      "en": "refutation",
+      "artikel": "die",
+      "example": "Die Widerlegung des Arguments war überzeugend."
+    },
+    {
+      "de": "logisch schlussfolgern",
+      "en": "to reason logically",
+      "example": "Wir müssen logisch schlussfolgern, nicht emotional."
+    },
+    {
+      "de": "die Gegenevidenz",
+      "en": "counter-evidence",
+      "artikel": "die",
+      "example": "Es gibt starke Gegenevidenz zu dieser These."
+    },
+    {
+      "de": "die rationale Argumentation",
+      "en": "rational argumentation",
+      "artikel": "die",
+      "example": "Rationale Argumentation überzeugt mehr als Emotionen."
     }
   ]
 }

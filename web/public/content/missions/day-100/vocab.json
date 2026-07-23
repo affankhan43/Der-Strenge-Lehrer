@@ -1,32 +1,106 @@
 {
   "day": 100,
-  "topic": "Kulinarik & Gastrokultur",
+  "topic": "Wiederholung: 100 wichtige Adjektive",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "interessant",
+      "en": "interesting",
+      "example": "Das Buch ist sehr interessant."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "langweilig",
+      "en": "boring",
+      "example": "Der Vortrag war langweilig."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "bequem",
+      "en": "comfortable",
+      "example": "Der Sessel ist sehr bequem."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "unbequem",
+      "en": "uncomfortable",
+      "example": "Die Schuhe sind unbequem."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "modern",
+      "en": "modern",
+      "example": "Die Wohnung ist modern eingerichtet."
+    },
+    {
+      "de": "altmodisch",
+      "en": "old-fashioned",
+      "example": "Sein Stil ist etwas altmodisch."
+    },
+    {
+      "de": "praktisch",
+      "en": "practical",
+      "example": "Diese Tasche ist sehr praktisch."
+    },
+    {
+      "de": "nützlich",
+      "en": "useful",
+      "example": "Das ist ein sehr nützliches Werkzeug."
+    },
+    {
+      "de": "nutzlos",
+      "en": "useless",
+      "example": "Diese App ist völlig nutzlos."
+    },
+    {
+      "de": "vernünftig",
+      "en": "reasonable / sensible",
+      "example": "Das ist eine vernünftige Entscheidung."
+    },
+    {
+      "de": "verrückt",
+      "en": "crazy",
+      "example": "Das ist eine verrückte Idee."
+    },
+    {
+      "de": "normal",
+      "en": "normal",
+      "example": "Das ist eine ganz normale Reaktion."
+    },
+    {
+      "de": "selten (Adjektiv)",
+      "en": "rare",
+      "example": "Das ist eine seltene Blume."
+    },
+    {
+      "de": "häufig",
+      "en": "frequent",
+      "example": "Erkältungen sind im Winter häufig."
+    },
+    {
+      "de": "typisch",
+      "en": "typical",
+      "example": "Das ist typisch für ihn."
+    },
+    {
+      "de": "besonders",
+      "en": "special / particular",
+      "example": "Das war ein besonderer Tag."
+    },
+    {
+      "de": "gewöhnlich",
+      "en": "usual / ordinary",
+      "example": "Das ist ein ganz gewöhnlicher Tag."
+    },
+    {
+      "de": "erstaunlich",
+      "en": "astonishing",
+      "example": "Das Ergebnis war erstaunlich."
+    },
+    {
+      "de": "beeindruckend",
+      "en": "impressive",
+      "example": "Die Aussicht war beeindruckend."
+    },
+    {
+      "de": "enttäuschend",
+      "en": "disappointing",
+      "example": "Das Ergebnis war enttäuschend."
     }
-  ],
-  "_note": "Add 20 words about 'Kulinarik & Gastrokultur'. Format: {de, en, example}"
+  ]
 }

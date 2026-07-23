@@ -1,51 +1,124 @@
 {
   "day": 210,
-  "level": "B2.2",
-  "topic": "Entnominalisierung",
+  "topic": "Kryptowährungen & Blockchain",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Kryptowährung",
+      "en": "cryptocurrency",
+      "artikel": "die",
+      "example": "Kryptowährungen sind sehr volatil."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Blockchain",
+      "en": "blockchain",
+      "artikel": "die",
+      "example": "Die Blockchain speichert Daten dezentral."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die dezentrale Technologie",
+      "en": "decentralized technology",
+      "artikel": "die",
+      "example": "Dezentrale Technologie reduziert die Kontrolle einzelner Akteure."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "das digitale Portemonnaie",
+      "en": "digital wallet",
+      "artikel": "das",
+      "example": "Ich speichere meine Coins in einem digitalen Portemonnaie."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der Bitcoin",
+      "en": "Bitcoin",
+      "example": "Bitcoin war die erste Kryptowährung."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das Mining (Krypto)",
+      "en": "mining (crypto)",
+      "artikel": "das",
+      "example": "Mining verbraucht sehr viel Energie."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Transaktion (Blockchain)",
+      "en": "transaction (blockchain)",
+      "artikel": "die",
+      "example": "Jede Transaktion wird in der Blockchain gespeichert."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die digitale Signatur (Krypto)",
+      "en": "digital signature (crypto)",
+      "artikel": "die",
+      "example": "Die digitale Signatur bestätigt die Echtheit der Transaktion."
+    },
+    {
+      "de": "die Volatilität von Kryptowährungen",
+      "en": "cryptocurrency volatility",
+      "example": "Die Volatilität von Kryptowährungen schreckt viele Anleger ab."
+    },
+    {
+      "de": "das Smart Contract",
+      "en": "smart contract",
+      "artikel": "das",
+      "example": "Ein Smart Contract führt sich automatisch aus."
+    },
+    {
+      "de": "die Token-Ökonomie",
+      "en": "token economy",
+      "artikel": "die",
+      "example": "Die Token-Ökonomie schafft neue Anreizsysteme."
+    },
+    {
+      "de": "die Regulierung von Kryptowährungen",
+      "en": "regulation of cryptocurrencies",
+      "artikel": "die",
+      "example": "Die Regulierung von Kryptowährungen wird international diskutiert."
+    },
+    {
+      "de": "die digitale Knappheit",
+      "en": "digital scarcity",
+      "artikel": "die",
+      "example": "Digitale Knappheit gibt Kryptowährungen Wert."
+    },
+    {
+      "de": "das Ledger",
+      "en": "ledger (blockchain)",
+      "artikel": "das",
+      "example": "Das Ledger speichert alle Transaktionen dauerhaft."
+    },
+    {
+      "de": "die Kryptobörse",
+      "en": "crypto exchange",
+      "artikel": "die",
+      "example": "Ich kaufe Kryptowährungen über eine Kryptobörse."
+    },
+    {
+      "de": "die Spekulationsblase",
+      "en": "speculative bubble",
+      "artikel": "die",
+      "example": "Manche befürchten eine Spekulationsblase bei Kryptowährungen."
+    },
+    {
+      "de": "die Anonymität (Krypto)",
+      "en": "anonymity (crypto)",
+      "artikel": "die",
+      "example": "Anonymität ist ein umstrittenes Merkmal mancher Kryptowährungen."
+    },
+    {
+      "de": "das dezentrale Netzwerk",
+      "en": "decentralized network",
+      "artikel": "das",
+      "example": "Ein dezentrales Netzwerk hat keine zentrale Kontrolle."
+    },
+    {
+      "de": "die Kryptoregulierung",
+      "en": "crypto regulation",
+      "artikel": "die",
+      "example": "Kryptoregulierung soll Anleger schützen."
+    },
+    {
+      "de": "die Wertaufbewahrung",
+      "en": "store of value",
+      "artikel": "die",
+      "example": "Manche sehen Bitcoin als digitale Wertaufbewahrung."
     }
   ]
 }

@@ -1,32 +1,124 @@
 {
   "day": 92,
-  "topic": "Literatur & Philosophie",
+  "topic": "Verkehr in der Stadt: Details",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Fahrradweg",
+      "en": "bike lane",
+      "artikel": "der",
+      "example": "Es gibt einen neuen Fahrradweg."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Fußgängerüberweg",
+      "en": "pedestrian crossing",
+      "artikel": "der",
+      "example": "Überquere die Straße am Fußgängerüberweg."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Fußgängerzone",
+      "en": "pedestrian zone",
+      "artikel": "die",
+      "example": "Autos dürfen nicht in die Fußgängerzone."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Einbahnstraße",
+      "en": "one-way street",
+      "artikel": "die",
+      "example": "Das ist eine Einbahnstraße."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Umleitung",
+      "en": "detour",
+      "artikel": "die",
+      "example": "Wegen Bauarbeiten gibt es eine Umleitung."
+    },
+    {
+      "de": "die Baustelle",
+      "en": "construction site",
+      "artikel": "die",
+      "example": "Die Baustelle blockiert die Straße."
+    },
+    {
+      "de": "das Halteverbot",
+      "en": "no-stopping zone",
+      "artikel": "das",
+      "example": "Hier gilt absolutes Halteverbot."
+    },
+    {
+      "de": "der Zebrastreifen",
+      "en": "zebra crossing",
+      "artikel": "der",
+      "example": "Kinder überqueren am Zebrastreifen."
+    },
+    {
+      "de": "die Verkehrsberuhigung",
+      "en": "traffic calming",
+      "artikel": "die",
+      "example": "Die Verkehrsberuhigung macht die Straße sicherer."
+    },
+    {
+      "de": "der Kreisverkehr",
+      "en": "roundabout",
+      "artikel": "der",
+      "example": "Fahr am Kreisverkehr die zweite Ausfahrt."
+    },
+    {
+      "de": "die Ausfahrt",
+      "en": "exit",
+      "artikel": "die",
+      "example": "Nimm die nächste Ausfahrt."
+    },
+    {
+      "de": "die Einfahrt",
+      "en": "entrance / driveway",
+      "artikel": "die",
+      "example": "Bitte die Einfahrt freihalten."
+    },
+    {
+      "de": "das Verkehrsaufkommen",
+      "en": "traffic volume",
+      "artikel": "das",
+      "example": "Das Verkehrsaufkommen ist morgens am höchsten."
+    },
+    {
+      "de": "die Rushhour",
+      "en": "rush hour",
+      "artikel": "die",
+      "example": "Ich vermeide die Rushhour."
+    },
+    {
+      "de": "der Fahrradständer",
+      "en": "bike rack",
+      "example": "Stell dein Fahrrad an den Fahrradständer."
+    },
+    {
+      "de": "das Carsharing",
+      "en": "car sharing",
+      "artikel": "das",
+      "example": "Ich nutze Carsharing statt ein eigenes Auto."
+    },
+    {
+      "de": "das Lastenrad",
+      "en": "cargo bike",
+      "artikel": "das",
+      "example": "Sie transportiert die Kinder mit dem Lastenrad."
+    },
+    {
+      "de": "der Verkehrsverbund",
+      "en": "transit association",
+      "artikel": "der",
+      "example": "Der Verkehrsverbund verbindet Bus und Bahn."
+    },
+    {
+      "de": "die Monatskarte",
+      "en": "monthly pass",
+      "artikel": "die",
+      "example": "Ich habe eine Monatskarte für den Bus."
+    },
+    {
+      "de": "kontrollieren (Fahrkarte)",
+      "en": "to check (ticket)",
+      "example": "Der Kontrolleur kontrolliert die Fahrkarten."
     }
-  ],
-  "_note": "Add 20 words about 'Literatur & Philosophie'. Format: {de, en, example}"
+  ]
 }

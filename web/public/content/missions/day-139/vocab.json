@@ -1,0 +1,121 @@
+{
+  "day": 139,
+  "topic": "Fake News & Medienkompetenz",
+  "words": [
+    {
+      "de": "die Desinformation",
+      "en": "disinformation",
+      "artikel": "die",
+      "example": "Desinformation verbreitet sich schnell online."
+    },
+    {
+      "de": "die Falschmeldung",
+      "en": "false report",
+      "artikel": "die",
+      "example": "Diese Falschmeldung wurde schnell widerlegt."
+    },
+    {
+      "de": "verifizieren",
+      "en": "to verify",
+      "example": "Man sollte Informationen immer verifizieren."
+    },
+    {
+      "de": "die Faktenprüfung",
+      "en": "fact-checking",
+      "artikel": "die",
+      "example": "Faktenprüfung hilft, Fake News zu erkennen."
+    },
+    {
+      "de": "der Faktenchecker",
+      "en": "fact-checker",
+      "artikel": "der",
+      "example": "Der Faktenchecker widerlegte die Behauptung."
+    },
+    {
+      "de": "die Quellenkritik",
+      "en": "source criticism",
+      "artikel": "die",
+      "example": "Quellenkritik ist eine wichtige Fähigkeit."
+    },
+    {
+      "de": "die Manipulation (Medien)",
+      "en": "manipulation (media)",
+      "artikel": "die",
+      "example": "Manipulation durch Medien ist gefährlich."
+    },
+    {
+      "de": "die Meinungsmache",
+      "en": "propaganda / opinion-shaping",
+      "artikel": "die",
+      "example": "Meinungsmache versucht, Menschen zu beeinflussen."
+    },
+    {
+      "de": "die Echokammer",
+      "en": "echo chamber",
+      "artikel": "die",
+      "example": "Soziale Medien schaffen oft Echokammern."
+    },
+    {
+      "de": "kritisch hinterfragen (Medien)",
+      "en": "to critically question (media)",
+      "example": "Wir sollten Nachrichten kritisch hinterfragen."
+    },
+    {
+      "de": "die Glaubwürdigkeit prüfen",
+      "en": "to check credibility",
+      "example": "Prüfe die Glaubwürdigkeit der Quelle."
+    },
+    {
+      "de": "das Deepfake",
+      "en": "deepfake",
+      "artikel": "das",
+      "example": "Deepfakes sind schwer zu erkennen."
+    },
+    {
+      "de": "die Manipulationstechnik",
+      "en": "manipulation technique",
+      "artikel": "die",
+      "example": "Diese Manipulationstechnik ist weit verbreitet."
+    },
+    {
+      "de": "die seriöse Quelle",
+      "en": "reputable source",
+      "artikel": "die",
+      "example": "Nutze möglichst seriöse Quellen."
+    },
+    {
+      "de": "die unseriöse Quelle",
+      "en": "unreliable source",
+      "artikel": "die",
+      "example": "Diese Webseite ist eine unseriöse Quelle."
+    },
+    {
+      "de": "die Medienbildung",
+      "en": "media education",
+      "artikel": "die",
+      "example": "Medienbildung sollte an Schulen unterrichtet werden."
+    },
+    {
+      "de": "die Nachrichtenkompetenz",
+      "en": "news literacy",
+      "artikel": "die",
+      "example": "Nachrichtenkompetenz hilft, Fake News zu erkennen."
+    },
+    {
+      "de": "aufklären (Öffentlichkeit)",
+      "en": "to inform / educate (the public)",
+      "example": "Wir müssen die Öffentlichkeit aufklären."
+    },
+    {
+      "de": "die Verschwörungstheorie",
+      "en": "conspiracy theory",
+      "artikel": "die",
+      "example": "Diese Verschwörungstheorie ist wissenschaftlich widerlegt."
+    },
+    {
+      "de": "kritisches Denken fördern",
+      "en": "to promote critical thinking",
+      "example": "Schulen sollten kritisches Denken fördern."
+    }
+  ]
+}

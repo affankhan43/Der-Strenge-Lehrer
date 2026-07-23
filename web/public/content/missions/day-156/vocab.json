@@ -1,0 +1,125 @@
+{
+  "day": 156,
+  "topic": "Sprachwandel & Dialekte",
+  "words": [
+    {
+      "de": "der Sprachwandel",
+      "en": "language change",
+      "artikel": "der",
+      "example": "Sprachwandel ist ein natürlicher Prozess."
+    },
+    {
+      "de": "der Dialekt",
+      "en": "dialect",
+      "artikel": "der",
+      "example": "Bayerisch ist ein bekannter deutscher Dialekt."
+    },
+    {
+      "de": "die Mundart",
+      "en": "vernacular / regional dialect",
+      "artikel": "die",
+      "example": "Die Mundart wird von Region zu Region anders gesprochen."
+    },
+    {
+      "de": "der Soziolekt",
+      "en": "sociolect",
+      "artikel": "der",
+      "example": "Jugendsprache ist eine Art Soziolekt."
+    },
+    {
+      "de": "die Jugendsprache",
+      "en": "youth language / slang",
+      "artikel": "die",
+      "example": "Jugendsprache verändert sich sehr schnell."
+    },
+    {
+      "de": "die Standardsprache",
+      "en": "standard language",
+      "artikel": "die",
+      "example": "Hochdeutsch ist die Standardsprache."
+    },
+    {
+      "de": "der Anglizismus",
+      "en": "anglicism",
+      "artikel": "der",
+      "example": "Anglizismen kommen häufig im Deutschen vor."
+    },
+    {
+      "de": "der Lehnwort",
+      "en": "loanword",
+      "artikel": "das",
+      "example": "Viele Lehnwörter stammen aus dem Lateinischen."
+    },
+    {
+      "de": "die Sprachentwicklung",
+      "en": "language development",
+      "artikel": "die",
+      "example": "Die Sprachentwicklung dauert Jahrhunderte."
+    },
+    {
+      "de": "das Aussterben (Sprache)",
+      "en": "extinction (language)",
+      "artikel": "das",
+      "example": "Viele kleine Sprachen sind vom Aussterben bedroht."
+    },
+    {
+      "de": "die Regionalsprache",
+      "en": "regional language",
+      "artikel": "die",
+      "example": "Plattdeutsch ist eine bekannte Regionalsprache."
+    },
+    {
+      "de": "der Akzent (regional)",
+      "en": "regional accent",
+      "artikel": "der",
+      "example": "Man hört seinen norddeutschen Akzent."
+    },
+    {
+      "de": "die Sprachvariation",
+      "en": "language variation",
+      "artikel": "die",
+      "example": "Sprachvariation zeigt sich in Aussprache und Wortwahl."
+    },
+    {
+      "de": "die gesprochene Sprache",
+      "en": "spoken language",
+      "artikel": "die",
+      "example": "Die gesprochene Sprache unterscheidet sich von der Schriftsprache."
+    },
+    {
+      "de": "die Schriftsprache",
+      "en": "written language",
+      "artikel": "die",
+      "example": "Die Schriftsprache folgt strengeren Regeln."
+    },
+    {
+      "de": "umgangssprachlich",
+      "en": "colloquial",
+      "example": "Dieses Wort wird nur umgangssprachlich verwendet."
+    },
+    {
+      "de": "die Redensart",
+      "en": "figure of speech / saying",
+      "artikel": "die",
+      "example": "Diese Redensart kennt jeder."
+    },
+    {
+      "de": "die sprachliche Vielfalt",
+      "en": "linguistic diversity",
+      "artikel": "die",
+      "example": "Deutschland hat große sprachliche Vielfalt."
+    },
+    {
+      "de": "der Sprachpurismus",
+      "en": "language purism",
+      "artikel": "der",
+      "example": "Sprachpurismus lehnt Fremdwörter ab."
+    },
+    {
+      "de": "die Sprachgeschichte",
+      "en": "language history",
+      "artikel": "die",
+      "example": "Die Sprachgeschichte des Deutschen ist spannend."
+    }
+  ]
+}

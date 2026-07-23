@@ -1,32 +1,115 @@
 {
   "day": 112,
-  "topic": "Rückblick A2.2 & Ausblick B1",
+  "topic": "Wiederholung A2: Zusammenfassung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "zusammenfassen",
+      "en": "to summarize",
+      "example": "Kannst du den Text zusammenfassen?"
     },
     {
-      "de": "üben",
+      "de": "die Zusammenfassung",
+      "en": "summary",
+      "artikel": "die",
+      "example": "Schreib eine kurze Zusammenfassung."
+    },
+    {
+      "de": "der Fortschritt machen",
+      "en": "to make progress",
+      "example": "Ich mache große Fortschritte im Deutschen."
+    },
+    {
+      "de": "die Wiederholung (Lernen)",
+      "en": "review / repetition (learning)",
+      "artikel": "die",
+      "example": "Wiederholung hilft beim Lernen."
+    },
+    {
+      "de": "das Niveau erreichen",
+      "en": "to reach a level",
+      "example": "Ich möchte das B1-Niveau erreichen."
+    },
+    {
+      "de": "sich verbessern",
+      "en": "to improve",
+      "example": "Meine Aussprache hat sich verbessert."
+    },
+    {
+      "de": "die Verbesserung",
+      "en": "improvement",
+      "artikel": "die",
+      "example": "Ich sehe eine deutliche Verbesserung."
+    },
+    {
+      "de": "üben (Zusammenfassung)",
       "en": "to practice",
-      "example": "Üben macht den Meister."
+      "example": "Ich übe jeden Tag ein bisschen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Prüfungsvorbereitung",
+      "en": "exam preparation",
+      "artikel": "die",
+      "example": "Die Prüfungsvorbereitung läuft gut."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Sprachprüfung",
+      "en": "language exam",
+      "artikel": "die",
+      "example": "Ich mache im Sommer die Sprachprüfung."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "bestanden haben",
+      "en": "to have passed (an exam)",
+      "example": "Ich habe die Prüfung bestanden!"
+    },
+    {
+      "de": "stolz sein",
+      "en": "to be proud",
+      "example": "Ich bin stolz auf meinen Fortschritt."
+    },
+    {
+      "de": "das Zertifikat",
+      "en": "certificate",
+      "artikel": "das",
+      "example": "Ich habe mein Zertifikat bekommen."
+    },
+    {
+      "de": "die nächste Stufe",
+      "en": "the next level/stage",
+      "artikel": "die",
+      "example": "Jetzt beginnt die nächste Stufe: B1."
+    },
+    {
+      "de": "weitermachen",
+      "en": "to continue / keep going",
+      "example": "Ich mache motiviert weiter."
+    },
+    {
+      "de": "am Ball bleiben",
+      "en": "to stay on track",
+      "example": "Bleib am Ball, auch wenn es schwer wird."
+    },
+    {
+      "de": "rückblickend",
+      "en": "in retrospect",
+      "example": "Rückblickend war es die richtige Entscheidung."
+    },
+    {
+      "de": "die Errungenschaft",
+      "en": "achievement",
+      "artikel": "die",
+      "example": "Das ist eine große Errungenschaft für mich."
+    },
+    {
+      "de": "motiviert bleiben",
+      "en": "to stay motivated",
+      "example": "Ich bleibe motiviert, auch an schwierigen Tagen."
+    },
+    {
+      "de": "der nächste Schritt",
+      "en": "the next step",
+      "artikel": "der",
+      "example": "Der nächste Schritt ist das B1-Niveau."
     }
-  ],
-  "_note": "Add 20 words about 'Rückblick A2.2 & Ausblick B1'. Format: {de, en, example}"
+  ]
 }

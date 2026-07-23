@@ -1,0 +1,121 @@
+{
+  "day": 160,
+  "topic": "Projektmanagement",
+  "words": [
+    {
+      "de": "das Projektmanagement",
+      "en": "project management",
+      "artikel": "das",
+      "example": "Projektmanagement erfordert gute Organisation."
+    },
+    {
+      "de": "der Projektleiter",
+      "en": "project manager (male)",
+      "artikel": "der",
+      "example": "Der Projektleiter koordiniert das Team."
+    },
+    {
+      "de": "die Projektleiterin",
+      "en": "project manager (female)",
+      "artikel": "die",
+      "example": "Die Projektleiterin plant den Zeitplan."
+    },
+    {
+      "de": "der Meilenstein",
+      "en": "milestone",
+      "artikel": "der",
+      "example": "Wir haben den ersten Meilenstein erreicht."
+    },
+    {
+      "de": "der Zeitplan",
+      "en": "schedule / timeline",
+      "artikel": "der",
+      "example": "Der Zeitplan ist sehr eng."
+    },
+    {
+      "de": "die Ressourcenplanung",
+      "en": "resource planning",
+      "artikel": "die",
+      "example": "Ressourcenplanung ist entscheidend für den Erfolg."
+    },
+    {
+      "de": "das Budget einhalten",
+      "en": "to stay within budget",
+      "example": "Wir haben das Budget genau eingehalten."
+    },
+    {
+      "de": "das Projektziel",
+      "en": "project goal",
+      "artikel": "das",
+      "example": "Das Projektziel wurde klar definiert."
+    },
+    {
+      "de": "die Aufgabenverteilung",
+      "en": "task allocation",
+      "artikel": "die",
+      "example": "Die Aufgabenverteilung war fair organisiert."
+    },
+    {
+      "de": "das Team koordinieren",
+      "en": "to coordinate the team",
+      "example": "Sie koordiniert das Team sehr gut."
+    },
+    {
+      "de": "die Projektphase",
+      "en": "project phase",
+      "artikel": "die",
+      "example": "Wir befinden uns in der letzten Projektphase."
+    },
+    {
+      "de": "der Projektstatus",
+      "en": "project status",
+      "artikel": "der",
+      "example": "Der Projektstatus wird wöchentlich geprüft."
+    },
+    {
+      "de": "das Risiko managen",
+      "en": "to manage risk",
+      "example": "Wir managen Risiken frühzeitig."
+    },
+    {
+      "de": "die Deadline einhalten (Projekt)",
+      "en": "to meet the deadline (project)",
+      "example": "Wir müssen die Deadline unbedingt einhalten."
+    },
+    {
+      "de": "agile Methoden",
+      "en": "agile methods",
+      "example": "Wir nutzen agile Methoden im Projekt."
+    },
+    {
+      "de": "das Scrum-Meeting",
+      "en": "scrum meeting",
+      "artikel": "das",
+      "example": "Wir haben jeden Morgen ein kurzes Scrum-Meeting."
+    },
+    {
+      "de": "die Projektdokumentation",
+      "en": "project documentation",
+      "artikel": "die",
+      "example": "Die Projektdokumentation ist vollständig."
+    },
+    {
+      "de": "der Projektabschluss",
+      "en": "project closure",
+      "artikel": "der",
+      "example": "Der Projektabschluss wird nächste Woche gefeiert."
+    },
+    {
+      "de": "die Lessons Learned",
+      "en": "lessons learned",
+      "artikel": "die",
+      "example": "Wir sammeln die Lessons Learned für nächste Projekte."
+    },
+    {
+      "de": "das Erfolgskriterium",
+      "en": "success criterion",
+      "artikel": "das",
+      "example": "Kundenzufriedenheit ist unser wichtigstes Erfolgskriterium."
+    }
+  ]
+}

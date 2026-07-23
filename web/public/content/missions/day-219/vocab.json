@@ -1,51 +1,124 @@
 {
   "day": 219,
-  "level": "B2.2",
-  "topic": "Wissenschaftlicher Stil",
+  "topic": "Demografischer Wandel",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "der demografische Wandel",
+      "en": "demographic change",
+      "artikel": "der",
+      "example": "Der demografische Wandel betrifft viele Industrieländer."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die alternde Gesellschaft",
+      "en": "aging society",
+      "artikel": "die",
+      "example": "Die alternde Gesellschaft stellt das Rentensystem vor Herausforderungen."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Geburtenrate",
+      "en": "birth rate",
+      "artikel": "die",
+      "example": "Die Geburtenrate sinkt in vielen Ländern."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Bevölkerungsentwicklung",
+      "en": "population development",
+      "artikel": "die",
+      "example": "Die Bevölkerungsentwicklung wird genau beobachtet."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der Altersdurchschnitt",
+      "en": "average age",
+      "artikel": "der",
+      "example": "Der Altersdurchschnitt der Bevölkerung steigt."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Bevölkerungspyramide",
+      "en": "population pyramid",
+      "artikel": "die",
+      "example": "Die Bevölkerungspyramide zeigt die Altersstruktur."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Überalterung",
+      "en": "aging (population)",
+      "artikel": "die",
+      "example": "Überalterung führt zu weniger Erwerbstätigen."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Landflucht (Demografie)",
+      "en": "rural exodus (demographics)",
+      "artikel": "die",
+      "example": "Landflucht verändert die demografische Verteilung."
+    },
+    {
+      "de": "die Fertilitätsrate",
+      "en": "fertility rate",
+      "artikel": "die",
+      "example": "Die Fertilitätsrate liegt unter dem Bestandserhaltungsniveau."
+    },
+    {
+      "de": "die Zuwanderung ausgleichen",
+      "en": "to offset through immigration",
+      "example": "Zuwanderung kann den demografischen Wandel teilweise ausgleichen."
+    },
+    {
+      "de": "die Bevölkerungsprognose",
+      "en": "population forecast",
+      "artikel": "die",
+      "example": "Die Bevölkerungsprognose zeigt einen Rückgang."
+    },
+    {
+      "de": "die generationelle Verschiebung",
+      "en": "generational shift",
+      "artikel": "die",
+      "example": "Die generationelle Verschiebung verändert den Arbeitsmarkt."
+    },
+    {
+      "de": "der Erwerbstätigenanteil",
+      "en": "share of the working population",
+      "artikel": "der",
+      "example": "Der Erwerbstätigenanteil sinkt mit der Alterung."
+    },
+    {
+      "de": "die demografische Herausforderung",
+      "en": "demographic challenge",
+      "artikel": "die",
+      "example": "Die demografische Herausforderung betrifft Renten und Pflege."
+    },
+    {
+      "de": "die Bevölkerungsdichte",
+      "en": "population density",
+      "artikel": "die",
+      "example": "Die Bevölkerungsdichte ist in Städten viel höher."
+    },
+    {
+      "de": "der Generationenvertrag",
+      "en": "intergenerational contract",
+      "artikel": "der",
+      "example": "Der Generationenvertrag sichert das Rentensystem."
+    },
+    {
+      "de": "die demografische Struktur",
+      "en": "demographic structure",
+      "artikel": "die",
+      "example": "Die demografische Struktur verändert sich langsam."
+    },
+    {
+      "de": "die Alterspyramide",
+      "en": "age pyramid",
+      "artikel": "die",
+      "example": "Die Alterspyramide zeigt eine deutliche Verschiebung nach oben."
+    },
+    {
+      "de": "die Rentenlücke",
+      "en": "pension gap",
+      "artikel": "die",
+      "example": "Die Rentenlücke wächst durch den demografischen Wandel."
+    },
+    {
+      "de": "den demografischen Wandel bewältigen",
+      "en": "to manage demographic change",
+      "example": "Politik muss den demografischen Wandel aktiv bewältigen."
     }
   ]
 }

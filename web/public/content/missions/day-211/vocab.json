@@ -1,51 +1,126 @@
 {
   "day": 211,
-  "level": "B2.2",
-  "topic": "Konnektoren",
+  "topic": "Immobilienmarkt",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "der Immobilienmarkt",
+      "en": "real estate market",
+      "artikel": "der",
+      "example": "Der Immobilienmarkt boomt in vielen Städten."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Immobilie",
+      "en": "real estate / property",
+      "artikel": "die",
+      "example": "Diese Immobilie liegt sehr zentral."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Immobilienpreis",
+      "en": "property price",
+      "artikel": "der",
+      "example": "Immobilienpreise steigen kontinuierlich."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Wertsteigerung (Immobilie)",
+      "en": "appreciation in value (property)",
+      "artikel": "die",
+      "example": "Die Wertsteigerung der Immobilie war beträchtlich."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Baufinanzierung",
+      "en": "mortgage / building finance",
+      "artikel": "die",
+      "example": "Die Baufinanzierung läuft über 20 Jahre."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Hypothek",
+      "en": "mortgage",
+      "artikel": "die",
+      "example": "Sie zahlen monatlich für ihre Hypothek."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "der Immobilienmakler",
+      "en": "real estate agent",
+      "artikel": "der",
+      "example": "Der Immobilienmakler vermittelte das Haus."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Rendite-Immobilie",
+      "en": "investment property",
+      "artikel": "die",
+      "example": "Diese Rendite-Immobilie wird vermietet."
+    },
+    {
+      "de": "die Immobilienblase",
+      "en": "real estate bubble",
+      "artikel": "die",
+      "example": "Manche warnen vor einer Immobilienblase."
+    },
+    {
+      "de": "der Quadratmeterpreis",
+      "en": "price per square meter",
+      "artikel": "der",
+      "example": "Der Quadratmeterpreis ist in dieser Lage sehr hoch."
+    },
+    {
+      "de": "die Wohnungsknappheit",
+      "en": "housing shortage",
+      "artikel": "die",
+      "example": "Wohnungsknappheit betrifft viele Großstädte."
+    },
+    {
+      "de": "die Immobilienspekulation",
+      "en": "real estate speculation",
+      "artikel": "die",
+      "example": "Immobilienspekulation treibt die Preise weiter hoch."
+    },
+    {
+      "de": "die Bauzinsen",
+      "en": "mortgage interest rates",
+      "artikel": "die",
+      "example": "Die Bauzinsen sind gestiegen."
+    },
+    {
+      "de": "das Bauland",
+      "en": "building land",
+      "artikel": "das",
+      "example": "Bauland ist in Großstädten knapp."
+    },
+    {
+      "de": "die Erschließungskosten",
+      "en": "development costs",
+      "artikel": "die",
+      "example": "Erschließungskosten erhöhen den Gesamtpreis."
+    },
+    {
+      "de": "die Marktwertermittlung",
+      "en": "market value assessment",
+      "artikel": "die",
+      "example": "Die Marktwertermittlung erfolgte durch einen Gutachter."
+    },
+    {
+      "de": "der Gutachter",
+      "en": "appraiser / expert",
+      "artikel": "der",
+      "example": "Der Gutachter schätzte den Wert des Hauses."
+    },
+    {
+      "de": "die Vermietungsquote",
+      "en": "rental occupancy rate",
+      "artikel": "die",
+      "example": "Die Vermietungsquote in diesem Gebäude liegt bei 95 Prozent."
+    },
+    {
+      "de": "die Immobilieninvestition",
+      "en": "real estate investment",
+      "artikel": "die",
+      "example": "Immobilieninvestitionen gelten als relativ sicher."
+    },
+    {
+      "de": "die Grundsteuer",
+      "en": "property tax",
+      "artikel": "die",
+      "example": "Die Grundsteuer wird jährlich erhoben."
     }
   ]
 }

@@ -1,0 +1,108 @@
+{
+  "day": 116,
+  "topic": "Berufliche E-Mails schreiben",
+  "words": [
+    {
+      "de": "sehr geehrte Damen und Herren",
+      "en": "Dear Sir or Madam",
+      "example": "Sehr geehrte Damen und Herren, ich schreibe Ihnen bezüglich..."
+    },
+    {
+      "de": "mit freundlichen Grüßen",
+      "en": "kind regards",
+      "example": "Mit freundlichen Grüßen, Anna Schmidt."
+    },
+    {
+      "de": "bezugnehmend auf",
+      "en": "referring to",
+      "example": "Bezugnehmend auf Ihre E-Mail möchte ich..."
+    },
+    {
+      "de": "hiermit möchte ich",
+      "en": "hereby I would like to",
+      "example": "Hiermit möchte ich mich für die Stelle bewerben."
+    },
+    {
+      "de": "im Anhang finden Sie",
+      "en": "please find attached",
+      "example": "Im Anhang finden Sie meinen Lebenslauf."
+    },
+    {
+      "de": "ich freue mich auf Ihre Antwort",
+      "en": "I look forward to your reply",
+      "example": "Ich freue mich auf Ihre Antwort."
+    },
+    {
+      "de": "bei Rückfragen",
+      "en": "if you have questions",
+      "example": "Bei Rückfragen stehe ich gerne zur Verfügung."
+    },
+    {
+      "de": "zur Verfügung stehen",
+      "en": "to be available",
+      "example": "Ich stehe Ihnen jederzeit zur Verfügung."
+    },
+    {
+      "de": "ich möchte Sie darüber informieren",
+      "en": "I would like to inform you that",
+      "example": "Ich möchte Sie darüber informieren, dass..."
+    },
+    {
+      "de": "wie vereinbart",
+      "en": "as agreed",
+      "example": "Wie vereinbart, sende ich Ihnen die Unterlagen."
+    },
+    {
+      "de": "in der Anlage",
+      "en": "attached / enclosed",
+      "example": "In der Anlage finden Sie das Dokument."
+    },
+    {
+      "de": "um Rückmeldung bitten",
+      "en": "to ask for feedback/reply",
+      "example": "Ich bitte um Ihre Rückmeldung bis Freitag."
+    },
+    {
+      "de": "die Betreffzeile formulieren",
+      "en": "to formulate the subject line",
+      "example": "Formuliere die Betreffzeile klar und kurz."
+    },
+    {
+      "de": "höflich formulieren",
+      "en": "to phrase politely",
+      "example": "Formuliere die Bitte höflich."
+    },
+    {
+      "de": "die Formalität",
+      "en": "formality",
+      "artikel": "die",
+      "example": "In Geschäfts-E-Mails ist Formalität wichtig."
+    },
+    {
+      "de": "informell schreiben",
+      "en": "to write informally",
+      "example": "Unter Kollegen schreibt man oft informell."
+    },
+    {
+      "de": "die Signatur (E-Mail)",
+      "en": "email signature",
+      "artikel": "die",
+      "example": "Vergiss nicht deine Signatur."
+    },
+    {
+      "de": "dringlich",
+      "en": "urgent (formal)",
+      "example": "Diese Angelegenheit ist dringlich."
+    },
+    {
+      "de": "um Verständnis bitten",
+      "en": "to ask for understanding",
+      "example": "Ich bitte um Ihr Verständnis für die Verzögerung."
+    },
+    {
+      "de": "die Anlage öffnen",
+      "en": "to open the attachment",
+      "example": "Bitte öffnen Sie die Anlage."
+    }
+  ]
+}

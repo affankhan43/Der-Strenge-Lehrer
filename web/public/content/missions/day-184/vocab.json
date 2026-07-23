@@ -1,51 +1,123 @@
 {
   "day": 184,
-  "level": "B2.1",
-  "topic": "Wortbildung Verben",
+  "topic": "Diversity & Inclusion",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Diversität",
+      "en": "diversity",
+      "artikel": "die",
+      "example": "Diversität bereichert Teams und Unternehmen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Inklusion (Arbeitsplatz)",
+      "en": "inclusion (workplace)",
+      "artikel": "die",
+      "example": "Inklusion bedeutet, alle Mitarbeiter einzubeziehen."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das inklusive Arbeitsumfeld",
+      "en": "inclusive work environment",
+      "artikel": "das",
+      "example": "Wir gestalten ein inklusives Arbeitsumfeld."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Chancengleichheit fördern (Arbeit)",
+      "en": "to promote equal opportunity (work)",
+      "example": "Wir fördern Chancengleichheit für alle Bewerber."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die unbewusste Voreingenommenheit",
+      "en": "unconscious bias",
+      "artikel": "die",
+      "example": "Unbewusste Voreingenommenheit beeinflusst Personalentscheidungen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Barrierefreiheit am Arbeitsplatz",
+      "en": "workplace accessibility",
+      "artikel": "die",
+      "example": "Barrierefreiheit am Arbeitsplatz ist gesetzlich vorgeschrieben."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Vielfalt wertschätzen",
+      "en": "to value diversity",
+      "example": "Wir wertschätzen die Vielfalt unserer Belegschaft."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die diverse Belegschaft",
+      "en": "diverse workforce",
+      "artikel": "die",
+      "example": "Eine diverse Belegschaft bringt neue Perspektiven."
+    },
+    {
+      "de": "das Diversitätsmanagement",
+      "en": "diversity management",
+      "artikel": "das",
+      "example": "Diversitätsmanagement ist Teil unserer Personalstrategie."
+    },
+    {
+      "de": "die Repräsentation",
+      "en": "representation",
+      "artikel": "die",
+      "example": "Repräsentation in Führungspositionen ist wichtig."
+    },
+    {
+      "de": "die gleichberechtigte Teilhabe",
+      "en": "equal participation",
+      "artikel": "die",
+      "example": "Gleichberechtigte Teilhabe ist unser Ziel."
+    },
+    {
+      "de": "die Diskriminierung am Arbeitsplatz",
+      "en": "workplace discrimination",
+      "artikel": "die",
+      "example": "Diskriminierung am Arbeitsplatz ist gesetzlich verboten."
+    },
+    {
+      "de": "das Bewusstsein schaffen",
+      "en": "to raise awareness",
+      "example": "Wir schaffen Bewusstsein für Vielfalt im Unternehmen."
+    },
+    {
+      "de": "die inklusive Sprache",
+      "en": "inclusive language",
+      "artikel": "die",
+      "example": "Inklusive Sprache spricht alle Mitarbeiter an."
+    },
+    {
+      "de": "die Gleichbehandlung",
+      "en": "equal treatment",
+      "artikel": "die",
+      "example": "Gleichbehandlung ist gesetzlich verankert."
+    },
+    {
+      "de": "das Antidiskriminierungsgesetz",
+      "en": "anti-discrimination law",
+      "artikel": "das",
+      "example": "Das Antidiskriminierungsgesetz schützt Arbeitnehmer."
+    },
+    {
+      "de": "die kulturelle Offenheit",
+      "en": "cultural openness",
+      "artikel": "die",
+      "example": "Kulturelle Offenheit prägt unsere Firmenkultur."
+    },
+    {
+      "de": "die Vorurteilsfreiheit",
+      "en": "freedom from prejudice",
+      "artikel": "die",
+      "example": "Wir streben Vorurteilsfreiheit im Bewerbungsprozess an."
+    },
+    {
+      "de": "die Diversitätsschulung",
+      "en": "diversity training",
+      "artikel": "die",
+      "example": "Alle Mitarbeiter nehmen an Diversitätsschulungen teil."
+    },
+    {
+      "de": "die Gleichstellungsbeauftragte",
+      "en": "equal opportunity officer (female)",
+      "artikel": "die",
+      "example": "Die Gleichstellungsbeauftragte prüft alle Beförderungen."
     }
   ]
 }

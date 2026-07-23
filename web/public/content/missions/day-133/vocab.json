@@ -1,0 +1,123 @@
+{
+  "day": 133,
+  "topic": "Energiewende",
+  "words": [
+    {
+      "de": "die Energiewende",
+      "en": "energy transition",
+      "artikel": "die",
+      "example": "Die Energiewende ist ein zentrales politisches Thema."
+    },
+    {
+      "de": "die fossilen Brennstoffe",
+      "en": "fossil fuels",
+      "artikel": "die",
+      "example": "Fossile Brennstoffe schaden dem Klima."
+    },
+    {
+      "de": "die Kohle",
+      "en": "coal",
+      "artikel": "die",
+      "example": "Kohle wird immer weniger genutzt."
+    },
+    {
+      "de": "das Erdöl",
+      "en": "crude oil / petroleum",
+      "artikel": "das",
+      "example": "Erdöl ist eine begrenzte Ressource."
+    },
+    {
+      "de": "das Erdgas",
+      "en": "natural gas",
+      "artikel": "das",
+      "example": "Erdgas wird zum Heizen genutzt."
+    },
+    {
+      "de": "die Atomenergie",
+      "en": "nuclear energy",
+      "artikel": "die",
+      "example": "Atomenergie ist ein umstrittenes Thema."
+    },
+    {
+      "de": "der Atomausstieg",
+      "en": "nuclear phase-out",
+      "artikel": "der",
+      "example": "Der Atomausstieg wurde vor Jahren beschlossen."
+    },
+    {
+      "de": "die Stromversorgung",
+      "en": "power/electricity supply",
+      "artikel": "die",
+      "example": "Die Stromversorgung muss stabil bleiben."
+    },
+    {
+      "de": "das Stromnetz",
+      "en": "power grid",
+      "artikel": "das",
+      "example": "Das Stromnetz muss ausgebaut werden."
+    },
+    {
+      "de": "der Energiespeicher",
+      "en": "energy storage",
+      "artikel": "der",
+      "example": "Wir brauchen bessere Energiespeicher."
+    },
+    {
+      "de": "die Batterie-Technologie",
+      "en": "battery technology",
+      "artikel": "die",
+      "example": "Die Batterie-Technologie entwickelt sich schnell."
+    },
+    {
+      "de": "dezentrale Energieerzeugung",
+      "en": "decentralized energy production",
+      "example": "Dezentrale Energieerzeugung stärkt lokale Netze."
+    },
+    {
+      "de": "der Energiemix",
+      "en": "energy mix",
+      "artikel": "der",
+      "example": "Der Energiemix wird immer grüner."
+    },
+    {
+      "de": "die Versorgungssicherheit",
+      "en": "supply security",
+      "artikel": "die",
+      "example": "Versorgungssicherheit hat oberste Priorität."
+    },
+    {
+      "de": "der Stromausfall",
+      "en": "power outage",
+      "artikel": "der",
+      "example": "Ein Stromausfall traf die ganze Region."
+    },
+    {
+      "de": "die Energieeffizienz",
+      "en": "energy efficiency",
+      "artikel": "die",
+      "example": "Energieeffizienz spart Kosten und Ressourcen."
+    },
+    {
+      "de": "das Energiesparen",
+      "en": "energy saving",
+      "artikel": "das",
+      "example": "Energiesparen beginnt zu Hause."
+    },
+    {
+      "de": "die Wärmepumpe",
+      "en": "heat pump",
+      "artikel": "die",
+      "example": "Wir heizen jetzt mit einer Wärmepumpe."
+    },
+    {
+      "de": "subventionieren",
+      "en": "to subsidize",
+      "example": "Der Staat subventioniert erneuerbare Energien."
+    },
+    {
+      "de": "die Energiekosten senken",
+      "en": "to lower energy costs",
+      "example": "Wir wollen die Energiekosten senken."
+    }
+  ]
+}

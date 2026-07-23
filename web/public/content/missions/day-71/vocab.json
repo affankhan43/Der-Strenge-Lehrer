@@ -1,32 +1,120 @@
 {
   "day": 71,
-  "topic": "Wohnungsnot & Mieten",
+  "topic": "Wirtschaft & Handel",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Wirtschaft",
+      "en": "economy",
+      "artikel": "die",
+      "example": "Die Wirtschaft wächst dieses Jahr."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Handel",
+      "en": "trade / commerce",
+      "artikel": "der",
+      "example": "Der internationale Handel wächst stetig."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "exportieren",
+      "en": "to export",
+      "example": "Deutschland exportiert viele Autos."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "importieren",
+      "en": "to import",
+      "example": "Wir importieren Kaffee aus Brasilien."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Markt (Wirtschaft)",
+      "en": "market (economic)",
+      "artikel": "der",
+      "example": "Der Markt ist sehr wettbewerbsfähig."
+    },
+    {
+      "de": "die Nachfrage",
+      "en": "demand",
+      "artikel": "die",
+      "example": "Die Nachfrage nach diesem Produkt steigt."
+    },
+    {
+      "de": "das Angebot (Wirtschaft)",
+      "en": "supply",
+      "artikel": "das",
+      "example": "Angebot und Nachfrage bestimmen den Preis."
+    },
+    {
+      "de": "die Produktion",
+      "en": "production",
+      "artikel": "die",
+      "example": "Die Produktion läuft rund um die Uhr."
+    },
+    {
+      "de": "produzieren",
+      "en": "to produce",
+      "example": "Diese Fabrik produziert Möbel."
+    },
+    {
+      "de": "das Unternehmen",
+      "en": "company / enterprise",
+      "artikel": "das",
+      "example": "Das Unternehmen wächst schnell."
+    },
+    {
+      "de": "der Gewinn",
+      "en": "profit",
+      "artikel": "der",
+      "example": "Das Unternehmen macht großen Gewinn."
+    },
+    {
+      "de": "der Verlust",
+      "en": "loss (financial)",
+      "artikel": "der",
+      "example": "Die Firma hatte einen großen Verlust."
+    },
+    {
+      "de": "die Investition",
+      "en": "investment",
+      "artikel": "die",
+      "example": "Das ist eine kluge Investition."
+    },
+    {
+      "de": "investieren",
+      "en": "to invest",
+      "example": "Wir investieren in erneuerbare Energien."
+    },
+    {
+      "de": "die Konkurrenz",
+      "en": "competition",
+      "artikel": "die",
+      "example": "Die Konkurrenz auf dem Markt ist stark."
+    },
+    {
+      "de": "konkurrieren",
+      "en": "to compete",
+      "example": "Beide Firmen konkurrieren um den Kunden."
+    },
+    {
+      "de": "die Branche",
+      "en": "industry / sector",
+      "artikel": "die",
+      "example": "Sie arbeitet in der IT-Branche."
+    },
+    {
+      "de": "global",
+      "en": "global",
+      "example": "Der Handel ist heute global."
+    },
+    {
+      "de": "die Globalisierung",
+      "en": "globalization",
+      "artikel": "die",
+      "example": "Die Globalisierung verändert die Wirtschaft."
+    },
+    {
+      "de": "das Wachstum",
+      "en": "growth",
+      "artikel": "das",
+      "example": "Das wirtschaftliche Wachstum ist stabil."
     }
-  ],
-  "_note": "Add 20 words about 'Wohnungsnot & Mieten'. Format: {de, en, example}"
+  ]
 }

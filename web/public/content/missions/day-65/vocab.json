@@ -1,32 +1,115 @@
 {
   "day": 65,
-  "topic": "Medien & Nachrichten",
+  "topic": "Beziehungen & Freundschaft",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Beziehung",
+      "en": "relationship",
+      "artikel": "die",
+      "example": "Wir haben eine gute Beziehung."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Partnerschaft",
+      "en": "partnership / relationship",
+      "artikel": "die",
+      "example": "Sie führen eine glückliche Partnerschaft."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Partner",
+      "en": "partner (male)",
+      "artikel": "der",
+      "example": "Mein Partner unterstützt mich sehr."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Partnerin",
+      "en": "partner (female)",
+      "artikel": "die",
+      "example": "Meine Partnerin arbeitet als Ärztin."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "vertrauen",
+      "en": "to trust",
+      "example": "Ich vertraue meinen Freunden."
+    },
+    {
+      "de": "das Vertrauen",
+      "en": "trust",
+      "artikel": "das",
+      "example": "Vertrauen ist die Basis jeder Beziehung."
+    },
+    {
+      "de": "sich verlieben",
+      "en": "to fall in love",
+      "example": "Sie haben sich letztes Jahr verliebt."
+    },
+    {
+      "de": "verliebt sein",
+      "en": "to be in love",
+      "example": "Ich bin sehr verliebt."
+    },
+    {
+      "de": "die Freundschaft",
+      "en": "friendship",
+      "artikel": "die",
+      "example": "Unsere Freundschaft dauert schon zehn Jahre."
+    },
+    {
+      "de": "eng befreundet",
+      "en": "close friends",
+      "example": "Wir sind eng befreundet."
+    },
+    {
+      "de": "sich verstehen",
+      "en": "to get along",
+      "example": "Wir verstehen uns sehr gut."
+    },
+    {
+      "de": "sich streiten (Beziehung)",
+      "en": "to fight / argue (relationship)",
+      "example": "Paare streiten sich manchmal."
+    },
+    {
+      "de": "sich versöhnen",
+      "en": "to reconcile",
+      "example": "Sie haben sich schnell wieder versöhnt."
+    },
+    {
+      "de": "die Trennung",
+      "en": "separation / breakup",
+      "artikel": "die",
+      "example": "Die Trennung war für beide schwer."
+    },
+    {
+      "de": "sich trennen",
+      "en": "to break up / separate",
+      "example": "Sie haben sich letzten Monat getrennt."
+    },
+    {
+      "de": "gemeinsam",
+      "en": "together",
+      "example": "Wir verbringen viel Zeit gemeinsam."
+    },
+    {
+      "de": "unterstützen",
+      "en": "to support",
+      "example": "Meine Familie unterstützt mich immer."
+    },
+    {
+      "de": "die Unterstützung",
+      "en": "support",
+      "artikel": "die",
+      "example": "Danke für deine Unterstützung."
+    },
+    {
+      "de": "loyal",
+      "en": "loyal",
+      "example": "Er ist ein sehr loyaler Freund."
+    },
+    {
+      "de": "die Nähe",
+      "en": "closeness / proximity",
+      "artikel": "die",
+      "example": "Ich schätze die Nähe zu meiner Familie."
     }
-  ],
-  "_note": "Add 20 words about 'Medien & Nachrichten'. Format: {de, en, example}"
+  ]
 }

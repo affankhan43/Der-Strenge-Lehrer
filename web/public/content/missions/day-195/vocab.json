@@ -1,51 +1,122 @@
 {
   "day": 195,
-  "level": "B2.1",
-  "topic": "Diskussion",
+  "topic": "Utopie & Dystopie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Utopie",
+      "en": "utopia",
+      "artikel": "die",
+      "example": "Diese Utopie beschreibt eine perfekte Gesellschaft."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Dystopie",
+      "en": "dystopia",
+      "artikel": "die",
+      "example": "Die Dystopie zeigt eine düstere Zukunft."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Zukunftsvision",
+      "en": "vision of the future",
+      "artikel": "die",
+      "example": "Der Roman entwirft eine radikale Zukunftsvision."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die ideale Gesellschaft",
+      "en": "ideal society",
+      "example": "Er träumt von einer idealen Gesellschaft."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die totalitäre Herrschaft",
+      "en": "totalitarian rule",
+      "artikel": "die",
+      "example": "Die totalitäre Herrschaft unterdrückt jede Freiheit."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Überwachungsgesellschaft",
+      "en": "surveillance society",
+      "artikel": "die",
+      "example": "Die Überwachungsgesellschaft kontrolliert jeden Schritt."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Entmenschlichung",
+      "en": "dehumanization",
+      "artikel": "die",
+      "example": "Die Entmenschlichung ist ein zentrales Motiv der Dystopie."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die fiktive Zukunft",
+      "en": "fictional future",
+      "artikel": "die",
+      "example": "Die fiktive Zukunft wirkt erschreckend real."
+    },
+    {
+      "de": "die Warnung vor der Zukunft",
+      "en": "warning about the future",
+      "example": "Der Roman ist eine Warnung vor der Zukunft."
+    },
+    {
+      "de": "die gesellschaftliche Vision",
+      "en": "societal vision",
+      "artikel": "die",
+      "example": "Die gesellschaftliche Vision des Autors ist radikal."
+    },
+    {
+      "de": "die Science-Fiction-Literatur",
+      "en": "science fiction literature",
+      "artikel": "die",
+      "example": "Science-Fiction-Literatur behandelt oft technische Utopien."
+    },
+    {
+      "de": "die totalitäre Kontrolle",
+      "en": "totalitarian control",
+      "artikel": "die",
+      "example": "Totalitäre Kontrolle prägt die gesamte Handlung."
+    },
+    {
+      "de": "das Gedankenexperiment",
+      "en": "thought experiment",
+      "artikel": "das",
+      "example": "Der Roman ist ein spannendes Gedankenexperiment."
+    },
+    {
+      "de": "die alternative Realität",
+      "en": "alternative reality",
+      "artikel": "die",
+      "example": "Die alternative Realität wirft viele Fragen auf."
+    },
+    {
+      "de": "die technologische Dystopie",
+      "en": "technological dystopia",
+      "artikel": "die",
+      "example": "Die technologische Dystopie warnt vor Kontrollverlust."
+    },
+    {
+      "de": "die Warnliteratur",
+      "en": "cautionary literature",
+      "artikel": "die",
+      "example": "Diese Warnliteratur beeinflusste ganze Generationen."
+    },
+    {
+      "de": "die perfekte Ordnung",
+      "en": "perfect order",
+      "example": "Die perfekte Ordnung entpuppt sich als Illusion."
+    },
+    {
+      "de": "die individuelle Freiheit einschränken",
+      "en": "to restrict individual freedom",
+      "example": "Der Staat schränkt die individuelle Freiheit stark ein."
+    },
+    {
+      "de": "die gesellschaftliche Kontrolle",
+      "en": "societal control",
+      "artikel": "die",
+      "example": "Gesellschaftliche Kontrolle ist das zentrale Thema."
+    },
+    {
+      "de": "die literarische Warnung",
+      "en": "literary warning",
+      "artikel": "die",
+      "example": "Der Roman ist eine literarische Warnung vor Machtmissbrauch."
     }
   ]
 }

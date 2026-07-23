@@ -1,32 +1,108 @@
 {
   "day": 57,
-  "topic": "Arbeit & Kollegen",
+  "topic": "Perfekt: Partizip II wichtiger Verben",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "gemacht",
+      "en": "done / made (Partizip II)",
+      "example": "Ich habe meine Hausaufgaben gemacht."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "gegangen",
+      "en": "gone (Partizip II)",
+      "example": "Ich bin ins Kino gegangen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "gesehen",
+      "en": "seen (Partizip II)",
+      "example": "Ich habe einen guten Film gesehen."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "gewesen",
+      "en": "been (Partizip II)",
+      "example": "Ich bin gestern im Park gewesen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "gegessen",
+      "en": "eaten (Partizip II)",
+      "example": "Wir haben zusammen gegessen."
+    },
+    {
+      "de": "getrunken",
+      "en": "drunk (Partizip II)",
+      "example": "Ich habe zu viel Kaffee getrunken."
+    },
+    {
+      "de": "geschlafen",
+      "en": "slept (Partizip II)",
+      "example": "Ich habe acht Stunden geschlafen."
+    },
+    {
+      "de": "angekommen",
+      "en": "arrived (Partizip II)",
+      "example": "Der Zug ist pünktlich angekommen."
+    },
+    {
+      "de": "angefangen",
+      "en": "started (Partizip II)",
+      "example": "Der Unterricht hat schon angefangen."
+    },
+    {
+      "de": "aufgehört",
+      "en": "stopped (Partizip II)",
+      "example": "Es hat endlich aufgehört zu regnen."
+    },
+    {
+      "de": "verstanden",
+      "en": "understood (Partizip II)",
+      "example": "Ich habe die Frage nicht verstanden."
+    },
+    {
+      "de": "geschrieben",
+      "en": "written (Partizip II)",
+      "example": "Ich habe einen Brief geschrieben."
+    },
+    {
+      "de": "gelesen",
+      "en": "read (Partizip II)",
+      "example": "Hast du das Buch schon gelesen?"
+    },
+    {
+      "de": "genommen",
+      "en": "taken (Partizip II)",
+      "example": "Ich habe den Bus genommen."
+    },
+    {
+      "de": "gebracht",
+      "en": "brought (Partizip II)",
+      "example": "Er hat mir Blumen gebracht."
+    },
+    {
+      "de": "gefunden",
+      "en": "found (Partizip II)",
+      "example": "Ich habe meinen Schlüssel gefunden."
+    },
+    {
+      "de": "geholfen",
+      "en": "helped (Partizip II)",
+      "example": "Sie hat mir sehr geholfen."
+    },
+    {
+      "de": "gedacht",
+      "en": "thought (Partizip II)",
+      "example": "Ich habe an dich gedacht."
+    },
+    {
+      "de": "das Hilfsverb",
+      "en": "auxiliary verb",
+      "artikel": "das",
+      "example": "\"Haben\" ist hier das Hilfsverb."
+    },
+    {
+      "de": "die Vergangenheit",
+      "en": "the past (grammar/time)",
+      "artikel": "die",
+      "example": "Erzähl mir von deiner Vergangenheit."
     }
-  ],
-  "_note": "Add 20 words about 'Arbeit & Kollegen'. Format: {de, en, example}"
+  ]
 }

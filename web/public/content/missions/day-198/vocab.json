@@ -1,51 +1,124 @@
 {
   "day": 198,
-  "level": "B2.2",
-  "topic": "Zustandspassiv",
+  "topic": "Strafrecht: Grundlagen",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Strafrecht",
+      "en": "criminal law",
+      "artikel": "das",
+      "example": "Das Strafrecht regelt die Bestrafung von Straftaten."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Straftat",
+      "en": "criminal offense",
+      "artikel": "die",
+      "example": "Diebstahl ist eine Straftat."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Tatbestand",
+      "en": "elements of an offense",
+      "artikel": "der",
+      "example": "Der Tatbestand des Betrugs ist erfüllt."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Schuldfähigkeit",
+      "en": "criminal responsibility / culpability",
+      "artikel": "die",
+      "example": "Seine Schuldfähigkeit wurde vom Gericht geprüft."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der Vorsatz (Recht)",
+      "en": "intent (law)",
+      "artikel": "der",
+      "example": "Vorsatz ist entscheidend für die Strafhöhe."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Fahrlässigkeit",
+      "en": "negligence",
+      "artikel": "die",
+      "example": "Der Unfall geschah aus Fahrlässigkeit."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Anklage erheben",
+      "en": "to bring charges",
+      "example": "Die Staatsanwaltschaft erhob Anklage."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Staatsanwaltschaft",
+      "en": "public prosecutor's office",
+      "artikel": "die",
+      "example": "Die Staatsanwaltschaft ermittelt in diesem Fall."
+    },
+    {
+      "de": "die Ermittlung (Strafrecht)",
+      "en": "investigation (criminal law)",
+      "artikel": "die",
+      "example": "Die Ermittlung dauert noch an."
+    },
+    {
+      "de": "die Beweisaufnahme",
+      "en": "evidence gathering",
+      "artikel": "die",
+      "example": "Die Beweisaufnahme fand vor Gericht statt."
+    },
+    {
+      "de": "die Bewährungsstrafe",
+      "en": "suspended sentence",
+      "artikel": "die",
+      "example": "Er erhielt eine Bewährungsstrafe."
+    },
+    {
+      "de": "die Freiheitsstrafe",
+      "en": "prison sentence",
+      "artikel": "die",
+      "example": "Die Freiheitsstrafe beträgt zwei Jahre."
+    },
+    {
+      "de": "die Geldstrafe",
+      "en": "fine (penalty)",
+      "artikel": "die",
+      "example": "Er zahlte eine hohe Geldstrafe."
+    },
+    {
+      "de": "die Berufung einlegen",
+      "en": "to file an appeal",
+      "example": "Der Anwalt legte Berufung ein."
+    },
+    {
+      "de": "die Revision (Recht)",
+      "en": "appeal on points of law",
+      "artikel": "die",
+      "example": "Die Revision wurde beim höheren Gericht eingereicht."
+    },
+    {
+      "de": "die Unschuldsvermutung",
+      "en": "presumption of innocence",
+      "artikel": "die",
+      "example": "Die Unschuldsvermutung gilt bis zum Urteil."
+    },
+    {
+      "de": "das Geständnis",
+      "en": "confession",
+      "artikel": "das",
+      "example": "Er legte vor Gericht ein Geständnis ab."
+    },
+    {
+      "de": "das Motiv (Straftat)",
+      "en": "motive (crime)",
+      "artikel": "das",
+      "example": "Das Motiv der Tat blieb unklar."
+    },
+    {
+      "de": "der Tatverdacht",
+      "en": "suspicion of a crime",
+      "artikel": "der",
+      "example": "Gegen ihn besteht dringender Tatverdacht."
+    },
+    {
+      "de": "die Strafmilderung",
+      "en": "mitigation of sentence",
+      "artikel": "die",
+      "example": "Sein Geständnis führte zu einer Strafmilderung."
     }
   ]
 }

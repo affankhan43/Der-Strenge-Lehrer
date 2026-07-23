@@ -1,32 +1,107 @@
 {
   "day": 58,
-  "topic": "Bewerbung & Lebenslauf",
+  "topic": "Präteritum wichtiger Verben",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "war",
+      "en": "was (Präteritum of sein)",
+      "example": "Ich war gestern zu Hause."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "hatte",
+      "en": "had (Präteritum of haben)",
+      "example": "Ich hatte keine Zeit."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "ging",
+      "en": "went (Präteritum of gehen)",
+      "example": "Er ging langsam nach Hause."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "kam",
+      "en": "came (Präteritum of kommen)",
+      "example": "Sie kam spät zur Arbeit."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "sah",
+      "en": "saw (Präteritum of sehen)",
+      "example": "Ich sah ihn gestern im Park."
+    },
+    {
+      "de": "gab",
+      "en": "gave (Präteritum of geben)",
+      "example": "Es gab viele Leute auf der Party."
+    },
+    {
+      "de": "wusste",
+      "en": "knew (Präteritum of wissen)",
+      "example": "Ich wusste die Antwort nicht."
+    },
+    {
+      "de": "konnte",
+      "en": "could (Präteritum of können)",
+      "example": "Ich konnte gestern nicht kommen."
+    },
+    {
+      "de": "musste",
+      "en": "had to (Präteritum of müssen)",
+      "example": "Ich musste früh aufstehen."
+    },
+    {
+      "de": "wollte",
+      "en": "wanted to (Präteritum of wollen)",
+      "example": "Sie wollte schon immer nach Berlin ziehen."
+    },
+    {
+      "de": "stand",
+      "en": "stood (Präteritum of stehen)",
+      "example": "Er stand vor der Tür."
+    },
+    {
+      "de": "saß",
+      "en": "sat (Präteritum of sitzen)",
+      "example": "Sie saß am Fenster."
+    },
+    {
+      "de": "fuhr",
+      "en": "drove (Präteritum of fahren)",
+      "example": "Wir fuhren letztes Jahr nach Italien."
+    },
+    {
+      "de": "sprach",
+      "en": "spoke (Präteritum of sprechen)",
+      "example": "Er sprach sehr leise."
+    },
+    {
+      "de": "schrieb",
+      "en": "wrote (Präteritum of schreiben)",
+      "example": "Ich schrieb ihr einen langen Brief."
+    },
+    {
+      "de": "las",
+      "en": "read (Präteritum of lesen)",
+      "example": "Sie las das ganze Wochenende."
+    },
+    {
+      "de": "aß",
+      "en": "ate (Präteritum of essen)",
+      "example": "Wir aßen zusammen zu Abend."
+    },
+    {
+      "de": "blieb",
+      "en": "stayed (Präteritum of bleiben)",
+      "example": "Er blieb bis spät in der Nacht."
+    },
+    {
+      "de": "die Erzählung",
+      "en": "narrative / story",
+      "artikel": "die",
+      "example": "Das war eine spannende Erzählung."
+    },
+    {
+      "de": "erzählen (Vergangenheit)",
+      "en": "to tell (a past story)",
+      "example": "Erzähl mir, was gestern passiert ist."
     }
-  ],
-  "_note": "Add 20 words about 'Bewerbung & Lebenslauf'. Format: {de, en, example}"
+  ]
 }

@@ -1,0 +1,118 @@
+{
+  "day": 148,
+  "topic": "Künstliche Intelligenz & Gesellschaft",
+  "words": [
+    {
+      "de": "die künstliche Intelligenz nutzen",
+      "en": "to use artificial intelligence",
+      "example": "Viele Firmen nutzen künstliche Intelligenz."
+    },
+    {
+      "de": "das maschinelle Lernen",
+      "en": "machine learning",
+      "artikel": "das",
+      "example": "Maschinelles Lernen verbessert sich ständig."
+    },
+    {
+      "de": "der Algorithmus entscheidet",
+      "en": "the algorithm decides",
+      "example": "Der Algorithmus entscheidet über die Anzeige."
+    },
+    {
+      "de": "die automatisierte Entscheidung",
+      "en": "automated decision",
+      "artikel": "die",
+      "example": "Automatisierte Entscheidungen betreffen viele Bereiche."
+    },
+    {
+      "de": "die Datenbasis",
+      "en": "data basis",
+      "artikel": "die",
+      "example": "Die KI lernt aus einer großen Datenbasis."
+    },
+    {
+      "de": "die Voreingenommenheit (KI)",
+      "en": "bias (AI)",
+      "artikel": "die",
+      "example": "Voreingenommenheit in Daten führt zu unfairen Ergebnissen."
+    },
+    {
+      "de": "die ethischen Grenzen",
+      "en": "ethical boundaries",
+      "artikel": "die",
+      "example": "Wir brauchen klare ethische Grenzen für KI."
+    },
+    {
+      "de": "die Regulierung (KI)",
+      "en": "regulation (AI)",
+      "artikel": "die",
+      "example": "Die Regulierung von KI wird diskutiert."
+    },
+    {
+      "de": "die Arbeitsplatzsicherheit gefährden",
+      "en": "to threaten job security",
+      "example": "KI könnte manche Arbeitsplätze gefährden."
+    },
+    {
+      "de": "die Chancen nutzen (KI)",
+      "en": "to seize opportunities (AI)",
+      "example": "Wir sollten die Chancen der KI nutzen."
+    },
+    {
+      "de": "die Risiken abwägen (KI)",
+      "en": "to weigh risks (AI)",
+      "example": "Wir müssen Risiken und Nutzen der KI abwägen."
+    },
+    {
+      "de": "die Mensch-Maschine-Interaktion",
+      "en": "human-machine interaction",
+      "artikel": "die",
+      "example": "Mensch-Maschine-Interaktion verändert die Arbeit."
+    },
+    {
+      "de": "die Superintelligenz",
+      "en": "superintelligence",
+      "artikel": "die",
+      "example": "Über Superintelligenz wird viel spekuliert."
+    },
+    {
+      "de": "die Kontrolle behalten",
+      "en": "to retain control",
+      "example": "Wir müssen die Kontrolle über KI behalten."
+    },
+    {
+      "de": "transparent gestalten",
+      "en": "to design transparently",
+      "example": "Algorithmen sollten transparent gestaltet werden."
+    },
+    {
+      "de": "die Verantwortlichkeit (KI)",
+      "en": "accountability (AI)",
+      "artikel": "die",
+      "example": "Verantwortlichkeit bei KI-Fehlern ist unklar."
+    },
+    {
+      "de": "die gesellschaftlichen Auswirkungen",
+      "en": "societal impact",
+      "artikel": "die",
+      "example": "Die gesellschaftlichen Auswirkungen von KI sind enorm."
+    },
+    {
+      "de": "die digitale Ethik",
+      "en": "digital ethics",
+      "artikel": "die",
+      "example": "Digitale Ethik gewinnt an Bedeutung."
+    },
+    {
+      "de": "die technologische Revolution",
+      "en": "technological revolution",
+      "artikel": "die",
+      "example": "Wir erleben eine technologische Revolution."
+    },
+    {
+      "de": "verantwortungsvoll entwickeln",
+      "en": "to develop responsibly",
+      "example": "KI sollte verantwortungsvoll entwickelt werden."
+    }
+  ]
+}

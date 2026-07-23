@@ -1,32 +1,115 @@
 {
   "day": 79,
-  "topic": "Technologie & KI",
+  "topic": "Verhandeln & Kompromisse",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "verhandeln",
+      "en": "to negotiate",
+      "example": "Wir verhandeln über den Preis."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Verhandlung",
+      "en": "negotiation",
+      "artikel": "die",
+      "example": "Die Verhandlung dauerte zwei Stunden."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Angebot machen",
+      "en": "to make an offer",
+      "example": "Ich mache Ihnen ein faires Angebot."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "ablehnen",
+      "en": "to reject / decline",
+      "example": "Er hat das Angebot abgelehnt."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "akzeptieren",
+      "en": "to accept",
+      "example": "Ich akzeptiere Ihre Bedingungen."
+    },
+    {
+      "de": "die Bedingung",
+      "en": "condition",
+      "artikel": "die",
+      "example": "Es gibt eine wichtige Bedingung."
+    },
+    {
+      "de": "aushandeln",
+      "en": "to negotiate (a deal)",
+      "example": "Wir haben einen guten Preis ausgehandelt."
+    },
+    {
+      "de": "der Spielraum",
+      "en": "room to maneuver / flexibility",
+      "artikel": "der",
+      "example": "Wir haben etwas Spielraum beim Preis."
+    },
+    {
+      "de": "nachgeben (Verhandlung)",
+      "en": "to concede",
+      "example": "Am Ende musste er etwas nachgeben."
+    },
+    {
+      "de": "beharren auf",
+      "en": "to insist on",
+      "example": "Sie beharrt auf ihrer Meinung."
+    },
+    {
+      "de": "der Kompromiss finden",
+      "en": "to find a compromise",
+      "example": "Wir haben endlich einen Kompromiss gefunden."
+    },
+    {
+      "de": "die Win-win-Situation",
+      "en": "win-win situation",
+      "artikel": "die",
+      "example": "Das ist eine echte Win-win-Situation."
+    },
+    {
+      "de": "die Einigung",
+      "en": "agreement / settlement",
+      "artikel": "die",
+      "example": "Wir haben eine Einigung erzielt."
+    },
+    {
+      "de": "sich einigen",
+      "en": "to come to an agreement",
+      "example": "Wir haben uns schnell geeinigt."
+    },
+    {
+      "de": "das Gegenangebot",
+      "en": "counteroffer",
+      "artikel": "das",
+      "example": "Sie machten ein Gegenangebot."
+    },
+    {
+      "de": "überzeugend",
+      "en": "convincing",
+      "example": "Ihr Argument war sehr überzeugend."
+    },
+    {
+      "de": "das Argument",
+      "en": "argument (reasoning)",
+      "artikel": "das",
+      "example": "Das ist ein starkes Argument."
+    },
+    {
+      "de": "argumentieren",
+      "en": "to argue (a point)",
+      "example": "Er argumentiert sehr logisch."
+    },
+    {
+      "de": "der Vorteil",
+      "en": "advantage",
+      "artikel": "der",
+      "example": "Das hat viele Vorteile."
+    },
+    {
+      "de": "der Nachteil",
+      "en": "disadvantage",
+      "artikel": "der",
+      "example": "Es gibt aber auch einen Nachteil."
     }
-  ],
-  "_note": "Add 20 words about 'Technologie & KI'. Format: {de, en, example}"
+  ]
 }

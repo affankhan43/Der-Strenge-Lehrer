@@ -1,51 +1,121 @@
 {
   "day": 190,
-  "level": "B2.1",
-  "topic": "Argumentation",
+  "topic": "Journalismus: Recherche & Ethik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Recherche",
+      "en": "research (journalism)",
+      "artikel": "die",
+      "example": "Die Recherche für diesen Artikel dauerte Wochen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "recherchieren",
+      "en": "to research (journalism)",
+      "example": "Sie recherchiert gründlich, bevor sie schreibt."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die journalistische Sorgfaltspflicht",
+      "en": "journalistic duty of care",
+      "artikel": "die",
+      "example": "Die journalistische Sorgfaltspflicht verlangt genaue Prüfung."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Quellenprüfung",
+      "en": "source verification",
+      "artikel": "die",
+      "example": "Quellenprüfung ist ein zentraler Teil der Recherche."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der investigative Journalismus",
+      "en": "investigative journalism",
+      "artikel": "der",
+      "example": "Investigativer Journalismus deckt Missstände auf."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "den Skandal aufdecken",
+      "en": "to uncover a scandal",
+      "example": "Der Journalist deckte einen großen Skandal auf."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Pressefreiheit",
+      "en": "freedom of the press",
+      "artikel": "die",
+      "example": "Pressefreiheit ist ein wichtiges demokratisches Recht."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die redaktionelle Unabhängigkeit",
+      "en": "editorial independence",
+      "artikel": "die",
+      "example": "Redaktionelle Unabhängigkeit sichert objektive Berichterstattung."
+    },
+    {
+      "de": "die Quelle schützen",
+      "en": "to protect a source",
+      "example": "Journalisten müssen ihre Quellen schützen."
+    },
+    {
+      "de": "der Informant",
+      "en": "informant",
+      "artikel": "der",
+      "example": "Der Informant blieb anonym."
+    },
+    {
+      "de": "die Enthüllung",
+      "en": "revelation / exposé",
+      "artikel": "die",
+      "example": "Die Enthüllung sorgte für großes Aufsehen."
+    },
+    {
+      "de": "die objektive Berichterstattung",
+      "en": "objective reporting",
+      "artikel": "die",
+      "example": "Objektive Berichterstattung ist ein journalistisches Ideal."
+    },
+    {
+      "de": "die Boulevardpresse",
+      "en": "tabloid press",
+      "artikel": "die",
+      "example": "Die Boulevardpresse übertreibt oft."
+    },
+    {
+      "de": "die seriöse Berichterstattung",
+      "en": "serious/credible reporting",
+      "artikel": "die",
+      "example": "Seriöse Berichterstattung prüft Fakten sorgfältig."
+    },
+    {
+      "de": "die journalistische Ethik",
+      "en": "journalistic ethics",
+      "artikel": "die",
+      "example": "Journalistische Ethik verlangt Fairness gegenüber allen Seiten."
+    },
+    {
+      "de": "die Gegendarstellung",
+      "en": "counter-statement / right of reply",
+      "artikel": "die",
+      "example": "Die betroffene Person forderte eine Gegendarstellung."
+    },
+    {
+      "de": "den Sachverhalt prüfen",
+      "en": "to check the facts of a matter",
+      "example": "Wir prüfen den Sachverhalt vor der Veröffentlichung."
+    },
+    {
+      "de": "die mediale Verantwortung",
+      "en": "media responsibility",
+      "artikel": "die",
+      "example": "Mediale Verantwortung bedeutet, sorgfältig zu berichten."
+    },
+    {
+      "de": "das Redaktionsgeheimnis",
+      "en": "editorial confidentiality",
+      "artikel": "das",
+      "example": "Das Redaktionsgeheimnis schützt Informanten."
+    },
+    {
+      "de": "unabhängig berichten",
+      "en": "to report independently",
+      "example": "Wir berichten unabhängig von wirtschaftlichen Interessen."
     }
   ]
 }

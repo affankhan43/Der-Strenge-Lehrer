@@ -1,51 +1,126 @@
 {
   "day": 213,
-  "level": "B2.2",
-  "topic": "Kohäsion",
+  "topic": "Diplomatie & internationale Beziehungen",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Diplomatie",
+      "en": "diplomacy",
+      "artikel": "die",
+      "example": "Diplomatie löst Konflikte ohne Gewalt."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Diplomat",
+      "en": "diplomat (male)",
+      "artikel": "der",
+      "example": "Der Diplomat vertritt sein Land im Ausland."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Diplomatin",
+      "en": "diplomat (female)",
+      "artikel": "die",
+      "example": "Die Diplomatin führte wichtige Verhandlungen."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die bilateralen Beziehungen",
+      "en": "bilateral relations",
+      "artikel": "die",
+      "example": "Die bilateralen Beziehungen wurden gestärkt."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die multilateralen Verhandlungen",
+      "en": "multilateral negotiations",
+      "artikel": "die",
+      "example": "Multilaterale Verhandlungen betreffen viele Länder."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das diplomatische Protokoll",
+      "en": "diplomatic protocol",
+      "artikel": "das",
+      "example": "Das diplomatische Protokoll regelt offizielle Treffen."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "der Gesandte",
+      "en": "envoy",
+      "artikel": "der",
+      "example": "Der Gesandte überbrachte eine wichtige Botschaft."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Verhandlungsdelegation",
+      "en": "negotiating delegation",
+      "artikel": "die",
+      "example": "Die Verhandlungsdelegation reiste nach Genf."
+    },
+    {
+      "de": "die Interessenvertretung (international)",
+      "en": "representation of interests (international)",
+      "artikel": "die",
+      "example": "Diplomatie dient der Interessenvertretung eines Landes."
+    },
+    {
+      "de": "die außenpolitische Strategie",
+      "en": "foreign policy strategy",
+      "artikel": "die",
+      "example": "Die außenpolitische Strategie wurde neu ausgerichtet."
+    },
+    {
+      "de": "die Souveränität",
+      "en": "sovereignty",
+      "artikel": "die",
+      "example": "Souveränität bedeutet Selbstbestimmung eines Staates."
+    },
+    {
+      "de": "die Nichteinmischung",
+      "en": "non-interference",
+      "artikel": "die",
+      "example": "Nichteinmischung ist ein Grundprinzip des Völkerrechts."
+    },
+    {
+      "de": "das Völkerrecht",
+      "en": "international law",
+      "artikel": "das",
+      "example": "Das Völkerrecht regelt Beziehungen zwischen Staaten."
+    },
+    {
+      "de": "das diplomatische Abkommen",
+      "en": "diplomatic agreement",
+      "artikel": "das",
+      "example": "Das diplomatische Abkommen beendete den Konflikt."
+    },
+    {
+      "de": "die Krisendiplomatie",
+      "en": "crisis diplomacy",
+      "artikel": "die",
+      "example": "Krisendiplomatie erfordert schnelles Handeln."
+    },
+    {
+      "de": "die Schlichtung (international)",
+      "en": "mediation (international)",
+      "artikel": "die",
+      "example": "Ein neutrales Land bot Schlichtung an."
+    },
+    {
+      "de": "das internationale Abkommen",
+      "en": "international agreement",
+      "artikel": "das",
+      "example": "Das internationale Abkommen wurde von 40 Ländern unterzeichnet."
+    },
+    {
+      "de": "die geopolitische Lage",
+      "en": "geopolitical situation",
+      "artikel": "die",
+      "example": "Die geopolitische Lage bleibt angespannt."
+    },
+    {
+      "de": "die diplomatischen Kanäle",
+      "en": "diplomatic channels",
+      "artikel": "die",
+      "example": "Die diplomatischen Kanäle blieben trotz der Krise offen."
+    },
+    {
+      "de": "die Annäherung (Politik)",
+      "en": "rapprochement (politics)",
+      "artikel": "die",
+      "example": "Die Annäherung zwischen beiden Ländern verlief langsam."
     }
   ]
 }

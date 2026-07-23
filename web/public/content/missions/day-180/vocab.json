@@ -1,51 +1,118 @@
 {
   "day": 180,
-  "level": "B2.1",
-  "topic": "Konjunktiv I",
+  "topic": "Interkulturelles Management",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das interkulturelle Management",
+      "en": "intercultural management",
+      "artikel": "das",
+      "example": "Interkulturelles Management ist in globalen Firmen wichtig."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die kulturelle Sensibilität",
+      "en": "cultural sensitivity",
+      "artikel": "die",
+      "example": "Kulturelle Sensibilität hilft bei internationalen Teams."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das internationale Team führen",
+      "en": "to lead an international team",
+      "example": "Sie führt ein internationales Team mit fünf Nationalitäten."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die kulturellen Missverständnisse",
+      "en": "cultural misunderstandings",
+      "artikel": "die",
+      "example": "Kulturelle Missverständnisse können Projekte verzögern."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die interkulturelle Schulung",
+      "en": "intercultural training",
+      "artikel": "die",
+      "example": "Wir bieten interkulturelle Schulungen für neue Mitarbeiter an."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Diversität im Team",
+      "en": "diversity in the team",
+      "artikel": "die",
+      "example": "Diversität im Team fördert Kreativität."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die globale Zusammenarbeit",
+      "en": "global collaboration",
+      "artikel": "die",
+      "example": "Globale Zusammenarbeit erfordert klare Kommunikation."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die kulturelle Anpassung",
+      "en": "cultural adaptation",
+      "artikel": "die",
+      "example": "Kulturelle Anpassung erleichtert die Zusammenarbeit."
+    },
+    {
+      "de": "die interkulturelle Kompetenz entwickeln",
+      "en": "to develop intercultural competence",
+      "example": "Wir entwickeln interkulturelle Kompetenz durch Erfahrung."
+    },
+    {
+      "de": "die Landeskultur berücksichtigen",
+      "en": "to take national culture into account",
+      "example": "Man sollte die Landeskultur bei Verhandlungen berücksichtigen."
+    },
+    {
+      "de": "die Auslandsentsendung",
+      "en": "international assignment / expatriation",
+      "artikel": "die",
+      "example": "Die Auslandsentsendung dauerte zwei Jahre."
+    },
+    {
+      "de": "der Expatriate",
+      "en": "expatriate",
+      "artikel": "der",
+      "example": "Der Expatriate leitet die Niederlassung in Shanghai."
+    },
+    {
+      "de": "die internationale Niederlassung",
+      "en": "international branch office",
+      "artikel": "die",
+      "example": "Die internationale Niederlassung wächst schnell."
+    },
+    {
+      "de": "die grenzüberschreitende Zusammenarbeit",
+      "en": "cross-border cooperation",
+      "artikel": "die",
+      "example": "Grenzüberschreitende Zusammenarbeit stärkt beide Standorte."
+    },
+    {
+      "de": "die Kommunikationsstile vergleichen",
+      "en": "to compare communication styles",
+      "example": "Wir vergleichen Kommunikationsstile verschiedener Kulturen."
+    },
+    {
+      "de": "die kulturelle Vielfalt nutzen",
+      "en": "to leverage cultural diversity",
+      "example": "Wir nutzen kulturelle Vielfalt als Stärke."
+    },
+    {
+      "de": "das gemeinsame Verständnis schaffen",
+      "en": "to create a shared understanding",
+      "example": "Wir schaffen ein gemeinsames Verständnis im Team."
+    },
+    {
+      "de": "den kulturellen Kontext beachten",
+      "en": "to consider the cultural context",
+      "example": "Beachte immer den kulturellen Kontext der Verhandlung."
+    },
+    {
+      "de": "die internationale Führungskraft",
+      "en": "international executive",
+      "artikel": "die",
+      "example": "Sie ist eine erfahrene internationale Führungskraft."
+    },
+    {
+      "de": "kulturübergreifend arbeiten",
+      "en": "to work across cultures",
+      "example": "Wir arbeiten täglich kulturübergreifend zusammen."
     }
   ]
 }

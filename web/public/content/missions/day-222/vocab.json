@@ -1,51 +1,125 @@
 {
   "day": 222,
-  "level": "B2.2",
-  "topic": "Pressetext",
+  "topic": "Biotechnologie & Gentechnik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Biotechnologie",
+      "en": "biotechnology",
+      "artikel": "die",
+      "example": "Biotechnologie verändert die moderne Medizin."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Gentechnik",
+      "en": "genetic engineering",
+      "artikel": "die",
+      "example": "Gentechnik ermöglicht gezielte genetische Veränderungen."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Genmanipulation",
+      "en": "genetic manipulation",
+      "artikel": "die",
+      "example": "Genmanipulation wirft ethische Fragen auf."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "das gentechnisch veränderte Lebensmittel",
+      "en": "genetically modified food",
+      "artikel": "das",
+      "example": "Gentechnisch veränderte Lebensmittel sind umstritten."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Genschere",
+      "en": "gene editing tool (e.g. CRISPR)",
+      "artikel": "die",
+      "example": "Die Genschere CRISPR ermöglicht präzise Eingriffe."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Erbgutveränderung",
+      "en": "genome modification",
+      "artikel": "die",
+      "example": "Erbgutveränderungen können vererbbar sein."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die synthetische Biologie",
+      "en": "synthetic biology",
+      "artikel": "die",
+      "example": "Synthetische Biologie schafft neue biologische Systeme."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "das Klonen",
+      "en": "cloning",
+      "artikel": "das",
+      "example": "Klonen von Tieren ist technisch möglich."
+    },
+    {
+      "de": "die Stammzellenforschung",
+      "en": "stem cell research",
+      "artikel": "die",
+      "example": "Stammzellenforschung eröffnet neue Therapiemöglichkeiten."
+    },
+    {
+      "de": "die ethischen Bedenken (Gentechnik)",
+      "en": "ethical concerns (genetic engineering)",
+      "artikel": "die",
+      "example": "Ethische Bedenken begleiten die Gentechnikforschung."
+    },
+    {
+      "de": "die Biopatentierung",
+      "en": "biopatenting",
+      "artikel": "die",
+      "example": "Biopatentierung ist rechtlich und ethisch umstritten."
+    },
+    {
+      "de": "die Keimbahntherapie",
+      "en": "germline therapy",
+      "artikel": "die",
+      "example": "Keimbahntherapie verändert vererbbares Erbgut."
+    },
+    {
+      "de": "die Biosicherheit",
+      "en": "biosafety",
+      "artikel": "die",
+      "example": "Biosicherheit verhindert unkontrollierte Freisetzungen."
+    },
+    {
+      "de": "die genetische Vielfalt",
+      "en": "genetic diversity",
+      "artikel": "die",
+      "example": "Genetische Vielfalt ist wichtig für Ökosysteme."
+    },
+    {
+      "de": "die Genforschung regulieren",
+      "en": "to regulate gene research",
+      "example": "Der Staat reguliert Genforschung streng."
+    },
+    {
+      "de": "die Biotechnologiebranche",
+      "en": "biotech industry",
+      "artikel": "die",
+      "example": "Die Biotechnologiebranche wächst schnell."
+    },
+    {
+      "de": "die gentechnische Veränderung",
+      "en": "genetic modification",
+      "artikel": "die",
+      "example": "Die gentechnische Veränderung wurde genehmigt."
+    },
+    {
+      "de": "das genetische Screening",
+      "en": "genetic screening",
+      "artikel": "das",
+      "example": "Genetisches Screening erkennt Erbkrankheiten früh."
+    },
+    {
+      "de": "die Risikoabschätzung (Gentechnik)",
+      "en": "risk assessment (genetic engineering)",
+      "artikel": "die",
+      "example": "Risikoabschätzung ist vor jeder Zulassung Pflicht."
+    },
+    {
+      "de": "die biotechnologische Innovation",
+      "en": "biotechnological innovation",
+      "artikel": "die",
+      "example": "Biotechnologische Innovation verändert die Landwirtschaft."
     }
   ]
 }

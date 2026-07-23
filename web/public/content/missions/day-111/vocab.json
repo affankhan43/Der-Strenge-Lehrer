@@ -1,32 +1,122 @@
 {
   "day": 111,
-  "topic": "Abschluss & Prüfungsvorbereitung",
+  "topic": "Vertiefung: Adjektivendungen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der bestimmte Artikel",
+      "en": "definite article",
+      "artikel": "der",
+      "example": "Der bestimmte Artikel ist \"der, die, das\"."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der unbestimmte Artikel",
+      "en": "indefinite article",
+      "artikel": "der",
+      "example": "Der unbestimmte Artikel ist \"ein, eine\"."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Adjektivendung",
+      "en": "adjective ending",
+      "artikel": "die",
+      "example": "Die Adjektivendung hängt vom Fall ab."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Nominativ",
+      "en": "nominative case",
+      "artikel": "der",
+      "example": "Das Subjekt steht im Nominativ."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Genitiv",
+      "en": "genitive case",
+      "artikel": "der",
+      "example": "Der Genitiv zeigt Besitz an."
+    },
+    {
+      "de": "die Deklination",
+      "en": "declension",
+      "artikel": "die",
+      "example": "Die Deklination ist im Deutschen komplex."
+    },
+    {
+      "de": "deklinieren",
+      "en": "to decline (grammar)",
+      "example": "Wir deklinieren das Adjektiv nach dem Fall."
+    },
+    {
+      "de": "das Substantiv",
+      "en": "noun",
+      "artikel": "das",
+      "example": "Jedes Substantiv hat einen Artikel."
+    },
+    {
+      "de": "das Adjektiv",
+      "en": "adjective",
+      "artikel": "das",
+      "example": "Das Adjektiv beschreibt das Substantiv."
+    },
+    {
+      "de": "das Adverb",
+      "en": "adverb",
+      "artikel": "das",
+      "example": "Das Adverb beschreibt das Verb."
+    },
+    {
+      "de": "die Endung",
+      "en": "ending (grammar)",
+      "artikel": "die",
+      "example": "Die Endung ändert sich je nach Fall."
+    },
+    {
+      "de": "die Wortart",
+      "en": "part of speech",
+      "artikel": "die",
+      "example": "Welche Wortart ist \"schnell\"?"
+    },
+    {
+      "de": "die Regel (Grammatik)",
+      "en": "rule (grammar)",
+      "artikel": "die",
+      "example": "Diese Regel hat viele Ausnahmen."
+    },
+    {
+      "de": "die Ausnahme",
+      "en": "exception",
+      "artikel": "die",
+      "example": "Es gibt immer eine Ausnahme."
+    },
+    {
+      "de": "das Genus",
+      "en": "grammatical gender",
+      "artikel": "das",
+      "example": "Das Genus bestimmt den Artikel."
+    },
+    {
+      "de": "männlich (Grammatik)",
+      "en": "masculine (grammar)",
+      "example": "\"Der Tisch\" ist männlich."
+    },
+    {
+      "de": "weiblich (Grammatik)",
+      "en": "feminine (grammar)",
+      "example": "\"Die Blume\" ist weiblich."
+    },
+    {
+      "de": "sächlich",
+      "en": "neuter (grammar)",
+      "example": "\"Das Kind\" ist sächlich."
+    },
+    {
+      "de": "der Plural",
+      "en": "plural",
+      "artikel": "der",
+      "example": "Der Plural von \"Kind\" ist \"Kinder\"."
+    },
+    {
+      "de": "der Singular",
+      "en": "singular",
+      "artikel": "der",
+      "example": "Der Singular von \"Kinder\" ist \"Kind\"."
     }
-  ],
-  "_note": "Add 20 words about 'Abschluss & Prüfungsvorbereitung'. Format: {de, en, example}"
+  ]
 }

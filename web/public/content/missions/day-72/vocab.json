@@ -1,32 +1,119 @@
 {
   "day": 72,
-  "topic": "Klimawandel & Politik",
+  "topic": "Digitales Leben & Datenschutz",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Datenschutz",
+      "en": "data protection / privacy",
+      "artikel": "der",
+      "example": "Datenschutz ist mir sehr wichtig."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Privatsphäre",
+      "en": "privacy",
+      "artikel": "die",
+      "example": "Ich schütze meine Privatsphäre online."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Daten",
+      "en": "data",
+      "artikel": "die",
+      "example": "Deine Daten sind bei uns sicher."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "speichern (Daten)",
+      "en": "to store (data)",
+      "example": "Wir speichern deine Daten verschlüsselt."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "löschen",
+      "en": "to delete",
+      "example": "Ich lösche alte E-Mails regelmäßig."
+    },
+    {
+      "de": "die Verschlüsselung",
+      "en": "encryption",
+      "artikel": "die",
+      "example": "Die Verschlüsselung schützt deine Nachrichten."
+    },
+    {
+      "de": "hacken",
+      "en": "to hack",
+      "example": "Jemand hat ihr Konto gehackt."
+    },
+    {
+      "de": "der Hacker",
+      "en": "hacker",
+      "artikel": "der",
+      "example": "Der Hacker konnte gefasst werden."
+    },
+    {
+      "de": "der Virus (Computer)",
+      "en": "computer virus",
+      "artikel": "der",
+      "example": "Ein Virus hat meinen Computer infiziert."
+    },
+    {
+      "de": "die Cyberkriminalität",
+      "en": "cybercrime",
+      "artikel": "die",
+      "example": "Cyberkriminalität nimmt zu."
+    },
+    {
+      "de": "das Konto sperren",
+      "en": "to lock/block an account",
+      "example": "Wir müssen dein Konto sperren."
+    },
+    {
+      "de": "die Zwei-Faktor-Authentifizierung",
+      "en": "two-factor authentication",
+      "artikel": "die",
+      "example": "Nutze die Zwei-Faktor-Authentifizierung für mehr Sicherheit."
+    },
+    {
+      "de": "digital",
+      "en": "digital",
+      "example": "Wir leben in einer digitalen Welt."
+    },
+    {
+      "de": "die Künstliche Intelligenz",
+      "en": "artificial intelligence",
+      "artikel": "die",
+      "example": "Künstliche Intelligenz verändert viele Branchen."
+    },
+    {
+      "de": "der Algorithmus",
+      "en": "algorithm",
+      "artikel": "der",
+      "example": "Der Algorithmus wählt die passenden Ergebnisse aus."
+    },
+    {
+      "de": "die Cloud",
+      "en": "cloud (storage)",
+      "artikel": "die",
+      "example": "Ich speichere meine Fotos in der Cloud."
+    },
+    {
+      "de": "das Update",
+      "en": "update",
+      "artikel": "das",
+      "example": "Installiere bitte das neue Update."
+    },
+    {
+      "de": "aktualisieren",
+      "en": "to update",
+      "example": "Ich muss meine App aktualisieren."
+    },
+    {
+      "de": "die Einstellungen",
+      "en": "settings",
+      "artikel": "die",
+      "example": "Ändere die Einstellungen in der App."
+    },
+    {
+      "de": "anonym",
+      "en": "anonymous",
+      "example": "Er hat den Kommentar anonym geschrieben."
     }
-  ],
-  "_note": "Add 20 words about 'Klimawandel & Politik'. Format: {de, en, example}"
+  ]
 }

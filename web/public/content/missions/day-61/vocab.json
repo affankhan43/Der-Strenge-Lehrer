@@ -1,32 +1,123 @@
 {
   "day": 61,
-  "topic": "Gesundheit & Stress",
+  "topic": "Politik & Gesellschaft",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Regierung",
+      "en": "government",
+      "artikel": "die",
+      "example": "Die Regierung trifft heute eine Entscheidung."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Präsident",
+      "en": "president (male)",
+      "artikel": "der",
+      "example": "Der Präsident hält eine Rede."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Präsidentin",
+      "en": "president (female)",
+      "artikel": "die",
+      "example": "Die Präsidentin besucht das Parlament."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Wahl",
+      "en": "election",
+      "artikel": "die",
+      "example": "Die Wahl findet im September statt."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "wählen",
+      "en": "to vote / elect",
+      "example": "Ich gehe morgen wählen."
+    },
+    {
+      "de": "die Partei",
+      "en": "political party",
+      "artikel": "die",
+      "example": "Er ist Mitglied einer Partei."
+    },
+    {
+      "de": "das Gesetz",
+      "en": "law",
+      "artikel": "das",
+      "example": "Das neue Gesetz tritt im Januar in Kraft."
+    },
+    {
+      "de": "die Demokratie",
+      "en": "democracy",
+      "artikel": "die",
+      "example": "Deutschland ist eine Demokratie."
+    },
+    {
+      "de": "der Bürger",
+      "en": "citizen (male)",
+      "artikel": "der",
+      "example": "Jeder Bürger hat das Recht zu wählen."
+    },
+    {
+      "de": "die Bürgerin",
+      "en": "citizen (female)",
+      "artikel": "die",
+      "example": "Die Bürgerin engagiert sich für die Umwelt."
+    },
+    {
+      "de": "die Verfassung",
+      "en": "constitution",
+      "artikel": "die",
+      "example": "Die Verfassung schützt die Grundrechte."
+    },
+    {
+      "de": "die Freiheit",
+      "en": "freedom",
+      "artikel": "die",
+      "example": "Meinungsfreiheit ist sehr wichtig."
+    },
+    {
+      "de": "die Gleichheit",
+      "en": "equality",
+      "artikel": "die",
+      "example": "Gleichheit vor dem Gesetz ist ein Grundprinzip."
+    },
+    {
+      "de": "die Steuer",
+      "en": "tax",
+      "artikel": "die",
+      "example": "Wir zahlen jedes Jahr Steuern."
+    },
+    {
+      "de": "der Staat",
+      "en": "state / nation",
+      "artikel": "der",
+      "example": "Der Staat unterstützt Familien mit Kindern."
+    },
+    {
+      "de": "international",
+      "en": "international",
+      "example": "Das Unternehmen ist international bekannt."
+    },
+    {
+      "de": "national",
+      "en": "national",
+      "example": "Es gibt eine nationale Diskussion darüber."
+    },
+    {
+      "de": "die Nachrichten",
+      "en": "the news",
+      "artikel": "die",
+      "example": "Ich schaue jeden Abend die Nachrichten."
+    },
+    {
+      "de": "das Parlament",
+      "en": "parliament",
+      "artikel": "das",
+      "example": "Das Gesetz wird im Parlament diskutiert."
+    },
+    {
+      "de": "der Politiker",
+      "en": "politician (male)",
+      "artikel": "der",
+      "example": "Der Politiker spricht über Bildung."
     }
-  ],
-  "_note": "Add 20 words about 'Gesundheit & Stress'. Format: {de, en, example}"
+  ]
 }

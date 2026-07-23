@@ -1,51 +1,125 @@
 {
   "day": 214,
-  "level": "B2.2",
-  "topic": "Kohärenz",
+  "topic": "Sicherheitspolitik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Sicherheitspolitik",
+      "en": "security policy",
+      "artikel": "die",
+      "example": "Sicherheitspolitik schützt die nationale Sicherheit."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die nationale Sicherheit",
+      "en": "national security",
+      "artikel": "die",
+      "example": "Nationale Sicherheit hat oberste Priorität."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Verteidigungspolitik",
+      "en": "defense policy",
+      "artikel": "die",
+      "example": "Die Verteidigungspolitik wurde neu ausgerichtet."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "das Verteidigungsbudget",
+      "en": "defense budget",
+      "artikel": "das",
+      "example": "Das Verteidigungsbudget wurde erhöht."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die militärische Abschreckung",
+      "en": "military deterrence",
+      "artikel": "die",
+      "example": "Militärische Abschreckung soll Konflikte verhindern."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das Verteidigungsbündnis",
+      "en": "defense alliance",
+      "artikel": "das",
+      "example": "Das Verteidigungsbündnis stärkt die kollektive Sicherheit."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die kollektive Sicherheit",
+      "en": "collective security",
+      "artikel": "die",
+      "example": "Kollektive Sicherheit schützt alle Mitgliedsstaaten."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Rüstungskontrolle",
+      "en": "arms control",
+      "artikel": "die",
+      "example": "Rüstungskontrolle begrenzt gefährliche Waffen."
+    },
+    {
+      "de": "die Abrüstung",
+      "en": "disarmament",
+      "artikel": "die",
+      "example": "Abrüstung ist ein wichtiges internationales Ziel."
+    },
+    {
+      "de": "die Cybersicherheit (Staat)",
+      "en": "cybersecurity (state level)",
+      "artikel": "die",
+      "example": "Cybersicherheit wird zunehmend Teil der Sicherheitspolitik."
+    },
+    {
+      "de": "die kritische Infrastruktur schützen",
+      "en": "to protect critical infrastructure",
+      "example": "Der Staat schützt kritische Infrastruktur vor Angriffen."
+    },
+    {
+      "de": "die Bedrohungsanalyse",
+      "en": "threat analysis",
+      "artikel": "die",
+      "example": "Die Bedrohungsanalyse zeigte neue Risiken."
+    },
+    {
+      "de": "die Sicherheitsstrategie",
+      "en": "security strategy",
+      "artikel": "die",
+      "example": "Die Sicherheitsstrategie wurde überarbeitet."
+    },
+    {
+      "de": "der Geheimdienst",
+      "en": "intelligence agency",
+      "artikel": "der",
+      "example": "Der Geheimdienst sammelt sicherheitsrelevante Informationen."
+    },
+    {
+      "de": "die Spionage",
+      "en": "espionage",
+      "artikel": "die",
+      "example": "Spionage bleibt eine ständige Bedrohung."
+    },
+    {
+      "de": "die Krisenprävention (Politik)",
+      "en": "crisis prevention (politics)",
+      "artikel": "die",
+      "example": "Krisenprävention verhindert militärische Eskalation."
+    },
+    {
+      "de": "die Friedenssicherung",
+      "en": "peacekeeping",
+      "artikel": "die",
+      "example": "Friedenssicherung erfordert internationale Zusammenarbeit."
+    },
+    {
+      "de": "die Verteidigungsfähigkeit",
+      "en": "defense capability",
+      "artikel": "die",
+      "example": "Die Verteidigungsfähigkeit wurde gestärkt."
+    },
+    {
+      "de": "die sicherheitspolitische Debatte",
+      "en": "security policy debate",
+      "artikel": "die",
+      "example": "Die sicherheitspolitische Debatte war sehr kontrovers."
+    },
+    {
+      "de": "die Bündnisverpflichtung",
+      "en": "alliance obligation",
+      "artikel": "die",
+      "example": "Die Bündnisverpflichtung sichert gegenseitigen Beistand."
     }
   ]
 }

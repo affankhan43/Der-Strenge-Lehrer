@@ -1,32 +1,111 @@
 {
   "day": 84,
-  "topic": "Rückblick A2.1",
+  "topic": "Wiederholung: Vergleich & Steigerung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "vergleichen",
+      "en": "to compare",
+      "example": "Vergleich die zwei Angebote."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Vergleich",
+      "en": "comparison",
+      "artikel": "der",
+      "example": "Im Vergleich ist dieses Modell besser."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "besser als",
+      "en": "better than",
+      "example": "Dieses Auto ist besser als das andere."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "schlechter als",
+      "en": "worse than",
+      "example": "Das Wetter ist heute schlechter als gestern."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "genauso ... wie",
+      "en": "just as ... as",
+      "example": "Sie ist genauso klug wie ihr Bruder."
+    },
+    {
+      "de": "mehr als",
+      "en": "more than",
+      "example": "Ich habe mehr Zeit als früher."
+    },
+    {
+      "de": "weniger als",
+      "en": "less than",
+      "example": "Ich verdiene weniger als mein Kollege."
+    },
+    {
+      "de": "am meisten",
+      "en": "the most",
+      "example": "Er arbeitet am meisten von allen."
+    },
+    {
+      "de": "am wenigsten",
+      "en": "the least",
+      "example": "Sie redet am wenigsten in der Gruppe."
+    },
+    {
+      "de": "der Unterschied",
+      "en": "difference",
+      "artikel": "der",
+      "example": "Es gibt einen großen Unterschied."
+    },
+    {
+      "de": "sich unterscheiden",
+      "en": "to differ",
+      "example": "Die beiden Modelle unterscheiden sich stark."
+    },
+    {
+      "de": "ähnlich sein",
+      "en": "to be similar",
+      "example": "Die beiden Häuser sind sich ähnlich."
+    },
+    {
+      "de": "gleich (Vergleich)",
+      "en": "the same / equal",
+      "example": "Beide Preise sind gleich."
+    },
+    {
+      "de": "der Superlativ",
+      "en": "superlative",
+      "artikel": "der",
+      "example": "\"Am besten\" ist ein Superlativ."
+    },
+    {
+      "de": "der Komparativ",
+      "en": "comparative",
+      "artikel": "der",
+      "example": "\"Besser\" ist der Komparativ von \"gut\"."
+    },
+    {
+      "de": "übertreffen",
+      "en": "to surpass / exceed",
+      "example": "Das Ergebnis übertrifft alle Erwartungen."
+    },
+    {
+      "de": "im Vergleich zu",
+      "en": "compared to",
+      "example": "Im Vergleich zu früher ist es jetzt einfacher."
+    },
+    {
+      "de": "bevorzugen",
+      "en": "to prefer",
+      "example": "Ich bevorzuge Tee gegenüber Kaffee."
+    },
+    {
+      "de": "die Steigerung",
+      "en": "increase / intensification (grammar)",
+      "artikel": "die",
+      "example": "Die Steigerung von Adjektiven ist wichtig."
+    },
+    {
+      "de": "erheblich",
+      "en": "considerably / significantly",
+      "example": "Die Preise sind erheblich gestiegen."
     }
-  ],
-  "_note": "Add 20 words about 'Rückblick A2.1'. Format: {de, en, example}"
+  ]
 }

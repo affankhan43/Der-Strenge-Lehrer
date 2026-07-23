@@ -1,32 +1,122 @@
 {
   "day": 67,
-  "topic": "Fernsehen & Streaming",
+  "topic": "Medien & Nachrichten",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Zeitung",
+      "en": "newspaper",
+      "artikel": "die",
+      "example": "Mein Vater liest jeden Morgen die Zeitung."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Zeitschrift",
+      "en": "magazine",
+      "artikel": "die",
+      "example": "Sie liest gern Modezeitschriften."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Artikel",
+      "en": "article",
+      "artikel": "der",
+      "example": "Der Artikel handelt von Klimawandel."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Schlagzeile",
+      "en": "headline",
+      "artikel": "die",
+      "example": "Die Schlagzeile war sehr auffällig."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Journalist",
+      "en": "journalist (male)",
+      "artikel": "der",
+      "example": "Der Journalist schreibt einen Bericht."
+    },
+    {
+      "de": "die Journalistin",
+      "en": "journalist (female)",
+      "artikel": "die",
+      "example": "Die Journalistin interviewt den Politiker."
+    },
+    {
+      "de": "die Redaktion",
+      "en": "editorial office",
+      "artikel": "die",
+      "example": "Die Redaktion prüft alle Artikel."
+    },
+    {
+      "de": "veröffentlichen",
+      "en": "to publish",
+      "example": "Die Zeitung veröffentlicht den Artikel morgen."
+    },
+    {
+      "de": "die Meldung",
+      "en": "report / news item",
+      "artikel": "die",
+      "example": "Es gab eine wichtige Meldung heute."
+    },
+    {
+      "de": "berichten",
+      "en": "to report",
+      "example": "Die Medien berichten über die Wahl."
+    },
+    {
+      "de": "die Quelle",
+      "en": "source",
+      "artikel": "die",
+      "example": "Diese Information kommt aus einer sicheren Quelle."
+    },
+    {
+      "de": "die Fälschung",
+      "en": "fake / forgery",
+      "artikel": "die",
+      "example": "Das Foto war eine Fälschung."
+    },
+    {
+      "de": "die Fake News",
+      "en": "fake news",
+      "artikel": "die",
+      "example": "Man muss Fake News erkennen können."
+    },
+    {
+      "de": "glaubwürdig",
+      "en": "credible",
+      "example": "Diese Quelle ist sehr glaubwürdig."
+    },
+    {
+      "de": "das Interview",
+      "en": "interview",
+      "artikel": "das",
+      "example": "Das Interview war sehr interessant."
+    },
+    {
+      "de": "interviewen",
+      "en": "to interview",
+      "example": "Sie interviewt heute eine bekannte Sängerin."
+    },
+    {
+      "de": "die Sendung",
+      "en": "TV/radio program",
+      "artikel": "die",
+      "example": "Diese Sendung läuft jeden Freitag."
+    },
+    {
+      "de": "der Rundfunk",
+      "en": "broadcasting",
+      "artikel": "der",
+      "example": "Der Rundfunk informiert die Bevölkerung."
+    },
+    {
+      "de": "die Öffentlichkeit",
+      "en": "the public",
+      "artikel": "die",
+      "example": "Die Öffentlichkeit hat ein Recht auf Information."
+    },
+    {
+      "de": "die Pressekonferenz",
+      "en": "press conference",
+      "artikel": "die",
+      "example": "Die Pressekonferenz beginnt um 14 Uhr."
     }
-  ],
-  "_note": "Add 20 words about 'Fernsehen & Streaming'. Format: {de, en, example}"
+  ]
 }

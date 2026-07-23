@@ -1,32 +1,119 @@
 {
   "day": 108,
-  "topic": "Sprache & Macht",
+  "topic": "Sprachen lernen & Mehrsprachigkeit",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Muttersprache",
+      "en": "native language",
+      "artikel": "die",
+      "example": "Meine Muttersprache ist Englisch."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Fremdsprache",
+      "en": "foreign language",
+      "artikel": "die",
+      "example": "Deutsch ist für mich eine Fremdsprache."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "mehrsprachig",
+      "en": "multilingual",
+      "example": "Sie ist mehrsprachig aufgewachsen."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Mehrsprachigkeit",
+      "en": "multilingualism",
+      "artikel": "die",
+      "example": "Mehrsprachigkeit hat viele Vorteile."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Aussprache",
+      "en": "pronunciation",
+      "artikel": "die",
+      "example": "Deine Aussprache ist schon sehr gut."
+    },
+    {
+      "de": "aussprechen",
+      "en": "to pronounce",
+      "example": "Wie spricht man dieses Wort aus?"
+    },
+    {
+      "de": "der Wortschatz",
+      "en": "vocabulary",
+      "artikel": "der",
+      "example": "Mein Wortschatz wächst jeden Tag."
+    },
+    {
+      "de": "die Grammatikregel",
+      "en": "grammar rule",
+      "artikel": "die",
+      "example": "Diese Grammatikregel ist schwierig."
+    },
+    {
+      "de": "fließend sprechen",
+      "en": "to speak fluently",
+      "example": "Sie spricht fließend drei Sprachen."
+    },
+    {
+      "de": "das Sprachniveau",
+      "en": "language level",
+      "artikel": "das",
+      "example": "Mein Sprachniveau ist B1."
+    },
+    {
+      "de": "der Sprachkurs",
+      "en": "language course",
+      "artikel": "der",
+      "example": "Ich mache einen Sprachkurs am Abend."
+    },
+    {
+      "de": "der Sprachaustausch",
+      "en": "language exchange",
+      "artikel": "der",
+      "example": "Wir machen einen Sprachaustausch am Telefon."
+    },
+    {
+      "de": "das Vokabelheft",
+      "en": "vocabulary notebook",
+      "artikel": "das",
+      "example": "Ich schreibe neue Wörter in mein Vokabelheft."
+    },
+    {
+      "de": "wiederholen (Lernen)",
+      "en": "to review / repeat (learning)",
+      "example": "Ich wiederhole die Vokabeln jeden Abend."
+    },
+    {
+      "de": "die Sprachbarriere",
+      "en": "language barrier",
+      "artikel": "die",
+      "example": "Die Sprachbarriere macht Kommunikation schwer."
+    },
+    {
+      "de": "übersetzen (Sprache)",
+      "en": "to translate (language)",
+      "example": "Kannst du das für mich übersetzen?"
+    },
+    {
+      "de": "dolmetschen",
+      "en": "to interpret (orally)",
+      "example": "Sie dolmetscht bei internationalen Konferenzen."
+    },
+    {
+      "de": "der Dolmetscher",
+      "en": "interpreter",
+      "artikel": "der",
+      "example": "Der Dolmetscher übersetzt live."
+    },
+    {
+      "de": "die Redewendung lernen",
+      "en": "to learn an idiom",
+      "example": "Ich lerne jede Woche eine neue Redewendung."
+    },
+    {
+      "de": "der Sprachfehler",
+      "en": "language mistake",
+      "artikel": "der",
+      "example": "Ein kleiner Sprachfehler ist kein Problem."
     }
-  ],
-  "_note": "Add 20 words about 'Sprache & Macht'. Format: {de, en, example}"
+  ]
 }

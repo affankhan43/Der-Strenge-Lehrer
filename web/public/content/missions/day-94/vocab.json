@@ -1,32 +1,123 @@
 {
   "day": 94,
-  "topic": "Medizin & Biotechnologie",
+  "topic": "Literatur & Lesen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Roman",
+      "en": "novel",
+      "artikel": "der",
+      "example": "Ich lese gerade einen spannenden Roman."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Kurzgeschichte",
+      "en": "short story",
+      "artikel": "die",
+      "example": "Sie schreibt gern Kurzgeschichten."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Gedicht",
+      "en": "poem",
+      "artikel": "das",
+      "example": "Er hat ein schönes Gedicht geschrieben."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Autor",
+      "en": "author (male)",
+      "artikel": "der",
+      "example": "Der Autor lebt in Berlin."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Autorin",
+      "en": "author (female)",
+      "artikel": "die",
+      "example": "Die Autorin hat viele Bücher geschrieben."
+    },
+    {
+      "de": "der Verlag",
+      "en": "publishing house",
+      "artikel": "der",
+      "example": "Der Verlag veröffentlicht das Buch im Herbst."
+    },
+    {
+      "de": "die Handlung",
+      "en": "plot (of a story)",
+      "artikel": "die",
+      "example": "Die Handlung ist sehr spannend."
+    },
+    {
+      "de": "die Figur (Buch)",
+      "en": "character (in a book)",
+      "artikel": "die",
+      "example": "Die Hauptfigur ist sehr interessant."
+    },
+    {
+      "de": "der Charakter (Person)",
+      "en": "character (personality)",
+      "artikel": "der",
+      "example": "Sein Charakter passt gut zur Rolle."
+    },
+    {
+      "de": "das Kapitel",
+      "en": "chapter",
+      "artikel": "das",
+      "example": "Ich lese jeden Abend ein Kapitel."
+    },
+    {
+      "de": "die Erzählperspektive",
+      "en": "narrative perspective",
+      "artikel": "die",
+      "example": "Die Erzählperspektive wechselt oft."
+    },
+    {
+      "de": "veröffentlichen (Buch)",
+      "en": "to publish (a book)",
+      "example": "Sie veröffentlicht ihr erstes Buch nächstes Jahr."
+    },
+    {
+      "de": "die Bestsellerliste",
+      "en": "bestseller list",
+      "artikel": "die",
+      "example": "Das Buch steht auf der Bestsellerliste."
+    },
+    {
+      "de": "die Buchhandlung",
+      "en": "bookstore",
+      "artikel": "die",
+      "example": "Ich kaufe Bücher am liebsten in der Buchhandlung."
+    },
+    {
+      "de": "das Hörbuch",
+      "en": "audiobook",
+      "artikel": "das",
+      "example": "Ich höre gern Hörbücher im Auto."
+    },
+    {
+      "de": "die Lesung",
+      "en": "reading (public event)",
+      "artikel": "die",
+      "example": "Der Autor hält heute eine Lesung."
+    },
+    {
+      "de": "das Vorwort",
+      "en": "foreword / preface",
+      "artikel": "das",
+      "example": "Das Vorwort erklärt das Thema des Buches."
+    },
+    {
+      "de": "die Übersetzung",
+      "en": "translation",
+      "artikel": "die",
+      "example": "Die Übersetzung ist sehr gelungen."
+    },
+    {
+      "de": "übersetzen (Buch)",
+      "en": "to translate (a book)",
+      "example": "Das Buch wurde in viele Sprachen übersetzt."
+    },
+    {
+      "de": "spannend",
+      "en": "exciting / suspenseful",
+      "example": "Der Roman ist wirklich spannend."
     }
-  ],
-  "_note": "Add 20 words about 'Medizin & Biotechnologie'. Format: {de, en, example}"
+  ]
 }

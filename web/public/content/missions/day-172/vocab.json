@@ -1,51 +1,122 @@
 {
   "day": 172,
-  "level": "B2.1",
-  "topic": "Konzessive Sätze",
+  "topic": "Textsorten & Stilebenen",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Textsorte",
+      "en": "text type / genre",
+      "artikel": "die",
+      "example": "Jede Textsorte hat eigene Merkmale."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Sachtext",
+      "en": "non-fiction text",
+      "artikel": "der",
+      "example": "Ein Sachtext vermittelt Informationen."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Kommentar (Textsorte)",
+      "en": "commentary / op-ed (text type)",
+      "artikel": "der",
+      "example": "Der Kommentar zeigt die Meinung des Autors."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Reportage",
+      "en": "reportage / feature story",
+      "artikel": "die",
+      "example": "Die Reportage schildert Ereignisse anschaulich."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Glosse",
+      "en": "satirical column",
+      "artikel": "die",
+      "example": "Die Glosse nimmt das Thema humorvoll aufs Korn."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das Essay",
+      "en": "essay",
+      "artikel": "das",
+      "example": "Ihr Essay behandelt ein philosophisches Thema."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Stilebene",
+      "en": "register / style level",
+      "artikel": "die",
+      "example": "Die Stilebene passt zur formellen Situation."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die formelle Sprache",
+      "en": "formal language",
+      "artikel": "die",
+      "example": "Formelle Sprache wird in offiziellen Texten benutzt."
+    },
+    {
+      "de": "die informelle Sprache",
+      "en": "informal language",
+      "example": "Informelle Sprache passt zu Freunden."
+    },
+    {
+      "de": "der sachliche Ton",
+      "en": "objective/matter-of-fact tone",
+      "artikel": "der",
+      "example": "Der sachliche Ton passt zu Berichten."
+    },
+    {
+      "de": "der ironische Unterton",
+      "en": "ironic undertone",
+      "artikel": "der",
+      "example": "Der Text hat einen ironischen Unterton."
+    },
+    {
+      "de": "die Textfunktion erkennen",
+      "en": "to recognize the text's function",
+      "example": "Erkenne zuerst die Textfunktion."
+    },
+    {
+      "de": "die appellative Funktion",
+      "en": "appellative function (persuasive)",
+      "artikel": "die",
+      "example": "Werbung hat eine appellative Funktion."
+    },
+    {
+      "de": "die informative Funktion",
+      "en": "informative function",
+      "artikel": "die",
+      "example": "Nachrichten haben eine informative Funktion."
+    },
+    {
+      "de": "die expressive Funktion",
+      "en": "expressive function",
+      "artikel": "die",
+      "example": "Gedichte haben oft eine expressive Funktion."
+    },
+    {
+      "de": "das Genre bestimmen",
+      "en": "to determine the genre",
+      "example": "Bestimme zuerst das Genre des Textes."
+    },
+    {
+      "de": "die Textanalyse",
+      "en": "text analysis",
+      "artikel": "die",
+      "example": "Die Textanalyse zeigt die Absicht des Autors."
+    },
+    {
+      "de": "der intendierte Leser",
+      "en": "intended reader",
+      "artikel": "der",
+      "example": "Der intendierte Leser beeinflusst den Schreibstil."
+    },
+    {
+      "de": "die Textstruktur erkennen",
+      "en": "to recognize text structure",
+      "example": "Erkenne die Textstruktur, bevor du zusammenfasst."
+    },
+    {
+      "de": "das journalistische Genre",
+      "en": "journalistic genre",
+      "artikel": "das",
+      "example": "Jedes journalistische Genre hat eigene Regeln."
     }
   ]
 }

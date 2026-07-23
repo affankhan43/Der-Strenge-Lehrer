@@ -1,32 +1,120 @@
 {
   "day": 107,
-  "topic": "Zukunftsszenarien",
+  "topic": "Gesundheitssystem & Vorsorge",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Gesundheitssystem",
+      "en": "healthcare system",
+      "artikel": "das",
+      "example": "Das Gesundheitssystem ist in jedem Land anders."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Krankenkasse",
+      "en": "health insurance provider",
+      "artikel": "die",
+      "example": "Ich bin bei einer gesetzlichen Krankenkasse."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "gesetzlich versichert",
+      "en": "publicly insured",
+      "example": "Die meisten Deutschen sind gesetzlich versichert."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "privat versichert",
+      "en": "privately insured",
+      "example": "Er ist privat versichert."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Vorsorgeuntersuchung",
+      "en": "preventive check-up",
+      "artikel": "die",
+      "example": "Ich gehe jedes Jahr zur Vorsorgeuntersuchung."
+    },
+    {
+      "de": "der Hausarzt",
+      "en": "family doctor (male)",
+      "artikel": "der",
+      "example": "Mein Hausarzt kennt mich seit Jahren."
+    },
+    {
+      "de": "die Hausärztin",
+      "en": "family doctor (female)",
+      "artikel": "die",
+      "example": "Meine Hausärztin hat mich überwiesen."
+    },
+    {
+      "de": "überweisen (Arzt)",
+      "en": "to refer (to a specialist)",
+      "example": "Der Arzt überweist mich an einen Spezialisten."
+    },
+    {
+      "de": "die Überweisung (Arzt)",
+      "en": "referral",
+      "artikel": "die",
+      "example": "Ich brauche eine Überweisung zum Facharzt."
+    },
+    {
+      "de": "der Facharzt",
+      "en": "specialist doctor (male)",
+      "artikel": "der",
+      "example": "Der Facharzt untersucht meine Augen."
+    },
+    {
+      "de": "die Fachärztin",
+      "en": "specialist doctor (female)",
+      "artikel": "die",
+      "example": "Die Fachärztin hat viel Erfahrung."
+    },
+    {
+      "de": "die Vorsorge treffen",
+      "en": "to take precautions",
+      "example": "Es ist wichtig, Vorsorge zu treffen."
+    },
+    {
+      "de": "die Diagnose",
+      "en": "diagnosis",
+      "artikel": "die",
+      "example": "Die Diagnose war zum Glück harmlos."
+    },
+    {
+      "de": "diagnostizieren",
+      "en": "to diagnose",
+      "example": "Der Arzt diagnostizierte eine leichte Erkältung."
+    },
+    {
+      "de": "die Therapie",
+      "en": "therapy",
+      "artikel": "die",
+      "example": "Sie macht eine Therapie gegen Rückenschmerzen."
+    },
+    {
+      "de": "die Reha",
+      "en": "rehabilitation",
+      "artikel": "die",
+      "example": "Nach der Operation macht er eine Reha."
+    },
+    {
+      "de": "die Selbstmedikation",
+      "en": "self-medication",
+      "artikel": "die",
+      "example": "Selbstmedikation kann riskant sein."
+    },
+    {
+      "de": "die Nebenwirkung",
+      "en": "side effect",
+      "artikel": "die",
+      "example": "Diese Medizin hat wenige Nebenwirkungen."
+    },
+    {
+      "de": "die Wartezeit (Arzt)",
+      "en": "waiting time (doctor)",
+      "artikel": "die",
+      "example": "Die Wartezeit beim Arzt war sehr lang."
+    },
+    {
+      "de": "präventiv",
+      "en": "preventive",
+      "example": "Präventive Maßnahmen schützen die Gesundheit."
     }
-  ],
-  "_note": "Add 20 words about 'Zukunftsszenarien'. Format: {de, en, example}"
+  ]
 }

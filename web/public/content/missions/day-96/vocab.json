@@ -1,32 +1,121 @@
 {
   "day": 96,
-  "topic": "Digitalisierung & Gesellschaft",
+  "topic": "Klima & Wissenschaft der Erde",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Klima",
+      "en": "climate",
+      "artikel": "das",
+      "example": "Das Klima verändert sich weltweit."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Atmosphäre",
+      "en": "atmosphere",
+      "artikel": "die",
+      "example": "Die Atmosphäre schützt die Erde."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der CO2-Ausstoß",
+      "en": "CO2 emissions",
+      "artikel": "der",
+      "example": "Der CO2-Ausstoß muss reduziert werden."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Erderwärmung",
+      "en": "global warming",
+      "artikel": "die",
+      "example": "Die Erderwärmung betrifft alle Länder."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "schmelzen",
+      "en": "to melt",
+      "example": "Die Gletscher schmelzen immer schneller."
+    },
+    {
+      "de": "der Gletscher",
+      "en": "glacier",
+      "artikel": "der",
+      "example": "Der Gletscher ist in 50 Jahren geschrumpft."
+    },
+    {
+      "de": "der Meeresspiegel",
+      "en": "sea level",
+      "artikel": "der",
+      "example": "Der Meeresspiegel steigt langsam an."
+    },
+    {
+      "de": "die Biodiversität",
+      "en": "biodiversity",
+      "artikel": "die",
+      "example": "Die Biodiversität nimmt weltweit ab."
+    },
+    {
+      "de": "das Ökosystem",
+      "en": "ecosystem",
+      "artikel": "das",
+      "example": "Dieses Ökosystem ist sehr empfindlich."
+    },
+    {
+      "de": "aussterben",
+      "en": "to go extinct",
+      "example": "Viele Arten drohen auszusterben."
+    },
+    {
+      "de": "bedroht sein",
+      "en": "to be endangered",
+      "example": "Diese Tierart ist stark bedroht."
+    },
+    {
+      "de": "die Aufforstung",
+      "en": "reforestation",
+      "artikel": "die",
+      "example": "Die Aufforstung hilft dem Klima."
+    },
+    {
+      "de": "abholzen",
+      "en": "to deforest",
+      "example": "Der Regenwald wird immer weiter abgeholzt."
+    },
+    {
+      "de": "die Abholzung",
+      "en": "deforestation",
+      "artikel": "die",
+      "example": "Die Abholzung ist ein großes Problem."
+    },
+    {
+      "de": "nachhaltiges Handeln",
+      "en": "sustainable action",
+      "example": "Nachhaltiges Handeln beginnt im Alltag."
+    },
+    {
+      "de": "die Umweltschutzorganisation",
+      "en": "environmental organization",
+      "artikel": "die",
+      "example": "Sie arbeitet für eine Umweltschutzorganisation."
+    },
+    {
+      "de": "die Klimakonferenz",
+      "en": "climate conference",
+      "artikel": "die",
+      "example": "Die Klimakonferenz findet dieses Jahr in Berlin statt."
+    },
+    {
+      "de": "das Abkommen",
+      "en": "agreement / accord",
+      "artikel": "das",
+      "example": "Alle Länder unterschrieben das Abkommen."
+    },
+    {
+      "de": "die Verpflichtung",
+      "en": "obligation / commitment",
+      "artikel": "die",
+      "example": "Jedes Land hat eine Verpflichtung."
+    },
+    {
+      "de": "die Klimaneutralität",
+      "en": "climate neutrality",
+      "artikel": "die",
+      "example": "Wir streben Klimaneutralität bis 2040 an."
     }
-  ],
-  "_note": "Add 20 words about 'Digitalisierung & Gesellschaft'. Format: {de, en, example}"
+  ]
 }

@@ -1,32 +1,117 @@
 {
   "day": 89,
-  "topic": "Kunst & Museen",
+  "topic": "Reklamation & Kundenservice",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Reklamation",
+      "en": "complaint (about a product)",
+      "artikel": "die",
+      "example": "Ich möchte eine Reklamation einreichen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "reklamieren",
+      "en": "to file a complaint",
+      "example": "Ich reklamiere den kaputten Fernseher."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "defekt",
+      "en": "defective / broken",
+      "example": "Das Gerät ist defekt."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Kundenservice",
+      "en": "customer service",
+      "artikel": "der",
+      "example": "Ich rufe den Kundenservice an."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Garantie",
+      "en": "warranty",
+      "artikel": "die",
+      "example": "Das Produkt hat zwei Jahre Garantie."
+    },
+    {
+      "de": "der Garantieschein",
+      "en": "warranty card",
+      "artikel": "der",
+      "example": "Bewahren Sie den Garantieschein auf."
+    },
+    {
+      "de": "umtauschen (Reklamation)",
+      "en": "to exchange (a faulty item)",
+      "example": "Ich möchte das defekte Gerät umtauschen."
+    },
+    {
+      "de": "erstatten (Geld)",
+      "en": "to refund (money)",
+      "example": "Das Geld wird Ihnen erstattet."
+    },
+    {
+      "de": "die Rückerstattung",
+      "en": "refund",
+      "artikel": "die",
+      "example": "Ich warte auf meine Rückerstattung."
+    },
+    {
+      "de": "der Kassenbon",
+      "en": "receipt",
+      "artikel": "der",
+      "example": "Ohne Kassenbon ist der Umtausch schwierig."
+    },
+    {
+      "de": "beanstanden",
+      "en": "to raise a complaint about",
+      "example": "Ich beanstande die Qualität der Ware."
+    },
+    {
+      "de": "die Mängelrüge",
+      "en": "complaint about defects",
+      "artikel": "die",
+      "example": "Ich schreibe eine Mängelrüge an die Firma."
+    },
+    {
+      "de": "der Mangel",
+      "en": "defect / flaw",
+      "artikel": "der",
+      "example": "Das Produkt hat einen Mangel."
+    },
+    {
+      "de": "die Beschwerde einreichen",
+      "en": "to file a complaint",
+      "example": "Ich reiche eine Beschwerde ein."
+    },
+    {
+      "de": "die Hotline",
+      "en": "hotline",
+      "artikel": "die",
+      "example": "Rufen Sie unsere Hotline an."
+    },
+    {
+      "de": "die Wartezeit",
+      "en": "waiting time",
+      "artikel": "die",
+      "example": "Die Wartezeit war sehr lang."
+    },
+    {
+      "de": "die Zufriedenheit",
+      "en": "satisfaction",
+      "artikel": "die",
+      "example": "Ihre Zufriedenheit ist uns wichtig."
+    },
+    {
+      "de": "unzufrieden sein",
+      "en": "to be dissatisfied",
+      "example": "Ich bin mit dem Service unzufrieden."
+    },
+    {
+      "de": "die Lösung anbieten",
+      "en": "to offer a solution",
+      "example": "Wir bieten Ihnen eine schnelle Lösung an."
+    },
+    {
+      "de": "kulant sein",
+      "en": "to be accommodating (customer service)",
+      "example": "Der Verkäufer war sehr kulant."
     }
-  ],
-  "_note": "Add 20 words about 'Kunst & Museen'. Format: {de, en, example}"
+  ]
 }

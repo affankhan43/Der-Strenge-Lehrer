@@ -1,32 +1,120 @@
 {
   "day": 60,
-  "topic": "Kollegen & Konflikte",
+  "topic": "Naturkatastrophen & Extremwetter",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Sturm",
+      "en": "storm",
+      "artikel": "der",
+      "example": "Der Sturm hat viele Bäume umgeworfen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Überschwemmung",
+      "en": "flood",
+      "artikel": "die",
+      "example": "Die Überschwemmung hat das Dorf zerstört."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Erdbeben",
+      "en": "earthquake",
+      "artikel": "das",
+      "example": "Das Erdbeben war sehr stark."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Hurrikan",
+      "en": "hurricane",
+      "artikel": "der",
+      "example": "Der Hurrikan zieht auf die Küste zu."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Dürre",
+      "en": "drought",
+      "artikel": "die",
+      "example": "Die Dürre hat die Ernte vernichtet."
+    },
+    {
+      "de": "die Naturkatastrophe",
+      "en": "natural disaster",
+      "artikel": "die",
+      "example": "Diese Naturkatastrophe war verheerend."
+    },
+    {
+      "de": "der Blitz",
+      "en": "lightning",
+      "artikel": "der",
+      "example": "Ein Blitz hat den Baum getroffen."
+    },
+    {
+      "de": "der Donner",
+      "en": "thunder",
+      "artikel": "der",
+      "example": "Der Donner war sehr laut."
+    },
+    {
+      "de": "das Unwetter",
+      "en": "severe storm",
+      "artikel": "das",
+      "example": "Das Unwetter zieht schnell vorbei."
+    },
+    {
+      "de": "die Vorhersage",
+      "en": "forecast",
+      "artikel": "die",
+      "example": "Die Vorhersage sagt Regen für morgen."
+    },
+    {
+      "de": "extrem",
+      "en": "extreme",
+      "example": "Die Hitze war diesen Sommer extrem."
+    },
+    {
+      "de": "überflutet",
+      "en": "flooded",
+      "example": "Die Straßen waren komplett überflutet."
+    },
+    {
+      "de": "zerstören",
+      "en": "to destroy",
+      "example": "Der Sturm hat viele Häuser zerstört."
+    },
+    {
+      "de": "der Schaden",
+      "en": "damage",
+      "artikel": "der",
+      "example": "Der Schaden ist sehr groß."
+    },
+    {
+      "de": "betroffen sein",
+      "en": "to be affected",
+      "example": "Viele Familien sind betroffen."
+    },
+    {
+      "de": "die Vorsorge",
+      "en": "precaution",
+      "artikel": "die",
+      "example": "Vorsorge ist besser als Nachsorge."
+    },
+    {
+      "de": "sich vorbereiten (Notfall)",
+      "en": "to prepare (for an emergency)",
+      "example": "Wir bereiten uns auf den Sturm vor."
+    },
+    {
+      "de": "der Katastrophenschutz",
+      "en": "disaster relief / civil protection",
+      "artikel": "der",
+      "example": "Der Katastrophenschutz war schnell vor Ort."
+    },
+    {
+      "de": "die Rettung",
+      "en": "rescue",
+      "artikel": "die",
+      "example": "Die Rettung der Familie war erfolgreich."
+    },
+    {
+      "de": "retten",
+      "en": "to rescue",
+      "example": "Die Feuerwehr hat die Kinder gerettet."
     }
-  ],
-  "_note": "Add 20 words about 'Kollegen & Konflikte'. Format: {de, en, example}"
+  ]
 }

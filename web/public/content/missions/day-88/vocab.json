@@ -1,32 +1,106 @@
 {
   "day": 88,
-  "topic": "Gleichstellung & Diversität",
+  "topic": "Verben mit Präpositionen",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "sich freuen auf",
+      "en": "to look forward to",
+      "example": "Ich freue mich auf das Wochenende."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "sich freuen über",
+      "en": "to be happy about",
+      "example": "Ich freue mich über dein Geschenk."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "warten auf",
+      "en": "to wait for",
+      "example": "Ich warte auf den Bus."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "sich interessieren für",
+      "en": "to be interested in",
+      "example": "Ich interessiere mich für Musik."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "denken an",
+      "en": "to think of/about",
+      "example": "Ich denke oft an dich."
+    },
+    {
+      "de": "sich erinnern an",
+      "en": "to remember",
+      "example": "Ich erinnere mich an meine Kindheit."
+    },
+    {
+      "de": "sich kümmern um",
+      "en": "to take care of",
+      "example": "Sie kümmert sich um ihre Eltern."
+    },
+    {
+      "de": "teilnehmen an",
+      "en": "to participate in",
+      "example": "Ich nehme an dem Kurs teil."
+    },
+    {
+      "de": "sich beschäftigen mit",
+      "en": "to occupy oneself with",
+      "example": "Er beschäftigt sich mit Fotografie."
+    },
+    {
+      "de": "sich bewerben um",
+      "en": "to apply for",
+      "example": "Ich bewerbe mich um die Stelle."
+    },
+    {
+      "de": "sich ärgern über",
+      "en": "to be annoyed about",
+      "example": "Ich ärgere mich über den Stau."
+    },
+    {
+      "de": "Angst haben vor",
+      "en": "to be afraid of",
+      "example": "Sie hat Angst vor Spinnen."
+    },
+    {
+      "de": "sich bedanken für",
+      "en": "to thank for",
+      "example": "Ich bedanke mich für die Einladung."
+    },
+    {
+      "de": "sich verabschieden von",
+      "en": "to say goodbye to",
+      "example": "Ich verabschiede mich von meinen Kollegen."
+    },
+    {
+      "de": "sich gewöhnen an",
+      "en": "to get used to",
+      "example": "Ich gewöhne mich langsam an das Klima."
+    },
+    {
+      "de": "sich beteiligen an",
+      "en": "to take part in",
+      "example": "Er beteiligt sich an dem Projekt."
+    },
+    {
+      "de": "sich verlassen auf",
+      "en": "to rely on",
+      "example": "Ich verlasse mich auf dich."
+    },
+    {
+      "de": "achten auf",
+      "en": "to pay attention to",
+      "example": "Achte auf deine Gesundheit."
+    },
+    {
+      "de": "sich konzentrieren auf",
+      "en": "to focus on",
+      "example": "Konzentrier dich auf die Aufgabe."
+    },
+    {
+      "de": "bestehen aus",
+      "en": "to consist of",
+      "example": "Das Team besteht aus zehn Personen."
     }
-  ],
-  "_note": "Add 20 words about 'Gleichstellung & Diversität'. Format: {de, en, example}"
+  ]
 }

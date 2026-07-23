@@ -1,32 +1,123 @@
 {
   "day": 93,
-  "topic": "Wissenschaft & Forschung",
+  "topic": "Bildende Kunst & Museum",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Bildhauerei",
+      "en": "sculpture (art form)",
+      "artikel": "die",
+      "example": "Er studiert Bildhauerei."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Kunstwerk",
+      "en": "work of art",
+      "artikel": "das",
+      "example": "Dieses Kunstwerk ist sehr wertvoll."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Rahmen",
+      "en": "frame",
+      "artikel": "der",
+      "example": "Das Bild braucht einen neuen Rahmen."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Leinwand",
+      "en": "canvas",
+      "artikel": "die",
+      "example": "Der Maler arbeitet an einer großen Leinwand."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Pinsel",
+      "en": "paintbrush",
+      "artikel": "der",
+      "example": "Sie benutzt einen feinen Pinsel."
+    },
+    {
+      "de": "die Farbpalette",
+      "en": "color palette",
+      "artikel": "die",
+      "example": "Seine Farbpalette ist sehr lebendig."
+    },
+    {
+      "de": "das Meisterwerk",
+      "en": "masterpiece",
+      "artikel": "das",
+      "example": "Dieses Gemälde gilt als Meisterwerk."
+    },
+    {
+      "de": "der Stil (Kunst)",
+      "en": "style (art)",
+      "artikel": "der",
+      "example": "Sein Stil ist sehr modern."
+    },
+    {
+      "de": "die Epoche",
+      "en": "era / period",
+      "artikel": "die",
+      "example": "Diese Epoche war sehr einflussreich."
+    },
+    {
+      "de": "die Moderne",
+      "en": "modernism / modern era",
+      "artikel": "die",
+      "example": "Die Moderne begann Ende des 19. Jahrhunderts."
+    },
+    {
+      "de": "das Original",
+      "en": "the original (artwork)",
+      "artikel": "das",
+      "example": "Das ist das Original, keine Kopie."
+    },
+    {
+      "de": "die Fälschung (Kunst)",
+      "en": "forgery (art)",
+      "artikel": "die",
+      "example": "Das Gemälde war eine Fälschung."
+    },
+    {
+      "de": "die Vernissage",
+      "en": "art exhibition opening",
+      "artikel": "die",
+      "example": "Die Vernissage findet heute Abend statt."
+    },
+    {
+      "de": "der Katalog",
+      "en": "catalog",
+      "artikel": "der",
+      "example": "Der Museumskatalog zeigt alle Werke."
+    },
+    {
+      "de": "die Führung",
+      "en": "guided tour",
+      "artikel": "die",
+      "example": "Wir nehmen an einer Führung teil."
+    },
+    {
+      "de": "der Audioguide",
+      "en": "audio guide",
+      "artikel": "der",
+      "example": "Ich nutze den Audioguide im Museum."
+    },
+    {
+      "de": "die Sammlung",
+      "en": "collection",
+      "artikel": "die",
+      "example": "Das Museum hat eine große Sammlung."
+    },
+    {
+      "de": "ausstellen",
+      "en": "to exhibit",
+      "example": "Das Museum stellt moderne Kunst aus."
+    },
+    {
+      "de": "betrachten",
+      "en": "to observe / look at",
+      "example": "Er betrachtet das Bild lange."
+    },
+    {
+      "de": "beeindrucken",
+      "en": "to impress",
+      "example": "Das Kunstwerk hat mich beeindruckt."
     }
-  ],
-  "_note": "Add 20 words about 'Wissenschaft & Forschung'. Format: {de, en, example}"
+  ]
 }

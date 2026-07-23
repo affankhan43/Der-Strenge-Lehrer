@@ -1,51 +1,125 @@
 {
   "day": 200,
-  "level": "B2.2",
-  "topic": "Modalverben Vergangenheit",
+  "topic": "Wirtschaftsrecht & Verträge",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Wirtschaftsrecht",
+      "en": "commercial/business law",
+      "artikel": "das",
+      "example": "Wirtschaftsrecht regelt unternehmerisches Handeln."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Kaufvertrag",
+      "en": "purchase contract",
+      "artikel": "der",
+      "example": "Der Kaufvertrag wurde von beiden Seiten unterschrieben."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Dienstleistungsvertrag",
+      "en": "service contract",
+      "artikel": "der",
+      "example": "Der Dienstleistungsvertrag regelt die Zusammenarbeit."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Vertragsklausel",
+      "en": "contract clause",
+      "artikel": "die",
+      "example": "Diese Vertragsklausel ist besonders wichtig."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Vertragsverletzung",
+      "en": "breach of contract",
+      "artikel": "die",
+      "example": "Die Vertragsverletzung führte zur Kündigung."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Vertragsstrafe",
+      "en": "contractual penalty",
+      "artikel": "die",
+      "example": "Bei Verspätung wird eine Vertragsstrafe fällig."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das Gewährleistungsrecht",
+      "en": "warranty rights",
+      "artikel": "das",
+      "example": "Das Gewährleistungsrecht schützt Käufer bei Mängeln."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Allgemeinen Geschäftsbedingungen",
+      "en": "general terms and conditions",
+      "artikel": "die",
+      "example": "Lesen Sie die Allgemeinen Geschäftsbedingungen sorgfältig."
+    },
+    {
+      "de": "die Vertragsauslegung",
+      "en": "contract interpretation",
+      "artikel": "die",
+      "example": "Die Vertragsauslegung war strittig."
+    },
+    {
+      "de": "die Handelsgesellschaft",
+      "en": "trading company",
+      "artikel": "die",
+      "example": "Die Handelsgesellschaft wurde 1990 gegründet."
+    },
+    {
+      "de": "die Gesellschaftsform",
+      "en": "legal form of a company",
+      "artikel": "die",
+      "example": "Die Wahl der Gesellschaftsform hat steuerliche Folgen."
+    },
+    {
+      "de": "die GmbH",
+      "en": "limited liability company",
+      "example": "Sie gründeten eine GmbH."
+    },
+    {
+      "de": "die Aktiengesellschaft",
+      "en": "public limited company",
+      "artikel": "die",
+      "example": "Die Aktiengesellschaft ist an der Börse notiert."
+    },
+    {
+      "de": "das Handelsregister",
+      "en": "commercial register",
+      "artikel": "das",
+      "example": "Das Unternehmen wurde ins Handelsregister eingetragen."
+    },
+    {
+      "de": "die Insolvenz",
+      "en": "insolvency",
+      "artikel": "die",
+      "example": "Die Firma meldete Insolvenz an."
+    },
+    {
+      "de": "das Insolvenzverfahren",
+      "en": "insolvency proceedings",
+      "artikel": "das",
+      "example": "Das Insolvenzverfahren dauert mehrere Monate."
+    },
+    {
+      "de": "der Gläubiger",
+      "en": "creditor",
+      "artikel": "der",
+      "example": "Die Gläubiger fordern ihr Geld zurück."
+    },
+    {
+      "de": "der Schuldner",
+      "en": "debtor",
+      "artikel": "der",
+      "example": "Der Schuldner konnte nicht zahlen."
+    },
+    {
+      "de": "das Wettbewerbsrecht",
+      "en": "competition law",
+      "artikel": "das",
+      "example": "Wettbewerbsrecht verhindert Monopole."
+    },
+    {
+      "de": "die Kartellbehörde",
+      "en": "antitrust authority",
+      "artikel": "die",
+      "example": "Die Kartellbehörde untersuchte die Fusion."
     }
   ]
 }

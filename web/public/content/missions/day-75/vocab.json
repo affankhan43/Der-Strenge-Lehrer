@@ -1,32 +1,115 @@
 {
   "day": 75,
-  "topic": "Migration & Integration",
+  "topic": "Psyche & Stressbewältigung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Stress",
+      "en": "stress",
+      "artikel": "der",
+      "example": "Ich habe zurzeit viel Stress."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "gestresst sein",
+      "en": "to be stressed",
+      "example": "Ich bin nach der Arbeit oft gestresst."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Entspannung",
+      "en": "relaxation",
+      "artikel": "die",
+      "example": "Entspannung ist wichtig für die Gesundheit."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "meditieren",
+      "en": "to meditate",
+      "example": "Ich meditiere jeden Morgen zehn Minuten."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Achtsamkeit",
+      "en": "mindfulness",
+      "artikel": "die",
+      "example": "Achtsamkeit hilft mir, ruhig zu bleiben."
+    },
+    {
+      "de": "tief durchatmen",
+      "en": "to take a deep breath",
+      "example": "Atme tief durch, bevor du antwortest."
+    },
+    {
+      "de": "die Balance",
+      "en": "balance",
+      "artikel": "die",
+      "example": "Ich suche eine Balance zwischen Arbeit und Freizeit."
+    },
+    {
+      "de": "überfordert sein",
+      "en": "to be overwhelmed",
+      "example": "Manchmal fühle ich mich überfordert."
+    },
+    {
+      "de": "die Überforderung",
+      "en": "being overwhelmed",
+      "artikel": "die",
+      "example": "Die Überforderung im Job macht mich müde."
+    },
+    {
+      "de": "sich Zeit nehmen",
+      "en": "to take time for oneself",
+      "example": "Nimm dir Zeit für dich selbst."
+    },
+    {
+      "de": "das Wohlbefinden",
+      "en": "wellbeing",
+      "artikel": "das",
+      "example": "Sport verbessert mein Wohlbefinden."
+    },
+    {
+      "de": "die Ruhe",
+      "en": "calm / peace",
+      "example": "Ich brauche etwas Ruhe."
+    },
+    {
+      "de": "ausgeglichen",
+      "en": "balanced / even-tempered",
+      "example": "Sie wirkt sehr ausgeglichen."
+    },
+    {
+      "de": "die Energie tanken",
+      "en": "to recharge",
+      "example": "Am Wochenende tanke ich neue Energie."
+    },
+    {
+      "de": "erschöpft sein",
+      "en": "to be exhausted",
+      "example": "Nach der langen Woche bin ich erschöpft."
+    },
+    {
+      "de": "die Erschöpfung",
+      "en": "exhaustion",
+      "artikel": "die",
+      "example": "Die Erschöpfung war deutlich zu spüren."
+    },
+    {
+      "de": "abschalten",
+      "en": "to switch off / unwind",
+      "example": "Am Abend versuche ich abzuschalten."
+    },
+    {
+      "de": "die Selbstfürsorge",
+      "en": "self-care",
+      "artikel": "die",
+      "example": "Selbstfürsorge ist kein Luxus."
+    },
+    {
+      "de": "positiv denken",
+      "en": "to think positively",
+      "example": "Ich versuche, positiv zu denken."
+    },
+    {
+      "de": "die innere Ruhe",
+      "en": "inner peace",
+      "artikel": "die",
+      "example": "Yoga gibt mir innere Ruhe."
     }
-  ],
-  "_note": "Add 20 words about 'Migration & Integration'. Format: {de, en, example}"
+  ]
 }

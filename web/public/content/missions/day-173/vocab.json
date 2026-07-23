@@ -1,51 +1,122 @@
 {
   "day": 173,
-  "level": "B2.1",
-  "topic": "Kausale Sätze",
+  "topic": "Rhetorik & Überzeugungstechniken",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Rhetorik",
+      "en": "rhetoric",
+      "artikel": "die",
+      "example": "Rhetorik ist die Kunst des Überzeugens."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "das rhetorische Mittel",
+      "en": "rhetorical device",
+      "artikel": "das",
+      "example": "Wiederholung ist ein rhetorisches Mittel."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Wiederholung (Rhetorik)",
+      "en": "repetition (rhetoric)",
+      "artikel": "die",
+      "example": "Wiederholung verstärkt die Aussage."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die rhetorische Frage",
+      "en": "rhetorical question",
+      "artikel": "die",
+      "example": "Diese rhetorische Frage regt zum Nachdenken an."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Übertreibung (Rhetorik)",
+      "en": "exaggeration (rhetoric)",
+      "artikel": "die",
+      "example": "Übertreibung wird oft in Werbung genutzt."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "der Appell",
+      "en": "appeal",
+      "artikel": "der",
+      "example": "Der Redner richtete einen Appell an das Publikum."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "überzeugend argumentieren",
+      "en": "to argue persuasively",
+      "example": "Er argumentiert immer sehr überzeugend."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Überredungskunst",
+      "en": "art of persuasion",
+      "artikel": "die",
+      "example": "Sie beherrscht die Überredungskunst perfekt."
+    },
+    {
+      "de": "das Pathos",
+      "en": "pathos (emotional appeal)",
+      "artikel": "das",
+      "example": "Der Redner setzte viel Pathos ein."
+    },
+    {
+      "de": "das Ethos (Rhetorik)",
+      "en": "ethos (credibility)",
+      "artikel": "das",
+      "example": "Sein Ethos überzeugte das Publikum."
+    },
+    {
+      "de": "der Logos (Rhetorik)",
+      "en": "logos (logical appeal)",
+      "artikel": "der",
+      "example": "Logos basiert auf logischen Argumenten."
+    },
+    {
+      "de": "emotional ansprechen",
+      "en": "to appeal emotionally",
+      "example": "Diese Rede spricht emotional an."
+    },
+    {
+      "de": "die Suggestivfrage",
+      "en": "leading/suggestive question",
+      "artikel": "die",
+      "example": "Vermeide Suggestivfragen im Interview."
+    },
+    {
+      "de": "manipulativ wirken",
+      "en": "to appear manipulative",
+      "example": "Diese Rhetorik wirkt manchmal manipulativ."
+    },
+    {
+      "de": "die Redekunst",
+      "en": "art of oratory",
+      "artikel": "die",
+      "example": "Redekunst wird seit der Antike gelehrt."
+    },
+    {
+      "de": "das Publikum gewinnen",
+      "en": "to win over the audience",
+      "example": "Er gewann das Publikum mit klaren Argumenten."
+    },
+    {
+      "de": "die Metaphorik",
+      "en": "use of metaphor",
+      "artikel": "die",
+      "example": "Die Metaphorik seiner Rede war beeindruckend."
+    },
+    {
+      "de": "die Anschaulichkeit",
+      "en": "vividness / illustrativeness",
+      "artikel": "die",
+      "example": "Anschaulichkeit hilft, komplexe Themen zu erklären."
+    },
+    {
+      "de": "die Pointe",
+      "en": "punchline / point",
+      "artikel": "die",
+      "example": "Die Pointe seiner Rede kam am Schluss."
+    },
+    {
+      "de": "die Überzeugungskraft",
+      "en": "persuasive power",
+      "artikel": "die",
+      "example": "Seine Überzeugungskraft ist bemerkenswert."
     }
   ]
 }

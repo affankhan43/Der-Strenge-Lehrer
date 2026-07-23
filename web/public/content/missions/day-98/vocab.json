@@ -1,32 +1,122 @@
 {
   "day": 98,
-  "topic": "Medien & Pressefreiheit",
+  "topic": "Interview & Bewerbungsgespräch",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "sich vorbereiten (Interview)",
+      "en": "to prepare (for an interview)",
+      "example": "Ich bereite mich gut auf das Interview vor."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Stärke (Bewerbung)",
+      "en": "strength (job application)",
+      "artikel": "die",
+      "example": "Meine größte Stärke ist Teamarbeit."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Schwäche (Bewerbung)",
+      "en": "weakness (job application)",
+      "artikel": "die",
+      "example": "Meine Schwäche ist manchmal Ungeduld."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Motivation",
+      "en": "motivation",
+      "artikel": "die",
+      "example": "Meine Motivation für diesen Job ist groß."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "sich vorstellen (Bewerbung)",
+      "en": "to introduce oneself (interview)",
+      "example": "Bitte stellen Sie sich kurz vor."
+    },
+    {
+      "de": "die Gehaltsvorstellung",
+      "en": "salary expectation",
+      "artikel": "die",
+      "example": "Wie hoch ist Ihre Gehaltsvorstellung?"
+    },
+    {
+      "de": "die Berufserfahrung",
+      "en": "professional experience",
+      "artikel": "die",
+      "example": "Ich habe fünf Jahre Berufserfahrung."
+    },
+    {
+      "de": "die Soft Skills",
+      "en": "soft skills",
+      "artikel": "die",
+      "example": "Soft Skills sind heute sehr gefragt."
+    },
+    {
+      "de": "die Kompetenz",
+      "en": "competence",
+      "artikel": "die",
+      "example": "Diese Kompetenz ist für den Job wichtig."
+    },
+    {
+      "de": "die Referenzen vorlegen",
+      "en": "to provide references",
+      "example": "Ich kann Referenzen vorlegen."
+    },
+    {
+      "de": "das Anschreiben",
+      "en": "cover letter",
+      "artikel": "das",
+      "example": "Ich schreibe noch das Anschreiben."
+    },
+    {
+      "de": "die Probezeit",
+      "en": "probationary period",
+      "artikel": "die",
+      "example": "Die Probezeit dauert sechs Monate."
+    },
+    {
+      "de": "der Arbeitsvertrag",
+      "en": "employment contract",
+      "artikel": "der",
+      "example": "Ich unterschreibe morgen den Arbeitsvertrag."
+    },
+    {
+      "de": "das Einstiegsgehalt",
+      "en": "starting salary",
+      "artikel": "das",
+      "example": "Das Einstiegsgehalt ist fair."
+    },
+    {
+      "de": "die Karrierechance",
+      "en": "career opportunity",
+      "artikel": "die",
+      "example": "Diese Stelle bietet gute Karrierechancen."
+    },
+    {
+      "de": "überzeugen (Bewerbung)",
+      "en": "to convince (in an interview)",
+      "example": "Ich möchte den Personalchef überzeugen."
+    },
+    {
+      "de": "der Personalchef",
+      "en": "HR manager (male)",
+      "artikel": "der",
+      "example": "Der Personalchef stellte viele Fragen."
+    },
+    {
+      "de": "die Personalchefin",
+      "en": "HR manager (female)",
+      "artikel": "die",
+      "example": "Die Personalchefin war sehr freundlich."
+    },
+    {
+      "de": "das Auswahlverfahren",
+      "en": "selection process",
+      "artikel": "das",
+      "example": "Das Auswahlverfahren dauert drei Runden."
+    },
+    {
+      "de": "die Zusage",
+      "en": "job offer / acceptance",
+      "artikel": "die",
+      "example": "Ich habe die Zusage bekommen!"
     }
-  ],
-  "_note": "Add 20 words about 'Medien & Pressefreiheit'. Format: {de, en, example}"
+  ]
 }

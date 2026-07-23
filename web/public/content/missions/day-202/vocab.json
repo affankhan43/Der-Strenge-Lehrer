@@ -1,51 +1,124 @@
 {
   "day": 202,
-  "level": "B2.2",
-  "topic": "Irreale Bedingungen",
+  "topic": "Arbeitsrecht",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Arbeitsrecht",
+      "en": "labor law",
+      "artikel": "das",
+      "example": "Arbeitsrecht schützt sowohl Arbeitgeber als auch Arbeitnehmer."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Kündigungsschutz",
+      "en": "protection against dismissal",
+      "artikel": "der",
+      "example": "Der Kündigungsschutz gilt nach sechs Monaten."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die fristlose Kündigung",
+      "en": "immediate dismissal",
+      "artikel": "die",
+      "example": "Eine fristlose Kündigung erfordert einen wichtigen Grund."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Abfindung",
+      "en": "severance pay",
+      "artikel": "die",
+      "example": "Er erhielt eine Abfindung nach der Kündigung."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der Betriebsrat",
+      "en": "works council",
+      "artikel": "der",
+      "example": "Der Betriebsrat vertritt die Interessen der Mitarbeiter."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Tarifverhandlung",
+      "en": "collective bargaining",
+      "artikel": "die",
+      "example": "Die Tarifverhandlung endete mit einer Lohnerhöhung."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Gewerkschaft",
+      "en": "labor union",
+      "artikel": "die",
+      "example": "Die Gewerkschaft organisierte einen Streik."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "der Streik",
+      "en": "strike",
+      "artikel": "der",
+      "example": "Der Streik dauerte drei Tage."
+    },
+    {
+      "de": "der Tarifvertrag",
+      "en": "collective agreement",
+      "artikel": "der",
+      "example": "Der Tarifvertrag regelt Löhne und Arbeitszeiten."
+    },
+    {
+      "de": "die Mindestlohn",
+      "en": "minimum wage",
+      "artikel": "der",
+      "example": "Der Mindestlohn wurde angehoben."
+    },
+    {
+      "de": "die Überstunde",
+      "en": "overtime",
+      "artikel": "die",
+      "example": "Er hat viele Überstunden gemacht."
+    },
+    {
+      "de": "der Mutterschutz",
+      "en": "maternity protection",
+      "artikel": "der",
+      "example": "Der Mutterschutz beginnt sechs Wochen vor der Geburt."
+    },
+    {
+      "de": "der Arbeitsschutz",
+      "en": "occupational safety",
+      "artikel": "der",
+      "example": "Arbeitsschutz verhindert Unfälle am Arbeitsplatz."
+    },
+    {
+      "de": "die Diskriminierung am Arbeitsplatz vermeiden",
+      "en": "to avoid workplace discrimination",
+      "example": "Firmen müssen Diskriminierung am Arbeitsplatz vermeiden."
+    },
+    {
+      "de": "das Arbeitszeugnis",
+      "en": "employment reference",
+      "artikel": "das",
+      "example": "Er erhielt ein sehr gutes Arbeitszeugnis."
+    },
+    {
+      "de": "die Probezeitkündigung",
+      "en": "termination during probation",
+      "artikel": "die",
+      "example": "Die Probezeitkündigung erfolgte ohne Angabe von Gründen."
+    },
+    {
+      "de": "die Elternzeit beantragen",
+      "en": "to apply for parental leave",
+      "example": "Sie beantragte Elternzeit für ein Jahr."
+    },
+    {
+      "de": "das Arbeitsgericht",
+      "en": "labor court",
+      "artikel": "das",
+      "example": "Der Fall landete vor dem Arbeitsgericht."
+    },
+    {
+      "de": "die betriebsbedingte Kündigung",
+      "en": "operational dismissal",
+      "artikel": "die",
+      "example": "Die betriebsbedingte Kündigung betraf zehn Mitarbeiter."
+    },
+    {
+      "de": "die Sozialauswahl",
+      "en": "social selection (dismissal criteria)",
+      "artikel": "die",
+      "example": "Die Sozialauswahl berücksichtigt Alter und Familienstand."
     }
   ]
 }

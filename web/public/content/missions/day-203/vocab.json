@@ -1,51 +1,126 @@
 {
   "day": 203,
-  "level": "B2.2",
-  "topic": "Irreale Wünsche",
+  "topic": "Sozialversicherungssystem",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Sozialversicherung",
+      "en": "social insurance",
+      "artikel": "die",
+      "example": "Die Sozialversicherung schützt vor Lebensrisiken."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Rentenversicherung",
+      "en": "pension insurance",
+      "artikel": "die",
+      "example": "Die Rentenversicherung finanziert die Renten."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Arbeitslosenversicherung",
+      "en": "unemployment insurance",
+      "artikel": "die",
+      "example": "Die Arbeitslosenversicherung zahlt bei Jobverlust."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Pflegeversicherung",
+      "en": "long-term care insurance",
+      "artikel": "die",
+      "example": "Die Pflegeversicherung deckt Pflegekosten im Alter."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die gesetzliche Krankenversicherung",
+      "en": "statutory health insurance",
+      "artikel": "die",
+      "example": "Die meisten sind in der gesetzlichen Krankenversicherung."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "der Sozialbeitrag",
+      "en": "social security contribution",
+      "artikel": "der",
+      "example": "Der Sozialbeitrag wird vom Gehalt abgezogen."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das Solidaritätsprinzip",
+      "en": "principle of solidarity",
+      "artikel": "das",
+      "example": "Das Solidaritätsprinzip trägt das gesamte System."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "das Umlageverfahren",
+      "en": "pay-as-you-go system",
+      "artikel": "das",
+      "example": "Die Rente basiert auf dem Umlageverfahren."
+    },
+    {
+      "de": "die Generationengerechtigkeit",
+      "en": "intergenerational justice",
+      "artikel": "die",
+      "example": "Generationengerechtigkeit ist bei der Rente ein wichtiges Thema."
+    },
+    {
+      "de": "das Rentenniveau",
+      "en": "pension level",
+      "artikel": "das",
+      "example": "Das Rentenniveau sinkt langsam."
+    },
+    {
+      "de": "die Beitragsbemessungsgrenze",
+      "en": "contribution assessment ceiling",
+      "artikel": "die",
+      "example": "Die Beitragsbemessungsgrenze steigt jährlich."
+    },
+    {
+      "de": "das Arbeitslosengeld",
+      "en": "unemployment benefit",
+      "artikel": "das",
+      "example": "Er bezieht seit drei Monaten Arbeitslosengeld."
+    },
+    {
+      "de": "die Grundsicherung",
+      "en": "basic social security",
+      "artikel": "die",
+      "example": "Die Grundsicherung sichert das Existenzminimum."
+    },
+    {
+      "de": "das Existenzminimum",
+      "en": "subsistence minimum",
+      "artikel": "das",
+      "example": "Das Existenzminimum muss steuerfrei bleiben."
+    },
+    {
+      "de": "die Bedürftigkeit",
+      "en": "neediness / eligibility for aid",
+      "artikel": "die",
+      "example": "Die Bedürftigkeit wird sorgfältig geprüft."
+    },
+    {
+      "de": "der Sozialstaat",
+      "en": "welfare state",
+      "artikel": "der",
+      "example": "Deutschland gilt als starker Sozialstaat."
+    },
+    {
+      "de": "das soziale Netz",
+      "en": "social safety net",
+      "artikel": "das",
+      "example": "Das soziale Netz fängt viele Menschen auf."
+    },
+    {
+      "de": "die Erwerbsminderungsrente",
+      "en": "disability pension",
+      "artikel": "die",
+      "example": "Sie erhält eine Erwerbsminderungsrente."
+    },
+    {
+      "de": "die Hinterbliebenenrente",
+      "en": "survivor's pension",
+      "artikel": "die",
+      "example": "Die Hinterbliebenenrente unterstützt die Familie."
+    },
+    {
+      "de": "die Beitragszahler",
+      "en": "contributors (to social insurance)",
+      "artikel": "die",
+      "example": "Weniger Beitragszahler belasten das System."
     }
   ]
 }

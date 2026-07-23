@@ -1,51 +1,119 @@
 {
   "day": 170,
-  "level": "B2.1",
-  "topic": "Passiv Präsens",
+  "topic": "Partizipialkonstruktionen",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Partizip I",
+      "en": "present participle",
+      "artikel": "das",
+      "example": "\"Lesend\" ist ein Partizip I."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "das Partizip II verwenden",
+      "en": "to use the past participle",
+      "example": "Wir verwenden das Partizip II im Perfekt."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Partizipialkonstruktion",
+      "en": "participial construction",
+      "artikel": "die",
+      "example": "Diese Partizipialkonstruktion klingt sehr formell."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "das erweiterte Partizip",
+      "en": "extended participle (construction)",
+      "artikel": "das",
+      "example": "Das erweiterte Partizip steht oft vor dem Nomen."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der vorangestellte Nebensatz",
+      "en": "preceding subordinate clause",
+      "artikel": "der",
+      "example": "Der vorangestellte Nebensatz erklärt die Ursache."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Partizipialgruppe",
+      "en": "participial phrase",
+      "artikel": "die",
+      "example": "Die Partizipialgruppe ersetzt einen Relativsatz."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Kurzform (Grammatik)",
+      "en": "shortened form (grammar)",
+      "artikel": "die",
+      "example": "Diese Kurzform wird in Berichten oft genutzt."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "der Relativsatz ersetzen",
+      "en": "to replace a relative clause",
+      "example": "Man kann den Relativsatz durch ein Partizip ersetzen."
+    },
+    {
+      "de": "das Attribut (Grammatik)",
+      "en": "attribute (grammar)",
+      "artikel": "das",
+      "example": "Das Attribut beschreibt das Nomen genauer."
+    },
+    {
+      "de": "verdichteter Ausdruck",
+      "en": "condensed expression",
+      "example": "Partizipien schaffen einen verdichteten Ausdruck."
+    },
+    {
+      "de": "der Amtsstil",
+      "en": "official/bureaucratic style",
+      "artikel": "der",
+      "example": "Der Amtsstil nutzt oft Partizipialkonstruktionen."
+    },
+    {
+      "de": "die schriftsprachliche Form",
+      "en": "written-language form",
+      "artikel": "die",
+      "example": "Diese Form ist typisch schriftsprachlich."
+    },
+    {
+      "de": "die Verdichtung (Sprache)",
+      "en": "condensation (language)",
+      "artikel": "die",
+      "example": "Die Verdichtung macht Texte kürzer."
+    },
+    {
+      "de": "die Zeitungssprache",
+      "en": "newspaper language / journalese",
+      "artikel": "die",
+      "example": "Die Zeitungssprache nutzt oft Partizipialkonstruktionen."
+    },
+    {
+      "de": "umständlich formulieren",
+      "en": "to phrase in a roundabout way",
+      "example": "Vermeide es, zu umständlich zu formulieren."
+    },
+    {
+      "de": "prägnant formulieren",
+      "en": "to phrase concisely",
+      "example": "Formuliere deine Sätze möglichst prägnant."
+    },
+    {
+      "de": "das Partizipialattribut",
+      "en": "participial attribute",
+      "artikel": "das",
+      "example": "Das Partizipialattribut steht vor dem Substantiv."
+    },
+    {
+      "de": "die Nominalgruppe erweitern",
+      "en": "to extend a noun phrase",
+      "example": "Wir erweitern die Nominalgruppe mit einem Partizip."
+    },
+    {
+      "de": "stilistisch variieren",
+      "en": "to vary stylistically",
+      "example": "Gute Autoren variieren stilistisch."
+    },
+    {
+      "de": "die Satzverkürzung",
+      "en": "sentence shortening",
+      "artikel": "die",
+      "example": "Partizipialkonstruktionen ermöglichen eine Satzverkürzung."
     }
   ]
 }

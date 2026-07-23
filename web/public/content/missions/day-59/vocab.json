@@ -1,32 +1,113 @@
 {
   "day": 59,
-  "topic": "Meetings & Präsentationen",
+  "topic": "Zukunft & Pläne",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "werden (Zukunft)",
+      "en": "will (future auxiliary)",
+      "example": "Ich werde morgen früh aufstehen."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Zukunft",
+      "en": "the future",
+      "artikel": "die",
+      "example": "Wie stellst du dir deine Zukunft vor?"
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "vorhaben (Plan)",
+      "en": "to plan / intend to",
+      "example": "Was habt ihr am Wochenende vor?"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "planen (Zukunft)",
+      "en": "to plan (future)",
+      "example": "Wir planen eine große Reise."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Absicht haben",
+      "en": "to intend to",
+      "example": "Ich habe die Absicht, umzuziehen."
+    },
+    {
+      "de": "erwarten",
+      "en": "to expect",
+      "example": "Ich erwarte eine wichtige E-Mail."
+    },
+    {
+      "de": "die Erwartung",
+      "en": "expectation",
+      "artikel": "die",
+      "example": "Meine Erwartungen sind hoch."
+    },
+    {
+      "de": "das Ziel",
+      "en": "goal",
+      "artikel": "das",
+      "example": "Mein Ziel ist es, fließend Deutsch zu sprechen."
+    },
+    {
+      "de": "erreichen",
+      "en": "to reach / achieve",
+      "example": "Ich möchte mein Ziel erreichen."
+    },
+    {
+      "de": "das Vorhaben",
+      "en": "intention / plan",
+      "artikel": "das",
+      "example": "Ihr Vorhaben ist sehr ehrgeizig."
+    },
+    {
+      "de": "bald (Zukunft)",
+      "en": "soon (future)",
+      "example": "Bald werde ich mit dem Studium fertig sein."
+    },
+    {
+      "de": "demnächst",
+      "en": "soon / shortly",
+      "example": "Demnächst eröffnet ein neues Café."
+    },
+    {
+      "de": "übermorgen",
+      "en": "the day after tomorrow",
+      "example": "Übermorgen fahren wir in den Urlaub."
+    },
+    {
+      "de": "langfristig",
+      "en": "long-term",
+      "example": "Wir denken langfristig."
+    },
+    {
+      "de": "kurzfristig",
+      "en": "short-term",
+      "example": "Das ist nur eine kurzfristige Lösung."
+    },
+    {
+      "de": "die Prognose",
+      "en": "forecast / prognosis",
+      "artikel": "die",
+      "example": "Die Prognose sieht gut aus."
+    },
+    {
+      "de": "voraussehen",
+      "en": "to foresee",
+      "example": "Niemand konnte das voraussehen."
+    },
+    {
+      "de": "die Perspektive (Zukunft)",
+      "en": "future prospect",
+      "artikel": "die",
+      "example": "Diese Stadt bietet gute Perspektiven."
+    },
+    {
+      "de": "sich vornehmen",
+      "en": "to resolve to do something",
+      "example": "Ich nehme mir vor, mehr zu lesen."
+    },
+    {
+      "de": "der Vorsatz",
+      "en": "resolution",
+      "artikel": "der",
+      "example": "Mein Vorsatz für das neue Jahr ist Sport."
     }
-  ],
-  "_note": "Add 20 words about 'Meetings & Präsentationen'. Format: {de, en, example}"
+  ]
 }

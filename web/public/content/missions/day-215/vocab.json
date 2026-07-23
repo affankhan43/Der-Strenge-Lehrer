@@ -1,51 +1,125 @@
 {
   "day": 215,
-  "level": "B2.2",
-  "topic": "Registerunterschiede",
+  "topic": "Extremismus & Radikalisierung: gesellschaftliche Analyse",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "der Extremismus",
+      "en": "extremism",
+      "artikel": "der",
+      "example": "Extremismus bedroht demokratische Werte."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Radikalisierung",
+      "en": "radicalization",
+      "artikel": "die",
+      "example": "Radikalisierung geschieht oft schrittweise."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Verfassungsfeindlichkeit",
+      "en": "anti-constitutional stance",
+      "artikel": "die",
+      "example": "Verfassungsfeindlichkeit wird vom Staat beobachtet."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Prävention (Extremismus)",
+      "en": "prevention (extremism)",
+      "artikel": "die",
+      "example": "Prävention setzt früh in der Bildung an."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Deradikalisierung",
+      "en": "deradicalization",
+      "artikel": "die",
+      "example": "Deradikalisierungsprogramme unterstützen den Ausstieg."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Aussteigerprogramme",
+      "en": "exit programs",
+      "artikel": "die",
+      "example": "Aussteigerprogramme helfen Betroffenen bei der Rückkehr."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die gesellschaftliche Polarisierung",
+      "en": "societal polarization",
+      "artikel": "die",
+      "example": "Gesellschaftliche Polarisierung begünstigt Extremismus."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die demokratische Resilienz",
+      "en": "democratic resilience",
+      "artikel": "die",
+      "example": "Demokratische Resilienz schützt vor Radikalisierung."
+    },
+    {
+      "de": "die Aufklärungsarbeit",
+      "en": "educational/awareness work",
+      "artikel": "die",
+      "example": "Aufklärungsarbeit an Schulen ist sehr wichtig."
+    },
+    {
+      "de": "die Verschwörungsideologie",
+      "en": "conspiracy ideology",
+      "artikel": "die",
+      "example": "Verschwörungsideologien verbreiten sich oft online."
+    },
+    {
+      "de": "die Anfälligkeit für Propaganda",
+      "en": "susceptibility to propaganda",
+      "artikel": "die",
+      "example": "Junge Menschen können anfällig für Propaganda sein."
+    },
+    {
+      "de": "die Präventionsarbeit",
+      "en": "prevention work",
+      "artikel": "die",
+      "example": "Präventionsarbeit richtet sich vor allem an Jugendliche."
+    },
+    {
+      "de": "die zivilgesellschaftliche Initiative",
+      "en": "civil society initiative",
+      "artikel": "die",
+      "example": "Zivilgesellschaftliche Initiativen stärken den Zusammenhalt."
+    },
+    {
+      "de": "die Sicherheitsbehörden",
+      "en": "security authorities",
+      "artikel": "die",
+      "example": "Die Sicherheitsbehörden beobachten extremistische Gruppen."
+    },
+    {
+      "de": "die demokratische Werteerziehung",
+      "en": "democratic values education",
+      "artikel": "die",
+      "example": "Demokratische Werteerziehung beginnt schon in der Schule."
+    },
+    {
+      "de": "die soziale Ausgrenzung als Ursache",
+      "en": "social exclusion as a cause",
+      "example": "Soziale Ausgrenzung kann eine Ursache für Radikalisierung sein."
+    },
+    {
+      "de": "die Zivilcourage",
+      "en": "civil courage",
+      "artikel": "die",
+      "example": "Zivilcourage bedeutet, gegen Unrecht einzustehen."
+    },
+    {
+      "de": "die Menschenfeindlichkeit",
+      "en": "misanthropy / hostility to humanity",
+      "artikel": "die",
+      "example": "Menschenfeindlichkeit widerspricht demokratischen Grundwerten."
+    },
+    {
+      "de": "die Toleranzförderung",
+      "en": "promotion of tolerance",
+      "artikel": "die",
+      "example": "Toleranzförderung ist ein zentrales Bildungsziel."
+    },
+    {
+      "de": "die wehrhafte Demokratie",
+      "en": "militant/defensive democracy",
+      "artikel": "die",
+      "example": "Die wehrhafte Demokratie schützt sich vor ihren Feinden."
     }
   ]
 }

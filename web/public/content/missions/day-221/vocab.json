@@ -1,51 +1,122 @@
 {
   "day": 221,
-  "level": "B2.2",
-  "topic": "Zeitungssprache",
+  "topic": "Public Health & Epidemiologie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Epidemiologie",
+      "en": "epidemiology",
+      "artikel": "die",
+      "example": "Epidemiologie untersucht die Verbreitung von Krankheiten."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Pandemie",
+      "en": "pandemic",
+      "artikel": "die",
+      "example": "Die Pandemie veränderte das öffentliche Leben."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Inzidenz",
+      "en": "incidence rate",
+      "artikel": "die",
+      "example": "Die Inzidenz stieg in den letzten Wochen an."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Ausbreitung eindämmen",
+      "en": "to contain the spread",
+      "example": "Wir versuchen, die Ausbreitung einzudämmen."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Herdenimmunität",
+      "en": "herd immunity",
+      "artikel": "die",
+      "example": "Herdenimmunität schützt auch ungeimpfte Personen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Impfquote",
+      "en": "vaccination rate",
+      "artikel": "die",
+      "example": "Die Impfquote muss weiter steigen."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die öffentliche Gesundheit",
+      "en": "public health",
+      "artikel": "die",
+      "example": "Öffentliche Gesundheit betrifft die gesamte Bevölkerung."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Gesundheitsprävention",
+      "en": "health prevention",
+      "artikel": "die",
+      "example": "Gesundheitsprävention senkt langfristig Krankheitskosten."
+    },
+    {
+      "de": "das Gesundheitsmonitoring",
+      "en": "health monitoring",
+      "artikel": "das",
+      "example": "Gesundheitsmonitoring erkennt Trends frühzeitig."
+    },
+    {
+      "de": "die Krankheitslast",
+      "en": "disease burden",
+      "artikel": "die",
+      "example": "Die Krankheitslast steigt mit dem Alter der Bevölkerung."
+    },
+    {
+      "de": "die Ansteckungsgefahr",
+      "en": "risk of infection",
+      "artikel": "die",
+      "example": "Die Ansteckungsgefahr ist in geschlossenen Räumen höher."
+    },
+    {
+      "de": "die Reproduktionszahl",
+      "en": "reproduction number",
+      "artikel": "die",
+      "example": "Die Reproduktionszahl zeigt, wie schnell sich eine Krankheit verbreitet."
+    },
+    {
+      "de": "die Quarantänemaßnahme",
+      "en": "quarantine measure",
+      "artikel": "die",
+      "example": "Quarantänemaßnahmen sollen die Verbreitung stoppen."
+    },
+    {
+      "de": "die Gesundheitsaufklärung",
+      "en": "health education",
+      "artikel": "die",
+      "example": "Gesundheitsaufklärung informiert die Öffentlichkeit."
+    },
+    {
+      "de": "die Krankheitsprävalenz",
+      "en": "disease prevalence",
+      "artikel": "die",
+      "example": "Die Krankheitsprävalenz variiert regional."
+    },
+    {
+      "de": "die epidemiologische Studie",
+      "en": "epidemiological study",
+      "artikel": "die",
+      "example": "Die epidemiologische Studie untersuchte tausende Fälle."
+    },
+    {
+      "de": "die Übertragungswege",
+      "en": "transmission routes",
+      "artikel": "die",
+      "example": "Die Übertragungswege wurden genau untersucht."
+    },
+    {
+      "de": "das Gesundheitssystem belasten",
+      "en": "to burden the healthcare system",
+      "example": "Die Pandemie belastete das Gesundheitssystem stark."
+    },
+    {
+      "de": "die bevölkerungsweite Impfung",
+      "en": "population-wide vaccination",
+      "example": "Eine bevölkerungsweite Impfung reduziert schwere Verläufe."
+    },
+    {
+      "de": "die Gesundheitskrise bewältigen",
+      "en": "to manage a health crisis",
+      "example": "Das Land bewältigte die Gesundheitskrise gemeinsam."
     }
   ]
 }

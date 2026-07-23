@@ -1,32 +1,117 @@
 {
   "day": 76,
-  "topic": "Ehrenamt & Engagement",
+  "topic": "Kunsthandwerk & DIY",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Kunsthandwerk",
+      "en": "handicraft / craftsmanship",
+      "artikel": "das",
+      "example": "Sie liebt traditionelles Kunsthandwerk."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "selbst machen",
+      "en": "to make yourself (DIY)",
+      "example": "Ich mache dieses Regal selbst."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Werkzeug",
+      "en": "tool",
+      "artikel": "das",
+      "example": "Ich brauche das richtige Werkzeug."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "der Hammer",
+      "en": "hammer",
+      "artikel": "der",
+      "example": "Gib mir bitte den Hammer."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Nagel",
+      "en": "nail",
+      "example": "Schlag den Nagel in die Wand."
+    },
+    {
+      "de": "die Schraube",
+      "en": "screw",
+      "artikel": "die",
+      "example": "Diese Schraube ist zu klein."
+    },
+    {
+      "de": "der Schraubenzieher",
+      "en": "screwdriver",
+      "artikel": "der",
+      "example": "Ich brauche einen Schraubenzieher."
+    },
+    {
+      "de": "kleben",
+      "en": "to glue",
+      "example": "Klebe die beiden Teile zusammen."
+    },
+    {
+      "de": "der Klebstoff",
+      "en": "glue / adhesive",
+      "artikel": "der",
+      "example": "Der Klebstoff trocknet schnell."
+    },
+    {
+      "de": "nähen",
+      "en": "to sew",
+      "example": "Meine Oma näht ihre eigene Kleidung."
+    },
+    {
+      "de": "die Nähmaschine",
+      "en": "sewing machine",
+      "artikel": "die",
+      "example": "Die Nähmaschine steht im Wohnzimmer."
+    },
+    {
+      "de": "stricken",
+      "en": "to knit",
+      "example": "Sie strickt einen warmen Schal."
+    },
+    {
+      "de": "häkeln",
+      "en": "to crochet",
+      "example": "Meine Tante häkelt gern Decken."
+    },
+    {
+      "de": "das Material",
+      "en": "material",
+      "artikel": "das",
+      "example": "Welches Material brauchst du dafür?"
+    },
+    {
+      "de": "das Holz",
+      "en": "wood",
+      "artikel": "das",
+      "example": "Der Tisch ist aus Holz."
+    },
+    {
+      "de": "die Farbe (Handwerk)",
+      "en": "paint",
+      "artikel": "die",
+      "example": "Wir brauchen mehr Farbe für die Wand."
+    },
+    {
+      "de": "streichen",
+      "en": "to paint (walls/objects)",
+      "example": "Wir streichen das Zimmer am Wochenende."
+    },
+    {
+      "de": "die Anleitung",
+      "en": "instructions",
+      "artikel": "die",
+      "example": "Folge einfach der Anleitung."
+    },
+    {
+      "de": "bauen (DIY)",
+      "en": "to build (DIY)",
+      "example": "Wir bauen ein Vogelhaus für den Garten."
+    },
+    {
+      "de": "kreativ werden",
+      "en": "to get creative",
+      "example": "Am Wochenende werde ich gern kreativ."
     }
-  ],
-  "_note": "Add 20 words about 'Ehrenamt & Engagement'. Format: {de, en, example}"
+  ]
 }

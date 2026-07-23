@@ -1,32 +1,112 @@
 {
   "day": 106,
-  "topic": "Philosophie & Identität",
+  "topic": "Empathie & zwischenmenschliche Kommunikation",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Empathie",
+      "en": "empathy",
+      "artikel": "die",
+      "example": "Empathie ist eine wichtige Eigenschaft."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "sich einfühlen",
+      "en": "to empathize",
+      "example": "Ich versuche, mich in ihre Lage einzufühlen."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "zuhören",
+      "en": "to listen",
+      "example": "Er hört seinen Freunden immer aufmerksam zu."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "aktives Zuhören",
+      "en": "active listening",
+      "example": "Aktives Zuhören verbessert Beziehungen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "nachvollziehen",
+      "en": "to comprehend / relate to",
+      "example": "Ich kann deine Reaktion gut nachvollziehen."
+    },
+    {
+      "de": "die Perspektive wechseln",
+      "en": "to change perspective",
+      "example": "Versuch mal, die Perspektive zu wechseln."
+    },
+    {
+      "de": "die Wertschätzung zeigen",
+      "en": "to show appreciation",
+      "example": "Zeig deinen Kollegen mehr Wertschätzung."
+    },
+    {
+      "de": "die Kritik äußern",
+      "en": "to voice criticism",
+      "example": "Er äußert seine Kritik sehr direkt."
+    },
+    {
+      "de": "konstruktiv",
+      "en": "constructive",
+      "example": "Bitte gib mir konstruktives Feedback."
+    },
+    {
+      "de": "das Feedback geben",
+      "en": "to give feedback",
+      "example": "Ich gebe meinem Team regelmäßig Feedback."
+    },
+    {
+      "de": "die Körpersprache",
+      "en": "body language",
+      "artikel": "die",
+      "example": "Ihre Körpersprache zeigte Nervosität."
+    },
+    {
+      "de": "die Mimik",
+      "en": "facial expressions",
+      "artikel": "die",
+      "example": "Seine Mimik verriet seine Gefühle."
+    },
+    {
+      "de": "die Gestik",
+      "en": "gestures",
+      "artikel": "die",
+      "example": "Seine Gestik war sehr lebendig."
+    },
+    {
+      "de": "verbal",
+      "en": "verbal",
+      "example": "Verbale und nonverbale Kommunikation sind wichtig."
+    },
+    {
+      "de": "nonverbal",
+      "en": "nonverbal",
+      "example": "Nonverbale Signale sagen oft mehr als Worte."
+    },
+    {
+      "de": "die Wahrnehmung",
+      "en": "perception",
+      "artikel": "die",
+      "example": "Unsere Wahrnehmung ist manchmal subjektiv."
+    },
+    {
+      "de": "wahrnehmen",
+      "en": "to perceive",
+      "example": "Ich nehme seine Sorgen ernst wahr."
+    },
+    {
+      "de": "sensibel",
+      "en": "sensitive",
+      "example": "Sei bitte etwas sensibler bei diesem Thema."
+    },
+    {
+      "de": "die Achtsamkeit im Gespräch",
+      "en": "mindfulness in conversation",
+      "example": "Achtsamkeit im Gespräch verbessert das Verständnis."
+    },
+    {
+      "de": "die Beziehungsebene",
+      "en": "relational level (of communication)",
+      "artikel": "die",
+      "example": "Achte auch auf die Beziehungsebene im Gespräch."
     }
-  ],
-  "_note": "Add 20 words about 'Philosophie & Identität'. Format: {de, en, example}"
+  ]
 }

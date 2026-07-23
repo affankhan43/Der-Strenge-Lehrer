@@ -3,30 +3,117 @@
   "topic": "Recht & Justiz",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Recht",
+      "en": "law / right",
+      "artikel": "das",
+      "example": "Jeder hat das Recht auf Bildung."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "das Gericht",
+      "en": "court",
+      "artikel": "das",
+      "example": "Der Fall geht vor Gericht."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "der Richter",
+      "en": "judge (male)",
+      "artikel": "der",
+      "example": "Der Richter fällt ein Urteil."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Richterin",
+      "en": "judge (female)",
+      "artikel": "die",
+      "example": "Die Richterin hört beide Seiten an."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Anwalt",
+      "en": "lawyer (male)",
+      "artikel": "der",
+      "example": "Mein Anwalt vertritt mich vor Gericht."
+    },
+    {
+      "de": "die Anwältin",
+      "en": "lawyer (female)",
+      "artikel": "die",
+      "example": "Die Anwältin gewann den Prozess."
+    },
+    {
+      "de": "der Prozess (Gericht)",
+      "en": "trial",
+      "artikel": "der",
+      "example": "Der Prozess dauert mehrere Wochen."
+    },
+    {
+      "de": "das Urteil",
+      "en": "verdict",
+      "artikel": "das",
+      "example": "Das Urteil wurde heute verkündet."
+    },
+    {
+      "de": "verurteilen",
+      "en": "to convict / sentence",
+      "example": "Er wurde zu einer Geldstrafe verurteilt."
+    },
+    {
+      "de": "freisprechen",
+      "en": "to acquit",
+      "example": "Das Gericht sprach ihn frei."
+    },
+    {
+      "de": "die Klage",
+      "en": "lawsuit",
+      "artikel": "die",
+      "example": "Sie hat eine Klage eingereicht."
+    },
+    {
+      "de": "klagen (Gericht)",
+      "en": "to sue",
+      "example": "Er klagt gegen seinen früheren Arbeitgeber."
+    },
+    {
+      "de": "der Vertrag (Recht)",
+      "en": "legal contract",
+      "artikel": "der",
+      "example": "Lies den Vertrag genau durch."
+    },
+    {
+      "de": "das Verbrechen",
+      "en": "crime",
+      "artikel": "das",
+      "example": "Das Verbrechen wurde schnell aufgeklärt."
+    },
+    {
+      "de": "der Verdächtige",
+      "en": "suspect",
+      "artikel": "der",
+      "example": "Der Verdächtige wurde festgenommen."
+    },
+    {
+      "de": "verhaften",
+      "en": "to arrest",
+      "example": "Die Polizei hat ihn verhaftet."
+    },
+    {
+      "de": "die Strafe",
+      "en": "penalty / punishment",
+      "artikel": "die",
+      "example": "Die Strafe war sehr hoch."
+    },
+    {
+      "de": "das Gesetz brechen",
+      "en": "to break the law",
+      "example": "Er hat bewusst das Gesetz gebrochen."
+    },
+    {
+      "de": "legal",
+      "en": "legal",
+      "example": "Das ist völlig legal."
+    },
+    {
+      "de": "illegal",
+      "en": "illegal",
+      "example": "Das ist in diesem Land illegal."
     }
-  ],
-  "_note": "Add 20 words about 'Recht & Justiz'. Format: {de, en, example}"
+  ]
 }

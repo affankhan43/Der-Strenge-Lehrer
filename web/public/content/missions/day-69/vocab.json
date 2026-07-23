@@ -1,32 +1,121 @@
 {
   "day": 69,
-  "topic": "Stadt & Infrastruktur",
+  "topic": "Wissenschaft & Forschung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Wissenschaft",
+      "en": "science",
+      "artikel": "die",
+      "example": "Wissenschaft interessiert mich sehr."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Wissenschaftler",
+      "en": "scientist (male)",
+      "artikel": "der",
+      "example": "Der Wissenschaftler forscht an einer neuen Impfung."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Wissenschaftlerin",
+      "en": "scientist (female)",
+      "artikel": "die",
+      "example": "Die Wissenschaftlerin arbeitet an der Universität."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Forschung",
+      "en": "research",
+      "artikel": "die",
+      "example": "Die Forschung macht große Fortschritte."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "forschen",
+      "en": "to research",
+      "example": "Er forscht seit zehn Jahren zu diesem Thema."
+    },
+    {
+      "de": "das Experiment",
+      "en": "experiment",
+      "artikel": "das",
+      "example": "Das Experiment war erfolgreich."
+    },
+    {
+      "de": "das Labor",
+      "en": "laboratory",
+      "artikel": "das",
+      "example": "Sie arbeitet im Labor."
+    },
+    {
+      "de": "die Entdeckung",
+      "en": "discovery",
+      "artikel": "die",
+      "example": "Das war eine wichtige Entdeckung."
+    },
+    {
+      "de": "entdecken",
+      "en": "to discover",
+      "example": "Sie haben ein neues Medikament entdeckt."
+    },
+    {
+      "de": "die Theorie",
+      "en": "theory",
+      "artikel": "die",
+      "example": "Diese Theorie ist noch umstritten."
+    },
+    {
+      "de": "beweisen",
+      "en": "to prove",
+      "example": "Können Sie das beweisen?"
+    },
+    {
+      "de": "der Beweis",
+      "en": "proof / evidence",
+      "artikel": "der",
+      "example": "Es gibt keinen klaren Beweis."
+    },
+    {
+      "de": "die Hypothese",
+      "en": "hypothesis",
+      "artikel": "die",
+      "example": "Unsere Hypothese wurde bestätigt."
+    },
+    {
+      "de": "das Ergebnis",
+      "en": "result",
+      "artikel": "das",
+      "example": "Das Ergebnis war überraschend."
+    },
+    {
+      "de": "die Untersuchung (Studie)",
+      "en": "study / investigation",
+      "artikel": "die",
+      "example": "Die Untersuchung dauerte drei Jahre."
+    },
+    {
+      "de": "die Universitätsstudie",
+      "en": "university study",
+      "artikel": "die",
+      "example": "Diese Universitätsstudie ist sehr bekannt."
+    },
+    {
+      "de": "innovativ",
+      "en": "innovative",
+      "example": "Das ist eine sehr innovative Lösung."
+    },
+    {
+      "de": "die Erfindung",
+      "en": "invention",
+      "artikel": "die",
+      "example": "Das Internet war eine wichtige Erfindung."
+    },
+    {
+      "de": "erfinden",
+      "en": "to invent",
+      "example": "Wer hat das Telefon erfunden?"
+    },
+    {
+      "de": "der Fortschritt",
+      "en": "progress",
+      "artikel": "der",
+      "example": "Die Medizin macht großen Fortschritt."
     }
-  ],
-  "_note": "Add 20 words about 'Stadt & Infrastruktur'. Format: {de, en, example}"
+  ]
 }

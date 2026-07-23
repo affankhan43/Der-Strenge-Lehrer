@@ -1,51 +1,124 @@
 {
   "day": 192,
-  "level": "B2.1",
-  "topic": "Formeller Brief",
+  "topic": "Filmkritik & Analyse",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Filmanalyse",
+      "en": "film analysis",
+      "artikel": "die",
+      "example": "Die Filmanalyse betrachtet Bildsprache und Erzählweise."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Bildsprache",
+      "en": "visual language",
+      "artikel": "die",
+      "example": "Die Bildsprache des Films ist sehr poetisch."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Erzählweise (Film)",
+      "en": "narrative style (film)",
+      "artikel": "die",
+      "example": "Die Erzählweise ist nichtlinear."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "der Erzählstrang",
+      "en": "narrative strand / storyline",
+      "artikel": "der",
+      "example": "Der zweite Erzählstrang wirkt weniger überzeugend."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Filmästhetik",
+      "en": "film aesthetics",
+      "artikel": "die",
+      "example": "Die Filmästhetik erinnert an klassische Werke."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Montage (Film)",
+      "en": "montage / editing (film)",
+      "artikel": "die",
+      "example": "Die Montage erzeugt ein hohes Tempo."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Kameraeinstellung",
+      "en": "camera shot",
+      "artikel": "die",
+      "example": "Die Kameraeinstellung betont die Isolation der Figur."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Bedeutungsebene",
+      "en": "level of meaning",
+      "artikel": "die",
+      "example": "Der Film hat mehrere Bedeutungsebenen."
+    },
+    {
+      "de": "die symbolische Darstellung",
+      "en": "symbolic representation",
+      "artikel": "die",
+      "example": "Die symbolische Darstellung war subtil."
+    },
+    {
+      "de": "die Filmsprache",
+      "en": "cinematic language",
+      "artikel": "die",
+      "example": "Die Filmsprache dieses Regisseurs ist unverkennbar."
+    },
+    {
+      "de": "die dramaturgische Struktur",
+      "en": "dramaturgical structure",
+      "artikel": "die",
+      "example": "Die dramaturgische Struktur folgt klassischen Regeln."
+    },
+    {
+      "de": "die Figurenentwicklung",
+      "en": "character development",
+      "artikel": "die",
+      "example": "Die Figurenentwicklung ist glaubwürdig dargestellt."
+    },
+    {
+      "de": "die filmische Umsetzung",
+      "en": "cinematic adaptation/execution",
+      "artikel": "die",
+      "example": "Die filmische Umsetzung des Buches überzeugt."
+    },
+    {
+      "de": "die Rezeptionsgeschichte",
+      "en": "reception history",
+      "artikel": "die",
+      "example": "Die Rezeptionsgeschichte des Films ist interessant."
+    },
+    {
+      "de": "das Spannungsverhältnis (Film)",
+      "en": "tension / dynamic (film)",
+      "example": "Das Spannungsverhältnis zwischen den Figuren treibt die Handlung."
+    },
+    {
+      "de": "die zeitgenössische Relevanz",
+      "en": "contemporary relevance",
+      "artikel": "die",
+      "example": "Der Film hat große zeitgenössische Relevanz."
+    },
+    {
+      "de": "die filmische Metapher",
+      "en": "cinematic metaphor",
+      "artikel": "die",
+      "example": "Diese filmische Metapher ist gut gewählt."
+    },
+    {
+      "de": "die Inszenierungsästhetik",
+      "en": "staging aesthetics",
+      "artikel": "die",
+      "example": "Die Inszenierungsästhetik ist sehr eigenwillig."
+    },
+    {
+      "de": "die kritische Würdigung",
+      "en": "critical appreciation",
+      "artikel": "die",
+      "example": "Der Film erhielt eine kritische Würdigung."
+    },
+    {
+      "de": "das nachhaltige Filmerlebnis",
+      "en": "lasting film experience",
+      "example": "Das war ein wirklich nachhaltiges Filmerlebnis."
     }
   ]
 }

@@ -1,32 +1,121 @@
 {
   "day": 83,
-  "topic": "Architektur & Design",
+  "topic": "Zukunftstechnologien",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "der Roboter",
+      "en": "robot",
+      "artikel": "der",
+      "example": "Der Roboter erledigt einfache Aufgaben."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Robotik",
+      "en": "robotics",
+      "artikel": "die",
+      "example": "Robotik ist ein spannendes Forschungsfeld."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "automatisieren",
+      "en": "to automate",
+      "example": "Viele Prozesse werden automatisiert."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Automatisierung",
+      "en": "automation",
+      "artikel": "die",
+      "example": "Automatisierung verändert die Arbeitswelt."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "selbstfahrend",
+      "en": "self-driving",
+      "example": "Selbstfahrende Autos werden immer häufiger getestet."
+    },
+    {
+      "de": "die Drohne",
+      "en": "drone",
+      "artikel": "die",
+      "example": "Die Drohne fliegt über das Feld."
+    },
+    {
+      "de": "die virtuelle Realität",
+      "en": "virtual reality",
+      "artikel": "die",
+      "example": "Virtuelle Realität verändert die Unterhaltung."
+    },
+    {
+      "de": "die erweiterte Realität",
+      "en": "augmented reality",
+      "artikel": "die",
+      "example": "Erweiterte Realität wird oft in Spielen genutzt."
+    },
+    {
+      "de": "der 3D-Drucker",
+      "en": "3D printer",
+      "artikel": "der",
+      "example": "Der 3D-Drucker erstellt ein Modell."
+    },
+    {
+      "de": "drucken (3D)",
+      "en": "to print (3D)",
+      "example": "Wir können dieses Teil selbst drucken."
+    },
+    {
+      "de": "das Raumschiff",
+      "en": "spacecraft",
+      "artikel": "das",
+      "example": "Das Raumschiff startet nächste Woche."
+    },
+    {
+      "de": "die Raumfahrt",
+      "en": "space travel",
+      "artikel": "die",
+      "example": "Die Raumfahrt begeistert viele Menschen."
+    },
+    {
+      "de": "der Satellit",
+      "en": "satellite",
+      "artikel": "der",
+      "example": "Der Satellit sendet Daten zur Erde."
+    },
+    {
+      "de": "die Batterie",
+      "en": "battery",
+      "artikel": "die",
+      "example": "Die Batterie hält jetzt viel länger."
+    },
+    {
+      "de": "die Elektromobilität",
+      "en": "electric mobility",
+      "artikel": "die",
+      "example": "Elektromobilität wird immer beliebter."
+    },
+    {
+      "de": "das Elektroauto",
+      "en": "electric car",
+      "artikel": "das",
+      "example": "Wir haben ein Elektroauto gekauft."
+    },
+    {
+      "de": "die Innovation",
+      "en": "innovation",
+      "artikel": "die",
+      "example": "Diese Innovation verändert die Industrie."
+    },
+    {
+      "de": "die Zukunftsforschung",
+      "en": "futures research / futurology",
+      "artikel": "die",
+      "example": "Die Zukunftsforschung untersucht Trends."
+    },
+    {
+      "de": "smart (Technologie)",
+      "en": "smart (technology)",
+      "example": "Unser Zuhause ist mittlerweile ganz smart."
+    },
+    {
+      "de": "vernetzt",
+      "en": "networked / connected",
+      "example": "Alle Geräte sind miteinander vernetzt."
     }
-  ],
-  "_note": "Add 20 words about 'Architektur & Design'. Format: {de, en, example}"
+  ]
 }

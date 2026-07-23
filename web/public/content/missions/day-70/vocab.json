@@ -1,32 +1,125 @@
 {
   "day": 70,
-  "topic": "Öffentliche Verkehrsplanung",
+  "topic": "Bildungssystem",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Bildungssystem",
+      "en": "education system",
+      "artikel": "das",
+      "example": "Das Bildungssystem ist in jedem Land anders."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Kindergarten",
+      "en": "kindergarten",
+      "artikel": "der",
+      "example": "Meine Tochter geht in den Kindergarten."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Grundschule",
+      "en": "primary school",
+      "artikel": "die",
+      "example": "Er geht noch in die Grundschule."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "das Gymnasium",
+      "en": "academic secondary school",
+      "artikel": "das",
+      "example": "Sie besucht das Gymnasium."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Berufsschule",
+      "en": "vocational school",
+      "artikel": "die",
+      "example": "Er lernt an der Berufsschule."
+    },
+    {
+      "de": "die Ausbildung",
+      "en": "vocational training",
+      "artikel": "die",
+      "example": "Sie macht eine Ausbildung zur Krankenschwester."
+    },
+    {
+      "de": "der Abschluss",
+      "en": "degree / qualification",
+      "artikel": "der",
+      "example": "Er hat seinen Abschluss letztes Jahr gemacht."
+    },
+    {
+      "de": "das Stipendium",
+      "en": "scholarship",
+      "artikel": "das",
+      "example": "Sie hat ein Stipendium bekommen."
+    },
+    {
+      "de": "die Studiengebühr",
+      "en": "tuition fee",
+      "artikel": "die",
+      "example": "Die Studiengebühren sind hier niedrig."
+    },
+    {
+      "de": "der Lehrplan",
+      "en": "curriculum",
+      "artikel": "der",
+      "example": "Der Lehrplan wurde geändert."
+    },
+    {
+      "de": "das Fachgebiet",
+      "en": "field of study",
+      "artikel": "das",
+      "example": "Ihr Fachgebiet ist Biologie."
+    },
+    {
+      "de": "der Professor",
+      "en": "professor (male)",
+      "artikel": "der",
+      "example": "Der Professor hält eine Vorlesung."
+    },
+    {
+      "de": "die Professorin",
+      "en": "professor (female)",
+      "artikel": "die",
+      "example": "Die Professorin forscht zu Umweltpolitik."
+    },
+    {
+      "de": "die Vorlesung",
+      "en": "lecture",
+      "artikel": "die",
+      "example": "Die Vorlesung beginnt um neun Uhr."
+    },
+    {
+      "de": "das Seminar",
+      "en": "seminar",
+      "artikel": "das",
+      "example": "Ich habe heute ein Seminar."
+    },
+    {
+      "de": "die Bildung",
+      "en": "education",
+      "artikel": "die",
+      "example": "Bildung ist sehr wichtig für die Zukunft."
+    },
+    {
+      "de": "lebenslanges Lernen",
+      "en": "lifelong learning",
+      "example": "Lebenslanges Lernen wird immer wichtiger."
+    },
+    {
+      "de": "die Chancengleichheit",
+      "en": "equal opportunity",
+      "artikel": "die",
+      "example": "Chancengleichheit in der Bildung ist wichtig."
+    },
+    {
+      "de": "das Schulsystem",
+      "en": "school system",
+      "artikel": "das",
+      "example": "Das Schulsystem unterscheidet sich stark."
+    },
+    {
+      "de": "die Fortbildung",
+      "en": "further education / training",
+      "artikel": "die",
+      "example": "Ich mache eine berufliche Fortbildung."
     }
-  ],
-  "_note": "Add 20 words about 'Öffentliche Verkehrsplanung'. Format: {de, en, example}"
+  ]
 }

@@ -1,51 +1,119 @@
 {
   "day": 196,
-  "level": "B2.1",
-  "topic": "Debatte",
+  "topic": "Wiederholung B2.1: Akademischer Wortschatz",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Fragestellung analysieren",
+      "en": "to analyze the research question",
+      "example": "Wir analysieren die Fragestellung im ersten Kapitel."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die kritische Betrachtung",
+      "en": "critical examination",
+      "artikel": "die",
+      "example": "Eine kritische Betrachtung des Themas ist notwendig."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die theoretische Grundlage",
+      "en": "theoretical basis",
+      "artikel": "die",
+      "example": "Die theoretische Grundlage wird zuerst erläutert."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die praktische Relevanz",
+      "en": "practical relevance",
+      "artikel": "die",
+      "example": "Die praktische Relevanz der Studie ist hoch."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Argumentation nachvollziehen",
+      "en": "to follow the argumentation",
+      "example": "Ich kann die Argumentation gut nachvollziehen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die zentrale Fragestellung",
+      "en": "central research question",
+      "artikel": "die",
+      "example": "Die zentrale Fragestellung bleibt unbeantwortet."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die inhaltliche Tiefe",
+      "en": "depth of content",
+      "artikel": "die",
+      "example": "Die inhaltliche Tiefe der Arbeit überzeugt."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die methodische Vorgehensweise",
+      "en": "methodological approach",
+      "artikel": "die",
+      "example": "Die methodische Vorgehensweise wird detailliert erklärt."
+    },
+    {
+      "de": "die kritische Auseinandersetzung führen",
+      "en": "to engage critically",
+      "example": "Wir führen eine kritische Auseinandersetzung mit dem Thema."
+    },
+    {
+      "de": "die wissenschaftliche Präzision",
+      "en": "scientific precision",
+      "artikel": "die",
+      "example": "Wissenschaftliche Präzision ist in dieser Arbeit erkennbar."
+    },
+    {
+      "de": "den Sachverhalt differenzieren",
+      "en": "to differentiate the matter",
+      "example": "Wir sollten den Sachverhalt genauer differenzieren."
+    },
+    {
+      "de": "die abschließende Bewertung",
+      "en": "final assessment",
+      "artikel": "die",
+      "example": "Die abschließende Bewertung fällt positiv aus."
+    },
+    {
+      "de": "die interdisziplinäre Perspektive",
+      "en": "interdisciplinary perspective",
+      "artikel": "die",
+      "example": "Die interdisziplinäre Perspektive bereichert die Analyse."
+    },
+    {
+      "de": "den roten Faden verfolgen",
+      "en": "to follow the common thread",
+      "example": "Verfolge den roten Faden der Argumentation."
+    },
+    {
+      "de": "die begriffliche Klarheit",
+      "en": "conceptual clarity",
+      "artikel": "die",
+      "example": "Begriffliche Klarheit ist in wissenschaftlichen Texten wichtig."
+    },
+    {
+      "de": "die fundierte Argumentation",
+      "en": "well-founded argumentation",
+      "artikel": "die",
+      "example": "Seine fundierte Argumentation überzeugte alle."
+    },
+    {
+      "de": "die akademische Diskussion",
+      "en": "academic discussion",
+      "artikel": "die",
+      "example": "Die akademische Diskussion war sehr fruchtbar."
+    },
+    {
+      "de": "das B2-Niveau festigen",
+      "en": "to consolidate the B2 level",
+      "example": "Ich festige jetzt mein B2-Niveau."
+    },
+    {
+      "de": "die sprachliche Präzision",
+      "en": "linguistic precision",
+      "artikel": "die",
+      "example": "Sprachliche Präzision ist auf diesem Niveau entscheidend."
+    },
+    {
+      "de": "selbstständig formulieren",
+      "en": "to formulate independently",
+      "example": "Ich kann jetzt selbstständig komplexe Texte formulieren."
     }
   ]
 }

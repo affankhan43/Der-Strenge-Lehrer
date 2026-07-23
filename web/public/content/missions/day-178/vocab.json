@@ -1,51 +1,121 @@
 {
   "day": 178,
-  "level": "B2.1",
-  "topic": "Modalpartikeln",
+  "topic": "Risikomanagement",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Risikomanagement",
+      "en": "risk management",
+      "artikel": "das",
+      "example": "Risikomanagement schützt vor finanziellen Verlusten."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "das Risiko einschätzen",
+      "en": "to assess risk",
+      "example": "Wir schätzen jedes Risiko sorgfältig ein."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Risikoanalyse",
+      "en": "risk analysis",
+      "artikel": "die",
+      "example": "Die Risikoanalyse zeigte mehrere Schwachstellen."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "das Restrisiko",
+      "en": "residual risk",
+      "artikel": "das",
+      "example": "Ein gewisses Restrisiko bleibt immer bestehen."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Krisenprävention",
+      "en": "crisis prevention",
+      "artikel": "die",
+      "example": "Krisenprävention ist besser als Krisenbewältigung."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "der Notfallplan",
+      "en": "contingency plan",
+      "artikel": "der",
+      "example": "Wir haben einen Notfallplan vorbereitet."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Absicherung",
+      "en": "safeguarding / hedging",
+      "artikel": "die",
+      "example": "Diese Absicherung reduziert das finanzielle Risiko."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "das finanzielle Risiko",
+      "en": "financial risk",
+      "example": "Das finanzielle Risiko wurde unterschätzt."
+    },
+    {
+      "de": "die Schwachstelle identifizieren",
+      "en": "to identify a weakness",
+      "example": "Wir identifizieren Schwachstellen frühzeitig."
+    },
+    {
+      "de": "die Krisenbewältigung",
+      "en": "crisis management",
+      "artikel": "die",
+      "example": "Krisenbewältigung erfordert schnelles Handeln."
+    },
+    {
+      "de": "das Frühwarnsystem",
+      "en": "early warning system",
+      "artikel": "das",
+      "example": "Ein Frühwarnsystem erkennt Probleme rechtzeitig."
+    },
+    {
+      "de": "die Eintrittswahrscheinlichkeit",
+      "en": "probability of occurrence",
+      "artikel": "die",
+      "example": "Die Eintrittswahrscheinlichkeit dieses Risikos ist gering."
+    },
+    {
+      "de": "das Schadenspotenzial",
+      "en": "damage potential",
+      "artikel": "das",
+      "example": "Das Schadenspotenzial dieser Krise ist hoch."
+    },
+    {
+      "de": "die Risikobereitschaft",
+      "en": "risk tolerance / appetite",
+      "artikel": "die",
+      "example": "Die Risikobereitschaft variiert von Unternehmen zu Unternehmen."
+    },
+    {
+      "de": "die Krisenkommunikation",
+      "en": "crisis communication",
+      "artikel": "die",
+      "example": "Krisenkommunikation muss schnell und klar sein."
+    },
+    {
+      "de": "das Reputationsrisiko",
+      "en": "reputational risk",
+      "artikel": "das",
+      "example": "Ein Skandal birgt großes Reputationsrisiko."
+    },
+    {
+      "de": "den Ernstfall proben",
+      "en": "to rehearse an emergency scenario",
+      "example": "Wir proben regelmäßig den Ernstfall."
+    },
+    {
+      "de": "die Resilienz des Unternehmens",
+      "en": "resilience of the company",
+      "artikel": "die",
+      "example": "Die Resilienz des Unternehmens wurde in der Krise deutlich."
+    },
+    {
+      "de": "das operative Risiko",
+      "en": "operational risk",
+      "artikel": "das",
+      "example": "Das operative Risiko wird laufend überwacht."
+    },
+    {
+      "de": "Risiken minimieren",
+      "en": "to minimize risks",
+      "example": "Wir versuchen, alle Risiken zu minimieren."
     }
   ]
 }

@@ -1,51 +1,117 @@
 {
   "day": 181,
-  "level": "B2.1",
-  "topic": "Nomen-Verb-Verbindungen",
+  "topic": "Verhandlungspsychologie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Verhandlungspsychologie",
+      "en": "negotiation psychology",
+      "artikel": "die",
+      "example": "Verhandlungspsychologie hilft, das Gegenüber zu verstehen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Ankerstrategie",
+      "en": "anchoring strategy",
+      "artikel": "die",
+      "example": "Die Ankerstrategie beeinflusst die Preisverhandlung."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "den ersten Preis nennen",
+      "en": "to name the first price",
+      "example": "Wer den ersten Preis nennt, setzt den Anker."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die psychologische Taktik",
+      "en": "psychological tactic",
+      "artikel": "die",
+      "example": "Diese psychologische Taktik wirkt oft unbewusst."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das Gegenüber einschätzen",
+      "en": "to assess the counterpart",
+      "example": "Ein guter Verhandler schätzt sein Gegenüber gut ein."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Verhandlungsmacht",
+      "en": "negotiating power",
+      "artikel": "die",
+      "example": "Ihre Verhandlungsmacht war deutlich stärker."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "den Druck erhöhen",
+      "en": "to increase pressure",
+      "example": "Sie erhöhten gezielt den Druck."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Zeitverzögerung nutzen",
+      "en": "to use delay strategically",
+      "example": "Er nutzte Zeitverzögerung als Taktik."
+    },
+    {
+      "de": "die emotionale Kontrolle",
+      "en": "emotional control",
+      "artikel": "die",
+      "example": "Emotionale Kontrolle ist bei Verhandlungen entscheidend."
+    },
+    {
+      "de": "die Körpersprache lesen",
+      "en": "to read body language",
+      "example": "Ein erfahrener Verhandler liest Körpersprache genau."
+    },
+    {
+      "de": "das Vertrauensverhältnis aufbauen",
+      "en": "to build a relationship of trust",
+      "example": "Wir bauen zuerst ein Vertrauensverhältnis auf."
+    },
+    {
+      "de": "die Verhandlungsmasse",
+      "en": "negotiation leverage / bargaining chips",
+      "artikel": "die",
+      "example": "Wir haben genügend Verhandlungsmasse."
+    },
+    {
+      "de": "den Verhandlungsspielraum ausloten",
+      "en": "to gauge room for negotiation",
+      "example": "Wir loten den Verhandlungsspielraum aus."
+    },
+    {
+      "de": "die Beeinflussungstechnik",
+      "en": "influencing technique",
+      "artikel": "die",
+      "example": "Diese Beeinflussungstechnik ist sehr subtil."
+    },
+    {
+      "de": "die Reziprozität nutzen",
+      "en": "to use reciprocity",
+      "example": "Verhandler nutzen oft das Prinzip der Reziprozität."
+    },
+    {
+      "de": "die Verlustaversion",
+      "en": "loss aversion",
+      "artikel": "die",
+      "example": "Verlustaversion beeinflusst viele Kaufentscheidungen."
+    },
+    {
+      "de": "die Verhandlungsblockade",
+      "en": "negotiation deadlock",
+      "artikel": "die",
+      "example": "Die Verhandlungsblockade dauerte Wochen."
+    },
+    {
+      "de": "das Machtgleichgewicht",
+      "en": "balance of power",
+      "artikel": "das",
+      "example": "Das Machtgleichgewicht verschob sich langsam."
+    },
+    {
+      "de": "die stille Reserve",
+      "en": "hidden reserve / fallback position",
+      "artikel": "die",
+      "example": "Er hat immer eine stille Reserve für Notfälle."
+    },
+    {
+      "de": "psychologisch geschickt vorgehen",
+      "en": "to proceed psychologically skillfully",
+      "example": "Sie geht psychologisch sehr geschickt vor."
     }
   ]
 }

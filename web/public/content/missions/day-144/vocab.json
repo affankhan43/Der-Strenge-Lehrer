@@ -1,0 +1,109 @@
+{
+  "day": 144,
+  "topic": "Persönlichkeit & Charakterzüge",
+  "words": [
+    {
+      "de": "die Persönlichkeit",
+      "en": "personality",
+      "artikel": "die",
+      "example": "Ihre Persönlichkeit ist sehr lebendig."
+    },
+    {
+      "de": "der Charakterzug",
+      "en": "character trait",
+      "artikel": "der",
+      "example": "Ehrlichkeit ist ein wichtiger Charakterzug."
+    },
+    {
+      "de": "extrovertiert",
+      "en": "extroverted",
+      "example": "Er ist sehr extrovertiert und gesellig."
+    },
+    {
+      "de": "introvertiert",
+      "en": "introverted",
+      "example": "Sie ist eher introvertiert und ruhig."
+    },
+    {
+      "de": "aufgeschlossen",
+      "en": "open-minded",
+      "example": "Er ist neuen Ideen gegenüber sehr aufgeschlossen."
+    },
+    {
+      "de": "verschlossen",
+      "en": "reserved / withdrawn",
+      "example": "Sie wirkt manchmal etwas verschlossen."
+    },
+    {
+      "de": "empfindsam",
+      "en": "sensitive",
+      "example": "Er ist ein sehr empfindsamer Mensch."
+    },
+    {
+      "de": "robust (Charakter)",
+      "en": "tough / resilient (character)",
+      "example": "Sie hat einen robusten Charakter."
+    },
+    {
+      "de": "verlässlich",
+      "en": "reliable",
+      "example": "Er ist ein sehr verlässlicher Freund."
+    },
+    {
+      "de": "unzuverlässig",
+      "en": "unreliable",
+      "example": "Er ist leider oft unzuverlässig."
+    },
+    {
+      "de": "bescheiden",
+      "en": "modest",
+      "example": "Trotz ihres Erfolgs bleibt sie bescheiden."
+    },
+    {
+      "de": "arrogant",
+      "en": "arrogant",
+      "example": "Sein arrogantes Auftreten stört viele."
+    },
+    {
+      "de": "großzügig",
+      "en": "generous",
+      "example": "Sie ist immer sehr großzügig."
+    },
+    {
+      "de": "egoistisch",
+      "en": "selfish",
+      "example": "Sein egoistisches Verhalten überrascht mich."
+    },
+    {
+      "de": "spontan",
+      "en": "spontaneous",
+      "example": "Er trifft oft spontane Entscheidungen."
+    },
+    {
+      "de": "überlegt",
+      "en": "deliberate / thoughtful",
+      "example": "Sie handelt immer sehr überlegt."
+    },
+    {
+      "de": "zielstrebig",
+      "en": "goal-oriented / determined",
+      "example": "Er ist sehr zielstrebig in seiner Karriere."
+    },
+    {
+      "de": "gleichgültig",
+      "en": "indifferent",
+      "example": "Er wirkt oft gleichgültig gegenüber anderen."
+    },
+    {
+      "de": "die Wesensart",
+      "en": "nature / disposition",
+      "artikel": "die",
+      "example": "Seine Wesensart ist sehr freundlich."
+    },
+    {
+      "de": "charakterstark",
+      "en": "strong-willed / of strong character",
+      "example": "Sie ist eine sehr charakterstarke Persönlichkeit."
+    }
+  ]
+}

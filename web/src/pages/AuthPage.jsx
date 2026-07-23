@@ -21,10 +21,10 @@ function pickQuip(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
 /* ── Animated background orbs (static positions, seeded) ── */
 const ORBS = [
-  { w:600, h:600, x:'68%',  y:'-15%', c:'rgba(124,58,237,.09)',  dur:20 },
-  { w:450, h:450, x:'-10%', y:'55%',  c:'rgba(232,197,71,.06)',  dur:26 },
-  { w:380, h:380, x:'40%',  y:'75%',  c:'rgba(91,141,238,.07)',  dur:18 },
-  { w:300, h:300, x:'15%',  y:'5%',   c:'rgba(236,72,153,.055)', dur:30 },
+  { w:700, h:700, x:'55%',  y:'-20%', c:'rgba(124,58,237,.06)',  dur:20 },
+  { w:500, h:500, x:'-8%',  y:'50%',  c:'rgba(232,197,71,.05)',  dur:26 },
+  { w:400, h:400, x:'38%',  y:'70%',  c:'rgba(37,99,235,.05)',   dur:18 },
+  { w:320, h:320, x:'10%',  y:'3%',   c:'rgba(236,72,153,.04)',  dur:30 },
 ];
 
 const slideVariants = {
@@ -187,6 +187,7 @@ export default function AuthPage() {
                   onSubmit={handleLogin} className={s.form}
                 >
                   <h2 className={s.formTitle}>Anmelden</h2>
+                  <p className={s.formSub}>Willkommen zurück — weiter geht's.</p>
 
                   <div className={s.field}>
                     <label className={s.label}>E-Mail</label>
@@ -233,6 +234,7 @@ export default function AuthPage() {
                   onSubmit={handleStep1} className={s.form}
                 >
                   <h2 className={s.formTitle}>Konto erstellen</h2>
+                  <p className={s.formSub}>Kostenlos · Keine Kreditkarte · Sofort loslegen.</p>
 
                   <div className={s.field}>
                     <label className={s.label}>E-Mail <span className={s.req}>*</span></label>

@@ -1,51 +1,124 @@
 {
   "day": 208,
-  "level": "B2.2",
-  "topic": "Konsekutivsätze",
+  "topic": "Mikroökonomie: Grundlagen",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Mikroökonomie",
+      "en": "microeconomics",
+      "artikel": "die",
+      "example": "Mikroökonomie untersucht einzelne Märkte und Akteure."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "das Angebot und die Nachfrage",
+      "en": "supply and demand",
+      "example": "Angebot und Nachfrage bestimmen den Marktpreis."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das Marktgleichgewicht",
+      "en": "market equilibrium",
+      "artikel": "das",
+      "example": "Das Marktgleichgewicht stellt sich durch den Preis ein."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Preiselastizität",
+      "en": "price elasticity",
+      "artikel": "die",
+      "example": "Die Preiselastizität zeigt die Reaktion der Nachfrage."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der Grenznutzen",
+      "en": "marginal utility",
+      "artikel": "der",
+      "example": "Der Grenznutzen sinkt mit jeder zusätzlichen Einheit."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Grenzkosten",
+      "en": "marginal costs",
+      "artikel": "die",
+      "example": "Die Grenzkosten steigen bei höherer Produktion."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das Monopol",
+      "en": "monopoly",
+      "artikel": "das",
+      "example": "Ein Monopol kann Preise künstlich hochhalten."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "das Oligopol",
+      "en": "oligopoly",
+      "artikel": "das",
+      "example": "In diesem Markt herrscht ein Oligopol."
+    },
+    {
+      "de": "der vollkommene Wettbewerb",
+      "en": "perfect competition",
+      "artikel": "der",
+      "example": "Vollkommener Wettbewerb existiert selten in der Realität."
+    },
+    {
+      "de": "das Marktversagen",
+      "en": "market failure",
+      "artikel": "das",
+      "example": "Marktversagen rechtfertigt staatliche Eingriffe."
+    },
+    {
+      "de": "die externen Effekte",
+      "en": "externalities",
+      "artikel": "die",
+      "example": "Umweltverschmutzung ist ein externer Effekt."
+    },
+    {
+      "de": "das öffentliche Gut",
+      "en": "public good",
+      "artikel": "das",
+      "example": "Straßenbeleuchtung ist ein öffentliches Gut."
+    },
+    {
+      "de": "die Produktionsfunktion",
+      "en": "production function",
+      "artikel": "die",
+      "example": "Die Produktionsfunktion beschreibt den Zusammenhang zwischen Input und Output."
+    },
+    {
+      "de": "die Skaleneffekte",
+      "en": "economies of scale",
+      "artikel": "die",
+      "example": "Skaleneffekte senken die Stückkosten bei höherer Produktion."
+    },
+    {
+      "de": "die Konsumentenrente",
+      "en": "consumer surplus",
+      "artikel": "die",
+      "example": "Die Konsumentenrente zeigt den Vorteil für Käufer."
+    },
+    {
+      "de": "die Produzentenrente",
+      "en": "producer surplus",
+      "artikel": "die",
+      "example": "Die Produzentenrente zeigt den Gewinn der Anbieter."
+    },
+    {
+      "de": "das Marktmodell",
+      "en": "market model",
+      "example": "Dieses Marktmodell erklärt Preisbildung."
+    },
+    {
+      "de": "die Substitutionsgüter",
+      "en": "substitute goods",
+      "artikel": "die",
+      "example": "Butter und Margarine sind Substitutionsgüter."
+    },
+    {
+      "de": "die Komplementärgüter",
+      "en": "complementary goods",
+      "artikel": "die",
+      "example": "Auto und Benzin sind Komplementärgüter."
+    },
+    {
+      "de": "das ökonomische Gleichgewicht",
+      "en": "economic equilibrium",
+      "artikel": "das",
+      "example": "Das ökonomische Gleichgewicht ist oft nur theoretisch."
     }
   ]
 }

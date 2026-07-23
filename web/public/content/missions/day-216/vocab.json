@@ -1,51 +1,123 @@
 {
   "day": 216,
-  "level": "B2.2",
-  "topic": "Idiome",
+  "topic": "Menschenrechte vertieft",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Menschenrechtscharta",
+      "en": "human rights charter",
+      "artikel": "die",
+      "example": "Die Menschenrechtscharta wurde 1948 verabschiedet."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Menschenrechtsverletzung",
+      "en": "human rights violation",
+      "artikel": "die",
+      "example": "Menschenrechtsverletzungen werden international verurteilt."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "der Menschenrechtsausschuss",
+      "en": "human rights committee",
+      "artikel": "der",
+      "example": "Der Menschenrechtsausschuss prüft Beschwerden."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Meinungsäußerungsfreiheit",
+      "en": "freedom of expression",
+      "artikel": "die",
+      "example": "Meinungsäußerungsfreiheit ist ein zentrales Menschenrecht."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "das Recht auf Bildung",
+      "en": "right to education",
+      "artikel": "das",
+      "example": "Das Recht auf Bildung gilt weltweit."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "das Recht auf Gesundheit",
+      "en": "right to health",
+      "artikel": "das",
+      "example": "Das Recht auf Gesundheit wird oft nicht umgesetzt."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Verfolgung (Menschenrechte)",
+      "en": "persecution (human rights)",
+      "artikel": "die",
+      "example": "Sie floh vor politischer Verfolgung."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "das Folterverbot",
+      "en": "prohibition of torture",
+      "artikel": "das",
+      "example": "Das Folterverbot gilt absolut und ohne Ausnahme."
+    },
+    {
+      "de": "die Menschenrechtsorganisation",
+      "en": "human rights organization",
+      "artikel": "die",
+      "example": "Die Menschenrechtsorganisation dokumentiert Verstöße."
+    },
+    {
+      "de": "der Menschenrechtsbeauftragte",
+      "en": "human rights commissioner",
+      "artikel": "der",
+      "example": "Der Menschenrechtsbeauftragte reiste in die Krisenregion."
+    },
+    {
+      "de": "die universellen Menschenrechte",
+      "en": "universal human rights",
+      "example": "Universelle Menschenrechte gelten für alle Menschen."
+    },
+    {
+      "de": "die Diskriminierungsverbote",
+      "en": "anti-discrimination provisions",
+      "artikel": "die",
+      "example": "Diskriminierungsverbote schützen Minderheiten."
+    },
+    {
+      "de": "die Rechtsdurchsetzung (Menschenrechte)",
+      "en": "enforcement (human rights)",
+      "artikel": "die",
+      "example": "Rechtsdurchsetzung bleibt in manchen Ländern schwierig."
+    },
+    {
+      "de": "die Zivilgesellschaft stärken",
+      "en": "to strengthen civil society",
+      "example": "Wir müssen die Zivilgesellschaft weltweit stärken."
+    },
+    {
+      "de": "die Straflosigkeit bekämpfen",
+      "en": "to combat impunity",
+      "example": "Straflosigkeit bei Menschenrechtsverletzungen muss bekämpft werden."
+    },
+    {
+      "de": "der Internationale Strafgerichtshof",
+      "en": "International Criminal Court",
+      "artikel": "der",
+      "example": "Der Internationale Strafgerichtshof verurteilt schwere Verbrechen."
+    },
+    {
+      "de": "die Menschenrechtsbildung",
+      "en": "human rights education",
+      "artikel": "die",
+      "example": "Menschenrechtsbildung sollte in Schulen verankert sein."
+    },
+    {
+      "de": "die Grundfreiheiten",
+      "en": "basic freedoms",
+      "artikel": "die",
+      "example": "Grundfreiheiten müssen überall geschützt werden."
+    },
+    {
+      "de": "das Selbstbestimmungsrecht",
+      "en": "right to self-determination",
+      "artikel": "das",
+      "example": "Das Selbstbestimmungsrecht der Völker ist völkerrechtlich verankert."
+    },
+    {
+      "de": "die Menschenrechtslage",
+      "en": "human rights situation",
+      "artikel": "die",
+      "example": "Die Menschenrechtslage verschlechterte sich zunehmend."
     }
   ]
 }

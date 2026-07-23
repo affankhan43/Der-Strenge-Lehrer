@@ -1,0 +1,125 @@
+{
+  "day": 141,
+  "topic": "Philosophische Grundfragen",
+  "words": [
+    {
+      "de": "die Philosophie",
+      "en": "philosophy",
+      "artikel": "die",
+      "example": "Philosophie stellt grundlegende Fragen zum Leben."
+    },
+    {
+      "de": "der Philosoph",
+      "en": "philosopher (male)",
+      "artikel": "der",
+      "example": "Der Philosoph schrieb über die Freiheit."
+    },
+    {
+      "de": "die Philosophin",
+      "en": "philosopher (female)",
+      "artikel": "die",
+      "example": "Die Philosophin lehrt an der Universität."
+    },
+    {
+      "de": "die Existenz",
+      "en": "existence",
+      "artikel": "die",
+      "example": "Die Frage nach der Existenz beschäftigt viele."
+    },
+    {
+      "de": "der Sinn des Lebens",
+      "en": "the meaning of life",
+      "artikel": "der",
+      "example": "Jeder sucht den Sinn des Lebens auf seine Weise."
+    },
+    {
+      "de": "das Bewusstsein",
+      "en": "consciousness",
+      "artikel": "das",
+      "example": "Das Bewusstsein ist schwer zu erklären."
+    },
+    {
+      "de": "die Wahrheit",
+      "en": "truth",
+      "artikel": "die",
+      "example": "Die Wahrheit ist nicht immer einfach."
+    },
+    {
+      "de": "die Realität",
+      "en": "reality",
+      "artikel": "die",
+      "example": "Ist die Realität objektiv oder subjektiv?"
+    },
+    {
+      "de": "die Wahrnehmung (Philosophie)",
+      "en": "perception (philosophy)",
+      "artikel": "die",
+      "example": "Unsere Wahrnehmung prägt unser Weltbild."
+    },
+    {
+      "de": "die Erkenntnis",
+      "en": "insight / knowledge (epistemology)",
+      "artikel": "die",
+      "example": "Erkenntnis entsteht durch Erfahrung."
+    },
+    {
+      "de": "der freie Wille",
+      "en": "free will",
+      "artikel": "der",
+      "example": "Haben wir wirklich einen freien Willen?"
+    },
+    {
+      "de": "das Schicksal",
+      "en": "fate / destiny",
+      "artikel": "das",
+      "example": "Manche glauben an das Schicksal."
+    },
+    {
+      "de": "die Vergänglichkeit",
+      "en": "transience / impermanence",
+      "artikel": "die",
+      "example": "Die Vergänglichkeit des Lebens macht nachdenklich."
+    },
+    {
+      "de": "die Vernunft",
+      "en": "reason / rationality",
+      "artikel": "die",
+      "example": "Der Mensch handelt nicht immer nach der Vernunft."
+    },
+    {
+      "de": "das Ideal",
+      "en": "ideal",
+      "artikel": "das",
+      "example": "Gerechtigkeit ist ein wichtiges Ideal."
+    },
+    {
+      "de": "die Weltanschauung (Philosophie)",
+      "en": "worldview (philosophy)",
+      "artikel": "die",
+      "example": "Jede Kultur hat eine eigene Weltanschauung."
+    },
+    {
+      "de": "der Gedanke",
+      "en": "thought",
+      "artikel": "der",
+      "example": "Das war ein interessanter Gedanke."
+    },
+    {
+      "de": "hinterfragen (Philosophie)",
+      "en": "to question (philosophically)",
+      "example": "Wir sollten unsere Annahmen hinterfragen."
+    },
+    {
+      "de": "die Ungewissheit",
+      "en": "uncertainty",
+      "artikel": "die",
+      "example": "Ungewissheit gehört zum Leben dazu."
+    },
+    {
+      "de": "das Paradox",
+      "en": "paradox",
+      "artikel": "das",
+      "example": "Dieses Paradox hat keine einfache Lösung."
+    }
+  ]
+}

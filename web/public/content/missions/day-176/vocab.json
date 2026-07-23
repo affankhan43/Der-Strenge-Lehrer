@@ -1,51 +1,125 @@
 {
   "day": 176,
-  "level": "B2.1",
-  "topic": "Infinitivkonstruktionen",
+  "topic": "Marketing-Strategien",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Marketingstrategie",
+      "en": "marketing strategy",
+      "artikel": "die",
+      "example": "Die Marketingstrategie zielt auf junge Kunden."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die Zielgruppenanalyse",
+      "en": "target audience analysis",
+      "artikel": "die",
+      "example": "Die Zielgruppenanalyse zeigte neue Kundengruppen."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das Alleinstellungsmerkmal",
+      "en": "unique selling point",
+      "artikel": "das",
+      "example": "Unser Alleinstellungsmerkmal ist die Qualität."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die Markenbildung",
+      "en": "brand building",
+      "artikel": "die",
+      "example": "Markenbildung braucht Zeit und Konsistenz."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Positionierung (Marketing)",
+      "en": "positioning (marketing)",
+      "artikel": "die",
+      "example": "Die Positionierung des Produkts war klug gewählt."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Kundenbindung",
+      "en": "customer loyalty",
+      "artikel": "die",
+      "example": "Kundenbindung ist günstiger als Neukundengewinnung."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Neukundengewinnung",
+      "en": "new customer acquisition",
+      "artikel": "die",
+      "example": "Neukundengewinnung kostet viel Marketingbudget."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Marktforschung",
+      "en": "market research",
+      "artikel": "die",
+      "example": "Marktforschung zeigt aktuelle Trends."
+    },
+    {
+      "de": "die Absatzzahlen",
+      "en": "sales figures",
+      "artikel": "die",
+      "example": "Die Absatzzahlen sind stark gestiegen."
+    },
+    {
+      "de": "die Vertriebsstrategie",
+      "en": "sales strategy",
+      "artikel": "die",
+      "example": "Die Vertriebsstrategie wurde überarbeitet."
+    },
+    {
+      "de": "die Werbekampagne",
+      "en": "advertising campaign",
+      "artikel": "die",
+      "example": "Die Werbekampagne war sehr erfolgreich."
+    },
+    {
+      "de": "die Conversion-Rate",
+      "en": "conversion rate",
+      "artikel": "die",
+      "example": "Die Conversion-Rate der Webseite ist gestiegen."
+    },
+    {
+      "de": "die Kundenanalyse",
+      "en": "customer analysis",
+      "artikel": "die",
+      "example": "Die Kundenanalyse hilft bei der Produktentwicklung."
+    },
+    {
+      "de": "das Content-Marketing",
+      "en": "content marketing",
+      "artikel": "das",
+      "example": "Content-Marketing schafft Vertrauen bei Kunden."
+    },
+    {
+      "de": "die Markenbekanntheit",
+      "en": "brand awareness",
+      "artikel": "die",
+      "example": "Die Markenbekanntheit stieg nach der Kampagne."
+    },
+    {
+      "de": "die Kundenzufriedenheit messen",
+      "en": "to measure customer satisfaction",
+      "example": "Wir messen regelmäßig die Kundenzufriedenheit."
+    },
+    {
+      "de": "die Verkaufsförderung",
+      "en": "sales promotion",
+      "artikel": "die",
+      "example": "Verkaufsförderung erhöht kurzfristig den Umsatz."
+    },
+    {
+      "de": "die Preisstrategie",
+      "en": "pricing strategy",
+      "artikel": "die",
+      "example": "Die Preisstrategie orientiert sich am Wettbewerb."
+    },
+    {
+      "de": "die Markendifferenzierung",
+      "en": "brand differentiation",
+      "artikel": "die",
+      "example": "Markendifferenzierung hebt uns von der Konkurrenz ab."
+    },
+    {
+      "de": "das Kundenerlebnis",
+      "en": "customer experience",
+      "artikel": "das",
+      "example": "Ein gutes Kundenerlebnis fördert die Loyalität."
     }
   ]
 }

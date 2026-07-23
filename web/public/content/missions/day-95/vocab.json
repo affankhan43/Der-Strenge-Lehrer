@@ -1,32 +1,126 @@
 {
   "day": 95,
-  "topic": "Raumfahrt & Astronomie",
+  "topic": "Theater & Film Fortgeschritten",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "die Inszenierung",
+      "en": "staging / production (theater)",
+      "artikel": "die",
+      "example": "Die Inszenierung war sehr modern."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "der Regisseur",
+      "en": "director (male)",
+      "artikel": "der",
+      "example": "Der Regisseur führt bei diesem Film Regie."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "die Regisseurin",
+      "en": "director (female)",
+      "artikel": "die",
+      "example": "Die Regisseurin gewann einen Preis."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "die Rolle (Film/Theater)",
+      "en": "role (film/theater)",
+      "artikel": "die",
+      "example": "Sie spielt die Hauptrolle."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "der Schauspieler",
+      "en": "actor",
+      "artikel": "der",
+      "example": "Der Schauspieler ist sehr bekannt."
+    },
+    {
+      "de": "die Schauspielerin",
+      "en": "actress",
+      "artikel": "die",
+      "example": "Die Schauspielerin bekam einen Preis."
+    },
+    {
+      "de": "das Drehbuch",
+      "en": "screenplay / script",
+      "artikel": "das",
+      "example": "Das Drehbuch stammt von einer jungen Autorin."
+    },
+    {
+      "de": "die Kulisse",
+      "en": "stage set / scenery",
+      "artikel": "die",
+      "example": "Die Kulisse sah sehr echt aus."
+    },
+    {
+      "de": "die Szene",
+      "en": "scene",
+      "artikel": "die",
+      "example": "Diese Szene war sehr emotional."
+    },
+    {
+      "de": "die Vorstellung (Theater)",
+      "en": "performance (theater)",
+      "artikel": "die",
+      "example": "Die Vorstellung beginnt um 20 Uhr."
+    },
+    {
+      "de": "der Applaus",
+      "en": "applause",
+      "artikel": "der",
+      "example": "Der Applaus war lang und laut."
+    },
+    {
+      "de": "die Kritik",
+      "en": "review / criticism",
+      "artikel": "die",
+      "example": "Die Kritik war sehr positiv."
+    },
+    {
+      "de": "der Kritiker",
+      "en": "critic",
+      "artikel": "der",
+      "example": "Der Kritiker lobte den Film."
+    },
+    {
+      "de": "die Uraufführung",
+      "en": "premiere",
+      "artikel": "die",
+      "example": "Die Uraufführung findet am Freitag statt."
+    },
+    {
+      "de": "die Nominierung",
+      "en": "nomination",
+      "artikel": "die",
+      "example": "Sie hat eine Nominierung für den Preis erhalten."
+    },
+    {
+      "de": "der Preis (Auszeichnung)",
+      "en": "award / prize",
+      "artikel": "der",
+      "example": "Er hat den Preis gewonnen."
+    },
+    {
+      "de": "das Publikum",
+      "en": "audience",
+      "artikel": "das",
+      "example": "Das Publikum war begeistert."
+    },
+    {
+      "de": "die Vorpremiere",
+      "en": "preview screening",
+      "artikel": "die",
+      "example": "Ich war bei der Vorpremiere dabei."
+    },
+    {
+      "de": "das Genre",
+      "en": "genre",
+      "artikel": "das",
+      "example": "Mein Lieblingsgenre ist Komödie."
+    },
+    {
+      "de": "die Verfilmung",
+      "en": "film adaptation",
+      "artikel": "die",
+      "example": "Die Verfilmung des Buches war sehr gut."
     }
-  ],
-  "_note": "Add 20 words about 'Raumfahrt & Astronomie'. Format: {de, en, example}"
+  ]
 }

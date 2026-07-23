@@ -1,32 +1,112 @@
 {
   "day": 103,
-  "topic": "Geschichte & Aufarbeitung",
+  "topic": "Persönliche Entwicklung",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "sich weiterentwickeln",
+      "en": "to develop further",
+      "example": "Ich möchte mich beruflich weiterentwickeln."
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Selbstreflexion",
+      "en": "self-reflection",
+      "artikel": "die",
+      "example": "Selbstreflexion hilft mir, mich zu verbessern."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "das Selbstvertrauen",
+      "en": "self-confidence",
+      "artikel": "das",
+      "example": "Ihr Selbstvertrauen ist gewachsen."
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "selbstbewusst",
+      "en": "self-confident",
+      "example": "Er wirkt sehr selbstbewusst."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Stärke entwickeln",
+      "en": "to develop a strength",
+      "example": "Ich entwickle meine Stärken weiter."
+    },
+    {
+      "de": "an sich arbeiten",
+      "en": "to work on oneself",
+      "example": "Ich arbeite jeden Tag an mir selbst."
+    },
+    {
+      "de": "das Ziel setzen",
+      "en": "to set a goal",
+      "example": "Ich setze mir jedes Jahr neue Ziele."
+    },
+    {
+      "de": "die Gewohnheit",
+      "en": "habit",
+      "artikel": "die",
+      "example": "Eine neue Gewohnheit braucht Zeit."
+    },
+    {
+      "de": "sich angewöhnen",
+      "en": "to get into the habit of",
+      "example": "Ich gewöhne mir an, früh aufzustehen."
+    },
+    {
+      "de": "sich abgewöhnen",
+      "en": "to break a habit",
+      "example": "Ich möchte mir das Rauchen abgewöhnen."
+    },
+    {
+      "de": "die Komfortzone",
+      "en": "comfort zone",
+      "example": "Verlass mal deine Komfortzone."
+    },
+    {
+      "de": "die Herausforderung annehmen",
+      "en": "to accept a challenge",
+      "example": "Ich nehme diese Herausforderung an."
+    },
+    {
+      "de": "scheitern",
+      "en": "to fail",
+      "example": "Manchmal muss man scheitern, um zu lernen."
+    },
+    {
+      "de": "aus Fehlern lernen",
+      "en": "to learn from mistakes",
+      "example": "Wir lernen alle aus unseren Fehlern."
+    },
+    {
+      "de": "die Motivation finden",
+      "en": "to find motivation",
+      "example": "Ich finde meine Motivation im Sport."
+    },
+    {
+      "de": "durchhalten",
+      "en": "to persevere",
+      "example": "Bleib dran und halte durch!"
+    },
+    {
+      "de": "die Ausdauer (mental)",
+      "en": "perseverance / stamina (mental)",
+      "artikel": "die",
+      "example": "Ausdauer ist der Schlüssel zum Erfolg."
+    },
+    {
+      "de": "die Selbstverwirklichung",
+      "en": "self-fulfillment",
+      "artikel": "die",
+      "example": "Für sie ist Selbstverwirklichung sehr wichtig."
+    },
+    {
+      "de": "der Lebenssinn",
+      "en": "meaning of life / purpose",
+      "artikel": "der",
+      "example": "Er hat seinen Lebenssinn in der Kunst gefunden."
+    },
+    {
+      "de": "die Achtsamkeit üben",
+      "en": "to practice mindfulness",
+      "example": "Ich übe jeden Tag ein wenig Achtsamkeit."
     }
-  ],
-  "_note": "Add 20 words about 'Geschichte & Aufarbeitung'. Format: {de, en, example}"
+  ]
 }

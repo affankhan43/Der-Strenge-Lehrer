@@ -1,51 +1,123 @@
 {
   "day": 223,
-  "level": "B2.2",
-  "topic": "Literaturtext",
+  "topic": "Weltraumrecht & Zukunftstechnologien-Ethik",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "das Weltraumrecht",
+      "en": "space law",
+      "artikel": "das",
+      "example": "Weltraumrecht regelt die Nutzung des Weltalls."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "der Weltraumvertrag",
+      "en": "outer space treaty",
+      "artikel": "der",
+      "example": "Der Weltraumvertrag verbietet die Aneignung von Himmelskörpern."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Weltraumnutzung",
+      "en": "use of space",
+      "artikel": "die",
+      "example": "Weltraumnutzung wird zunehmend kommerziell."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "der Weltraumschrott",
+      "en": "space debris",
+      "artikel": "der",
+      "example": "Weltraumschrott gefährdet Satelliten."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die kommerzielle Raumfahrt",
+      "en": "commercial spaceflight",
+      "artikel": "die",
+      "example": "Kommerzielle Raumfahrt wächst schnell."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Ressourcennutzung im All",
+      "en": "resource extraction in space",
+      "artikel": "die",
+      "example": "Ressourcennutzung im All wirft neue Rechtsfragen auf."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die Technikfolgenabschätzung",
+      "en": "technology assessment",
+      "artikel": "die",
+      "example": "Technikfolgenabschätzung bewertet Risiken neuer Technologien."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die ethischen Grenzen der Technologie",
+      "en": "ethical limits of technology",
+      "artikel": "die",
+      "example": "Die ethischen Grenzen der Technologie werden viel diskutiert."
+    },
+    {
+      "de": "die Verantwortung für neue Technologien",
+      "en": "responsibility for new technologies",
+      "artikel": "die",
+      "example": "Verantwortung für neue Technologien liegt bei Forschern und Politik."
+    },
+    {
+      "de": "die Regulierungslücke",
+      "en": "regulatory gap",
+      "artikel": "die",
+      "example": "Es gibt eine Regulierungslücke bei neuen Technologien."
+    },
+    {
+      "de": "die zukunftsethische Debatte",
+      "en": "future ethics debate",
+      "artikel": "die",
+      "example": "Die zukunftsethische Debatte betrifft KI und Gentechnik."
+    },
+    {
+      "de": "die Technikgestaltung",
+      "en": "technology design/governance",
+      "artikel": "die",
+      "example": "Technikgestaltung sollte gesellschaftliche Werte berücksichtigen."
+    },
+    {
+      "de": "die Langzeitfolgen abschätzen",
+      "en": "to assess long-term consequences",
+      "example": "Wir müssen Langzeitfolgen neuer Technologien abschätzen."
+    },
+    {
+      "de": "die gesellschaftliche Akzeptanz (Technologie)",
+      "en": "societal acceptance (technology)",
+      "artikel": "die",
+      "example": "Gesellschaftliche Akzeptanz ist für neue Technologien entscheidend."
+    },
+    {
+      "de": "die Innovationsverantwortung",
+      "en": "innovation responsibility",
+      "artikel": "die",
+      "example": "Innovationsverantwortung bedeutet, Folgen mitzudenken."
+    },
+    {
+      "de": "die interplanetare Forschung",
+      "en": "interplanetary research",
+      "artikel": "die",
+      "example": "Interplanetare Forschung erweitert unser Wissen über das Universum."
+    },
+    {
+      "de": "die Raumfahrtagentur",
+      "en": "space agency",
+      "artikel": "die",
+      "example": "Die Raumfahrtagentur plant eine neue Mission."
+    },
+    {
+      "de": "die ethische Leitlinie (Technologie)",
+      "en": "ethical guideline (technology)",
+      "artikel": "die",
+      "example": "Ethische Leitlinien begleiten neue Technologieprojekte."
+    },
+    {
+      "de": "die Zukunftstechnologie regulieren",
+      "en": "to regulate future technology",
+      "example": "Der Staat muss Zukunftstechnologie rechtzeitig regulieren."
+    },
+    {
+      "de": "das Weltraumzeitalter",
+      "en": "space age",
+      "example": "Wir leben im zweiten Weltraumzeitalter."
     }
   ]
 }

@@ -1,51 +1,126 @@
 {
   "day": 212,
-  "level": "B2.2",
-  "topic": "Textgrammatik",
+  "topic": "Versicherungswirtschaft vertieft",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Versicherungswirtschaft",
+      "en": "insurance industry",
+      "artikel": "die",
+      "example": "Die Versicherungswirtschaft verwaltet enorme Summen."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "das Versicherungsprodukt",
+      "en": "insurance product",
+      "artikel": "das",
+      "example": "Dieses Versicherungsprodukt ist speziell für junge Familien."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Risikobewertung (Versicherung)",
+      "en": "risk assessment (insurance)",
+      "artikel": "die",
+      "example": "Die Risikobewertung bestimmt die Beitragshöhe."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "das versicherungsmathematische Modell",
+      "en": "actuarial model",
+      "artikel": "das",
+      "example": "Das versicherungsmathematische Modell berechnet das Risiko."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "der Versicherungsmakler",
+      "en": "insurance broker",
+      "artikel": "der",
+      "example": "Der Versicherungsmakler verglich mehrere Angebote."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Rückversicherung",
+      "en": "reinsurance",
+      "artikel": "die",
+      "example": "Rückversicherung schützt Versicherer vor Großschäden."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "das Massenrisiko",
+      "en": "mass risk",
+      "artikel": "das",
+      "example": "Naturkatastrophen stellen ein Massenrisiko dar."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Schadensregulierung",
+      "en": "claims settlement",
+      "artikel": "die",
+      "example": "Die Schadensregulierung dauerte mehrere Wochen."
+    },
+    {
+      "de": "die Prämienkalkulation",
+      "en": "premium calculation",
+      "artikel": "die",
+      "example": "Die Prämienkalkulation basiert auf statistischen Daten."
+    },
+    {
+      "de": "das versicherbare Risiko",
+      "en": "insurable risk",
+      "artikel": "das",
+      "example": "Nicht jedes Risiko ist versicherbar."
+    },
+    {
+      "de": "die Elementarschadenversicherung",
+      "en": "natural hazard insurance",
+      "artikel": "die",
+      "example": "Die Elementarschadenversicherung deckt Überschwemmungen ab."
+    },
+    {
+      "de": "die Betriebsunterbrechungsversicherung",
+      "en": "business interruption insurance",
+      "artikel": "die",
+      "example": "Die Betriebsunterbrechungsversicherung deckt Umsatzausfälle ab."
+    },
+    {
+      "de": "die Berufsunfähigkeitsversicherung",
+      "en": "occupational disability insurance",
+      "artikel": "die",
+      "example": "Die Berufsunfähigkeitsversicherung sichert das Einkommen ab."
+    },
+    {
+      "de": "die Lebensversicherung",
+      "en": "life insurance",
+      "artikel": "die",
+      "example": "Die Lebensversicherung zahlt im Todesfall aus."
+    },
+    {
+      "de": "die Versicherungssumme",
+      "en": "insured sum",
+      "artikel": "die",
+      "example": "Die Versicherungssumme deckt den vollen Schaden."
+    },
+    {
+      "de": "die Risikostreuung (Versicherung)",
+      "en": "risk diversification (insurance)",
+      "artikel": "die",
+      "example": "Risikostreuung ist ein Grundprinzip der Versicherung."
+    },
+    {
+      "de": "die versicherungstechnische Rückstellung",
+      "en": "technical insurance provision",
+      "artikel": "die",
+      "example": "Die versicherungstechnische Rückstellung sichert künftige Zahlungen."
+    },
+    {
+      "de": "die Insolvenzsicherung (Versicherung)",
+      "en": "insolvency protection (insurance)",
+      "artikel": "die",
+      "example": "Insolvenzsicherung schützt Versicherte bei Firmenpleiten."
+    },
+    {
+      "de": "die Versicherungsaufsicht",
+      "en": "insurance regulator",
+      "artikel": "die",
+      "example": "Die Versicherungsaufsicht überwacht die Branche."
+    },
+    {
+      "de": "die Kollektivversicherung",
+      "en": "group insurance",
+      "artikel": "die",
+      "example": "Die Kollektivversicherung gilt für alle Mitarbeiter."
     }
   ]
 }

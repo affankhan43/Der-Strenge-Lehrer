@@ -1,0 +1,123 @@
+{
+  "day": 125,
+  "topic": "Landwirtschaft & Ernährungssicherheit",
+  "words": [
+    {
+      "de": "die Landwirtschaft",
+      "en": "agriculture",
+      "artikel": "die",
+      "example": "Die Landwirtschaft ernährt die Bevölkerung."
+    },
+    {
+      "de": "der Bauer",
+      "en": "farmer (male)",
+      "artikel": "der",
+      "example": "Der Bauer erntet den Weizen."
+    },
+    {
+      "de": "die Bäuerin",
+      "en": "farmer (female)",
+      "artikel": "die",
+      "example": "Die Bäuerin kümmert sich um die Tiere."
+    },
+    {
+      "de": "der Acker",
+      "en": "field (arable land)",
+      "artikel": "der",
+      "example": "Der Acker ist frisch bestellt."
+    },
+    {
+      "de": "anbauen",
+      "en": "to cultivate / grow",
+      "example": "Sie bauen Getreide an."
+    },
+    {
+      "de": "die Ernte einbringen",
+      "en": "to bring in the harvest",
+      "example": "Die Bauern bringen im Herbst die Ernte ein."
+    },
+    {
+      "de": "die Fruchtbarkeit (Boden)",
+      "en": "fertility (soil)",
+      "artikel": "die",
+      "example": "Die Fruchtbarkeit des Bodens nimmt ab."
+    },
+    {
+      "de": "die Monokultur",
+      "en": "monoculture",
+      "artikel": "die",
+      "example": "Monokultur schadet der Artenvielfalt."
+    },
+    {
+      "de": "die Biolandwirtschaft",
+      "en": "organic farming",
+      "artikel": "die",
+      "example": "Biolandwirtschaft schont die Umwelt."
+    },
+    {
+      "de": "das Pestizid",
+      "en": "pesticide",
+      "artikel": "das",
+      "example": "Pestizide schaden Bienen und Insekten."
+    },
+    {
+      "de": "der Dünger",
+      "en": "fertilizer",
+      "artikel": "der",
+      "example": "Zu viel Dünger schadet dem Wasser."
+    },
+    {
+      "de": "die Ernährungssicherheit",
+      "en": "food security",
+      "artikel": "die",
+      "example": "Ernährungssicherheit ist ein globales Ziel."
+    },
+    {
+      "de": "die Lebensmittelverschwendung",
+      "en": "food waste",
+      "artikel": "die",
+      "example": "Lebensmittelverschwendung ist ein großes Problem."
+    },
+    {
+      "de": "die Nahrungsmittelknappheit",
+      "en": "food shortage",
+      "artikel": "die",
+      "example": "Nahrungsmittelknappheit betrifft viele Länder."
+    },
+    {
+      "de": "die Subvention",
+      "en": "subsidy",
+      "artikel": "die",
+      "example": "Landwirte erhalten staatliche Subventionen."
+    },
+    {
+      "de": "die Selbstversorgung",
+      "en": "self-sufficiency",
+      "artikel": "die",
+      "example": "Sie streben Selbstversorgung mit Gemüse an."
+    },
+    {
+      "de": "die Nutztierhaltung",
+      "en": "livestock farming",
+      "artikel": "die",
+      "example": "Nutztierhaltung hat großen Einfluss auf das Klima."
+    },
+    {
+      "de": "die Massentierhaltung",
+      "en": "factory farming",
+      "artikel": "die",
+      "example": "Massentierhaltung wird oft kritisiert."
+    },
+    {
+      "de": "die Weidehaltung",
+      "en": "pasture farming",
+      "artikel": "die",
+      "example": "Weidehaltung gilt als artgerechter."
+    },
+    {
+      "de": "regional produziert",
+      "en": "produced regionally",
+      "example": "Dieses Gemüse ist regional produziert."
+    }
+  ]
+}

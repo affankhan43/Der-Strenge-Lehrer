@@ -1,51 +1,125 @@
 {
   "day": 218,
-  "level": "B2.2",
-  "topic": "Kollokationen",
+  "topic": "Stadtsoziologie",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Stadtsoziologie",
+      "en": "urban sociology",
+      "artikel": "die",
+      "example": "Stadtsoziologie untersucht das Leben in Städten."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "die soziale Segregation",
+      "en": "social segregation",
+      "artikel": "die",
+      "example": "Soziale Segregation zeigt sich in vielen Stadtvierteln."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "das Stadtviertel",
+      "en": "city district / neighborhood",
+      "artikel": "das",
+      "example": "Jedes Stadtviertel hat einen eigenen Charakter."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die soziale Durchmischung",
+      "en": "social mix",
+      "artikel": "die",
+      "example": "Soziale Durchmischung fördert den Zusammenhalt."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die urbane Identität",
+      "en": "urban identity",
+      "artikel": "die",
+      "example": "Urbane Identität entsteht durch gemeinsame Erfahrungen."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Anonymität der Großstadt",
+      "en": "anonymity of the big city",
+      "artikel": "die",
+      "example": "Die Anonymität der Großstadt kann isolierend wirken."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die soziale Kontrolle (Stadt)",
+      "en": "social control (city)",
+      "artikel": "die",
+      "example": "Soziale Kontrolle ist in kleinen Gemeinden stärker."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die Nachbarschaftsbeziehungen",
+      "en": "neighborhood relationships",
+      "artikel": "die",
+      "example": "Nachbarschaftsbeziehungen sind in Städten oft lockerer."
+    },
+    {
+      "de": "die urbane Lebensweise",
+      "en": "urban lifestyle",
+      "artikel": "die",
+      "example": "Die urbane Lebensweise unterscheidet sich stark vom Landleben."
+    },
+    {
+      "de": "die soziale Mobilität (Stadt)",
+      "en": "social mobility (city)",
+      "artikel": "die",
+      "example": "Städte bieten oft mehr soziale Mobilität."
+    },
+    {
+      "de": "die Verstädterung",
+      "en": "urbanization process",
+      "artikel": "die",
+      "example": "Verstädterung verändert das gesellschaftliche Zusammenleben."
+    },
+    {
+      "de": "das urbane Milieu",
+      "en": "urban milieu",
+      "artikel": "das",
+      "example": "Das urbane Milieu prägt Lebensstile stark."
+    },
+    {
+      "de": "die Ghettoisierung",
+      "en": "ghettoization",
+      "artikel": "die",
+      "example": "Ghettoisierung verstärkt soziale Ungleichheit."
+    },
+    {
+      "de": "die soziale Kohäsion",
+      "en": "social cohesion",
+      "artikel": "die",
+      "example": "Soziale Kohäsion ist in vielfältigen Stadtteilen eine Herausforderung."
+    },
+    {
+      "de": "die Stadtstruktur",
+      "en": "urban structure",
+      "artikel": "die",
+      "example": "Die Stadtstruktur beeinflusst das soziale Miteinander."
+    },
+    {
+      "de": "das städtische Milieu",
+      "en": "urban environment/milieu",
+      "example": "Das städtische Milieu bietet vielfältige Kontakte."
+    },
+    {
+      "de": "die soziale Distanz",
+      "en": "social distance",
+      "artikel": "die",
+      "example": "Soziale Distanz kann trotz räumlicher Nähe bestehen."
+    },
+    {
+      "de": "die urbane Anonymisierung",
+      "en": "urban anonymization",
+      "artikel": "die",
+      "example": "Urbane Anonymisierung betrifft vor allem Neuankömmlinge."
+    },
+    {
+      "de": "die soziale Infrastruktur",
+      "en": "social infrastructure",
+      "artikel": "die",
+      "example": "Soziale Infrastruktur umfasst Schulen und Gemeindezentren."
+    },
+    {
+      "de": "die Stadtforschung",
+      "en": "urban research",
+      "artikel": "die",
+      "example": "Stadtforschung untersucht das Zusammenleben in Städten."
     }
   ]
 }

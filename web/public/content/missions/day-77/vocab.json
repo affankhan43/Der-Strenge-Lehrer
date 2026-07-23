@@ -1,32 +1,108 @@
 {
   "day": 77,
-  "topic": "Wirtschaft & Unternehmen",
+  "topic": "Redewendungen & Sprichwörter",
   "words": [
     {
-      "de": "lernen",
-      "en": "to learn",
-      "example": "Ich lerne jeden Tag Deutsch."
+      "de": "das Sprichwort",
+      "en": "proverb",
+      "artikel": "das",
+      "example": "Kennst du dieses Sprichwort?"
     },
     {
-      "de": "üben",
-      "en": "to practice",
-      "example": "Üben macht den Meister."
+      "de": "die Redewendung",
+      "en": "idiom / expression",
+      "artikel": "die",
+      "example": "Diese Redewendung benutzt man oft."
     },
     {
-      "de": "verstehen",
-      "en": "to understand",
-      "example": "Jetzt verstehe ich."
+      "de": "Daumen drücken",
+      "en": "to keep fingers crossed",
+      "example": "Ich drücke dir die Daumen für die Prüfung!"
     },
     {
-      "de": "sprechen",
-      "en": "to speak",
-      "example": "Ich spreche Deutsch."
+      "de": "ins Wasser fallen",
+      "en": "to fall through (plans)",
+      "example": "Unser Plan ist leider ins Wasser gefallen."
     },
     {
-      "de": "schreiben",
-      "en": "to write",
-      "example": "Schreib das auf."
+      "de": "die Nase voll haben",
+      "en": "to be fed up",
+      "example": "Ich habe die Nase voll von dieser Arbeit."
+    },
+    {
+      "de": "Schwein haben",
+      "en": "to be lucky",
+      "example": "Du hast Schwein gehabt, dass der Bus noch kam!"
+    },
+    {
+      "de": "ins Gras beißen",
+      "en": "to bite the dust (informal)",
+      "example": "Die alte Waschmaschine hat ins Gras gebissen."
+    },
+    {
+      "de": "die Katze im Sack kaufen",
+      "en": "to buy a pig in a poke",
+      "example": "Kauf nichts online, ohne Bilder zu sehen, sonst kaufst du die Katze im Sack."
+    },
+    {
+      "de": "Hals- und Beinbruch",
+      "en": "break a leg (good luck)",
+      "example": "Hals- und Beinbruch für dein Vorstellungsgespräch!"
+    },
+    {
+      "de": "den Nagel auf den Kopf treffen",
+      "en": "to hit the nail on the head",
+      "example": "Mit diesem Kommentar hast du den Nagel auf den Kopf getroffen."
+    },
+    {
+      "de": "ein Auge zudrücken",
+      "en": "to turn a blind eye",
+      "example": "Der Lehrer hat ein Auge zugedrückt."
+    },
+    {
+      "de": "Öl ins Feuer gießen",
+      "en": "to add fuel to the fire",
+      "example": "Dein Kommentar hat nur Öl ins Feuer gegossen."
+    },
+    {
+      "de": "im selben Boot sitzen",
+      "en": "to be in the same boat",
+      "example": "Wir sitzen alle im selben Boot."
+    },
+    {
+      "de": "die Flinte ins Korn werfen",
+      "en": "to give up / throw in the towel",
+      "example": "Gib nicht auf, wirf nicht die Flinte ins Korn!"
+    },
+    {
+      "de": "um den heißen Brei reden",
+      "en": "to beat around the bush",
+      "example": "Rede nicht um den heißen Brei, sag es direkt."
+    },
+    {
+      "de": "Tomaten auf den Augen haben",
+      "en": "to not see something obvious",
+      "example": "Hast du Tomaten auf den Augen? Es liegt direkt vor dir!"
+    },
+    {
+      "de": "die Kirsche auf der Sahne",
+      "en": "the cherry on top",
+      "example": "Der Bonus war die Kirsche auf der Sahne."
+    },
+    {
+      "de": "unter vier Augen",
+      "en": "in private / just between us",
+      "example": "Können wir das unter vier Augen besprechen?"
+    },
+    {
+      "de": "aus dem Häuschen sein",
+      "en": "to be thrilled / over the moon",
+      "example": "Sie war völlig aus dem Häuschen vor Freude."
+    },
+    {
+      "de": "die Ohren spitzen",
+      "en": "to prick up one's ears",
+      "example": "Bei dieser Nachricht spitzte er die Ohren."
     }
-  ],
-  "_note": "Add 20 words about 'Wirtschaft & Unternehmen'. Format: {de, en, example}"
+  ]
 }

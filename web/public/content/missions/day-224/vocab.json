@@ -1,51 +1,116 @@
 {
   "day": 224,
-  "level": "B2.2",
-  "topic": "Analyse",
+  "topic": "Wiederholung B2.2: Prüfungsvorbereitung & Textproduktion",
   "words": [
     {
-      "de": "die Zusammenfassung",
-      "en": "summary",
-      "article": "die",
-      "example": "Schreibe eine kurze Zusammenfassung."
+      "de": "die Textproduktion",
+      "en": "text production",
+      "artikel": "die",
+      "example": "Textproduktion auf B2-Niveau erfordert Struktur."
     },
     {
-      "de": "das Argument",
-      "en": "argument",
-      "article": "das",
-      "example": "Das Argument ist stichhaltig."
+      "de": "den eigenen Standpunkt darlegen",
+      "en": "to present one's own viewpoint",
+      "example": "Ich lege meinen eigenen Standpunkt klar dar."
     },
     {
-      "de": "der Standpunkt",
-      "en": "point of view",
-      "article": "der",
-      "example": "Ich vertrete meinen Standpunkt."
+      "de": "die Argumentationsstruktur aufbauen",
+      "en": "to build an argumentative structure",
+      "example": "Wir bauen die Argumentationsstruktur logisch auf."
     },
     {
-      "de": "analysieren",
-      "en": "to analyze",
-      "example": "Wir analysieren den Text."
+      "de": "die schriftliche Ausdrucksfähigkeit",
+      "en": "written expressive ability",
+      "artikel": "die",
+      "example": "Die schriftliche Ausdrucksfähigkeit verbessert sich stetig."
     },
     {
-      "de": "widerlegen",
-      "en": "to refute",
-      "example": "Er widerlegte die These."
+      "de": "die Prüfungsaufgabe bearbeiten",
+      "en": "to work on an exam task",
+      "example": "Ich bearbeite die Prüfungsaufgabe systematisch."
     },
     {
-      "de": "überzeugen",
-      "en": "to convince",
-      "example": "Sie konnte ihn überzeugen."
+      "de": "die Zeitplanung (Prüfung)",
+      "en": "time management (exam)",
+      "artikel": "die",
+      "example": "Gute Zeitplanung ist bei Prüfungen entscheidend."
     },
     {
-      "de": "die Schlussfolgerung",
-      "en": "conclusion",
-      "article": "die",
-      "example": "Was ist deine Schlussfolgerung?"
+      "de": "die mündliche Prüfung",
+      "en": "oral exam",
+      "artikel": "die",
+      "example": "Die mündliche Prüfung findet nächste Woche statt."
     },
     {
-      "de": "begründen",
-      "en": "to justify/explain",
-      "example": "Bitte begründe deine Antwort."
+      "de": "die schriftliche Prüfung",
+      "en": "written exam",
+      "artikel": "die",
+      "example": "Die schriftliche Prüfung dauert 90 Minuten."
+    },
+    {
+      "de": "die Bewertungskriterien",
+      "en": "assessment criteria",
+      "artikel": "die",
+      "example": "Die Bewertungskriterien sind klar definiert."
+    },
+    {
+      "de": "die sprachliche Bandbreite",
+      "en": "linguistic range",
+      "artikel": "die",
+      "example": "Eine breite sprachliche Bandbreite verbessert die Note."
+    },
+    {
+      "de": "die inhaltliche Vollständigkeit",
+      "en": "content completeness",
+      "artikel": "die",
+      "example": "Inhaltliche Vollständigkeit ist ein wichtiges Bewertungskriterium."
+    },
+    {
+      "de": "die Textkohärenz",
+      "en": "text coherence",
+      "artikel": "die",
+      "example": "Textkohärenz verbindet Sätze logisch miteinander."
+    },
+    {
+      "de": "den Text gliedern",
+      "en": "to structure the text",
+      "example": "Gliedere den Text in Einleitung, Hauptteil und Schluss."
+    },
+    {
+      "de": "die differenzierte Ausdrucksweise",
+      "en": "differentiated mode of expression",
+      "artikel": "die",
+      "example": "Eine differenzierte Ausdrucksweise zeigt hohes Sprachniveau."
+    },
+    {
+      "de": "das B2-Zertifikat anstreben",
+      "en": "to aim for the B2 certificate",
+      "example": "Ich strebe das B2-Zertifikat bis zum Sommer an."
+    },
+    {
+      "de": "die Prüfungsangst überwinden",
+      "en": "to overcome exam anxiety",
+      "example": "Übung hilft, Prüfungsangst zu überwinden."
+    },
+    {
+      "de": "die freie Textproduktion üben",
+      "en": "to practice free text production",
+      "example": "Wir üben regelmäßig freie Textproduktion."
+    },
+    {
+      "de": "selbstsicher formulieren",
+      "en": "to phrase confidently",
+      "example": "Ich formuliere meine Argumente inzwischen selbstsicher."
+    },
+    {
+      "de": "das Sprachniveau nachweisen",
+      "en": "to demonstrate one's language level",
+      "example": "Die Prüfung soll das Sprachniveau nachweisen."
+    },
+    {
+      "de": "den nächsten Schritt zu C1",
+      "en": "the next step towards C1",
+      "example": "Nach B2 folgt der nächste Schritt zu C1."
     }
   ]
 }
